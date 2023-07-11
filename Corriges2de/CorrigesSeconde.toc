@@ -1,0 +1,2 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Rappels de calcul et de géométrie}{2}{section.1}%

@@ -1,0 +1,140 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{amsmath,amssymb,makeidx}
+\usepackage[normalem]{ulem}
+\usepackage{fancybox}
+\usepackage{cancel}
+\usepackage{stmaryrd}
+\usepackage{ulem}
+\usepackage{tabularx}
+\usepackage{geometry}
+\usepackage{enumerate}
+\geometry{hmargin=1.5cm,vmargin=1.5cm}
+\usepackage{dcolumn}
+\usepackage{textcomp}
+\usepackage{lscape}
+\usepackage{eurosym}
+%\newcommand{\euro}{\eurologo{}}
+\usepackage[dvips]{color}
+\usepackage[all]{xy}
+\usepackage{xlop}
+
+\usepackage{tikz,tkz-tab}
+
+\usepackage{systeme}
+
+
+\usepackage{pstricks,pst-plot,pst-text,pst-tree,pstricks-add}
+\usepackage{colortbl}
+\usepackage{diagbox}
+\usepackage{fontawesome5}
+\usepackage{pifont}
+\usepackage{wasysym}
+
+
+\usepackage{theorem}
+\theorembodyfont{\upshape}
+\newtheorem{exo}{Exercice}
+%\newtheorem{exo}{Exercice}%[section]
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % false: liens encadrés; true: liens colorés
+    linkcolor=blue,          % couleur des liens (ou bordures) internes
+}
+
+%\setlength{\voffset}{-1,5cm}
+\usepackage{fancyhdr} 
+\usepackage{graphicx}
+\usepackage[frenchb]{babel}
+\usepackage[np]{numprint}
+\usepackage{multicol}
+\usepackage{xlop}
+\usepackage{soul}
+
+
+\title{Mathématiques -- Seconde}
+
+\date{Corrigés des exercices}
+\begin{document}
+\setlength\parindent{0mm}
+\renewcommand \footrulewidth{.2pt}
+
+\maketitle
+
+\tableofcontents
+
+
+\newpage
+
+
+\section{Rappels de calcul et de géométrie}
+
+\begin{exo}
+
+Dans chaque question, on obtient la réponse à l'aide d'un tableau de proportionnalité.
+
+\begin{enumerate}
+\item ~{}
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+Nombre de personnes& 4&6 \\ \hline 
+Farine (en g)&250& ? \\ \hline
+Lait (en mL)&500& ? \\ \hline
+Œufs&4& 6 \\ \hline
+\end{tabular}
+\end{center}
+
+Pour 6 personnes, il faut $\frac{250\times 6}{4}=\frac{\np{1500}}{4}=375$~g de farine, $\frac{500\times 6}{4}=\frac{\np{3000}}{4}=750$~mL de lait et, bien sûr, 6 œufs.
+
+\item Les 6 yaourts pèsent $6\times 125=750$~g.
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+masse (en g)& 1000&750 \\ \hline 
+prix (en \euro)&2& ? \\ \hline
+\end{tabular}
+\end{center}
+
+Je payerai $\frac{750\times 2}{\np{1000}}=\frac{\np{1500}}{\np{1000}}=1,5~\text{\euro}.$
+
+\item Généralement, dans ce type de question, il vaut mieux convertir en minutes\footnote{Les calculs ne sont pas toujours plus faciles en minutes qu'en heures, mais c'est généralement le cas.}.
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+temps (en min)& 60&? \\ \hline 
+distance (en km)&20& 45 \\ \hline
+\end{tabular}
+\end{center}
+
+On mettra $\frac{60\times 45}{20}=\frac{\cancel{20}\times 3\times 45}{\cancel{20}}=135$~min, soit 2~h~15~min (puisque $135=120+15$).
+\item L'énoncé donne les informations recensées dans le tableau ci-dessous et demande de compléter la case \textcircled{\small{1}}.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}\hline
+Florins& 7&?&\textcircled{\small{1}} \\ \hline 
+Pistoles&6& \textcolor{red}{4}&\textcircled{\small{\textcolor{black}{2}}} \\ \hline
+Deniers&?& \textcolor{red}{5}&\textcolor{red}{30} \\ \hline
+\end{tabular}
+\end{center}
+
+On complète d'abord la case \textcircled{\small{2}}~: en échange de 30 deniers, on a $4\times 30\div 5=24$~pistoles~:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}\hline
+Florins& \textcolor{red}{7}&?&\textcircled{\small{\textcolor{black}{1}}} \\ \hline 
+Pistoles&\textcolor{red}{6}& 4&\textcolor{red}{24} \\ \hline
+Deniers&?& 5&30 \\ \hline
+\end{tabular}
+\end{center}
+
+On peut alors compléter la case \textcircled{\small{1}}~: en échange de 30 deniers, on a $\frac{7\times 24}{6}=\frac{7\times 4\times \cancel{6}}{\cancel{6}}=28$~florins.
+
+\end{enumerate}
+\end{exo}
+
+
+\end{document}

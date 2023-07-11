@@ -1,0 +1,2 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Compléments sur la dérivation}{2}{section.1}%

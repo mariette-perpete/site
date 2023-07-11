@@ -1,0 +1,2 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Proportionnalité}{2}{section.1}%
