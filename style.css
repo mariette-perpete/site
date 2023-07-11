@@ -12,11 +12,11 @@
 	margin:auto;
 	text-align:center;
 	border-right:3px solid #0f056b;
-	width:35%;
+	width:33%;
 }
 
 #sect3{
-	width:65%;
+	width:67%;
 	margin:auto;
 }
 
@@ -65,7 +65,7 @@ img{
   background-color: #0f056b;
   color: white;
 	margin:2px;
-  padding: 16px;
+  padding: 12px;
   font-size: 16px;
 	height:100%;
   border: none;
