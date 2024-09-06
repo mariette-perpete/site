@@ -364,4 +364,129 @@ On a donc le tableau~:
 
 
 
+\begin{exo}
+
+La fonction $f$ est définie sur $\left[1;4\right]$ par $f(x)=x+\dfrac{4}{x}-3.$ On note $\mathcal{C}$ sa courbe représentative, $A,$ $B,$ $C$ les points de $\mathcal{C}$ d'abscisses respectives 1, 2, 4~; et $T_A,$ $T_B,$ $T_C$ les tangentes à $\mathcal{C}$ en ces points.
+ 
+\begin{enumerate}
+\item Pour dériver, le plus simple est de réécrire $f(x)$ sous la forme \[f(x)=x+4\times\dfrac{1}{x}-3.\] On obtient alors, pour tout $x\in \left[1;4\right]~:$
+\begin{align*}
+f'(x)&=1+4\times\left(-\frac{1}{x^2}\right)-0\\
+&=1-\frac{4}{x^2}\\
+&=\frac{x^2}{x^2}-\frac{4}{x^2}\\
+&=\dfrac{x^2-4}{x^2}
+\end{align*} 
+\item \begin{itemize}
+\item[\textbullet] Les racines de $x^2-4$ sont évidentes~: ce sont $x_1=-2$ et $x_2=2.$ Seule la deuxième est dans l'intervalle $\left[1;4\right].$
+\item[\textbullet] $x^2$ est strictement positif pour tout $x\in \left[1;4\right].$
+\end{itemize}
+
+On obtient donc le tableau~:
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$x^2-4$/1,$x^2$/1,$f'\left(x\right)$/1,$f\left(x\right)$/2}{$1$,$2$,$4$}
+\tkzTabLine{,-,z,+,}
+\tkzTabLine{,+,,+,}
+\tkzTabLine{,-,z,+,}
+\tkzTabVar{+/$2$,-/$1$,+/$2$}
+\end{tikzpicture}
+\end{center}
+
+\columnbreak
+
+Le signe de $x^2-4$ sur $\left]-\infty;+\infty\right[$ est de la forme \fbox{$+~\upphi~-~\upphi~+$} Mais comme on travaille sur l'intervalle $\left[1;4\right],$ il ne reste plus que la partie droite \fbox{$-~\upphi~+$}
+
+\medskip
+
+On calcule les valeurs aux extrémités des flèches~:
+
+\begin{itemize}
+\item[\textbullet] $f(1)=1+\frac{4}{1}-3=2~;$
+\item[\textbullet] $f(2)=2+\frac{4}{2}-3=1~;$
+\item[\textbullet] $f(4)=4+\frac{4}{4}-3=2.$
+\end{itemize}
+
+\end{multicols}
+\item On rappelle que la tangente à la courbe en un point d'abscisse $a$ a pour équation
+\[y=f'(a)(x-a)+f(a).\]
+
+Appliquons cette formule avec $a=1$ -- puisque le point $A$ a pour abscisse $1~:$
+
+\medskip
+
+$f(1)=2$ (déjà calculé) et $f'(1)=\frac{1^2-4}{1^2}=\frac{-3}{1}=-3,$ donc l'équation de $T_A$ est
+\begin{align*}
+y&=f'(1)(x-1)+f(1)\\
+y&=-3(x-1)+2\\
+y&=-3x+3+2\\
+y&=-3x+5.
+\end{align*}
+
+Le point $A$ a pour coordonnées $(1;2),$ puisque $f(1)=2~;$ la tangente $T_A$ passe donc par ce point. Pour la tracer, il faut placer un deuxième point (c'est une droite)~; ce que l'on peut faire de trois façons différentes~:
+
+\begin{enumerate}[(a)]
+\item L'ordonnée à l'origine est $\textcolor{red}{5}$ (puisque $T_A:y=-3x\textcolor{red}{+5}$), donc $T_A$ passe par le point de coordonnées $(0;5).$
+\item Le coefficient directeur de $T_A$ est $\textcolor{blue}{-3}$ (puisque $T_A:y=\textcolor{blue}{-3}x+5$), donc en partant de $A,$ il suffit d'avancer de $1$ carreau en abscisse et de descendre de $3$ carreaux en ordonnée -- $T_A$ passe donc par le point de coordonnées $(2;-1).$
+\item On calcule un deuxième point avec la formule~: par exemple, si $x=2,$ $y=-3\times 2+5=-1.$ On obtient le point de coordonnées $(2;-1)$ (le même qu'avec la méthode (b)) et on trace la tangente.
+\end{enumerate}
+
+\item \begin{itemize}
+\item[\textbullet] $f(2)=1$ et $f'(2)=\frac{2^2-4}{2^2}=\frac{0}{4}=0,$ donc l'équation de $T_B$ est
+\begin{align*}
+y&=f'(2)(x-2)+f(2)\\
+y&=0(x-1)+1\\
+y&=1.
+\end{align*}
+
+Le coefficient directeur étant égal à 0, la tangente $T_B$ est horizontale.
+\item[\textbullet]  $f(4)=2$ et $f'(4)=\frac{4^2-4}{4^2}=\frac{12}{16}=0,75,$ donc l'équation de $T_C$ est
+\begin{align*}
+y&=f'(4)(x-4)+f(4)\\
+y&=0,75(x-4)+2\\
+y&=0,75x-3+2\\
+y&=0,75x-1.\end{align*}
+
+On trace la tangente $T_C$ par la même méthode que $T_A$ (le plus simple et le plus précis est d'utiliser l'ordonnée à l'origine).
+\end{itemize}
+
+\item On place les points $A,$ $B,$ $C,$ on trace les trois tangentes et on construit la courbe de la fonction $f$ (en bleu) en s'appuyant sur ces tangentes.
+
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.32,-1.88)(6.02,5.6)
+\multips(0,-1)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.32,0)(6.02,0)}
+\multips(-1,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.88)(0,5.6)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.32,-1.88)(6.02,5.6)
+\psline[linewidth=2.pt,linecolor=ffxfqq](0.,5.)(2.,-1.)
+\rput[tl](2.1,-0.64){\ffxfqq{$T_A$}}
+\psline[linewidth=2.pt,linecolor=green](0.,1.)(4.,1.)
+\rput[tl](3.26,0.72){\green{$T_B$}}
+\psplot[linewidth=2.pt,linecolor=magenta]{0.}{6.02}{(-4.--3.*x)/4.}
+\rput[tl](0.48,-0.84){\magenta{$T_C$}}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{1}{4}{x+4.0/x-3.0}
+\rput[bl](1.08,2.2){\ffxfqq{$A$}}
+\rput[bl](2.08,1.2){\green{$B$}}
+\rput[bl](3.74,2.28){\magenta{$C$}}
+\psdots[dotstyle=*,linecolor=ffxfqq](1.,2.)
+\psdots[dotstyle=*,linecolor=green](2.,1.)
+\psdots[dotstyle=*,linecolor=magenta](4.,2.)
+\end{pspicture*}
+\end{center}
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+
 \end{document}

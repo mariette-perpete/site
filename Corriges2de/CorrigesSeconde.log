@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2023.5.31)  9 JUL 2023 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  6 SEP 2024 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1452,9 +1452,9 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 \bbl@dirlevel=\count415
 )
 Package babel Info: \l@acadian = using hyphenrules for french
-(babel)             (\language35) on input line 91.
+(babel)             (\language7) on input line 91.
 Package babel Info: \l@canadien = using hyphenrules for french
-(babel)             (\language35) on input line 92.
+(babel)             (\language7) on input line 92.
 \FB@nonchar=\count416
 Package babel Info: Making : an active character on input line 419.
 Package babel Info: Making ; an active character on input line 420.
@@ -1766,27 +1766,32 @@ LaTeX Font Info:    No file OMSfuts.fd. on input line 114.
 LaTeX Font Warning: Font shape `OMS/futs/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead on input line 114.
 
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
- (./CorrigesSeconde.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
+211.
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+) [2] [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
+
+(./CorrigesSeconde.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 223.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
 Package rerunfilecheck Info: File `CorrigesSeconde.out' has not changed.
 (rerunfilecheck)             Checksum: C33770B7B0A2F94ADFC359B2BA1F0054;74.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
  ) 
 Here is how much of TeX's memory you used:
- 35142 strings out of 481240
- 644735 string characters out of 5920403
- 1071203 words of memory out of 5000000
- 49627 multiletter control sequences out of 15000+600000
- 611675 words of font info for 116 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 60i,13n,65p,648b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35171 strings out of 483041
+ 645163 string characters out of 5962452
+ 1073735 words of memory out of 5000000
+ 49424 multiletter control sequences out of 15000+600000
+ 611998 words of font info for 117 fonts, out of 8000000 for 9000
+ 81 hyphenation exceptions out of 8191
+ 60i,13n,65p,648b,877s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesSeconde.dvi (2 pages, 19168 bytes).
+Output written on CorrigesSeconde.dvi (3 pages, 41528 bytes).

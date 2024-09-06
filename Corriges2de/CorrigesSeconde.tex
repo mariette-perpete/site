@@ -136,5 +136,88 @@ On peut alors compléter la case \textcircled{\small{1}}~: en échange de 30 den
 \end{enumerate}
 \end{exo}
 
+\begin{exo}
+
+\begin{enumerate}
+\item On complète deux tableaux de proportionnalité (on travaille en min et en km)~:
+
+\begin{multicols}{2}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+temps (en min)& 60&? \\ \hline 
+distance (en km)&3& 0,5 \\ \hline
+\end{tabular}
+
+
+\begin{tabular}{|c|c|c|}\hline
+temps (en min)& 60&? \\ \hline 
+distance (en km)&15& 5 \\ \hline
+\end{tabular}
+\end{center}
+
+\end{multicols}
+
+Stéphane nage $\frac{60\times 0,5}{3}=\frac{30}{3}=10$~min, puis il court $\frac{60\times 5}{15}=\frac{300}{15}=20$~min.
+
+
+\item Stéphane a parcouru un total de $5+0,5=5,5$~km, en $10+20=30$~min.
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+temps (en min)& 30&60 \\ \hline 
+distance (en km)&5,5& ? \\ \hline
+\end{tabular}
+\end{center}
+
+La vitesse moyenne de Stéphane sur l’ensemble de son parcours est donc $\frac{60\times 5,5}{30}=\frac{\cancel{30}\times 2\times 5,5}{\cancel{30}}=11$~km/h.
+\end{enumerate}
+\end{exo}
+
+\begin{exo}%28
+~{}
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(1.64,0.96)(7.78,5)
+\pspolygon(2,2)(7,2)(7,4)(4,4)
+\pspolygon(7,2)(6.6,2)(6.6,2.4)(7,2.4)
+\pspolygon(7,4)(7,3.6)(6.6,3.6)(6.6,4)
+\psline(2,2)(7,2)
+\psline(7,2)(7,4)
+\psline(7,4)(4,4)
+\psline(4,4)(2,2)
+\psline(4,4)(2,2)
+\psline(4,4)(4,2)
+\pspolygon[linewidth=1.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](4.,2.4242640687119286)(3.5757359312880714,2.4242640687119286)(3.5757359312880714,2.)(4.,2.)
+\psline{->}(5,3)(5,4)
+\psline{->}(5,3)(5,2)
+\rput[tl](5.22,3.2){$2$}
+\rput[tl](5.44,4.4){$3$}
+\rput[tl](5.44,1.8){$3$}
+\rput[tl](2.84,1.8){$2$}
+\rput[bl](1.8,2.18){$A$}
+\rput[bl](7.08,2.12){$B$}
+\rput[bl](7.08,4.12){$C$}
+\rput[bl](4.08,4.12){$D$}
+\rput[bl](3.8,1.6){$H$}
+\end{pspicture*}
+\end{center}
+
+Le trapèze est constitué~:
+
+\begin{itemize}
+\item[\textbullet] d'un rectangle $BHDC,$ d'aire $\ell\times L=3\times 2=6~;$
+\item[\textbullet] d'un triangle $AHD,$ d'aire $\frac{B\times h}{2}=\frac{2\times 2}{2}=2.$
+\end{itemize}
+Donc l'aire du trapèze est $6+2=8.$
+
+\medskip
+
+\textbf{Remarque~:} On peut aussi utiliser la formule (hors-programme)~:
+\[\mathcal{A}_{\text{trapèze}}=\frac{(B+b)\times h}{2}=\frac{(5+3)\times 2}{2}=8.\]
+\end{exo}
+
 
 \end{document}
