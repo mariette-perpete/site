@@ -219,5 +219,255 @@ Donc l'aire du trapèze est $6+2=8.$
 \[\mathcal{A}_{\text{trapèze}}=\frac{(B+b)\times h}{2}=\frac{(5+3)\times 2}{2}=8.\]
 \end{exo}
 
+\begin{exo}
+
+Le losange est \og la moitié \fg~{} d'un rectangle de côtés $\ell$ et $L,$ donc son aire est $\frac{\ell\times L}{2}.$
+
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.0,2.0)(5.24,5.24)
+\psline[linewidth=2.pt](1.,4.)(3.,5.)
+\psline[linewidth=2.pt](3.,5.)(5.,4.)
+\psline[linewidth=2.pt](5.,4.)(3.,3.)
+\psline[linewidth=2.pt](3.,3.)(1.,4.)
+\psline[linewidth=2.pt,linestyle=dotted](1.,4.)(5.,4.)
+\psline[linewidth=2.pt,linestyle=dotted](3.,5.)(3.,3.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](1.,3.)(1.,5.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](1.,3.)(5.,3.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](1.,5.)(5.,5.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](5.,5.)(5.,3.)
+
+\rput[tl](0.65,4.2){\red{$\ell$}}
+\rput[tl](2.75,2.86){\red{$L$}}
+\end{pspicture*}
+\end{center}
+\end{exo}
+
+
+
+\begin{exo}%29
+
+\textbf{Rappels~:}
+\begin{itemize}
+\item[\textbullet] une hauteur est une droite qui passe par un sommet et qui est perpendiculaire au côté opposé (les hauteurs sont tracées en pointillés bleus)~;
+\item[\textbullet] le fait que les hauteurs soient \og concourantes \fg~{} signifie qu'elles passent toutes les trois par un même point -- qu'on appelle \og orthocentre du triangle \fg~{} (nommé $O$ sur la figure ci-dessous).
+\end{itemize}
+
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.58,0.54)(7.34,5.4)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](1.9037508537434635,2.9121465431835385)(2.287329637311028,2.730853088263545)(2.4686230922310215,3.1144318718311097)(2.085044308663457,3.295725326751103)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](3.66,3.66)(3.96,3.36)(4.26,3.66)(3.96,3.96)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](3.3378667606356793,1.0079249720699515)(3.3364285856148856,1.4321866032041017)(2.9121669544807354,1.430748428183308)(2.913605129501529,1.0064867970491578)
+\psline[linewidth=2.pt](1.,1.)(6.9,1.02)
+\psline[linewidth=2.pt](6.9,1.02)(2.9,5.02)
+\psline[linewidth=2.pt](2.9,5.02)(1.,1.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](2.9,5.02)(2.913605129501529,1.0064867970491578)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](1.,1.)(3.96,3.96)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](6.9,1.02)(2.085044308663457,3.295725326751103)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](2.907162162162163,2.907162162162163)
+\rput[bl](3.06,2.42){\blue{$O$}}
+\end{pspicture*}
+\end{center}
+
+\end{exo}
+
+
+
+
+
+
+
+\begin{exo}%34
+
+On note $H$ le pied de la hauteur issue de $A$ dans le triangle $ABC.$
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.02,0.32)(5.98,4.56)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.1](2.4242640687119286,1.)(2.4242640687119286,1.4242640687119286)(2.,1.4242640687119286)(2.,1.)
+\psline[linewidth=2.pt](2.,4.)(5.,1.)
+\psline[linewidth=2.pt](2.,4.)(1.,1.)
+\psline[linewidth=2.pt](1.,1.)(5.,1.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](2.,4.)(2.,1.)
+\psline[linewidth=2.pt](3.,1.)(2.,4.)
+\rput[bl](2.08,4.04){$A$}
+\rput[bl](5.,0.6){$B$}
+\rput[bl](0.7,0.6){$C$}
+\rput[bl](1.96,0.6){$H$}
+\rput[bl](3.04,0.6){$I$}
+\end{pspicture*}
+\end{center}
+
+
+$\left[AH\right]$ est une hauteur dans les triangles $BIA$ et $CIA,$ donc
+
+\[\mathcal{A}_{BIA}=\frac{\textcolor{red}{BI}\times AH}{2}\hspace{4cm} \mathcal{A}_{CIA}=\frac{\textcolor{red}{CI}\times AH}{2}.\]
+Or $\textcolor{red}{BI}=\textcolor{red}{CI}$ puisque $I$ et le milieu de $\left[BC\right],$ donc $BIA$ et $CIA$ ont la même aire.
+
+\end{exo}
+
+
+\newpage
+
+
+\begin{exo}%30
+
+
+\begin{enumerate}
+\item La négation de
+
+\begin{center}
+
+ \blue{\underline{Tous}} \black les hommes \blue{\underline{sont mortels}}\black .
+ 
+ \end{center}
+ 
+ est
+ 
+ \begin{center}
+
+ \red{\underline{Il existe}} \black un homme \red{\underline{immortel}}\black .
+ 
+ \end{center}
+ 
+\item La négation de
+
+\begin{center}
+
+ \blue{\underline{Il existe}} \black un dessert \blue{\underline{sans sucre}} \black à la cantine.
+ 
+ \end{center}
+ 
+ est
+ 
+ \begin{center}
+
+ \red{\underline{Tous}} \black les desserts \red{\underline{sont sucrés}} \black à la cantine.
+ \end{center}
+ 
+ \medskip
+
+\textbf{Remarque~:} Dans les deux exemples que nous venons de traiter, pour écrire la négation d'une phrase, il suffit de remplacer les \og tous \fg~{} par \og il existe \fg~{}, et réciproquement~; et d'inverser les conclusions (exemple~: immortel/mortel). C'est une technique qui fonctionne toujours.
+\item La négation de
+
+\begin{center}
+
+ \blue{\underline{Il existe}} \black un pays dans lequel \blue{\underline{tous}} \black les hommes \black \blue{\underline{savent lire}}\black .
+ 
+ \end{center}
+ 
+ est
+ 
+ \begin{center}
+
+Dans \red{\underline{tous}} \black les pays, \red{\underline{il existe}} \black un homme qui  \red{\underline{ne sait pas lire}}\black .
+ \end{center}
+\item Le contraire de \og être allé en Angleterre ou en Espagne \fg~{} est \og n'être allé ni en Angleterre, ni en Espagne \fg , donc la négation de
+
+\begin{center}
+
+ \blue{\underline{Tous}} \black les élèves de la classe  \blue{\underline{sont déjà allés en Angleterre ou en Espagne }}\black .
+ 
+ \end{center}
+ 
+ est
+ 
+ \begin{center}
+
+ \red{\underline{Il existe}} \black un élève de la classe qui \red{\underline{n'est jamais allé en Angleterre, ni en Espagne}}\black .
+ \end{center}
+\item Comme dans l'exemple précédent, le contraire de \og ni... ni... \fg~{} est \og ou \fg . Donc la négation de
+
+\begin{center}
+
+ Chloé \blue{\underline{n'aime ni les fraises, ni les framboises}}\black .
+ 
+ \end{center}
+ 
+ est
+ 
+ \begin{center}
+
+ Chloé \red{\underline{aime les fraises ou les framboises}}\black .
+ \end{center}
+
+\end{enumerate}
+
+
+
+\end{exo}
+
+
+\begin{exo}%19
+
+
+\begin{enumerate}
+\item \begin{enumerate}
+\item On identifie A et B dans l'implication~:
+
+\begin{center}
+
+Si $\underbrace{\text{un nombre se termine par 5}}_{\text{A}}$, alors $\underbrace{\text{il est multiple de 5}}_{\text{B}}.$
+
+\end{center}
+
+Cette implication est vraie (cours du primaire).
+
+\item
+
+\begin{itemize}
+\item[\textbullet] L'implication contraposée est
+
+\begin{center}
+
+Si $\underbrace{\text{un nombre n'est pas multiple de 5}}_{\text{non B}}$, alors $\underbrace{\text{il ne se termine pas par 5}}_{\text{non A}}.$
+
+\end{center}
+
+Cette contraposée est vraie, puisque l'implication originale l'est (cf l'énoncé~: quand une implication est vraie, sa contraposée l'est aussi).
+
+\medskip
+
+\item[\textbullet] L'implication réciproque est
+
+\begin{center}
+
+Si $\underbrace{\text{un nombre est multiple de 5}}_{\text{B}}$, alors $\underbrace{\text{il se termine par 5}}_{\text{A}}.$
+
+\end{center}
+
+Elle est fausse, comme le montre le contre-exemple suivant~: 10 est multiple de 5, mais il ne se termine pas par 5.
+\end{itemize}
+
+\end{enumerate}
+\item L'implication
+
+\begin{center}
+
+Si $\underbrace{\text{un nombre se termine par 0}}_{\text{A}}$, alors $\underbrace{\text{il est multiple de 10}}_{\text{B}}.$
+
+\end{center}
+
+et sa réciproque
+
+\begin{center}
+
+Si $\underbrace{\text{un nombre est multiple de 10}}_{\text{B}}$, alors $\underbrace{\text{il se termine par 0}}_{\text{A}}.$
+
+\end{center}
+
+sont vraies toutes les deux.
+
+\end{enumerate}
+\end{exo}
+
+
+
 
 \end{document}

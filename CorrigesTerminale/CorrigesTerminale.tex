@@ -485,6 +485,143 @@ On trace la tangente $T_C$ par la même méthode que $T_A$ (le plus simple et le
 
 \end{exo}
 
+\begin{exo}
+
+La fonction $i$ est définie sur $\mathbb{R}$ par 
+
+\[i(x)=\frac{2x}{x^2+1}.\]
+ 
+\begin{enumerate}
+\item On utilise la formule pour la dérivée d'un quotient avec
+\begin{align*}
+&u(x)=2x&&,&& v(x)=x^2+1, \\
+& u'(x)=2&&, &&v'(x)=2x.\\
+\end{align*}
+
+On obtient, pour tout $x\in \mathbb{R}~:$
+\begin{align*}i'(x)&=\frac{u'(x)\times v(x)-u(x)\times v'(x)}{(v(x))^2}
+\\&=\frac{2\times\left(x^2+1\right)-2x\times 2x }{\left(x^2+1\right)^2}
+\\&=\frac{2x^2+2-4x^2}{\left(x^2+1\right)^2}
+\\&=\frac{-2x^2+2}{\left(x^2+1\right)^2}
+.
+\end{align*}
+
+
+\item \begin{itemize}
+\item[\textbullet] Les racines de $-2x^2+2$ sont assez évidentes~: 
+\[-2x^2+2=0\iff 2=2x^2\iff 1=x^2\iff \left(x=1~\text{ou}~x=-1\right).\] 
+\item[\textbullet] $\left(x^2+1\right)^2$ est strictement positif pour tout réel $x.$
+\end{itemize}
+
+On obtient donc le tableau~:
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+\tkzTabInit{$x$/1,$-2x^2+2$/1,$\left(x^2+1\right)^2$/1,$i'\left(x\right)$/1,$i\left(x\right)$/2}{$-\infty$,$-1$,$1$,$+\infty$}
+\tkzTabLine{,-,z,+,z,-}
+\tkzTabLine{,+,,+,,+}
+\tkzTabLine{,-,z,+,z,-}
+\tkzTabVar{+/,-/$-1$,+/$1$,-/}
+\end{tikzpicture}
+\end{center}
+
+\columnbreak
+
+
+
+
+\begin{itemize}
+\item[\textbullet] $i(-1)=\frac{2\times(-1)}{(-1)^2+1}=\frac{-2}{2}=-1~;$
+\item[\textbullet] $i(1)=\frac{2\times 1)}{1^2+1}=\frac{2}{2}=1.$
+\end{itemize}
+
+\end{multicols}
+
+
+\item
+\begin{enumerate}
+\item $i(0)=\frac{2\times 0}{0^2+1}=\frac{0}{1}=0$ et $i'(0)=\frac{-2\times 0^2+2}{\left(0^2+1\right)^2}=\frac{2}{1}=2,$ donc l'équation de $(T)$ est
+\begin{align*}
+y&=f'(0)(x-0)+f(0)\\
+y&=2x+0\\
+y&=2x.\end{align*}
+
+\item Pour étudier les positions relatives de $(C):y=\frac{2x}{x^2+1}$ et $(T):y=2x,$ on étudie \textbf{le signe de la différence}~:
+\[\frac{2x}{x^2+1}-2x.\]
+\begin{itemize}
+\item[\textbullet] Pour les valeurs de $x$ pour lesquelles cette différence vaut 0, les deux courbes se coupent~;
+\item[\textbullet] pour les valeurs de $x$ pour lesquelles cette différence est strictement positive, $(C)$ est au-dessus de $(T)~;$
+\item[\textbullet] pour les valeurs de $x$ pour lesquelles cette différence est strictement négative, $(C)$ est en-dessous de $(T).$
+\end{itemize}
+
+
+\medskip
+
+On commence par calculer la différence~:
+
+\begin{align*}
+\frac{2x}{x^2+1}-2x
+&= \frac{2x}{x^2+1}-\frac{2x\left(x^2+1\right)}{x^2+1}
+\\&=\frac{2x}{x^2+1}-\frac{2x^3+2x}{x^2+1}
+\\&=\frac{\cancel{2x}-2x^3-\cancel{2x}}{x^2+1}
+\\&=\frac{-2x^3}{x^2+1}.
+\end{align*}
+
+\medskip
+
+\footnotesize
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\begin{center}
+\hspace*{-1cm}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$-2x^3$/1,$\left(x^2+1\right)^2$/1,$\frac{-2x^3}{x^2+1}$/1,Positions relatives des courbes/3}{$-\infty$,$0$,$+\infty$}
+\tkzTabLine{,+,z,-,}
+\tkzTabLine{,+,,+,}
+\tkzTabLine{,+,z,-,}
+\tkzTabLine{,(C)\text{ au-dessus de }(T),\scriptsize{\Longstack{S\\e\\ \\c\\o\\u\\p\\e\\n\\t}},(C)\text{ en-dessous de }(T),}
+\end{tikzpicture}
+\end{center}
+\normalsize
+
+\columnbreak
+
+Pour compléter le tableau de signe~:
+
+\begin{itemize}
+\item[\textbullet] $-2x^3=0$ lorsque $x=0~;$
+\item[\textbullet] $-2x^3$ est $\ominus$ lorsque $x$ est strictement positif~;
+\item[\textbullet] $-2x^3$ est $\oplus$ lorsque $x$ est strictement négatif~;
+\item[\textbullet] $\left(x^2+1\right)^2$ est strictement positif pour tout réel $x.$
+\end{itemize}
+
+\end{multicols}
+\end{enumerate}
+\item ~{}
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-5.92,-2.46)(5.98,2.64)
+\multips(0,-2)(0,1.0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-5.92,0)(5.98,0)}
+\multips(-5,0)(1.0,0){12}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.46)(0,2.64)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-5.92,-2.46)(5.98,2.64)
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{-5.919999999999999}{5.979999999999995}{2.0*x/(x^(2.0)+1.0)}
+\psplot[linewidth=2.pt,linecolor=red]{-5.92}{5.98}{(-0.--2.*x)/1.}
+\rput[tl](1.22,1.9){\red{$(T)$}}
+\rput[tl](3.44,1.04){\blue{$(C)$}}
+\end{pspicture*}
+\end{center}
+\end{enumerate}
+
+\end{exo}
 
 
 
