@@ -305,6 +305,106 @@ On remplit d'eau un aquarium rectangulaire dont la largeur est 80~cm, la profond
 \end{exo}
 
 
+\begin{exo}
+
+Le tableau suivant donne l'évolution du tirage journalier (en millions d'exemplaires) de la presse quotidienne d'information générale et politique en France.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|m{2cm}|*{5}{>{\centering \arraybackslash}X|}}\hline
+Année 							&2010 	&2011 	&2012 	&2013 	&2014\\ \hline
+Numéro année~: $n$					&0 	&1 	&2 	&3 	&4\\ \hline
+Tirage~: $u_n$ &1,80 	&1,73 	&1,60 	&1,47 	&1,36\\ \hline
+\multicolumn{6}{r}{\emph{Source: INSEE}}
+\end{tabularx}
+\end{center}
+
+On note $u_n$ le tirage journalier en millions d'exemplaires pour l'année numéro $n.$ On a donc~:
+
+
+\medskip
+
+\begin{itemize}
+\item[\textbullet] $u_0=\text{tirage journalier l'année 0}=1,80~;$ 
+\item[\textbullet] $u_1=\text{tirage journalier l'année 1}=1,73~;$ 
+\item[\textbullet] $u_4=\text{tirage journalier l'année 4}=1,36.$ 
+\end{itemize}
+
+\end{exo}
+
+\begin{exo}
+$u$ est la suite des multiples de 4, en partant de $u_0=4\times 0=0.$
+
+\begin{enumerate}
+\item \begin{itemize}
+\item[\textbullet] $u_1=4\times 1=4~;$ 
+\item[\textbullet] $u_2=4\times 2=8~;$  
+\item[\textbullet] $u_3=4\times 3=12.$ 
+\end{itemize}
+\item $u_{20}=4\times 20=80.$
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+$u$ est une suite telle que~:
+\begin{itemize}
+\item[\textbullet] $u_0=2,$
+\item[\textbullet] tout terme de la suite se déduit du précédent en ajoutant $3.$
+\end{itemize}
+
+\begin{enumerate}
+\item \begin{itemize}
+\item[\textbullet] $u_1=3+2=5~;$ 
+\item[\textbullet] $u_2=5+3=8~;$  
+\item[\textbullet] $u_3=8+3=11~;$
+\item[\textbullet] $u_4=11+3=14.$ 
+\end{itemize}
+\item Pour obtenir le tableau avec un tableur, on entre la formule \[\text{=B1+1}\] dans la cellule C1, et la formule \[\text{=B2+3}\] dans la cellule C2. Ensuite on étire vers la droite.
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{7}{>{\centering \arraybackslash}X|}}\hline
+	&A   						&B   		&C   	&D   	&E   	&F\\ \hline   
+1   &$n$  					& 0   	&=B1+1   & $\cdots$  & $\cdots$  &$\cdots$ \\ \hline   
+2   &$u_n$   				&2   		&=B2+3   	&$\cdots$   	&$\cdots$   	&$\cdots$\\ \hline    
+\end{tabularx}
+\end{center}
+
+\end{enumerate}
+
+
+\end{exo}
+
+
+
+
+\begin{exo}
+
+Notre objet tombe de~:
+
+\begin{itemize}
+\item[\textbullet] 5~m pendant la 1\up{re} seconde~;
+\item[\textbullet] 15~m pendant la 2\up{e} seconde~;
+\item[\textbullet] 25~m pendant la 3\up{e} seconde~;
+\item[\textbullet] 35~m pendant la 4\up{e} seconde~;
+\item[\textbullet] 45~m pendant la 5\up{e} seconde.
+\end{itemize}
+
+\medskip
+
+Conclusion~: pendant les 5 premières secondes, l'objet est tombé de
+\[5+15+25+35+45=125~\text{m}.\]
+
+\medskip
+
+\textbf{Remarque~:} Les informations de l'énoncé sont imprécises~: si l'on néglige la résistance de l'air (frottements), un objet soumis à son propre poids tombe de 4,9~m pendant la 1\up{re} seconde, $4,9\times 3=14,7$~m pendant la 2\up{e}, $4,9\times 5=24,5$~m pendant la 3\up{e}, etc. Dans l'exercice, nous avons remplacé 4,9 par 5 pour simplifier les calculs.
+
+\medskip
+
+Notons par ailleurs que ces résultats doivent être fortement corrigés si l'on veut tenir compte de la résistance de l'air. Par exemple, un adulte en chute libre qui parvient à se mettre \og à plat \fg~{} devrait arrêter d'accélérer après une dizaine de secondes de chute environ, sans dépasser 60~m/s~; tandis qu'un chat ne dépassera pas les 20~m/s et pourra survivre à une chute d'une hauteur importante. La vidéo \href{https://www.youtube.com/watch?v=RFbmabdbBC0}{KEZAKO~: chute libre} explique ce problème en détail.
+\end{exo}
 
 
 

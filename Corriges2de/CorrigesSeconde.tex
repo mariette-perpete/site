@@ -467,6 +467,115 @@ sont vraies toutes les deux.
 \end{enumerate}
 \end{exo}
 
+\begin{exo}
+
+Soit $ABC$ un triangle
+\begin{enumerate}
+\item \textbf{Théorème de Pythagore.}
+\begin{center}
+
+
+Si $ABC$ est rectangle en $A,$ alors $BC^2=AB^2+BC^2.$
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(2.12,0.46)(7.88,4.24)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](3.4242640687119286,1.)(3.4242640687119286,1.4242640687119286)(3.,1.4242640687119286)(3.,1.)
+\psline[linewidth=2.pt](7.,1.)(3.,1.)
+\psline[linewidth=2.pt](3.,1.)(3.,4.)
+\psline[linewidth=2.pt](3.,4.)(7.,1.)
+\rput[tl](2.6,4){$C$}
+\rput[tl](2.6,1){$A$}
+\rput[tl](7.2,1.1){$B$}
+\end{pspicture*}
+\end{center}
+
+\end{center}
+\item \textbf{Théorème contraposé de Pythagore.}
+
+\begin{center}
+
+Si $BC^2\not=AB^2+BC^2,$ alors $ABC$ n'est pas rectangle en $A.$
+\end{center}
+\item \textbf{Théorème réciproque de Pythagore.}
+
+\begin{center}
+Si $BC^2=AB^2+BC^2,$ alors $ABC$ est  rectangle en $A.$
+\end{center}
+
+Le théorème réciproque est bien sûr vrai, comme vous l'avez appris au collège.
+
+\medskip
+
+\danger En devoir, le correcteur sera très attentif au nom du théorème utilisé dans les démonstrations~: théorème, théorème contraposé ou théorème réciproque -- il ne faudra pas confondre~!
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+\begin{enumerate}
+\item Pour construire la figure, on trace successivement~:
+
+\begin{itemize}
+\item[\textbullet] Le segment $\left[EF\right].$
+\item[\textbullet] La perpendiculaire à $\left[EF\right]$ passant par $E.$
+\item[\textbullet] Un arc de cercle de centre $F,$ de rayon 7~cm. Il coupe la perpendiculaire que nous venons de tracer en $G.$
+\end{itemize}
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=0.8cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.94,-0.7)(5.42,6.16)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](-0.5757359312880717,0.)(-0.5757359312880717,0.4242640687119283)(-1.,0.4242640687119283)(-1.,0.)
+\psline[linewidth=2.pt](-1.,0.)(4.,0.)
+\rput[tl](1.,-0.2){$5~\text{cm}$}
+\psline[linewidth=2.pt](-1.,-0.7)(-1.,6.16)
+\parametricplot[linewidth=2.pt]{2.1976990745518967}{2.5472509907369547}{1.*7.*cos(t)+0.*7.*sin(t)+4.|0.*7.*cos(t)+1.*7.*sin(t)+0.}
+\psline[linewidth=2.pt](4.,0.)(-1.,4.898979485566355)
+\rput[tl](1.5,2.82){$7~\text{cm}$}
+\rput[bl](-1.5,-0.3){{$E$}}
+\rput[bl](4.14,-0.3){{$F$}}
+\rput[bl](-1.44,5.04){{$G$}}
+\end{pspicture*}
+\end{center}
+
+D'après \textbf{le théorème de Pythagore} dans $EFG$ rectangle en $E~:$
+\begin{align*}
+FG^2&=EF^2+EG^2\\
+7^2&=5^2+EG^2\\
+49&=25+EG^2\\
+49-25&=EG^2\\
+\sqrt{24}&=EG
+\end{align*}
+
+Conclusion~: $EG=\sqrt{24}~\text{cm}.$
+
+\medskip
+
+\danger Sauf si l'énoncé le demande, ne donnez pas de valeur approchée.
+
+\end{multicols}
+\item Le plus grand côté est $\left[BC\right],$ donc le triangle ne pourrait être rectangle qu'en $A.$
+
+On calcule~:
+\[
+\left.
+    \begin{array}{ll}
+        BC^2=6^2=36\\
+        AB^2+AC^2=5^2+4^2=25+16=41
+    \end{array}
+\right \}BC^2\not=AB^2+AC^2.
+\]
+D'après \textbf{la contraposée du théorème de Pythagore}, $ABC$ n'est pas rectangle en $A.$
+
+\end{enumerate}
+
+\end{exo}
 
 
 

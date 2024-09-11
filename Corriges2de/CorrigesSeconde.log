@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  9 SEP 2024 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  11 SEP 2024 12:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1771,27 +1771,42 @@ LaTeX Font Info:    Trying to load font information for TS1+futs on input line
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 ) [2] [3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 473.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 473.
 
-(./CorrigesSeconde.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 473.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 473.
+Package fourier-orns Warning: Command \danger is deprecated.
+(fourier-orns)                Use \warning instead; reported on input line 511.
+
+
+LaTeX Font Info:    Trying to load font information for U+futs on input line 51
+1.
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/ufuts.fd
+File: ufuts.fd 2004/03/02 Fontinst v1.926 font definitions for U/futs.
+)
+
+Package fourier-orns Warning: Command \danger is deprecated.
+(fourier-orns)                Use \warning instead; reported on input line 560.
+
+
+[5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 582.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 582.
+ (./CorrigesSeconde.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 582.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 582.
 Package rerunfilecheck Info: File `CorrigesSeconde.out' has not changed.
 (rerunfilecheck)             Checksum: C33770B7B0A2F94ADFC359B2BA1F0054;74.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 473.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 582.
  ) 
 Here is how much of TeX's memory you used:
- 35172 strings out of 483041
- 645182 string characters out of 5962452
+ 35207 strings out of 483041
+ 645658 string characters out of 5962452
  1073735 words of memory out of 5000000
- 49425 multiletter control sequences out of 15000+600000
- 611998 words of font info for 117 fonts, out of 8000000 for 9000
+ 49456 multiletter control sequences out of 15000+600000
+ 612146 words of font info for 118 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 60i,13n,65p,648b,877s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,13n,65p,648b,1123s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesSeconde.dvi (4 pages, 87080 bytes).
+Output written on CorrigesSeconde.dvi (5 pages, 104980 bytes).
