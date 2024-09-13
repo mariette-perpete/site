@@ -880,6 +880,85 @@ On obtiendra ce résultat par une autre méthode dans l'exercice 18 (utilisation
 
 \end{exo}
 
+\begin{exo}
+
+Dans chaque cas, on note $\mathcal{S}$ l'ensemble des solutions.
+
+\begin{enumerate}
+
+\item \begin{align*}
+&\text{e}^{x}=-3\\
+&\text{Impossible, car une exponentielle est strictement positive}\\
+&\mathcal{S}=\emptyset
+\end{align*}
+
+\item \begin{align*}
+&\text{e}^{2x-1}=1\\
+&2x-1=0&&\text{(le seul nombre dont l'exponentielle vaut 1 est 0)}\\
+&x=\frac{1}{2}\\
+&\mathcal{S}=\left\{\frac{1}{2}\right\}.
+\end{align*}
+
+\item L'équation $\text{e}^{2x}+2\text{e}^{x}=3$ se réécrit
+\[\left(\text{e}^x\right)^2+2\text{e}^{x}-3=0.\]
+
+Pour résoudre, il est astucieux de noter $X=\text{e}^x~;$ l'équation se réécrit alors sous la forme
+\[X^2+2X-3=0.\]
+On résout avec la méthode de la classe de première~:
+
+\begin{itemize}
+\item[\textbullet] $a=1,$ $b=2,$ $c=-3.$
+\item[\textbullet] le discriminant est $\Delta=b^2-4ac=2^2-4\times 1\times (-3)=16.$
+\item[\textbullet] $\Delta>0,$ donc il y a deux racines~:
+
+\begin{align*}X_1&=\frac{-b-\sqrt{\Delta}}{2a}=\frac{-2-\sqrt{16}}{2\times 1}=\frac{-2-4}{2}=\frac{-6}{2}=-3,\\
+X_2&=\frac{-b+\sqrt{\Delta}}{2a}=\frac{-2+\sqrt{16}}{2\times 1}=\frac{-2+4}{2}=\frac{2}{2}=1.
+\end{align*}
+
+\medskip
+
+On a posé $X=\text{e}^x,$ donc il y a deux possibilités~:
+\[\text{e}^x=-3\qquad\text{ou}\qquad \text{e}^x=1.\] La première équation n'a pas de solution, car une exponentielle est strictement positive~; la deuxième équation a une seule solution~: $x=0.$
+
+\medskip
+
+Conclusion~: L'unique solution de l'équation $\text{e}^{2x}+2\text{e}^{x}=3$ est $x=0~:$
+\[\mathcal{S}=\left\{0\right\}.\]
+
+
+\end{itemize}
+
+
+
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+On utilisera la propriété~: pour tout nombre réel $x,$\[\text{e}^x\times \text{e}^{-x}=1.\]
+
+
+\begin{enumerate}
+\item D'après l'identité remarquable $(a+b)^2=a^2+2ab+b^2~:$
+
+
+
+\[\left(\text{e}^{x}+ \text{e}^{-x}\right)^2=\left(\text{e}^{x}\right)^2+2\times \underbrace{\text{e}^{x}\times \text{e}^{-x}}_{=1}+\left( \text{e}^{-x}\right)^2=\text{e}^{2x}+2+\text{e}^{-2x}.\]
+\item On multiplie le numérateur et le dénominateur par $\text{e}^x~:$
+\begin{align*}
+\dfrac{\text{e}^{x}-\text{e}^{-x}}{\text{e}^x+\text{e}^{-x}}
+&=\dfrac{\left(\text{e}^{x}-\text{e}^{-x}\right)\times\text{e}^x}{\left(\text{e}^{x}+\text{e}^{-x}\right)\times\text{e}^x}\\
+&=\dfrac{\text{e}^{x}\times \text{e}^{x}-\text{e}^{-x}\times \text{e}^{x}}{\text{e}^{x}\times \text{e}^{x}-\text{e}^{-x}\times \text{e}^{x}}\\
+&=\dfrac{\text{e}^{x+x}-\text{e}^{-x+x}}{\text{e}^{x+x}+\text{e}^{-x+x}}\\
+&=\dfrac{\text{e}^{2x}-\text{e}^{0}}{\text{e}^{2x}+\text{e}^{0}}\\
+&=\dfrac{\text{e}^{2x}-1}{\text{e}^{2x}+1}.
+\end{align*}
+\end{enumerate}
+
+
+\end{exo}
+
+
 
 
 \end{document}

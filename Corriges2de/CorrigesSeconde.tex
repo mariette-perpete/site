@@ -578,5 +578,241 @@ D'après \textbf{la contraposée du théorème de Pythagore}, $ABC$ n'est pas re
 \end{exo}
 
 
+\begin{exo}
+
+
+$ABCDEFGH$ est un parallélépipède rectangle tel que $AB=BC=6$ et $CG=3.$
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.3774236991656137,-0.31214840896786467)(5.5552457552212475,4.59336208917407)
+\pspolygon[linewidth=0.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](-2.6,0.2)(-2.2,0.2)(-2.6,0.)(-3.,0.)
+\pspolygon[linewidth=0.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](2.6046541583780107,0.09883646040549732)(3.,0.)(3.,0.4)(2.6049879803510483,0.5150893759578578)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](-1.,1.)(-3.,0.)
+\psline[linewidth=2.pt](-3.,0.)(3.,0.)
+\psline[linewidth=2.pt](3.,0.)(5.,1.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](5.,1.)(-1.,1.)
+\psline[linewidth=2.pt](-1.,4.)(-3.,3.)
+\psline[linewidth=2.pt](-3.,3.)(3.,3.)
+\psline[linewidth=2.pt](3.,3.)(5.,4.)
+\psline[linewidth=2.pt](5.,4.)(-1.,4.)
+\psline[linewidth=2.pt](-3.,3.)(-3.,0.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](-1.,4.)(-1.,1.)
+\psline[linewidth=2.pt](3.,3.)(3.,0.)
+\psline[linewidth=2.pt](5.,4.)(5.,1.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](-1.,1.)(3.,3.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](-1.,1.)(3.,0.)
+\psline[linewidth=2.pt,linecolor=ududff](-2.6,0.2)(-2.2,0.2)
+\psline[linewidth=2.pt,linecolor=ududff](-2.2,0.2)(-2.6,0.)
+\psline[linewidth=2.pt,linecolor=ududff](2.6046541583780107,0.09883646040549732)(2.6049879803510483,0.5150893759578578)
+\psline[linewidth=2.pt,linecolor=ududff](2.6049879803510483,0.5150893759578578)(3.,0.4)
+\rput[tl](-2.018464709815479,0.8976565449657882){6}
+\rput[tl](0.01997377420972306,0.3){6}
+\rput[tl](3.1356358473539347,1.6599993926500078){3}
+\rput[bl](-1.35,1.1628192745950818){{$A$}}
+\rput[bl](-2.9299615929161793,0.2){{$B$}}
+\rput[bl](3.069345164946611,0.16845903848523028){{$C$}}
+\rput[bl](5.058065637166321,1.1628192745950818){{$D$}}
+\rput[bl](-0.9412411206964699,4.162472653526468){{$E$}}
+\rput[bl](-2.9299615929161793,3.168112417416616){{$F$}}
+\rput[bl](2.95,3.168112417416616){{$G$}}
+\rput[bl](5.058065637166321,4.162472653526468){{$H$}}
+\end{pspicture*}
+\end{center}
+
+On utilise deux fois de suite le théorème de Pythagore~:
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+ Dans $ABC$ rectangle en $B,$
+ 
+ \begin{align*}
+AC^2&=AB^2+BC^2\\
+AC^2&=6^2+6^2\\
+AC^2&=36+36\\
+AC^2&=72\\
+(\text{Inutile de} & \text{ donner} AC~!)
+\end{align*}
+
+\columnbreak
+
+ Dans $ACG$ rectangle en $C,$
+ 
+ \begin{align*}
+AG^2&=AC^2+CG^2\\
+AG^2&=72+3^2\\
+AG^2&=72+9\\
+AG^2&=81\\
+AG&=\sqrt{81}=9
+\end{align*}
+
+\end{multicols}
+
+
+
+
+Conclusion~: $AG=9.$
+
+\end{exo}
+
+\begin{exo}
+Sur la figure ci-dessous (qui n'est pas à l'échelle), le segment $\left[MK\right]$ mesure 3~cm, le segment $\left[MN\right]$ mesure 5~cm et $h=1,2$~cm.%l'aire du triangle $MNP$ est égale à $2,5~\text{cm}^2.$
+
+\begin{center}
+\psset{xunit=1.cm,yunit=1.cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.34,0.28)(6.18,4.64)
+\pspolygon[linewidth=2.pt,fillcolor=black!20!white,fillstyle=solid,opacity=0.1](1.424264068711929,1.)(1.424264068711929,1.424264068711929)(1.,1.424264068711929)(1.,1.)
+\pspolygon[linewidth=2.pt,fillcolor=black!20!white,fillstyle=solid,opacity=0.1](3.465441558772843,1.6205887450304568)(3.804852813742386,1.3660303038032993)(4.059411254969543,1.7054415587728424)(3.72,1.96)
+\psline[linewidth=2.pt](1.,1.)(5.,1.)
+\psline[linewidth=2.pt](1.,1.)(1.,4.)
+\psline[linewidth=2.pt](1.,4.)(5.,1.)
+\psline[linewidth=2.pt](1.,4.)(3.,1.)
+\psline[linewidth=2.pt](3.,1.)(3.72,1.96)
+\rput[tl](3.1,1.75){$h$}
+\psdots[dotsize=1pt 0,dotstyle=*](1.,1.)
+\rput[bl](0.62,0.96){$K$}
+\psdots[dotsize=1pt 0,dotstyle=*](5.,1.)
+\rput[bl](5.1,0.76){$N$}
+\psdots[dotsize=1pt 0,dotstyle=*](1.,4.)
+\rput[bl](1.12,4.08){$M$}
+\psdots[dotsize=1pt 0,dotstyle=*](3.,1.)
+\rput[bl](2.8,0.68){$P$}
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item $\mathcal{A}_{MNP}=\frac{MN\times h}{2}=\frac{5\times 1,2}{2}=3~\text{cm}^2.$
+\item On a aussi $\mathcal{A}_{MNP}=\frac{PN\times MK}{2},$ donc $3=\frac{PN\times 3}{2},$ soit $\cancel{3}\times 2=PN\times \cancel{3}~;$ et donc $PN=2~\text{cm}.$
+\item (Non détaillé.) Il faut calculer successivement $KN,$ puis $KP$ et $MP.$
+
+\danger On ne sait pas, à ce stade, que $P$ est le milieu de $\left[KN\right].$
+\begin{itemize}
+\item[\textbullet] Pour $KN,$ on utilise le théorème de Pythagore dans le triangle $KMN.$ On obtient $KN=4~\text{cm}.$
+\item[\textbullet] $KP=KN-PN=4-2=2~\text{cm}.~~~$ %(\danger N'utilisez pas le fait que $P$ est le milieu de $\left[KN\right]$ pour calculer $KP,$ car vous n'en savez rien.)
+\item[\textbullet] Enfin, pour calculer $PM,$ on utilise le théorème de Pythagore dans le triangle $KMP.$ On obtient $MP=\sqrt{13}~\text{cm}.$
+\end{itemize}
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+\begin{enumerate}
+\item Les côtés de l'angle droit d'un triangle rectangle mesurent $a$ et $b,$ l'hypoténuse mesure $c.$
+
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(2.12,0.46)(7.88,4.24)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](3.4242640687119286,1.)(3.4242640687119286,1.4242640687119286)(3.,1.4242640687119286)(3.,1.)
+\psline[linewidth=2.pt](7.,1.)(3.,1.)
+\psline[linewidth=2.pt](3.,1.)(3.,4.)
+\psline[linewidth=2.pt](3.,4.)(7.,1.)
+\rput[tl](5.2,2.62){$c$}
+\rput[tl](4.62,0.9){$a$}
+\rput[tl](2.45,2.5){$b$}
+\end{pspicture*}
+\end{center}
+
+D'après le théorème de Pythagore, $c^2=a^2+b^2,$ donc \[c=\sqrt{a^2+b^2}.\]
+
+\item L'affirmation 
+\begin{center}
+ Pour tous nombres positifs $a$ et $b,$ $\sqrt{a^2+b^2}=a+b.$ 
+\end{center}
+
+est FAUSSE~! Voici deux justifications~:
+
+\begin{itemize}
+\item[\textbullet] \textbf{Par le calcul.} Il suffit de donner un contre-exemple~: on choisit $a=4$ et $b=3.$ Dans ce cas
+\[\sqrt{a^2+b^2}=\sqrt{4^2+3^2}=\sqrt{16+9}=\sqrt{25}=5\qquad \text{est différent de}\qquad a+b=4+3=7.\]
+\item[\textbullet] \textbf{Géométriquement.} $\sqrt{a^2+b^2}$ est la longueur de l'hypoténuse $c$ du triangle rectangle de la question 1~; tandis que $a+b$ est la somme des longueurs des côtés de l'angle droit. Or cette somme est strictement plus grande que celle de l'hypoténuse, puisque le chemin le plus court d'un point à un autre est la ligne droite.
+\end{itemize}
+\end{enumerate}
+\end{exo}
+
+
+
+
+
+\begin{exo}
+
+Soit $A$ un point et $\Delta$ une droite du plan. Le projeté orthogonal de $A$ sur $\Delta$ est le point $H$ de $\Delta$ tel que $(AH)\perp\Delta.$
+
+\begin{enumerate}
+\item On trace la perpendiculaire à $\Delta$ passant par $A.$ Elle coupe $\Delta$ en $H.$
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.6,-0.64)(3.82,3.76)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](1.3760676226484692,0.807765180139509)(1.2347599047685438,1.2078053392080301)(0.8347197457000228,1.0664976213281048)(0.9760274635799481,0.6664574622595838)
+\psplot[linewidth=2.pt]{-2.6}{3.82}{(--1.2932--1.42*x)/4.02}
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red]{-2.6}{3.82}{(-4.87--4.02*x)/-1.42}
+\rput[tl](-1.52,0.3){$\Delta$}
+\psdots[dotstyle=*,linecolor=ududff](0.18,2.92)
+\rput[bl](0.26,3.12){\ududff{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](0.9760274635799481,0.6664574622595838)
+\rput[bl](0.7,0.22){\ududff{$H$}}
+\end{pspicture*}
+\end{center}
+\item Par construction, le triangle $AMH$ est rectangle en $H,$ donc son hypoténuse $AM$ est strictement plus grande que le côté de l'angle droit $AH$ (c'est le même raisonnement que celui de l'exercice précédent)~:
+\[AM>AH.\]
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.6,-0.64)(4.18,3.76)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](1.3760676226484692,0.8077651801395092)(1.2347599047685438,1.2078053392080301)(0.8347197457000228,1.0664976213281048)(0.9760274635799481,0.6664574622595838)
+\psplot[linewidth=2.pt]{-2.6}{4.18}{(--1.2932--1.42*x)/4.02}
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red]{-2.6}{4.18}{(-4.87--4.02*x)/-1.42}
+\rput[tl](-1.52,0.3){$\Delta$}
+\psline[linewidth=2.pt](2.862531138594252,1.332834382289512)(0.18,2.92)
+\psdots[dotstyle=*,linecolor=ududff](0.18,2.92)
+\rput[bl](0.26,3.12){\ududff{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](0.9760274635799481,0.6664574622595838)
+\rput[bl](0.7,0.22){\ududff{$H$}}
+\psdots[dotstyle=*,linecolor=ududff](2.862531138594252,1.332834382289512)
+\rput[bl](2.94,1.54){\ududff{$M$}}
+\end{pspicture*}
+\end{center}
+
+
+\item Le segment $\left[AH\right]$ est la hauteur\footnote{Le mot \textit{hauteur} est polysémique (il a plusieurs sens)~: le segment $\left[AH\right]$ peut être appelé \textit{hauteur}, la droite $\left(AH\right)$ peut également être appelée \textit{hauteur}~; enfin la longueur $AH$ peut elle aussi être appelée \textit{hauteur} -- c'est cette longueur, par exemple, que l'on retrouve dans la formule $\frac{B\times h}{2}$ pour l'aire du triangle.} issue de $A$ dans le triangle $ABC.$
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\newrgbcolor{xdxdff}{0.49019607843137253 0.49019607843137253 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.6,-0.64)(4.18,3.76)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](1.3760676226484692,0.8077651801395092)(1.2347599047685438,1.2078053392080301)(0.8347197457000228,1.0664976213281048)(0.9760274635799481,0.6664574622595838)
+\psline[linewidth=2.pt](2.862531138594252,1.332834382289512)(0.18,2.92)
+\psline[linewidth=2.pt](0.18,2.92)(-1.2704379208661591,-0.12707011135073243)
+\psline[linewidth=2.pt](-1.2704379208661591,-0.12707011135073243)(2.862531138594252,1.332834382289512)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](0.9760274635799481,0.6664574622595838)(0.18,2.92)
+\psdots[dotstyle=*,linecolor=ududff](0.18,2.92)
+\rput[bl](0.26,3.12){\ududff{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](0.9760274635799481,0.6664574622595838)
+\rput[bl](0.7,0.22){\ududff{$H$}}
+\psdots[dotstyle=*,linecolor=ududff](2.862531138594252,1.332834382289512)
+\rput[bl](2.94,1.54){\ududff{$C$}}
+\psdots[dotstyle=*,linecolor=xdxdff](-1.2704379208661591,-0.12707011135073243)
+\rput[bl](-1.65,0.04){\xdxdff{$B$}}
+\end{pspicture*}
+\end{center}
+
+
+
+\end{enumerate}
+\end{exo}
+
+
+
 
 \end{document}
