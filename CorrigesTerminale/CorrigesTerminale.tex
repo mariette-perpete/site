@@ -623,6 +623,154 @@ Pour compléter le tableau de signe~:
 
 \end{exo}
 
+\begin{exo}
+
+La distance (en m) parcourue au temps $t$ (en s) par une pierre en chute libre est $d(t)=5t^2.$
+
+On lance cette pierre d'une hauteur de 20~m.
+
+
+
+\begin{enumerate}
+\item La pierre arrive au sol quand elle a parcouru 20~m. Il faut donc résoudre l'équation $5t^2=20~:$
+\[5t^2=20\iff t^2=\frac{20}{5}\iff t^2=4\iff \left(t=2\quad\text{ou}\quad\underbrace{t=-2}_{\text{impossible}}\right).\]
+
+Conclusion~: la pierre arrive au sol après 2~s.
+\item On construit la courbe à partir d'un tableau de valeurs (avec un pas de 0,4 par exemple).
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+   $t$ &$0$ &$0,4$ &$0,8$ &$1,2$ &$1,6$&$2$ \\
+	\hline
+	$d(t)$ &$0$ &$0,8$ &$3,2$ &$7,2$ &$12,8$&$20$ \\
+	\hline
+\end{tabular}
+\end{center}
+
+Pour obtenir ce tableau, on utilise la calculatrice (bien sûr, on met des $x$ à la place des $t$)~:
+
+\medskip
+
+\small
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{4}
+
+\begin{center}\textbf{Calculatrices collège}\end{center}
+
+\medskip
+
+
+\begin{itemize}
+\item[\textbullet] \fbox{MODE}
+\item[\textbullet] 4 : TABLE ou 4 : Tableau
+\item[\textbullet] f(X)=$5\text{X}^2$ \fbox{EXE}
+
+(si on demande g(X)=, ne rien rentrer)
+\item[\textbullet] Début? $0$ \fbox{EXE}
+\item[\textbullet] Fin? $2$ \fbox{EXE}
+\item[\textbullet] Pas? $0,4$ \fbox{EXE}
+\end{itemize}
+
+\columnbreak
+
+\begin{center}\textbf{NUMWORKS}\end{center}
+
+\medskip
+
+x s'obtient avec les touches  \fbox{alpha}  \fbox{x}
+
+\begin{itemize}
+\item[\textbullet] \fbox{\textcolor{yellow}{\faHome}}
+\item[\textbullet] Fonctions \fbox{EXE} puis choisir Fonctions \fbox{EXE}
+\item[\textbullet] f(x)=$5\text{x}^2$ \fbox{EXE}
+\item[\textbullet] choisir Tableau \fbox{EXE} puis Régler l'intervalle \fbox{EXE}
+
+\item[\textbullet] X début\qquad$0$ \fbox{EXE}
+\item[\textbullet] X fin\qquad $2$ \fbox{EXE}
+\item[\textbullet] Pas\qquad $0.4$ \fbox{EXE}
+\item[\textbullet] choisir Valider
+\end{itemize}
+
+\columnbreak
+
+\begin{center}\textbf{TI graphiques}\end{center}
+
+\medskip
+
+
+X s'obtient avec la touche \fbox{$x,t,\theta,n$}
+\begin{itemize}
+\item[\textbullet] \fbox{$f(x)$}
+\item[\textbullet] $\text{Y}_1=5\text{X}^2$ \fbox{EXE}
+\item[\textbullet] \fbox{2nde} \fbox{déf table}
+\item[\textbullet] DébTable=$0$ \fbox{EXE}
+\item[\textbullet] PasTable=$0.4$ \fbox{EXE}
+
+ou
+
+\tiny{$\Delta$}\normalsize Tbl=$0.4$ \fbox{EXE}
+\item[\textbullet] \fbox{2nde} \fbox{table}
+\end{itemize}
+
+\columnbreak
+
+\begin{center}\textbf{CASIO graphiques}\end{center}
+
+\medskip
+
+
+X s'obtient avec la touche \fbox{$\text{X},\theta,\text{T}$}
+\begin{itemize}
+\item[\textbullet] \fbox{MENU} puis choisir TABLE \fbox{EXE}
+\item[\textbullet] $\text{Y}_1:5\text{X}^2$ \fbox{EXE}
+\item[\textbullet] \fbox{F5} (on choisit donc SET)
+\item[\textbullet] Start:$0$ \fbox{EXE}
+\item[\textbullet] End:$2$ \fbox{EXE}
+\item[\textbullet] Step:$0.4$ \fbox{EXE}
+\item[\textbullet]\fbox{EXIT}
+\item[\textbullet] \fbox{F6} (on choisit donc TABLE)
+\end{itemize}
+\end{multicols}
+
+\normalsize
+
+
+\begin{center}
+\psset{xunit=2.5cm,yunit=0.25cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.28472279556053043,-2.064821322818694)(2.336654362677241,21.51292853619145)
+\multips(0,0)(0,4.0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(2.336654362677241,0)}
+\multips(0,0)(0.4,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,21.51292853619145)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.4,Dy=4.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(2.336654362677241,21.51292853619145)
+\rput[lt](1.8,2.9){\parbox{1.2343130420771191 cm}{temps \\  (en s)}}
+\rput[lt](0.06674676755514843,19.46268941801665){\parbox{1.3124173894361588 cm}{distance \\  (en m)}}
+\rput{0.}(0.,0.){\psplot[linewidth=2.pt,linecolor=blue]{0.}{2.}{x^2/2/0.1}}
+\psplot[linewidth=2.pt,linecolor=red]{-0.28472279556053043}{2.336654362677241}{(-10.--10.*x)/0.5}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](0.4,0.8)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](0.8,3.2)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](1.2,7.2)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](1.6,12.8)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=red](2.,20.)
+\end{pspicture*}
+\end{center}
+
+
+\item La vitesse de la pierre au moment de l'impact au sol est $d'(2).$
+
+Or $d'(t)=5\times 2t=10t,$ donc $d'(2)=10\times 2=20.$ Ainsi la vitesse au moment de l'impact est de 20~m/s.
+
+\medskip
+
+\textbf{Remarques~:}
+
+\begin{itemize}
+\item[\textbullet] cette vitesse instantanée est le coefficient directeur de la tangente au point $A$ d'abscisse 2 (en rouge).
+\item[\textbullet] la \og vraie formule \fg~{}(valable en l'absence de frottements) est $d(t)=4,9t^2.$ Dans l'exercice, on a pris 5 au lieu de 4,9 pour simplifier les calculs.
+\end{itemize}
+\end{enumerate}
+
+\end{exo}
 
 
 \begin{exo}
@@ -957,6 +1105,60 @@ On utilisera la propriété~: pour tout nombre réel $x,$\[\text{e}^x\times \tex
 
 
 \end{exo}
+
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item La fonction $f$ est de la forme $f(x)=\text{e}^{u(x)},$ avec \[u(x)=-x^2,\qquad u'(x)=-2x.\]
+ On a donc, pour tout $x\in\mathbb{R}~:$ \[f'(x)=u'(x)\times\text{e}^{u(x)}=-2x\text{e}^{-x^2}.\]
+\item La fonction $h$ est de la forme $h(x)=\left(u(x)\right)^n,$ avec \[u(x)=-4x+1,\qquad u'(x)=-4,\qquad n=3.\]
+ On a donc, pour tout $x\in\mathbb{R}~:$ \[h'(x)=n\times u'(x)\times \left(u(x)\right)^{n-1}=3\times (-4)\times (-4x+1)^{3-1}=-12\left(-4x+1\right)^2.\]
+\item La fonction $i$ est de la forme $i(x)=\text{e}^{u(x)},$ avec \[u(x)=5x-9,\qquad u'(x)=5.\]
+ On a donc, pour tout $x\in\mathbb{R}~:$ \[i'(x)=u'(x)\times\text{e}^{u(x)}=5\text{e}^{5x-9}.\]
+\item La fonction $j$ est de la forme $j(x)=\left(u(x)\right)^n,$ avec \[u(x)=x^2-3x,\qquad u'(x)=2x-3,\qquad n=5.\]
+ On a donc, pour tout $x\in\mathbb{R}~:$ \[j'(x)=n\times u'(x)\times \left(u(x)\right)^{n-1}=5\times \left(2x-3\right)\times \left(x^2-3x\right)^{5-1}=\left(10x-15\right)\times \left(x^2-3x\right)^4.\]
+\item L'énoncé nous donne \[k(x)=\sqrt{x^2-x+2}.\] Il faut se méfier~: on ne peut calculer la racine carrée d'un nombre que si celui-ci est positif~; et on ne peut dériver une fonction de la forme $\sqrt{u}$ que lorsqu'elle est strictement positive. Intéressons-nous donc au signe de $x^2-x+2~:$
+
+\medskip
+
+Le discriminant est $\Delta=b^2-4ac=(-1)^2-4\times 1\times 2=-7.$ Il s'ensuit qu'il n'y a pas de racine, et que  $x^2-x+2$ est strictement positif sur $\mathbb{R}.$ La fonction $k$ est donc bien définie sur $\mathbb{R},$ mais aussi dérivable.
+
+\medskip
+
+Elle est de la forme $k(x)=\sqrt{u(x)},$ avec  \[u(x)=x^2-x+2,\qquad u'(x)=2x-1.\]
+ On a donc, pour tout $x\in\mathbb{R}~:$ \[k'(x)=\dfrac{u'(x)}{2\sqrt{u(x)}}=\dfrac{2x-1}{2\sqrt{x^2-x+2}}.\]
+\end{enumerate}
+
+
+\medskip
+
+\textbf{Remarque informelle~:} On a déjà vu les dérivées suivantes dans le cours de première~:
+
+\begin{align*}
+\left(x^n\right)'&=nx^{n-1}\\
+\left(\text{e}^x\right)'&=\text{e}^x\\
+\left(\sqrt{x}\right)'&=\dfrac{1}{2\sqrt{x}}
+\end{align*}
+
+\medskip
+
+Les trois nouvelles formules du cours de terminale peuvent se réécrire
+
+\begin{align*}
+\left(u^n\right)'&=nu^{n-1}\times u'\\
+\left(\text{e}^u\right)'&=\text{e}^u\times u'\\
+\left(\sqrt{u}\right)'&=\dfrac{1}{2\sqrt{u}}\times u'
+\end{align*}
+
+\medskip
+
+On voit qu'il suffit de remplacer $x$ par $u,$ et de multiplier par $u'.$
+
+\end{exo}
+
 
 
 
