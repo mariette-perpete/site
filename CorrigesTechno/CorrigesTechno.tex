@@ -704,5 +704,105 @@ Il y a deux méthodes possibles pour répondre à la question~:
 
 \end{exo}
 
+\begin{exo}
+
+Dans chaque question, $u$ est une suite arithmétique de raison $r.$
+
+\begin{enumerate}
+\item $u_0=2$ et $r=4.$
+
+\begin{align*}
+u_1&=2+4=6\\
+u_2&=6+4=10\\
+u_3&=10+4=14.\\
+\end{align*}
+\item $u_0=5$ et $r=-2.$
+
+\begin{align*}
+u_1&=5-2=3\\
+u_2&=3-2=1\\
+u_3&=1-2=-1.\\
+\end{align*}
+
+\item $u_0=10$ et $r=1,5.$
+
+Pour obtenir $u_6,$ on part de $u_0=10$ et on rajoute 6 fois $1,5.$ Donc
+\[u_6=10+6\times 1,5=10+9=19.\]
+
+\item $u_0=4$ et $u_2=10.$
+
+\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{4} \ar@/^0.5cm/[r]|{\red{+r}} & 
+    *+[F]+{???} \ar@/^0.5cm/[r]|{\red{+r}} & *+[F]+{10} \\
+    \txt{\blue{$u_0$}}&
+    \txt{\blue{$u_1$}}&\txt{\blue{$u_2$}}
+    }$
+    \end{center}
+    
+    D'après le schéma ci-dessus~:
+    \[r=(10-4)\div 2=6\div 2=3.\]  On obtient donc le schéma complété~:
+    
+    \begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{4} \ar@/^0.5cm/[r]|{\red{+3}} & 
+    *+[F]+{7} \ar@/^0.5cm/[r]|{\red{+3}} & 
+    *+[F]+{10} \ar@/^0.5cm/[r]|{\red{+3}} & 
+    *+[F]+{13} \ar@/^0.5cm/[r]|{\red{+3}}& 
+    *+[F]+{16} \\
+    \txt{\blue{$u_0$}}&
+    \txt{\blue{$u_1$}}&\txt{\blue{$u_2$}}&
+    \txt{\blue{$u_3$}}&
+    \txt{\blue{$u_4$}}
+    }$
+    \end{center}
+    
+    (On peut aussi obtenir $u_4$ avec le calcul~: $u_4=4+4\times 3=4+12=16.$)
+
+\item ~{}\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{5} \ar@/^0.5cm/[r]|{\red{+r}} & 
+    *+[F]+{???} \ar@/^0.5cm/[r]|{\red{+r}} & *+[F]+{???} \ar@/^0.5cm/[r]|{\red{+r}} & 
+    *+[F]+{12,5} \\
+    \txt{\blue{$u_0$}}&
+    \txt{\blue{$u_1$}}&\txt{\blue{$u_2$}}&
+    \txt{\blue{$u_3$}}
+    }$
+    \end{center}
+    
+    D'après le schéma ci-dessus~:
+    \[r=(12,5-5)\div 3=7,5\div 3=2,5.\]
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+\end{exo}
+
+\begin{exo}
+
+\end{exo}
+
+\begin{exo}
+
+On note $S$ la somme à calculer, que l'on écrit à l'endroit, puis à l'envers~:
+\begin{alignat*}{8}
+&S&&= \textcolor{red}{1}&&+\textcolor{blue}{2}&&+\textcolor{green}{3}&&+\cdots  &&+\textcolor{orange}{98} &&+ \textcolor{violet}{99}&&+ \textcolor{brown}{100}\\
+&S&&= \textcolor{red}{100}&&+\textcolor{blue}{99}&&+\textcolor{green}{98}&&+\cdots &&+\textcolor{orange}{3} &&+ \textcolor{violet}{2}&&+ \textcolor{brown}{1}
+\end{alignat*}
+
+
+On ajoute membre à membre les deux lignes. On remarque que la somme de chaque couple d'une même couleur vaut toujours $101~:$
+
+
+\[S+S=\underbrace{\textcolor{red}{101}+\textcolor{blue}{101}+\textcolor{green}{101}+\cdots+\textcolor{orange}{101}+\textcolor{violet}{101}+\textcolor{brown}{101}}_{100~\text{termes}}.\]
+On a donc
+\[2S=100\times 101\hspace{2cm} S=\frac{100\times 101}{2}=\np{5050}.\]
+\end{exo}
+
+
 
 \end{document}
