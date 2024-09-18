@@ -1162,5 +1162,357 @@ On voit qu'il suffit de remplacer $x$ par $u,$ et de multiplier par $u'.$
 
 
 
+\begin{exo}
+
+
+
+\begin{enumerate}
+
+\item Pour tout $x\in\mathbb{R}~:$
+\begin{align*}
+f(x)&=x^2\\
+f'(x)&=2x\\
+f''(x)&=2.
+\end{align*}
+
+\medskip
+
+Conclusion~: $f''$ est strictement positive, donc $f$ est convexe sur $\mathbb{R}.$
+
+\medskip
+
+On peut aussi présenter les choses  avec un tableau de signe~:
+
+\begin{center}
+\hspace*{-1cm}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f''(x)=2$/1,Convexité/3}{$-\infty$,$+\infty$}
+\tkzTabLine{,+,}
+
+\tkzTabLine{,f\text{ convexe },}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.46,-0.74)(2.68,3.4)
+\multips(0,0)(0,1.0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.46,0)(2.68,0)}
+\multips(-2,0)(1.0,0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.74)(0,3.4)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.46,-0.74)(2.68,3.4)
+\rput{0.}(0.,0.){\psplot[linewidth=2.pt,linecolor=blue]{-3.}{3.}{x^2/2/0.5}}
+\rput[tl](0.26,2.86){\blue{convexe}}
+\end{pspicture*}
+\end{center}
+
+
+
+\item Pour tout $x\in\mathbb{R}~:$
+\begin{align*}
+g(x)&=x^3\\
+g'(x)&=3x^2\\
+g''(x)&=6x.
+\end{align*}
+
+\medskip
+
+Cette fois, le tableau de signe est fortement recommandé~:
+
+
+\begin{center}
+\hspace*{-1cm}
+\begin{tikzpicture}[scale=1.2]
+\tkzTabInit{$x$/1,$g''(x)=6x$/1,Convexité/3}{$-\infty$,$0$,$+\infty$}
+\tkzTabLine{,-,z,+,}
+
+\tkzTabLine{,g\text{ concave},\scriptsize{\Longstack{P\\t\\ \\i\\n\\f\\l\\e\\x\\i\\o\\n}},g\text{ convexe},}
+\end{tikzpicture}
+\end{center}
+
+Conclusion~:
+
+\begin{itemize}
+\item[\textbullet] $g$ est concave sur $\left]-\infty;0\right]~;$
+\item[\textbullet] $g$ est convexe sur $\left[0;+\infty\right[~;$
+\item[\textbullet] le point de coordonnées $(0;0)$ est un point d'inflexion.
+\end{itemize}
+
+\medskip
+
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.46,-1.76)(3.44,1.88)
+\multips(0,-1)(0,1.0){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.46,0)(3.44,0)}
+\multips(-2,0)(1.0,0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.76)(0,1.88)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.46,-1.76)(3.44,1.88)
+\rput[tl](1.06,0.86){\blue{convexe}}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{0}{3.4400000000000035}{x^(3.0)}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-2.460000000000003}{0}{x^(3.0)}
+\rput[tl](-2.34,-0.66){\red{concave}}
+\rput[tl](0.58,-1.22){\green{point d'inflexion}}
+\psline[linewidth=2.pt,linecolor=green]{->}(1.,-1.)(0.,0.)
+\psdots[dotstyle=*,linecolor=green](0.,0.)
+\end{pspicture*}
+\end{center}
+\item Pour tout $x\in\mathbb{R}~:$
+\begin{align*}
+h(x)&=\text{e}^{x}\\
+h'(x)&=\text{e}^{x}\\
+h''(x)&=\text{e}^{x}.
+\end{align*}
+
+\medskip
+
+Conclusion~: $h''$ est strictement positive, donc $h$ est convexe sur $\mathbb{R}$ (cette fois, on se passe du tableau de signes).
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.74,-0.86)(2.58,3.22)
+\multips(0,0)(0,1.0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.74,0)(2.58,0)}
+\multips(-3,0)(1.0,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.86)(0,3.22)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.74,-0.86)(2.58,3.22)
+\rput[tl](-2.3,0.9){\blue{convexe}}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{-3.7400000000000038}{2.5800000000000027}{EXP(x)}
+\end{pspicture*}
+\end{center}
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+\begin{exo}
+
+La fonction $g$ est définie sur l'intervalle $\left[-1;3\right]$ par
+
+\[ g(x) = -0,5 x^3+2x^2-2x.\]
+
+
+
+\begin{enumerate}
+\item \medskip
+
+Pour tout $x\in\left[-1;3\right]~:$
+
+\[g'(x)=-0,5\times 3x^2+2\times 2x-2\times 1=-1,5x^2+4x-2.\]
+
+La dérivée est du second degré, donc on utilise la méthode de la classe de première~:
+
+\begin{itemize}
+\item[\textbullet] $a=-1,5,$ $b=4,$ $c=-2.$
+\item[\textbullet] le discriminant est $\Delta=b^2-4ac=4^2-4\times (-1,5)\times (-2)=4.$
+\item[\textbullet] $\Delta>0,$ donc il y a deux racines~:
+
+\begin{align*}x_1&=\frac{-b-\sqrt{\Delta}}{2a}=\frac{-4-\sqrt{4}}{2\times (-1,5)}=\frac{-4-2}{-3}=\frac{-6}{-3}=2,\\
+x_2&=\frac{-b+\sqrt{\Delta}}{2a}=\frac{-4+\sqrt{4}}{2\times (-1,5)}=\frac{-4+2}{-3}=\frac{-2}{-3}=\frac{2}{3}.
+\end{align*}
+\end{itemize}
+
+\medskip
+
+$a=-1,5$  $a$ est $\ominus$ donc le signe est de la forme \fbox{$-~\upphi~+~\upphi~-$}
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+\tkzTabInit{$x$/1,$g'(x)$/1,$g(x)$/2}{$-1$,$\frac{2}{3}$,$2$,$3$}
+\tkzTabLine{,-,z,+,z,-}
+\tkzTabVar{+/$3.5$,-/$-\frac{16}{27}$,+/$0$,-/$-1.5$}
+\end{tikzpicture}
+\end{center}
+
+\columnbreak
+
+\begin{itemize}
+\item[\textbullet] $g(-1)=-0,5\times (-1)^3+2\times (-1)^2-2\times (-1)=3,5$
+\item[\textbullet] $g\left(\frac{2}{3}\right)=-0,5\times \left(\frac{2}{3}\right)^3+2\times \left(\frac{2}{3}\right)^2-2\times \left(\frac{2}{3}\right)=-\frac{16}{27}$
+\item[\textbullet] $g(2)=-0,5\times 2^3+2\times 2^2-2\times 2=0$
+\item[\textbullet] $g(3)=-0,5\times 3^3+2\times 3^2-2\times 3=-1,5$
+
+\end{itemize}
+
+
+\end{multicols}
+
+\item Pour tout $x\in\left[-1;3\right]~:$
+\[g''(x)=-1,5\times 2x+4\times 1-0=-3x+4.\]
+
+
+On étudie le signe de $g''~:$
+\[-3x+4=0\iff -3x=-4\iff x=\frac{-4}{-3}=\frac{4}{3}.\]
+
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+\tkzTabInit{$x$/1,$-3x+4$/1,Convexité/3}{$-1$,$\frac{4}{3}$,$3$}
+\tkzTabLine{,+,z,-,}
+\tkzTabLine{,g\text{ convexe},\scriptsize{\Longstack{P\\t\\ \\i\\n\\f\\l\\e\\x\\i\\o\\n}},g\text{ concave},}
+\end{tikzpicture}
+\end{center}
+
+$g\left(\frac{4}{3}\right)=\left[\cdots\right]=-\frac{8}{27},$ donc le point de coordonnées $\left(\frac{4}{3};-\frac{8}{27}\right)$ est un point d'inflexion (noté $I$ sur la figure ci-dessous).
+\item ~{}
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.44,-1.64)(4.44,3.24)
+\multips(0,-1)(0,1.0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(-1.44,0)(4.44,0)}
+\multips(-1,0)(1.0,0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,-1.64)(0,3.24)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.44,-1.64)(4.44,3.24)
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=blue]{-1.0}{1.33333}{-0.5*x^(3.0)+2.0*x^(2.0)-2.0*x+0}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=red]{1.33333}{3}{-0.5*x^(3.0)+2.0*x^(2.0)-2.0*x+0.0}
+\rput[tl](0.14,0.88){\blue{convexe}}
+\rput[tl](3.16,-0.72){\red{concave}}
+\psdots[dotstyle=*,linecolor=green](1.3333333333333333,-0.2777777777777777)
+\rput[bl](1.42,-0.72){\green{$I$}}
+\end{pspicture*}
+\end{center}
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+\begin{exo}
+
+La fonction $h$ est définie sur l'intervalle $\left[-1;4\right]$ par
+
+\[ h(x) = (2x+3)\text{e}^{-x}.\]
+
+On calcule les dérivées première et seconde~:
+
+\medskip
+
+\begin{enumerate}
+\item \textbf{Dérivée première.} On utilise la formule pour la dérivée d'un produit avec
+
+\begin{align*}
+&u(x)=2x+3&&,&& v(x)=\text{e}^{-x}, \\
+& u'(x)=2&&, &&v'(x)=-\text{e}^{-x}.\\
+\end{align*}
+
+On obtient, pour tout $x\in\left[-1;4\right]~:$
+
+
+\begin{align*}h'(x)&=u'(x)\times v(x)+u(x)\times v'(x)\\
+&=2\times\text{e}^{-x}+\left(2x+3\right)\times \left(-\text{e}^{-x}\right)\\
+&=2\times\text{e}^{-x}+2x\times\left(-\text{e}^{-x}\right)+3\times\left(-\text{e}^{-x}\right)\\
+&=2\times\text{e}^{-x}-2x\times\text{e}^{-x}-3\times\text{e}^{-x}\\
+&=\left(2-2x-3\right)\text{e}^{-x}\\
+&=\left(-2x-1\right)\text{e}^{-x}.
+\end{align*}
+\item \textbf{Dérivée seconde.}  On utilise la formule pour la dérivée d'un produit avec
+
+\begin{align*}
+&u(x)=-2x-1&&,&& v(x)=\text{e}^{-x}, \\
+& u'(x)=-2&&, &&v'(x)=-\text{e}^{-x}.\\
+\end{align*}
+
+On obtient, pour tout $x\in\left[-1;4\right]~:$
+
+
+\begin{align*}h''(x)&=u'(x)\times v(x)+u(x)\times v'(x)\\
+&=-2\times\text{e}^{-x}+\left(-2x-1\right)\times \left(-\text{e}^{-x}\right)\\
+&=-2\times\text{e}^{-x}+(-2x)\times\left(-\text{e}^{-x}\right)+(-1)\times\left(-\text{e}^{-x}\right)\\
+&=-2\times\text{e}^{-x}+2x\times\text{e}^{-x}+1\times\text{e}^{-x}\\
+&=\left(-2+2x+1\right)\text{e}^{-x}\\
+&=\left(2x-1\right)\text{e}^{-x}.
+\end{align*}
+\end{enumerate}
+
+\medskip
+
+On étudie le signe de la dérivée seconde~:
+\[h''(x)=\left(2x-1\right)\text{e}^{-x}.\]
+
+\begin{itemize}
+\item[\textbullet] $2x-1=0\iff 2x=1\iff x=\frac{1}{2}.$
+\item[\textbullet] $\text{e}^{-x}$ est $\oplus$ pour tout $x\in\left[-1;4\right].$
+\end{itemize}
+
+\medskip
+
+On a donc le tableau~:
+
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+\tkzTabInit{$x$/1,$2x-1$/1,$\text{e}^{-x}$/1,$h''(x)$/1,Convexité/3}{$-1$,$\frac{1}{2}$,$4$}
+\tkzTabLine{,-,z,+,}
+\tkzTabLine{,+,,+,}
+\tkzTabLine{,-,z,+,}
+\tkzTabLine{,h\text{ concave},\scriptsize{\Longstack{P\\t\\ \\i\\n\\f\\l\\e\\x\\i\\o\\n}},h\text{ convexe},}
+\end{tikzpicture}
+\end{center}
+
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.26,-0.5)(5.3,3.8)
+\multips(0,0)(0,1.0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(-2.26,0)(6.18,0)}
+\multips(-2,0)(1.0,0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(0,3.8)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.26,-1.98)(5.3,3.8)
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=red]{-1}{0.5}{(2.0*x+3.0)*2.718281828459045^(-x)}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=blue]{0.5}{4}{(2.0*x+3.0)*2.718281828459045^(-x)}
+\psline[linewidth=2.pt,linecolor=green]{->}(1.1,3.3)(0.5,2.4261226388505337)
+\rput[tl](0.3,3.8){\green{Point d'inflexion}}
+\rput[tl](-1.68,1.46){\red{concave}}
+\rput[tl](2.58,1.34){\blue{convexe}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=green](0.5,2.4261226388505337)
+\end{pspicture*}
+\end{center}
+
+
+\end{exo}
+
+\begin{exo}
+
+On note $\mathcal{C}$ la courbe de la fonction exponentielle et $T$ sa tangente au point $A(0;1).$
+
+\begin{enumerate}
+
+\item On pose $f(x)=\text{e}^x$ pour tout $x\in\mathbb{R}.$ On sait que $f'(x)=\text{e}^x$ pour tout $x\in\mathbb{R},$ donc\[f(0)=f'(0)=\text{e}^0=1.\] L'équation de la tangente $T$ est donc
+\begin{align*}
+y&=f'(0)(x-0)+f(0)\\
+y&=1(x-0)+1\\
+y&=x+1
+\end{align*}
+\item On a déjà vu dans un exercice précédent que la fonction exponentielle était convexe sur $\mathbb{R}.$ D'après le théorème 8 du cours, la courbe $\mathcal{C}$ est au-dessus de toutes ses tangentes~; elle est donc en particulier au-dessus de $T.$ Il s'ensuit que
+\[\text{e}^x\geq x+1\] pour tout $x\in\mathbb{R}.$
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.44,-1.04)(4.8,4.42)
+\multips(0,-1)(0,1.0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-4.44,0)(4.8,0)}
+\multips(-4,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.04)(0,4.42)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-4.44,-1.04)(4.8,4.42)
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-4.439999999999999}{4.799999999999998}{EXP(x)}
+\psplot[linewidth=2.pt,linecolor=blue]{-4.44}{4.8}{(--1.--1.*x)/1.}
+\rput[tl](0.74,3.56){\red{$\mathcal{C}$}}
+\rput[tl](1.78,2.6){\blue{$T$}}
+\psdots[dotsize=5pt 0,dotstyle=*,linecolor=blue](0.,1.)
+\rput[bl](0.12,0.68){\blue{$A$}}
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} On a déjà démontré ce résultat par une étude de fonction, dans l'exercice 10.
+\end{enumerate}
+
+\end{exo}
+
 
 \end{document}
