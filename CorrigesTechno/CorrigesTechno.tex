@@ -503,7 +503,206 @@ On place à chaque fois les deux points en gris, puis on trace les droites en co
 
 \end{exo}
 
+\vspace*{-0.5cm}
 
+
+\begin{exo}
+
+On lit graphiquement les ordonnées à l'origine et les coefficients directeurs des droites~:
+
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.7,-2.56)(6.66,5.96)
+\multips(0,-2)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.7,0)(6.66,0)}
+\multips(-2,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.56)(0,5.96)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.7,-2.56)(6.66,5.96)
+\psplot[linewidth=2.pt,linecolor=green]{-1}{5}{(-1.--2.*x)/1.}
+\psline[linewidth=2.pt]{->}(0.,-1.)(1.,-1.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(1.,-1.)(1.,1.)
+\psline[linewidth=2.pt]{->}(1.,1.)(2.,1.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(2.,1.)(2.,3.)
+\psline[linewidth=2.pt]{->}(2.,3.)(3.,3.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(3.,3.)(3.,5.)
+\rput[tl](2.5,5.58){\green{$D_1$}}
+\rput[tl](1.06,-0.34){\xfqqff{$+2$}}
+\rput[tl](2.06,2.04){\xfqqff{$+2$}}
+\rput[tl](3.06,4.06){\xfqqff{$+2$}}
+\rput[tl](-1.88,-0.85){$\ffxfqq{\fbox{$b=-1$}}$}
+\psline[linewidth=2.pt]{->}(4.72,2.74)(3.84,3.82)
+\rput[tl](4.22,2.7){\xfqqff{\fbox{$a=2$}}}
+\psdots[dotstyle=*,linecolor=ffxfqq](0.,-1.)
+\end{pspicture*}
+\end{center}
+
+
+\definecolor{VIOLET}{rgb}{0.4980392156862745,0.,1.}
+\definecolor{ORANGE}{rgb}{1.,0.4980392156862745,0.}
+
+\begin{align*}
+&\textcolor{green}{D_1:y=\textcolor{VIOLET}{2}x\textcolor{ORANGE}{-1}}\\
+&D_1:y=2x-1
+\end{align*}
+
+\columnbreak
+
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.7,-2.56)(6.66,5.96)
+\multips(0,-2)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.7,0)(6.66,0)}
+\multips(-2,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.56)(0,5.96)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.7,-2.56)(6.66,5.96)
+\psplot[linewidth=2.pt,linecolor=green]{-1}{5}{(--4.-1.*x)/1.}
+\rput[tl](4.,0.56){\green{$D_2$}}
+\rput[tl](1.06,3.56){\xfqqff{$-1$}}
+\rput[tl](-1.78,4.48){$\ffxfqq{\fbox{$b=4$}}$}
+\rput[tl](3.62,3.66){$\xfqqff{\fbox{$a=-1$}}$}
+\psline[linewidth=2.pt]{->}(0.,4.)(1.,4.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(1.,4.)(1.,3.)
+\psline[linewidth=2.pt]{->}(1.,3.)(2.,3.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(2.,3.)(2.,2.)
+\psline[linewidth=2.pt]{->}(2.,2.)(3.,2.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(3.,2.)(3,1.)
+\rput[tl](2.06,2.56){\xfqqff{$-1$}}
+\rput[tl](3.06,1.56){\xfqqff{$-1$}}
+\psline[linewidth=2.pt]{->}(3.78,3.06)(2.76,2.48)
+\psdots[dotstyle=*,linecolor=ffxfqq](0.,4.)
+\end{pspicture*}
+\end{center}
+
+\definecolor{VIOLET}{rgb}{0.4980392156862745,0.,1.}
+\definecolor{ORANGE}{rgb}{1.,0.4980392156862745,0.}
+
+\begin{align*}
+&\textcolor{green}{D_2:y=\textcolor{VIOLET}{-1}x\textcolor{ORANGE}{+4}}\\
+&D_2:y=-x+4
+\end{align*}
+
+\end{multicols}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.7098267872637365,-4.222754171484549)(7.291644850785794,1.951332144357107)
+\multips(0,-4)(0,1.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.7098267872637365,0)(7.291644850785794,0)}
+\multips(-1,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-4.222754171484549)(0,1.951332144357107)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.7098267872637365,-4.222754171484549)(7.291644850785794,1.951332144357107)
+\psplot[linewidth=2.pt,linecolor=green]{-1}{5}{(-2.--0.5*x)/1.}
+\rput[tl](4.2334525634997355,0.9127008015052398){\green{$D_3$}}
+\rput[tl](-1.5,-1.43383667678972){$\ffxfqq{\fbox{$b=-2$}}$}
+\rput[tl](3.86800820212593,-2.3){$\xfqqff{\fbox{$a=0,5$}}$}
+\psline[linewidth=2.pt]{->}(0.,-2.)(1.,-2.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(1.,-2.)(1.,-1.5)
+\psline[linewidth=2.pt]{->}(1.,-1.5)(2.,-1.5)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(2.,-1.5)(2.,-1.)
+\psline[linewidth=2.pt]{->}(2.,-1.)(3.,-1.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(3.,-1.)(3.,-0.5)
+\rput[tl](1.12,-1.7){\xfqqff{$+0,5$}}
+\rput[tl](2.12,-1.2){\xfqqff{$+0,5$}}
+\rput[tl](3.12,-0.7){\xfqqff{$+0,5$}}
+\psline[linewidth=2.pt]{->}(4.214218649743219,-2.1)(3.6,-1.06)
+\psdots[dotstyle=*,linecolor=ffxfqq](0.,-2.)
+\end{pspicture*}
+
+\end{center}
+
+\definecolor{VIOLET}{rgb}{0.4980392156862745,0.,1.}
+\definecolor{ORANGE}{rgb}{1.,0.4980392156862745,0.}
+
+\begin{align*}
+&\textcolor{green}{D_3:y=\textcolor{VIOLET}{0,5}x\textcolor{ORANGE}{-2}}\\
+&D_3:y=0,5x-2
+\end{align*}
+
+\columnbreak
+
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.342916244511982,-4.076140688436127)(6.870029275496755,4.3690593715718675)
+\multips(0,-4)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.342916244511982,0)(6.870029275496755,0)}
+\multips(-2,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-4.076140688436127)(0,4.3690593715718675)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.342916244511982,-4.076140688436127)(6.870029275496755,4.3690593715718675)
+\psplot[linewidth=2.pt,linecolor=green]{-1}{5}{(--3.-1.5*x)/1.}
+\rput[tl](3.15,-2.5012782063833545){\green{$D_4$}}
+\rput[tl](-1.9295148429731284,3.6209996925968){$\ffxfqq{\fbox{$b=3$}}$}
+\rput[tl](3.936847902673461,-1.9500763376648838){$\xfqqff{\fbox{$a=-1,5$}}$}
+\rput[tl](1.0430380919014859,2.35){\xfqqff{$-1,5$}}
+\rput[tl](2.06669870523579,0.85){\xfqqff{$-1,5$}}
+\rput[tl](3.0706735375444345,-0.65){\xfqqff{$-1,5$}}
+\psline[linewidth=2.pt]{->}(4.214218649743219,-1.8954506069461055)(3.791072547099865,-1.0683923154159147)
+\psline[linewidth=2.pt]{->}(0.,3.)(1.,3.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(1.,3.)(1.,1.5)
+\psline[linewidth=2.pt]{->}(1.,1.5)(2.,1.5)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(2.,1.5)(2.,0.)
+\psline[linewidth=2.pt]{->}(2.,0.)(3.,0.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(3.,0.)(3.,-1.5)
+\psdots[dotstyle=*,linecolor=ffxfqq](0.,3.)
+\end{pspicture*}
+\end{center}
+
+\definecolor{VIOLET}{rgb}{0.4980392156862745,0.,1.}
+\definecolor{ORANGE}{rgb}{1.,0.4980392156862745,0.}
+
+\begin{align*}
+&\textcolor{green}{D_4:y=\textcolor{VIOLET}{-1,5}x\textcolor{ORANGE}{+3}}\\
+&D_4:y=-1,5x+3
+\end{align*}
+
+\end{multicols}
+
+\end{exo}
+
+
+\begin{exo}
+
+Le graphique suivant donne le prix payé dans une pompe à essence en fonction de la quantité de gazole achetée.
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.7596559723553132,-0.6294697319234536)(6.484452736237389,6.424504889829535)
+\multips(0,0)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-0.7596559723553132,0)(6.484452736237389,0)}
+\multips(0,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.6294697319234536)(0,6.424504889829535)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.7596559723553132,-0.6294697319234536)(6.484452736237389,6.424504889829535)
+\rput[tl](5.15,0.8){\parbox{2.5210726947176276 cm}{gazole \\(en $\ell$)}}
+\rput[lt](0.12,5.302713777475287){\parbox{2.5210726947176276 cm}{prix \\(en \euro)}}
+\psplot[linewidth=2.pt]{0.}{6.484452736237389}{1.5*x}
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](4.,0.)(4.,6.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](4.,6.)(0.,6.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(0.,0.)(1.,0.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(1.,0.)(1.,1.5)
+\rput[tl](1.06,0.86){\xfqqff{$+1,5$}}
+\end{pspicture*}
+\end{center}
+
+
+Il y a deux méthodes possibles pour répondre à la question~:
+
+\begin{itemize}
+\item[\textbullet] \textbf{Pointillés rouges~:} 4 litres de gazole coûtent 6~\euro, donc le litre coûte $6\div 4=1,5$~\euro.
+\item[\textbullet] \textbf{Flèches violettes~:} chaque litre coûte 1,5~\euro.
+\end{itemize}
+
+
+\end{exo}
 
 
 \end{document}
