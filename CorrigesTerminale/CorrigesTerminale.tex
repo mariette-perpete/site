@@ -1515,4 +1515,134 @@ y&=x+1
 \end{exo}
 
 
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item Si $u(x)=x^2$ et $ v(x)=4x+1,$ alors
+\[v\circ u(x)=v(u(x))=v\left(x^2\right)=4x^2+1.\]
+\item Si $u(x)=x+2$ et $v(x)=x^3-3x,$ alors
+\[v\circ u(x)=v(u(x))=v\left(x+2\right)=(x+2)^3-3(x+2).\]
+\item  Si $u(x)=x-4$ et $ v(x)=\sqrt{x},$ alors
+\[v\circ u(x)=v(u(x))=v\left(x-4\right)=\sqrt{x-4}.\]
+\item Si $u(x)=2x+3$ et $v(x)=\text{e}^x,$ alors
+\[v\circ u(x)=v(u(x))=v\left(2x+3\right)=\text{e}^{2x+3}.\]
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+\begin{enumerate}
+\item Sachant que $v\circ u(x)=\sqrt{x^2+1},$ on peut prendre
+\[u(x)=x^2+1\qquad,\qquad v(x)=\sqrt{x}.\]
+\item Sachant que $v\circ u(x)=(x-3)^2+5(x-3)+1,$ on peut prendre
+\[u(x)=x-3\qquad,\qquad v(x)=x^2+5x+1.\]
+\item  Sachant que $v\circ u(x)=\text{e}^{3x-1},$ on peut prendre
+\[u(x)=3x-1\qquad,\qquad v(x)=\text{e}^x.\]
+\end{enumerate}
+
+\medskip
+
+\textbf{Remarque~:} Il y a une infinité de choix possibles. Par exemple, pour le deuxième, on pourrait prendre
+\[u(x)=(x-3)^2+5(x-3)\qquad,\qquad v(x)=x+1~;\]
+
+ou encore 
+\[u(x)=(x-3)^2+5(x-3)+1\qquad,\qquad v(x)=x~;\]
+etc.
+
+
+\end{exo}
+
+\begin{exo}
+
+On considère dans un repère orthonormé la parabole $P:y=x^2$ et le point $A(3;0).$
+
+
+\begin{enumerate}
+\item Soit $m$ un réel et soit $M$ le point de $P$ d'abscisse $m.$ L'ordonnée de $M$ est $m^2,$ donc 
+\begin{align*}AM&=\sqrt{\left(x_M-x_A\right)^2+\left(y_M-y_A\right)^2}
+\\&=\sqrt{\left(m-3\right)^2+\left(m^2-0\right)^2}
+\\&=\sqrt{m^2-2\times m\times 3+3^2+m^4}
+\\&=\sqrt{m^4+m^2-6m+9}.
+\end{align*}
+
+\medskip
+
+On remarque que $AM=f(m),$ où $f$ est la fonction définie dans la question suivante. De ce fait, trouver le point $M$ pour lequel la longueur $AM$ est minimale revient à trouver la valeur de $x$ pour laquelle $f$ atteint son minimum. Nous y reviendrons dans la question 3.
+\item On pose $f(x)=\sqrt{x^4+x^2-6x+9}$ pour tout $x\in\mathbb{R}.$
+
+
+La fonction $f$ est de la forme $f(x)=\sqrt{u(x)},$ avec  \[u(x)=x^4+x^2-6x+9,\qquad u'(x)=4x^3+2x-6.\]
+ On a donc, pour tout $x\in\mathbb{R}~:$ \[f'(x)=\dfrac{u'(x)}{2\sqrt{u(x)}}=\dfrac{4x^3+2x-6}{2\sqrt{x^4+x^2-6x+9}}=\dfrac{\cancel{2}\left(2x^3+x-3\right)}{\cancel{2}\sqrt{x^4+x^2-6x+9}}=\dfrac{2x^3+x-3}{\sqrt{x^4+x^2-6x+9}}.\]
+
+
+\medskip
+
+Pour démontrer la formule de l'énoncé, on développe~:
+\[(x-1)\left(2x^2+2x+3\right)=x\times 2x^2+x\times 2x+x\times 3-1\times 2x^2-1\times 2x-1\times 3=2x^3+2x^2+3x-2x^2-2x-3=2x^3+x-3.\]
+On retombe sur le numérateur obtenu précédemment~; on a donc bien
+\[f'(x)=\dfrac{(x-1)\left(2x^2+2x+3\right)}{\sqrt{x^4+x^2-6x+9}}.\]
+
+Pour construire le tableau de variations de la fonction $f,$ il faut étudier le signe de $2x^2+2x+3.$ Son discriminant est $\Delta=2^2-4\times 2\times 3=-20,$ donc il n'y a pas de racine et $2x^2+2x+3$ est strictement positif pour tout réel $x.$ On peut donc compléter le tableau~:
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=1.3]
+\tkzTabInit{$x$/1,$x-1$/1,$2x^2+2x+3$/1,\footnotesize$\sqrt{x^4+x^2-6x+9}$/1,\normalsize$f'(x)$/1,$f(x)$/2}{$-\infty$,$1$,$+\infty$}
+\tkzTabLine{,-,z,+,}
+\tkzTabLine{,+,,+,}
+\tkzTabLine{,+,,+,}
+\tkzTabLine{,-,z,+,}
+\tkzTabVar{+/,-/,+/}
+\end{tikzpicture}
+\end{center}
+
+\item
+
+\begin{itemize}
+\item[\textbullet] La fonction $f$ atteint son minimum pour $x=1,$ donc la longueur $AM$ est minimale lorsque $m=1.$ Autrement dit, le point de $P$ le plus proche de $A$ est le point $M(1;1).$
+
+\item[\textbullet] La tangente $(T)$ à la parabole $P$ au point $M$ a pour équation
+\[y=g'(1)(x-1)+g(1),\]
+avec $g(x)=x^2$ -- donc $g'(x)=2x,$ et $g'(1)=2\times 1=2.$ On a ainsi
+
+\begin{align*}
+(T):y&=g'(1)(x-1)+g(1)\\
+y&=2(x-1)+1\\
+y&=2x-1.
+\end{align*}
+\item[\textbullet] Pour prouver que $(AM)$ est perpendiculaire à $(T),$ on utilise le produit scalaire~:
+
+
+$(T)$ passe par $M(1;1)$ et par $N(2;3)$ (puisque $2\times 2-1=3$), donc elle est dirigée par le vecteur $\overrightarrow{MN}\begin{pmatrix}1\\2\end{pmatrix}.$ Par ailleurs $\overrightarrow{AM}\begin{pmatrix}-2\\1\end{pmatrix},$ donc
+\[\overrightarrow{MN}\cdot \overrightarrow{AM}=1\times (-2)+2\times 1=0.\] Les droites $(T)$ et $(AM)$ sont donc bien perpendiculaires.
+\end{itemize}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.34,-0.92)(4.92,5.4)
+\multips(0,0)(0,1.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.34,0)(4.92,0)}
+\multips(-2,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.92)(0,5.4)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.34,-0.92)(4.92,5.4)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!30!white,fillstyle=solid,opacity=0.1](1.3794733192202056,0.8102633403898972)(1.5692099788303084,1.1897366596101029)(1.1897366596101029,1.3794733192202056)(1.,1.)
+\rput{0.}(0.,0.){\psplot[linewidth=2.pt,linecolor=blue]{-4.}{4.}{x^2/2/0.5}}
+\psplot[linewidth=2.pt,linecolor=red]{-2.34}{4.92}{(-0.5--1.*x)/0.5}
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](3.,0.)(1.,1.)
+\rput[tl](2.28,3.36){\red{$(T)$}}
+\rput[tl](-1.42,2.64){\blue{$P$}}
+\psdots[dotstyle=*,linecolor=ududff](1.,1.)
+\rput[bl](0.74,1.36){\ududff{$M$}}
+\psdots[dotstyle=*,linecolor=red](3.,0.)
+\rput[bl](3.08,0.2){\red{$A$}}
+\end{pspicture*}
+\end{center}
+\end{enumerate}
+
+\end{exo}
+
 \end{document}
