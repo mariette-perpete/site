@@ -1075,4 +1075,87 @@ E&=\frac{\left(10^4\right)^3}{10^8}=\frac{10^{4\times 3}}{10^8}=\frac{10^{12}}{1
 \end{exo}
 
 
+\begin{exo}%27
+
+Pour ranger les nombres par ordre croissant, on les écrit sous forme décimale, en écrivant à chaque fois quatre chiffres après la virgule pour simplifier les comparaisons.
+
+On rappelle avant cela que $10^{-3}=\dfrac{1}{10^3}=\dfrac{1}{1000}=\underbrace{0,00}_{\text{3 zéros}}1,$ donc multiplier un nombre par $10^{-3}$ revient à décaler la virgule de 3 rangs vers la gauche (le raisonnement est le même pour $10^{-2}$).
+
+\begin{align*}
+A&=35,4\times 10^{-3}&&=0,0354\\
+B&=0,034&&=0,0340\\
+C&=3,6\times 10^{-2}=0,036&&=0,0360\\
+D&=\frac{355}{10^4}=\frac{355}{\np{10000}}&&=0,0355\\
+E&=\frac{7}{60}\times\frac{3}{10}=\frac{7\times 3}{60\times 10}=\frac{7\times \cancel{3}}{20\times\cancel{3}\times 10}=\frac{7}{200}&&=0,0350
+\end{align*}
+
+Conclusion~: $B<E<A<D<C.$
+\end{exo}
+
+
+
+
+
+\begin{exo}
+
+Avant de commencer, il est utile de se rappeler que 10~cm=1~dm~; et que 1~$\ell=1~\text{dm}^3.$ Autrement dit, un litre est le volume d'un cube qui mesure 1~dm sur 1~dm sur 1~dm, ou encore 10~cm sur 10~cm sur 10~cm (la figure ci-dessous n'est bien sûr pas à l'échelle).
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.42,-1.12)(4.42,3.5)
+\psline[linewidth=2.pt](0.,0.)(2.,0.)
+\psline[linewidth=2.pt](2.,0.)(2.,2.)
+\psline[linewidth=2.pt](2.,2.)(0.,2.)
+\psline[linewidth=2.pt](0.,2.)(0.,0.)
+\psline[linewidth=2.pt](0.,2.)(1.,3.)
+\psline[linewidth=2.pt](1.,3.)(3.,3.)
+\psline[linewidth=2.pt](2.,2.)(3.,3.)
+\psline[linewidth=2.pt](2.,0.)(3.,1.)
+\psline[linewidth=2.pt](3.,3.)(3.,1.)
+\rput[tl](0.58,-0.16){1~dm}
+\rput[tl](-1.,1.14){1~dm}
+\rput[tl](2.7,0.52){1~dm}
+\rput[tl](0.92,1.24){$1~\ell$}
+\end{pspicture*}
+\end{center}
+
+
+\medskip
+
+
+On remplit d'eau un aquarium rectangulaire dont la largeur est 80~cm, la profondeur 30~cm et la hauteur 40~cm. On dispose d'un robinet dont le débit est de 6 litres par minute.
+
+\begin{enumerate}
+\item Les dimensions de l'aquarium sont~:
+\[\text{largeur}=8~\text{dm},\qquad \text{profondeur}=3~\text{dm},\qquad \text{hauteur}=4~\text{dm},\] donc son volume est
+\[8\times 3\times 4=96~\ell.\]
+
+\begin{center}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.476052349791793,0.11148839976204462)(12.435257584770984,6.724523497917915)
+\psline[linewidth=2.pt](2.,1.)(10.,1.)
+\psline[linewidth=2.pt](10.,1.)(10.,5.)
+\psline[linewidth=2.pt](2.,1.)(2.,5.)
+\psline[linewidth=2.pt](2.,5.)(10.,5.)
+\psline[linewidth=2.pt](2.,5.)(4.,6.)
+\psline[linewidth=2.pt](4.,6.)(12.,6.)
+\psline[linewidth=2.pt](10.,5.)(12.,6.)
+\psline[linewidth=2.pt](10.,1.)(12.,2.)
+\psline[linewidth=2.pt](12.,2.)(12.,6.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=3pt 3pt](4.,6.)(4.,2.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=3pt 3pt](2.,1.)(4.,2.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=3pt 3pt](4.,2.)(12.,2.)
+\rput[tl](5.720873289708514,0.8209327781082683){8 dm}
+\rput[tl](0.932123735871508,3.2026389054134476){4 dm}
+\rput[tl](11.09238072575849,1.4797025580011902){3 dm}
+\end{pspicture*}
+\end{center}
+\item On peut se passer d'un tableau de proportionnalité~: le débit du robinet est de 6~$\ell$/min, donc il faut $96\div 6=16$~min pour remplir les 96~$\ell$ de l'aquarium.
+\end{enumerate}
+\end{exo}
+
+
+
+
 \end{document}

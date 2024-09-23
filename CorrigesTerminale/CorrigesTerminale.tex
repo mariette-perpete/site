@@ -1645,4 +1645,228 @@ $(T)$ passe par $M(1;1)$ et par $N(2;3)$ (puisque $2\times 2-1=3$), donc elle es
 
 \end{exo}
 
+\section{Suites et récurrence}
+
+
+\begin{exo}
+
+On calcule trois ou quatre termes, suivant le cas -- suffisamment pour \og avoir compris le principe \fg.
+
+\begin{enumerate}
+\item Pour tout $n\in\mathbb{N}~:$ $u_n=\dfrac{n^2-1}{n+2}.$
+
+\begin{align*}
+u_0&=\dfrac{0^2-1}{0+2}=-\dfrac{1}{2}\\
+u_1&=\dfrac{1^2-1}{1+2}=\dfrac{0}{3}=0\\
+u_2&=\dfrac{2^2-1}{2+2}=\dfrac{3}{4}
+\end{align*}
+
+\item Pour tout $n\in\mathbb{N}^*~:$ $v_n=\dfrac{(-1)^n}{n}.$
+
+\danger On \og démarre \fg~{} à $n=1,$ puisqu'on ne peut pas diviser par $0.$
+
+\begin{align*}
+v_1&=\dfrac{(-1)^1}{1}=\dfrac{-1}{1}=-1\\
+v_2&=\dfrac{(-1)^2}{2}=\dfrac{1}{2}\\
+v_3&=\dfrac{(-1)^3}{3}=\dfrac{-1}{3}=-\dfrac{1}{3}\\
+v_4&=\dfrac{(-1)^4}{4}=\dfrac{1}{4}
+\end{align*}
+
+Les termes sont alternativement positifs et négatifs. On dit que la suite est alternée.
+\item $u_0=3$ et pour tout $n\in\mathbb{N}~:$
+\[u_{n+1}=2u_n-1.\]
+
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{4}
+
+\begin{align*}
+&\text{On prend}~n=0~:\\
+u_{0+1}&=2u_0-1\\
+u_{1}&=2\times 3-1\\
+u_1&=5
+\end{align*}
+
+\begin{align*} 
+&\text{On prend}~n=1~:\\
+u_{1+1}&=2u_1-1\\
+u_{2}&=2\times 5-1\\
+u_2&=9
+\end{align*}
+
+\begin{align*}
+&\text{On prend}~n=2~:\\
+u_{2+1}&=2u_2-1\\
+u_{3}&=2\times 9-1\\
+u_3&=17
+\end{align*}
+
+\begin{align*}
+&\text{On prend}~n=3~:\\
+u_{3+1}&=2u_3-1\\
+u_{4}&=2\times 17-1\\
+u_4&=33
+\end{align*}
+
+\end{multicols}
+
+\item $v_0=-1$ et $v_{n+1}=v_n+n$ \qquad pour tout $n\in\mathbb{N}.$
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{4}
+
+\begin{align*}
+&\text{On prend}~n=0~:\\
+v_{0+1}&=v_0+0\\
+v_{1}&=-1+0\\
+v_1&=-1
+\end{align*}
+
+\begin{align*} 
+&\text{On prend}~n=1~:\\
+v_{1+1}&=v_1+1\\
+v_{2}&=-1+1\\
+v_2&=0
+\end{align*}
+
+\begin{align*}
+&\text{On prend}~n=2~:\\
+v_{2+1}&=v_2+2\\
+v_{3}&=0+2\\
+v_3&=2
+\end{align*}
+
+\begin{align*}
+&\text{On prend}~n=3~:\\
+v_{3+1}&=v_3+3\\
+v_{4}&=2+3\\
+v_4&=5
+\end{align*}
+
+\end{multicols}
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+
+\item Pour diminuer un nombre de 8~\%, il faut le multiplier par 0,92, car $100~\%-8~\%=92~\%=0,92$. On peut donc compléter le schéma~:
+
+    \medskip
+
+
+\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{10} \ar@/^0.5cm/[r]|{\red{\times 0,92}} & 
+    *+[F]+{9,2} \ar@/^0.5cm/[r]|{\red{\times 0,92}} & *+[F]+{8,464} \\
+    \txt{\blue{$v_0$}}&
+    \txt{\blue{$v_1$}}&\txt{\blue{$v_2$}}\\
+    \txt{\blue{Au départ}}&
+    \txt{\blue{Après 1 jour}}&\txt{\blue{Après 2 jours}}
+    }$
+    \end{center}
+   
+   Conclusion~: 
+    \[v_0=10~;~v_1=9,2~;~v_2=8,464.\]
+    
+    \medskip
+
+La suite $(v_n)_{n\in\mathbb{N}}$ est géométrique de raison $q=0,92.$
+\item La masse d'iode 131 après 10 jours est
+\[v_{10}=v_0\times q^{10}=10\times 0,92^{10}\approx 4,3~\mu\text{g}.\]
+\item On part de 10 $\mu$g d'iode 131, donc il s'agit de déterminer à partir de quand il en restera moins de 5 $\mu$g. Pour cela, on fait un tableau de valeurs avec la calculatrice, en rentrant la formule 
+\[Y=10* 0.92^X\]
+(on peut aussi utiliser le mode suite ou le mode tableur, suivant les modèles).
+
+\medskip
+
+Après quelques essais\footnote{On ne peut pas savoir en démarrant jusqu'à quelle valeur de $n$ il faut aller~; il faut donc faire des essais. Lorsque nous connaîtrons le logarithme népérien, nous pourrons donner une méthode plus efficace~; et nous pourrons même donner une formule~: la demi-vie est $-\frac{\ln 2}{\ln 0,92}.$}, on obtient~:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+	$n$&8&9\\\hline
+$v_n$&$5,13$&$4,72$\\\hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+Conclusion~: la demi-vie de l'iode 131 est de 8 jours et quelques.
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item $100~\%-15~\%=85~\%=0,85,$ donc pour diminuer un nombre de 15~\%, il faut le multiplier par 0,85. 
+
+Ainsi, dans le schéma ci-dessous, l'intensité lumineuse est-elle multipliée par 0,85 à chaque nouvelle plaque~:
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{zzttqq}{0.6 0.2 0.}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.2095636134454244,-0.8024760882800114)(15,7)
+\pspolygon[linewidth=2.pt,linecolor=zzttqq,fillcolor=zzttqq!20!white,fillstyle=solid,opacity=0.1](0.,4.)(5.,4.)(7.,5.)(2.,5.)
+\pspolygon[linewidth=2.pt,linecolor=zzttqq,fillcolor=zzttqq!20!white,fillstyle=solid,opacity=0.1](0.,2.)(5.,2.)(7.,3.)(2.,3.)
+\pspolygon[linewidth=2.pt,linecolor=zzttqq,fillcolor=zzttqq!20!white,fillstyle=solid,opacity=0.1](0.,0.)(5.,0.)(7.,1.)(2.,1.)
+\psline[linewidth=2.pt]{->}(9.006307576513136,3.604370307388384)(6.96981037851486,3.604370307388384)
+\psline[linewidth=2.pt]{->}(8.989614976529543,5.607482305419475)(6.986502978498453,5.607482305419475)
+\psline[linewidth=2.pt]{->}(8.989614976529543,1.6012583093572934)(6.986502978498453,1.584565709373701)
+\psline[linewidth=2.pt]{->}(9.006307576513136,-0.3851610886902048)(6.986502978498453,-0.4018536886737972)
+\rput[tl](-0.95,5.15){\textcolor{zzttqq}{1\up{re} plaque}}
+\rput[tl](-0.95,3.15){\textcolor{zzttqq}{2\up{e} plaque}}
+\rput[tl](-0.95,1.15){\textcolor{zzttqq}{3\up{e} plaque}}
+\rput[tl](9.256696576267021,5.8){$v_0=12~\text{lm}$}
+\rput[tl](9.25,3.8){$v_1=12\times 0,85=10,2~\text{lm}$}
+\rput[tl](9.25,1.8){$v_2=10,2\times 0,85=8,67~\text{lm}$}
+\rput[tl](9.25,-0.2){$v_3=8,67\times 0,85=7,3695~\text{lm}$}
+\psline[linewidth=2.pt,linecolor=yellow](4.5,7.)(4.5,5.5)
+\psline[linewidth=2.pt,linecolor=yellow](4.,7.)(3.5,5.5)
+\psline[linewidth=2.pt,linecolor=yellow](5.,7.)(5.5,5.5)
+\rput[tl](1.5,6.328984750608794){\yellow{lumière}}
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Le lumen est une unité de mesure du flux lumineux, utilisée notamment pour indiquer la capacité d'éclairement des ampoules électriques.
+\item La suite $(v_n)_{n\in\mathbb{N}}$ est géométrique de raison $q=0,85,$ donc pour tout $n\in\mathbb{N}~:$
+\[v_n=v_0\times q^n=12\times 0,85^n.\]
+\item Comme on part de 12~lm, il s'agit de savoir le nombre de plaques nécessaires pour que l'intensité lumineuse soit inférieure à 0,12~lm (puisque $12\div 100=0,12$).
+
+\medskip
+
+Comme dans l'exercice précédent, on rentre la formule \[Y=12*0.85^X\] dans le mode fonction  de la calculatrice, puis on fait des essais. On obtient~:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+	$n$&28&29\\\hline
+$v_n$&$0,13$&$0,11$\\\hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+Conclusion~: il faut superposer au moins 29 plaques pour que l'intensité lumineuse soit divisée par 100.
+
+\end{enumerate}
+
+\end{exo}
+
 \end{document}
