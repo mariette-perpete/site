@@ -1158,4 +1158,47 @@ On remplit d'eau un aquarium rectangulaire dont la largeur est 80~cm, la profond
 
 
 
+\begin{exo}
+
+On utilise les identités remarquables pour calculer~:
+
+\begin{align*}
+99^2&=(100-1)^2=100^2-2\times 100\times 1+1^2=\np{10000}-200+1=\np{9801}&&\text{(IR n°2)}\\
+103^2&=(100+3)^2=100^2+2\times 100\times 3+3^2=\np{10000}+600+9=\np{10609}&&\text{(IR n°1)}\\
+71\times 69&=(70+1)(70-1)=70^2-1^2=\np{4900}-1=\np{4899}&&\text{(IR n°3)}\\
+2,05^2&=(2+0,05)^2=2^2+2\times 2\times 0,05+0,05^2=4+0,2+0,0025=4,2025&&\text{(IR n°1)}\\
+4,3\times 3,7&=(4+0,3)(4-0,3)=4^2-0,3^2=16-0,09=15,91&&\text{(IR n°3)}
+\end{align*}
+
+\textbf{Remarque~:} Comment calculer $0,05^2$ de tête~? Comme $0,05^2=0,05\times 0,05$ et que $0,05$ a deux chiffres après la virgule, $0,05^2$ en aura $2+2=4.$ Il ne reste alors plus qu'à calculer $5^2=25$ pour pouvoir conclure~: $0,05^2=0,0025.$
+
+Attention cependant à cette méthode~: les derniers chiffres du résultat peuvent être des $0,$ comme dans l'exemple suivant~:
+\[0,05\times 0,0006=0,000030,\] puisque $6\times 5=30$ et que le résultat doit avoir $2+4=6$ chiffres après la virgule (le dernier, ici, étant un 0).
+
+\end{exo}
+
+\begin{exo}%8
+
+Le côté du grand carré mesure $a+b,$ donc son aire est $(a+b)^2.$
+
+D'un autre côté, le grand carré peut être découpé en quatre parties~: un carré de côté $a,$ donc d'aire $a^2$ (hachuré en bleu), un carré de côté $b,$ donc d'aire $b^2$ (hachuré en vert) et deux rectangles de côtés $a$ et $b,$ donc d'aires $a\times b$ (hachurés en rouge). Ainsi l'aire du grand carré est-elle aussi égale à
+\[a^2+b^2+2\times a\times b.\] En comparant avec la première méthode de calcul de l'aire, on obtient la relation attendue~:
+\[\left(a+b\right)^2=a^2+2ab+b^2.\]
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.28,-1.06)(4.82,3.62)
+\pscustom[linewidth=0.8pt,linecolor=blue,hatchcolor=blue,fillstyle=hlines,hatchangle=45.0,hatchsep=0.2]{\psplot{0.}{2.}{2.0}\lineto(2.,0)\lineto(0.,0)\closepath}
+\pscustom[linewidth=0.8pt,linecolor=red,hatchcolor=red,fillstyle=hlines,hatchangle=45.0,hatchsep=0.2]{\psplot{2.}{3.}{2.0}\lineto(3.,0)\lineto(2.,0)\closepath}
+\pscustom[linewidth=0.8pt,linecolor=red,hatchcolor=red,fillstyle=hlines,hatchangle=45.0,hatchsep=0.2]{\psplot{0.}{2.}{2.0}\lineto(2.,3.)\psplot{2.}{0.}{3.0}\lineto(0.,2.)\closepath}
+\pscustom[linewidth=0.8pt,linecolor=green,hatchcolor=green,fillstyle=hlines,hatchangle=45.0,hatchsep=0.2]{\psplot{2.}{3.}{2.0}\lineto(3.,3.)\psplot{3.}{2.}{3.0}\lineto(2.,2.)\closepath}
+\rput[tl](0.85,-0.14){$a$}
+\rput[tl](2.40,-0.14){$b$}
+\rput[tl](-0.44,1.02){$a$}
+\rput[tl](-0.44,2.62){$b$}
+\end{pspicture*}
+\end{center}
+\end{exo}
+
+
 \end{document}

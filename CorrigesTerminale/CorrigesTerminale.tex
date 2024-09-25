@@ -1869,4 +1869,144 @@ Conclusion~: il faut superposer au moins 29 plaques pour que l'intensité lumine
 
 \end{exo}
 
+\begin{exo}
+
+Une suite $v$ est définie par $v_0=4$ et la relation de récurrence \[v_{n+1}=2v_n+2\] pour tout entier naturel $n.$
+
+\begin{enumerate}
+\item \begin{align*}
+v_0&=4\\
+v_1&=2\times 4+2=10\\
+v_2&=2\times 10+2=22.\end{align*}
+
+\newpage
+\item Avec un schéma~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+~{}\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{4} \ar@/^0.5cm/[r]|{\red{+6}} \ar@/_0.5cm/[r]|{\green{\times 2,5}} & 
+    *+[F]+{10} \ar@/^0.5cm/[r]|{\red{+12}} \ar@/_0.5cm/[r]|{\green{\times 2,2}} & *+[F]+{22} \\
+    \txt{\blue{$v_0$}}&
+    \txt{\blue{$v_1$}}&\txt{\blue{$v_2$}}    
+    }$
+    \end{center}
+    
+    
+    \medskip
+    
+    Les résultats en rouge (\textcolor{red}{6} et \textcolor{red}{12}) sont différents, donc $u$ \textbf{n'est pas arithmétique.}
+    
+    \medskip
+    
+    Les résultats en vert (\textcolor{green}{2,5} et \textcolor{green}{2,2}) sont différents, donc $u$ \textbf{n'est pas géométrique.}
+    
+  \columnbreak
+  
+  Calculs utiles~:
+  
+  \medskip
+  
+  \begin{align*}
+  10-4&=\textcolor{red}{6},\\
+  22-10&= \textcolor{red}{12}.
+  \end{align*}
+  
+  \medskip
+  
+  \begin{align*}
+  10\div 4&=\textcolor{green}{2,5},\\
+  22\div 10&= \textcolor{green}{2,2}.
+  \end{align*}
+  
+  \end{multicols}
+
+
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=2$ et la relation de récurrence \[u_{n+1}=3 u_n-1\] pour tout $n\in\mathbb{N}.$
+
+
+\begin{enumerate}
+\item \begin{align*}
+u_0&=2\\
+u_1&=3\times 2-1=5\\
+u_2&=3\times 5-1=14
+\end{align*}
+
+\item On pose $v_n=u_n-0,5$ pour tout entier naturel $n.$
+
+\begin{align*}
+v_0&=u_0-0,5=2-0,5=1,5\\
+v_1&=u_1-0,5=5-0,5=4,5\\
+v_2&=u_2-0,5=14-0,5=13,5
+\end{align*}
+\item Pour tout $n\in\mathbb{N}~:$
+
+
+
+\begin{alignat*}{3}
+&v_{n+1}&& =u_{n+1}-0,5 && \text{  (déf. de } (v_n)_{n\in\mathbb{N}})\\
+& && =(3u_n-1)-0,5 && \text{  (rel. réc. pour } (u_n)_{n\in\mathbb{N}})\\
+& && =3u_n-1,5 && \text{  (calcul)}\\
+& && =3\left(u_n-\frac{1,5}{3}\right) && \text{  (factorisation)}\\
+& && =3(u_n-0,5) && \text{  (calcul)}\\
+& && =3v_n&& \text{  (déf. de } (v_n)_{n\in\mathbb{N}})\\
+\end{alignat*}
+
+
+Conclusion~: pour tout $n\in\mathbb{N},$ $v_{n+1}=3v_n,$
+donc $(v_n)_{n\in\mathbb{N}}$ est géométrique de raison $q=3.$
+
+\medskip
+
+\textbf{Remarque~:} L'étude d'une suite arithmético-géométrique ($u_{n+1}=au_n+b,$ avec $a\not=1$) se ramène toujours à celle d'une suite géométrique $(v_n)_{n\in\mathbb{N}}.$ Pour prouver que $(v_n)_{n\in\mathbb{N}}$ est géométrique, la méthode est toujours celle que nous venons de donner. \`A la quatrième ligne de calcul, c'est $a$ qu'il faut mettre  en facteur (ici, on a mis 3 en facteur).
+
+\item La suite $(v_n)_{n\in\mathbb{N}}$ est géométrique de raison $q=3,$ et  $v_0=u_0-0,5=2-0,5=1,5,$ donc pour tout $n\in\mathbb{N}~:$
+\[v_n=v_0\times q^n=1,5\times 3^n.\]
+\item Enfin $v_n=u_n-1,5$ donc
+\[u_n=v_n+1,5=1,5\times 3^n+0,5.\]
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+
+
+
+\begin{enumerate}
+\item On complète le schéma ci-dessous pour calculer les termes $u_1$ et $u_2.$ Les sommes écrites dans chaque case sont les sommes restant à rembourser aux dates indiquées.
+
+\medskip
+
+\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{\np{10000}} \ar@/^0.5cm/[r]|{\red{\times 1,02}} & 
+    *+[F]+{\np{10200}} \ar@/^0.5cm/[r]|{\red{-~300}} & *+[F]+{\np{9900}}\ar@/^0.5cm/[r]|{\red{\times 1,02}} & *+[F]+{\np{10098}}\ar@/^0.5cm/[r]|{\red{-~300}} & *+[F]+{\np{9798}} \\
+    \txt{\blue{$u_0$}}&\txt{\blue{$~$}}&
+    \txt{\blue{$u_1$}}&\txt{\blue{$~$}}&\txt{\blue{$u_2$}}\\
+    \txt{\blue{01/01/20}}&
+    \txt{\blue{31/01/20}}&\txt{\blue{01/02/20}}&
+    \txt{\blue{28/02/20}}&\txt{\blue{01/03/20}}
+    }$
+    \end{center}
+
+Pour passer d'un terme de la suite au terme suivant, on multiplie par $1,02$ (ajout des intérêts) puis on retranche 300 (remboursement mensuel). On peut donc continuer plus rapidement~:
+
+\begin{align*}
+u_3&=\np{9798}\times 1,02-300=\np{9693,96}&&\text{(somme à rembourser le 01/04/20)},\\
+u_4&=\np{9693,96}\times 1,02-300=\np{9587,84}&&\text{(somme à rembourser le 01/05/20)}
+.\end{align*}
+
+\item Pour tout $n\in\mathbb{N}~:$ \[u_{n+1}=1,02u_n-300.\]
+\end{enumerate}
+\end{exo}
+
 \end{document}
