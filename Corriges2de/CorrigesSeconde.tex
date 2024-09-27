@@ -1200,5 +1200,250 @@ D'un autre côté, le grand carré peut être découpé en quatre parties~: un c
 \end{center}
 \end{exo}
 
+\begin{exo}
+
+\begin{enumerate}
+\item Pour comparer les fractions $a=\frac{4}{5}$ et $b=\frac{5}{6},$ on les réduit au même dénominateur~:
+\[a=\frac{4\times 6}{5\times 6}=\frac{24}{30}\qquad,\qquad b=\frac{5\times 5}{6\times 5}=\frac{25}{30}.\]
+Comme $24<25,$ on obtient $a<b.$
+\item On compare à présent $c=\frac{524}{525}$ et $ d=\frac{525}{526}.$ On réduit là aussi au même dénominateur, mais on n'effectue aucun calcul (comme nous allons le voir, ce n'est pas nécessaire)~:
+\[c=\frac{524\times 526}{525\times 526}\qquad,\qquad d=\frac{525\times 525}{526\times 525}.\]
+Les dénominateurs sont identiques, donc il suffit de comparer les numérateurs. D'après l'identité remarquable n°3,
+\[524\times 526=(525-1)(525+1)=525^2-1^2=525^2-1.\] Ce nombre est strictement inférieur à  $525\times 525=525^2,$ donc $c<d.$
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+La partie hachurée de la figure de gauche est un rectangle de côtés $(a-b)$ et $(a+b),$ donc son aire est égale à $(a-b)(a+b).$
+
+Quant à la partie hachurée de la figure de droite, c'est un carré de côté $a$ duquel on a retiré un carré de côté $b.$ Son aire est donc égale à $a^2-b^2.$
+
+L'identité remarquable n°3 nous dit que $(a-b)(a+b)=a^2-b^2,$ donc les aires des deux zones hachurées sont les mêmes.
+
+
+\begin{center}
+\psset{xunit=0.6cm,yunit=0.6cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0,-2)(12,6)
+\pspolygon[linecolor=gray](1,-1)(5,-1)(5,3)(1,3)
+\pspolygon[linecolor=gray,hatchcolor=gray,fillstyle=hlines,hatchangle=45.0,hatchsep=0.28](1,4)(4,4)(4,-1)(1,-1)
+\pspolygon[linecolor=gray](4,3)(4,4)(5,4)(5,3)
+\pspolygon[linecolor=gray,hatchcolor=gray,fillstyle=hlines,hatchangle=45.0,hatchsep=0.28](7,3)(7,-1)(11,-1)(11,3)
+\pspolygon[linecolor=gray,fillcolor=gray,fillstyle=solid,opacity=1.0](11,3)(10,3)(10,2)(11,2)
+\psline[linecolor=gray](1,-1)(5,-1)
+\psline[linecolor=gray](5,-1)(5,3)
+\psline[linecolor=gray](5,3)(1,3)
+\psline[linecolor=gray](1,3)(1,-1)
+\psline[linecolor=gray](1,4)(4,4)
+\psline[linecolor=gray](4,4)(4,-1)
+\psline[linecolor=gray](4,-1)(1,-1)
+\psline[linecolor=gray](1,-1)(1,4)
+\rput[tl](0.43,3.85){$b$}
+\rput[tl](4.32,-0.2){$b$}
+\rput[tl](0.34,1.2){$a$}
+\psline{->}(2.76,-1.62)(4.94,-1.62)
+\psline{->}(2.76,-1.62)(0.98,-1.62)
+\rput[tl](2.77,-1.25){$a$}
+\psline[linecolor=gray](4,3)(4,4)
+\psline[linecolor=gray](4,4)(5,4)
+\psline[linecolor=gray](5,4)(5,3)
+\psline[linecolor=gray](5,3)(4,3)
+\psline[linecolor=gray](7,3)(7,-1)
+\psline[linecolor=gray](7,-1)(11,-1)
+\psline[linecolor=gray](11,-1)(11,3)
+\psline[linecolor=gray](11,3)(7,3)
+\rput[tl](8.91,-1.3){$a$}
+\rput[tl](6.4,1.4){$a$}
+\psline[linecolor=gray](11,3)(10,3)
+\psline[linecolor=gray](10,3)(10,2)
+\psline[linecolor=gray](10,2)(11,2)
+\psline[linecolor=gray](11,2)(11,3)
+\rput[tl](10.26,3.9){$b$}
+\rput[tl](11.12,3.05){$b$}
+\end{pspicture*}
+\end{center}
+\end{exo}
+
+\begin{exo}~{}
+
+\begin{center}
+\psset{xunit=0.6cm,yunit=0.6cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.16,0)(11.94,5.62)
+\psline[linewidth=2.pt](1.,1.)(11.,1.)
+\psline[linewidth=2.pt](1.,1.)(1.,5.)
+\psline[linewidth=2.pt](11.,1.)(11.,4.)
+\psline[linewidth=2.pt](1.,5.)(5.65,1.)
+\psline[linewidth=2.pt](3.3653507283020185,3.123579200213858)(3.2088388124638874,2.9416340980520306)
+\psline[linewidth=2.pt](5.65,1.)(11.,4.)
+\psline[linewidth=2.pt](8.222696638345388,2.5802123568670416)(8.340080575223986,2.370877669433542)
+\rput[tl](0.5,3.){$4$}
+\rput[tl](11.3,2.52){$3$}
+%\begin{scriptsize}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](1.,1.)
+\rput[bl](0.3,1.1){{$M$}}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](11.,1.)
+\rput[bl](11.1,1.08){{$N$}}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](1.,5.)
+\rput[bl](0.54,5.){{$A$}}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](11.,4.)
+\rput[bl](11.08,4.08){{$B$}}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](5.65,1.)
+\rput[bl](5.66,1.22){{$P$}}
+\rput[bl](3,0.3){{$x$}}
+\rput[bl](8,0.3){{$10-x$}}
+
+%\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+On pose $MP=x,$ on a donc $PN=MN-MP=10-x.$
+
+D'après le théorème de Pythagore dans chacun des deux triangles rectangles $AMP$ et $NBP~:$
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+\begin{align*}
+AP^2&=MP^2+MA^2\\
+AP^2&=x^2+4^2\\
+AP^2&=x^2+16
+\end{align*}
+\columnbreak
+
+\begin{align*}
+BP^2&=PN^2+BN^2\\
+BP^2&=(10-x)^2+3^2\\
+BP^2&=10^2-2\times 10\times x+x^2+9 \qquad\text{(on développe grâce à l'IR n°2)}\\
+BP^2&=100-20x+x^2+9\\
+BP^2&=x^2-20x+109
+\end{align*}
+\end{multicols} 
+On sait que $AP=BP,$ donc $AP^2=BP^2~;$ et d'après les deux calculs ci-dessus~:
+\[\cancel{x^2}+16=\cancel{x^2}-20x+109.\] Il n'y a plus qu'à résoudre~:
+
+\begin{align*}
+16&=-20x+109\\
+16\textcolor{red}{-109}&=-20x+\cancel{109}\textcolor{red}{-\cancel{109}}\\
+\frac{-93}{\textcolor{blue}{-20}}&=\frac{\cancel{-20}x}{\textcolor{blue}{\cancel{-20}}}\\
+4,65&=x
+\end{align*}
+
+Conclusion~: $MP=4,65.$
+\end{exo}
+
+\begin{exo}~{}
+
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.92,0.36)(7.04,4.54)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](2.4242640687119286,1.)(2.4242640687119286,1.4242640687119286)(2.,1.4242640687119288)(2.,1.)
+\psline[linewidth=2.pt](2.,1.)(6.,1.)
+\psline[linewidth=2.pt](2.,1.)(2.,4.)
+\psline[linewidth=2.pt](2.,4.)(6.,1.)
+\rput[tl](3.36,0.88){$x$}
+\rput[tl](1.34,2.54){$y$}
+\rput[tl](4.24,2.64){13}
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item D'après le théorème de Pythagore, \[x^2+y^2=13^2=169.\]
+
+D'après l'IR n°1, $(x+y)^2=x^2+y^2+2xy.$ Or $x^2+y^2=169,$ et $\frac{x\times y}{2}=30,$ puisque c'est l'aire du triangle. On en déduit $x\times y=30\times 2=60,$ puis
+\[(x+y)^2=\textcolor{blue}{x^2+y^2}+2\textcolor{red}{xy}=\textcolor{blue}{169}+2\times \textcolor{red}{60}=169+120=289.\]
+Finalement, comme $(x+y)^2=289,$
+\[x+y=\sqrt{289}=17.\]
+
+\item On utilise cette fois l'IR n°2~:
+\[(x-y)^2=\textcolor{blue}{x^2+y^2}-2\textcolor{red}{xy}=\textcolor{blue}{169}-2\times \textcolor{red}{60}=169-120=49.\]
+
+Or $x-y\geq 0,$ puisque $x$ est plus grand que $y,$ donc
+\[x-y=\sqrt{49}=7.\]
+
+\danger Si on ne savait pas lequel des deux côtés est le plus grand, on pourrait avoir $x-y=-7~!!!$
+
+\medskip
+
+On sait à présent que $x+y=17$ et $x-y=7.$ On ajoute membre à membre ces égalités et on en déduit $x~:$
+
+\begin{align*}
+(x+y)+(x-y)&=17+7\\
+x+\cancel{y}+x-\cancel{y}&=24\\
+\frac{\cancel{2}x}{\cancel{2}}&=\frac{24}{2}\\
+x&=12
+\end{align*}
+
+Enfin, comme $x+y=17,$ on trouve $y=17-x=17-12=5.$
+
+Conclusion~: $x=12,$ $y=5.$
+
+
+\end{enumerate}
+\end{exo}
+
+
+
+
+
+\section{Nombres réels}
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item $-7\in\mathbb{Q}.$ \textbf{VRAI.}
+
+Justification~: $-7=\dfrac{-7}{1},$ donc $-7\in \mathbb{Q}$ (il s'écrit comme le quotient de deux entiers).
+
+\item $-7\in\mathbb{N}.$ \textbf{FAUX.}
+
+Justification~: $-7$ est strictement négatif, donc ce n'est pas un entier naturel.
+
+\item $-\dfrac{13}{4}\in\mathbb{Z}.$  \textbf{FAUX.}
+
+Justification~: $-\dfrac{13}{4}=-3,25$ a des chiffres après la virgule, donc il n'est pas entier.
+
+\textbf{Remarque~:} Pour obtenir $\dfrac{13}{4}=3,25$ sans calculatrice, trois possibilités~: \textcircled{\small{1}} Diviser de tête 13 par 2 deux fois de suite -- \textcircled{\small{2}} Poser la division -- \textcircled{\small{3}} Remarquer que $\dfrac{13}{4}=\dfrac{12}{4}+\dfrac{1}{4}=3+0,25=3,25.$
+
+\item $-\dfrac{13}{4}\in\mathbb{D}.$  \textbf{VRAI.}
+
+Justification~: $-\dfrac{13}{4}=-3,25$ a deux chiffres après la virgule, donc il est décimal.
+\item $5,824\in\mathbb{D}.$ \textbf{VRAI.}
+
+Justification~: $5,824$ a trois chiffres après la virgule, donc il est décimal
+
+\item $5,824\in\mathbb{Q}.$ \textbf{VRAI.}
+
+Justification n°1~: $5,824$ est décimal (cf question précédente), donc il est rationnel d'après le cours ($\mathbb{D}\subset \mathbb{Q}$).
+
+Justification n°2~: $5,824=\dfrac{\np{5824}}{\np{1000}},$ donc $5,824\in \mathbb{Q}$ (il s'écrit comme le quotient de deux entiers).
+\item $\dfrac{10}{6}\in\mathbb{D}.$ \textbf{FAUX.}
+
+Justification~: On pose la division~:
+
+\begin{center}
+\opdiv[decimalsepsymbol={,},displayintermediary=nonzero,voperator=bottom,shiftdecimalsep=none,maxdivstep=2]{10}{6}
+\end{center}
+
+Comme on obtient deux fois le même reste (4), ça va continuer indéfiniment. Conclusion~: $\dfrac{10}{6}=1,666\cdots$ n'est pas décimal, puisqu'il a une infinité de chiffres après la virgule.
+\item $\dfrac{17}{11}\in\mathbb{D}.$ \textbf{FAUX.}
+
+Justification~: On pose la division~:
+
+\begin{center}
+\opdiv[decimalsepsymbol={,},displayintermediary=nonzero,voperator=bottom,shiftdecimalsep=none,maxdivstep=3]{17}{11}
+\end{center}
+
+Comme on obtient deux fois le même reste (6), ça va continuer indéfiniment. Conclusion~: $\dfrac{17}{11}=1,5454\cdots$ n'est pas décimal, puisqu'il a une infinité de chiffres après la virgule.
+\end{enumerate}
+
+\end{exo}
+
+
 
 \end{document}
