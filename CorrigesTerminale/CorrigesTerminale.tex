@@ -1976,6 +1976,7 @@ donc $(v_n)_{n\in\mathbb{N}}$ est géométrique de raison $q=3.$
 \end{exo}
 
 
+
 \begin{exo}
 
 
@@ -2006,7 +2007,123 @@ u_4&=\np{9693,96}\times 1,02-300=\np{9587,84}&&\text{(somme à rembourser le 01/
 .\end{align*}
 
 \item Pour tout $n\in\mathbb{N}~:$ \[u_{n+1}=1,02u_n-300.\]
+\item Pour tout $n\in\mathbb{N}~:$
+
+
+
+\begin{alignat*}{3}
+&v_{n+1}&& =u_{n+1}-\np{15000} && \text{  (déf. de } (v_n)_{n\in\mathbb{N}})\\
+& && =(1,02u_n-300)-\np{15000} && \text{  (rel. réc. pour } (u_n)_{n\in\mathbb{N}})\\
+& && =1,02 u_n-\np{15300} && \text{  (calcul)}\\
+& && =1,02\left(u_n-\frac{\np{15300}}{1,02}\right) && \text{  (factorisation)}\\
+& && =1,02(u_n-\np{15000}) && \text{  (calcul)}\\
+& && =1,02v_n&& \text{  (déf. de } (v_n)_{n\in\mathbb{N}})\\
+\end{alignat*}
+
+
+Conclusion~: pour tout $n\in\mathbb{N},$ $v_{n+1}=1,02v_n,$
+donc $(v_n)_{n\in\mathbb{N}}$ est géométrique de raison $q=1,02.$
+
+
+\item La suite $(v_n)_{n\in\mathbb{N}}$ est géométrique de raison $q=1,02,$ et  $v_0=u_0-\np{15000}=\np{10000}-\np{15000}=-\np{5000},$ donc pour tout $n\in\mathbb{N}~:$
+\[v_n=v_0\times q^n=-\np{5000}\times 1,02^n.\]
+
+Enfin $v_n=u_n-\np{15000}$ donc
+\[u_n=v_n+\np{15000}=-\np{5000}\times 1,02^n+\np{15000}.\]
+\item Déterminer la durée du crédit revient à savoir quand la somme restant à rembourser est nulle. En réalité, au bout d'un moment, elle est négative, comme on le voit avec un tableau de valeurs~:
+
+\medskip
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+	$n$&$55$&$56$	\\ \hline   
+$u_n$&$141,34$&$-155,83$ \\ \hline    
+\end{tabular}
+\end{center}
+
+\medskip
+
+\`A la fin du 55\up{e} fois, il reste 141,35~\euro~{} à rembourser~; et si on rembourse 300~\euro~{} au début du 56\up{e} mois, la banque nous devra 155,83~\euro.
+
+
+Conclusion~:
+
+\begin{itemize}
+\item[\textbullet] le crédit dure 56 mois~;
+\item[\textbullet] on rembourse 56 fois 300~\euro, mais à la fin on a dépassé de 155,83~\euro~{} ce que l'on devait à la banque~;
+\item[\textbullet] la somme totale remboursée est donc
+\[56\times 300-155,83=\np{16664,17}~\text{\euro}~;\]
+\item[\textbullet] le \og coût du crédit \fg~{} est la différence entre ce que l'on a remboursé et ce que la banque nous a prêté~:
+\[\text{Coût du crédit}=\text{Somme remboursée}-\text{Somme empruntée}=
+\np{16664,17}-\np{10000}=\np{6664,17}~\text{\euro}.\]
+\end{itemize}
+
 \end{enumerate}
+
+
+\end{exo}
+
+
+
+
+\begin{exo}
+
+
+La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=0$ et pour tout $n\in\mathbb{N}~:$ \[u_{n+1}=2 u_n+1.\]
+
+Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété \[u_n=2^n-1.\]
+
+
+
+
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+\[
+\left.
+    \begin{array}{ll}
+        u_0&=0 \\
+        2^0-1&= 1-1=0
+    \end{array}
+\right \}\implies \mathcal{P}_0~\text{est vraie}.
+\]
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[u_k=2^k-1.\]
+
+%\medskip
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que \[u_{k+1}=2^{k+1}-1.\]
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[u_k=2^k-1.\]
+
+
+On a alors~:
+
+\begin{alignat*}{3}
+&u_{k+1}&& =2{u_k}+1 && \text{  (rel. réc. pour } (u_n)_{n\in\mathbb{N}})\\
+& && =2\left({2^k-1}\right)+1 && \text{ {(H.R.)}}\\
+& && =2\times 2^k-2+1 && \text{  (on développe)}\\
+& && =2^{k+1}-1 && \text{  (calcul)}.\\
+\end{alignat*}
+
+
+
+La propriété $\mathcal{P}_{k+1}$ est donc vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+
+
 \end{exo}
 
 \end{document}
