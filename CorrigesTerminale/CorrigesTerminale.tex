@@ -2126,4 +2126,285 @@ La propriété $\mathcal{P}_{k+1}$ est donc vraie.
 
 \end{exo}
 
+\begin{exo}
+
+
+La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=1$ et pour tout $n\in\mathbb{N}~:$ \[u_{n+1}=u_n+2n+3.\]
+
+\begin{enumerate}
+\item \begin{align*}
+(n=0)\qquad u_{1}&=u_0+2\times 0+3=1+0+3=4\\
+(n=1)\qquad u_{2}&=u_1+2\times 1+3=4+2+3=9\\
+(n=2)\qquad u_{3}&=u_2+2\times 2+3=9+4+3=16
+\end{align*}
+
+\medskip
+
+\textbf{Remarque~:} Pour passer de $u_n$ à $u_{n+1},$ on ajoute $2n+3,$ donc à partir de $u_0=1$ (rond rose ci-dessous)~:
+
+\begin{itemize}
+\item[\textbullet] on obtient $u_1$ en ajoutant $2\times 0+3=3$ ronds bleus~;
+\item[\textbullet] on obtient $u_2$ en ajoutant $2\times 1+3=5$ ronds oranges~;
+\item[\textbullet] on obtient $u_3$ en ajoutant $2\times 2+3=7$ ronds verts~;
+\item[\textbullet] etc.
+\end{itemize}
+
+\medskip
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.64,0.)(8.64,5.48)
+\pscircle[linewidth=2.pt,linecolor=magenta,fillcolor=magenta,fillstyle=solid,opacity=1](-1.,5.){0.3}
+\pscircle[linewidth=2.pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=1](-2.,4.){0.3}
+\pscircle[linewidth=2.pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=1](-1.,4.){0.3}
+\pscircle[linewidth=2.pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=1](0.,4.){0.3}
+\pscircle[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq,fillstyle=solid,opacity=1](-3.,3.){0.3}
+\pscircle[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq,fillstyle=solid,opacity=1](-2.,3.){0.3}
+\pscircle[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq,fillstyle=solid,opacity=1](-1.,3.){0.3}
+\pscircle[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq,fillstyle=solid,opacity=1](0.,3.){0.3}
+\pscircle[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq,fillstyle=solid,opacity=1](1.,3.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](-4.,2.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](-3.,2.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](-2.,2.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](-1.,2.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](0.,2.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](1.,2.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](2.,2.){0.3}
+\pscircle[linewidth=2.pt,linecolor=magenta,fillcolor=magenta,fillstyle=solid,opacity=1](5.,2.){0.3}
+\pscircle[linewidth=2.pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=1](5.,3.){0.3}
+\pscircle[linewidth=2.pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=1](6.,3.){0.3}
+\pscircle[linewidth=2.pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=1](6.,2.){0.3}
+\pscircle[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq,fillstyle=solid,opacity=1](5.,4.){0.3}
+\pscircle[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq,fillstyle=solid,opacity=1](6.,4.){0.3}
+\pscircle[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq,fillstyle=solid,opacity=1](7.,4.){0.3}
+\pscircle[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq,fillstyle=solid,opacity=1](7.,3.){0.3}
+\pscircle[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq,fillstyle=solid,opacity=1](7.,2.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](5.,5.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](6.,5.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](7.,5.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](8.,5.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](8.,4.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](8.,3.){0.3}
+\pscircle[linewidth=2.pt,linecolor=green,fillcolor=green,fillstyle=solid,opacity=1](8.,2.){0.3}
+\Huge
+\rput[tl](-3.44,0.93){$1+3+5+7$}
+\rput[tl](4.4,0.93){$=4^2=16$}
+\end{pspicture*}
+\end{center}
+
+On devine que $u_n$ sera toujours un carré~:
+
+\begin{align*}
+u_0&=1=1^2\\
+u_1&=4=2^2\\
+u_2&=9=3^2\\
+u_3&=16=4^2
+\end{align*}
+
+Plus généralement, $u_n=(n+1)^2$ pour tout $n\in\mathbb{N}$ -- ce que l'on démontre rigoureusement dans la question suivante.
+
+\item Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété \[u_n=(n+1)^2.\]
+
+
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+\[
+\left.
+    \begin{array}{ll}
+        u_0&=1 \\
+        (0+1)^2&= 1
+    \end{array}
+\right \}\implies \mathcal{P}_0~\text{est vraie}.
+\]
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[u_k=(k+1)^2.\]
+
+%\medskip
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que \[u_{k+1}=((k+1)+1)^2,\] ou encore
+\[u_{k+1}=(k+2)^2.\]
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[u_k=(k+1)^2.\]
+
+On a alors~:
+
+
+\begin{alignat*}{3}
+&u_{k+1}&& =u_k+2k+3 && \text{  (rel. réc. pour } (u_n)_{n\in\mathbb{N}})\\
+& && =(k+1)^2+2k+3 && \text{ {(H.R.)}}\\
+& && =k^2+2k+1+2k+3 && \text{  (on développe avec l'IR)}\\
+& && =k^2+4k+4 && \text{  (on réduit)}\\
+& && =(k+2)^2 && \text{  (on factorise avec l'IR)}.\\
+\end{alignat*}
+
+
+La propriété $\mathcal{P}_{k+1}$ est donc vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=1$ et la relation de récurrence
+
+\[u_{n+1}=0,5u_n+3\] pour tout $n\in\mathbb{N}.$
+
+\begin{enumerate}
+\item \begin{align*}
+u_0&=1\\
+u_1&=0,5\times 1+3=3,5\\
+u_2&=0,5\times 3,5+3=4,75\\
+u_3&=0,5\times 4,75+3=5,375
+\end{align*}
+\item Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété \[u_n\leq 6.\]
+
+
+
+
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+\[
+\left.
+    \begin{array}{ll}
+        u_0&=1 \\
+        1&\leq 6
+    \end{array}
+\right \}\implies \mathcal{P}_0~\text{est vraie}.
+\]
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[u_k\leq 6.\]
+
+%\medskip
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que \[u_{k+1}\leq 6.\]
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[u_k\leq 6.\]
+
+
+On multiplie par $\textcolor{red}{0,5}~:$
+
+\begin{align*}u_k\textcolor{red}{\times 0,5}&\leq 6\textcolor{red}{\times 0,5}\\
+0,5u_k&\leq 3
+\end{align*}
+
+Puis on ajoute  $\textcolor{blue}{3}~:$
+
+\begin{align*}
+0,5u_k\textcolor{blue}{+3}&\leq 3\textcolor{blue}{+3}\\
+u_{k+1}&\leq 6.
+\end{align*}
+
+La propriété $\mathcal{P}_{k+1}$ est donc vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+
+\end{exo}
+
+\begin{exo}
+
+
+Soit $q$ un réel différent de 1. Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété 
+
+\[1+q+q^2+\cdots+q^n=\frac{q^{n+1}-1}{q-1}.\]
+
+
+
+
+
+
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+La somme dans le membre de gauche va de 1 à $q^n,$ qui, dans le cas où $n=0,$ vaut 1. Autrement dit, la somme dans le membre de gauche est une somme d'un seul terme~: 1.
+
+\medskip
+
+D'un autre côté, $\frac{q^{0+1}-1}{q-1}=\frac{q-1}{q-1}=1.$ $\mathcal{P}_0$ est donc vraie.
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[1+q+q^2+\cdots+q^k=\frac{q^{k+1}-1}{q-1}.\]
+
+%\medskip
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que 
+\[1+q+q^2+\cdots+q^{k+1}=\frac{q^{k+2}-1}{q-1}.\]
+
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[1+q+q^2+\cdots+q^k=\frac{q^{k+1}-1}{q-1}.\]
+
+
+On ajoute $\textcolor{blue}{q^{k+1}},$ puis on réduit au même dénominateur~:
+
+\begin{align*}
+1+q+q^2+\cdots+q^k\textcolor{blue}{+q^{k+1}}&=\frac{q^{k+1}-1}{q-1}\textcolor{blue}{+q^{k+1}}\\
+&=\frac{q^{k+1}-1}{q-1}+\frac{q^{k+1}\textcolor{red}{\times (q-1)}}{\textcolor{red}{q-1}}
+\\&=\frac{q^{k+1}-1}{q-1}+\frac{q^{k+1}\times q-q^{k+1}\times 1}{q-1}
+\\&=\frac{q^{k+1}-1}{q-1}+\frac{q^{k+2}-q^{k+1}}{q-1}
+\\&=\frac{\cancel{q^{k+1}}-1+q^{k+2}-\cancel{q^{k+1}}}{q-1}
+\\&=\frac{q^{k+2}-1}{q-1}.
+\end{align*}
+
+\medskip
+
+Conclusion~:
+\[1+q+q^2+\cdots+q^{k+1}=\frac{q^{k+2}-1}{q-1},\] et la propriété $\mathcal{P}_{k+1}$ est donc vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+
+\medskip
+
+\textbf{Remarque~:} La somme $1+q+q^2+\cdots+q^{n}$ se réécrit sous la forme condensée
+\[\sum\limits_{i=0}^nq^i.\]
+
+\end{exo}
+
+
 \end{document}
