@@ -2332,79 +2332,9 @@ La propriété $\mathcal{P}_{k+1}$ est donc vraie.
 
 \end{exo}
 
-\begin{exo}
 
 
 
-\end{exo}
-
-\begin{exo}
-
-
-Soit $q$ un réel différent de 1. Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété 
-
-\[1+q+q^2+\cdots+q^n=\frac{q^{n+1}-1}{q-1}.\]
-
-
-
-
-
-
-
-\begin{itemize}
-\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
-
-La somme dans le membre de gauche va de 1 à $q^n,$ qui, dans le cas où $n=0,$ vaut 1. Autrement dit, la somme dans le membre de gauche est une somme d'un seul terme~: 1.
-
-\medskip
-
-D'un autre côté, $\frac{q^{0+1}-1}{q-1}=\frac{q-1}{q-1}=1.$ $\mathcal{P}_0$ est donc vraie.
-
-
-
-\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
-\[1+q+q^2+\cdots+q^k=\frac{q^{k+1}-1}{q-1}.\]
-
-%\medskip
-
-\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
-\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que 
-\[1+q+q^2+\cdots+q^{k+1}=\frac{q^{k+2}-1}{q-1}.\]
-
-}\end{mybox}
-
-
-
-%\medskip
-
-On part de 
-\[1+q+q^2+\cdots+q^k=\frac{q^{k+1}-1}{q-1}.\]
-
-
-On ajoute $\textcolor{blue}{q^{k+1}},$ puis on réduit au même dénominateur~:
-
-\begin{align*}
-1+q+q^2+\cdots+q^k\textcolor{blue}{+q^{k+1}}&=\frac{q^{k+1}-1}{q-1}\textcolor{blue}{+q^{k+1}}\\
-&=\frac{q^{k+1}-1}{q-1}+\frac{q^{k+1}\textcolor{red}{\times (q-1)}}{\textcolor{red}{q-1}}
-\\&=\frac{q^{k+1}-1}{q-1}+\frac{q^{k+1}\times q-q^{k+1}\times 1}{q-1}
-\\&=\frac{q^{k+1}-1}{q-1}+\frac{q^{k+2}-q^{k+1}}{q-1}
-\\&=\frac{\cancel{q^{k+1}}-1+q^{k+2}-\cancel{q^{k+1}}}{q-1}
-\\&=\frac{q^{k+2}-1}{q-1}.
-\end{align*}
-
-\medskip
-
-Conclusion~:
-\[1+q+q^2+\cdots+q^{k+1}=\frac{q^{k+2}-1}{q-1},\] et la propriété $\mathcal{P}_{k+1}$ est donc vraie.
-\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
-\end{itemize}
-
-\medskip
-
-\textbf{Remarque~:} La somme $1+q+q^2+\cdots+q^{n}$ se réécrit sous la forme condensée
-\[\sum\limits_{i=0}^nq^i.\]
-
-\end{exo}
 
 \begin{exo}
 
