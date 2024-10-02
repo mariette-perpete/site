@@ -1084,5 +1084,78 @@ On place les points de coordonnées $(0;30)$ et $(120;90),$ puis on trace la dro
 
 
 
+\begin{exo}
+
+Pour louer une voiture je dois payer~:
+
+\begin{itemize}
+\item[\textbullet] une part fixe de 20~\euro.
+\item[\textbullet] 0,6~\euro~{} par km parcouru.
+\end{itemize}
+
+\medskip
+
+\begin{enumerate}
+\item Pour 100~km, je payerai \[P(100)=20+100\times 0,6=80~\text{\euro}~;\] et pour 50~km, je payerai \[P(50)=20+50\times 0,6=50~\text{\euro}.\]
+
+\item D'une manière générale, pour $x$~km parcourus je payerai
+\[20+x\times 0,6~\text{\euro}.\] Avec les notations de l'énoncé, cela donne
+\[P(x)=0,6x+20.\]
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item Comme $120=60+60=60+6\times 10,$ le coût pour 120 minutes de location est 
+\[15+6\times 5=45~\text{\euro}.\]
+
+\item On complète le tableau de valeurs~:
+
+\smallskip
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+   Durée&0 &20 &40 &60 &80&100&120 \\
+	\hline
+	Prix&15&15&15&15&25&35&45 \\
+	\hline
+\end{tabular}
+\end{center}
+
+\smallskip
+
+\item On construit le graphique~:
+
+
+\begin{center}
+\newrgbcolor{rvwvcq}{0.08235294117647059 0.396078431372549 0.7529411764705882}
+\psset{xunit=0.05cm,yunit=0.1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-15,-4.5)(127.83114817349465,50.324954219802905)
+\multips(0,0)(0,5.0){11}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(127.83114817349465,0)}
+\multips(0,0)(10.0,0){14}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,50.324954219802905)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=5.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(127.83114817349465,50.324954219802905)
+\psline[linewidth=2.pt,linecolor=rvwvcq](0.,15.)(60.,15.)
+\psline[linewidth=2.pt,linecolor=rvwvcq](60.,15.)(120.,45.)
+\rput[tl](70,5.091035826702215){temps (en min)}
+\rput[tl](4,46.25846249170123){prix (en euros)}
+\psdots[dotstyle=*,linecolor=rvwvcq](0.,15.)
+\psdots[dotstyle=*,linecolor=rvwvcq](20.,15.)
+\psdots[dotstyle=*,linecolor=rvwvcq](40.,15.)
+\psdots[dotstyle=*,linecolor=rvwvcq](60.,15.)
+\psdots[dotstyle=*,linecolor=rvwvcq](80.,25.)
+\psdots[dotstyle=*,linecolor=rvwvcq](100.,35.)
+\psdots[dotstyle=*,linecolor=rvwvcq](120.,45.)
+\end{pspicture*}
+\end{center}
+
+
+\end{enumerate}
+
+\end{exo}
 
 \end{document}

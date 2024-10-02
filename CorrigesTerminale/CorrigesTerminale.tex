@@ -2406,5 +2406,428 @@ Conclusion~:
 
 \end{exo}
 
+\begin{exo}
+
+La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=1$ et la relation de récurrence
+
+\[u_{n+1}=\dfrac{u_n}{u_n+1}\] pour tout $n\in\mathbb{N}.$
+
+\begin{enumerate}
+\item \begin{align*}
+u_0&=1\\
+u_1&=\dfrac{u_0}{u_0+1}=\dfrac{1}{1+1}=\dfrac{1}{2}\\
+u_2&=\dfrac{u_1}{u_1+1}=\dfrac{\frac{1}{2}}{\frac{1}{2}+1}=\dfrac{\frac{1}{2}}{\frac{1}{2}+\frac{2}{2}}=\dfrac{\frac{1}{2}}{\frac{3}{2}}=\dfrac{1}{2}\times \dfrac{2}{3}=\dfrac{1}{3}\\
+u_3&=\dfrac{u_2}{u_2+1}=\dfrac{\frac{1}{3}}{\frac{1}{3}+1}=\dfrac{\frac{1}{3}}{\frac{1}{3}+\frac{3}{3}}=\dfrac{\frac{1}{3}}{\frac{4}{3}}=\dfrac{1}{3}\times \dfrac{3}{4}=\dfrac{1}{4}
+\end{align*}
+\item Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété \[u_n=\frac{1}{n+1}.\]
+
+
+
+
+
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+\[
+\left.
+    \begin{array}{ll}
+        u_0&=1 \\
+        \frac{1}{0+1}&=1
+    \end{array}
+\right \}\implies \mathcal{P}_0~\text{est vraie}.
+\]
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[u_k=\frac{1}{k+1}.\]
+
+
+%\medskip
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que \[u_{k+1}=\frac{1}{k+2}.\]
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[u_k=\frac{1}{k+1}.\]
+
+
+
+On utilise la formule de récurrence et on remplace~:
+
+\[u_{k+1}=\dfrac{u_k}{u_k+1}\overset{\text{H.R.}}{=}\dfrac{\frac{1}{k+1}}{\frac{1}{k+1}+1}=\dfrac{\frac{1}{k+1}}{\frac{1}{k+1}+\frac{k+1}{k+1}}=\dfrac{\frac{1}{k+1}}{\frac{k+2}{k+1}}=\dfrac{1}{\cancel{k+1}}\times \dfrac{\cancel{k+1}}{k+2}=\dfrac{1}{k+2}.\]
+
+
+
+La propriété $\mathcal{P}_{k+1}$ est donc vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+Soit $q$ un réel différent de 1. Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété 
+
+\[1+q+q^2+\cdots+q^n=\frac{q^{n+1}-1}{q-1}.\]
+
+
+
+
+
+
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+La somme dans le membre de gauche va de 1 à $q^n,$ qui, dans le cas où $n=0,$ vaut 1. Autrement dit, la somme dans le membre de gauche est une somme d'un seul terme~: 1.
+
+\medskip
+
+D'un autre côté, $\frac{q^{0+1}-1}{q-1}=\frac{q-1}{q-1}=1.$ $\mathcal{P}_0$ est donc vraie.
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[1+q+q^2+\cdots+q^k=\frac{q^{k+1}-1}{q-1}.\]
+
+%\medskip
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que 
+\[1+q+q^2+\cdots+q^{k+1}=\frac{q^{k+2}-1}{q-1}.\]
+
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[1+q+q^2+\cdots+q^k=\frac{q^{k+1}-1}{q-1}.\]
+
+
+On ajoute $\textcolor{blue}{q^{k+1}},$ puis on réduit au même dénominateur~:
+
+\begin{align*}
+1+q+q^2+\cdots+q^k\textcolor{blue}{+q^{k+1}}&=\frac{q^{k+1}-1}{q-1}\textcolor{blue}{+q^{k+1}}\\
+&=\frac{q^{k+1}-1}{q-1}+\frac{q^{k+1}\textcolor{red}{\times (q-1)}}{\textcolor{red}{q-1}}
+\\&=\frac{q^{k+1}-1}{q-1}+\frac{q^{k+1}\times q-q^{k+1}\times 1}{q-1}
+\\&=\frac{q^{k+1}-1}{q-1}+\frac{q^{k+2}-q^{k+1}}{q-1}
+\\&=\frac{\cancel{q^{k+1}}-1+q^{k+2}-\cancel{q^{k+1}}}{q-1}
+\\&=\frac{q^{k+2}-1}{q-1}.
+\end{align*}
+
+\medskip
+
+Conclusion~:
+\[1+q+q^2+\cdots+q^{k+1}=\frac{q^{k+2}-1}{q-1},\] et la propriété $\mathcal{P}_{k+1}$ est donc vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+
+\medskip
+
+\textbf{Remarque~:} La somme $1+q+q^2+\cdots+q^{n}$ se réécrit sous la forme condensée
+\[\sum\limits_{i=0}^nq^i.\]
+
+\end{exo}
+
+
+\begin{exo}
+
+Soit $x$ un réel positif.
+
+Pour tout $n\in\mathbb{N}^*,$ on note $\mathcal{P}_n$ la propriété 
+
+\[(1+x)^n\geq 1+nx.\]
+
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_1$ est vraie (\danger Ça démarre à $n=1$ et non pas $n=0.$)
+
+
+\[
+\left.
+    \begin{array}{ll}
+        (1+x)^1&=1+x \\
+        1+1 x&=1+x
+    \end{array}
+\right \}\implies (1+x)^1\geq 1+1x \implies \mathcal{P}_1~\text{est vraie}.
+\]
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}^*$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[(1+x)^k\geq 1+kx.\]
+
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que 
+\[(1+x)^{k+1}\geq 1+(k+1)x.\]
+
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[(1+x)^k\geq 1+kx.\]
+
+
+On multiplie par $\textcolor{red}{1+x}$ et on développe~:
+
+\begin{align*}
+(1+x)^k\textcolor{red}{\times (1+x)}&\geq (1+kx)\textcolor{red}{\times (1+x)}\\
+(1+x)^{k+1}&\geq 1\times 1+1\times x+kx\times 1+kx\times x\\
+(1+x)^{k+1}&\geq 1+ \textcolor{green}{x+kx}+kx^2\\
+(1+x)^{k+1}&\geq 1+ \textcolor{green}{(k+1)x}+kx^2\\
+\end{align*}
+
+\medskip
+
+Or $kx^2\geq 0,$ car $k$ et $x^2$ sont positifs, donc $1+ (k+1)x+kx^2\geq 1+(k+1)x~;$ et par conséquent
+
+\[(1+x)^{k+1}\geq 1+(k+1)x.\]
+
+La propriété $\mathcal{P}_{k+1}$ est donc vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_1$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}^*.$
+\end{itemize}
+
+
+\end{exo}
+
+
+
+
+
+\begin{exo}
+
+La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=1$ et la relation de récurrence \[u_{n+1}=\frac{4u_n}{u_n+4}\] pour tout $n\in\mathbb{N}.$ On pose également $v_n=\frac{4}{u_n}$ pour tout $n\in\mathbb{N}.$
+
+
+\begin{enumerate}
+\item Pour démontrer qu'une suite est \textcolor{red}{géométrique}, on part de $v_{n+1}=\cdots$ et on essaye d'aboutir à $\cdots =v_n\textcolor{red}{\times q}.$ Pour une suite \textcolor{blue}{arithmétique}, c'est le même principe~: on part de $v_{n+1}=\cdots$ et on essaye d'aboutir à $\cdots =v_n \textcolor{blue}{+r}.$
+
+\medskip
+
+Pour tout $n\in\mathbb{N}~:$
+
+\[
+v_{n+1}=\dfrac{4}{u_{n+1}}=\dfrac{4}{\frac{4u_n}{u_n+4}}=4\times \dfrac{u_n+4}{4u_n}=\dfrac{\cancel{4}\left(u_n+4\right)}{\cancel{4}u_n}=\dfrac{u_n}{u_n}+\dfrac{4}{u_n}=1+v_n.
+\]
+
+
+Conclusion~: pour tout $n\in\mathbb{N},$ $v_{n+1}=v_n+1,$
+donc $(v_n)_{n\in\mathbb{N}}$ est arithmétique de raison $r=1.$
+
+
+
+\item La suite $(v_n)_{n\in\mathbb{N}}$ est arithmétique de raison $r=1,$ et  $v_0=\frac{4}{u_0}=\frac{4}{1}=4,$ donc pour tout $n\in\mathbb{N}~:$
+\[v_n=v_0+n\times r=4+n\times 1=n+4.\]
+
+
+Enfin $v_n=\dfrac{4}{u_{n}}$ donc
+\[u_n=\dfrac{4}{v_{n}}=\dfrac{4}{n+4}.\]
+
+\medskip
+
+\textbf{Remarque~:} On a utilisé~: si $a=\dfrac{b}{c},$ alors $c=\dfrac{b}{a}.$
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item \begin{enumerate}
+\item Chaque année, 80~\% des abonnés se réabonnent (multiplication par $0,8$), puis 40  nouvelles personnes s'inscrivent, donc
+
+\begin{align*}
+u_0&=500\\
+u_1&=500\times 0,8+40=440\\
+u_2&=440\times 0,8+40=392
+\end{align*}
+
+
+
+Conclusion~: $u_1=440$ et  $u_2=392.$
+\item La formule de récurrence est $u_{n+1}=u_n\times 0,8+40,$ ou encore
+\[u_{n+1}=0,8u_n+40.\]
+\item Avec un schéma~:
+
+
+~{}\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{500} \ar@/^0.5cm/[r]|{\red{-60}} \ar@/_0.5cm/[r]|{\green{\times 0,88}} & 
+    *+[F]+{440} \ar@/^0.5cm/[r]|{\red{-48}} \ar@/_0.5cm/[r]|{\green{\times \approx 0,89}} & *+[F]+{392} \\
+    \txt{\blue{$u_0$}}&
+    \txt{\blue{$u_1$}}&\txt{\blue{$u_2$}}    
+    }$
+    \end{center}
+    
+    
+    \medskip
+    
+    Les résultats en rouge (\textcolor{red}{$-6$} et \textcolor{red}{$-48$}) sont différents, donc $u$ n'est pas arithmétique.  Les résultats en vert (\textcolor{green}{$0,88$} et \textcolor{green}{$0,89$}) sont différents, donc $u$ n'est pas géométrique.
+    
+\end{enumerate}
+\item 
+On pose $v_n=u_n -200$ pour tout $n\in\mathbb{N}.$
+\begin{enumerate}
+\item Pour tout $n\in\mathbb{N}~:$
+
+
+
+\begin{alignat*}{3}
+&v_{n+1}&& =u_{n+1}-200 && \text{  (déf. de } (v_n)_{n\in\mathbb{N}})\\
+& && =(0,8u_n+40)-200 && \text{  (rel. réc. pour } (u_n)_{n\in\mathbb{N}})\\
+& && =0,8u_n-160 && \text{  (calcul)}\\
+& && =0,8\left(u_n-\frac{160}{0,8}\right) && \text{  (factorisation)}\\
+& && =0,8(u_n-200) && \text{  (calcul)}\\
+& && =0,8v_n&& \text{  (déf. de } (v_n)_{n\in\mathbb{N}})\\
+\end{alignat*}
+
+\medskip
+
+Conclusion~: pour tout $n\in\mathbb{N},$ $v_{n+1}=0,8v_n,$
+donc $(v_n)_{n\in\mathbb{N}}$ est géométrique de raison $q=0,8.$
+
+
+
+\item La suite $(v_n)_{n\in\mathbb{N}}$ est géométrique de raison $q=0,8,$ et  $v_0=u_0-200=500-200=300,$ donc pour tout $n\in\mathbb{N}~:$
+\[v_n=v_0\times q^n=300\times 0,8^n.\]
+
+Enfin $v_n=u_n-200$ donc
+\[u_n=v_n+200=300\times 0,8^n+200.\]
+\item Suivant ce modèle, en 2030 (donc après 10 ans), il devrait y avoir
+\[u_{10}=300\times 0,8^{10}+200\approx 232~\text{abonnés}.\]
+\end{enumerate}
+\item Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété
+\[u_n=300\times 0,8^n+200.\]
+
+
+
+
+
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+\[
+\left.
+    \begin{array}{ll}
+        u_0&=500 \\
+        300\times 0,8^0+200&= 300\times 1+200=500
+    \end{array}
+\right \}\implies \mathcal{P}_0~\text{est vraie}.
+\]
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[u_k=300\times 0,8^k+200.\]
+
+%\medskip
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que \[u_{k+1}=300\times 0,8^{k+1}+200.\]
+
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[u_k=300\times 0,8^k+200.\]
+
+
+On a alors~:
+
+
+\begin{alignat*}{3}
+&u_{k+1}&& =0,8u_k+40 && \text{  (rel. réc. pour } (u_n)_{n\in\mathbb{N}})\\
+& && =0,8\left(300\times 0,8^k+200\right)+40 && \text{ {(H.R.)}}\\
+& && =300\times 0,8\times 0,8^k+0,8\times 200+40 && \text{  (on développe)}\\
+& && =300\times 0,8^{k+1}+200 && \text{  (calcul)}.\\
+\end{alignat*}
+
+
+
+La propriété $\mathcal{P}_{k+1}$ est donc vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+On définit deux suites $\left(u_n\right)_{n\in\mathbb{N}}$ et $\left(v_n\right)_{n\in\mathbb{N}}$ par $u_0=0,$ $v_0=8$ et les relations de récurrence~:
+
+\[\begin{cases}
+u_{n+1}&=\frac{3}{4}u_n+\frac{1}{4}v_n\\
+v_{n+1}&=\frac{1}{4}u_n+\frac{3}{4}v_n\end{cases}\] pour tout $n\in\mathbb{N}.$
+
+\begin{enumerate}
+\item \setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{align*}
+u_0&=0\\
+u_1&=\frac{3}{4}\times u_0+\frac{1}{4}\times v_0=\frac{3}{4}\times 0+\frac{1}{4}\times 8=2\\
+u_2&=\frac{3}{4}\times u_1+\frac{1}{4}\times v_1=\frac{3}{4}\times 2+\frac{1}{4}\times 6=3
+\end{align*}
+
+\begin{align*}
+v_0&=8\\
+v_1&=\frac{1}{4}\times u_0+\frac{3}{4}\times v_0=\frac{1}{4}\times 0+\frac{3}{4}\times 8=6\\
+v_2&=\frac{1}{4}\times u_1+\frac{3}{4}\times v_1=\frac{1}{4}\times 2+\frac{3}{4}\times 6=5
+\end{align*}
+\end{multicols}
+
+\medskip
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.74,-0.82)(8.84,0.88)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.74,-0.82)(8.84,0.88)
+\rput[tl](-0.3,0.64){\ududff{$u_0$}}
+\rput[tl](1.7,0.64){\ududff{$u_1$}}
+\rput[tl](2.7,0.64){\ududff{$u_2$}}
+\rput[tl](4.7,0.64){\red{$v_2$}}
+\rput[tl](5.7,0.64){\red{$v_1$}}
+\rput[tl](7.7,0.64){\red{$v_0$}}
+\psdots[dotstyle=*,linecolor=ududff](0.,0.)
+\psdots[dotstyle=*,linecolor=ududff](2.,0.)
+\psdots[dotstyle=*,linecolor=ududff](3.,0.)
+\psdots[dotstyle=*,linecolor=red](5.,0.)
+\psdots[dotstyle=*,linecolor=red](6.,0.)
+\psdots[dotstyle=*,linecolor=red](8.,0.)
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Pour placer $u_{n+1}$ et $v_{n+1},$ on coupe le segment $\left[u_n;v_n\right]$ en $4~;$ et on place $u_{n+1}$ au quart du segment, $v_{n+1}$ aux trois-quarts du segment.
+
+\end{enumerate}
+\end{exo}
+
 
 \end{document}

@@ -1521,5 +1521,65 @@ Comme on obtient deux fois le même reste (6), ça va continuer indéfiniment. C
 \end{enumerate}
 \end{exo}
 
+\begin{exo}
+
+
+\begin{enumerate}
+\item On résout l'équation $|x-2|=3.$
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+\textbf{Méthode n°1~: avec la définition de la valeur absolue.}
+
+\medskip
+
+Les nombres dont la valeur absolue vaut 3 sont $3$ et $-3.$
+
+Donc dire que \[|x-2|=3\] revient à dire que
+\[x-2=3\qquad\text{ou que}\qquad x-2=-3\]
+
+Donc
+
+\begin{alignat*}{3}
+&x-\cancel{2}+\cancel{2}=3+2&&\text{\qquad ou \qquad} x-\cancel{2}+\cancel{2}=-3+2\\
+&x=5&&\text{\qquad ou \qquad} x=-1\\
+\end{alignat*}
+
+Conclusion~: l'équation a deux solutions~: $x=5$ et $x=-1.$
+
+\columnbreak
+
+\textbf{Méthode n°2~: avec la distance.}
+
+\medskip
+
+Dire que \[|x-2|=3\] revient à dire que la distance entre $x$ et $2$ est égale à $3.$
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.45,-0.41034356916185444)(5.768763307234229,1.1013400300795446)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.45,-0.41034356916185444)(5.768763307234229,1.1013400300795446)
+\psline[linewidth=2.pt,linecolor=red]{->}(0.5,0.5)(-1.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(0.5,0.5)(2.,0.5)
+\rput[tl](-0.3,1){\red{distance $=$ 3}}
+\psline[linewidth=2.pt,linecolor=red]{->}(3.5,0.5)(2.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(3.5,0.5)(5.,0.5)
+\rput[tl](2.7,1){\red{distance $=$ 3}}
+\psdots[dotstyle=*,linecolor=blue](2.,0.)
+\psdots[dotstyle=*,linecolor=green](5.,0.)
+\psdots[dotstyle=*,linecolor=green](-1.,0.)
+\end{pspicture*}
+\end{center}
+
+
+On voit qu'il y a deux solutions~: $x=5$ et $x=-1.$
+
+\end{multicols}
+
+\end{enumerate}
+
+\end{exo}
 
 \end{document}
