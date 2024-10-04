@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  2 OCT 2024 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  4 OCT 2024 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1651,51 +1651,79 @@ sep char (CT)
 \@centerbox=\box147
 \c@ROWcellindex@=\count452
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count453
+\lst@gtempboxa=\box148
+\lst@token=\toks77
+\lst@length=\count454
+\lst@currlwidth=\dimen413
+\lst@column=\count455
+\lst@pos=\count456
+\lst@lostspace=\dimen414
+\lst@width=\dimen415
+\lst@newlines=\count457
+\lst@lineno=\count458
+\lst@maxwidth=\dimen416
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count459
+\lst@skipnumbers=\count460
+\lst@framebox=\box149
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
 (./CorrigesTerminale.aux)
 \openout1 = `CorrigesTerminale.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 93.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-70.
+93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 93.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-70.
+93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 93.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-70.
+93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 70.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 70.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 93.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 93.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
@@ -1739,8 +1767,8 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-\AtBeginShipoutBox=\box148
-Package hyperref Info: Link coloring ON on input line 70.
+\AtBeginShipoutBox=\box150
+Package hyperref Info: Link coloring ON on input line 93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1751,74 +1779,75 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count453
+\c@section@level=\count461
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 93.
+LaTeX Info: Redefining \pageref on input line 93.
+LaTeX Info: Redefining \nameref on input line 93.
 
 (./CorrigesTerminale.out) (./CorrigesTerminale.out)
 \@outlinefile=\write8
 \openout8 = `CorrigesTerminale.out'.
 
-LaTeX Info: Redefining \degres on input line 70.
-LaTeX Info: Redefining \dots on input line 70.
+LaTeX Info: Redefining \degres on input line 93.
+LaTeX Info: Redefining \dots on input line 93.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumerate package,
-(french.ldf)             reported on input line 70.
-LaTeX Info: Redefining \up on input line 70.
+(french.ldf)             reported on input line 93.
+LaTeX Info: Redefining \up on input line 93.
+\c@lstlisting=\count462
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 70.
+ 93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 70.
+(Font)              scaled to size 9.19998pt on input line 93.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 70.
+(Font)              scaled to size 6.99199pt on input line 93.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 70.
+(Font)              scaled to size 5.51999pt on input line 93.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 70.
+(Font)              scaled to size 9.19998pt on input line 93.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 70.
+(Font)              scaled to size 6.99199pt on input line 93.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 70.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+(Font)              scaled to size 5.51999pt on input line 93.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 93.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 93.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 7
-0.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 9
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 70
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 93
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 75.
+(Font)              scaled to size 11.03998pt on input line 98.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 75.
+(Font)              scaled to size 8.27998pt on input line 98.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 75.
+(Font)              scaled to size 6.43999pt on input line 98.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 75.
+(Font)              scaled to size 11.03998pt on input line 98.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 75.
+(Font)              scaled to size 8.27998pt on input line 98.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 75.
+(Font)              scaled to size 6.43999pt on input line 98.
 
 
 LaTeX Warning: No \author given.
@@ -1831,7 +1860,7 @@ LaTeX Warning: No \author given.
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-128.
+151.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
@@ -1841,53 +1870,53 @@ Overfull \vbox (34.08577pt too high) has occurred while \output is active []
 
 [3] [4] [5] [6]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 585.
+(Font)              scaled to size 7.35999pt on input line 608.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 585.
+(Font)              scaled to size 6.25598pt on input line 608.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 585.
+(Font)              scaled to size 7.35999pt on input line 608.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 585.
+(Font)              scaled to size 6.25598pt on input line 608.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 589.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 612.
 
 
 [7]
-Underfull \hbox (badness 6110) in paragraph at lines 682--683
+Underfull \hbox (badness 6110) in paragraph at lines 705--706
 []\T1/futs/m/n/9 x s'ob-tient avec les touches
  []
 
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 685.
+nput line 708.
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
 []\T1/futs/m/n/9 X s'ob-tient avec la touche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 724--725
+Underfull \hbox (badness 10000) in paragraph at lines 747--748
 []\T1/futs/m/n/9 X s'ob-tient avec la touche
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 733--734
+Underfull \hbox (badness 10000) in paragraph at lines 756--757
 [][] \T1/futs/m/n/9 (on choi-sit donc
  []
 
 [8] [9]
 
 Package fourier-orns Warning: Command \danger is deprecated.
-(fourier-orns)                Use \warning instead; reported on input line 978.
+(fourier-orns)                Use \warning instead; reported on input line 1001
+.
 
-
-LaTeX Font Info:    Trying to load font information for U+futs on input line 97
-8.
+LaTeX Font Info:    Trying to load font information for U+futs on input line 10
+01.
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/ufuts.fd
 File: ufuts.fd 2004/03/02 Fontinst v1.926 font definitions for U/futs.
 ) [10] [11] [12]
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1230
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1253
 .
 
 [13]
@@ -1896,59 +1925,70 @@ Overfull \vbox (16.8228pt too high) has occurred while \output is active []
 
 [14]
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1358
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1381
 .
 
 [15]
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1454
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1477
 .
 
 [16] [17]
-Overfull \hbox (12.45058pt too wide) in paragraph at lines 1594--1594
+Overfull \hbox (12.45058pt too wide) in paragraph at lines 1617--1617
  [][]$[]$ 
  []
 
 [18]
 
 Package fourier-orns Warning: Command \danger is deprecated.
-(fourier-orns)                Use \warning instead; reported on input line 1666
+(fourier-orns)                Use \warning instead; reported on input line 1689
 .
 
 [19] <xymatrix 3x3 134> [20] [21] <xymatrix 3x2 218> <xymatrix 5x3 254>
 [22] [23]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 2191.
+(Font)              scaled to size 22.88956pt on input line 2214.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 2191.
+(Font)              scaled to size 15.89755pt on input line 2214.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 2191.
+(Font)              scaled to size 22.88956pt on input line 2214.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 2191.
+(Font)              scaled to size 15.89755pt on input line 2214.
  [24] [25] [26] [27]
 
 Package fourier-orns Warning: Command \danger is deprecated.
-(fourier-orns)                Use \warning instead; reported on input line 2484
+(fourier-orns)                Use \warning instead; reported on input line 2507
 .
 
-[28] <xymatrix 3x2 218> [29] [30]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2763.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2763.
+[28] <xymatrix 3x2 218> [29] [30] [31]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+922.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+Package fourier-orns Warning: Command \danger is deprecated.
+(fourier-orns)                Use \warning instead; reported on input line 2957
+.
+
+[32] [33]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3111.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3111.
  (./CorrigesTerminale.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2763.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2763.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3111.
 
 Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 (rerunfilecheck)             Checksum: D9907A870DC48F5F544AFD141C3FCA93;128.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2763.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3111.
  ) 
 Here is how much of TeX's memory you used:
- 38793 strings out of 483041
- 716004 string characters out of 5962452
- 1308131 words of memory out of 5000000
- 53000 multiletter control sequences out of 15000+600000
- 651960 words of font info for 171 fonts, out of 8000000 for 9000
+ 40586 strings out of 483041
+ 739252 string characters out of 5962452
+ 1458770 words of memory out of 5000000
+ 54772 multiletter control sequences out of 15000+600000
+ 652279 words of font info for 172 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 60i,20n,75p,919b,1228s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,20n,75p,919b,1356s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesTerminale.dvi (30 pages, 720400 bytes).
+Output written on CorrigesTerminale.dvi (33 pages, 751556 bytes).

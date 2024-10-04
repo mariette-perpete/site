@@ -1158,4 +1158,75 @@ Pour louer une voiture je dois payer~:
 
 \end{exo}
 
+\begin{exo}
+
+Les gares de Calais et de Boulogne-sur-mer sont distantes de 30~km. Un train part à 12 h de Boulogne-sur-mer en direction de Calais et roule à la vitesse de 40~km/h. Un train part de Calais à 12 h 15 et fait route en sens inverse à la vitesse de 60~km/h.
+
+\begin{enumerate}
+\item Le train qui part à 12 h de Boulogne-sur-mer roule à la vitesse de 40~km/h, donc il parcourt 40~km en 60~min. Pour savoir quand il arrive à Calais, on complète un tableau de proportionnalité~:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+temps (en min)& 60&? \\ \hline 
+distance (en km)&40& 30 \\ \hline
+\end{tabular}
+\end{center}
+
+Le train mettra $\frac{60\times 30}{40}=\frac{\np{1800}}{40}=45$~min pour arriver à Calais, donc il y sera à 12 h 45.
+
+\medskip
+
+Pour le train qui part de Calais, le calcul est plus facile~: il roule à 60~km/h, donc parcourt 60~km en 60~min~; et ainsi 30~km en 30~min. Comme il part à 12 h 15, il arrive à 12 h 45 lui aussi.
+
+\medskip
+
+On peut ainsi représenter la marche des deux trains~:
+
+\begin{center}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.5,-0.96)(11,6.5)
+\multips(0,0)(0,1.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(10,0)}
+\multips(0,0)(1.0,0){11}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(0,6)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,labels=none,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(11,6.5)
+\begin{scriptsize}
+\rput[tl](-0.4,-0.34){12h}
+\rput[tl](1.4,-0.34){12h10}
+\rput[tl](3.4,-0.34){12h20}
+\rput[tl](5.4,-0.34){12h30}
+\rput[tl](7.4,-0.34){12h40}
+\rput[tl](9.4,-0.34){12h50}
+\rput[tl](-0.3,0.18){0}
+\rput[tl](-0.6,2.12){10}
+\rput[tl](-0.6,4.14){20}
+\rput[tl](-2.1,0.4){\fbox{Boulogne}}
+\rput[tl](-2.1,6.4){\fbox{Calais}}
+\rput[tl](-0.6,6.18){30}
+\rput[tl](4.5,-0.34){\green{12h27}}
+\end{scriptsize}
+\psline[linewidth=2.pt,linecolor=red](0.,0.)(9.,6)
+\psline[linewidth=2.pt,linecolor=blue](0.,6.)(3,6)
+\psline[linewidth=2.pt,linecolor=blue](3.,6.)(9,0)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green](5.4,3.6)(5.4,0)
+\end{pspicture*}
+\end{center}
+
+\item Nous allons déterminer l'heure de croisement des trains par le calcul. Graphiquement, cela correspond à l'abscisse du point d'intersection des courbes.
+
+\medskip
+
+\`A 12h15, le train qui part de Boulogne-sur-mer a parcouru 10~km (facile à vérifier), il est donc à 20~km de Calais. C'est l'heure à laquelle le deuxième train part. Comme l'un roule à 40~km/h et l'autre à 60~km/h, tout se passe comme si un seul train devait parcourir 20~km à la vitesse de $40+60=100$~km/h. On complète un tableau de proportionnalité~:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+temps (en min)& 60&? \\ \hline 
+distance (en km)&100& 20 \\ \hline
+\end{tabular}
+\end{center}
+
+$\frac{60\times 20}{100}=\frac{\np{1200}}{100}=12,$ donc il faudrait 12~min à ce train pour parcourir 20~km. Ainsi, les deux trains se croiseront-ils à \[\text{12 h 15 min}+\text{12 min}=\text{12 h 27 min}.\]
+ 
+\end{enumerate}
+
+\end{exo}
+
 \end{document}

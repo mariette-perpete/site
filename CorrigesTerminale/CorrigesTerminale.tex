@@ -63,6 +63,29 @@
 \usepackage{xcolor}
 \usepackage{stackengine}
     \setstackEOL{\\}
+    
+    \usepackage{listings}
+\lstset{numbers=left, stepnumber=1}
+
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+\setlength{\columnseprule}{0.0pt}
+
+\usepackage{listings}
+\lstset{%
+  language=Python,
+  basicstyle   = \ttfamily,
+  keywordstyle =    \color{magenta},
+  keywordstyle = [2]\color{orange},
+  commentstyle =    \color{gray}\itshape,
+  stringstyle  =    \color{cyan},
+  numbers      = none,
+  frame        = single,
+  framesep     = 2pt,
+  aboveskip    = 1ex
+}
 
 \title{Mathématiques -- Terminale spécialité}
 
@@ -2757,6 +2780,331 @@ v_2&=\frac{1}{4}\times u_1+\frac{3}{4}\times v_1=\frac{1}{4}\times 2+\frac{3}{4}
 \textbf{Remarque~:} Pour placer $u_{n+1}$ et $v_{n+1},$ on coupe le segment $\left[u_n;v_n\right]$ en $4~;$ et on place $u_{n+1}$ au quart du segment, $v_{n+1}$ aux trois-quarts du segment.
 
 \end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+On définit deux suites $\left(u_n\right)_{n\in\mathbb{N}}$ et $\left(v_n\right)_{n\in\mathbb{N}}$ par $u_0=0,$ $v_0=8$ et les relations de récurrence~:
+
+\[\begin{cases}
+u_{n+1}&=\frac{3}{4}u_n+\frac{1}{4}v_n\\
+v_{n+1}&=\frac{1}{4}u_n+\frac{3}{4}v_n\end{cases}\] pour tout $n\in\mathbb{N}.$
+
+\begin{enumerate}
+\item \setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{align*}
+u_0&=0\\
+u_1&=\frac{3}{4}\times u_0+\frac{1}{4}\times v_0=\frac{3}{4}\times 0+\frac{1}{4}\times 8=2\\
+u_2&=\frac{3}{4}\times u_1+\frac{1}{4}\times v_1=\frac{3}{4}\times 2+\frac{1}{4}\times 6=3
+\end{align*}
+
+\begin{align*}
+v_0&=8\\
+v_1&=\frac{1}{4}\times u_0+\frac{3}{4}\times v_0=\frac{1}{4}\times 0+\frac{3}{4}\times 8=6\\
+v_2&=\frac{1}{4}\times u_1+\frac{3}{4}\times v_1=\frac{1}{4}\times 2+\frac{3}{4}\times 6=5
+\end{align*}
+\end{multicols}
+
+\medskip
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.74,-0.82)(8.84,0.88)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.74,-0.82)(8.84,0.88)
+\rput[tl](-0.3,0.64){\ududff{$u_0$}}
+\rput[tl](1.7,0.64){\ududff{$u_1$}}
+\rput[tl](2.7,0.64){\ududff{$u_2$}}
+\rput[tl](4.7,0.64){\red{$v_2$}}
+\rput[tl](5.7,0.64){\red{$v_1$}}
+\rput[tl](7.7,0.64){\red{$v_0$}}
+\psdots[dotstyle=*,linecolor=ududff](0.,0.)
+\psdots[dotstyle=*,linecolor=ududff](2.,0.)
+\psdots[dotstyle=*,linecolor=ududff](3.,0.)
+\psdots[dotstyle=*,linecolor=red](5.,0.)
+\psdots[dotstyle=*,linecolor=red](6.,0.)
+\psdots[dotstyle=*,linecolor=red](8.,0.)
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Pour placer $u_{n+1}$ et $v_{n+1},$ on coupe le segment $\left[u_n;v_n\right]$ en $4~;$ et on place $u_{n+1}$ au quart du segment, $v_{n+1}$ aux trois-quarts du segment.
+
+
+
+\item On pose $s_n=v_n+u_n$ et $d_n=v_n-u_n$ pour tout $n\in\mathbb{N}.$
+
+\begin{itemize}
+\item[\textbullet] Pour tout $n\in\mathbb{N}~:$
+\begin{align*}s_{n+1}&=v_{n+1}+u_{n+1}\\
+&=\left(\frac{1}{4}u_n+\frac{3}{4}v_n\right)+\left(\frac{3}{4}u_n+\frac{1}{4}v_n\right)\\
+&=\frac{4}{4}v_n+\frac{4}{4}u_n\\
+&=v_n+u_n\\
+&=s_n.\end{align*}
+
+\medskip
+
+Conclusion~: pour tout $n\in\mathbb{N},$ $s_{n+1}=s_n$ donc $\left(s_n\right)_{n\in\mathbb{N}}$ est constante. Et comme $s_0=v_0+u_0=8+0=8,$ $\left(s_n\right)_{n\in\mathbb{N}}$ est constante égale à 8~:
+\[\text{pour tout }n\in\mathbb{N},~s_n=8.\]
+\item[\textbullet] Pour tout $n\in\mathbb{N}~:$
+\begin{align*}d_{n+1}&=v_{n+1}-u_{n+1}\\
+&=\left(\frac{1}{4}u_n+\frac{3}{4}v_n\right)-\left(\frac{3}{4}u_n+\frac{1}{4}v_n\right)\\
+&=\frac{2}{4}v_n-\frac{2}{4}u_n\\
+&=\frac{1}{2}\left(v_n-u_n\right)\\
+&=\frac{1}{2}d_n
+.\end{align*}
+
+\medskip
+
+Conclusion~: pour tout $n\in\mathbb{N},$ $d_{n+1}=\frac{1}{2}d_n$ donc $\left(d_n\right)_{n\in\mathbb{N}}$ est géométrique de raison $q=\frac{1}{2}.$
+\end{itemize}
+\item  La suite $(d_n)_{n\in\mathbb{N}}$ est géométrique de raison $q=\frac{1}{2},$ et  $d_0=v_0-u_0=8-0=8,$ donc pour tout $n\in\mathbb{N}~:$
+\[d_n=d_0\times q^n=8\times \left(\frac{1}{2}\right)^n.\] On sait par ailleurs que $s_n=8$ pour tout $n\in\mathbb{N}.$
+
+\medskip
+Les relations
+
+\[\begin{cases}
+s_n&=v_n+u_n\\
+d_n&=v_n-u_n\end{cases}\]
+
+se réécrivent donc
+
+\[\begin{cases}
+8&=v_n+u_n\\
+8\times \left(\frac{1}{2}\right)^n&=v_n-u_n\end{cases}\]
+
+On ajoute membre à membre~:
+
+\begin{align*}
+8+8\times \left(\frac{1}{2}\right)^n&=v_n+\cancel{u_n}+v_n-\cancel{u_n}\\
+8+8\times \left(\frac{1}{2}\right)^n&=2v_n\\
+\frac{8+8\times \left(\frac{1}{2}\right)^n}{2}&=v_n\\
+4+4\times \left(\frac{1}{2}\right)^n&=v_n
+\end{align*}
+
+\medskip
+
+Enfin, comme $s_n=v_n+u_n~:$
+\[u_n=s_n-v_n=8-\left(4+4\times \left(\frac{1}{2}\right)^n\right)=8-4-4\times \left(\frac{1}{2}\right)^n=4-4\times \left(\frac{1}{2}\right)^n.\]
+
+\medskip
+
+Conclusion~: pour tout $n\in\mathbb{N},$
+
+\[\boxed{v_n=4+4\times \left(\frac{1}{2}\right)^n}\qquad\qquad \boxed{u_n=4-4\times \left(\frac{1}{2}\right)^n}\]
+
+
+
+
+\end{enumerate}
+
+
+\end{exo}
+
+\begin{exo}
+
+\item \setlength{\columnseprule}{1pt}
+
+\begin{multicols}{3}
+
+\begin{center}
+\textbf{Programme}
+\end{center}
+
+\vspace*{0.2cm}
+
+
+\begin{lstlisting}
+for i in range(1,6):
+	print(i**2)
+\end{lstlisting}
+
+
+
+\vspace*{2cm}
+
+
+\columnbreak
+
+
+\begin{center}
+\textbf{Traduction en français}
+\end{center}
+
+
+\newtcolorbox{mybox}[1]{colback=white,colframe=black!80!white,fonttitle=\bfseries,title=#1}\begin{mybox}{}
+
+$\text{Pour i allant de 1 à 5:}$
+
+$\qquad\text{afficher }\text{i}^2$
+\end{mybox}
+
+\vspace*{4cm}
+
+
+\columnbreak
+
+\begin{center}
+\textbf{Commentaires}
+\end{center}
+
+\begin{itemize}
+\item[\textbullet]  \danger La commande \[\text{for i in range(1,6)}\] signifie que i va de 1 à 5 -- il y a un décalage à la fin.
+\item[\textbullet] On n’oublie pas les \og  : \fg~{} à la fin de la première ligne. L'incrément qui suit (équivalent à une tabulation sur Thonny) est alors automatiquement inséré lorsqu'on passe à la ligne.
+\end{itemize}
+
+\end{multicols}
+
+
+
+\end{exo}
+
+\begin{exo}
+~{}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\begin{center}
+\textbf{Programme}
+\end{center}
+
+\begin{lstlisting}
+for i in range(1,11):
+	print(8*i)
+\end{lstlisting}
+
+
+
+
+
+
+
+
+\columnbreak
+
+\begin{center}
+\textbf{Commentaires}
+\end{center}
+
+On affiche les résultats les uns en-dessous des autres~:
+
+\[8\times 1=8,~8\times 2=16,~8\times 3=24,~\dots,~8\times 10=80.\]
+
+\end{multicols}
+
+\end{exo}
+
+\newpage
+
+\begin{exo}
+
+On explique le fonctionnement du programme en remplissant un tableau.
+
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{3}
+
+\begin{center}
+\textbf{Programme}
+\end{center}
+
+\begin{lstlisting}
+s=0
+for i in range(1,101):
+	s=s+i
+print(s)
+\end{lstlisting}
+
+
+
+\vspace*{6cm}
+
+
+\columnbreak
+
+\begin{center}
+\textbf{Tableau}
+\end{center}
+
+
+On a une boucle \textbf{Pour}, où i va de 1 à 100.
+
+\medskip
+
+\begin{center}
+
+
+\begin{tabular}{|c|c|} \hline
+\textbf{Valeur de i}& \textbf{Valeur de s}\\ \hline
+\cellcolor{gray}& 0\\ \hline
+1& $0+1=1$\\ \hline
+2&$1+2=3$\\ \hline
+3&$3+3=6$\\ \hline
+4&$6+4=10$ \\ \hline
+$\cdots$&$\cdots$\\ \hline
+99&$\cdots$\\ \hline
+100&$\cdots$\\ \hline
+\end{tabular}
+\end{center}
+\vspace*{3.5cm}
+
+
+\columnbreak
+
+\begin{center}
+\textbf{Explications}
+\end{center}
+
+\begin{itemize}
+\item[\textbullet] La 1\up{re} ligne du tableau ci-contre correspond à la 1\up{re} ligne du code~: $\text{s}=0$ et i n'existe pas encore.
+\item[\textbullet] Dans la boucle, i va de $1$ à $100,$ donc on écrit les valeurs de 1 jusqu'à 100 dans la 1\up{re} colonne.
+\item[\textbullet] À chaque étape de la boucle \textbf{Pour}, s reçoit la valeur $\text{s}+\text{i}.$
+
+ Donc au début, lorsque $\text{i}=1,$ s reçoit la valeur $\text{s}+\text{i}=0+1=1.$ La valeur de s a donc été modifiée et il vaut maintenant 1 (et non plus 0).
+\item[\textbullet] Ensuite, lorsque $\text{i}=2,$ s reçoit la nouvelle valeur $\text{s}+\text{i}=1+2=3.$ La valeur de s a été une nouvelle fois modifiée.
+\item[\textbullet] Puis quand $\text{i}=3,$ s reçoit la nouvelle valeur $\text{s}+\text{i}=3+3=6.$ Cela continue ainsi de suite jusqu'en bas du tableau.
+\end{itemize}
+\end{multicols}
+
+\medskip
+
+Finalement, on part de 0, puis on ajoute 1, puis 2, puis 3~; et ainsi de suite jusque 100. On calcule donc
+\[1+2+3+\cdots+ 99+100.\] Le résultat, \np{5050}, s'affiche en fin de programme.
+
+\end{exo}
+
+
+\begin{exo}
+
+On édite en machine un programme Python qui calcule~:
+\[10!=1\times 2\times 3\times \cdots\times 10.\]
+
+On s'inspire pour cela du programme précédent, avec trois différences~:
+
+\begin{itemize}
+\item[\textbullet] on \textbf{multiplie} par i à chaque étape, au lieu \textbf{d'ajouter} i~;
+\item[\textbullet] au début $\text{s}=1,$ élément neutre de la multiplication (si on démarrait avec $\text{s}=0,$ la valeur de s vaudrait toujours 0)~;
+\item[\textbullet] la boucle ne va que de 1 à 10.
+\end{itemize}
+
+\medskip
+
+\begin{lstlisting}
+s=1
+for i in range(1,11):
+	s=s*i
+print(s)
+\end{lstlisting}
+
+
 \end{exo}
 
 

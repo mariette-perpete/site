@@ -1577,7 +1577,249 @@ Dire que \[|x-2|=3\] revient à dire que la distance entre $x$ et $2$ est égale
 On voit qu'il y a deux solutions~: $x=5$ et $x=-1.$
 
 \end{multicols}
+\item On résout l'équation $|x-1|=4.$
 
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+\textbf{Méthode n°1~: avec la définition de la valeur absolue.}
+
+\medskip
+
+Les nombres dont la valeur absolue vaut 4 sont $4$ et $-4.$
+
+Donc dire que \[|x-1|=4\] revient à dire que
+\[x-1=4\qquad\text{ou que}\qquad x-1=-4\]
+
+Donc
+
+\begin{alignat*}{3}
+&x-\cancel{1}+\cancel{1}=4+1&&\text{\qquad ou \qquad} x-\cancel{1}+\cancel{1}=-4+1\\
+&x=5&&\text{\qquad ou \qquad} x=-3\\
+\end{alignat*}
+
+Conclusion~: l'équation a deux solutions~: $x=5$ et $x=-3.$
+
+\columnbreak
+
+\textbf{Méthode n°2~: avec la distance.}
+
+\medskip
+
+Dire que \[|x-1|=4\] revient à dire que la distance entre $x$ et $1$ est égale à $4.$
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.45,-0.41034356916185444)(5.768763307234229,1.1013400300795446)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.45,-0.41034356916185444)(5.768763307234229,1.1013400300795446)
+\psline[linewidth=2.pt,linecolor=red]{->}(0.5,0.5)(1.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(0.5,0.5)(-3.,0.5)
+\rput[tl](-1.8,1){\red{distance $=$ 4}}
+\psline[linewidth=2.pt,linecolor=red]{->}(3.5,0.5)(1.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(3.5,0.5)(5.,0.5)
+\rput[tl](1.8,1){\red{distance $=$ 4}}
+\psdots[dotstyle=*,linecolor=blue](1.,0.)
+\psdots[dotstyle=*,linecolor=green](5.,0.)
+\psdots[dotstyle=*,linecolor=green](-3.,0.)
+\end{pspicture*}
+\end{center}
+
+
+On voit qu'il y a deux solutions~: $x=5$ et $x=-3.$
+
+\end{multicols}
+\item On résout l'équation $|x+2|=2.$
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+\textbf{Méthode n°1~: avec la définition de la valeur absolue.}
+
+\medskip
+
+Les nombres dont la valeur absolue vaut 2 sont $2$ et $-2.$
+
+Donc dire que \[|x+2|=2\] revient à dire que
+\[x+2=2\qquad\text{ou que}\qquad x+2=-2\]
+
+Donc
+
+\begin{alignat*}{3}
+&x+\cancel{2}-\cancel{2}=2-2&&\text{\qquad ou \qquad} x+\cancel{2}-\cancel{2}=-2-2\\
+&x=0&&\text{\qquad ou \qquad} x=-4\\
+\end{alignat*}
+
+Conclusion~: l'équation a deux solutions~: $x=0$ et $x=-4.$
+
+\columnbreak
+
+\textbf{Méthode n°2~: avec la distance.}
+
+\medskip
+
+Il y a une vraie difficulté~: l'égalité $|x+2|=2$ se réécrit \[|x-(-2)|=2\] (il faut absolument faire apparaître un \og $-$ \fg~{} pour pouvoir interpréter en termes de distance). Donc dire que \[|x+2|=2\] revient à dire que la distance entre $x$ et $-2$ est égale à $2.$
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.45,-0.41034356916185444)(1.268763307234229,1.1013400300795446)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(-4.45,-0.41034356916185444)(1.268763307234229,1.1013400300795446)
+\psline[linewidth=2.pt,linecolor=red]{->}(-3,0.5)(-4.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(-3,0.5)(-2.,0.5)
+\rput[tl](-3.5,1){\red{dist. $=$ 2}}
+\psline[linewidth=2.pt,linecolor=red]{->}(-1,0.5)(-2.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(-1,0.5)(0.,0.5)
+\rput[tl](-1.5,1){\red{dist. $=$ 2}}
+\psdots[dotstyle=*,linecolor=blue](-2.,0.)
+\psdots[dotstyle=*,linecolor=green](-4.,0.)
+\psdots[dotstyle=*,linecolor=green](0.,0.)
+\end{pspicture*}
+\end{center}
+
+
+On voit qu'il y a deux solutions~: $x=0$ et $x=-4.$
+
+\end{multicols}
+\item 
+
+On résout l'équation $|x-2|=|x-6|.$
+
+Conformément à l'indication, on travaille avec la distance~:  dire que $|x-2|=|x-6|,$ c'est dire que la distance entre $x$ et $2$ est la même que la distance entre $x$ et $6.$ Autrement dit, $x$ est à égale distance de $2$ et de $6.$ Il y a un seul nombre $x$ qui convienne~: le milieu de l'intervalle $\left[2;6\right],$ c'est-à-dire $x=4.$
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(1,-0.41034356916185444)(7,1.1013400300795446)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(1,-0.41034356916185444)(7,1.1013400300795446)
+\psline[linewidth=2.pt,linecolor=red]{->}(4.5,0.5)(6.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(4.5,0.5)(4.,0.5)
+\rput[tl](1.8,1){\red{4 est à égale distance de 2 et 6}}
+\psline[linewidth=2.pt,linecolor=red]{->}(2.5,0.5)(2.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(2.5,0.5)(4.,0.5)
+\psdots[dotstyle=*,linecolor=green](4.,0.)
+\psdots[dotstyle=*,linecolor=blue](6.,0.)
+\psdots[dotstyle=*,linecolor=blue](2.,0.)
+\end{pspicture*}
+\end{center}
+
+
+Conclusion~: il y a une seule solution, $x=4.$ 
+
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+Commençons par deux exemples~:
+
+\begin{itemize}
+\item[\textbullet] si $x=3,$ alors $\sqrt{x^2}=\sqrt{3^2}=\sqrt{9}=3.$
+\item[\textbullet] si $x=-3,$ alors $\sqrt{x^2}=\sqrt{(-3)^2}=\sqrt{9}=3.$
+\end{itemize}
+
+On comprend que quand $x$ est positif, on aura toujours $\sqrt{x^2}=x=|x|~;$ tandis que dans le cas où $x$ est négatif, le signe $-$ \og disparaît \fg~{} lorsqu'on élève au carré, ce qui donne finalement $\sqrt{x^2}=|x|.$
+
+Autrement dit, quel que soit $x$ (y compris si $x=0$), on a l'égalité
+
+
+\[\sqrt{x^2}=|x|.\]
+
+%\medskip
+
+%\textbf{Remarque~:} Si vous n'êtes pas convaincu calculez $\sqrt{x^2}$ en prenant $x=3,$ puis en prenant $x=-3.$ Dans les deux cas, vous obtenez.
+
+\end{exo}
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item Dire que $|x-2|<3,$ c'est dire que la distance entre $x$ et $2$ est strictement inférieure à $3.$ On voit que les $x$ qui conviennent sont tous les nombres de l'intervalle $\left]-1;5\right[$ (extrémités exclues, puisque l'inégalité est stricte).
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.45,-0.41034356916185444)(5.768763307234229,1.1013400300795446)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.45,-0.41034356916185444)(5.768763307234229,1.1013400300795446)
+\psline[linewidth=2.pt,linecolor=red]{->}(0.5,0.5)(-1.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(0.5,0.5)(2.,0.5)
+\rput[tl](-0.3,1){\red{distance $=$ 3}}
+\psline[linewidth=2.pt,linecolor=red]{->}(3.5,0.5)(2.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(3.5,0.5)(5.,0.5)
+\rput[tl](2.7,1){\red{distance $=$ 3}}
+\psline[linewidth=3.pt,linecolor=green](-1,0.)(5.,0.)
+\rput[tl](4.88,0.32){\green{\Huge [}}
+\rput[tl](-1.12,0.32){\green{\Huge ]}}
+\psdots[dotstyle=*,linecolor=blue](2.,0.)
+\end{pspicture*}
+\end{center}
+
+\item Les points de l'intervalle ci-dessous sont les nombres $x$ dont la distance à $8$ est inférieure ou égale à $2$ (donc extrémités incluses)~; autrement dit, ce sont les nombres $x$ tels que \[|x-8|\leq 2.\]
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(4,-0.5)(12,1.10)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(4,-0.5)(12,0.52)
+\psline[linewidth=3.pt,linecolor=green](6.,0.)(10.,0.)
+\rput[tl](5.88,0.28){\huge \green{$\mathbf{{[}}$}}
+\rput[tl](9.88,0.28){\huge \green{$\mathbf{{]}}$}}
+\psline[linewidth=2.pt,linecolor=red]{->}(8.5,0.5)(10.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(8.5,0.5)(8.,0.5)
+\rput[tl](6.3,1){\red{dist. $=$ 2}}
+\psline[linewidth=2.pt,linecolor=red]{->}(6.5,0.5)(6.,0.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(6.5,0.5)(8.,0.5)
+\rput[tl](8.2,1){\red{dist. $=$ 2}}
+\psdots[dotstyle=*,linecolor=blue](8.,0.)
+\end{pspicture*}
+\end{center}
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+Le but de l'exercice est de prouver que  $\sqrt{2}$ n'est pas un nombre rationnel. Pour cela, on fait un raisonnement par l'absurde~: on suppose que $\sqrt{2}$ est rationnel, c'est-à-dire qu'on peut l'écrire sous forme de fraction irréductible $\sqrt{2}=\frac{p}{q},$ où $p$ et $q$ sont deux entiers strictement positifs. Il faut, partant de là, aboutir à une absurdité.
+
+\begin{enumerate}
+\item On part de l'égalité  $\sqrt{2}=\frac{p}{q},$ on élève au carré et on multiplie par $q^2~:$
+
+\begin{align*}
+\sqrt{2}^2&=\left(\frac{p}{q}\right)^2\\
+2&=\frac{p}{q}\times \frac{p}{q}\\
+2&=\frac{p^2}{q^2}\\
+2\textcolor{red}{\times q^2}&=\frac{p^2}{\cancel{q^2}}\textcolor{red}{\times \cancel{q^2}}\\
+2q^2&=p^2
+\end{align*}
+\item Commençons par un exemple~: prenons un nombre qui \og se termine par 4 \fg~{} (donc le chiffre des unités est 4). Le carré de ce nombre va \og se terminer par 6 \fg, puisque $4^2=16.$ Autrement dit, le chiffre des unités du carré est $6.$
+
+Avec la même technique, on voit que si le chiffre des unités est 9, celui du carré est 1 (puisque $9^2=81$)~; etc. On remplit ainsi le tableau~:
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
+\hline
+   Chiffre des unités de $p$ &0&1&2&3&4&5&6&7&8&9 \\
+	\hline
+	Chiffre des unités de $p^2$ &0&1&4&9&6&5&6&9&4&1 \\
+	\hline
+\end{tabular}
+\end{center}
+\item Pour avoir le chiffre des unités de $2q^2,$ il suffit de reprendre la deuxième ligne du tableau précédent et de multiplier par $2.$ Par exemple, si le chiffre des unités de $q$ est 7, alors celui de $q^2$ est $9~;$ et celui de $2q^2$ est 8 (puisque $2\times 9=18$). On remplit ainsi le nouveau tableau~:
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
+\hline
+   Chiffre des unités de $q$ &0&1&2&3&4&5&6&7&8&9 \\
+	\hline
+	Chiffre des unités de $2q^2$ &0&2&8&8&2&0&2&8&8&2 \\
+	\hline
+\end{tabular}
+\end{center}
+\item D'après la question 1, $2q^2=p^2.$ Les nombres $2q^2$ et $p^2$ étant égaux, ils ont le même chiffre des unités. Or dans nos deux tableaux, le seul chiffre en commun  des deuxièmes lignes est le $0~;$ et on l'obtient lorsque le chiffre des unités de $p$ est $0,$ et lorsque le chiffre des unités de $q$ est 0 ou 5.
+\item Supposons que $\sqrt{2}$ soit rationnel~: on peut donc l'écrire sous forme de fraction irréductible $\sqrt{2}=\frac{p}{q}.$ D'après la question précédente, $p$ se termine par $0$ et $q$ se termine par $0$ ou $5.$ Mais alors $p$ et $q$ sont tous deux multiples de $5,$ et donc la fraction $\frac{p}{q}$ n'est pas irréductible, en contradiction avec l'hypothèse que nous avons faite au départ.
+
+\medskip
+
+Conclusion~: supposant que $\sqrt{2}$ était rationnel, on aboutit à une absurdité~; c'est donc que $\sqrt{2}$ est irrationnel~: $\sqrt{2}\notin\mathbb{Q}.$
 \end{enumerate}
 
 \end{exo}
