@@ -3107,5 +3107,320 @@ print(s)
 
 \end{exo}
 
+\newpage
+
+\begin{exo}
+
+La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=3$ et la formule de récurrence
+\[u_{n+1}=2u_n-1\] pour tout $n\in\mathbb{N}.$
+
+\medskip
+
+Nous allons calculer les premiers termes, puis, comme dans l'exercice 39, compléter un tableau avec les calculs à chaque étape de la boucle \textbf{Pour}.
+
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{3}
+
+\begin{center}
+\textbf{Calcul des premiers termes}
+\end{center}
+
+\medskip
+
+\begin{align*}
+u_0&=3\\
+u_1&=2\times 3-1=5\\
+u_2&=2\times 5-1=9\\
+u_3&=2\times 9-1=17\\
+u_4&=2\times 17-1=33
+\end{align*}
+
+\vspace*{0.cm}
+
+\columnbreak
+\begin{center}
+\textbf{Programme}
+\end{center}
+
+\begin{lstlisting}
+u=3
+for i in range(4):
+	u=2*u-1
+print(u)
+\end{lstlisting}
+
+
+
+\vspace*{1.cm}
+
+
+\columnbreak
+
+
+
+\begin{center}
+\textbf{Tableau}
+\end{center}
+
+
+On a une boucle \textbf{Pour}, où i va de 0 à 3.\footnote{La commande \[\text{for i in range(n):}\] signifie que i va de 0 à $\text{n}-1.$}
+
+\medskip
+
+\begin{center}
+
+
+\begin{tabular}{|c|cc|} \hline
+\textbf{Valeur de i}& \textbf{Valeur de u}&\\ \hline
+\cellcolor{gray}& 3&\textcolor{red}{$\leftarrow {u_0}$}\\ \hline
+0& $2\times 3-1=5$&\textcolor{red}{$\leftarrow {u_1}$}\\ \hline
+1&$2\times 5-1=9$&\textcolor{red}{$\leftarrow {u_2}$}\\ \hline
+2& $2\times 9-1=17$&\textcolor{red}{$\leftarrow {u_3}$}\\ \hline
+3&$2\times 17-1=33$&\textcolor{red}{$\leftarrow {u_4}$} \\ \hline
+
+\end{tabular}
+\end{center}
+%\vspace*{3.5cm}
+
+
+\end{multicols}
+
+
+\medskip
+
+Dans la boucle \textbf{Pour}, u prend successivement les valeurs $u_0,$ $u_1,$ $u_2,$ $u_3$ et $u_4.$ C'était prévisible, puisque l'instruction \begin{lstlisting}
+u=2*u-1
+\end{lstlisting} est la même que la formule de récurrence.
+
+\medskip
+
+Conclusion~: la valeur affichée en sortie est $u_4=33.$
+
+\end{exo}
+
+\begin{exo}
+
+Commençons par des rappels concernant les listes, avec quelques exemples~:
+
+\begin{itemize}
+\item[\textbullet] La commande \[\text{L}=\left[5,6,10\right]\] crée une liste L de trois éléments. Le premier, $\text{L}\left[0\right],$ est égal à 5~; le deuxième, $\text{L}\left[1\right],$ est égal à 6~; le troisième, $\text{L}\left[2\right],$ est égal à 10. On notera en particulier l'indexation des termes  à partir de $0.$
+\item[\textbullet] La commande \[\text{L.append(2)}\] ajoute un terme à la liste, égal à 2. On aura donc ensuite une liste de 4 éléments~: $\text{L}=\left[5,6,10,2\right].$
+\item[\textbullet] La commande \[\text{len(L)}\] renvoie la longueur de la liste.
+\item[\textbullet] La commande \[\text{L}=\left[~\right]\] crée une liste vide (donc de longueur 0).
+\end{itemize}
+
+\medskip
+
+Venons-en à l'exercice. On souhaite afficher la liste des nombres de la table de 8~:
+\[\left[8~,~16~,~24~,~\cdots~,~80\right].\]
+
+Pour cela, on crée une liste vide L, puis on reprend le programme de l'exercice 38, en ajoutant les nombres de la table à la liste L au fur et à mesure de leur calcul~:
+
+\medskip
+
+\begin{lstlisting}
+L=[]
+for i in range(1,11):
+	L.append(8*i)
+print(L)
+\end{lstlisting}
+
+
+
+\end{exo}
+
+
+
+\begin{exo}
+
+On reprend la suite de l'exercice 41~: $u_0=3$ et $u_{n+1}=2u_n-1$ pour tout $n\in\mathbb{N}.$
+
+\medskip
+
+Pour afficher la liste des termes de $u_0$ à $u_6,$ on crée d'abord une liste qui contient le premier terme avec la commande  \begin{lstlisting}
+L=[3]
+\end{lstlisting} Ensuite, on reprend le programme de l'exercice 41, en ajoutant à la liste L chacun des termes de la suite au fur et à mesure de leur calcul.
+
+\medskip
+
+Pour plus de clarté, on a ajouté un tableau explicatif~:
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+
+\begin{center}
+\textbf{Programme}
+\end{center}
+
+\begin{lstlisting}
+u=3
+L=[3]
+for i in range(6):
+	u=2*u-1
+	L.append(u)
+print(u)
+\end{lstlisting}
+
+
+
+\vspace*{0.25cm}
+
+
+\columnbreak
+
+
+
+\begin{center}
+\textbf{Tableau}
+\end{center}
+
+
+
+\begin{center}
+
+
+\begin{tabular}{|c|c|l|} \hline
+\textbf{Valeur de i}& \textbf{Valeur de u}&\text{liste L}\\ \hline
+\cellcolor{gray}& 3&$\text{L}=\left[3\right]$\\ \hline
+0& $2\times 3-1=5$ & $\text{L}=\left[3,5\right]$ \\ \hline
+1&$2\times 5-1=9$&$\text{L}=\left[3,5,9\right]$\\ \hline
+2& $2\times 9-1=17$&$\text{L}=\left[3,5,9,17\right]$\\ \hline
+3&$2\times 17-1=33$&$\text{L}=\left[3,5,9,17,33\right]$ \\ \hline
+4&$2\times 33-1=65$&$\text{L}=\left[3,5,9,17,33,65\right]$ \\ \hline
+5&$2\times 65-1=129$&$\text{L}=\left[3,5,9,17,33,65,129\right]$ \\ \hline
+\end{tabular}
+\end{center}
+%\vspace*{3.5cm}
+
+
+\end{multicols}
+
+\end{exo}
+
+\begin{exo}
+
+~{}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\begin{center}\textbf{Programme 1}\end{center}
+
+\begin{lstlisting}
+x=3
+if x==4:
+	print(5*x)
+else:
+	print(2*x)
+\end{lstlisting}
+
+\medskip
+
+Puisque $\text{x}\not=4,$ le programme affiche
+\[2\times \text{x}=2\times 3=6.\]
+
+\begin{center}\textbf{Programme 2}\end{center}
+
+\begin{lstlisting}
+x=3
+if x<=4:
+	print(5*x)
+else:
+	print(2*x)
+\end{lstlisting}
+
+\medskip
+
+Puisque $\text{x}\leq 4,$ le programme affiche
+\[5\times \text{x}=5\times 3=15.\]
+
+\end{multicols}
+
+\end{exo}
+
+\begin{exo}
+
+
+
+On commence par deux remarques~:
+
+\begin{itemize}
+\item[\textbullet] Un entier $\text{n}\geq 1$ est un diviseur de 30 si, et seulement si, $30\%\text{n}=0.$
+\item[\textbullet] En python, on teste les égalités avec $==.$ Par exemple, la commande \begin{lstlisting}
+4==4
+\end{lstlisting} renvoie \textbf{True}~; tandis que
+\begin{lstlisting}
+4==5
+\end{lstlisting} renvoie \textbf{False}.
+\end{itemize}
+
+\medskip
+
+On édite un programme Python qui renvoie la liste des diviseurs positifs de 30~:
+
+\medskip
+
+\begin{lstlisting}
+L=[]
+for i in range(1,31):
+	if 30%i==0:
+		L.append(i)
+print(L)
+\end{lstlisting}
+
+
+
+\end{exo}
+
+\begin{exo}
+
+On édite la fonction~:
+
+\begin{lstlisting}
+def f(x):
+	return x**2
+\end{lstlisting}
+
+
+
+\medskip
+
+On obtient \begin{align*}
+\text{f}(3)&=3^2=9\\
+\text{f}(-2)&=(-2)^2=4
+\end{align*}
+
+
+\end{exo}
+
+\begin{exo}
+
+La fonction
+
+\begin{lstlisting}
+def g():
+	return 5
+\end{lstlisting}
+
+\medskip
+
+renvoie toujours la valeur 5.
+
+\medskip
+
+\textbf{Remarque~:} Pour lancer la fonction, il faut entrer la commande \begin{lstlisting}
+g()
+\end{lstlisting} sans oublier les parenthèses, mais sans rien écrire à l'intérieur\footnote{Cela fait une différence notable avec les mathématiques,  où une fonction dépend forcément d'une (ou plusieurs) variables.}.
+
+
+\end{exo}
+
 
 \end{document}
