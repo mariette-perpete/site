@@ -2727,60 +2727,7 @@ La propriété $\mathcal{P}_{k+1}$ est donc vraie.
 
 \end{exo}
 
-\begin{exo}
 
-On définit deux suites $\left(u_n\right)_{n\in\mathbb{N}}$ et $\left(v_n\right)_{n\in\mathbb{N}}$ par $u_0=0,$ $v_0=8$ et les relations de récurrence~:
-
-\[\begin{cases}
-u_{n+1}&=\frac{3}{4}u_n+\frac{1}{4}v_n\\
-v_{n+1}&=\frac{1}{4}u_n+\frac{3}{4}v_n\end{cases}\] pour tout $n\in\mathbb{N}.$
-
-\begin{enumerate}
-\item \setlength{\columnseprule}{1pt}
-
-\begin{multicols}{2}
-\begin{align*}
-u_0&=0\\
-u_1&=\frac{3}{4}\times u_0+\frac{1}{4}\times v_0=\frac{3}{4}\times 0+\frac{1}{4}\times 8=2\\
-u_2&=\frac{3}{4}\times u_1+\frac{1}{4}\times v_1=\frac{3}{4}\times 2+\frac{1}{4}\times 6=3
-\end{align*}
-
-\begin{align*}
-v_0&=8\\
-v_1&=\frac{1}{4}\times u_0+\frac{3}{4}\times v_0=\frac{1}{4}\times 0+\frac{3}{4}\times 8=6\\
-v_2&=\frac{1}{4}\times u_1+\frac{3}{4}\times v_1=\frac{1}{4}\times 2+\frac{3}{4}\times 6=5
-\end{align*}
-\end{multicols}
-
-\medskip
-
-
-\begin{center}
-\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
-\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
-\begin{pspicture*}(-0.74,-0.82)(8.84,0.88)
-\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.74,-0.82)(8.84,0.88)
-\rput[tl](-0.3,0.64){\ududff{$u_0$}}
-\rput[tl](1.7,0.64){\ududff{$u_1$}}
-\rput[tl](2.7,0.64){\ududff{$u_2$}}
-\rput[tl](4.7,0.64){\red{$v_2$}}
-\rput[tl](5.7,0.64){\red{$v_1$}}
-\rput[tl](7.7,0.64){\red{$v_0$}}
-\psdots[dotstyle=*,linecolor=ududff](0.,0.)
-\psdots[dotstyle=*,linecolor=ududff](2.,0.)
-\psdots[dotstyle=*,linecolor=ududff](3.,0.)
-\psdots[dotstyle=*,linecolor=red](5.,0.)
-\psdots[dotstyle=*,linecolor=red](6.,0.)
-\psdots[dotstyle=*,linecolor=red](8.,0.)
-\end{pspicture*}
-\end{center}
-
-\medskip
-
-\textbf{Remarque~:} Pour placer $u_{n+1}$ et $v_{n+1},$ on coupe le segment $\left[u_n;v_n\right]$ en $4~;$ et on place $u_{n+1}$ au quart du segment, $v_{n+1}$ aux trois-quarts du segment.
-
-\end{enumerate}
-\end{exo}
 
 \begin{exo}
 
@@ -3001,7 +2948,7 @@ On affiche les résultats les uns en-dessous des autres~:
 
 \end{exo}
 
-\newpage
+%\newpage
 
 \begin{exo}
 
@@ -3107,7 +3054,7 @@ print(s)
 
 \end{exo}
 
-\newpage
+%\newpage
 
 \begin{exo}
 
