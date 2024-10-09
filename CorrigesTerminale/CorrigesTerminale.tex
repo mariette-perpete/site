@@ -3370,4 +3370,353 @@ g()
 \end{exo}
 
 
+
+\begin{exo}
+
+~{}
+
+\begin{lstlisting}
+def moyenne(a,b):
+	return (a+b)/2
+\end{lstlisting}
+
+
+ \end{exo}
+ 
+ 
+ \begin{exo}
+ 
+ ~{}
+ 
+ \begin{lstlisting}
+def transforme(note):
+	x=1.2*note
+	if x<=20:
+		return x
+	else:
+		return 20
+\end{lstlisting}
+
+
+ 
+ \end{exo}
+ 
+ \begin{exo}
+
+On reprend encore la suite définie par  $u_0=3$ et $u_{n+1}=2u_n-1$ pour tout $n\in\mathbb{N}.$
+
+\medskip
+
+On recopie quasiment à l'identique les programmes que nous avons écrits dans les exercices 41 et 43. Il y a tout de même trois différences~:
+
+\begin{itemize}
+\item[\textbullet] on utilise une fonction~;
+\item[\textbullet] la boucle \textbf{Pour} a n étapes, et non plus 4 (ex 41) ou  6 (ex 43)~;
+\item[\textbullet] on utilise \textbf{return} au lieu de \textbf{print} pour renvoyer le résultat.
+\end{itemize}
+
+\begin{enumerate}
+\item Fonction qui renvoie la valeur de $u_{\text{n}}~:$
+
+\begin{lstlisting}
+def terme(n):
+	u=3
+	for i in range(n):
+		u=2*u-1
+	return u
+\end{lstlisting}
+
+
+ \item Fonction qui renvoie la liste de tous les termes de $u_0$ à $u_{\text{n}}~:$
+ 
+ 
+ \begin{lstlisting}
+def liste(n):
+	u=3
+	L=[3]
+	for i in range(n):
+		u=2*u-1
+		L.append(u)
+	return L
+\end{lstlisting}
+
+ 
+ \end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+On explique le fonctionnement du programme avec un tableau~:
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\begin{center}
+\textbf{Programme}
+\end{center}
+
+\begin{lstlisting}
+def somme(n):
+	s=0
+	for k in range(1,n+1):
+		s=s+1/k
+	return s
+\end{lstlisting}
+
+
+
+\vspace*{3cm}
+
+
+\columnbreak
+
+\begin{center}
+\textbf{Tableau}
+\end{center}
+
+Avec la commande somme(100), k va de 1 à 100, puisque $\text{n}+1=100+1=101.$
+
+\medskip
+
+On laisse volontairement les résultats sous forme de sommes de fractions.
+
+\medskip
+
+\begin{center}
+
+\renewcommand{\arraystretch}{1.25}
+
+\begin{tabular}{|c|c|} \hline
+\textbf{Valeur de k}& \textbf{Valeur de s}\\ \hline
+\cellcolor{gray}& 0\\ \hline
+1& $0+\frac{1}{1}=\frac{1}{1}$\\ \hline
+2&$\frac{1}{1}+\frac{1}{2}$\\ \hline
+3&$\frac{1}{1}+\frac{1}{2}+\frac{1}{3}$\\ \hline
+$\cdots$&$\cdots$\\ \hline
+100&$\frac{1}{1}+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{100}$\\ \hline
+\end{tabular}
+\end{center}
+
+
+\end{multicols}
+
+\medskip
+
+Conclusion~: somme(100) renvoie la valeur de la somme
+\[\frac{1}{1}+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{100}\] 
+(qui vaut environ $5,19$).
+
+
+
+
+\end{exo}
+
+\begin{exo}
+
+
+~{}
+
+\begin{lstlisting}
+def mystere(L):
+	M=L[0]
+	for i in range(len(L)):
+		if L[i]>M:
+			M=L[i]
+	return M
+\end{lstlisting}
+
+
+
+
+On explique encore une fois le programme avec un tableau~:
+
+\medskip
+
+\item \setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+
+
+
+\begin{center}
+\textbf{Commentaires}
+\end{center}
+
+
+\medskip
+
+On entre la commande mystere([2, 3, 7,0]). Dans ce cas, en notant $\text{L}=\left[2,3,7,0\right]~:$
+
+\medskip
+
+\begin{itemize}
+\item[\textbullet] la longueur de la liste L est 4, donc $\text{len(L)}=4~;$ et i va de 0 à 3~;
+\item[\textbullet] $\text{L}\left[0\right]=2,$ $\text{L}\left[1\right]=3,$ $\text{L}\left[2\right]=7$ et $\text{L}\left[3\right]=0~;$
+\item[\textbullet] Au départ, $\text{M}=\text{L}\left[0\right]=2.$ Puis, à chaque étape de la boucle, on regarde si $\text{L}\left[\text{i}\right]>\text{M}.$ Si c'est le cas, on remplace M par $\text{L}\left[\text{i}\right].$
+\end{itemize}
+
+
+
+\columnbreak
+
+\begin{center}
+\textbf{Tableau}
+\end{center}
+
+\begin{center}
+
+%\renewcommand{\arraystretch}{1.25}
+
+
+\begin{tabular}{|c|cc|c|} \hline
+\textbf{Valeur de i}&\textbf{A-t-on L[i]>M~?}& & \textbf{Valeur de M}\\ \hline
+\cellcolor{gray}&\cellcolor{gray}&\cellcolor{gray} &$2$\\ \hline
+0&  A-t-on $\text{L}\left[0\right]>2~?$ $2>2~?$ &\textcolor{blue}{non}&2\\ \hline
+1& A-t-on $\text{L}\left[1\right]>2~?$ $3>2~?$ &\textcolor{red}{oui}&$3$\\ \hline
+2& A-t-on $\text{L}\left[2\right]>3~?$ $7>3~?$ &\textcolor{red}{oui}&$7$\\ \hline
+3& A-t-on $\text{L}\left[3\right]>7~?$ $0>7~?$ &\textcolor{blue}{non}&$7$\\ \hline
+\end{tabular}
+\end{center}
+
+\vspace*{1cm}
+
+
+
+\end{multicols}
+
+\medskip
+
+Conclusion~: la valeur renvoyée en sortie est 7, maximum de la liste L. Notez que l'on aurait pu obtenir ce maximum avec la simple commande
+
+\begin{lstlisting}
+max(L)
+\end{lstlisting}
+
+
+
+\end{exo}
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item Les termes successifs sont~:
+\[26 - 13 - 40 - 20 - 10 -5 -16 - 8 - 4 - 2 - 1 - 4 - 2 - 1- \cdots\]
+
+On aboutit à une suite périodique~; phénomène qui semble d'ailleurs avoir lieu quel que soit le nombre de départ (on invite le lecteur curieux à faire des essais avec d'autres entiers et à lire l'article Wikipédia sur la conjecture de Syracuse).
+\item Avec Thonny, un entier n est pair si, et seulement si, $\text{n}\%2=0.$ On utilise ce résultat pour tester la parité~:
+
+\medskip
+
+\begin{lstlisting}
+def syracuse():
+	u=26
+	L=[26]
+	for i in range(10):
+		if n%2==0:
+			u=u/2
+		else:
+			u=3*u+1
+		L.append(u)
+	return L
+\end{lstlisting}
+
+
+ \end{enumerate}
+
+\end{exo} 
+
+
+\section{Dénombrement}
+
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item Pour chacun des 4 symboles, il y a 12 possibilités, donc au total $12\times 12\times 12\times 12=12^4=\np{20736}$ codes différents possibles.
+
+\medskip
+
+\textbf{Remarque~:} Chaque code est ce que l'on appelle une \textbf{4-liste d'un ensemble à 12 éléments}.
+\item On raisonne comme dans la question 1~: il y a $11^4=\np{14641}$ codes d'entrée ne comportant pas la lettre A.
+\item Il y a 12 possibilités pour le 1\up{er} symbole, 11 pour le 2\up{e} (car il diffère du premier symbole), puis 10 pour le 3\up{e}~; et enfin 9 pour le 4\up{e}. Donc au total,
+\[12\times 11\times 10\times 9=\np{11880}\] codes avec 4 symboles différents.
+
+\medskip
+
+\textbf{Remarque~:} Chaque code est ce que l'on appelle un \textbf{arrangement de 4 éléments d'un ensemble à 12 éléments}. Le cours donne directement la réponse~:
+\[\text{nombre d'arrangements}=\frac{12!}{(12-4)!}=\frac{12!}{8!}=
+\frac{12\times 11\times 10\times 9\times \cancel{8}\times \cancel{7}\times\cdots\times \cancel{1}}{\cancel{8}\times \cancel{7}\times\cdots\times \cancel{1}}=12\times 11\times 10\times 9.\]
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+
+
+\begin{enumerate}
+\item On obtient les anagrammes de VOYAGE en permutant les lettres de toutes les façons possibles. La lettre V peut prendre 6 positions différentes, puis il reste 5 positions possibles pour le O, puis 4 pour le Y, etc. Au final, il y a
+\[6!=6\times 5\times 4\times 3\times 2\times 1=720\] anagrammes.
+
+\medskip
+
+\textbf{Remarque~:} On dit qu'il y a 720 \textbf{permutations} possibles des lettres.
+\item Si les 8 lettres du mot ANTILLES étaient toutes différentes, il y aurait $8!=\np{40320}$ anagrammes différentes. Mais il y a deux \og L \fg , donc chaque anagramme est comptée deux fois. En effet, si on différencie les deux \og L \fg~{} en les coloriant, les mots INA\textcolor{red}{L}S\textcolor{green}{L}ET et INA\textcolor{green}{L}S\textcolor{red}{L}ET, par exemple, semblent différents~; mais ils représentent en réalité le même mot INALSLET. Finalement, il n'y a que
+\[\np{40320}\div 2=\np{20160}\] anagrammes différentes.
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+\begin{exo}
+
+Il y a 2 possibilités pour la 1\up{re} réponse, 2 possibilités pour la 2\up{e}, 2 pour la 3\up{e}, etc. Donc au total $2^{10}=\np{1024}$ façons possibles de remplir le questionnaire.
+
+\medskip
+
+\textbf{Remarques~:}
+
+\begin{itemize}
+\item[\textbullet] Il s'agit du nombre de 10-listes d'un ensemble à deux éléments (ces deux éléments étant Vrai/Faux).
+\item[\textbullet] Au collège, vous auriez pu présenter la solution avec un arbre~:
+
+\begin{center}
+\begin{tikzpicture}[
+  level 1/.style={level distance=6em, sibling distance=5em},
+  level 2/.style={level distance=6em, sibling distance=2.5em},
+  level 3/.style={level distance=6em, sibling distance=1em},
+  grow'=right,
+  ]
+  \coordinate                   % joli sommet de l'arbre
+    child foreach \evenemi in {V, F}
+      {
+        node {$\evenemi$}
+        child foreach \evenemii in {V, F}
+          {
+            node {$\evenemii$}
+            child foreach \evenemiii in {$\cdots$, $\cdots$}
+              { node {\evenemiii} }
+          }
+      };
+\end{tikzpicture}
+\end{center}
+
+\end{itemize}
+
+
+\end{exo}
+
 \end{document}
