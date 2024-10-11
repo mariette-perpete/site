@@ -3719,4 +3719,193 @@ Il y a 2 possibilités pour la 1\up{re} réponse, 2 possibilités pour la 2\up{e
 
 \end{exo}
 
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item Les podiums sont les arrangements de 3 éléments d'un ensemble à 8 éléments (car les trois premiers de la course sont différents), donc il y en a 
+\[\frac{8!}{(8-3)!}=\frac{8!}{5!}=8\times 7\times 6=336.\]
+\item On s'intéresse à l'événement contraire~: on compte le nombre de podiums sans aucun Américain. Il s'agit du nombre d'arrangements de 3 éléments d'un ensemble à 5 éléments (les 5 non Américains)~; il y en a 
+\[\frac{5!}{(5-3)!}=\frac{5!}{2!}=5\times 4\times 3=60.\]
+
+Conclusion~: il reste \[336-60=276\] podiums comportant au moins un Américain.
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+On a déjà rencontré ce code dans l'exercice 40 (à quelques différences près). On explique son fonctionnement avec un tableau~:
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\begin{center}
+\textbf{Programme}
+\end{center}
+
+\begin{lstlisting}
+def fact(n):
+	p=1
+	for i in range(1,n+1):
+		p=p*i
+	return p
+\end{lstlisting}
+
+
+
+\vspace*{0.5cm}
+
+\columnbreak
+
+\begin{center}
+\textbf{Tableau}
+\end{center}
+
+\medskip
+
+On rentre par exemple la commande fact(4) -- donc i va alors de 1 à 4~:
+
+
+\begin{center}
+
+
+\begin{tabular}{|c|c|} \hline
+\textbf{Valeur de i}& \textbf{Valeur de p}\\ \hline
+\cellcolor{gray}& 1\\ \hline
+1& $1\times 1=1$\\ \hline
+2&$1\times 2=2$\\ \hline
+3&$2\times 3=6$\\ \hline
+4&$6\times 4=24$ \\ \hline
+\end{tabular}
+\end{center}
+
+\end{multicols}
+
+\medskip
+
+La valeur renvoyée est 24, qui correspond à 
+\[4!=1\times 2\times 3\times 4.\]
+
+
+
+
+\end{exo}
+
+
+\begin{exo}
+
+Pour simplifier et sans rien enlever à la généralité du raisonnement, on suppose que les questions sont numérotées de 1 à 6 en histoire et de 1 à 5 en géographie, et que le candidat connaît les questions n°1, 2, 3 en histoire, n°1 et 2 en géographie.
+
+Dans le tableau ci-dessous, les questions connues sont écrites en bleu, les questions inconnues sont écrites en rouge.
+
+\medskip
+
+
+
+On a colorié les cases de trois couleurs~:
+\begin{itemize}
+\item[\textbullet] en vert~: le candidat connaît les deux questions~;
+\item[\textbullet] en orange~: le candidat connaît une seule des deux questions~;
+\item[\textbullet] en magenta~: le candidat ne connaît aucune des deux questions.
+\end{itemize}
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+\backslashbox{Géo}{Hist}&\textcolor{blue}{1}&\textcolor{blue}{2}&\textcolor{blue}{3}&\textcolor{red}{4}&\textcolor{red}{5}&\textcolor{red}{6} \\ \hline
+\textcolor{blue}{1}&\cellcolor{green}&\cellcolor{green}&\cellcolor{green}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{orange}	\\ \hline
+\textcolor{blue}{2}&\cellcolor{green}&\cellcolor{green}&\cellcolor{green}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{orange}\\ \hline
+\textcolor{red}{3}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{magenta}&\cellcolor{magenta}&\cellcolor{magenta}\\ \hline
+\textcolor{red}{4}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{magenta}&\cellcolor{magenta}&\cellcolor{magenta}\\ \hline
+\textcolor{red}{5}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{magenta}&\cellcolor{magenta}&\cellcolor{magenta}\\ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+Conclusion~: il y a $6\times 5=30$ cases au total, 6 vertes et 15 oranges, donc~:
+
+\begin{itemize}
+\item[\textbullet] la probabilité que le candidat connaisse les deux questions est $\frac{6}{30}=\frac{1}{5}~;$
+\item[\textbullet] la probabilité que le candidat connaisse au moins l'une des deux questions est $\frac{6+15}{30}=\frac{21}{30}=\frac{7}{10}.$
+\end{itemize}
+
+\medskip
+
+\textbf{Remarque~:} On aurait pu se passer du tableau~:
+
+\begin{itemize}
+\item[\textbullet] il y a $6\times 5=30$ tirages possibles~;
+\item[\textbullet] il y a $3\times 2=6$ cas favorables à l'événement \og le candidat connaît les deux questions \fg~;
+\item[\textbullet] il y a $3\times 3=9$ cas favorables à l'événement \og le candidat ne connaît aucune des deux questions \fg, donc $30-9=21$ cas favorables à l'événement contraire \og le candidat connaît au moins l'une des deux questions \fg.
+\end{itemize}
+
+\end{exo}
+
+
+\begin{exo}
+
+\begin{itemize}
+\item[\textbullet] Les cas possibles sont les 3-listes d'un ensemble à 4 éléments~; il y en a $4^3=64.$
+\item[\textbullet] Les cas favorables à G sont les arrangements de 3 éléments d'un ensemble à 4 éléments ($\heartsuit$, $\diamondsuit$, $\spadesuit$, $\clubsuit$)~; il y en a $\frac{4!}{(4-3)!}=\frac{4!}{1!}=4\times 3\times 2=24.$ On a donc $P(\text{G})=\frac{24}{64}=\frac{3}{8}.$
+\item[\textbullet] Pour calculer $P(H),$ on prend l'événement contraire $\overline{\text{H}}$~: \og aucun cœur n'apparaît à l'écran \fg.
+
+Les cas favorables à $\overline{\text{H}}$ sont les 3-listes d'un ensemble à 3 éléments ($\diamondsuit$, $\spadesuit$, $\clubsuit$), il y en a donc $3^3=27.$ Il reste $64-27=37$ cas favorables à H, et ainsi $P(\text{H})=\frac{37}{64}.$ 
+\end{itemize}
+\end{exo}
+
+\begin{exo}
+
+\begin{enumerate}
+\item \begin{itemize}
+\item[\textbullet] Les cas possibles sont les 30-listes d'un ensemble à 200 éléments, il y en a $200^{30}.$
+\item[\textbullet] Les cas favorables sont les arrangements de 30 éléments d'un ensemble à 200 éléments~; il y en a \[\frac{200!}{(200-30)!}=\frac{200!}{170!}=200\times 199\times 198\times \cdots\times 172\times 171.\]
+\item[\textbullet] La probabilité que les élèves choisissent tous un nombre différent est donc
+\[p=\frac{200\times 199\times 198\times \cdots\times 172\times 171}{200^{30}}.\]
+\end{itemize}
+\item On remarque que
+
+\[
+p=\frac{200\times 199\times 198\times \cdots\times 172\times 171}{200\times 200\times 200\times\cdots\times 200\times 200}=\frac{200}{200}\times \frac{199}{200}\times \frac{198}{200}\times \frac{172}{200}\times \frac{171}{200}.
+\]
+
+C'est sous cette forme, en calculant le produit de proche en proche, que l'on peut obtenir la réponse avec un programme\footnote{Le nombre $200^{30}$ dépasse les capacités de votre calculatrice, faisant du calcul de proche en proche une nécessité.}~: on part de la valeur 1, puis on multiplie par $\frac{171}{200},$ puis par $\frac{172}{200},$ puis par $\frac{173}{200},$ ... jusqu'à $\frac{200}{200}.$
+
+\medskip
+
+\begin{lstlisting}
+def proba():
+	p=1
+	for i in range(171,201):
+		p=p*i/200
+	return p
+\end{lstlisting}
+
+
+\end{enumerate}
+
+\medskip
+
+La réponse obtenue en sortie est $p\approx 0,10.$
+
+\end{exo}
+
+\begin{exo}
+
+\begin{itemize}
+\item[\textbullet] Les podiums possibles sont les 3-listes d'un ensemble à 12 éléments~; il y en a $12^3=\np{1728}.$
+\item[\textbullet] Les cas favorables à l'événement A : \og Le joueur obtient le tiercé \fg~{} sont toutes les permutations possibles des 3 premiers de la course~; il y en a $3!=3\times 2\times 1=6.$ On peut d'ailleurs les énumérer rapidement~:
+\[(7,4,10)~;~(7,10,4)~;(4,7,10)~;(4,10,7)~;(10,4,7)~;(10,7,4).\]
+\item[\textbullet] Conclusion~: $P\left(\text{A}\right)=\frac{6}{\np{1728}}=\frac{1}{288}.$
+\end{itemize}
+
+\end{exo}
+
 \end{document}

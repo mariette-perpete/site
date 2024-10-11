@@ -1824,4 +1824,125 @@ Conclusion~: supposant que $\sqrt{2}$ était rationnel, on aboutit à une absurd
 
 \end{exo}
 
+
+
+\section{Géométrie repérée}
+
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item ~{}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,-3.48)(5.18,2.74)
+\multips(0,-3)(0,1.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-4.3,0)(5.18,0)}
+\multips(-4,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-3.48)(0,2.74)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-4.3,-3.48)(5.18,2.74)
+\psline[linewidth=2.pt,linecolor=red](1.,2.)(2.5,0.)
+\psline[linewidth=2.pt,linecolor=red](1.816,1.112)(1.624,0.968)
+\psline[linewidth=2.pt,linecolor=red](1.876,1.032)(1.684,0.888)
+\psline[linewidth=2.pt,linecolor=red](2.5,0.)(4.,-2.)
+\psline[linewidth=2.pt,linecolor=red](3.316,-0.888)(3.124,-1.032)
+\psline[linewidth=2.pt,linecolor=red](3.376,-0.968)(3.184,-1.112)
+\psline[linewidth=2.pt,linecolor=red](-4.,2.)(-1.,-0.5)
+\psline[linewidth=2.pt,linecolor=red](-2.4231778720402626,0.8421865535516854)(-2.576822127959738,0.657813446448315)
+\psline[linewidth=2.pt,linecolor=red](-1.,-0.5)(2.,-3.)
+\psline[linewidth=2.pt,linecolor=red](0.5768221279597381,-1.6578134464483147)(0.4231778720402625,-1.8421865535516846)
+\psdots[dotstyle=*,linecolor=ududff](1.,2.)
+\rput[bl](1.08,2.2){\ududff{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](4.,-2.)
+\rput[bl](4.08,-1.8){\ududff{$B$}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=green](2.5,0.)
+\rput[bl](2.58,0.16){\green{$I$}}
+\psdots[dotstyle=*,linecolor=ududff](-4.,2.)
+\rput[bl](-3.92,2.2){\ududff{$C$}}
+\psdots[dotstyle=*,linecolor=ududff](2.,-3.)
+\rput[bl](2.08,-2.8){\ududff{$D$}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=green](-1.,-0.5)
+\rput[bl](-1.3,-0.74){\green{$J$}}
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item On a $A(\underset{x_A}{1}~;~\underset{y_A}{2})$ et $B(\underset{x_B}{4}~;~\underset{y_B}{-2}).$ On calcule les coordonnées de $I~:$
+\[I\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2}\right)\qquad I\left(\frac{1+4}{2};\frac{2+(-2)}{2}\right)\qquad I\left(\frac{5}{2};\frac{0}{2}\right)\qquad I\left(2,5;0\right).\]
+\item \[AB=\sqrt{\left(x_B-x_A\right)^2+\left(y_B-y_A\right)^2}=\sqrt{\left(4-1\right)^2+\left(-2-2\right)^2}=\sqrt{3^2+\left(-4\right)^2}=\sqrt{9+16}=\sqrt{25}=5.\]
+\end{enumerate}
+\item 
+\begin{enumerate}
+\item On a $C(\underset{x_C}{-4}~;~\underset{y_C}{2})$ et $D(\underset{x_D}{2}~;~\underset{y_D}{-3}).$ On calcule les coordonnées de $J~:$
+\[J\left(\frac{x_C+x_D}{2};\frac{y_C+y_D}{2}\right)\qquad J\left(\frac{-4+2}{2};\frac{2+(-3)}{2}\right)\qquad J\left(\frac{-2}{2};\frac{-1}{2}\right)\qquad J\left(-1;-0,5\right).\]
+\item \[CD=\sqrt{\left(x_D-x_C\right)^2+\left(y_D-y_C\right)^2}=\sqrt{\left(2-(-4)\right)^2+\left(-3-2\right)^2}=\sqrt{6^2+\left(-5\right)^2}=\sqrt{36+25}=\sqrt{61}.\]
+\end{enumerate}
+
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item ~{}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.5,-2.64)(8.72,5.56)
+\multips(0,-2)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.5,0)(8.72,0)}
+\multips(-1,0)(1.0,0){11}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.64)(0,5.56)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.5,-2.64)(8.72,5.56)
+\psline[linewidth=2.pt](0.,-2.)(5.,0.)
+\psline[linewidth=2.pt](5.,0.)(7.,5.)
+\psline[linewidth=2.pt](7.,5.)(2.,3.)
+\psline[linewidth=2.pt](2.,3.)(0.,-2.)
+\psline[linewidth=2.pt,linecolor=red](0.,-2.)(3.5,1.5)
+\psline[linewidth=2.pt,linecolor=red](1.6297918471982866,-0.2005025253169425)(1.7994974746830583,-0.37020815280171304)
+\psline[linewidth=2.pt,linecolor=red](1.7005025253169408,-0.12979184719828712)(1.8702081528017125,-0.2994974746830577)
+\psline[linewidth=2.pt,linecolor=red](3.5,1.5)(7.,5.)
+\psline[linewidth=2.pt,linecolor=red](5.129791847198287,3.2994974746830588)(5.299497474683057,3.129791847198287)
+\psline[linewidth=2.pt,linecolor=red](5.200502525316942,3.3702081528017134)(5.3702081528017125,3.2005025253169417)
+\psline[linewidth=2.pt,linecolor=red](2.,3.)(3.5,1.5)
+\psline[linewidth=2.pt,linecolor=red](2.8348528137423856,2.3348528137423856)(2.665147186257614,2.165147186257614)
+\psline[linewidth=2.pt,linecolor=red](3.5,1.5)(5.,0.)
+\psline[linewidth=2.pt,linecolor=red](4.334852813742385,0.8348528137423862)(4.165147186257615,0.6651471862576144)
+\psdots[dotstyle=*,linecolor=ududff](0.,-2.)
+\rput[bl](-0.32,-1.74){\ududff{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](7.,5.)
+\rput[bl](7.08,5.2){\ududff{$B$}}
+\psdots[dotstyle=*,linecolor=ududff](2.,3.)
+\rput[bl](2.08,3.2){\ududff{$C$}}
+\psdots[dotstyle=*,linecolor=ududff](5.,0.)
+\rput[bl](5.2,0.2){\ududff{$D$}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=darkgray](3.5,1.5)
+\end{pspicture*}
+\end{center}
+\item On calcule les coordonnées de $M~:$
+\[M\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2}\right)\qquad M\left(\frac{0+7}{2};\frac{-2+5}{2}\right)\qquad M\left(\frac{7}{2};\frac{3}{2}\right)\qquad M\left(3,5;1,5\right).\]
+Puis celles de $M'~:$
+
+\[M'\left(\frac{x_C+x_D}{2};\frac{y_C+y_D}{2}\right)\qquad M'\left(\frac{2+5}{2};\frac{3+0}{2}\right)\qquad M'\left(\frac{7}{2};\frac{3}{2}\right)\qquad M'\left(3,5;1,5\right).\]
+\item On constate dans la question précédente que $M=M',$ les diagonales $\left[AB\right]$ et $\left[CD\right]$ du quadrilatère $ACBD$ se coupent donc en leur milieu. D'après une propriété du collège, cela entraîne que $ACBD$ est un parallélogramme, puis que ses côtés opposés sont de même longueur~: $BD=AC,$ $CB=AD.$
+\item On calcule les longueurs $AC$ et $CB~:$
+
+\begin{itemize}
+\item[\textbullet] $AC=\sqrt{\left(x_C-x_A\right)^2+\left(y_C-y_A\right)^2}=\sqrt{\left(2-0\right)^2+\left(3-(-2)\right)^2}=\sqrt{2^2+5^2}=\sqrt{4+25}=\sqrt{29}.$
+\item[\textbullet] $CB=\sqrt{\left(x_B-x_C\right)^2+\left(y_B-y_C\right)^2}=\sqrt{\left(7-2\right)^2+\left(5-3\right)^2}=\sqrt{5^2+2^2}=\sqrt{25+4}=\sqrt{29}.$
+\end{itemize}
+
+On constate que $AC=CB,$ donc d'après la question précédente~:
+\[BD=AC=CB=AD.\]
+
+Conclusion~: le quadrilatère $ACBD$ a quatre côtés de même longueur, donc c'est un losange.
+
+\end{enumerate}
+
+\end{exo}
+
 \end{document}

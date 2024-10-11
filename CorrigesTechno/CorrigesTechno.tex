@@ -1294,6 +1294,8 @@ $\frac{60\times 20}{100}=\frac{\np{1200}}{100}=12,$ donc il faudrait 12~min à c
 
 \end{exo}
 
+
+
 \begin{exo}
 
 La fonction $f$ est définie sur l'intervalle $\left[1;5\right]$ par $f\left(x\right)=2x+\frac{8}{x}-10.$
@@ -1328,13 +1330,93 @@ f(4)&=2\times 4+\frac{8}{4}-10=8+2-10=0.
 \multips(0,0)(1.0,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.58)(0,2.72)}
 \psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.82,-2.58)(5.74,2.72)
 \psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{1}{5}{(x+4.0/x-5.0)*2.0}
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](0.,-1.)(3.280776401789959,-1.000000005799203)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](1.2192235899791208,-0.9999999877700336)(1.2192235899791208,0.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](3.280776401789959,-1.000000005799203)(3.280776401789959,0.)
 \end{pspicture*}
 \end{center}
 
+\item Les antécédents de $-1$ par $f$ sont $1,25$ et $3,25$ environ (pointillés rouges).
+%\item Les solutions de l'inéquation $f(x)\leq -1$ sont les nombres de l'intervalle $\left[1,25;3,25\right]$ environ.
+\item Tableau de variations~:
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f\left(x\right)$/2}{$1$,$2$,$5$}
+\tkzTabVar{+/$0$,-/$-2$,+/$1.6$}
+\end{tikzpicture}
+\end{center}
+\item Tableau de signe~:
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f\left(x\right)$/1}{$1$,$4$,$5$}
+\tkzTabLine{z,-,z,+}
+\end{tikzpicture}
+\end{center}
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+On suppose que le pourcentage de femmes fumant du tabac quotidiennement en fonction de l’âge $x$ (en années), depuis 15 ans jusqu’à 40 ans, est le nombre $f(x)$ donné par la formule suivante~:
+
+\[f(x)=-0,05 x^2+3 x-10.\]
+
+\begin{enumerate}
+\item ~{}
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+$x$& $15$ &$20$ &$25$ &$30$ &$35$ &$40$ \\ \hline 
+$f(x)$&$23,75$&$30$&$33,75$&$35$&$33,75$&$30$    \\ \hline
+\end{tabular}
+
+\end{center}
+
+\medskip
+
+Détail de deux calculs~:
+\begin{align*}
+f(15)&=-0,05 \times 15^2+3 \times 15-10=23,75\\
+f(40)&=-0,05 \times 40^2+3 \times 40-10=30.
+\end{align*}
+
+
+\item ~{}
+
+
+\begin{center}
+\psset{xunit=0.2cm,yunit=0.2cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-14.139505008692659,-4.909112669613822)(43.94312748497488,39.624226480762424)
+\multips(0,0)(0,5.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(43.94312748497488,0)}
+\multips(0,0)(5.0,0){12}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,39.624226480762424)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=5.,Dy=5.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(43.94312748497488,39.624226480762424)
+\rput{-180.}(30.,35.){\psplot[linewidth=2.pt,linecolor=blue]{-10.}{15.}{x^2/2/10.}}\psline[linewidth=2.pt,linestyle=dashed,dash=12pt 12pt,linecolor=green](30.,35.)(30.,0.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=12pt 12pt,linecolor=red](0.,30.)(40.,30.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=12pt 12pt,linecolor=red](20.,30.)(20.,0.)
+\rput[tl](36.76997218558541,-3.2266362936234776){âge}
+\rput[tl](-12.54547049771722,37.7313104989791){\% de fumeuses}
+\psdots[dotstyle=*,linecolor=green](30.,35.)
+\end{pspicture*}
+\end{center}
+
+\item Tableau de variations~:
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f\left(x\right)$/2}{$15$,$30$,$40$}
+\tkzTabVar{-/$23.75$,+/$35$,-/$30$}
+\end{tikzpicture}
+\end{center}
+\item Le pourcentage de fumeuses est maximal à 30 ans (pointillés verts).
+\item C'est à partir de 20 ans que plus de 30~\% des femmes fument quotidiennement (pointillés rouges).
 
 \end{enumerate}
 
 \end{exo}
+
+
 
 
 

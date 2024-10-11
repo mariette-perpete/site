@@ -1,3 +1,4 @@
 \babel@toc {french}{}
 \contentsline {section}{\numberline {1}Rappels de calcul et de géométrie}{2}{section.1}%
 \contentsline {section}{\numberline {2}Nombres réels}{13}{section.2}%
+\contentsline {section}{\numberline {3}Géométrie repérée}{17}{section.3}%
