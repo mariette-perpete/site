@@ -3908,4 +3908,157 @@ La réponse obtenue en sortie est $p\approx 0,10.$
 
 \end{exo}
 
+\begin{exo}
+
+\begin{enumerate}
+\item On  commence par $A=\binom{5}{2}.$ Il y a trois méthodes~:
+
+\begin{itemize}
+\item[\textbullet] avec la formule~:
+\[A=\binom{5}{2}=\frac{5!}{2!\times 3!}=\frac{5\times 4\times\cancel{3}\times \cancel{2}\times \cancel{1}}{2\times 1\times \cancel{3}\times \cancel{2}\times \cancel{1}}=\frac{20}{2}=10.\]
+\item[\textbullet] avec le triangle de Pascal~:
+
+\begin{center}
+\begin{tabular}{|l|c c c c c c|}
+\hline
+         & 0        & 1        & \red{$\boxed{2}$} &3 &4    & 5   \\
+\hline
+$0$ &  1 &0&0&0&0  &0      \\
+$1$ &   1&1&0&0&0  &  0   \\
+$2$ &   1&2&1&0&0     &0  \\
+$3$ &  1&3&3&1&0       &0 \\
+$4$ &    1&4&6&4&1&0      \\
+\red{$\boxed{5}$} &    1&5&\red{$\boxed{10}$}&10&5&1      \\
+\hline
+\end{tabular}
+\end{center}
+\item[\textbullet] avec la calculatrice~:
+
+\small
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{4}
+
+\begin{center}\textbf{Calculatrices collège}\end{center}
+
+\medskip
+
+
+Il faut écrire le calcul (le symbole ! est sur le clavier)~:
+
+\[\frac{5!}{2!\times 3!}\]
+\vspace*{1cm}
+\columnbreak
+
+\begin{center}\textbf{NUMWORKS}\end{center}
+
+\medskip
+
+\begin{itemize}
+\item[\textbullet] \fbox{\textcolor{yellow}{\faHome}}
+\item[\textbullet] Calculs \fbox{EXE} puis \fbox{\textcolor{black}{\faToolbox }} (boîte à outils)
+\item[\textbullet] choisir Dénombrement \fbox{EXE}
+\item[\textbullet] choisir  binomial(n,k) \fbox{EXE}
+\item[\textbullet] compléter $\binom{5}{2}$ \fbox{EXE}
+\end{itemize}
+
+\columnbreak
+
+\begin{center}\textbf{TI graphiques}\end{center}
+
+\medskip
+
+
+\begin{itemize}
+\item[\textbullet] \fbox{math} puis \fbox{PROB} 
+\item[\textbullet] 3:Combinaison
+
+\fbox{EXE}
+\item[\textbullet] $~_{5}\text{C}_2$ \fbox{EXE}
+\end{itemize}
+\vspace*{1cm}
+
+\columnbreak
+
+\begin{center}\textbf{CASIO graphiques}\end{center}
+
+\medskip
+
+
+\begin{itemize}
+\item[\textbullet] \fbox{MENU} puis \fbox{RUN} \fbox{EXE}
+\item[\textbullet] 5 \fbox{OPTN}  \fbox{$\triangleright$}
+\item[\textbullet] \fbox{F3} (on choisit donc PROB)
+\item[\textbullet] \fbox{F3} (on choisit donc nCr)
+\item[\textbullet] 2 \fbox{EXE} (on affiche 5\textbf{C}2 à l'écran avant d'exécuter)
+\end{itemize}
+
+
+
+
+
+
+\end{multicols}
+\end{itemize}
+
+\normalsize
+
+\medskip
+
+Quelle que soit la méthode, on obtient \[A=\binom{5}{2}=10.\]
+
+
+\medskip
+
+On obtient également~:
+
+\[B=\binom{6}{3}=20,\quad C=\binom{50}{1}=50,\quad D=\binom{4}{0}=1.\]
+
+\medskip
+
+\textbf{Remarque~:} Pour $C$ et $D,$ le résultat s'obtient sans calcul~:
+
+\begin{itemize}
+\item[\textbullet] pour $C,$ on choisit 1 élément parmi 50, donc il y a 50 choix possibles~;
+\item[\textbullet] pour $D,$ on on sait (cf cours) que $\binom{n}{0}=1$ quelle que soit la valeur de $n.$
+\end{itemize}
+
+\item \begin{itemize}
+\item[\textbullet] $\binom{10}{3}=\binom{10}{7}=120.$ L'égalité était prévisible~: choisir 3 éléments que l'on conserve dans un ensemble à 10 éléments revient à choisir les 7 éléments que l'on met de côté.
+\item[\textbullet] Par le même raisonnement, vu que $100-60=40,$ $\binom{100}{60}=\binom{100}{40}.$ Et d'une manière plus générale, si $0\leq k\leq n~:$
+\[\binom{n}{k}=\binom{n}{n-k}.\]
+\end{itemize}
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+On choisit trois numéros sur une grille de neuf cases. Il y a $\binom{9}{3}=84$ grilles possibles.
+
+\medskip
+
+
+
+\begin{center}
+ \begin{tabular}{|c|c|c|}\hline
+1& 2&$\textcolor{red}{\xcancel{\black{3}}}$ \\ \hline
+4&$\textcolor{red}{\xcancel{\black{5}}}$&6\\ \hline
+7&$\textcolor{red}{\xcancel{\black{8}}}$&9\\ \hline
+\end{tabular}
+\end{center}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+On prend 5 cartes dans un jeu de 32. Il y a $\binom{32}{5}=\np{201376}$ mains possibles.
+
+\end{exo}
+
 \end{document}
