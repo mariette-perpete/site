@@ -2243,4 +2243,61 @@ Conclusion~: $C(5,5~;~-5,5).$
 
 \end{exo}
 
+
+
+\begin{exo}
+
+
+Cet exercice d'introduction à la notion de vecteur appelle quelques commentaires~:
+
+\begin{enumerate}
+\item La télécabine $EFGH$ glisse pour aboutir à la position $IJKL.$ Ce déplacement est appelé \og translation de vecteur $\overrightarrow{AB}$ \fg.
+\item Le vecteur $\overrightarrow{AB}$ a été représenté en violet sur la figure, il est égal à chacun des vecteurs $\overrightarrow{EI},$ $\overrightarrow{FJ},$ $\overrightarrow{GK}$ et $\overrightarrow{HL}.$ On peut donc écrire
+\[\overrightarrow{AB}=\overrightarrow{EI}=\overrightarrow{FJ}=\overrightarrow{GK}=\overrightarrow{HL}.\]
+\item Pour aller de $A$ à $B,$ on avance de 4 carreaux en abscisse et on descend de $1$ carreau en ordonnée~; on dit que $\overrightarrow{AB}$ a pour abscisse $4$ et pour ordonnée $-1.$ On note $\overrightarrow{AB}\begin{pmatrix} 4\\-1 \end{pmatrix}.$
+\end{enumerate}
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{xdxdff}{0.49019607843137253 0.49019607843137253 1.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.4,-0.9)(3.86,4.64)
+\multips(0,0)(0,1.0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.4,0)(3.86,0)}
+\multips(-3,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.9)(0,4.64)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.4,-0.9)(3.86,4.64)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!20!white,fillstyle=solid,opacity=0.1](-3.,3.)(-1.,3.)(-1.,1.)(-3.,1.)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!20!white,fillstyle=solid,opacity=0.1](1.,2.)(3.,2.)(3.,0.)(1.,0.)
+\psline[linewidth=2.pt,linecolor=red](-3.,3.)(-1.,3.)
+\psline[linewidth=2.pt,linecolor=red](-1.,3.)(-1.,1.)
+\psline[linewidth=2.pt,linecolor=red](-1.,1.)(-3.,1.)
+\psline[linewidth=2.pt,linecolor=red](-3.,1.)(-3.,3.)
+\psline[linewidth=2.pt,linecolor=red](1.,2.)(3.,2.)
+\psline[linewidth=2.pt,linecolor=red](3.,2.)(3.,0.)
+\psline[linewidth=2.pt,linecolor=red](3.,0.)(1.,0.)
+\psline[linewidth=2.pt,linecolor=red](1.,0.)(1.,2.)
+\psline[linewidth=2.pt](-2.,4.)(-2.,3.)
+\psline[linewidth=2.pt](2.,3.)(2.,2.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(-2.,4.)(2.,3.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(-1.,3.)(3.,2.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(-3.,3.)(1.,2.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(-3.,1.)(1.,0.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(-1.,1.)(3.,0.)
+\rput[bl](-1.92,4.2){\ududff{$A$}}
+\rput[bl](2.08,3.2){\ududff{$B$}}
+\rput[bl](-2.92,3.2){\ududff{$E$}}
+\rput[bl](-0.92,3.2){\ududff{$F$}}
+\rput[bl](-0.92,1.2){\ududff{$G$}}
+\rput[bl](-2.92,1.2){\ududff{$H$}}
+\rput[bl](1.04,2.1){\ududff{$I$}}
+\rput[bl](3.08,2.2){\ududff{$J$}}
+\rput[bl](3.08,0.2){\ududff{$K$}}
+\rput[bl](1.08,0.1){\ududff{$L$}}
+\end{pspicture*}
+\end{center}
+
+
+\end{exo}
+
+
 \end{document}

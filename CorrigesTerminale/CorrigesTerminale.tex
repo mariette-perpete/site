@@ -4061,4 +4061,112 @@ On prend 5 cartes dans un jeu de 32. Il y a $\binom{32}{5}=\np{201376}$ mains po
 
 \end{exo}
 
+\begin{exo}
+
+Lorsqu'ils se rencontrent en arrivant le matin au lycée, les 24 élèves d'une classe se serrent la main.
+
+\medskip
+
+Choisir une poignée de main, c'est choisir deux personnes dans la classe. Il s'échange donc  $\binom{24}{2}=\np{276}$ poignées de mains au total.
+
+\end{exo}
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item Si $p\geq 2~:$ \[(p-1)!\times \textcolor{red}{p}=1\times 2\times\cdots\times (p-1)\times \textcolor{red}{p}=p!\]
+(l'égalité est également vraie lorsque $p=1,$ puisque $0!\times 1=1=1!$).
+\item Si $n\geq 2~:$ 
+\[\binom{n+1}{2}=\frac{(n+1)!}{2!\times(n+1-2)!}=\frac{(n+1)!}{2!\times(n-1)!}=
+\frac{\cancel{(n-1)!}\times n\times (n+1)}{2\times\cancel{(n-1)!}}=\frac{n^2+n}{2}.\]
+
+\medskip
+
+\textbf{Remarque~:} On peut aussi obtenir la réponse par un raisonnement de dénombrement~: choisir 2 éléments parmi $n+1$ revient à compter le nombre de poignées de mains lorsque $n+1$ personnes se serrent la main les unes les autres (comme dans l'exercice précédent). Chacune des $n+1$ personnes donne $n$ poignées de main~; et on divise par 2, parce que sinon chaque poignée de main est comptée deux fois. On total, on en dénombre $(n+1)\times n\div 2=\frac{n^2+n}{2}.$
+
+
+\item Soit $n\geq k\geq 1.$ On calcule séparément~:
+
+ \setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+\begin{align*}
+n\times \binom{n-1}{k-1}
+&=n\times \frac{(n-1)!}{(k-1)!\times((n-1)-(k-1))!}
+\\&=\frac{(n-1)!\times n}{(k-1)!\times(n-\cancel{1}-k+\cancel{1})!}
+\\&=\frac{n!}{(k-1)!\times(n-k)!}
+\end{align*}
+
+\begin{align*}
+k\times \binom{n}{k}
+&=k\times \frac{n!}{k!\times(n-k)!}
+\\&=\frac{n!\times \cancel{k}}{(k-1)!\times \cancel{k}\times(n-k)!}
+\\&=\frac{n!}{(k-1)!\times(n-k)!}
+\end{align*}
+\end{multicols}
+
+\medskip
+
+On a donc bien
+\[n\times \binom{n-1}{k-1}=k\times \binom{n}{k}\] (formule du pion).
+\end{enumerate}
+
+
+\end{exo}
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item Il faut choisir 12 personnes parmi 20, donc on peut constituer $\binom{20}{12}$ groupes différents.
+\item David est un des membres de l'association. Il y a~:
+\begin{itemize}
+\item[\textbullet] $\binom{19}{11}$ groupes de 12 personnes contenant David (puisque si David est pris, il reste 11 personnes à choisir parmi les 19 autres)~;
+\item[\textbullet] $\binom{19}{12}$ groupes de 12 personnes ne contenant pas David (puisque si David n'est pas pris, il reste encore 12 personnes à choisir parmi les 19 autres).
+\end{itemize}
+\item D'après les questions 1 et 2~:
+\[\binom{20}{12}=\binom{19}{11}+\binom{19}{12}.\]
+\item On généralise~: si $1\leq k\leq n-1,$
+\[\binom{n}{k}= \binom{n-1}{k-1} + \binom{n-1}{k}.\]
+\item On redémontre par le calcul la formule obtenue à la question précédente~:
+
+\begin{align*}
+\binom{n-1}{k-1} + \binom{n-1}{k}
+&=\frac{(n-1)!}{(k-1)!\times ((n-1)-(k-1))!}+\frac{(n-1)!}{k!\times ((n-1)-k)!}
+\\&=\frac{(n-1)!}{(k-1)!\times (n-\cancel{1}-k+\cancel{1})!}+\frac{(n-1)!}{k!\times (n-1-k)!}
+\\&=\frac{(n-1)!\textcolor{red}{\times k}}{(k-1)!\textcolor{red}{\times k}\times (n-k)!}+\frac{(n-1)!\textcolor{blue}{\times (n-k)}}{k!\times (n-k-1)!\textcolor{blue}{\times (n-k)}}
+\\&=\frac{(n-1)!\times k}{k!\times (n-k)!}+\frac{(n-1)!\times(n-k)}{k!\times (n-k)!}
+\\&=\frac{(n-1)!\times(k+n-k)}{k!\times (n-k)!}
+\\&=\frac{(n-1)!\times n}{k!\times (n-k)!}
+\\&=\frac{n!}{k!\times (n-k)!}
+\\&=\binom{n}{k}
+\end{align*}
+
+\end{enumerate}
+
+\medskip
+
+\textbf{Remarque~:} Cette égalité, appelée formule de Pascal, permet de faire le lien entre le triangle de Pascal et les $\binom{n}{k}.$ En effet~:
+
+\begin{itemize}
+\item[\textbullet] La première colonne  du triangle de Pascal contient uniquement des 1, qui correspondent bien aux $\binom{n}{0}.$
+\item[\textbullet] La diagonale  du triangle de Pascal contient uniquement des 1, qui correspondent bien aux $\binom{n}{n}.$
+\item[\textbullet] On remplit chacune des cases \og centrales \fg~{} en ajoutant le nombre au-dessus et celui au-dessus à gauche. Si les nombres de la ligne $n-1$ correspondent aux $\binom{n-1}{k},$ alors ceux de la ligne du dessous correspondront également, via la formule de Pascal~:
+
+\LARGE
+\[\boxed{\begin{matrix}
+\binom{n-1}{k-1}&\textcolor{blue}{+}&\binom{n-1}{k}\\
+& &\textcolor{blue}{=}\\
+& & \binom{n}{k}
+\end{matrix}}\]
+\normalsize
+
+C'est une sorte de raisonnement par récurrence~: la correspondance entre les termes du triangle de Pascal et les $\binom{n}{k}$ \og se propage de ligne en ligne \fg.
+\end{itemize}
+
+\end{exo}
+
+
 \end{document}
