@@ -4169,4 +4169,120 @@ C'est une sorte de raisonnement par récurrence~: la correspondance entre les te
 \end{exo}
 
 
+
+\begin{exo}
+
+Le sélectionneur choisit 10 joueurs de champ parmi 17, puis 1 gardien parmi 3~; il a donc
+\[\binom{17}{3}\times \binom{3}{1}=680\times 3=\np{2040}~\text{équipes possibles.}\]
+
+\end{exo}
+
+\begin{exo}
+
+Il faut choisir 2 moniteurs parmi 5, puis 10 enfants parmi 40. Il y a donc
+
+\[\binom{5}{2}\times \binom{40}{10}~\text{groupes possibles}\]
+
+(la valeur explicite est entre 8 et 9 milliards).
+
+
+\end{exo}
+
+\begin{exo}
+
+
+On écrit les formules, mais on ne fait pas les calculs explicites (sans grand intérêt mathématique à ce stade du cours).
+
+\begin{enumerate}
+\item Il y a $\binom{32}{5}$ mains possibles.
+
+\item La probabilité qu'une main contienne~:
+\begin{itemize}
+\item[\textbullet] exactement 3 dames est 
+\[\frac{\binom{4}{3}\times \binom{28}{2}}{\binom{32}{5}}\] (on choisit 3 dames parmi 4, puis 2 cartes parmi les 28 autres)~;
+\item[\textbullet] trois cœurs et deux carreaux est
+\[\frac{\binom{8}{3}\times \binom{8}{2}}{\binom{32}{5}}\] (on choisit 3 cœurs parmi 8, puis 2 carreaux parmi 8)\footnote{On pourrait multiplier par $\binom{16}{0}$ au numérateur, puisqu'on ne choisit aucune carte parmi les piques et les trèfles. Bien sûr, cela ne changerait rien à la réponse, puisque $\binom{16}{0}=1.$}~;
+\item[\textbullet] exactement un roi et deux valets est
+\[\frac{\binom{4}{1}\times \binom{4}{2}\times\binom{24}{2}}{\binom{32}{5}}\] (on choisit 1 roi parmi 4, puis 2 valets parmi 4~; et enfin 2 cartes parmi les 24 autres).
+\end{itemize}
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item 
+
+\begin{enumerate}
+\item Le recrutement de 3 candidats peut se faire de $\binom{8}{3}=56$ façons possibles.
+\item Le recrutement de 7 candidats peut se faire de $\binom{8}{7}=8$ façons possibles.
+\item On peut recruter entre 0 et 8 candidats, donc en raisonnant comme dans les questions 1 et 2, on voit qu'il y a
+\[\binom{8}{0}+\binom{8}{1}+\binom{8}{2}+\binom{8}{3}+\binom{8}{4}+\binom{8}{5}+\binom{8}{6}+\binom{8}{7}+\binom{8}{8}\] recrutements différents possibles.
+\item Chaque candidat est soit accepté (A), soir refusé (R). On peut donc assimiler le recrutement à une liste de 8 éléments à choisir parmi A/R. Ainsi y a-t-il \[2^8=256\] recrutements différents possibles (nombre de 2-listes d'un ensemble à 8 éléments)\footnote{Le lecteur qui n'est pas convaincu peut faire un arbre.}.
+\end{enumerate}
+\item Soit $n\geq 1.$ On imagine $n$ candidats au lieu 8 et on raisonne comme dans la question 1~: le nombre de recrutements différents possibles est
+\[\binom{n}{0}+\binom{n}{1}+\binom{n}{2}+\cdots +\binom{n}{n}=2^n.\]  
+
+\medskip
+
+Avec le symbole $\sum,$ cette formule (fort connue) se réécrit \[\sum\limits_{k=0}^n\binom{n}{k}=2^n.\]
+
+(On vérifie sans peine qu'elle est également vraie lorsque $n=0.$)
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+\begin{exo}~{}
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.52,-0.34)(7.52,4.56)
+\psline[linewidth=2.pt](-2.,4.)(-2.,1.)
+\psline[linewidth=2.pt](-2.,1.)(1.,1.)
+\psline[linewidth=2.pt](1.,1.)(1.,4.)
+\psline[linewidth=2.pt](1.,4.)(-2.,4.)
+\psline[linewidth=2.pt](3.,4.)(3.,1.)
+\psline[linewidth=2.pt](3.,1.)(6.,1.)
+\psline[linewidth=2.pt](6.,1.)(6.,4.)
+\psline[linewidth=2.pt](6.,4.)(3.,4.)
+\begin{LARGE}
+\rput[tl](-1.56,3.48){\ding{172}}
+\rput[tl](-1.4,1.78){\ding{173}}
+\rput[tl](-0.56,2.78){\ding{174}}
+\rput[tl](-0.24,1.94){\ding{185}}
+\rput[tl](0.04,3.42){\ding{186}}
+\rput[tl](4.3,3.44){\ding{177}}
+\rput[tl](5.18,2.02){\ding{178}}
+\rput[tl](3.62,2.84){\ding{189}}
+\rput[tl](3.78,1.6){\ding{190}}
+\rput[tl](4.92,2.8){\ding{191}}
+\end{LARGE}
+\rput[tl](-0.55,0.45){$U_1$}
+\rput[tl](4.5,0.45){$U_2$}
+\end{pspicture*}
+\end{center}
+
+\begin{itemize}
+\item[\textbullet] Il y a \[\binom{5}{2}\times \binom{5}{2}=10\times 10=100\] tirages possibles (puisqu'on choisit 2 des 5 boules de l'urne  $U_1,$ 2 des 5 boules de l'urne  $U_2$).
+\item[\textbullet] Pour avoir 2 boules blanches il faut, au choix~:
+\begin{itemize}
+\item Tirer 2 blanches et 0 noire dans l'urne $U_1,$ 0 blanche et 2 noires dans l'urne $U_2.$ Le nombre de façons différentes de faire ce tirage est \[\binom{3}{2}\times \binom{2}{0}\times \binom{2}{0}\times \binom{3}{2}=3\times 1\times 1\times 3=9.\]
+\item Tirer 1 blanche et 1 noire dans l'urne $U_1,$ 1 blanche et 1 noire dans l'urne $U_2.$ Le nombre de façons différentes de faire ce tirage est \[\binom{3}{1}\times \binom{2}{1}\times \binom{2}{1}\times \binom{3}{1}=3\times 2\times 2\times 3=36.\]
+\item Tirer 0 blanche et 2 noires dans l'urne $U_1,$ 2 blanches et 0 noire dans l'urne $U_2.$ Le nombre de façons différentes de faire ce tirage est \[\binom{3}{0}\times \binom{2}{2}\times \binom{2}{2}\times \binom{3}{0}=1\times 1\times 1\times 1=1.\]
+\end{itemize}
+\item[\textbullet] Conclusion~: $P(A)=\frac{9+36+1}{100}=0,46.$
+\end{itemize}
+
+
+
+\end{exo}
+
+
+
 \end{document}

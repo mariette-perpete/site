@@ -2300,4 +2300,177 @@ Cet exercice d'introduction à la notion de vecteur appelle quelques commentaire
 \end{exo}
 
 
+\begin{exo}
+
+\begin{enumerate}
+\item ~{}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.7,-2.36)(5.74,2.84)
+\multips(0,-2)(0,1.0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.7,0)(5.74,0)}
+\multips(-3,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.36)(0,2.84)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.7,-2.36)(5.74,2.84)
+\psline[linewidth=2.pt,linecolor=red]{->}(-3.,0.)(1.,2.)
+\psline[linewidth=2.pt,linecolor=red]{->}(1.,-2.)(5.,0.)
+\psdots[dotstyle=*,linecolor=ududff](-3.,0.)
+\rput[bl](-3.34,0.22){\ududff{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](1.,2.)
+\rput[bl](1.08,2.2){\ududff{$B$}}
+\psdots[dotstyle=*,linecolor=ududff](1.,-2.)
+\rput[bl](0.7,-1.84){\ududff{$I$}}
+\psdots[dotstyle=*,linecolor=ududff](5.,0.)
+\rput[bl](5.08,0.2){\ududff{$J$}}
+\end{pspicture*}
+\end{center}
+\item On calcule les coordonnées de $\overrightarrow{AB}~:$
+\[\overrightarrow{AB}\begin{pmatrix} x_B-x_A\\y_B-y_A \end{pmatrix}\qquad \overrightarrow{AB}\begin{pmatrix} 1-(-3)\\2-0 \end{pmatrix}\qquad \overrightarrow{AB}\begin{pmatrix} 4\\2 \end{pmatrix}.\]
+\item On calcule les coordonnées de $\overrightarrow{IJ}~:$ \[\overrightarrow{IJ}\begin{pmatrix} x_J-x_I\\y_J-y_I \end{pmatrix}\qquad \overrightarrow{IJ}\begin{pmatrix} 5-1\\0-(-2) \end{pmatrix}\qquad \overrightarrow{IJ}\begin{pmatrix} 4\\2 \end{pmatrix}.\]
+Conclusion~: les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{IJ}$ ont les mêmes coordonnées, donc ils sont égaux~: $\overrightarrow{AB}=\overrightarrow{IJ}.$
+\end{enumerate}
+
+\end{exo}
+
+
+\newpage
+\begin{exo}
+
+On considère les points $A(-3;-2),$ $B(5;-2),$ $C(1;4),$ $D(-1;1),$ $E(3;1),$ $F(5;4).$
+
+\vspace*{-1.2cm}
+\begin{center}
+\begin{pspicture*}(-3.46,-2.44)(5.42,4.52)
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\multips(0,-2)(0,1.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.46,0)(5.42,0)}
+\multips(-3,0)(1.0,0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.44)(0,4.52)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.46,-2.44)(5.42,4.52)
+\psline(-3,-2)(5,-2)
+\psline(-3,-2)(1,4)
+\psline(1,4)(5,-2)
+\psline(-1,1)(3,1)
+\psline(1,4)(5,4)
+\psline(3,1)(5,4)
+\psline(-3,-2)(3,1)
+\psline(-1,1)(5,4)
+\psdots[dotstyle=*](-3,-2)
+\rput[bl](-3.26,-1.8){$A$}
+\psdots[dotstyle=*](5,-2)
+\rput[bl](5.08,-1.88){$B$}
+\psdots[dotstyle=*](1,4)
+\rput[bl](1.08,4.12){$C$}
+\psdots[dotstyle=*](-1,1)
+\rput[bl](-1.4,1.18){$D$}
+\psdots[dotstyle=*](3,1)
+\rput[bl](3.3,0.76){$E$}
+\psdots[dotstyle=*](5,4)
+\rput[bl](5.08,4.12){$F$}
+\end{pspicture*}
+\end{center}
+
+\vspace*{-1cm}
+
+
+Il y a trop de possibilités pour que les justifie toutes. Je vais me contenter de donner un couple de vecteurs égaux, avec la justification~; puis donner toutes les autres égalités possibles, mais sans les justifier~:
+\begin{enumerate}
+\item \textbf{Une égalité et sa justification.}
+
+$\overrightarrow{DC}=\overrightarrow{EF}.$ En effet, ces vecteurs ont les mêmes coordonnées~:
+\begin{itemize}
+\item[\textbullet] $\overrightarrow{DC}\begin{pmatrix} x_C-x_D\\y_C-y_D \end{pmatrix}\qquad \overrightarrow{DC}\begin{pmatrix} 1-(-1)\\4-1 \end{pmatrix}\qquad \overrightarrow{DC}\begin{pmatrix} 2\\3 \end{pmatrix}.$
+\item[\textbullet] $\overrightarrow{EF}\begin{pmatrix} x_F-x_E\\y_F-y_E \end{pmatrix}\qquad \overrightarrow{EF}\begin{pmatrix} 5-3\\4-1 \end{pmatrix}\qquad \overrightarrow{EF}\begin{pmatrix} 2\\3 \end{pmatrix}.$
+\end{itemize}
+\item \textbf{Toutes les autres égalités.}
+
+$\overrightarrow{CF}=\overrightarrow{DE}\qquad \overrightarrow{FC}=\overrightarrow{ED}\qquad\overrightarrow{CD}=\overrightarrow{FE}\qquad\overrightarrow{DC}=\overrightarrow{AD}\qquad\overrightarrow{EF}=\overrightarrow{AD}\qquad\overrightarrow{DA}=\overrightarrow{CD}\qquad\overrightarrow{DA}=\overrightarrow{FE}
+\qquad\overrightarrow{AE}=\overrightarrow{DF}
+\qquad\overrightarrow{EA}=\overrightarrow{FD}
+\qquad\overrightarrow{CE}=\overrightarrow{EB}
+\qquad\overrightarrow{EC}=\overrightarrow{BE}
+$
+
+\medskip
+
+\danger Attention à l'ordre des lettres~! Par exemple,  $\overrightarrow{DC}=\overrightarrow{EF},$ mais $\overrightarrow{DC}\not=\overrightarrow{FE}$ (il y a un problème de sens~: le vecteur $\overrightarrow{DC}$ \og monte vers le haut et la droite \fg~{}; tandis que $\overrightarrow{FE}$ \og descend vers le bas et la gauche \fg~{} -- l'erreur se détecte aussi bien sûr en calculant les coordonnées).
+\end{enumerate}
+\end{exo}
+
+\begin{exo} En physique, un vecteur représente une force, et la longueur (ou norme) du vecteur correspond à l'intensité de la force. L'égalité $\left\|\overrightarrow{P_2}\right\|=2\left\|\overrightarrow{P_1}\right\|$ signifie que la masse 2 a un  poids deux fois plus important que celui de la masse 1.
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.86,1.2)(2.38,7.0)
+\multips(0,2)(0,1.0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.86,0)(2.38,0)}
+\multips(-3,0)(1.0,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,1.2)(0,7.0)}
+\psline[linewidth=2.pt]{->}(-3.,5.)(-3.,3.)
+\psline[linewidth=2.pt]{->}(-1.,6.)(-1.,2.)
+\rput[tl](-2.6,4.5){$\overrightarrow{P_1}$}
+\rput[tl](-0.6,4.5){$\overrightarrow{P_2}$}
+\rput[tl](-3.46,5.64){masse 1}
+\rput[tl](-1.6,6.7){masse 2}
+\psdots[dotsize=8pt 0,dotstyle=*](-3.,5.)
+\psdots[dotsize=11pt 0,dotstyle=*](-1.,6.)
+\end{pspicture*}
+\end{center}
+
+
+\end{exo}
+
+\newpage
+
+\begin{exo}
+
+L'image du triangle $ABC$ par la translation de vecteur $\overrightarrow{u}\begin{pmatrix}5 \\-3\end{pmatrix}$ est le triangle $DEF.$
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.56,-7.42)(7.66,3.48)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!20!white,fillstyle=solid,opacity=0.1](-2.,2.)(0.,-4.)(1.,3.)
+\pspolygon[linewidth=2.pt,linecolor=green,fillcolor=green!20!white,fillstyle=solid,opacity=0.1](3.,-1.)(5.,-7.)(6.,0.)
+\psline[linewidth=2.pt,linecolor=red](-2.,2.)(0.,-4.)
+\psline[linewidth=2.pt,linecolor=red](0.,-4.)(1.,3.)
+\psline[linewidth=2.pt,linecolor=red](1.,3.)(-2.,2.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(-2.,2.)(3.,-1.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(0.,-4.)(5.,-7.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(1.,3.)(6.,0.)
+\psline[linewidth=2.pt,linecolor=green](3.,-1.)(5.,-7.)
+\psline[linewidth=2.pt,linecolor=green](5.,-7.)(6.,0.)
+\psline[linewidth=2.pt,linecolor=green](6.,0.)(3.,-1.)
+\rput[tl](3.4,2.5){\xfqqff{$\overrightarrow{u}\begin{pmatrix}5\\-3\end{pmatrix}$}}
+\psdots[dotstyle=*,linecolor=ududff](-2.,2.)
+\rput[bl](-1.92,2.2){\ududff{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](0.,-4.)
+\rput[bl](-0.56,-3.8){\ududff{$B$}}
+\psdots[dotstyle=*,linecolor=ududff](1.,3.)
+\rput[bl](1.08,3.16){\ududff{$C$}}
+\psdots[dotstyle=*,linecolor=ududff](3.,-1.)
+\rput[bl](3.08,-0.8){\ududff{$D$}}
+\psdots[dotstyle=*,linecolor=ududff](5.,-7.)
+\rput[bl](5.18,-6.84){\ududff{$E$}}
+\psdots[dotstyle=*,linecolor=ududff](6.,0.)
+\rput[bl](6.08,0.2){\ududff{$F$}}
+\multips(0,-7)(0,1.0){11}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(-2.56,0)(7.66,0)}
+\multips(-2,0)(1.0,0){11}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,-7.42)(0,3.48)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.56,-7.42)(7.66,3.48)
+\end{pspicture*}
+\end{center}
+
+\end{exo}
+
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
