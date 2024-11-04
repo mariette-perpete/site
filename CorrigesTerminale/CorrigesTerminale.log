@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  16 OCT 2024 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  4 NOV 2024 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1995,16 +1995,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 3991--3992
 [][] \T1/futs/m/n/9 (on choi-sit donc
  []
 
-[40] [41] [42] [43]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4288.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4288.
+[40] [41] [42] [43] [44]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4361.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4361.
  (./CorrigesTerminale.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4288.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4288.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4361.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4361.
 
 Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 (rerunfilecheck)             Checksum: 0F77757D2025036F205F40F07B8F1726;178.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4288.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4361.
  ) 
 Here is how much of TeX's memory you used:
  40754 strings out of 483041
@@ -2015,4 +2015,4 @@ Here is how much of TeX's memory you used:
  81 hyphenation exceptions out of 8191
  60i,20n,75p,919b,2445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesTerminale.dvi (43 pages, 862896 bytes).
+Output written on CorrigesTerminale.dvi (44 pages, 869244 bytes).

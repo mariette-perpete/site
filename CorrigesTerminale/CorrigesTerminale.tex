@@ -4284,5 +4284,78 @@ Avec le symbole $\sum,$ cette formule (fort connue) se réécrit \[\sum\limits_{
 \end{exo}
 
 
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item $u_n=3+\dfrac{1}{n}.$
+
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{n\to +\infty}3&= 3 \\
+        \lim\limits_{n\to +\infty}\dfrac{1}{n}&= 0
+    \end{array}
+\right \}\implies \lim\limits_{n\to +\infty}\left(3+\dfrac{1}{n}\right)=3+0=3.
+\]
+
+On s'autorise à aller un peu plus vite~: on écrit simplement
+\[\lim\limits_{n\to +\infty}u_n=3+0=3.\] 
+\item On écrit $v_n=4-\dfrac{1}{n^2}=4-\dfrac{1}{n}\times \dfrac{1}{n}.$ On a donc
+\[\lim\limits_{n\to +\infty}v_n=4-0\times 0=4.\] 
+
+\item On écrit $w_n=\left(5+\dfrac{3}{n}\right)\left(2+\dfrac{1}{n}\right)=\left(5+3\times \dfrac{1}{n}\right)\left(2+\dfrac{1}{n}\right).$ On a donc
+\[\lim\limits_{n\to +\infty}w_n=\left(5+3\times 0\right)\left(2+0\right)=10.\] 
+
+
+\item On écrit $x_n=\dfrac{1}{1+\dfrac{2}{n}}=\dfrac{1}{1+2\times \dfrac{1}{n}}.$
+
+On a donc
+\[\lim\limits_{n\to +\infty}x_n=\dfrac{1}{1+2\times 0}=1.\] 
+\item On met $n$ en facteur au numérateur et au dénominateur~:
+\[
+y_n=\dfrac{3n-5}{4n+1}
+=\dfrac{\cancel{n}\left(3-\frac{5}{n}\right)}{\cancel{n}\left(4+\frac{1}{n}\right)}
+=\dfrac{3-5\times \frac{1}{n}}{4+\frac{1}{n}}.
+\]
+
+On a donc
+\[\lim\limits_{n\to +\infty}y_n=\dfrac{3-5\times 0}{4+0}=\dfrac{3}{4}.\]
+
+
+\end{enumerate}
+
+\medskip
+
+\textbf{Bilan~:} Pour calculer les limites, il suffit de faire apparaître des $\frac{1}{n}$ et de les remplacer par 0 lorsqu'on \og passe à la limite \fg.
+
+\end{exo}
+
+
+
+\begin{exo}
+
+La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=6$ et la relation de récurrence \[u_{n+1}=0,6u_n-4\] pour tout $n\in\mathbb{N}.$ On admet qu'elle converge et on note $\ell$ sa limite.
+
+\medskip
+
+Les suites $\left(u_n\right)_{n\in\mathbb{N}}=\left(u_0,u_1,u_2,\cdots\right)$ et $\left(u_{n+1}\right)_{n\in\mathbb{N}}=\left(u_1,u_2,u_3,\cdots\right)$ ont la même limite   puisque les indices sont simplement décalés~:
+
+\begin{align*}
+\lim\limits_{n\to +\infty}u_n&=\ell,\\
+\lim\limits_{n\to +\infty}u_{n+1}&=\ell.
+\end{align*}
+
+ Par opération sur les limites, on peut \og passer à la limite \fg~{} dans la relation de récurrence~:
+\[u_{n+1}=0,6u_n-4\qquad\text{pour tout }n\in\mathbb{N},\] donc
+\[\ell=0,6\ell-4.\]
+
+On résout cette équation~:
+\[\ell=0,6\ell-4\iff \ell-0,6\ell=-4\iff 0,4\ell=-4\iff\ell=\frac{-4}{0,4}\iff \ell=-10.\]
+
+Conclusion~: $\lim\limits_{n\to +\infty}u_n=-10.$
+\end{exo}
+
 
 \end{document}

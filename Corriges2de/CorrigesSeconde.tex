@@ -2468,6 +2468,69 @@ L'image du triangle $ABC$ par la translation de vecteur $\overrightarrow{u}\begi
 
 
 
+\begin{exo}
+
+Un voyageur de commerce ($=$ un représentant) fait une note de frais pour chaque jour de travail où il utilise sa voiture. Il reçoit une part fixe de 30~\euro, et une indemnité de 0,5~\euro/km.
+
+\medskip
+
+\textbf{Remarque~:} On peut penser que l'indemnité kilométrique sert à rembourser les frais de déplacement (par exemple si le représentant utilise sa propre voiture)~; et que la part fixe sert à payer les repas.
+
+\begin{enumerate}
+\item S'il fait 120~km dans la journée, le montant de la note de frais est de \[30+120\times 0,5=30+60=90~\text{\euro}.\]
+\item On note $x$ le nombre de km parcourus par le voyageur de commerce, et $f(x)$ le montant de la note de frais. On a alors \[f(x)=30+x\times 0,5=0,5x+30.\]
+\item La fonction $f$ est affine, puisque $f(x)=0,5x+30$ (c'est bien une fonction de la forme $f(x)=ax+b,$ avec $a=0,5$ et $b=30$). Sa courbe représentative est donc une droite, que l'on trace à partir d'un tableau de valeurs avec deux valeurs~; par exemple~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+ \begin{tabular}{|c|c|c|}\hline
+$x$& $0$ &$120$ \\ \hline 
+$f(x)$&$30$ &$90$  \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{align*}f(0)&=0,5\times 0+30=30\\
+f(120)&=0,5\times 120+30=90\end{align*}
+
+On place les points de coordonnées $(0;30)$ et $(120;90),$ puis on trace la droite -- en réalité un segment, puisqu'on va de 0 à 200 en abscisses.
+
+\end{multicols}
+
+\medskip
+
+\textbf{Remarque~:} On a choisi les valeurs  $0$ et $120,$ mais on peut prendre n'importe quelles valeurs -- l'avantage de $0,$ c'est que le calcul est facile~; et l'avantage de $120,$ c'est qu'on a déjà fait le calcul dans la question 1.
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=0.025cm,yunit=0.05cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-25.571925933684398,-8.5)(219.39050611863857,137.42562531094046)
+\multips(0,0)(0,10.0){15}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(219.39050611863857,0)}
+\multips(0,0)(20.0,0){13}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,137.42562531094046)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=20.,Dy=10.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(219.39050611863857,137.42562531094046)
+\rput[tl](130,8.092313283315638){km parcourus}
+\rput[lt](5.833514073023679,126.71554530972082){\parbox{60.384832012684356 cm}{montant de la \\ note de frais}}
+\psline[linewidth=2.pt,linecolor=ududff](0.,30.)(200.,130.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](0.,75.)(90.,75.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](90.,75.)(90.,0.)
+\psdots[dotstyle=*,linecolor=ududff](0.,30.)
+\psdots[dotstyle=*,linecolor=ududff](120.,90.)
+\end{pspicture*}
+\end{center}
+
+
+\item Le voyageur de commerce a une note de frais de 75~\euro. Pour déterminer le nombre de km parcourus dans la journée, il y a deux méthodes~:
+
+\begin{itemize}
+\item[\textbullet] \textbf{Graphiquement.} On voit qu'il a parcouru 90~km (pointillés rouges)\footnote{La méthode graphique est simple, mais la réponse pourrait être imprécise.}.
+\item[\textbullet] \textbf{Par le calcul.} On retire les frais fixes~: $90-30=60~\text{\euro}$ d'indemnité kilométrique. Puis, comme chaque km compte pour $0,5~\text{\euro},$ on divise~: $45\div 0,5=45\times 2=90~\text{km}.$\footnote{On peut aussi résoudre l'équation $0,5x+30=75.$}
+\end{itemize}
+\end{enumerate}
+
+\end{exo}
+
+
 
 
 
