@@ -2530,6 +2530,187 @@ On place les points de coordonnées $(0;30)$ et $(120;90),$ puis on trace la dro
 
 \end{exo}
 
+\begin{exo}
+
+
+\begin{enumerate}
+\item \begin{itemize}
+\item[\textbullet] Lorsqu'on télécharge 50 Mo, on paye 3~\euro.
+\item[\textbullet] Lorsqu'on télécharge 150 Mo, les 100 premiers coûtent 3~\euro~; et les 50 suivants coûtent $50\times 0,04=2$~\euro. On paye donc au total $3+2=5$~\euro.
+\end{itemize}
+
+\item On complète le tableau de valeurs~:
+
+
+
+\smallskip
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+   Nombre de Mo &$0$ &$50$ &$100$ &$150$ &$200$ \\
+	\hline
+	Prix à payer &3&3&3&5&7 \\
+	\hline
+\end{tabular}
+\end{center}
+
+\textbf{Remarque~:} jusqu'à 100~Mo, on paye 3~\euro. Ensuite, chaque nouvelle tranche de 50~Mo est facturée 2~\euro.
+
+\item On construit la courbe qui donne le prix payé en fonction du nombre de Mo téléchargés. Elle est constante sur l'intervalle $\left[0;100\right],$ puis affine sur l'intervalle $\left[100;200\right].$ Il faut donc utiliser une règle pour effectuer le tracé\footnote{On parle de fonction \og affine par morceaux \fg.}.
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=0.015cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-47.57871396895785,-0.8165410199556531)(427.5432372505541,7.495654101995574)
+\multips(0,0)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(427.5432372505541,0)}
+\multips(0,0)(50.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,7.495654101995574)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=50.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(427.5432372505541,7.495654101995574)
+\psline[linewidth=2.pt,linecolor=ududff](0.,3.)(100.,3.)
+\psline[linewidth=2.pt,linecolor=ududff](100.,3.)(200.,7.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](0.,4.6)(140.,4.6)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](140.,4.6)(140.,0.)
+\rput[tl](205.1042128603103,0.5298004434589823){Nombre de Mo}
+\rput[tl](3.152993348115293,6.871263858093134){Prix}
+\psdots[dotstyle=*,linecolor=ududff](0.,3.)
+\psdots[dotstyle=*,linecolor=ududff](50.,3.)
+\psdots[dotstyle=*,linecolor=ududff](100.,3.)
+\psdots[dotstyle=*,linecolor=ududff](150.,5.)
+\psdots[dotstyle=*,linecolor=ududff](200.,7.)
+\end{pspicture*}
+\end{center}
+
+\item Il y a deux méthodes~:
+
+\begin{itemize}
+\item[\textbullet] \textbf{Graphiquement.} On voit qu'on a téléchargé 140~Mo (pointillés rouges).
+\item[\textbullet] \textbf{Par le calcul.} J'ai payé 4,60~\euro, donc $3+1,60$~\euro. J'ai donc téléchargé $1,60\div 0,04=40$~Mo au-delà du 100\up{e}. Autrement dit, j'ai téléchargé 140~Mo.
+\end{itemize}
+\end{enumerate}
+
+
+
+\end{exo}
+
+\begin{exo}
+
+Les gares de Calais et de Boulogne-sur-Mer sont distantes de 30~km. Un train part à 12 h de Boulogne-sur-Mer en direction de Calais et roule à la vitesse de 40~km/h. Un train part de Calais à 12 h 15 et fait route en sens inverse à la vitesse de 60~km/h.
+
+\begin{enumerate}
+\item Le train qui part à 12 h de Boulogne-sur-Mer roule à la vitesse de 40~km/h, donc il parcourt 40~km en 60~min. Pour savoir quand il arrive à Calais, on complète un tableau de proportionnalité~:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+temps (en min)& 60&? \\ \hline 
+distance (en km)&40& 30 \\ \hline
+\end{tabular}
+\end{center}
+
+Le train mettra $\frac{60\times 30}{40}=\frac{\np{1800}}{40}=45$~min pour arriver à Calais, donc il y sera à 12 h 45.
+
+\medskip
+
+Pour le train qui part de Calais, le calcul est plus facile~: il roule à 60~km/h, donc parcourt 60~km en 60~min~; et ainsi 30~km en 30~min. Comme il part à 12 h 15, il arrive à 12 h 45 lui aussi.
+
+\medskip
+
+On peut ainsi représenter la marche des deux trains~:
+
+\begin{center}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.5,-0.96)(11,6.5)
+\multips(0,0)(0,1.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(10,0)}
+\multips(0,0)(1.0,0){11}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,6)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,labels=none,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(11,6.5)
+\begin{scriptsize}
+\rput[tl](-0.4,-0.34){12h}
+\rput[tl](1.4,-0.34){12h10}
+\rput[tl](3.4,-0.34){12h20}
+\rput[tl](5.4,-0.34){12h30}
+\rput[tl](7.4,-0.34){12h40}
+\rput[tl](9.4,-0.34){12h50}
+\rput[tl](-0.3,0.18){0}
+\rput[tl](-0.6,2.12){10}
+\rput[tl](-0.6,4.14){20}
+\rput[tl](-2.1,0.4){\fbox{Boulogne}}
+\rput[tl](-2.1,6.4){\fbox{Calais}}
+\rput[tl](-0.6,6.18){30}
+\rput[tl](4.5,-0.34){\green{12h27}}
+\end{scriptsize}
+\psline[linewidth=2.pt,linecolor=blue](0.,0.)(9.,6)
+\psline[linewidth=2.pt,linecolor=red](0.,6.)(3,6)
+\psline[linewidth=2.pt,linecolor=red](3.,6.)(9,0)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green](5.4,3.6)(5.4,0)
+\end{pspicture*}
+\end{center}
+
+\item Nous allons déterminer l'heure de croisement des trains par le calcul. Graphiquement, cela correspond à l'abscisse du point d'intersection des courbes.
+
+\medskip
+
+\`A 12h15, le train qui part de Boulogne-sur-Mer a parcouru 10~km (facile à vérifier), il est donc à 20~km de Calais. C'est l'heure à laquelle le deuxième train part. Comme l'un roule à 40~km/h et l'autre à 60~km/h, tout se passe comme si un seul train devait parcourir 20~km à la vitesse de $40+60=100$~km/h. On complète un tableau de proportionnalité~:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+temps (en min)& 60&? \\ \hline 
+distance (en km)&100& 20 \\ \hline
+\end{tabular}
+\end{center}
+
+$\frac{60\times 20}{100}=\frac{\np{1200}}{100}=12,$ donc il faudrait 12~min à ce train pour parcourir 20~km. Ainsi, les deux trains se croiseront-ils à \[\text{12 h 15 min}+\text{12 min}=\text{12 h 27 min}.\]
+ 
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+Je me contenterai du graphique, donc je ne ferai pas les calculs pour avoir les heures exactes des deux rencontres -- elles s'obtiennent avec les mêmes techniques que dans l'exercice précédent.
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.4,-0.76)(11.25,7.32)
+\multips(0,0)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-0.0,0)(11.25,0)}
+\multips(0,0)(1.0,0){12}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,7.32)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,labels=none,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(11.25,7.32)
+\rput[tl](-0.2,-0.15){9h}
+\rput[tl](2.66,-0.15){10h}
+\rput[tl](5.72,-0.15){11h}
+\rput[tl](8.68,-0.15){12h}
+%\rput[tl](-0.4,0.2){A}
+%\rput[tl](-0.4,6.14){B}
+\rput[tl](-0.4,0.2){0}
+\rput[tl](-0.6,1.2){10}
+\rput[tl](-0.6,2.2){20}
+\rput[tl](-0.6,3.2){30}
+\rput[tl](-0.6,4.2){40}
+\rput[tl](-0.6,5.2){50}
+\rput[tl](-0.6,6.2){60}
+\psline[linewidth=2.pt,linecolor=ududff](0.,0.)(4.5,3.)
+\psline[linewidth=2.pt,linecolor=ududff](4.5,3.)(6.5,3.)
+\psline[linewidth=2.pt,linecolor=ududff](6.5,3.)(11,6.)
+\rput[tl](0.34,1.66){\ududff{Cycliste}}
+\psline[linewidth=2.pt,linecolor=red](0.,6.)(2.,6.)
+\psline[linewidth=2.pt,linecolor=red](2.,6.)(5.,0.)
+\psline[linewidth=2.pt,linecolor=red](5.,0.)(6.,0.)
+\psline[linewidth=2.pt,linecolor=red](6.,0.)(9.,6.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green](3.75,2.5)(3.75,0.)
+\rput[tl](3.38,-0.15){\green{10h15}}
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green](8.,4.)(8.,0.)
+\rput[tl](7.4,-0.15){\green{11h40}}
+\rput[tl](0.3,6.56){\red{Automobile}}
+\rput[tl](-1.3,0.4){\fbox{A}}
+\rput[tl](-1.3,6.4){\fbox{B}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=green](3.75,2.5)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=green](8.,4.)
+\end{pspicture*}
+\end{center}
+
+\end{exo}
 
 
 

@@ -4358,4 +4358,148 @@ Conclusion~: $\lim\limits_{n\to +\infty}u_n=-10.$
 \end{exo}
 
 
+\begin{exo}
+
+La suite $\left(v_n\right)_{n\in\mathbb{N}}$ est géométrique de premier terme $v_0=20$ et de raison $q=-0,5.$
+
+\begin{enumerate}
+\item $v_0=20~;~v_1=20\times (-0,5)=-10~;~v_2=-10\times (-0,5)=5~;~v_3=5\times (-0,5)=-2,5~;~v_4=-2,5\times (-0,5)=1,25.$
+\item On admet que $\left(v_n\right)_{n\in\mathbb{N}}$ converge, on note $\ell$ sa limite.
+
+\medskip
+On \og passe à la limite \fg~{} dans la relation de récurrence~: $\left(v_n\right)_{n\in\mathbb{N}}$ est géométrique de raison $q=-0,5,$ donc
+\[v_{n+1}=-0,5\times v_n\qquad\text{pour tout }n\in\mathbb{N}~;\] et donc
+\[\ell=-0,5\times\ell.\]
+
+On résout~:
+\[\ell=-0,5\times\ell\iff\ell+0,5\ell=0\iff 1,5\ell=0\iff \ell=\frac{0}{1,5}\iff\ell=0.\]
+
+Conclusion~: $\lim\limits_{n\to +\infty}v_n=0.$
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item Il est clair que $0\leq \frac{1}{n+\sqrt{n}}$ pour tout entier $n\geq 1.$ Pour l'autre inégalité, on part de \[n+\sqrt{n}\geq n.\] Deux nombres strictement positifs sont rangés en sens contraire de leurs inverses, donc
+\[\frac{1}{n+\sqrt{n}}\leq \frac{1}{n}\] (\danger en prenant l'inverse, le sens de l'inégalité est renversé).
+
+\item $0\leq \frac{1}{n+\sqrt{n}}\leq \frac{1}{n}$ pour tout entier $n\geq 1$ et
+\[\lim\limits_{n\to +\infty}0=0\qquad , \qquad \lim\limits_{n\to +\infty}\frac{1}{n}=0.\] Donc d'après le théorème des gendarmes~:
+\[\lim\limits_{n\to +\infty}\dfrac{1}{n+\sqrt{n}}=0.\]
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=1$ et la relation de récurrence
+
+\[u_{n+1}=0,6u_n+0,4n+1\] pour tout $n\in\mathbb{N}.$
+
+\begin{enumerate}
+\item \begin{align*}
+u_1&=0,6u_0+0,4\times 0+1=0,6\times 1+0+1=1,6\\
+u_2&=0,6u_1+0,4\times 1+1=0,6\times 1,6+0,4+1=2,36
+\end{align*}
+\item Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété \[n\leq u_n\leq n+1.\]
+
+
+
+
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+\[
+\left.
+    \begin{array}{ll}
+        u_0&=1 \\
+        0&\leq u_0\leq 0+1
+    \end{array}
+\right \}\implies \mathcal{P}_0~\text{est vraie}.
+\]
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[k\leq u_k\leq k+1.\]
+%\medskip
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que \[k+1\leq u_{k+1}\leq k+2.\]
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[k\leq u_k\leq k+1.\]
+
+
+On multiplie par $\textcolor{red}{0,6}~:$
+
+\begin{align*}k\textcolor{red}{\times 0,6}&\leq u_k\textcolor{red}{\times 0,6}\leq (k+1)\textcolor{red}{\times 0,6}\\
+0,6k&\leq 0,6u_k\leq 0,6k+0,6\end{align*}
+
+Puis on ajoute  $\textcolor{blue}{0,4k+1}~:$
+
+\begin{align*}
+0,6k\textcolor{blue}{+0,4k+1}&\leq 0,6u_k\textcolor{blue}{+0,4k+1}\leq 0,6k+0,6\textcolor{blue}{+0,4k+1}\\
+k+1&\leq 0,6u_k+0,4k+1\leq k+1,6\\
+k+1&\leq u_{k+1}\leq k+1,6
+\end{align*}
+
+Or $k+1,6\leq k+2,$ donc la propriété $\mathcal{P}_{k+1}$ est vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+\item Soit $n\geq 1.$ On reprend l'inégalité de la question précédente et on divise par $n~:$
+
+\begin{align*}
+n&\leq u_n\leq n+1\\
+\frac{n}{\textcolor{red}{n}}&\leq \frac{u_n}{\textcolor{red}{n}}\leq \frac{n+1}{\textcolor{red}{n}}\\
+1&\leq \frac{u_n}{n}\leq 1+\frac{1}{n}
+\end{align*}
+
+\medskip
+
+On conclut~:
+
+\[\lim\limits_{n\to +\infty}1=1\qquad , \qquad \lim\limits_{n\to +\infty}\left(1+\frac{1}{n}\right)=1+0=1,\] donc d'après le théorème des gendarmes
+\[\lim\limits_{n\to +\infty}\frac{u_n}{n}=1.\]
+
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+On veut prouver que $\lim\limits_{n\to +\infty}\frac{n-3}{4}=+\infty.$ On se donne pour cela un réel $M> 0$ et on écrit les équivalences~:
+
+\[\frac{n-3}{4}\geq M \iff n-3\geq 4M\iff n\geq 4M+3.\]
+
+Conclusion~: quand $n$ dépasse $ 4M+3,$ $\frac{n-3}{4}$ dépasse $M.$ On a donc bien $\lim\limits_{n\to +\infty}\frac{n-3}{4}=+\infty.$
+
+
+
+\end{exo}
+
+\begin{exo}
+
+Soit $M>0.$ On sait que $\lim\limits_{n\to +\infty}u_n=+\infty,$ donc $u_n\geq M$ à partir d'un certain rang $N.$ On a donc $v_n\geq u_n\geq M$ à partir du rang $N.$ On en déduit $\lim\limits_{n\to +\infty}v_n=+\infty.$
+
+
+
+\end{exo}
+
+
+
+
+
+
 \end{document}
