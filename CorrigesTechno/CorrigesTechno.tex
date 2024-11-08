@@ -1534,5 +1534,103 @@ Le taux d’anticorps est minimal à l'âge de 8 mois.
 \end{exo}
 
 
+\section{Tableaux d'effectifs et probabilités conditionnelles}
+
+
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item
+
+On traduit les données de l'énoncé par un tableau d'effectifs~:
+
+\begin{center}
+ \begin{tabular}{|m{2cm}|m{2cm}|m{2cm}|m{2cm}|}\hline
+& VTT &\st{VTT}& Total \\ \hline 
+Escalade& 3& 7&10 \\ \hline
+\st{Escalade}& 13& 9& 22\\ \hline
+Total& 16& 16& 32\\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} on sait qu'il y a autant  d'élèves qui pratiquent le VTT que d'élèves qui ne le pratiquent pas, donc 16 élèves le pratiquent et 16 ne le pratiquent pas.
+
+\item \begin{enumerate}
+\item Par lecture du tableau~: $P(E)=\frac{10}{32}$ et $P(V)=\frac{16}{32}.$
+\item On s'intéresse aux trois événements $\overline{V},$ $V\cap E$ et $V\cup E~:$
+\begin{itemize}
+\item[\textbullet] $\overline{V}$~:~\og l'élève ne pratique pas le VTT \fg. \[P\left(\overline{V}\right)=\frac{16}{32}.\]
+\item[\textbullet] $V\cap E$~:~\og l'élève pratique l'escalade \textbf{et} le VTT \fg.
+\[P\left(V\cap E\right)=\frac{3}{32}.\]
+
+\item[\textbullet] $V\cup E$~:~\og l'élève pratique l'escalade \textbf{ou} le VTT \fg.
+
+Le calcul de $P\left(V\cup E\right)$ est moins évident et peut être mené de plusieurs façons différentes. Par exemple~:
+\begin{itemize}
+\item[$\blacktriangleright$] ajouter ceux qui font du VTT à ceux qui font de l'escalade, puis retrancher les élèves qui pratiquent les deux sports (sinon ils sont comptés deux fois)~: $16+10-3=23.$
+\item[$\blacktriangleright$] ajouter ceux qui ne font que du VTT, ceux qui ne font que de l'escalade, et ceux qui pratiquent les deux sports~: $13+7+3=23.$
+\item[$\blacktriangleright$] remarquer que $C$ est le contraire de $B$ et donc faire le calcul~: $32-9=23.$
+\end{itemize}
+
+\end{itemize}
+
+Dans tous les cas on obtient $P(V\cup E)=\frac{23}{32}.$
+\item Parmi les 16 élèves qui pratiquent le VTT, 3 pratiquent également l'escalade, donc la probabilité qu'un élève qui pratique le VTT pratique également l'escalade est $\frac{3}{16}.$ Avec la notation du cours~:
+\[P_V(E)=\frac{3}{16}.\]
+\end{enumerate}
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item On représente la situation par un tableau d'effectifs.
+
+\begin{center}
+ \begin{tabular}{|m{1,3cm}|m{1,3cm}|m{1,3cm}|m{1,3cm}|}\hline
+& Petit format &Grand format& Total \\ \hline 
+Couleur&7 & 18&25 \\ \hline
+N\&B& 0 & 5& 5\\ \hline
+Total& 7& 23& 30\\ \hline
+\end{tabular}
+\end{center}
+
+
+
+\begin{enumerate}
+\item \begin{itemize}
+\item[\textbullet] $P(G)=\frac{23}{30}.$
+\item[\textbullet] $\overline{C}$~:~\og la BD est en N\&B \fg.
+\[P\left(\overline{C}\right)=\frac{5}{30}=\frac{1}{6}.\]
+\end{itemize}
+\item \begin{itemize}
+\item[\textbullet] $C\cap G$~:~\og la BD est en couleur \textbf{et} en grand format \fg.
+\[P(C\cap G)=\frac{18}{30}.\]
+\item[\textbullet] $C\cup G$~:~\og la BD est en couleur \textbf{ou} en grand format \fg.
+
+C'est le cas de toutes les BD (!), car il n'y en a aucune en N\&B et en petit format. Conclusion~: 
+\[P(C\cup G)=\frac{30}{30}=1.\]
+\end{itemize}
+\item Pierre a choisi une BD en couleur. La probabilité qu'elle soit en grand format est \[P_C(G)=\frac{18}{25}.\]
+\item \begin{itemize}
+\item[\textbullet] La BD est en grand format. La probabilité qu'elle soit en couleur est
+\[P_G(C)=\frac{18}{23}.\]
+\item[\textbullet] La BD est en grand format. La probabilité qu'elle \textbf{ne} soit \textbf{pas} en couleur est
+\[P_G\left(\overline{C}\right)=\frac{5}{23}.\]
+\end{itemize}
+\end{enumerate}
+\end{enumerate}
+
+\end{exo}
+
+
+
 
 \end{document}

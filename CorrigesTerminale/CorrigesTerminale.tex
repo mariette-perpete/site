@@ -4502,6 +4502,68 @@ Soit $M>0.$ On sait que $\lim\limits_{n\to +\infty}u_n=+\infty,$ donc $u_n\geq M
 
 
 
+\begin{exo}
+
+Il est conseillé de calculer les premiers termes des suites pour se faire une idée des variations et de l'existence éventuelle d'un majorant ou d'un minorant. Cela permet ensuite de traiter les questions avec efficacité~: si par exemple on a prouvé qu'une suite était croissante, alors on est certain (théorème du cours) qu'elle est minorée par son premier terme.
+
+\medskip 
+
+
+\begin{enumerate}
+\item $u_n=\text{e}^{-n}$ pour tout $n\in\mathbb{N}.$
+
+\begin{itemize}
+\item[\textbullet] Une exponentielle est strictement positive, donc $\left(u_n\right)_{n\in\mathbb{N}}$ est minorée par $0.$
+%\item[\textbullet] La fonction exponentielle est strictement décroissante, donc \[n\geq 0\implies -n\leq 0\implies \text{e}^{-n}\leq \text{e}^{0}\implies u_n\leq 1.\]
+%La suite $\left(u_n\right)_{n\in\mathbb{N}}$ est donc majorée par $1.$
+\item[\textbullet] Pour tout $n\in\mathbb{N}~:$
+\begin{align*}u_{n+1}-u_{n}&=\text{e}^{-(n+1)}-\text{e}^{-n}
+\\&=\text{e}^{-n-1}-\text{e}^{-n}
+\\&=\text{e}^{-n}\times\text{e}^{-1} -\text{e}^{-n}\times 1
+\\&=\underbrace{\text{e}^{-n}}_{\oplus}\underbrace{\left(\text{e}^{-1}-1\right)}_{\ominus}
+\end{align*}
+Conclusion~: $u_{n+1}-u_{n}\leq 0,$ donc $\left(u_n\right)_{n\in\mathbb{N}}$ est décroissante.
+\item[\textbullet] Comme $\left(u_n\right)_{n\in\mathbb{N}}$ est décroissante, elle est majorée par son premier terme, $u_0=\text{e}^{-0}=1.$
+\end{itemize}
+\item $v_n=n^2$ pour tout $n\in\mathbb{N}.$
+
+
+\begin{itemize}
+\item[\textbullet] Un carré est positif, donc $\left(v_n\right)_{n\in\mathbb{N}}$ est minorée par $0.$
+\item[\textbullet] Soit $M>0.$ La fonction carré est strictement croissante sur $\left[0;+\infty\right[,$ donc \[n> \sqrt{M}\implies n^2> \sqrt{M}^2\implies  u_n> M.\] Le réel $M$ ne peut donc être un majorant. Et comme cela est vrai quel que soit $M,$ la suite $\left(v_n\right)_{n\in\mathbb{N}}$ n'est pas majorée. 
+\item[\textbullet] Pour tout $n\in\mathbb{N}~:$
+\begin{align*}u_{n+1}-u_{n}&=(n+1)^2-n^2
+\\&=\cancel{n^2}+2n+1-\cancel{n^2}
+\\&=\underbrace{2n+1}_{\oplus}
+\end{align*}
+Conclusion~: $u_{n+1}-u_{n}\geq 0,$ donc $\left(u_n\right)_{n\in\mathbb{N}}$ est croissante.
+\end{itemize}
+\item $(w_n)_{n\in\mathbb{N}}$ est définie par $w_0=1$ et la relation de récurrence \[w_{n+1}=\dfrac{w_n}{1+2w_n}\] pour tout $n\in\mathbb{N}.$
+
+
+\begin{itemize}
+\item[\textbullet] L'énoncé nous dit d'admettre que $(w_n)_{n\in\mathbb{N}}$ est à termes positifs, donc elle est minorée par $0.$
+\item[\textbullet] Pour tout $n\in\mathbb{N}~:$
+\begin{align*}w_{n+1}-w_{n}&=\dfrac{w_n}{1+2w_n}-w_n
+\\&=\dfrac{w_n}{1+2w_n}-\dfrac{w_n\textcolor{red}{\left(1+2w_n\right)}}{\textcolor{red}{1+2w_n}}
+\\&=\dfrac{w_n}{1+2w_n}-\dfrac{w_n+2w_n^2}{1+2w_n}
+\\&=\dfrac{\cancel{w_n}-\cancel{w_n}-2w_n^2}{1+2w_n}
+\\&=\dfrac{\overbrace{-2w_n^2}^{\ominus}}{\underbrace{1+2w_n}_{\oplus~\text{car}~w_n\oplus}}
+\end{align*}
+Conclusion~: $w_{n+1}-w_{n}\leq 0,$ donc $\left(w_n\right)_{n\in\mathbb{N}}$ est décroissante.
+\item[\textbullet] Comme $\left(w_n\right)_{n\in\mathbb{N}}$ est décroissante, elle est majorée par son premier terme, $w_0=1.$
+\end{itemize}
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+La suite $(w_n)_{n\in\mathbb{N}}$ de l'exercice précédent est décroissante et minorée par 0. Or d'après le théorème de limite monotone, toute suite décroissante minorée converge, donc $(w_n)_{n\in\mathbb{N}}$ converge.
+
+\end{exo}
+
+
 
 
 \end{document}
