@@ -1630,6 +1630,72 @@ C'est le cas de toutes les BD (!), car il n'y en a aucune en N\&B et en petit fo
 
 \end{exo}
 
+\begin{exo}
+
+\begin{enumerate}
+\item Pour compléter le tableau, on calcule~:
+\begin{itemize}
+\item[\textbullet] 5\% de \np{10000} valent 500~;
+\item[\textbullet] $\np{10000}-500=\np{9500}$~;
+\item[\textbullet] 4\% de \np{9500} valent 380~;
+\item[\textbullet] on complète le reste du tableau avec des additions/soustractions.
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+   \hline
+	& Animaux sains & Animaux malades & Total  \\
+	 \hline
+  Test positif  &380 &500 &880  \\
+	 \hline
+  Test négatif & \np{9120}& 0 & \np{9120} \\
+	 \hline
+    Total &\np{9500} &500 & \np{10000}  \\
+    \hline
+\end{tabular}
+\end{center}
+\item \begin{enumerate}
+\item \begin{itemize}
+\item[\textbullet] $P(M)=\dfrac{500}{\np{10000}}=0,05$ (c'est le 5~\% déjà donné par l'énoncé).
+\item[\textbullet]  $P\left(\overline{T}\right)=\dfrac{9120}{\np{10000}}=0,912.$
+\end{itemize}
+\item $\overline{M}\cap T$~:~\og l'animal n'est pas malade et son test est positif. \fg
+
+\[P\left(\overline{M}\cap T\right)=\dfrac{380}{\np{10000}}=0,038.\]
+\item 500 des 880 animaux ayant un test positif sont malades, donc la probabilité qu'un animal ayant un test positif soit malade est \[P_T(M)=\frac{500}{880}\approx 57\%.\]
+\item Tous les animaux malades ont un test positif, donc la probabilité qu'un animal malade ait un test positif est \[P_M(T)=1.\]
+\end{enumerate}
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item On traduit les données de l'énoncé par un tableau d'effectifs~:
+
+\begin{center}
+ \begin{tabular}{|m{3.5cm}|m{3cm}|m{3cm}|m{3cm}|}\hline
+&Abonnés au soir &Pas abonnés au soir& Total \\ \hline 
+Abonnés au matin& 50& 20&70 \\ \hline
+Pas abonnés au matin& 50&160 &210 \\ \hline
+Total& 100& 180& 280\\ \hline
+\end{tabular}
+\end{center}
+\item 
+
+\begin{enumerate}
+\item $P(S)=\frac{100}{280}$ et $ P\left(\overline{M}\right)=\frac{210}{280}.$
+\item $S\cap M$~:~\og le pensionnaire est abonné aux deux journaux. \fg
+
+\[P\left(S\cap M\right)=\frac{50}{280}.\]
+\item On choisit au hasard un pensionnaire abonné au \textit{Matin}. La probabilité qu'il soit aussi abonné au \textit{Soir} est \[P_M(S)=\frac{50}{70}.\]
+\end{enumerate}
+\end{enumerate}
+\end{exo}
+
 
 
 
