@@ -2714,6 +2714,144 @@ Je me contenterai du graphique, donc je ne ferai pas les calculs pour avoir les 
 \end{exo}
 
 
+\begin{exo}
+
+
+Le taux d’anticorps (en g/l) présents dans le sang d’un nourrisson en fonction de l’âge (en mois), depuis la naissance jusqu’à l’âge de 12 mois, est donné par la formule suivante~:
+\[f(x)=0,1 x^2-1,6 x+12.\]
+
+\begin{enumerate}
+\item On fait un tableau de valeurs pour $f$ sur $\left[0;12\right]$ avec un pas de $2~:$
+
+\smallskip
+
+\begin{tabularx}{\linewidth}{|c|*{8}{>{\centering \arraybackslash}X|}}\hline
+$x$& $0$ &$2$ &$4$ &$6$ &$8$ &$10$&$12$ \\ \hline 
+$f(x)$&$12$ &$9,2$ &$7,2$   & $6$ &$5,6$  &$6$&$7,2$ \\ \hline
+\end{tabularx}
+
+\smallskip
+
+
+Détail de deux calculs~:
+\begin{itemize}
+\item[\textbullet] $f(0)=0,1 \times 0^2-1,6\times 0+12=12.$
+\item[\textbullet] $f(12)=0,1 \times 12^2-1,6\times 12+12=7,2.$
+\end{itemize}
+
+\item ~{}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.9838150193248827,-1.3295079159466527)(12.99324231159889,12.810705726233044)
+\multips(0,0)(0,1.0){13}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(12.2,0)}
+\multips(0,0)(1.0,0){13}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,12.2)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(12.99324231159889,12.810705726233044)
+\rput[tl](9.811694242108459,0.7643314118376485){âge (en mois)}
+\rput[tl](1.0556388713741114,12.756320289147737){\parbox{60.384832012684356 cm}{Taux d'anticorps  (en g/$\ell$)}}
+\rput{0.}(8.,5.6){\psplot[linewidth=2.pt,linecolor=ududff]{-8.}{4.}{x^2/2/5.}}
+\psline[linewidth=2.pt,linecolor=red]{->}(8.,6.5)(5.,6.5)
+\psline[linewidth=2.pt,linecolor=red]{->}(8.,6.5)(11.,6.5)
+\rput[tl](7.2283859805564,7.1274275508185125){\red{\Large 6 mois}}
+\psline[linewidth=2.pt,linestyle=dashed,dash=3pt 3pt,linecolor=red](0.,6.5)(5.,6.5)
+\rput[tl](-0.7662732709836567,6.69234405413606){\red{6,5}}
+\psdots[dotstyle=*,linecolor=ududff](0.,12.)
+\psdots[dotstyle=*,linecolor=ududff](2.,9.2)
+\psdots[dotstyle=*,linecolor=ududff](4.,7.2)
+\psdots[dotstyle=*,linecolor=ududff](6.,6.)
+\psdots[dotstyle=*,linecolor=ududff](8.,5.6)
+\psdots[dotstyle=*,linecolor=ududff](10.,6.)
+\psdots[dotstyle=*,linecolor=ududff](12.,7.2)
+\psdots[dotstyle=*,linecolor=ududff](11.,6.5)
+\end{pspicture*}
+\end{center}
+
+\item Le taux d’anticorps à la naissance est de 12 g/$\ell.$
+\item Tableau de variations~:
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f\left(x\right)$/2}{$0$,$8$,$12$}
+\tkzTabVar{+/$12$,-/$5.6$,+/$7.2$}
+\end{tikzpicture}
+\end{center}
+
+Le taux d’anticorps est minimal à l'âge de 8 mois.
+\item D'après le graphique, le taux d’anticorps est inférieur à 6,5 g/$\ell$ pendant 6 mois (du 5\up{e} au 11\up{e} mois).
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+On considère la fonction $f$  définie sur $\left[-1;3\right]$  par \[f(x)=x^2-2x.\]
+\begin{enumerate}
+\item On fait un tableau de valeurs pour $f$ sur $\left[-1;3\right]$ avec un pas de $0,5~:$
+
+\smallskip
+
+\begin{tabularx}{\linewidth}{|c|*{10}{>{\centering \arraybackslash}X|}}\hline
+$x$& $-1$ &$-0,5$ &$0$ &$0,5$ &$1$ &$1,5$&$2$&$2,5$&$3$ \\ \hline 
+$f(x)$&$3$ &$1,25$ &$0$   & $-0,75$ &$-1$  &$-0,75$&$0$&$1,25$&$3$  \\ \hline
+\end{tabularx}
+
+\smallskip
+
+
+Détail de deux calculs~:
+\begin{itemize}
+\item[\textbullet] $f(-1)=(-1)^2-2\times(-1)=1+2=3.$
+\item[\textbullet] $f(0,5)=0,5^2-2\times 0,5=0,25-1=-0,75.$
+\end{itemize}
+\item Courbe représentative de $f~:$
+
+
+\begin{center}
+\psset{xunit=1.5cm,yunit=1.5cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.5248024635446522,-1.2778986396926286)(3.613108741691681,3.2875822410472644)
+\multips(0,-1)(0,1.0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.5248024635446522,0)(3.613108741691681,0)}
+\multips(-1,0)(1.0,0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.2778986396926286)(0,3.2875822410472644)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.5248024635446522,-1.2778986396926286)(3.613108741691681,3.2875822410472644)
+\rput{0.}(1.,-1.){\psplot[linewidth=2.pt,linecolor=blue]{-2.}{2.}{x^2/2/0.5}}
+
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green](-0.8,0.)(-0.8,2.24)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green](-0.8,2.24)(0.,2.24)
+\rput[tl](-1.,-0.28661685824757543){\green{$-0,8$}}
+\rput[tl](0.15,2.324223890065452){\green{$2,24$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](-0.4142135575603134,0.9999999863873978)(2.414213562372616,0.9999999999986455)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](-0.4142135575603134,0.)(-0.4142135575603134,0.9999999863873978)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](2.414213562372616,0.)(2.414213562372616,0.9999999999986455)
+\rput[tl](2.25,-0.10511456023650935){\red{$2,4$}}
+\rput[tl](-0.7708698410371468,-0.11907627546812982){\red{$-0,4$}}
+\end{pspicture*}
+\end{center}
+\item L’image de $-0,8$  par $f$ est 
+\[f(-0,8)=(-0,8)^2-2\times(-0,8)=0,64+1,6=2,24.\] On a tracé des pointillés verts sur le graphique qui confirment ce résultat -- si on a de bons yeux~!
+\item Les antécédents de 1 par $f$ sont $-0,4$ et $2,4$ environ (voir pointillés rouges).
+\item Les solutions l'inéquation $f(x)< 1$ sont tous les nombres dont l'image est strictement inférieure à $-1.$ Ces solutions sont tous les nombres de l'intervalle $\left]-0,4;2;4\right[$ environ.
+\item Tableau de variations de $f~:$
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f\left(x\right)$/2}{$-1$,$1$,$3$}
+\tkzTabVar{+/$3$,-/$-1$,+/$3$}
+\end{tikzpicture}
+\end{center}
+\item Tableau de signe de $f~:$
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+\tkzTabInit{$x$/1,$f\left(x\right)$/2}{$-1$,$0$,$2$,$3$}
+\tkzTabLine{,+,z,-,z,+}
+\end{tikzpicture}
+\end{center}
+\end{enumerate}
+
+\end{exo}
+
 
 
 

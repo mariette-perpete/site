@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  8 NOV 2024 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  13 NOV 2024 13:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2001,24 +2001,24 @@ Package fourier-orns Warning: Command \danger is deprecated.
 (fourier-orns)                Use \warning instead; reported on input line 4390
 .
 
-[45] [46] [47]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4569.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4569.
+[45] [46] [47] [48] [49] [50]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4776.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4776.
  (./CorrigesTerminale.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4569.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4569.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4776.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4776.
 
 Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 (rerunfilecheck)             Checksum: A33B13EB434A7D73FCA560749C0690B4;230.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4569.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4776.
  ) 
 Here is how much of TeX's memory you used:
- 40756 strings out of 483041
- 743163 string characters out of 5962452
+ 40757 strings out of 483041
+ 743179 string characters out of 5962452
  1458770 words of memory out of 5000000
- 54938 multiletter control sequences out of 15000+600000
+ 54939 multiletter control sequences out of 15000+600000
  652887 words of font info for 174 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  60i,20n,75p,919b,2445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesTerminale.dvi (47 pages, 889356 bytes).
+Output written on CorrigesTerminale.dvi (50 pages, 908300 bytes).

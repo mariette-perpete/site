@@ -4563,6 +4563,213 @@ La suite $(w_n)_{n\in\mathbb{N}}$ de l'exercice précédent est décroissante et
 
 \end{exo}
 
+\begin{exo}
+
+La suite $(v_n)_{n\in\mathbb{N}^*}$ est définie par $v_n=\dfrac{n}{2^n}$ pour tout $n\in\mathbb{N}^*.$ 
+
+
+\begin{enumerate}
+\item Pour tout $n\in\mathbb{N}^*~:$
+\begin{align*}v_{n+1}-v_{n}&=\dfrac{n+1}{2^{n+1}}-\dfrac{n}{2^n}
+\\&=\dfrac{n+1}{2^{n+1}}-\dfrac{n\textcolor{red}{\times 2}}{2^n\textcolor{red}{\times 2}}
+\\&=\dfrac{n+1}{2^{n+1}}-\dfrac{2n}{2^{n+1}}
+\\&=\dfrac{\overbrace{-n+1}^{\ominus}}{\underbrace{2^{n+1}}_{\oplus}}
+\end{align*}
+
+
+Conclusion~: $v_{n+1}-v_{n}\leq 0,$ donc $\left(v_n\right)_{n\in\mathbb{N}^*}$ est décroissante.
+\medskip
+
+La suite $(v_n)_{n\in\mathbb{N}^*}$ est décroissante et elle est clairement minorée par 0. D'après le théorème de limite monotone, toute suite décroissante minorée converge, donc $(v_n)_{n\in\mathbb{N}^*}$ converge. De plus, comme elle est minorée par 0, sa limite $\ell$ est supérieure ou égale à $0.$
+\item Pour tout $n\in\mathbb{N}^*~:$
+\[v_{n+1}=\frac{n+1}{2^{n+1}}=\frac{1}{2}\times(n+1)\times\frac{1}{2^n}=\frac{1}{2}\times\frac{n+1}{\textcolor{red}{n}}\times\frac{\textcolor{red}{n}}{2^n}=\frac{1}{2}\times\left(1+\frac{1}{n}\right)\times v_n.\]
+\item On sait que~:
+\begin{itemize}
+\item[\textbullet] $\lim\limits_{n\to +\infty}v_n=\lim\limits_{n\to +\infty} v_{n+1}=\ell.$
+\item[\textbullet] $\lim\limits_{n\to +\infty}\frac{1}{n}=0.$
+\end{itemize}
+
+On \og passe à la limite  \fg~{} dans l'égalité de la question précédente~:
+\[v_{n+1}=\frac{1}{2}\times\left(1+\frac{1}{n}\right)\times v_n\qquad\text{pour tout }n\in\mathbb{N},\]
+donc
+\[\ell=\frac{1}{2}\times\left(1+0\right)\times \ell.\]
+On résout cette équation~:
+\[\ell=\frac{1}{2}\ell\iff \ell-\frac{1}{2}\ell=0\iff \frac{1}{2}\ell=0\iff \ell=2\times 0\iff \ell=0.\]
+
+
+
+Conclusion~: $\lim\limits_{n\to +\infty}v_n=0.$
+
+
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=10$ et la relation de récurrence
+
+\[u_{n+1}=0,5u_n+2\] pour tout $n\in\mathbb{N}.$
+
+\begin{enumerate}
+\item Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété \[4\leq u_{n+1}\leq u_{n}.\]
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+
+\[
+\left.
+    \begin{array}{ll}
+        u_0&=10 \\
+        u_1&=0,5\times 10+2=7\\
+        4&\leq 7\leq 10
+    \end{array}
+\right \}\implies 4\leq u_{1}\leq u_{0}\implies\mathcal{P}_0~\text{est vraie}.
+\]
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[4\leq u_{k+1}\leq u_{k}.\]
+%\medskip
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que \[4\leq u_{k+2}\leq u_{k+1}.\]
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[4\leq u_{k+1}\leq u_{k}.\]
+
+
+On multiplie par $\textcolor{red}{0,5}~:$
+
+\begin{align*}4\textcolor{red}{\times 0,5}&\leq u_{k+1}\textcolor{red}{\times 0,5}\leq u_{k}\textcolor{red}{\times 0,5}\\
+2&\leq 0,5 u_{k+1}\leq 0,5u_{k}.
+\end{align*}
+
+Puis on ajoute  $\textcolor{blue}{2}~:$
+
+\begin{align*}
+2\textcolor{blue}{+2}&\leq 0,5u_{k+1}\textcolor{blue}{+2}\leq 0,5u_k\textcolor{blue}{+2}\\
+4&\leq u_{k+2}\leq u_{k+1}.
+\end{align*}
+
+La propriété $\mathcal{P}_{k+1}$ est donc vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+\item D'après la question précédente~:
+
+\begin{itemize}
+\item[{\textbullet}] $u_{n+1}\leq u_n$ pour tout $n\in\mathbb{N},$ donc $(u_n)_{n\in\mathbb{N}}$ est décroissante.
+\item[{\textbullet}] $4\leq u_n$ pour tout $n\in\mathbb{N},$ donc $(u_n)_{n\in\mathbb{N}}$ est minorée par 4.
+\end{itemize}
+
+Or d'après le théorème de limite monotone, toute suite décroissante minorée converge, donc $(u_n)_{n\in\mathbb{N}}$ converge.
+\item On note $\ell$ la limite de $\left(u_n\right)_{n\in\mathbb{N}}$ et \og on passe à la limite \fg~{} dans la formule de récurrence~:
+
+\[u_{n+1}=0,5u_n+2\qquad\text{pour tout }n\in\mathbb{N},\] donc
+\[\ell=0,5\ell+2.\]
+
+On résout cette équation~:
+\[\ell=0,5\ell+2\iff \ell-0,5\ell=2\iff 0,5\ell=2\iff\ell=\frac{2}{0,5}\iff \ell=4.\]
+
+Conclusion~: $\lim\limits_{n\to +\infty}u_n=4.$
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+
+
+
+
+\begin{exo}
+
+ 
+
+
+\begin{enumerate}
+\item Pour tout $n\in\mathbb{N}~:$
+\[w_{n+1}-w_n=\left(w_n+\frac{1}{w_n}\right)-w_n=\frac{1}{\underbrace{w_n}_{\oplus}}.\]
+
+\medskip
+
+$w_{n+1}-w_n\geq 0,$ donc $\left(w_n\right)_{n\in\mathbb{N}}$ est croissante.
+
+\item La suite $\left(w_n\right)_{n\in\mathbb{N}}$ est croissante, donc d'après le théorème de limite monotone, il y a deux possibilités~:
+
+\begin{itemize}
+\item[{\textbullet}] soit elle est majorée, et dans ce cas elle converge~;
+\item[{\textbullet}] soit elle n'est pas majorée, et dans ce cas elle a pour limite $+\infty.$
+\end{itemize}
+
+\medskip
+
+Par conséquent, si $(\clubsuit)$ n'est pas vraie (et donc que $\left(w_n\right)_{n\in\mathbb{N}}$ n'a pas pour limite $+\infty$), elle converge  vers une limite finie $\ell.$
+
+\medskip
+
+De plus, $\left(w_n\right)_{n\in\mathbb{N}}$ étant croissante, $\ell\geq w_0=2.$
+\item On \og passe à la limite \fg~{} dans la formule de récurrence~:
+
+\[w_{n+1}=w_n+\frac{1}{w_n}\qquad\text{pour tout }n\in\mathbb{N},\] donc
+\[\ell=\ell+\frac{1}{\ell}.\]
+
+On résout cette équation~:
+\[\ell=\ell+\frac{1}{\ell} \iff 0=\frac{1}{\ell}\iff 0\times\ell=\frac{1}{\ell}\times\ell\iff \underbrace{0=1}_{\text{absurde}}.\]
+
+\medskip
+
+Conclusion~: il n'y a pas de solution, donc en supposant que $(\clubsuit)$ est fausse, on aboutit à une absurdité. C'est donc que $(\clubsuit)$ est vraie~: \[\lim\limits_{n\to +\infty}w_n=+\infty.\]
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+On détermine les limites des suites de terme général~:
+
+\begin{enumerate}
+\item $u_n=0,8^n+(-0,2)^n.$
+\[
+\left.
+    \begin{array}{ll}
+        -1<0,8<1&\implies \lim\limits_{n\to +\infty} 0,8^n = 0 \\
+        -1<-0,2<1&\implies \lim\limits_{n\to +\infty} (-0,2)^n = 0
+    \end{array}
+\right \}\implies \lim\limits_{n\to +\infty}\left(0,8^n+(-0,2)^n\right)=0+0=0.
+\]
+
+\item $v_n=4-3\times \left(\dfrac{2}{3}\right)^n.$
+
+\[-1<\dfrac{2}{3}<1\implies \lim\limits_{n\to +\infty} \left(\dfrac{2}{3}\right)^n = 0\implies \lim\limits_{n\to +\infty} \left(4-3\times \left(\dfrac{2}{3}\right)^n\right)=4-3\times 0=4.\]
+\item $w_n=\dfrac{0,5^n-1}{0,5^n+1}.$
+
+\[-1<0,5<1\implies \lim\limits_{n\to +\infty} 0,5^n = 0\implies \lim\limits_{n\to +\infty} \left(\dfrac{0,5^n-1}{0,5^n+1}\right)=\dfrac{0-1}{0+1}=-1.\]
+\item $x_n=\dfrac{2^n-1}{2^n+1}.$
+
+\medskip
+
+Cette fois, on ne peut pas conclure directement, car $2>1,$ donc $\lim\limits_{n\to +\infty} 2^n=+\infty.$ L'astuce consiste à mettre $2^n$ en facteur au numérateur et au dénominateur~:
+\[x_n=\dfrac{2^n-1}{2^n+1}=\dfrac{\cancel{2^n}\left(1-\frac{1}{2^n}\right)}{\cancel{2^n}\left(1+\frac{1}{2^n}\right)}=\dfrac{1-\left(\frac{1}{2}\right)^n}{1+\left(\frac{1}{2}\right)^n}.\]
+
+On peut alors conclure~:
+
+\[-1<\dfrac{1}{2}<1\implies \lim\limits_{n\to +\infty} \left(\dfrac{1}{2}\right)^n = 0\implies \lim\limits_{n\to +\infty} x_n=\frac{1-0}{1+0}=1.\]
+
+\end{enumerate}
+
+\end{exo}
 
 
 
