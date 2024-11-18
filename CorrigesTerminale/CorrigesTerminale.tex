@@ -5092,7 +5092,122 @@ Les élèves qui font (ou ont fait) la spécialité NSI reconnaîtront le type \
 
 \end{exo} 
 
+\newpage
+
+\setcounter{exo}{96}
+
+\begin{exo}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\danger Sur la figure ci-contre, on représente les plans $(ABC)$ et $(MNC)$ par des triangles colorés. Mais ces plans \og ne s'arrêtent pas aux triangles \fg~{}, ils continuent indéfiniment dans toutes les directions.
+
+\medskip
+
+Pour construire la droite d'intersection des plans $(ABC)$ et $(MNC),$ il suffit d'avoir deux points de cette droite~; et donc deux points communs à chacun des deux plans. Le point $\mathbf{C},$ évidemment, appartient à chacun des deux plans $(AB\mathbf{C})$ et $(MN\mathbf{C})~;$ il reste donc à trouver un deuxième point.
+
+\medskip
+
+Les droites $(MN)$ et $(AB)$ sont toutes deux dans le plan $(ABD)$ et elles ne sont pas parallèles d'après l'énoncé~; elles se coupent donc en un point $K.$ Ce point $K$ appartenant à $(AB),$ il appartient également au plan $(ABC).$ Mais $K$ appartient aussi à ($MN),$ donc au plan $(MNC).$ Finalement, $K$ appartient à chacun des deux plans $(ABC)$ et $(MNC).$
+
+\medskip
+
+Chacun des points $C$ et $K$ appartient à la fois aux plans $(ABC)$ et $(MNC),$ donc l'intersection de ces deux plans est la droite $(CK).$
 
 
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.36,-2.64)(6.22,3.24)
+\pspolygon[linewidth=2.pt,linecolor=white,fillcolor=blue!20!white,fillstyle=solid,opacity=0.1](0.18,-0.44)(4.66,1.08)(5.215081510069391,-2.232147656126393)
+\pspolygon[linewidth=2.pt,linecolor=white,fillcolor=red!20!white,fillstyle=solid,opacity=0.1](1.3403076923076926,1.545415384615385)(3.1109036346307413,-0.18075964040081338)(4.66,1.08)
+%\psline[linewidth=2.pt,linecolor=blue](0.18,-0.44)(3.72,-1.7)
+\psline[linewidth=2.pt,linecolor=red](3.1109036346307413,-0.18075964040081338)(4.66,1.08)
+\psline[linewidth=2.pt,linecolor=red,linestyle=dashed,dash=2pt 2pt](1.3403076923076926,1.545415384615385)(4.66,1.08)
+\psline[linewidth=2.pt](3.72,-1.7)(4.66,1.08)
+\psline[linewidth=2.pt](4.66,1.08)(1.98,2.64)
+\psline[linewidth=2.pt](1.98,2.64)(0.18,-0.44)
+\psline[linewidth=2.pt](1.98,2.64)(3.72,-1.7)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](0.18,-0.44)(4.66,1.08)
+\psline[linewidth=2.pt,linecolor=blue](0.18,-0.44)(5.215081510069391,-2.232147656126393)
+\psline[linewidth=2.pt,linecolor=red](1.3403076923076926,1.545415384615385)(5.215081510069391,-2.232147656126393)
+\psline[linewidth=2.pt,linecolor=green](5.215081510069391,-2.232147656126393)(4.66,1.08)
+\psdots[dotsize=1pt 0,dotstyle=*](0.18,-0.44)
+\rput[bl](-0.16,-0.36){$A$}
+\psdots[dotsize=1pt 0,dotstyle=*](3.72,-1.7)
+\rput[bl](3.64,-2.12){$B$}
+\psdots[dotsize=1pt 0,dotstyle=*](4.66,1.08)
+\rput[bl](4.74,1.12){$C$}
+\psdots[dotsize=1pt 0,dotstyle=*](1.98,2.64)
+\rput[bl](1.58,2.54){$D$}
+\psdots[dotsize=1pt 0,dotstyle=*](1.3403076923076926,1.545415384615385)
+\rput[bl](0.9,1.44){$M$}
+\psdots[dotsize=1pt 0,dotstyle=*](3.1109036346307413,-0.18075964040081338)
+\rput[bl](2.68,-0.38){$N$}
+\psdots[dotsize=1pt 0,dotstyle=*](5.215081510069391,-2.232147656126393)
+\rput[bl](5.3,-2.2){$K$}
+\end{pspicture*}
+\end{center}
+
+\end{multicols}
+
+\end{exo}
+
+\begin{exo}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+Le point $G$ est sur la face $ABC,$ donc la droite $(AG)$ coupe le segment $\left[BC\right]$ en un point $J.$ Les cinq points $A,$ $I,$ $D,$ $G,$ $J$ sont dans un même plan (le plan $(ADJ)$), coloré en rose sur la figure. Il s'ensuit que les droites $(IG)$ et $(DJ)$ sont dans ce plan. De plus, $(IG)$ et $(DJ)$ ne sont pas parallèles (sinon la droite $(IG)$ serait parallèle à une droite du plan $(BCD),$ et donc parallèle au plan $(BCD)$ -- ce que l'énoncé exclut). On en déduit que $(IG)$ et $(DJ)$ se coupent en un point $K$\footnote{Deux droites non parallèles de l'espace ne se coupent pas forcément. Ce qui fait que $(IG)$ et $(DJ)$ se coupent, c'est qu'elles sont coplanaires ($=$dans un même plan) et non parallèles.}.
+
+\medskip
+
+Par construction, le point $K$ appartient à la droite $(IG).$ Il appartient également à la droite $(DJ),$ qui est incluse dans le plan $(BCD)~;$ le point $K$ appartient donc au plan $(BCD).$
+
+\medskip
+
+Conclusion~: le point $K$ appartient à la droite $(IG)$ et au plan $(BCD),$ donc c'est leur point d'intersection.
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.48,0.02)(7.66,6.56)
+\pspolygon[linewidth=0.pt,linecolor=white,fillcolor=red!20!white,fillstyle=solid,opacity=0.1](1.,3.)(3.68,5.98)(4.420263113767394,2.753162862476028)(6.506887384729074,1.011014716945642)
+\psline[linewidth=2.pt](3.68,5.98)(3.72,0.6)
+\psline[linewidth=2.pt](3.72,0.6)(1.,3.)
+\psline[linewidth=2.pt](1.,3.)(3.68,5.98)
+\psline[linewidth=2.pt](3.68,5.98)(6.24,3.46)
+\psline[linewidth=2.pt](6.24,3.46)(3.72,0.6)
+\psline[linewidth=2.pt](3.68,5.98)(4.66752,1.67536)
+\psline[linewidth=2.pt](1.,3.)(6.506887384729074,1.011014716945642)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](1.,3.)(6.24,3.46)
+\psline[linewidth=2.pt](4.420263113767394,2.753162862476028)(6.506887384729074,1.011014716945642)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](4.420263113767394,2.753162862476028)(2.34,4.49)
+\psdots[dotsize=1pt 0,dotstyle=*](3.68,5.98)
+\rput[bl](3.42,6.1){$A$}
+\psdots[dotsize=1pt 0,dotstyle=*](3.72,0.6)
+\rput[bl](3.76,0.24){$B$}
+\psdots[dotsize=1pt 0,dotstyle=*](1.,3.)
+\rput[bl](0.84,3.24){$D$}
+\psdots[dotsize=1pt 0,dotstyle=*](6.24,3.46)
+\rput[bl](6.32,3.5){$C$}
+\psdots[dotsize=1pt 0,dotstyle=*](4.66752,1.67536)
+\rput[bl](4.58,1.1){$J$}
+\psdots[dotsize=1pt 0,dotstyle=*](2.34,4.49)
+\rput[bl](2.12,4.58){$I$}
+\psdots[dotsize=1pt 0,dotstyle=*](4.420263113767394,2.753162862476028)
+\rput[bl](4.5,2.8){$G$}
+\psdots[dotsize=1pt 0,dotstyle=*](6.506887384729074,1.011014716945642)
+\rput[bl](6.58,1.06){$K$}
+\end{pspicture*}
+\end{center}
+
+
+\end{multicols}
+
+
+\end{exo}
 
 \end{document}

@@ -2928,7 +2928,263 @@ Détail de deux calculs~:
 
 \end{exo}
 
- \setcounter{exo}{58}
+\begin{exo}
+
+
+\begin{enumerate}
+\item $x$ est une longueur, donc $x\geq 0.$ Par ailleurs, la longueur $x$ ne peut pas dépasser 4 (car $AB=4$).
+
+Conclusion~: on a l'encadrement \[0\leq x\leq 4.\]
+\item
+\begin{itemize}
+\item[\textbullet] $AP=AD-DP=4-x.$
+\item[\textbullet] L'aire du rectangle $AMNP$ est \begin{align*}\mathcal{A}_{AMNP}&=AM\times AP\\
+&=x\times \left(4-x\right)&& \text{(car } AP=4-x)\\
+&=x\times 4+x\times (-x)&&\text{(on développe)}\\
+&=4x-x^2.
+\end{align*}
+\end{itemize}
+\item 
+La fonction $f$ est définie pour $0\leq x\leq 4$ par \[f(x)=4x-x^2.\]
+
+Autrement dit, $f(x)$ donne l'aire du rectangle $AMNP$ pour une valeur donnée de $x.$
+
+\begin{enumerate}
+\item Tableau de valeurs~:
+
+\begin{tabularx}{\linewidth}{|c|*{10}{>{\centering \arraybackslash}X|}}\hline
+$x$& $0$ &$0,5$ &$1$ &$1,5$ &$2$ &$2,5$ &$3$ &$3,5$ &$4$ \\ \hline 
+$f(x)$&$0$ &$1,75$ &$3$   &$3,75$  &$4$  &$3,75$  &$3$  &$1,75$  &$0$    \\ \hline
+\end{tabularx}
+
+\medskip
+
+Courbe représentative~:
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.94,-0.94)(4.94,4.8)
+\multips(0,0)(0,1.0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(4.94,0)}
+\multips(0,0)(1.0,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,4.8)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.94,-0.94)(4.94,4.8)
+\rput{-180.}(2.,4.){\psplot[linewidth=2.pt,linecolor=blue]{-2.}{2.}{x^2/2/0.5}}
+\end{pspicture*}
+\end{center}
+
+\item Tableau de variations de $f~:$ 
+
+\begin{center}
+\begin{tikzpicture}
+\tkzTabInit{$x$/1,$f\left(x\right)$/2}{$0$,$2$,$4$}
+\tkzTabVar{-/$0$,+/$4$,-/$0$}
+\end{tikzpicture}
+\end{center}
+\item La fonction $f$ atteint son maximum lorsque $x=2,$ donc l’aire du rectangle $AMNP$ est maximale lorsque $x=2,$ c'est-à-dire quand $M$ est le milieu du segment $\left[AB\right].$
+\end{enumerate}
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo} ~{}
+
+
+
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.36,-1.92)(6.64,3.58)
+\multips(0,-1)(0,1.0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.36,0)(6.64,0)}
+\multips(-2,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.92)(0,3.58)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.36,-1.92)(6.64,3.58)
+\psline[linewidth=2.pt](-2.,1.)(0.,-1.)
+\psline[linewidth=2.pt](0.,-1.)(4.,1.)
+\psline[linewidth=2.pt](4.,1.)(5.,3.)
+\psline[linewidth=2.pt](5.,3.)(6.,1.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green](0.,0.5)(3.,0.5)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green](3.,0.5)(3.,0.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](0.,2)(5.5,2)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](5.5,0)(5.5,2)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](4.5,0)(4.5,2)
+
+\psline[linewidth=2.pt,linecolor=orange](4.5,2.)(5.,3.)
+\psline[linewidth=2.pt,linecolor=orange](5.5,2.)(5.,3.)
+\psline[linewidth=2.pt,linecolor=orange](4.5,0)(5.5,0)
+\rput[tl](-0.65,0.62){\green{$0,5$}}
+\rput[tl](4.2,-0.3){\red{$4,5$}}
+\rput[tl](5.2,-0.3){\red{$5,5$}}
+
+\psdots[dotstyle=*,linecolor=red](4.5,0.)
+\psdots[dotstyle=*,linecolor=red](5.5,0.)
+\psdots[dotstyle=*,linecolor=blue](0.,-1.)
+\psdots[dotstyle=*,linecolor=blue](5.,3.)
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item L’image de 3 par $f$ est $0,5$ (pointillés verts).
+\item Les solutions de l’équation $f(x)=2$ sont $4,5$ et $5,5$ (pointillés rouges).
+\item Les solutions de l’inéquation $f(x)\geq 2$ sont tous les nombres de l'intervalle $\left[4,5~;~5,5\right]$ : c'est sur cet intervalle que la courbe est au dessus de 2 (parties de la courbe  et de l'axe des abscisses repassées en orange).
+\item Tableau de variations de $f~:$
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f\left(x\right)$/2}{$-2$,$0$,$5$,$6$}
+\tkzTabVar{+/$1$,-/$-1$,+/$3$,-/$1$}
+\end{tikzpicture}
+\end{center}
+\item Le maximum de $f$ est $3,$ son minimum est $-1$ (points bleus).
+
+
+\item Tableau de signe de $f~:$
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+\tkzTabInit{$x$/1,$f\left(x\right)$/2}{$-2$,$-1$,$2$,$6$}
+\tkzTabLine{,+,z,-,z,+}
+\end{tikzpicture}
+\end{center}
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+
+\begin{exo}
+
+
+On dispose d’une clôture de 100 mètres de long pour délimiter un terrain rectangulaire le long d’une rivière (la clôture est en pointillés –- on ne met pas de clôture le long de la rivière). On note $x$ et $x’$ les longueurs des côtés du terrain. 
+
+
+\begin{center}
+\newrgbcolor{wqwqwq}{0.3764705882352941 0.3764705882352941 0.3764705882352941}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.,0.)(7,5)
+\pspolygon[linecolor=blue,fillcolor=blue!30!white,fillstyle=solid,opacity=0.2](1.,4.)(6.,4.)(6.,3.)(1.,3.)
+\pspolygon[linewidth=0.pt,linecolor=green,fillcolor=green!30!white,fillstyle=solid,opacity=0.1](2,3)(2,1)(5,1)(5,3)
+\psline[linewidth=3pt,linestyle=dashed,dash=5pt 5pt](2.,3.)(2.,1.)
+\psline[linewidth=3pt,linestyle=dashed,dash=5pt 5pt](2.,1.)(5.,1.)
+\psline[linewidth=3pt,linestyle=dashed,dash=5pt 5pt](5.,1.)(5.,3.)
+\rput[tl](1.54,2.0){$x$}
+\rput[tl](5.14,2.0){$x$}
+\rput[tl](3.36,0.8){$x'$}
+%\psline[linecolor=gray](2.,3.)(2.,1.)
+%\psline[linecolor=gray](2.,1.)(5.,1.)
+%\psline[linecolor=gray](5.,1.)(5.,3.)
+%\psline[linecolor=gray](5.,3.)(2.,3.)
+%\rput[tl](3.0,2.0){terrain}
+\end{pspicture*}
+\end{center}
+
+
+On voudrait délimiter le terrain le plus grand possible.
+\begin{enumerate}
+\item\begin{enumerate}[(a)]
+\item $x$ est une longueur, donc $x\geq 0.$ Par ailleurs, la longueur $x$ apparaît deux fois sur la figure, donc $x$ ne peut pas dépasser 50 (car $2\times 50=100$).
+
+Conclusion~: on a l'encadrement \[0\leq x\leq 50.\]
+\item Le périmètre, 100~m, s'obtient en faisant le calcul
+\[x+x+x',\]
+donc \[2x+x'=100~;\]
+et donc
+\[x'=100-2x.\]
+\item L’aire du terrain est \begin{align*}x\times x'&=x\times \left(100-2x\right)&& \text{(car } x'=100-2x)\\
+&=x\times 100+x\times (-2x)&&\text{(on développe)}\\
+&=100x-2x^2.\end{align*}
+\end{enumerate}
+\item On définit à présent la fonction $f$  sur $\left[0;50\right]$ par 
+\[f(x)=100x-2x^2.\]
+Autrement dit, $f(x)$ donne l'aire du terrain pour une valeur donnée de $x.$
+\begin{enumerate}[(a)] \item Tableau de valeurs~:
+
+\begin{tabularx}{\linewidth}{|c|*{12}{>{\centering \arraybackslash}X|}}\hline
+$x$& $0$ &$5$ &$10$ &$15$ &$20$ &$25$ &$30$ &$35$ &$40$&$45$&$50$ \\ \hline 
+$f(x)$&$0$ &$450$ &$800$   &$1050$  &$1200$  &$1250$  &$1200$  &$1050$  &$800$ &$450$ &$0$   \\ \hline
+\end{tabularx}
+\item Courbe représentative~:
+
+
+\begin{center}
+\psset{xunit=0.1cm,yunit=0.004cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-9,-133.58)(54.65,1333.52)
+\multips(0,0)(0,200.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(56.87529065220816,0)}
+\multips(0,0)(10.0,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,1316.252020946094)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=200.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(56.87529065220816,1316.252020946094)
+\psplot[linewidth=2pt,linecolor=blue,plotpoints=200]{0.0}{50.0}{100*x-2*x^(2)}
+\end{pspicture*}
+\end{center}
+%\item Tableau de variations de $f~:$ 
+
+%\begin{center}
+%\begin{tikzpicture}
+%\tkzTabInit{$x$/1,$f\left(x\right)$/2}{$0$,$25$,$50$}
+%\tkzTabVar{-/$0$,+/$1250$,-/$0$}
+%\end{tikzpicture}
+%\end{center}
+\item $f$ atteint son maximum lorsque $x=25,$ donc la surface du terrain est maximale lorsque $x=25.$ Dans ce cas, $x'=100-2\times 25=50.$ Autrement dit, le terrain de surface maximale mesure 50~m sur 25~m.
+\end{enumerate}
+\end{enumerate}
+
+
+\end{exo}
+
+\begin{exo}
+
+
+On construit la courbe représentative d’une fonction  $f,$ définie sur $\left[-2;3\right]$  et vérifiant les conditions suivantes~:
+
+\begin{itemize}
+\item[\textbullet] $f$ est croissante sur l’intervalle $\left[-2;1\right];$
+\item[\textbullet] $f$ est affine sur l’intervalle  $\left[1;3\right]~;$
+\item[\textbullet] $f(-2)=-4$ et $f(3)=1~;$
+\item[\textbullet] les solutions de l'équation $f(x)=2$ sont $-1$ et $2.$
+\end{itemize}
+
+
+Il y a plusieurs étapes~:
+\begin{enumerate}
+\item Pour commencer, on utilise l'ensemble de définition~: on sait qu'il faut tracer la courbe sur l'intervalle $\left[-2;3\right]$ (zones vertes exclues).
+\item Ensuite, on sait que $f(-2)=-4$ et $f(3)=1,$ donc la courbe représentative passe par les points de coordonnées $(-2;-4)$ et $(3;1)$ (placés en bleu).
+\item Les solutions de l'équation $f(x)=2$ sont $-1$ et $2,$ donc la courbe représentative passe par les points de coordonnées $(-1;2)$ et $(2;2)$ (placés en rouge). De plus, la courbe représentative ne coupe nulle part ailleurs la droite horizontale qui passe par l'ordonnée 2 (tracée également en rouge, en pointillés).
+\item La fonction $f$ est affine sur $\left[1;3\right],$ donc sa courbe représentative sur cet intervalle est un segment. On trace l'unique segment passant par les points déjà placés (en orange).
+\item Enfin $f$ est croissante sur l’intervalle $\left[-2;1\right],$ donc on trace une courbe \og qui monte \fg~{} sur cet intervalle (en noir). Il faut aussi bien sûr qu'elle passe par les points déjà placés.
+
+\smallskip
+
+\textbf{Remarque~:} Pour cette dernière étape, il y a plusieurs dessins possibles. Sur le graphique j'ai choisi de tracer deux segments par facilité (technique), mais vous pouvez faire une courbe à main levée qui ne soit pas droite.
+\end{enumerate}
+
+\smallskip
+
+La courbe finale est tracée en noir et en orange.
+
+
+\medskip
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.96,-4.36)(4.48,3.74)
+\multips(0,-4)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.96,0)(4.48,0)}
+\multips(-2,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-4.36)(0,3.74)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.96,-4.36)(4.48,3.74)
+\pspolygon[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green,fillcolor=green!20!white,fillstyle=solid,opacity=0.25](-3.16,3.94)(-3.16,-4.56)(-2.,-4.56)(-2.,3.94)
+\pspolygon[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green,fillcolor=green!20!white,fillstyle=solid,opacity=0.25](3.,3.94)(3.,-4.56)(4.68,-4.56)(4.68,3.94)
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red]{-2.96}{4.48}{(--2.-0.*x)/1.}
+\psline[linewidth=2pt,linecolor=orange](3.,1.)(1.,3.)
+\psline[linewidth=2pt](-2.,-4.)(-1.,2.)
+\psline[linewidth=2pt](-1.,2.)(1.,3.)
+\psdots[dotstyle=*,linecolor=blue](-2.,-4.)
+\psdots[dotstyle=*,linecolor=blue](3.,1.)
+\psdots[dotstyle=*,linecolor=red](-1.,2.)
+\psdots[dotstyle=*,linecolor=red](2.,2.)
+\end{pspicture*}
+\end{center}
+
+\end{exo}
 
 \begin{exo}
 
@@ -2957,6 +3213,151 @@ En revanche, la lettre V n'a pas ce problème et représente bien la courbe d'un
 
 D'une manière générale, on reconnaît une fonction (et la courbe représentative d'une fonction) au fait que tout nombre réel a \textbf{au plus une} image (donc 0 ou 1 image).
 
+\end{exo}
+
+\begin{exo}
+
+Dans tout l'exercice, les longueurs sont exprimées en cm, les aires en cm\up{2} et les volumes en cm\up{3}.
+
+\begin{enumerate}
+\item \begin{enumerate}
+\item $x$ est une longueur, donc $x\geq 0.$ D'autre part, la longueur $x$ apparaît deux fois, donc comme la plaque de métal a pour côté 15, $x$ ne peut dépasser $7,5.$ Autrement dit~:
+
+\begin{center} $x$ est compris entre $0$ et $7,5.$
+\end{center}
+\item Dans cette question, on prend $x = 3.$ Il reste alors $15-2\times 3=9$~cm pour le côté du carré central.
+
+\begin{multicols}{2}
+\begin{center}
+\psset{xunit=0.7cm,yunit=0.7cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.24,-1.28)(2.48,5.3)
+\psline[linewidth=2.pt](-2.,0.)(1.,0.)
+\psline[linewidth=2.pt](1.,0.)(1.,1.)
+\psline[linewidth=2.pt](1.,1.)(2.,1.)
+\psline[linewidth=2.pt](2.,1.)(2.,4.)
+\psline[linewidth=2.pt](-2.,0.)(-2.,1.)
+\psline[linewidth=2.pt](-2.,1.)(-3.,1.)
+\psline[linewidth=2.pt](-3.,1.)(-3.,4.)
+\psline[linewidth=2.pt](-3.,4.)(-2.,4.)
+\psline[linewidth=2.pt](-2.,4.)(-2.,5.)
+\psline[linewidth=2.pt](-2.,5.)(1.,5.)
+\psline[linewidth=2.pt](1.,5.)(1.,4.)
+\psline[linewidth=2.pt](1.,4.)(2.,4.)
+\rput[tl](-0.6,4.76){9}
+\rput[tl](1.64,2.52){9}
+\rput[tl](0.66,4.58){3}
+\rput[tl](1.4,3.86){3}
+\psline[linewidth=2.pt]{->}(-1.,-0.5)(-3.,-0.5)
+\psline[linewidth=2.pt]{->}(-1.,-0.5)(2.,-0.5)
+\rput[tl](-0.66,-0.64){15}
+\psline[linewidth=2.pt,linestyle=dotted](-2.,1.)(1.,1.)
+\psline[linewidth=2.pt,linestyle=dotted](1.,1.)(1.,4.)
+\psline[linewidth=2.pt,linestyle=dotted](1.,4.)(-2.,4.)
+\psline[linewidth=2.pt,linestyle=dotted](-2.,4.)(-2.,1.)
+\end{pspicture*}
+
+
+\psset{xunit=0.7cm,yunit=0.7cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.82,-0.54)(4.,5)
+\psline[linewidth=2.pt](-2.,0.)(2.,0.)
+\psline[linewidth=2.pt](2.,0.)(3.,2.)
+\psline[linewidth=2.pt](2.,0.)(2.,1.)
+\psline[linewidth=2.pt](2.,1.)(3.,3.)
+\psline[linewidth=2.pt](-2.,0.)(-2.,1.)
+\psline[linewidth=2.pt](-2.,1.)(2.,1.)
+\psline[linewidth=2.pt](-2.,1.)(-1.,3.)
+\psline[linewidth=2.pt](-1.,3.)(3.,3.)
+\psline[linewidth=2.pt](3.,3.)(3.,2.)
+\rput[tl](-2.54,0.6){3}
+\rput[tl](-0.08,-0.1){9}
+\rput[tl](2.78,1.18){9}
+\psline[linewidth=2.pt](-1.,2.)(-1.,3.)
+\psline[linewidth=2.pt](-1.,2.)(2.5,2.)
+\psline[linewidth=2.pt](-1.5,1.)(-1.,2.)
+\end{pspicture*}
+
+
+\end{center}
+
+\end{multicols}
+
+
+
+
+Le volume de la boîte est égal à \[L\times \ell\times h=9\times 9\times 3=243.\]
+
+
+\end{enumerate}
+\item \`A partir de là, je regroupe la correction des sous-questions.
+
+\medskip
+
+Le carré du fond a pour côté $15-x-x=15-2x,$ et la hauteur de la boîte est $x.$
+
+\begin{center}
+\psset{xunit=0.8cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.24,-1.28)(2.48,5.3)
+\psline[linewidth=2.pt](-2.,0.)(1.,0.)
+\psline[linewidth=2.pt](1.,0.)(1.,1.)
+\psline[linewidth=2.pt](1.,1.)(2.,1.)
+\psline[linewidth=2.pt](2.,1.)(2.,4.)
+\psline[linewidth=2.pt](-2.,0.)(-2.,1.)
+\psline[linewidth=2.pt](-2.,1.)(-3.,1.)
+\psline[linewidth=2.pt](-3.,1.)(-3.,4.)
+\psline[linewidth=2.pt](-3.,4.)(-2.,4.)
+\psline[linewidth=2.pt](-2.,4.)(-2.,5.)
+\psline[linewidth=2.pt](-2.,5.)(1.,5.)
+\psline[linewidth=2.pt](1.,5.)(1.,4.)
+\psline[linewidth=2.pt](1.,4.)(2.,4.)
+\rput[tl](-1.1,4.76){$15-2x$}
+\rput[tl]{90}(1.64,1.9){$15-2x$}
+\rput[tl](0.66,4.58){$x$}
+\rput[tl](1.4,3.86){$x$}
+\psline[linewidth=2.pt]{->}(-1.,-0.5)(-3.,-0.5)
+\psline[linewidth=2.pt]{->}(-1.,-0.5)(2.,-0.5)
+\rput[tl](-0.66,-0.64){15}
+\psline[linewidth=2.pt,linestyle=dotted](-2.,1.)(1.,1.)
+\psline[linewidth=2.pt,linestyle=dotted](1.,1.)(1.,4.)
+\psline[linewidth=2.pt,linestyle=dotted](1.,4.)(-2.,4.)
+\psline[linewidth=2.pt,linestyle=dotted](-2.,4.)(-2.,1.)
+\end{pspicture*}
+\end{center}
+
+
+Donc le volume de la boîte est 
+\[L\times \ell\times h=(15-2x)\times(15-2x)\times x.\]
+
+On développe cette expression~:
+\begin{align*}V(x)&=\left(15-2x\right)\times\left(15-2x\right)\times x\\
+&=\left(15\times 15+15\times (-2x)+(-2x)\times 15+(-2x)\times (-2x)\right)\times x\\&=\left(225-30x-30x+4x^2\right)\times x
+\\&=225x-30x^2-30x^2+4x^3\\
+&=4x^3-60x^2+225x.\end{align*}
+
+\medskip
+
+On fait un tableau de valeurs pour $V$ sur $\left[0;7,5\right]$ avec un pas de $0,5,$ puis on construit sa courbe représentative.
+
+\begin{tabularx}{\linewidth}{|c|*{17}{>{\centering \arraybackslash}X|}}\hline
+$x$& $0$ &$0,5$ &$1$ &$1,5$ &$2$ &$2,5$&$3$&$3,5$&$4$&$4,5$&$5$&$5,5$&$6$&$6,5$&$7$&$7,5$ \\ \hline 
+$V(x)$&$0$&$98$&$169$&$216$&$242$&$250$ &$243$&$224$&$196$&$162$&$125$&$88$&$54$&$26$&$7$&$0$\\ \hline
+\end{tabularx}
+
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=0.015cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1,-50)(7.633293430782852,273.14288714870924)
+\multips(0,0)(0,50.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(7.633293430782852,0)}
+\multips(0,0)(0.5,0){17}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,273.14288714870924)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=50.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(7.633293430782852,273.14288714870924)
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{0}{7.5}{225.0*x-60.0*x^(2.0)+4.0*x^(3.0)}
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+Conclusion~: d'après le graphique, le volume est maximal lorsque $x=2,5.$
+\end{enumerate}
 \end{exo}
 
 
