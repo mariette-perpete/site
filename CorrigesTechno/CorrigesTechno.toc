@@ -3,3 +3,4 @@
 \contentsline {section}{\numberline {2}Droites et suites de nombres}{4}{section.2}%
 \contentsline {section}{\numberline {3}Études de fonctions}{9}{section.3}%
 \contentsline {section}{\numberline {4}Tableaux d'effectifs et probabilités conditionnelles}{16}{section.4}%
+\contentsline {section}{\numberline {5}Taux d'évolution, suites géométriques}{18}{section.5}%
