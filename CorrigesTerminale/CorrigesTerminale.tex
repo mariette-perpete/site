@@ -5094,6 +5094,214 @@ Les élèves qui font (ou ont fait) la spécialité NSI reconnaîtront le type \
 
 \newpage
 
+\section{Géométrie repérée dans l'espace}
+
+
+
+
+
+
+
+
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+
+\item Commençons par deux remarques concernant les figures en perspective cavalière~:
+\begin{itemize}
+%\item[\textbullet] Faire une figure en perspective cavalière, c'est dessiner son \og ombre \fg~{} lorsqu'elle est éclairée par des rayons lumineux parallèles.
+\item[\textbullet] Dans une figure en perspective cavalière, on respecte la proportionnalité. Par exemple, un point situé au milieu d'un segment dans la réalité doit être représenté au milieu du segment sur la figure.
+\item[\textbullet] Dans une figure en perspective cavalière, deux droites parallèles sont représentées par des droites parallèles.
+\end{itemize}
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(1.12,0.16)(7.26,5.54)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](2.,3.25)(3.,5.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](3.,5.)(6.,2.75)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](3.,2.)(2.,1.)
+\psline[linewidth=2.pt](2.,1.)(5.,1.)
+\psline[linewidth=2.pt](5.,1.)(6.,2.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](6.,2.)(3.,2.)
+\psline[linewidth=2.pt](3.,5.)(2.,4.)
+\psline[linewidth=2.pt](2.,4.)(5.,4.)
+\psline[linewidth=2.pt](5.,4.)(6.,5.)
+\psline[linewidth=2.pt](6.,5.)(3.,5.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](3.,5.)(3.,2.)
+\psline[linewidth=2.pt](2.,4.)(2.,1.)
+\psline[linewidth=2.pt](5.,4.)(5.,1.)
+\psline[linewidth=2.pt](6.,5.)(6.,2.)
+\psline[linewidth=2.pt,linecolor=red](5.,1.)(6.,2.75)
+\psline[linewidth=2.pt,linecolor=red](5.,1.)(2.,3.25)
+\psdots[dotsize=1pt 0,dotstyle=*](3.,2.)
+\rput[bl](2.64,2.06){$D$}
+\psdots[dotsize=1pt 0,dotstyle=*](2.,1.)
+\rput[bl](1.7,0.88){$A$}
+\psdots[dotsize=1pt 0,dotstyle=*](5.,1.)
+\rput[bl](5.1,0.74){$B$}
+\psdots[dotsize=1pt 0,dotstyle=*](6.,2.)
+\rput[bl](6.08,2.04){$C$}
+\psdots[dotsize=1pt 0,dotstyle=*](3.,5.)
+\rput[bl](2.62,5.1){$H$}
+\psdots[dotsize=1pt 0,dotstyle=*](2.,4.)
+\rput[bl](1.74,4.08){$E$}
+\psdots[dotsize=1pt 0,dotstyle=*](5.,4.)
+\rput[bl](4.78,4.1){$F$}
+\psdots[dotsize=1pt 0,dotstyle=*](6.,5.)
+\rput[bl](6.08,5.04){$G$}
+\psdots[dotsize=1pt 0,dotstyle=*](2.,3.25)
+\rput[bl](1.76,3.3){$I$}
+\psdots[dotsize=1pt 0,dotstyle=*](6.,2.75)
+\rput[bl](6.18,2.76){$J$}
+\end{pspicture*}
+\end{center}
+
+
+\item Dans le repère $\left(A,\overrightarrow{AB},\overrightarrow{AD},\overrightarrow{AE}\right)~:$
+\[B(1;0;0),\quad H(0;1;1),\quad I(0;0;~0,75),\quad J(1;1;~0,25).\]
+
+\begin{itemize}
+\item[\textbullet] \textbf{Parallélogramme.} On prouve que deux vecteurs sont égaux~:
+
+
+
+\begin{align*}&\overrightarrow{BJ}\begin{pmatrix} x_J-x_B\\y_J-y_B\\z_J-z_B \end{pmatrix}\qquad 
+\overrightarrow{BJ}\begin{pmatrix} 1-1\\1-0\\0,25-0\end{pmatrix}\qquad \overrightarrow{BJ}\begin{pmatrix} 0
+\\1\\0,25 \end{pmatrix}\\
+&\overrightarrow{IH}\begin{pmatrix} x_H-x_I\\y_H-y_I\\z_H-z_I \end{pmatrix}\qquad 
+\overrightarrow{IH}\begin{pmatrix} 0-0\\1-0\\1-0,75\end{pmatrix}\qquad \overrightarrow{IH}\begin{pmatrix} 0
+\\1\\0,25 \end{pmatrix}
+\end{align*}
+
+\medskip
+
+Conclusion~: $\overrightarrow{BJ}=\overrightarrow{IH},$ donc $BJHI$ est un parallélogramme.
+
+\medskip
+
+\danger La colinéarité des vecteurs ne suffit pas, il doivent être \textbf{égaux}.
+
+\item[\textbullet] \textbf{Losange.} Un losange a 4 côtés égaux. Or 
+
+\begin{align*}
+BI&=\sqrt{\left(x_I-x_B\right)^2+\left(y_I-y_B\right)^2+\left(z_I-z_B\right)^2}=\sqrt{(0-1)^2+(0-0)^2+(0,75-0)^2}=\sqrt{\np{1,5625}}\\
+BJ&=\sqrt{\left(x_J-x_B\right)^2+\left(y_J-y_B\right)^2+\left(z_J-z_B\right)^2}=\sqrt{(1-1)^2+(1-0)^2+(0,25-0)^2}=\sqrt{\np{1,0625}}
+\end{align*}
+
+\medskip
+
+Conclusion~:  $BJHI$ a deux côtés de longueurs différentes, donc \textbf{ce n'est pas} un losange.
+\end{itemize}
+\end{enumerate}
+
+
+
+\end{exo}
+
+\newpage
+\begin{exo}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\item ~{}
+
+
+\begin{center}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.56,-2.18)(4.04,5.54)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](0.,2.)(-1.,1.)
+\psline[linewidth=2.pt](-1.,1.)(2.,1.)
+\psline[linewidth=2.pt](2.,1.)(3.,2.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](3.,2.)(0.,2.)
+\psline[linewidth=2.pt](0.,5.)(-1.,4.)
+\psline[linewidth=2.pt](-1.,4.)(2.,4.)
+\psline[linewidth=2.pt](2.,4.)(3.,5.)
+\psline[linewidth=2.pt](3.,5.)(0.,5.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](0.,5.)(0.,2.)
+\psline[linewidth=2.pt](-1.,4.)(-1.,1.)
+\psline[linewidth=2.pt](2.,4.)(2.,1.)
+\psline[linewidth=2.pt](3.,5.)(3.,2.)
+\psline[linewidth=2.pt,linecolor=red](-1.,4.)(3.,5.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](0.5,1.)(2.5,1.5)
+\psline[linewidth=2.pt,linecolor=blue](-1.,4.)(2.,-2.)
+\psline[linewidth=2.pt,linecolor=blue](2.,-2.)(3.,5.)
+\psdots[dotsize=1pt 0,dotstyle=*](0.,2.)
+\rput[bl](0.12,2.16){$A$}
+\psdots[dotsize=1pt 0,dotstyle=*](-1.,1.)
+\rput[bl](-1.34,1.1){$B$}
+\psdots[dotsize=1pt 0,dotstyle=*](2.,1.)
+\rput[bl](1.82,0.7){$C$}
+\psdots[dotsize=1pt 0,dotstyle=*](3.,2.)
+\rput[bl](3.08,2.04){$D$}
+\psdots[dotsize=1pt 0,dotstyle=*](0.,5.)
+\rput[bl](-0.32,5.02){$E$}
+\psdots[dotsize=1pt 0,dotstyle=*](-1.,4.)
+\rput[bl](-1.18,4.06){$F$}
+\psdots[dotsize=1pt 0,dotstyle=*](2.,4.)
+\rput[bl](1.7,4.12){$G$}
+\psdots[dotsize=1pt 0,dotstyle=*](3.,5.)
+\rput[bl](3.08,5.04){$H$}
+\psdots[dotsize=1pt 0,dotstyle=*](2.5,1.5)
+\rput[bl](2.8,1.46){$K$}
+\psdots[dotsize=1pt 0,dotstyle=*](0.5,1.)
+\rput[bl](0.3,0.6){$J$}
+\psdots[dotsize=1pt 0,dotstyle=*,linecolor=blue](2.,-2.)
+\rput[bl](2.28,-1.92){\blue{$L$}}
+\end{pspicture*}
+\end{center}
+
+\item Dans le repère $\left(A,\overrightarrow{AB},\overrightarrow{AD},\overrightarrow{AE}\right)~:$
+\begin{align*}&A(0;0;0),\quad B(1;0;0),\quad C(1;1;0),\quad D(0;1;0),\\
+& E(0;0;1),\quad F(1;0;1),\quad G(1;1;1),\quad H(0;1;1),\\
+& J(1;~0,5~;0),\quad K(0,5~;1;0).
+\end{align*}
+\item On utilise la colinéarité~:
+
+
+
+\begin{align*}&\overrightarrow{FH}\begin{pmatrix} x_H-x_F\\y_H-y_F\\z_H-z_F \end{pmatrix}\qquad 
+\overrightarrow{FH}\begin{pmatrix} 0-1\\1-0\\1-1\end{pmatrix}\qquad \overrightarrow{FH}\begin{pmatrix} -1
+\\1\\0 \end{pmatrix}\\
+&\overrightarrow{JK}\begin{pmatrix} x_K-x_J\\y_K-y_J\\z_K-z_J \end{pmatrix}\qquad 
+\overrightarrow{JK}\begin{pmatrix} 0,5-1\\1-0,5\\0-0\end{pmatrix}\qquad \overrightarrow{JK}\begin{pmatrix} -0,5
+\\0,5\\0 \end{pmatrix}
+\end{align*}
+
+\medskip
+
+On voit que $\overrightarrow{FH}=2\overrightarrow{JK},$ donc $\overrightarrow{FH}$ et $\overrightarrow{JK}$ sont colinéaires~; et donc les droites $(FH)$ et $(JK)$ sont parallèles.
+\item Les droites $(FH)$ et $(JK)$ étant parallèles, les quatre points $F,$ $H,$ $J$ et $K$ sont coplanaires (dans un même plan)~; et les droites $(FJ)$ et $(HK)$ aussi. Pour prouver qu'elles se coupent, il suffit donc de prouver qu'elles ne sont pas parallèles. On utilise à nouveau la colinéarité~:
+
+\begin{align*}&\overrightarrow{FJ}\begin{pmatrix} x_J-x_F\\y_J-y_F\\z_J-z_F \end{pmatrix}\qquad 
+\overrightarrow{FJ}\begin{pmatrix} 1-1\\0,5-0\\0-1\end{pmatrix}\qquad \overrightarrow{FJ}\begin{pmatrix} 0
+\\0,5\\-1 \end{pmatrix}\\
+&\overrightarrow{HK}\begin{pmatrix} x_K-x_H\\y_K-y_H\\z_K-z_H \end{pmatrix}\qquad 
+\overrightarrow{HK}\begin{pmatrix} 0,5-0\\1-1\\0-1\end{pmatrix}\qquad \overrightarrow{HK}\begin{pmatrix} 0,5
+\\0\\-1 \end{pmatrix}
+\end{align*}
+
+
+\medskip
+
+Les vecteurs $\overrightarrow{FJ}$ et $\overrightarrow{HK}$ ne sont pas colinéaires, puisque le tableau \[\begin{tabular}{|c|c|}\hline
+   $0$ & $0,5$  \\ \hline
+   $0,5$ & $0$  \\ \hline
+   $-1$ & $-1$  \\ \hline
+   \end{tabular}\]
+   
+   n'est pas un tableau de proportionnalité. Les droites $(FJ)$ et $(HK)$ sont donc bien sécantes. On a noté $L$ leur point d'intersection sur la figure.
+
+\end{enumerate}
+
+\end{multicols}
+\end{exo}
+
 \setcounter{exo}{96}
 
 \begin{exo}
@@ -5154,6 +5362,8 @@ Chacun des points $C$ et $K$ appartient à la fois aux plans $(ABC)$ et $(MNC),$
 
 \end{exo}
 
+\newpage
+
 \begin{exo}
 
 \setlength{\columnseprule}{1pt}
@@ -5209,5 +5419,7 @@ Conclusion~: le point $K$ appartient à la droite $(IG)$ et au plan $(BCD),$ don
 
 
 \end{exo}
+
+
 
 \end{document}
