@@ -3,3 +3,4 @@
 \contentsline {section}{\numberline {2}Nombres réels}{13}{section.2}%
 \contentsline {section}{\numberline {3}Géométrie repérée}{17}{section.3}%
 \contentsline {section}{\numberline {4}Études graphiques de fonctions}{24}{section.4}%
+\contentsline {section}{\numberline {5}Probabilités}{34}{section.5}%

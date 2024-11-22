@@ -1866,4 +1866,131 @@ $\xymatrix@R=0.5pc@C=4pc{
 
 \end{exo}
 
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item $v_0=4$ et $q=5.$
+
+\begin{align*}
+v_1&=4\times 5=20\\
+v_2&=20\times 5=100\\
+v_3&=100\times 5=500.
+\end{align*}
+
+\item $v_0=12$ et $q=0,5.$
+
+\begin{align*}
+v_1&=12\times 0,5=6\\
+v_2&=6\times 0,5=3\\
+v_3&=3\times 0,5=1,5.
+\end{align*}
+
+\item $v_1=5$ et $v_2=20.$
+
+~{}\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{???} \ar@/^0.5cm/[r]|{\red{\times q}} & 
+    *+[F]+{5} \ar@/^0.5cm/[r]|{\red{\times q}} & *+[F]+{20} \ar@/^0.5cm/[r]|{\red{\times q}} & 
+    *+[F]+{???} \\
+    \txt{\blue{$v_0$}}&
+    \txt{\blue{$v_1$}}&\txt{\blue{$v_2$}}&
+    \txt{\blue{$v_3$}}
+    }$
+    \end{center}
+    
+    D'après le schéma ci-dessus~:
+    \[q=20\div 5=4.\]
+    
+    On en déduit~:
+    
+    \begin{align*}
+v_3&=20\times  4=80\\
+v_0&=5\div 4=1,25.
+\end{align*}
+
+\item $v_0=10$ et $v_1=6.$
+
+~{}\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{10} \ar@/^0.5cm/[r]|{\red{\times q}} & 
+    *+[F]+{6} \ar@/^0.5cm/[r]|{\red{\times q}} & *+[F]+{???} \\
+    \txt{\blue{$v_0$}}&
+    \txt{\blue{$v_1$}}&\txt{\blue{$v_2$}}
+    }$
+    \end{center}
+    
+    D'après le schéma ci-dessus~:
+    \[q=6\div 10=0,6,\] puis
+    \[v_2=6\times 0,6=3,6.\]
+    
+    
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+On place $\np{1000}$~\euro~{} sur un compte au taux d'intérêt annuel de 5~\%. On note $v_n$ la somme sur le compte après $n$ années -- on a donc en particulier $v_0=\np{1000}.$
+\begin{enumerate}
+\item Augmenter un nombre de 5~\% revient à le multiplier par 1,05. On peut donc compléter le schéma~:
+
+\begin{center}
+$\xymatrix@R=0.5pc@C=4pc{
+    *+[F]+\txt{\np{1000}} \ar@/^0.5cm/[r]|{\red{\times 1,05}} & 
+    *+[F]+\txt{\np{1050}} \ar@/^0.5cm/[r]|{\red{\times 1,05}} & *+[F]+\txt{\np{1102,50}} \\
+    \txt{\blue{\text{Placement initial}}}&
+    \txt{\blue{\text{Après 1 an}}}&\txt{\blue{\text{Après 2 ans}}}
+    }$
+    
+    \end{center}
+    
+\medskip
+    
+Conclusion~:
+
+\begin{itemize}
+\item[\textbullet] après 1 an, on a \np{1050}~\euro~{} sur le compte~;
+\item[\textbullet] après 2 ans, on a \np{1102,50}~\euro~{} sur le compte.
+\end{itemize}
+
+Avec les notations de l'énoncé~:
+\begin{align*}
+v_0&=\np{1000}\\
+v_1&=\np{1050}\\
+v_2&=\np{1102,50}.
+\end{align*}
+
+\item La suite $v$ est une suite géométrique de raison $q=1,05.$
+
+\medskip
+
+\textbf{Remarque~:} \`A la question \og quelle est la nature de la suite~? \fg, il faut répondre \og arithmétique \fg~{} ou \og géométrique \fg~{} selon le cas, mais aussi donner sa raison.
+\item Dans la cellule C2, il faut rentrer la formule \[\text{=B2*1,05}\]
+
+
+\item On détermine la somme sur le compte après 10 ans de deux façons différentes.
+
+\begin{itemize}
+\item[\textbullet] Avec le tableur~: on étire les cellules C1 et C2 vers la droite jusqu'à L1 et L2, qui correspondent à l'année $n=10.$ On obtient \np{1628,89}~\euro.
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{7}{>{\centering \arraybackslash}X|}}\hline
+	&A   	&B		&C			&$\cdots$   		&K   	&L\\ \hline   
+1   &$n$  &0			&1		&$\cdots$&9&10 \\ \hline   
+2   &$v_n$   &1000	&1050			&$\cdots$ &1551,33&1628,89  \\ \hline    
+\end{tabularx}
+\end{center}
+
+
+\medskip
+
+\item[\textbullet] Par le calcul~: la somme sur le compte après 10 ans est
+\[v_{10}=\np{1000}\underbrace{\times 1,05\times 1,05\times \cdots\times 1,05}_{\text{10 fois}}=\np{1000}\times 1,05^{10}\approx \np{1628,89}~\text{\euro}.\]
+\end{itemize}
+\end{enumerate}
+\end{exo}
+
 \end{document}

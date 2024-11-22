@@ -3362,6 +3362,131 @@ Conclusion~: d'après le graphique, le volume est maximal lorsque $x=2,5.$
 
 
 
+\section{Probabilités}
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item Comme on ne remet pas le premier jeton avant de tirer le deuxième, il n'est pas possible d'obtenir un \og double \fg. L'univers est donc
+\[U=\left\{(1,2);(1,3);(2,1);(2,3);(3,1);(3,2)\right\}.\]
+\item L’événement $A : \text{\og un des jetons porte le n°1 \fg}$ s'écrit sous forme ensembliste
+\[A=\left\{(1,2);(1,3);(2,1);(3,1)\right\}\] (on conserve tous les événements élémentaires où apparaît le chiffre 1).
+
+\medskip
+
+Il y a 4 cas favorables à $A,$ et 6 cas possibles dans l'univers, donc $P(A)=\frac{4}{6}=\frac{2}{3}.$
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+
+
+
+\begin{enumerate}
+\item L’univers est \[
+U=\left\{(1,1);(1,2);(1,3);(1,4);(2,1);(2,2);(2,3);(2,4);(3,1);(3,2);(3,3);(3,4);(4,1);(4,2);(4,3);(4,4)\right\}.\] Il comporte $4\times 4=16$ éléments.
+\item L’événement $B : \text{\og au moins l'un des deux dés tombe sur 4 \fg}$ s'écrit sous forme ensembliste
+\[
+B=\left\{(1,4);(2,4);(3,4);(4,1);(4,2);(4,3);(4,4)\right\}\] (on conserve tous les événements élémentaires où apparaît au moins un 4).
+
+Il y a 7 cas favorables à $B.$
+\item D'après les questions précédentes, $P(B)=\frac{7}{16}.$
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+ \begin{exo}
+
+
+\begin{enumerate}
+\item L’univers est \[
+U=\left\{\text{RRR};\text{RRB};\text{RBR};\text{RBB};\text{BRR};\text{BRB};\text{BBR};\text{BBB};\text{VRR};\text{VRB};\text{VBR};\text{VBB}\right\}.\] Il comporte $3\times 2\times 2=12$ éléments\footnote{L'opération  $3\times 2\times 2$ vient du fait qu'il y a trois couleurs de maillot, 2 couleurs de short et 2 couleurs de chaussettes. On pourrait représenter la situation avec un arbre pour être sûr de n'oublier aucune tenue.}.
+\item Le contraire de  \[A : \text{\og la tenue du footballeur comporte du bleu \fg}\] est
+
+\[\overline{A} : \text{\og la tenue du footballeur \textbf{ne} comporte \textbf{pas} de bleu \fg}.\] Il s'écrit sous forme ensembliste
+\[\overline{A}=\left\{\text{RRR};\text{VRR}\right\}\] -- il n'y a que deux tenues qui n'ont pas de bleu~!
+
+\medskip
+
+On en déduit $P\left(\overline{A}\right)=\frac{2}{12},$ puis \[P(A)=1-P\left(\overline{A}\right)=\frac{12}{12}-\frac{2}{12}=\frac{10}{12}=\frac{5}{6}.\]
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item Il y a 6 choix possibles pour le vainqueur de la course, puis 5 pour le deuxième (puisqu'il est différent du vainqueur)~; et enfin 4 pour le troisième. Donc au total
+\[6\times 5\times 4=120\] podiums différents possibles.
+\item Imaginons que les chevaux soient numérotés de 1 à 12 et que le classement de la course soit \begin{center} 1\up{er}~: Cheval n°7 \hspace*{1cm} 2\up{e}~: Cheval n°4 \hspace*{1cm} 3\up{e}~: Cheval n°10\end{center}
+
+Dans ce cas, le tiercé dans l'ordre est $(7,4,10)~;$ et les tiercés dans le désordre sont
+\[(4,7,10)~;~(4,10,7)~;(10,7,4)~;(10,4,7)~;(7,10,4).\]
+
+Il y a 5 cas favorables à $T,$ donc \[P(T)=\frac{5}{120}=\frac{1}{24}.\]
+	
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item On raisonne comme dans l'exercice précédent~: il y a $8\times 7\times 6=336$ podiums possibles.
+\item On va regarder l'événement contraire et répondre à la question~: \og Combien y a-t-il de podiums  \textbf{ne} comportant \textbf{aucun} Américain~? \fg
+
+Comme 5 des 8 participants ne sont pas Américains, le nombre de podiums sans aucun Américain est $5\times 4\times 3=60.$
+
+\medskip
+
+On revient à la question initiale~: il reste $336-60=276$ podiums avec au moins un Américain.
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+
+On regroupe la correction des deux questions. On utilise des symboles différents pour chacun des événements, mais un seul tableau suffit~:
+
+\begin{align*}
+ \heartsuit\qquad A &: \text{\og la somme des deux faces est égale à 5 \fg}~;\\
+ \clubsuit\qquad B &: \text{\og exactement un des deux dés tombe sur 4 \fg}~;\\
+ \diamondsuit\qquad C &: \text{\og on tire deux numéros impairs \fg}.
+ \end{align*}
+
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|}\hline
+\backslashbox{Dé 1}{Dé 2}& $1$ &$2$&$3$&$4$ \\ \hline 
+$1$&$\diamondsuit$&&$\diamondsuit$&$\heartsuit$ $\clubsuit$ \\ \hline
+$2$&&&$~\heartsuit~$ &$\clubsuit$  \\ \hline
+$3$&$\diamondsuit$&$\heartsuit$&$\diamondsuit$&$\clubsuit$  \\ \hline
+$4$&$\heartsuit$ $\clubsuit$&$\clubsuit$&$\clubsuit$&  \\ \hline
+\end{tabular}
+\end{center}
+
+Il y a $4\times 4=16$ cases dans le tableau. Il y a 4$\heartsuit$, 6$\clubsuit$ et 4$\diamondsuit$ dans le tableau, donc
+\[P(A)=\frac{4}{16}=\frac{1}{4},\qquad P(B)=\frac{6}{16}=\frac{3}{8},\qquad P(C)=\frac{4}{16}=\frac{1}{4}.\]
+
+\end{exo}
 
 
 \end{document}
