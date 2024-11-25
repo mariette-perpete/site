@@ -3488,5 +3488,204 @@ Il y a $4\times 4=16$ cases dans le tableau. Il y a 4$\heartsuit$, 6$\clubsuit$ 
 
 \end{exo}
 
+\begin{exo}
+
+
+On place dans un tableau un symbole pour chaque événement~:
+\begin{align*}
+\heartsuit\qquad A &: \text{\og la France joue \fg}~;\\
+\clubsuit\qquad B &: \text{\og le match oppose la France à l’Allemagne \fg}~;\\
+\spadesuit\qquad C &: \text{\og le match oppose deux pays du Benelux \fg}.
+\end{align*}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+~&Fra&All&Ita&Bel&PB&Lux \\ \hline
+Fra&\cellcolor{black}&$\heartsuit\clubsuit$&$\heartsuit$&$\heartsuit$&$\heartsuit$&$\heartsuit$	\\ \hline
+All&$\heartsuit\clubsuit$&\cellcolor{black}&&&&\\ \hline
+Ita&$\heartsuit$&&\cellcolor{black}&&&\\ \hline
+Bel&$\heartsuit$&&&\cellcolor{black}&$\spadesuit$&$\spadesuit$\\ \hline
+PB&$\heartsuit$&&&$\spadesuit$&\cellcolor{black}&$\spadesuit$\\ \hline
+Lux&$\heartsuit$&&&$\spadesuit$&$\spadesuit$&\cellcolor{black}\\ \hline
+\end{tabular}
+\end{center}
+
+\danger Il faut exclure la diagonale, car une équipe ne peut jouer contre elle-même. Il n'y a donc que 30 cases.
+
+\medskip
+
+D'après le tableau~: \[P(A)=\frac{10}{30}=\frac{1}{3},\qquad P(B)=\frac{2}{30}=\frac{1}{15}.\]
+
+\medskip
+
+Les pays du Benelux sont la Belgique, les Pays-Bas (Nederland) et le Luxembourg, d'où les $\spadesuit$ en bas à droite du tableau. On obtient $P(C)=\frac{6}{30}=\frac{1}{5}.$
+
+\end{exo}
+
+
+\begin{exo}
+
+On place dans un tableau un symbole pour chaque événement~:
+\begin{align*}
+\heartsuit\qquad A &: \text{\og les deux jetons choisis sont identiques \fg}~;\\
+\clubsuit\qquad B &: \text{\og exactement un des deux jetons représente un visage \fg}~;\\
+\end{align*}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+~&\sun&\LEFTcircle&\eighthnote&\smiley{}&\frownie{} \\ \hline
+\sun&$\heartsuit$&&&$\clubsuit$&$\clubsuit$	\\ \hline
+\LEFTcircle&&$\heartsuit$&&$\clubsuit$&$\clubsuit$\\ \hline
+\eighthnote&&&$\heartsuit$&$\clubsuit$&$\clubsuit$\\ \hline
+\smiley{}&$\clubsuit$&$\clubsuit$&$\clubsuit$&$\heartsuit$&\\ \hline
+\frownie{}&$\clubsuit$&$\clubsuit$&$\clubsuit$&&$\heartsuit$\\ \hline
+\end{tabular}
+\end{center}
+
+
+On obtient~:
+\[P(A)=\frac{5}{25}=\frac{1}{5},\qquad P(B)=\frac{12}{25}.\]
+
+
+
+\end{exo}
+
+
+
+
+
+ 
+
+
+
+
+
+
+\begin{exo}
+
+Pour simplifier et sans rien enlever à la généralité du raisonnement, on suppose que les questions sont numérotées de 1 à 6 en histoire et de 1 à 5 en géographie, et que le candidat connaît les questions n°1, 2, 3 en histoire, n°1 et 2 en géographie.
+
+Dans le tableau ci-dessous, les questions connues sont écrites en bleu, les questions inconnues sont écrites en rouge.
+
+\medskip
+
+
+
+On a colorié les cases de trois couleurs~:
+\begin{itemize}
+\item[\textbullet] en vert~: le candidat connaît les deux questions~;
+\item[\textbullet] en orange~: le candidat connaît une seule des deux questions~;
+\item[\textbullet] en magenta~: le candidat ne connaît aucune des deux questions.
+\end{itemize}
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+\backslashbox{Géo}{Hist}&\textcolor{blue}{1}&\textcolor{blue}{2}&\textcolor{blue}{3}&\textcolor{red}{4}&\textcolor{red}{5}&\textcolor{red}{6} \\ \hline
+\textcolor{blue}{1}&\cellcolor{green}&\cellcolor{green}&\cellcolor{green}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{orange}	\\ \hline
+\textcolor{blue}{2}&\cellcolor{green}&\cellcolor{green}&\cellcolor{green}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{orange}\\ \hline
+\textcolor{red}{3}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{magenta}&\cellcolor{magenta}&\cellcolor{magenta}\\ \hline
+\textcolor{red}{4}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{magenta}&\cellcolor{magenta}&\cellcolor{magenta}\\ \hline
+\textcolor{red}{5}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{orange}&\cellcolor{magenta}&\cellcolor{magenta}&\cellcolor{magenta}\\ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+Conclusion~: il y a $6\times 5=30$ cases au total, 6 vertes et 15 oranges, donc~:
+
+\begin{itemize}
+\item[\textbullet] la probabilité que le candidat connaisse les deux questions est $\frac{6}{30}=\frac{1}{5}~;$
+\item[\textbullet] la probabilité que le candidat connaisse une seule des deux questions est $\frac{15}{30}=\frac{1}{2}.$
+\end{itemize}
+
+\end{exo}
+ 
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item
+
+On traduit les données de l'énoncé par un tableau d'effectifs~:
+
+\begin{center}
+ \begin{tabular}{|m{2cm}|m{2cm}|m{2cm}|m{2cm}|}\hline
+& VTT &\st{VTT}& Total \\ \hline 
+Escalade& 3& 7&10 \\ \hline
+\st{Escalade}& 13& 9& 22\\ \hline
+Total& 16& 16& 32\\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} on sait qu'il y a autant  d'élèves qui pratiquent le VTT que d'élèves qui ne le pratiquent pas, donc 16 élèves le pratiquent et 16 ne le pratiquent pas.
+
+\item Par lecture du tableau~: $P(A)=\frac{3}{32}$ et $P(B)=\frac{9}{32}.$
+
+\medskip
+
+Le calcul du nombre de cas favorables à $C$ est moins évident et peut être mené de plusieurs façons différentes. Par exemple :
+
+\begin{itemize}
+\item[\textbullet] ajouter ceux qui font du VTT à ceux qui font de l'escalade, puis retrancher les élèves qui pratiquent les deux sports (sinon ils sont comptés deux fois)~: $16+10-3=23.$
+\item[\textbullet] ajouter ceux qui ne font que du VTT, ceux qui ne font que de l'escalade, et ceux qui pratiquent les deux sports~: $13+7+3=23.$
+\item[\textbullet] remarquer que $C$ est le contraire de $B$ et donc faire le calcul~: $32-9=23.$
+\item[\textbullet] etc.
+\end{itemize}
+
+Dans tous les cas on obtient $P(C)=\frac{23}{32}.$
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item Pour compléter le tableau, on calcule~:
+\begin{itemize}
+\item[\textbullet] 5\% de \np{10000} valent 500~;
+\item[\textbullet] $\np{10000}-500=\np{9500}$~;
+\item[\textbullet] 4\% de \np{9500} valent 380~;
+\item[\textbullet] on complète le reste du tableau avec des additions/soustractions.
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+   \hline
+	& Animaux sains & Animaux malades & Total  \\
+	 \hline
+  Test positif  &380 &500 &880  \\
+	 \hline
+  Test négatif & \np{9120}& 0 & \np{9120} \\
+	 \hline
+    Total &\np{9500} &500 & \np{10000}  \\
+    \hline
+\end{tabular}
+\end{center}
+\item \begin{enumerate}
+\item $P(M)=\dfrac{500}{\np{10000}}=0,05$ (c'est le 5~\% déjà donné par l'énoncé).
+
+ $P(T)=\dfrac{880}{\np{10000}}=0,088.$
+\item 500 des 880 animaux ayant un test positif sont malades, donc la probabilité qu'un animal ayant un test positif soit malade est $\frac{500}{880}\approx 57\%.$
+\item Tous les animaux malades ont un test positif, donc la probabilité qu'un animal malade ait un test positif est $1.$
+\end{enumerate}
+\end{enumerate}
+
+
+
+
+\end{exo}
+
+
 
 \end{document}
