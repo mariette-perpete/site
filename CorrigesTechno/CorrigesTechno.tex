@@ -1993,4 +1993,127 @@ v_2&=\np{1102,50}.
 \end{enumerate}
 \end{exo}
 
+\begin{exo}
+
+\begin{enumerate}
+\item $100~\%-12~\%=88~\%=0,88,$ donc pour diminuer un nombre de 12~\%, il faut le multiplier par 0,88. 
+
+
+\medskip
+
+Pour déterminer le prix du livre en 2010 (donc après 5 ans), on peut utiliser un diagramme~:
+
+
+\begin{center}
+$\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+\txt{50} \ar@/^0.5cm/[r]|{\red{\times 0,88}} & 
+    *+[F]+\txt{44} \ar@/^0.5cm/[r]|{\red{\times 0,88}} & *+[F]+\txt{38,72} \ar@/^0.5cm/[r]|{\red{\times 0,88}} & *+[F]+\txt{34,07}\ar@/^0.5cm/[r]|{\red{\times 0,88}} & *+[F]+\txt{29,98}\ar@/^0.5cm/[r]|{\red{\times 0,88}} & *+[F]+\txt{26,39}\\
+    \txt{\blue{\text{Année 0}}}&
+    \txt{\blue{\text{Année 1}}}&\txt{\blue{\text{Année 2}}}&\txt{\blue{\text{Année 3}}}&\txt{\blue{\text{Année 4}}}&\txt{\blue{\text{Année 5}}}
+    }$
+    
+    \end{center}
+    
+
+\medskip
+
+Le plus rapide cependant, c'est de faire directement le calcul~:
+
+
+\[50\underbrace{\times 0,88\times 0,88\times \cdots\times 0,88}_{\text{5 fois}}=50\times 0,88^{5}\approx 26,39~\text{\euro}.\]
+
+Conclusion~: le prix du livre en 2010 est 26,39~\euro.
+
+\item On rentre les valeurs initiales $2005$ et $50$ dans la colonne B, puis on rentre les formules ci-dessous dans la colonne C, que l'on étire vers la droite.
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{5}{>{\centering \arraybackslash}X|}}\hline
+	&A   	&B		&C			&$\cdots$   	\\ \hline   
+1 & Année &$2005$  	&=B1+1				&$\cdots$ \\ \hline   
+2 & Prix &$50$   		&=B2*0,88		&$\cdots$  \\ \hline    
+\end{tabularx}
+\end{center}
+
+\medskip
+
+On étire jusqu'à obtenir un prix inférieur à 10~\euro ~:
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{7}{>{\centering \arraybackslash}X|}}\hline
+	&A   	&B&C			&$\cdots$&N&O   	\\ \hline   
+1 & Année&2005&2006 &$\cdots$&2017&2018 \\ \hline   
+2 &  Prix&50&44 &$\cdots$ &10,78&9,49 \\ \hline    
+\end{tabularx}
+\end{center}
+
+\medskip
+
+Conclusion~: c'est en 2018 que le prix du livre descendra pour la première fois en-dessous de 10~\euro.
+
+
+\end{enumerate}
+\end{exo}
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item  $100~\%-15~\%=85~\%=0,85,$ donc pour diminuer un nombre de 15~\%, il faut le multiplier par 0,85. 
+
+Ainsi, dans le schéma ci-dessous, l'intensité lumineuse est-elle multipliée par 0,85 à chaque nouvelle plaque~:
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{zzttqq}{0.2 0.2 0.6}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.2095636134454244,-0.8024760882800114)(15,7)
+\pspolygon[linewidth=2.pt,linecolor=zzttqq,fillcolor=zzttqq!20!white,fillstyle=solid,opacity=0.1](0.,4.)(5.,4.)(7.,5.)(2.,5.)
+\pspolygon[linewidth=2.pt,linecolor=zzttqq,fillcolor=zzttqq!20!white,fillstyle=solid,opacity=0.1](0.,2.)(5.,2.)(7.,3.)(2.,3.)
+\pspolygon[linewidth=2.pt,linecolor=zzttqq,fillcolor=zzttqq!20!white,fillstyle=solid,opacity=0.1](0.,0.)(5.,0.)(7.,1.)(2.,1.)
+\psline[linewidth=2.pt]{->}(9.006307576513136,3.604370307388384)(6.96981037851486,3.604370307388384)
+\psline[linewidth=2.pt]{->}(8.989614976529543,5.607482305419475)(6.986502978498453,5.607482305419475)
+\psline[linewidth=2.pt]{->}(8.989614976529543,1.6012583093572934)(6.986502978498453,1.584565709373701)
+\psline[linewidth=2.pt]{->}(9.006307576513136,-0.3851610886902048)(6.986502978498453,-0.4018536886737972)
+\rput[tl](-0.95,5.15){\textcolor{zzttqq}{1\up{re} plaque}}
+\rput[tl](-0.95,3.15){\textcolor{zzttqq}{2\up{e} plaque}}
+\rput[tl](-0.95,1.15){\textcolor{zzttqq}{3\up{e} plaque}}
+\rput[tl](9.256696576267021,5.8){$v_0=12~\text{lm}$}
+\rput[tl](9.25,3.8){$v_1=12\times 0,85=10,2~\text{lm}$}
+\rput[tl](9.25,1.8){$v_2=10,2\times 0,85=8,67~\text{lm}$}
+\rput[tl](9.25,-0.2){$v_3=8,67\times 0,85=7,3695~\text{lm}$}
+\psline[linewidth=2.pt,linecolor=yellow](4.5,7.)(4.5,5.5)
+\psline[linewidth=2.pt,linecolor=yellow](4.,7.)(3.5,5.5)
+\psline[linewidth=2.pt,linecolor=yellow](5.,7.)(5.5,5.5)
+\rput[tl](1.5,6.328984750608794){\yellow{lumière}}
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Le lumen est une unité de mesure du flux lumineux, utilisée notamment pour indiquer la capacité d'éclairement des ampoules électriques.
+\item La suite $v$ est une suite géométrique de raison $q=0,85.$
+\item L'intensité lumineuse est divisée par 10 lorsqu'on descend en dessous de $12\div 10=1,2$~lm. Pour savoir le nombre minimal de plaques à superposer pour qu'il en soit ainsi, on rentre les valeurs initiales $0$ et $12$ dans la colonne B, puis on rentre les formules ci-dessous dans la colonne C, que l'on étire vers la droite jusqu'à obtenir une intensité lumineuse inférieure à 1,2.
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{7}{>{\centering \arraybackslash}X|}}\hline
+	&A   	&B		&C			&$\cdots$ &P&Q  	\\ \hline   
+1 & Nb de plaques &$0$  	&=B1+1				&$\cdots$&14&15 \\ \hline   
+2 & Intensité (lm) &$12$   		&=B2*0,85		&$\cdots$&$1,23$&$1,05$  \\ \hline    
+\end{tabularx}
+\end{center}
+
+\medskip
+
+Conclusion~: il faut superposer au moins 15 plaques pour que l'intensité lumineuse soit divisée par 10.
+\end{enumerate}
+
+\end{exo}
+
 \end{document}
