@@ -4,3 +4,4 @@
 \contentsline {section}{\numberline {3}Dénombrement}{37}{section.3}%
 \contentsline {section}{\numberline {4}Limites de suites}{44}{section.4}%
 \contentsline {section}{\numberline {5}Géométrie repérée dans l'espace}{53}{section.5}%
+\contentsline {section}{\numberline {6}Continuité et limites de suites}{59}{section.6}%

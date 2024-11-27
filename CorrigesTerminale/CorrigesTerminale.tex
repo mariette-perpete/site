@@ -6158,4 +6158,112 @@ Et donc~:
 
 \end{exo}
 
+%\newpage
+
+\section{Continuité et limites de suites}
+
+
+
+
+\begin{exo}
+
+La fonction $f$ est définie sur $\left[0;2\right]$ par \[f(x)=x^3 - 2x^2 + 2x-1 .\]
+
+\begin{enumerate}
+  \item \medskip
+
+Pour tout $x\in\left[0;2\right]~:$
+
+\[f'(x)=3x^2-2\times 2x+2\times 1-0=3x^2-4x+2.\]
+
+La dérivée est du second degré, donc on utilise le discriminant~:
+
+\begin{itemize}
+\item[\textbullet] $a=3,$ $b=-4,$ $c=2.$
+\item[\textbullet] le discriminant est $\Delta=b^2-4ac=(-4)^2-4\times 3\times 2=-8.$
+\item[\textbullet] $\Delta<0,$ donc il n'y a pas de racine.
+\end{itemize}
+
+\medskip
+
+
+
+$a=3$  $\oplus$ donc $f'$ est du signe $\oplus$ sur $\left[0;2\right]~:$
+
+\newpage
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$0$,$2$}
+\tkzTabLine{,+,}
+\tkzTabVar{-/$-1$,+/$3$}
+\tkzTabVal[draw]{1}{2}{0.6}{$x_0$}{$1$}
+\end{tikzpicture}
+\end{center}
+
+\columnbreak
+
+\begin{itemize}
+\item[\textbullet] $f(0)=0^3 - 2\times 0^2 + 2\times 0-1=-1$
+\item[\textbullet] $f(2)=2^3 - 2\times 2^2 + 2\times 2-1=3$
+\end{itemize}
+
+
+\end{multicols}
+  \item \begin{itemize}
+\item[\textbullet] La fonction $f$ est continue et strictement croissante sur $\left[0;2\right]~;$
+\item[\textbullet] $f(0)=-1,$ $f(2)=3~;$
+\item[\textbullet] $1\in\left[-1;3\right].$
+\end{itemize}
+
+D'après le théorème de la bijection, l'équation $f(x)=1$ a exactement une solution  $x_0$ dans $\left[0;2\right].$
+
+
+\medskip
+
+\Large \danger \normalsize \`A la 3\up{e} ligne \og $1\in\left[-1;3\right]$ \fg , les extrémités $-1$ et $3$ sont les images de $0$ et $2.$ Ne \textbf{surtout pas écrire} \og $1\in\left[0;2\right]$ \fg.
+  \item  \begin{itemize}
+\item[\textbullet] On commence par un tableau de valeurs sur $\left[0;2\right]$ avec un pas de $0,1.$ On obtient~:
+
+\medskip
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+$x$&$0$&$0,1$&$\dots$&$1,5$&$1,6$&$\dots$&$1,9$&$2$\\ \hline
+$f(x)$&$-1$&$-0,819$&$\dots$&$0,875$&$1,176$&$\dots$&$2,439$&$3$\\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+
+On en déduit~:\[1,5<x_0<1,6.\]
+\item[\textbullet] Ensuite on fait un tableau de valeurs sur $\left[1,5~;~1,6\right]$ avec un pas de $0,01.$ On obtient (en arrondissant les résultats au millième)~:
+
+\medskip
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+$x$&$1,50$&$1,51$&$\dots$&$1,54$&$1,55$&$\dots$&$1,59$&$1,60$\\ \hline
+$f(x)$&$0,875$&$ 0,903$&$\dots$&$0,989$&$1,019$&$\dots$&$1,143$&$1,176$\\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+
+
+On en déduit~:\[1,54<x_0<1,55.\]
+\end{itemize}
+ \end{enumerate}
+ 
+ 
+
+\end{exo}
+
 \end{document}
