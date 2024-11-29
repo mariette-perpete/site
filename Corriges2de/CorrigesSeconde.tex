@@ -3711,4 +3711,80 @@ Total& 100& 180& 280\\ \hline
 
 \end{exo}
 
+\begin{exo}
+
+
+\begin{enumerate}
+\item Les nombres pairs sont 2, 4, 6, \dots , 100. Il y en a 50, donc \[P(A)=\frac{50}{100}=0,5.\]
+
+Les multiples de 5 sont 
+\[5=5\times \textcolor{red}{1},~10=5\times \textcolor{red}{2},~15=5\times \textcolor{red}{3},~\cdots,~100=5\times \textcolor{red}{20}.\] Il y en a 20, donc
+\[P(B)=\frac{20}{100}=0,2.\]
+
+\item L'événement $A\cap B$ s'écrit \og le nombre est pair et multiple de 5 \fg, ou de façon plus simple (et plus explicite) \og le nombre est multiple de 10 \fg.
+\item Les multiples de 10 sont 10, 20, 30, \dots , 100. Il y en a 10, donc \[P(A\cap B)=\frac{10}{100}=0,1.\]
+D'après une formule du cours~:
+\[P(A\cup B)=P(A)+P(B)-P(A\cap B)=0,5+0,2-0,1=0,6.\]
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item L’événement $A\cup B,$ s'écrit \og au moins l'un des deux feux est vert \fg. Cet événement se produit à coup sûr, puisque les deux feux ne sont jamais tous les deux rouges en même temps (cf énoncé). On a donc \[P(A\cup B)=1.\]
+\item L'événement \og Pierre a les deux feux verts \fg~{} s'écrit $A\cap B,$ donc d'après une formule du cours, sa probabilité est~:
+\[P(A\cap B)=P(A)+P(B)-P(A\cup B)=0,8+0,5-1=0,3.\]
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item On suppose que $P(A)=0,4,$ $P(B)=0,6$ et $P(A\cup B)=0,9.$
+\begin{enumerate}
+\item D'après une formule du cours, \[P(A\cap B)=P(A)+P(B)-P(A\cup B)=0,4+0,6-0,9=0,1.\]
+\item D'un côté $P(A)\times P(B)=0,4\times 0,6=0,24~;$ de l'autre $P(A\cap B)=0,1.$
+
+Conclusion~: $P(A\cap B)\not=P(A)\times P(B),$ donc $A$ et $B$ ne sont pas indépendants.
+\end{enumerate}
+\item \begin{enumerate}
+\item L'événement $A\cap B$ s'écrit \og la carte est un roi rouge \fg. Il y a deux rois rouges dans le jeu, donc \[P(A\cap B)=\frac{2}{32}=0,0625.\]
+\item Il y a 16 cartes rouges dans le jeu, donc $P(A)=\frac{16}{32}=0,5.$
+
+Il y a 4 rois dans le jeu, donc $P(B)=\frac{4}{32}=0,125.$
+
+$P(A)\times P(B)=0,5\times 0,125=0,0625=P(A\cap B),$ donc $A$ et $B$ sont indépendants.
+
+\medskip
+
+\textbf{Remarque~:} Le mot \og indépendants \fg~{} est conforme à l'idée intuitive que l'on s'en fait~: deux événements sont indépendants lorsque la réalisation de l'un n'a pas d'incidence sur celle de l'autre. Dans l'exemple de la question 2, si vous savez que la carte est rouge, cela ne change pas la probabilité que ce soit un roi~; et réciproquement, si vous savez que c'est un roi, vous n'en tirez aucune information sur sa couleur.
+
+\end{enumerate}
+\item Dans cette question, on suppose que $P(A)=0,4,$ $P(A\cup B)=0,7~;$ et que les événements $A$ et $B$ sont indépendants.
+
+\medskip
+
+D'après une formule du cours et la propriété d'indépendance~:
+
+\begin{align*}
+P(A\cup B)&=P(A)+P(B)-P(A\cap B)\\
+P(A\cup B)&=P(A)+P(B)-P(A)\times P(B)&&(\text{on utilise l'indépendance})\\
+0,7&=0,4+P(B)-0,4 \times P(B)\\
+0,7&=0,4+x-0,4 x&&(\text{on pose }x=P(B))\\
+0,7&=0,4+0,6 x\\
+0,7-0,4&=\cancel{0,4}+0,6x-\cancel{0,4}&&(\text{on résout l'équation})\\
+\frac{0,3}{0,6}&=\frac{\cancel{0,6}x}{\cancel{0,6}}\\
+0,5&=x.\end{align*}
+
+Conclusion~: $P(B)=0,5.$
+
+\end{enumerate}
+
+\end{exo}
+
 \end{document}

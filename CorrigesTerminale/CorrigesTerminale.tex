@@ -6266,4 +6266,895 @@ On en déduit~:\[1,54<x_0<1,55.\]
 
 \end{exo}
 
+
+\begin{exo}
+
+\begin{enumerate}
+\item La fonction $f$ est définie sur $\left[0;1\right]$ par \[f(x)=2\text{e}^{-2x}-1.\]
+
+\begin{enumerate}
+  \item On étudie les variations~: pour tout $x\in\left[0;1\right],$
+  \[f'(x)=2\times \left(-2\text{e}^{-2x}\right)-0=\underbrace{-4}_{\ominus}\underbrace{\text{e}^{-2x}}_{\oplus}.\]
+  
+ \medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$0$,$1$}
+\tkzTabLine{,-,}
+\tkzTabVar{+/$1$,-/$\underbrace{2\text{e}^{-2}-1}_{\ominus}$}
+\tkzTabVal[draw]{1}{2}{0.4}{$\alpha$}{$0$}
+\end{tikzpicture}
+\end{center}
+
+\columnbreak
+
+\begin{itemize}
+\item[\textbullet] $f(0)=2\text{e}^{-2\times 0}-1=2\text{e}^{0}-1=2\times 1-1=1$
+\item[\textbullet] $f(1)=2\text{e}^{-2\times 1}-1=2\text{e}^{-2}-1\approx -0,73$
+\end{itemize}
+
+
+\end{multicols}
+  
+  \begin{itemize}
+\item[\textbullet] La fonction $f$ est continue et strictement décroissante sur $\left[0;1\right]~;$
+\item[\textbullet] $f(0)=1,$ $f(1)=2\text{e}^{-2}-1~;$
+\item[\textbullet] $0\in\left[2\text{e}^{-2}-1;1\right].$
+\end{itemize}
+
+D'après le théorème de la bijection, l'équation $f(x)=0$ a exactement une solution  $\alpha$ dans $\left[0;1\right].$
+
+  \item \begin{itemize}
+\item[\textbullet] On commence par un tableau de valeurs sur $\left[0;1\right]$ avec un pas de $0,1.$ On obtient (en arrondissant les résultats au millième)~:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+$x$&$0$&$0,1$&$\dots$&$0,3$&$0,4$&$\dots$&$0,9$&$1$\\ \hline
+$f(x)$&$1$&$0,637$&$\dots$&$0,098$&$-0,101$&$\dots$&$-0,669$&$-0,729$\\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+
+On en déduit~:\[0,3<\alpha<0,4.\]
+\item[\textbullet] Ensuite on fait un tableau de valeurs sur $\left[0,3~;~0,4\right]$ avec un pas de $0,01.$ On obtient (en arrondissant les résultats au millième)~:
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+$x$&$0,30$&$0,31$&$\dots$&$0,34$&$0,35$&$\dots$&$0,39$&$0,40$\\ \hline
+$f(x)$&$0,098$&$ 0,076$&$\dots$&$0,013$&$-0,007$&$\dots$&$-0,083$&$-0,101$\\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+
+
+On en déduit~:\[0,34<\alpha<0,35.\]
+\end{itemize}
+  \item 
+  
+  \setlength{\columnseprule}{1pt}
+  
+  \begin{multicols}{2}
+
+  Reprenons le tableau de variations de $f~:$
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+  \draw[draw=red] (2.1,-2.8) rectangle ++(1.4,2.6);
+  \draw[draw=blue] (4.2,-3.8) rectangle ++(1.7,3.6);
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$0$,$1$}
+\tkzTabLine{,-,}
+\tkzTabVar{+/$1$,-/$\underbrace{2\text{e}^{-2}-1}_{\ominus}$}
+\tkzTabVal[draw]{1}{2}{0.4}{$\alpha$}{$0$}
+\end{tikzpicture}
+\end{center}
+
+\columnbreak
+
+On voit que~:
+
+\begin{itemize}
+  \item[\textbullet] $f(\alpha)=0~;$
+  \item[\textbullet] $f$ est strictement positive dans la zone rouge~;
+    \item[\textbullet] $f$ est strictement négative dans la zone bleue.
+    \end{itemize}
+    
+    \medskip
+
+ On a donc le tableau de signe~:
+  
+  \medskip
+  
+  \begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f(x)$/1}{$0$,$\alpha$,$1$}
+\tkzTabLine{,+,z,-,}
+\end{tikzpicture}
+\end{center}
+
+
+\end{multicols}
+  
+  
+
+  
+ 
+
+  
+ \end{enumerate}
+ \item \begin{enumerate}
+ \item La fonction $g$ est définie sur $\left[0;1\right]$ par \[g(x)=-\text{e}^{-2x}-x+2.\]
+ 
+ \medskip
+ 
+ Pour tout $x\in\left[0;1\right]~:$
+ \[g'(x)=-\left(-2\text{e}^{-2x}\right)-1+0=2\text{e}^{-2x}-1.\]
+ 
+ La dérivée de $g'$ est $f,$ dont on a étudié le signe dans la question  1.(c). On peut donc construire le tableau de variations de $g~:$
+ 
+ \begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$g'(x)=f(x)$/1,$g(x)$/2}{$0$,$\alpha$,$1$}
+\tkzTabLine{,+,z,-,}
+\tkzTabVar{-/,+/,-/}
+\end{tikzpicture}
+\end{center}
+ 
+ 
+ \item $f(x)=2\text{e}^{-2x}-1$ et $f(\alpha)=0,$ donc
+ \begin{align*}
+ 2\text{e}^{-2\alpha}-1&=0\\
+ 2\text{e}^{-2\alpha}&=1\\
+ \text{e}^{-2\alpha}&=\frac{1}{2}
+ \end{align*}
+ 
+ \medskip
+ 
+ On en déduit~: \begin{align*}
+ g(\alpha)&=-\text{e}^{-2\alpha}-\alpha+2
+ \\&=-\frac{1}{2}-\alpha+2\\&=\frac{3}{2}-\alpha
+ \\&=1,5-\alpha. 
+ \end{align*}
+ On sait que $0,34<\alpha<0,35,$ donc
+ 
+  \begin{align*}
+  0,34\textcolor{red}{\times (-1)}&>\alpha\textcolor{red}{\times (-1)}>0,35\textcolor{red}{\times (-1)}&&(\text{\danger $-1~\ominus,$ donc les $<$ deviennent des $>$})\\
+  -0,34&>-\alpha>-0,35\\
+ 1,5-0,34&>1,5-\alpha>1,5-0,35&&(\text{on ajoute 1,5})\\
+ 1,16&>g(\alpha)>1,15.
+ \end{align*}
+ 
+ \end{enumerate}
+ \end{enumerate}
+ \end{exo}
+ 
+
+ 
+ 
+ 
+
+ \begin{exo}
+ 
+ La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=1$ et la relation de récurrence \[u_{n+1}=0,5u_n+3\] pour tout $n\in\mathbb{N}.$
+
+
+\begin{enumerate}
+\item \begin{align*}
+u_0&=1\\
+u_1&=0,5u_0+3=0,5\times 1+3=3,5\\
+u_2&=0,5u_1+3=0,5\times 3,5+3=4,75\\
+u_3&=0,5u_2+3=0,5\times 4,75+3=5,375
+\end{align*}
+\item On trace la droite d'équation $y=0,5x+3$ (cf question suivante) à partir d'un tableau de valeurs avec deux valeurs~:
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$x$ & $0$ & $10$\\ \hline
+$y$ & $3$ & $8$\\ \hline
+\end{tabular}
+\end{center}
+
+\item ~{}
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.82,-1.06)(10.58,10.58)
+\multips(0,0)(0,1.0){12}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(10.58,0)}
+\multips(0,0)(1.0,0){11}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,10.58)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=5.,Dy=5.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(10.58,10.56)
+\psplot[linewidth=2.pt]{0}{10}{(-0.--1.*x)/1.}
+\psplot[linewidth=2.pt,linecolor=blue]{0}{10}{(3.+0.5*x)/1.}
+\rput[tl](6.5,8.16){$y=x$}
+\rput[tl](7.86,6.5){\blue{$y=0,5x+3$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](1.,0.)(1.,3.5)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.,3.5)(3.5,3.5)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](3.5,0.)(3.5,4.75)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0,4.75)(4.75,4.75)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](4.75,5.375)(4.75,0.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](5.375,5.375)(0,5.375)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](5.375,5.375)(5.375,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=xfqqff](6,6)(6,0)
+\psdots[dotstyle=*,dotsize=6pt,linecolor=xfqqff](6,6)
+\rput[tl](0.8,-0.4){\red{$u_0$}}
+\rput[tl](3.25,-0.4){\red{$u_1$}}
+\rput[tl](4.4,-0.4){\red{$u_2$}}
+\rput[tl](5.25,-0.4){\red{$u_3$}}
+\rput[tl](-0.7,3.6){\red{$u_1$}}
+\rput[tl](-0.7,4.85){\red{$u_2$}}
+\rput[tl](-0.7,5.475){\red{$u_3$}}
+\rput[tl](5.8,-0.4){\xfqqff{$\ell=6$}}
+\end{pspicture*}
+\end{center}
+
+
+\item Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété \[ u_{n}\leq u_{n+1}\leq 6.\]
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+
+\[
+\left.
+    \begin{array}{ll}
+        u_0&=1 \\
+        u_1&=3,5\\
+        1&\leq 3,5\leq 6
+    \end{array}
+\right \}\implies  u_{0}\leq u_{1}\leq 6\implies\mathcal{P}_0~\text{est vraie}.
+\]
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[ u_{k}\leq u_{k+1}\leq 6.\]
+%\medskip
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que \[u_{k+1}\leq u_{k+2}\leq 6.\]
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[u_{k}\leq u_{k+1}\leq 6.\]
+
+
+On multiplie par $\textcolor{red}{0,5}~:$
+
+\begin{align*} u_{k}\textcolor{red}{\times 0,5}&\leq u_{k+1}\textcolor{red}{\times 0,5}\leq 6\textcolor{red}{\times 0,5}\\
+ 0,5 u_{k}&\leq 0,5u_{k+1}\leq 3.
+\end{align*}
+
+Puis on ajoute  $\textcolor{blue}{3}~:$
+
+\begin{align*}
+0,5 u_{k}\textcolor{blue}{+3}&\leq 0,5u_{k+1}\textcolor{blue}{+3}\leq 3\textcolor{blue}{+3}\\
+u_{k+1}&\leq u_{k+2}\leq 6.
+\end{align*}
+
+La propriété $\mathcal{P}_{k+1}$ est donc vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+\item D'après la question précédente~:
+
+\begin{itemize}
+\item[{\textbullet}] $u_{n}\leq u_{n+1}$ pour tout $n\in\mathbb{N},$ donc $(u_n)_{n\in\mathbb{N}}$ est croissante.
+\item[{\textbullet}] $u_n\leq 6$ pour tout $n\in\mathbb{N},$ donc $(u_n)_{n\in\mathbb{N}}$ est majorée par 6.
+\end{itemize}
+
+Or d'après le théorème de limite monotone, toute suite croissante majorée converge, donc $(u_n)_{n\in\mathbb{N}}$ converge.
+\item On note $\ell$ la limite de $\left(u_n\right)_{n\in\mathbb{N}}$ et \og on passe à la limite \fg~{} dans la formule de récurrence (autre justification~: \og la fonction $f:x\mapsto 0,5x+3$ est continue \fg)~:
+
+\[u_{n+1}=0,5u_n+3\qquad\text{pour tout }n\in\mathbb{N},\] donc
+\[\ell=0,5\ell+3.\]
+
+On résout cette équation~:
+\[\ell=0,5\ell+3\iff \ell-0,5\ell=3\iff 0,5\ell=3\iff\ell=\frac{3}{0,5}\iff \ell=6.\]
+
+Conclusion~: $\lim\limits_{n\to +\infty}u_n=6.$
+
+\end{enumerate}
+ 
+ \end{exo}
+ 
+ \begin{exo}
+
+La fonction $f$ est définie sur $\mathbb{R}$ par $f(x)=-x^2+2x.$
+
+
+La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=0,5$ et la relation de récurrence
+
+\[u_{n+1}=f\left(u_n\right)\] pour tout $n\in\mathbb{N}.$
+
+\begin{enumerate}
+\item Pour tout $x\in\left[0;1\right]~:$
+
+\[f'(x)=-2x+2\times 1=-2x+2.\]
+
+On résout~:
+\[-2x+2=0\iff -2x=-2\iff x=\frac{-2}{-2}=1.\]
+
+
+On en déduit le tableau de signe de $f'$ et le tableau de variations de $f~:$
+
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$0$,$1$}
+\tkzTabLine{,+,z}
+\tkzTabVar{-/$0$,+/$1$}
+\end{tikzpicture}
+\end{center}
+
+\columnbreak
+
+
+\begin{itemize}
+\item[\textbullet] $f(0)=-0^2+2\times 0=0$
+\item[\textbullet] $f(1)=-1^2+2\times 1=1$
+\end{itemize}
+
+
+
+\end{multicols}
+
+
+\item 
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+La fonction $f$ est du second degré, donc sa courbe représentative est une parabole. On la trace (en bleu) à partir d'un tableau de valeurs~:
+
+\medskip
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+   $x$ &$0$ &$0,2$ &$0,4$ &$0,6$ &$0,8$&$1$ \\
+	\hline
+	$f(x)$ &$0$ &$0,36$ &$0,64$ &$0,84$ &$0,96$&$1$ \\
+	\hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=5cm,yunit=5cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.22543720763631073,-0.1530496292958985)(1.9131271900939086,1.2380553672859034)
+\multips(0,0)(0,0.2){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(1.05,0)}
+\multips(0,0)(0.2,0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,1.05)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.2,Dy=0.2,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(1.23,1.23)
+\rput{-180.}(1.,1.){\psplot[linewidth=2.pt,linecolor=blue]{0.}{1.}{x^2/2/0.5}}
+\psplot[linewidth=2.pt]{0}{1}{(-0.--1.*x)/1.}
+%\rput[tl](1.15,0.63){$y=x$}
+%\rput[tl](1.15,0.45){\blue{$y=-x^2+2x$}}
+%\psline[linewidth=2.pt](1.2,0.6)(1.4,0.6)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.5,0.)(0.5,0.75)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.,0.75)(0.75,0.75)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.75,0.9375)(0.75,0.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.,0.9375)(0.9375,0.9375)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.9375,0.99609375)(0.9375,0.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.,0.99609375)(0.99609375,0.99609375)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.99609375,0.99609375)(1.,0.)
+\rput[tl](0.45,-0.05){\red{$u_0$}}
+\rput[tl](0.6846638224657082,-0.05){\red{$u_1$}}
+\rput[tl](0.9,-0.05){\red{$u_2$}}
+\rput[tl](1.0341703017064077,-0.05){\red{$u_3$}}
+\rput[tl](-0.13,0.7605118609966282){\red{$u_1$}}
+\rput[tl](-0.13,0.97){\red{$u_2$}}
+\rput[tl](-0.13,1.07){\red{$u_3$}}
+\rput[tl](1.0341703017064077,0.08){\xfqqff{$\ell=1$}}
+%\psline[linewidth=2.pt,linecolor=blue](1.2,0.4)(1.4,0.4)
+\begin{scriptsize}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](0.2,0.36)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](0.4,0.64)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](0.6,0.84)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](0.8,0.96)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](1,1)
+\end{scriptsize}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=xfqqff](1,0.02)(1.,0.98)
+\end{pspicture*}
+\end{center}
+
+($u_3\approx 0,996$ et $\ell=1$ se confondent presque.)
+\columnbreak
+
+Parallèlement au graphique, calculons les premiers termes de la suite~:
+
+\medskip
+
+\begin{align*}
+u_0&=0,5\\
+u_1&=f\left(u_0\right)=f(0,5)=-0,5^2+2\times 0,5=0,75\\
+u_2&=f\left(u_1\right)=f(0,75)=-0,75^2+2\times 0,75=\np{0,9375}\\
+u_3&=f\left(u_2\right)=f(\np{0,9375})=-\np{0,9375}^2+2\times \np{0,9375}\approx 0,996
+\end{align*}
+
+\medskip
+
+Insistons sur le fait -- très important dans la suite de l'exercice -- que 
+$u_1=f\left(u_0\right),$ $u_2=f\left(u_1\right),$ $u_3=f\left(u_2\right)~;$ et plus généralement, pour tout $n\in\mathbb{N}~:$
+\[u_{n+1}=f\left(u_n\right).\]
+
+On a donc aussi
+\[u_{n+2}=f\left(u_{n+1}\right).\]
+
+
+
+\end{multicols}
+
+\item Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété \[0\leq u_n\leq u_{n+1}\leq 1.\]
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+
+\[
+\left.
+    \begin{array}{ll}
+        u_0&=0,5 \\
+        u_1&=0,75\\
+        0&\leq 0,5\leq 0,75\leq 1
+    \end{array}
+\right \}\implies 0\leq u_{0}\leq u_{1}\leq 1\implies\mathcal{P}_0~\text{est vraie}.
+\]
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[0\leq u_k\leq u_{k+1}\leq 1.\]%\medskip
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que \[0\leq u_{k+1}\leq u_{k+2}\leq 1.\]
+}\end{mybox}
+
+
+
+%\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On part de 
+\[0\leq u_k\leq u_{k+1}\leq 1.\]
+
+La fonction $f$ est strictement croissante sur $\left[0;1\right],$ donc
+\[f(0)\leq f\left(u_k\right)\leq f\left(u_{k+1}\right)\leq f(1).\]
+
+\medskip
+
+Autrement dit~:
+
+\[0\leq u_{k+1}\leq u_{k+2}\leq 1\]
+
+(cf illustration avec le tableau de variations ci-contre), c'est-à-dire que la propriété $\mathcal{P}_{k+1}$ est  vraie.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.]
+\tkzTabInit{$x$/1,$f(x)$/2}{$0$,$1$}
+\tkzTabVar{-/$0$,+/$1$}
+\tkzTabVal[draw]{1}{2}{0.33}{$u_k$}{$u_{k+1}$}
+\tkzTabVal[draw]{1}{2}{0.66}{$u_{k+1}$}{$u_{k+2}$}
+\end{tikzpicture}
+\end{center}
+\medskip
+
+\textbf{N.B.} $f\left(u_k\right)=u_{k+1},\qquad f\left(u_{k+1}\right)=u_{k+2}$
+
+\end{multicols}
+
+
+
+\medskip
+
+\textbf{Remarque~:} D'habitude, l'hérédité demande de manipuler les inégalités en faisant certaines opérations (multiplier, ajouter, etc.). Ici, toutes ces opérations sont \og incluses dans les variations de $f$ \fg. Rappelons-nous l'exercice précédent ($u_0=1$ et $u_{n+1}=0,5u_n+3$) et sa preuve par récurrence~: là aussi, on aurait pu raccourcir l'hérédité en invoquant la croissance de $x\mapsto 0,5x+3,$ plutôt que de multiplier par $0,5,$ puis d'ajouter $3.$ C'est en fait le cas dans bon nombre de démonstrations par récurrence que nous avons faites jusqu'ici.
+
+
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+\item D'après la question précédente~:
+
+\begin{itemize}
+\item[{\textbullet}] $u_{n}\leq u_{n+1}$ pour tout $n\in\mathbb{N},$ donc $(u_n)_{n\in\mathbb{N}}$ est croissante.
+\item[{\textbullet}] $u_n\leq 1$ pour tout $n\in\mathbb{N},$ donc $(u_n)_{n\in\mathbb{N}}$ est majorée par 1.
+\end{itemize}
+
+Or d'après le théorème de limite monotone, toute suite croissante majorée converge, donc $(u_n)_{n\in\mathbb{N}}$ converge. De plus, $(u_n)_{n\in\mathbb{N}}$ étant croissante, sa limite $\ell$ est supérieure ou égale à $u_0~:$ \[\ell\geq 0,5.\]
+\item On note $\ell$ la limite de $\left(u_n\right)_{n\in\mathbb{N}}$ et \og on passe à la limite \fg~{} dans la formule de récurrence (autre justification~: \og la fonction $f:x\mapsto -x^2+2x$ est continue \fg)~:
+
+\[u_{n+1}=-u_n^2+2u_n\qquad\text{pour tout }n\in\mathbb{N},\] donc
+\[\ell=-\ell^2+2\ell.\]
+
+On résout cette équation~:
+\[\ell=-\ell^2+2\ell \iff \ell^2+\ell-2\ell=0\iff \ell^2-\ell=0\iff\ell(\ell-1)=0\iff \left(\ell=0~\text{ou}~\ell=1\right).\]
+
+Or on a vu à la fin de la question précédente que $\ell\geq 0,5, $ donc $\ell=1.$
+
+Conclusion~: $\lim\limits_{n\to +\infty}u_n=1.$
+
+\end{enumerate}
+
+\end{exo}
+ 
+ \begin{exo}
+ 
+ On définit deux fonctions $f$ et $g$ sur $\mathbb{R}$ par 
+ 
+ \[ f(x)=\text{e}^{-x},\qquad g(x)=x-\text{e}^{-x}.\]
+ 
+ La suite $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=1$ et la relation de récurrence \[u_{n+1}=f\left(u_n\right)\] pour tout $n\in\mathbb{N}.$
+ 
+ \begin{enumerate}
+  \item On trace la courbe de la fonction $f$ (en bleu) à partir d'un tableau de valeurs~:
+
+\medskip
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|}\hline
+$x$&$0$& $0,5$ &$1$&$1,5$&$2$ \\ \hline 
+$f(x)$&$1$&$0,61$ &$0,37$&$0,22$&$0,14$  \\ \hline
+\end{tabular}
+\medskip
+
+(valeurs arrondies au centième)
+
+\end{center}
+
+
+
+
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=5.0cm,yunit=5.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.2420552743558184,-0.1693265672575209)(1.2547571686399135,1.2126996454471273)
+\multips(0,0)(0,0.2){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(1.2547571686399135,0)}
+\multips(0,0)(0.2,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,1.2126996454471273)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(1.2547571686399135,1.2126996454471273)
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{0}{1}{EXP(-x)}
+\psplot[linewidth=2.pt]{0}{1}{(-0.--1.*x)/1.}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](1.,0.)(1.,0.36787944117144233)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](1.,0.36787944117144233)(0.,0.36787944117144233)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.36788,0.6922002407339761)(0.36787944117144233,0.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.,0.6922002407339761)(0.6922002407339761,0.6922002407339761)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.,0.5004736941575195)(0.6922002407339761,0.5004736941575195)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.5004736941575195,0.5004736941575195)(0.5004736941575195,0.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](0.6922002407339761,0.6922002407339761)(0.6922002407339761,0.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=xfqqff](0.5671432904153082,0.5671432904153082)(0.5671432904153082,0.)
+\rput[tl](1.0160018096344594,-0.03158309090822043){\red{$u_0$}}
+\rput[tl](0.33,-0.03158309090822043){\red{$u_1$}}
+\rput[tl](0.6532773219146347,-0.03158309090822043){\red{$u_2$}}
+\rput[tl](0.46,-0.03617454011986378){\red{$u_3$}}
+\rput[tl](-0.1,0.38){\red{$u_1$}}
+\rput[tl](-0.1,0.7){\red{$u_2$}}
+\rput[tl](-0.1,0.52){\red{$u_3$}}
+\rput[tl](0.52,-0.03158309090822043){\xfqqff{$\underset{\approx 0,57}{\ell}$}}
+\end{pspicture*}
+\end{center}
+\item On admet que $\lim\limits_{n\to +\infty}u_n=\ell,$ où $\ell\in \left[0;1\right].$
+\begin{enumerate}
+\item On étudie les variations de $g$ sur $\left[0;1\right]~:$ pour tout $x\in\left[0;1\right],$
+\[g'(x)=1-\left(-\text{e}^{-x}\right)=\underbrace{1+\text{e}^{-x}}_{\oplus}.\]
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$g'(x)$/1,$g(x)$/2}{$0$,$1$}
+\tkzTabLine{,+,}
+\tkzTabVar{-/$-1$,+/$\underbrace{1-\text{e}^{-1}}_{\oplus}$}
+\tkzTabVal[draw]{1}{2}{0.4}{$\alpha$}{$0$}
+\end{tikzpicture}
+\end{center}
+
+\columnbreak
+
+\begin{itemize}
+\item[\textbullet] $g(0)=0-\text{e}^{-0}=0-1=-1$
+\item[\textbullet] $g(1)=1-\text{e}^{-1}\approx 0,63$
+\end{itemize}
+
+
+\end{multicols}
+  \item \begin{itemize}
+\item[\textbullet] La fonction $g$ est continue et strictement croissante sur $\left[0;1\right]~;$
+\item[\textbullet] $g(0)=-1,$ $g(1)=1-\text{e}^{-1}~;$
+\item[\textbullet] $0\in\left[-1;1-\text{e}^{-1}\right].$
+\end{itemize}
+
+D'après le théorème de la bijection, l'équation $g(x)=0$ a exactement une solution  $\alpha$ dans $\left[0;1\right].$
+
+\medskip
+
+Il reste à prouver que $\alpha=\ell.$ Pour cela, on se rappelle que $(u_n)_{n\in\mathbb{N}}$ est définie par $u_0=1$ et la relation de récurrence $u_{n+1}=f\left(u_n\right).$ La fonction $f$ étant continue sur $\left[0;1\right],$ on peut \og passer à la limite \fg~{} dans la formule de récurrence~:
+
+\[u_{n+1}=f\left(u_n\right)\qquad\text{pour tout }n\in\mathbb{N},\] donc
+\begin{equation}\label{Z}\ell=f(\ell).
+\end{equation}
+
+Or $f(x)=\text{e}^{-x},$ donc (\ref{Z}) ci-dessus se réécrit
+\[\ell=\text{e}^{-\ell},\] ou encore \begin{equation}\label{Y}\ell-\text{e}^{-\ell}=0.\end{equation} En se rappelant que $g(x)=x-\text{e}^{-x},$ on a donc $g(\ell)=0.$ Or l'unique solution dans $\left[0;1\right]$ de l'équation $g(x)=0$ est $\alpha,$ donc $\ell=\alpha.$
+
+%\medskip
+
+%En particulier, $\lim\limits_{n\to +\infty}u_n=\alpha.$
+
+\item Pour déterminer une valeur approchée de $\ell$ au centième, il y a deux méthodes possibles~:
+\begin{itemize}
+\item[\textbullet] Calculer les termes successifs de la suite $(u_n)_{n\in\mathbb{N}}.$ Comme la spirale \og s'enroule autour de $\ell$ \fg, il suffit que l'écart entre deux termes successifs de la suite soit inférieur à $0,01$ pour avoir une valeur approchée de $\ell$ au  centième. Avec la calculatrice, on trouve $u_8\approx 0,576$ et $u_9\approx 0,562,$ donc $\ell\approx 0,57.$\footnote{Il est certain que l'écart entre la valeur que nous venons de donner et la valeur réelle de $\ell$ est inférieur à $0,01,$ puisque $0,576-0,57=0,006$ et $0,57-0,562=0,008.$}
+\item[\textbullet] Utiliser la méthode du début de la leçon pour trouver une valeur approchée de $\alpha,$ solution de l'équation $g(x)=0$\footnote{On sait que $\alpha=\ell,$ donc trouver une valeur approchée de $\ell$ revient à trouver une valeur approchée de $\alpha.$}~: on commence par un tableau de valeurs pour $g$ sur $\left[0;1\right]$ avec un pas de $0,1.$ On obtient (en arrondissant les résultats au millième)~:
+
+\medskip
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+$x$&$0$&$0,1$&$\dots$&$0,5$&$0,6$&$\dots$&$0,9$&$1$\\ \hline
+$g(x)$&$-1$&$-0,804$&$\dots$&$-0,106$&$0,051$&$\dots$&$0,493$&$0,632$\\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+
+On en déduit~:\[0,5<\alpha<0,6.\]
+\item[\textbullet] Ensuite on fait un tableau de valeurs sur $\left[0,5~;~0,6\right]$ avec un pas de $0,01.$ On obtient (en arrondissant les résultats au millième)~:
+
+\medskip
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+$x$&$0,50$&$0,51$&$\dots$&$0,56$&$0,57$&$\dots$&$0,59$&$0,60$\\ \hline
+$f(x)$&$-0,106$&$ -0,090$&$\dots$&$-0,011$&$0,004$&$\dots$&$0,036$&$0,051$\\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+
+
+On en déduit~:\[0,56<\alpha<0,57.\]
+
+\`A nouveau, on peut écrire $\ell\approx 0,57.$\footnote{$\ell\approx 0,56$ conviendrait également.}
+\end{itemize}
+\end{enumerate} 
+\end{enumerate}
+ \end{exo}
+ 
+ \begin{exo}
+
+La partie entière d'un nombre réel $x,$ notée $E(x),$ est le plus grand nombre entier inférieur ou égal à $x.$
+
+\medskip
+
+Commençons par quelques exemples~: on calcule la partie entière de $2,5,$ de $\frac{3}{4},$ de $4,$ puis de $-2,5.$
+
+\medskip
+
+\begin{itemize}
+\item[\textbullet] $2\leq 2,5<3,$ donc le plus grand entier inférieur ou égal à $2,5$ est $2~:$
+\[E(2,5)=2.\]
+\item[\textbullet] $0\leq \frac{3}{4}<1,$ donc le plus grand entier inférieur ou égal à $\frac{3}{4}$ est $0~:$
+\[E\left(\frac{3}{4}\right)=0.\]
+\item[\textbullet] $4\leq 4<5,$ donc le plus grand entier inférieur ou égal à $4$ est $4$ lui-même~:
+\[E(4)=4.\]
+\item[\textbullet] Le dernier exemple est piégeux~: $-3\leq -2,5<-2,$ donc le plus grand entier inférieur ou égal à $-2,5$ est $-3~:$
+\[E(-2,5)=-3.\]
+\end{itemize}
+
+\medskip
+\
+
+La fonction partie entière est une fonction \og en escalier \fg~{}: elle est constante sur chaque intervalle $\left[n;n+1\right[,$ où $n\in\mathbb{Z},~$ et elle fait des \og sauts \fg~{} de hauteur 1 à chaque point entier (où elle est donc discontinue).
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.52,-3.76)(4.96,3.52)
+\multips(0,-3)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.52,0)(4.96,0)}
+\multips(-3,0)(1.0,0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-3.76)(0,3.52)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.52,-3.76)(4.96,3.52)
+\psline[linewidth=2.pt,linecolor=blue](-3.,-3.)(-2.,-3.)
+\psline[linewidth=2.pt,linecolor=blue](-2.,-2.)(-1.,-2.)
+\psline[linewidth=2.pt,linecolor=blue](-1.,-1.)(0.,-1.)
+\psline[linewidth=2.pt,linecolor=blue](0.,0.)(1.,0.)
+\psline[linewidth=2.pt,linecolor=blue](1.,1.)(2.,1.)
+\psline[linewidth=2.pt,linecolor=blue](2.,2.)(3.,2.)
+\psline[linewidth=2.pt,linecolor=blue](3.,3.)(4.,3.)
+\rput[tl](-2.1,-2.72){\huge {\blue{[}}}
+\rput[tl](-1.1,-1.72){\huge {\blue{[}}}
+\rput[tl](-0.1,-0.72){\huge {\blue{[}}}
+\rput[tl](0.9,0.28){\huge {\blue{[}}}
+\rput[tl](1.9,1.28){\huge {\blue{[}}}
+\rput[tl](2.9,2.28){\huge {\blue{[}}}
+\rput[tl](3.9,3.28){\huge {\blue{[}}}
+\psdots[dotstyle=*,linecolor=blue](-3.,-3.)
+\psdots[dotstyle=*,linecolor=blue](-2.,-2.)
+\psdots[dotstyle=*,linecolor=blue](-1.,-1.)
+\psdots[dotstyle=*,linecolor=blue](0.,0.)
+\psdots[dotstyle=*,linecolor=blue](1.,1.)
+\psdots[dotstyle=*,linecolor=blue](2.,2.)
+\psdots[dotstyle=*,linecolor=blue](3.,3.)
+\end{pspicture*}
+\end{center}
+
+
+\end{exo}
+
+
+
+\begin{exo}
+
+Sur chacune des figures ci-dessous, on a tracé la courbe d'une fonction $f$ en traits pleins et la droite d'équation $y=x$ en pointillés. Dans chaque cas, une suite $(u_n)_{n\in\mathbb{N}}$ est définie par la relation de récurrence 
+
+\[u_{n+1}=f\left(u_n\right)\] pour tout $n\in\mathbb{N}.$
+
+\medskip
+
+On allège un peu les constructions~: on dessine des escaliers, des spirales, [...] en traits pleins, sans aller jusqu'aux axes et sans y faire apparaître $u_0,$ $u_1,$ etc.
+
+\medskip
+
+\begin{multicols}{2}
+
+
+\begin{center}
+\newrgbcolor{uququq}{0.25098039215686274 0.25098039215686274 0.25098039215686274}
+\psset{xunit=4.0cm,yunit=4.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.178981823685607,-0.18017215627121094)(1.2,1.2)
+\multips(0,0)(0,0.5){3}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(1.2,0)}
+\multips(0,0)(0.5,0){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(0,1.2)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(1.2,1.2)
+\psplot[linewidth=2.pt,linestyle=dashed,dash=1pt 1pt]{0}{1.2}{(-0.--1.*x)/1.}
+\psplot[linewidth=2.pt,linecolor=uququq]{0}{1.2}{(-0.05--1.2*x)/1.}
+\rput[tl](0.65,-0.06167120265581232){$u_0$}
+\begin{scriptsize}
+\psdots[dotstyle=+](0.7,0.)
+\end{scriptsize}
+\psline[linewidth=2.pt,linecolor=red](0.7,0.)(0.7,0.79)
+\psline[linewidth=2.pt,linecolor=red](0.7,0.79)(0.79,0.79)
+\psline[linewidth=2.pt,linecolor=red](0.79,0.79)(0.79,0.898)
+\psline[linewidth=2.pt,linecolor=red](0.79,0.898)(0.898,0.898)
+\psline[linewidth=2.pt,linecolor=red](0.898,0.898)(0.898,1.0276)
+\psline[linewidth=2.pt,linecolor=red](1.0276,1.0276)(0.898,1.0276)
+\psline[linewidth=2.pt,linecolor=red](1.0276,1.18312)(1.0276,1.0276)
+\end{pspicture*}
+
+\medskip
+
+L'escalier va \og monter vers l'infini \fg ~: $\textcolor{red}{\lim\limits_{n\to +\infty}u_n=+\infty}.$
+\end{center}
+
+\medskip
+
+
+\begin{center}
+\newrgbcolor{uququq}{0.25098039215686274 0.25098039215686274 0.25098039215686274}
+\psset{xunit=4.0cm,yunit=4.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.178981823685607,-0.18017215627121094)(1.2,1.2)
+\multips(0,0)(0,0.5){3}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(1.2,0)}
+\multips(0,0)(0.5,0){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(0,1.2)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(1.2,1.2)
+\psplot[linewidth=2.pt,linestyle=dashed,dash=1pt 1pt]{0}{1}{(-0.--1.*x)/1.}
+\psplot[linewidth=2.pt,linecolor=uququq]{0}{1}{1-x}
+\rput[tl](0.65,-0.06167120265581232){$u_0$}
+\begin{scriptsize}
+\psdots[dotstyle=+](0.7,0.)
+\end{scriptsize}
+\psline[linewidth=2.pt,linecolor=red](0.7,0.)(0.7,0.7)
+\psline[linewidth=2.pt,linecolor=red](0.7,0.3)(0.3,0.3)
+\psline[linewidth=2.pt,linecolor=red](0.3,0.3)(0.3,0.7)
+\psline[linewidth=2.pt,linecolor=red](0.3,0.7)(0.7,0.7)
+\end{pspicture*}
+
+\medskip
+
+On revient au même endroit toutes les deux étapes, donc \textcolor{red}{la suite $(u_n)_{n\in\mathbb{N}}$ est périodique.}
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+\newrgbcolor{uququq}{0.25098039215686274 0.25098039215686274 0.25098039215686274}
+\psset{xunit=4.0cm,yunit=4.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.178981823685607,-0.18017215627121094)(1.2,1.2)
+\multips(0,0)(0,0.5){3}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(1.2,0)}
+\multips(0,0)(0.5,0){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(0,1.2)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(1.2,1.2)
+\psplot[linewidth=2.pt,linestyle=dashed,dash=1pt 1pt]{0}{1}{(-0.--1.*x)/1.}
+\psplot[linewidth=2.pt,linecolor=uququq]{0}{1}{EXP(-x)}
+\rput[tl](0.75,-0.06167120265581232){$u_0$}
+\begin{scriptsize}
+\psdots[dotstyle=+](0.8,0.)
+\end{scriptsize}
+\psline[linewidth=2.pt,linecolor=red](0.8,0.)(0.8,0.44932896411722156)
+\psline[linewidth=2.pt,linecolor=red](0.8,0.44932896411722156)(0.44932896411722156,0.44932896411722156)
+\psline[linewidth=2.pt,linecolor=red](0.44932896411722156,0.44932896411722156)(0.44932896411722156,0.6380561665820187)
+\psline[linewidth=2.pt,linecolor=red](0.44932896411722156,0.6380561665820187)(0.6380561665820187,0.6380561665820187)
+\psline[linewidth=2.pt,linecolor=red](0.6380561665820187,0.6380561665820187)(0.6380561665820187,0.52831838950788)
+\psline[linewidth=2.pt,linecolor=red](0.6380561665820187,0.52831838950788)(0.52831838950788,0.52831838950788)
+\psline[linewidth=2.pt,linecolor=red](0.52831838950788,0.52831838950788)(0.52831838950788,0.5895956066704154)
+\psline[linewidth=2.pt,linecolor=red](0.5283183895078806,0.5895956066704151)(0.5895956066704151,0.5895956066704151)
+\psline[linewidth=2.pt,linecolor=red](0.5895956066704151,0.5895956066704151)(0.589595606670415,0.5545514963226404)
+\end{pspicture*}
+
+\medskip
+
+La spirale s'enroule autour du point de coordonnées $(0,57~;~0,57)$ environ~: $\textcolor{red}{\lim\limits_{n\to +\infty}u_n\approx 0,57.}$\end{center}
+
+\begin{center}
+\newrgbcolor{uququq}{0.25098039215686274 0.25098039215686274 0.25098039215686274}
+\psset{xunit=4.0cm,yunit=4.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.178981823685607,-0.18017215627121094)(1.2,1.2)
+\multips(0,0)(0,0.5){3}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(1.2,0)}
+\multips(0,0)(0.5,0){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(0,1.2)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(1.2,1.2)
+\psplot[linewidth=2.pt,linestyle=dashed,dash=1pt 1pt]{0}{1}{(-0.--1.*x)/1.}
+\psplot[linewidth=2.pt,linecolor=uququq]{0}{1}{-2*abs(x-0.5)+1}
+\rput[tl](0.2,-0.06167120265581232){$u_0$}
+\begin{scriptsize}
+\psdots[dotstyle=+](0.23,0.)
+\end{scriptsize}
+\psline[linewidth=2.pt,linecolor=red](0.23,0.)(0.23,0.46)
+\psline[linewidth=2.pt,linecolor=red](0.23,0.46)(0.46,0.46)
+\psline[linewidth=2.pt,linecolor=red](0.46,0.46)(0.46,0.92)
+\psline[linewidth=2.pt,linecolor=red](0.46,0.92)(0.92,0.92)
+\psline[linewidth=2.pt,linecolor=red](0.92,0.92)(0.92,0.16)
+\psline[linewidth=2.pt,linecolor=red](0.92,0.16)(0.16,0.16)
+\psline[linewidth=2.pt,linecolor=red](0.16,0.16)(0.16,0.32)
+\psline[linewidth=2.pt,linecolor=red](0.16,0.32)(0.32,0.32)
+\psline[linewidth=2.pt,linecolor=red](0.32,0.64)(0.64,0.64)
+\psline[linewidth=2.pt,linecolor=red](0.64,0.64)(0.64,0.72)
+\psline[linewidth=2.pt,linecolor=red](0.64,0.72)(0.72,0.72)
+\psline[linewidth=2.pt,linecolor=red](0.72,0.72)(0.72,0.56)
+\psline[linewidth=2.pt,linecolor=red](0.72,0.56)(0.56,0.56)
+\psline[linewidth=2.pt,linecolor=red](0.56,0.56)(0.56,0.88)
+\psline[linewidth=2.pt,linecolor=red](0.56,0.88)(0.88,0.88)
+\psline[linewidth=2.pt,linecolor=red](0.32,0.32)(0.32,0.64)
+\psline[linewidth=2.pt,linecolor=red](0.88,0.88)(0.88,0.24)
+\end{pspicture*}
+
+\medskip
+
+On observe un phénomène \og chaotique \fg. \textcolor{red}{La suite $(u_n)_{n\in\mathbb{N}}$ n'a pas de limite.} \end{center}
+
+
+\end{multicols}
+
+\end{exo}
+
+
+
+
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  27 NOV 2024 14:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  29 NOV 2024 18:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2068,23 +2068,48 @@ Package fourier-orns Warning: Command \danger is deprecated.
 .
 
 [60]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6269.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6269.
+Overfull \hbox (20.50633pt too wide) in paragraph at lines 6383--6384
+ [] 
+ []
+
+
+Package fourier-orns Warning: Command \danger is deprecated.
+(fourier-orns)                Use \warning instead; reported on input line 6436
+.
+
+
+Package fourier-orns Warning: Command \danger is deprecated.
+(fourier-orns)                Use \warning instead; reported on input line 6436
+.
+
+[61] [62] [63]
+Overfull \hbox (57.27199pt too wide) in paragraph at lines 6684--6685
+ [] 
+ []
+
+[64] [65] [66] [67] [68]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7160.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7160.
  (./CorrigesTerminale.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6269.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6269.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7160.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7160.
 
 Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 (rerunfilecheck)             Checksum: FCE1D7EA38419C73F363F83BD535425B;377.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6269.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.43996pt have occurred.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7160.
  ) 
 Here is how much of TeX's memory you used:
- 40848 strings out of 483041
- 744823 string characters out of 5962452
+ 40937 strings out of 483041
+ 746185 string characters out of 5962452
  1458770 words of memory out of 5000000
- 55030 multiletter control sequences out of 15000+600000
- 669435 words of font info for 179 fonts, out of 8000000 for 9000
+ 55114 multiletter control sequences out of 15000+600000
+ 698854 words of font info for 206 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  60i,20n,75p,919b,2445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesTerminale.dvi (60 pages, 1292096 bytes).
+Output written on CorrigesTerminale.dvi (68 pages, 1633224 bytes).
