@@ -7156,5 +7156,303 @@ On observe un phénomène \og chaotique \fg. \textcolor{red}{La suite $(u_n)_{n\
 
 
 
+\newpage
+
+\section{Variables aléatoires, loi binomiale}
+
+
+
+
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item \setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On rappelle les zones de tir à 2 et 3 points~:
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.5006126521330643,-3.458863355936357)(4.527406792181142,3.3532920202312764)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!30!white,fillstyle=solid,opacity=0.1](0.,3.)(4.,3.)(4.,-3.)(0.,-3.)
+\pscustom[linewidth=0.8pt,linecolor=blue,fillcolor=blue!30!white,fillstyle=solid,opacity=0.1]{\psplot{0.}{2.}{-sqrt(4.0-x^(2.0))}\lineto(2.,0.)\psplot{2.}{0.}{sqrt(4.0-x^(2.0))}\lineto(0.,-2.)\closepath}
+\parametricplot[linewidth=2.pt,linecolor=blue]{-1.5707963267948966}{1.5707963267948966}{1.*2.*cos(t)+0.*2.*sin(t)+0.|0.*2.*cos(t)+1.*2.*sin(t)+0.}
+\psline[linewidth=2.pt](0.,3.)(4.,3.)
+\psline[linewidth=2.pt](4.,3.)(4.,-3.)
+\psline[linewidth=2.pt](0.,-3.)(4.,-3.)
+\psline[linewidth=2.pt,linecolor=red](0.,3.)(4.,3.)
+\psline[linewidth=2.pt,linecolor=red](4.,3.)(4.,-3.)
+\psline[linewidth=2.pt,linecolor=red](4.,-3.)(0.,-3.)
+\psline[linewidth=2.pt,linecolor=red](0.,-3.)(0.,3.)
+\psline[linewidth=2.pt](0.,0.)(0.31047517904295696,0.)
+\pscircle[linewidth=2.pt](0.31047517904295696,0.){0.1515996751199221}
+\rput[tl](0.2382719257052241,-0.8817781210369613){\blue{tir à 2 pts}}
+\rput[tl](1.9322999822125193,-2.1252668008135926){\red{tir à 3 pts}}
+\end{pspicture*}
+\end{center}
+\columnbreak
+
+On représente la situation par un arbre pondéré~:
+
+\medskip
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$D$}\taput{$0,53$}}
+	{
+	\Tr{$M$}\taput{$0,52$} 
+	\Tr{$\overline{M}$}\tbput{$0,48$}
+		}	
+\pstree{\Tr{$\overline{D}$}\tbput{$0,47$}}
+	{
+	\Tr{$M$}\taput{$0,44$} 
+	\Tr{$\overline{M}$}\tbput{$0,56$}
+		}
+}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} $\overline{D}$ signifie \og Stephen Curry tire à 3 points \fg.
+\end{multicols}
+\item La probabilité que Stephen Curry tire à 2 points et marque est
+\[P(D\cap M)=0,53\times 0,52=\np{0,2756}.\]
+\item D'après la formule des probabilités totales, la probabilité que Stephen Curry marque est~:
+
+\begin{align*}P(M)&=P\left(D\cap M\right)+P\left(\overline{D}\cap M\right)\\
+&=0,53\times 0,52+0,47\times 0,44=0,\np{4824}.\end{align*}
+\item Stephen Curry a marqué. La probabilité qu'il ait tiré à deux points est
+\[P_M(D)=\frac{P(M\cap D)}{P(M)}=\frac{\np{0,2756}}{\np{0,4824}}\approx 0,57.\]
+\item On reprend l'arbre pondéré de la question 1 et on indique à l'extrémité droite des branches le nombre de points marqués suivant la situation
+
+\medskip
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$D$}\taput{$0,53$}}
+	{
+	\Tr{$M$}~[tnpos=r]{~~\textcolor{blue}{S.C. marque 2 pts}}\taput{$0,52$} 
+	\Tr{$\overline{M}$}~[tnpos=r]{~~\textcolor{green}{S.C. marque 0 pt}}\tbput{$0,48$}
+		}	
+\pstree{\Tr{$\overline{D}$}\tbput{$0,47$}}
+	{
+	\Tr{$M$}~[tnpos=r]{~~\textcolor{red}{S.C. marque 3 pts}}\taput{$0,44$} 
+	\Tr{$\overline{M}$}~[tnpos=r]{~~\textcolor{green}{S.C. marque 0 pt}}\tbput{$0,56$}
+		}
+}
+\end{center}
+
+
+
+\begin{itemize}
+\item[\textbullet] la probabilité que Stéphane Curry marque 3 pts est
+\[0,47\times 0,44=\np{0,2068}~;\]
+\item[\textbullet] la probabilité que Stéphane Curry marque 2 pts est
+\[0,53\times 0,52=\np{0,2756}\] (on l'a déjà calculée dans la question 2)~;
+\item[\textbullet] d'après la formule des probabilités totales, la probabilité que Stéphane Curry marque 0 pt est
+\[0,53\times 0,48+0,47\times 0,56=\np{0,5176}.\]
+\end{itemize}
+
+\medskip
+
+\textbf{Remarque~:} Pour le 3\up{e} calcul, on aurait pu utiliser le résultat de la question 3 et faire le calcul \[1-\np{0,4824}=\np{0,5176}.\]
+
+On aurait aussi pu calculer \[1-\np{0,2068}-\np{0,2756}=\np{0,5176}.\]
+
+
+\medskip
+
+La loi de $X$ est donc donnée par le tableau~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|}
+\hline
+   $x$     & 3      & 2       & 0   \\
+\hline
+$P(X=x)$ & $\np{0,2068}$ &$\np{0,2756}$ &$\np{0,5176}$      \\
+\hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+Enfin, l'espérance de $X$ est \[E(X)=\np{0,2068}\times 3+\np{0,2756}\times 2+\np{0,5176}\times 0= \np{1,1716}.\]
+
+En moyenne, Stephen Curry marque \np{1,1716}~point par tir.
+
+\end{enumerate}
+
+
+\end{exo}
+
+
+
+\begin{exo}
+
+
+
+
+ 
+\begin{enumerate}
+\item On indique à l'extrémité droite des branches le coût des trajets (utile pour la question 3).
+
+\medskip
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$A$}\taput{$0,65$}}
+	{
+	\Tr{$R$}~[tnpos=r]{~~\textcolor{red}{\np{1000}~\euro}}\taput{$0,90$} 
+	\Tr{$\overline{R}$}~[tnpos=r]{~~\textcolor{blue}{800~\euro}}\tbput{$0,10$}
+		}	
+\pstree{\Tr{$\overline{A}$}\tbput{$0,35$}}
+	{
+	\Tr{$R$}~[tnpos=r]{~~\textcolor{blue}{800~\euro}}\taput{$0,70$} 
+	\Tr{$\overline{R}$}~[tnpos=r]{~~\textcolor{green}{600~\euro}}\tbput{$0,30$}
+		}
+}
+\end{center}
+\item 
+	\begin{enumerate}
+		\item La probabilité que le client fasse l'aller-retour en bateau est
+		\[P(A\cap R)=0,65\times 0,90=0,585.\]
+		\item La probabilité que le client utilise les deux moyens de transport est
+		\[P\left(A\cap\overline{R}\right)+P\left(\overline{A}\cap R\right)=0,65\times 0,10+0,35\times 0,70=0,31.\]
+		\item On calcule d'abord $P(R)~:$ d'après la formule des probabilités totales, 
+		\[P(R)=P\left(A\cap R\right)+P\left(\overline{A}\cap R\right)=0,65\times 0,90+0,35\times 0,70=0,83.\]
+		
+		\medskip
+		
+		Le client a fait le retour en bateau. La probabilité qu'il ait aussi fait l'aller en bateau est
+		\[P_R(A)=\frac{P(A\cap R)}{P(R)}=\frac{0,585}{0,83}\approx 0,705.\]
+	\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item On a déjà fait deux des trois calculs utiles dans les questions précédentes~:
+		
+		\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|}
+\hline
+   $y$     & \np{1000}      & 800       & 600   \\
+\hline
+$P(Y=y)$ & $\np{0,585}$ &$\np{0,31}$ &$?$      \\
+\hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+\[P(Y=600)=1-0,585-0,31=0,105.\]
+		\item L'espérance mathématique de $Y$ est
+		\[E(Y)=0,585\times\np{1000}+0,31\times 800+0,105\times 600=896.\] C'est la dépense moyenne des clients pour leurs transports du week-end.
+	\end{enumerate}
+\end{enumerate}
+\end{exo}
+
+
+
+\begin{exo}
+
+
+
+
+\begin{enumerate}
+\item On construit l'arbre et on le complète à partir des données de l'énoncé~:
+
+\medskip
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$R$}\taput{$0,17$}}
+	{
+	\Tr{$J$}\taput{$0,32$} 
+	\Tr{$\overline{J}$}\tbput{$0,68$}
+		}	
+\pstree{\Tr{$\overline{R}$}\tbput{$0,83$}}
+	{
+	\Tr{$J$}\taput{\red{$?$}} 
+	\Tr{$\overline{J}$}\tbput{\blue{$?$}}
+		}
+}
+\end{center}
+
+\medskip
+
+\item $P(R \cap J)=0,17\times 0,32=\np{0,0544}.$
+\item L'énoncé donne $P(J)=0,11.$ On utilise la formule des probabilités totales~:
+
+\begin{align*}
+P(J)&=P\left(R\cap J\right)+P\left(\overline{R}\cap J\right)\\
+0,11&=\np{0,0544}+P\left(\overline{R}\cap J\right)\\
+0,11-\np{0,0544}&=P\left(\overline{R}\cap J\right)\\
+\np{0,0556}&=P\left(\overline{R}\cap J\right)
+\end{align*}
+
+\medskip
+
+Conclusion~: $P\left(\overline{R}\cap J\right)= \np{0,0556}.$
+\item La proportion de jeunes de 18 à 24 ans parmi les utilisateurs non réguliers des transports en commun est égale à la probabilité qu'un utilisateur non régulier soit un jeune. Cette proportion vaut donc
+\[P_{\overline{R}}(J)=\frac{P\left(\overline{R}\cap J\right)}{P\left(\overline{R}\right)}=\frac{\np{0,0556}}{0,83}\approx \np{0,0670}.\]
+
+C'est le point d'interrogation rouge de l'arbre pondéré du début.
+
+\end{enumerate}
+
+
+\end{exo}
+
+\begin{exo}
+
+Il faut prendre l'initiative de nommer des événements et de construire un arbre pondéré. On pose ainsi~:
+
+
+\begin{itemize}
+\item[\textbullet] $E~:$ \og le dé est équilibré \fg ,
+\item[\textbullet] $\overline{E}~:$ \og le dé est pipé \fg ,
+\item[\textbullet] $S~:$ \og on obtient 6 \fg .
+\end{itemize}
+
+\medskip
+
+\begin{center}
+\pstree[treemode=R,treesep=1.5,levelsep=2.5]{\TR{}}%
+{
+\pstree{\Tr{$E$}\taput{$\frac{75}{100}=\frac{3}{4}$}}
+	{
+	\Tr{$S$}\taput{$\frac{1}{6}$} 
+	\Tr{$\overline{S}$}\tbput{$\frac{5}{6}$}
+		}	
+\pstree{\Tr{$\overline{E}$}\tbput{$\frac{25}{100}=\frac{1}{4}$}}
+	{
+	\Tr{$S$}\taput{$\frac{1}{2}$} 
+	\Tr{$\overline{S}$}\tbput{$\frac{1}{2}$}
+		}
+}
+\end{center}
+
+\medskip
+
+La probabilité qu'il faut calculer est $P_S\left(\overline{E}\right).$ On utilise la formule des probabilités conditionnelles~:
+\[P_S\left(\overline{E}\right)=\frac{P\left(\overline{E}\cap S\right)}{P(S)}.\]
+
+Or $P\left(\overline{E}\cap S\right)=\frac{1}{4}\times\frac{1}{2}=\frac{1}{8}$ et $P(S)=\frac{3}{4}\times\frac{1}{6}+\frac{1}{4}\times\frac{1}{2}=\frac{3}{24}+\frac{1}{8}
+=\frac{1}{8}+\frac{1}{8}=\frac{2}{8}=\frac{1}{4}$ (formule des probabilités totales), donc~:
+\[P_S\left(\overline{E}\right)=\frac{\frac{1}{8}}{\frac{1}{4}}=\frac{1}{8}\times \frac{4}{1}=\frac{4}{8}
+=\frac{1}{2}.\]
+
+
+
+\end{exo}
 
 \end{document}
