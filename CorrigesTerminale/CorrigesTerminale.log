@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  9 DEC 2024 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  11 DEC 2024 13:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2087,12 +2087,18 @@ Overfull \hbox (57.27199pt too wide) in paragraph at lines 6684--6685
  [] 
  []
 
-[64] [65] [66] [67] [68] [69] [70] [71] [72]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7458.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7458.
+[64] [65] [66] [67] [68] [69] [70] [71]
+
+Package fourier-orns Warning: Command \danger is deprecated.
+(fourier-orns)                Use \warning instead; reported on input line 7522
+.
+
+[72]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7577.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7577.
  (./CorrigesTerminale.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7458.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7458.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7577.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7577.
 
 Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 (rerunfilecheck)             Checksum: 2C3DB89C9E10BA82CE55BCE5ACD4372B;450.
@@ -2101,7 +2107,7 @@ Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7458.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7577.
  ) 
 Here is how much of TeX's memory you used:
  40941 strings out of 483041
@@ -2112,4 +2118,4 @@ Here is how much of TeX's memory you used:
  81 hyphenation exceptions out of 8191
  60i,20n,75p,919b,2445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesTerminale.dvi (72 pages, 1712708 bytes).
+Output written on CorrigesTerminale.dvi (72 pages, 1737316 bytes).

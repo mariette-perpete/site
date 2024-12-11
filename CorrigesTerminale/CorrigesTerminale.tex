@@ -7455,4 +7455,123 @@ Or $P\left(\overline{E}\cap S\right)=\frac{1}{4}\times\frac{1}{2}=\frac{1}{8}$ e
 
 \end{exo}
 
+\begin{exo} ~{}
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.8,1.9)(5.7,5.4)
+\psline[linewidth=2.pt](1,5.2)(1,2.)
+\psline[linewidth=2.pt](1,2.)(5.5,2.)
+\psline[linewidth=2.pt](5.5,2.)(5.5,5.2)
+\psline[linewidth=2.pt](5.5,5.2)(1,5.2)
+\rput[tl](1.28,4.88){\red{$\boxed{1}$}}
+\rput[tl](2.95,3.84){\green{$\boxed{10}$}}
+\rput[tl](3.94,4.92){\green{$\boxed{9}$}}
+\rput[tl](1.44,3.88){\blue{$\boxed{2}$}}
+\rput[tl](2.26,4.74){\green{$\boxed{6}$}}
+\rput[tl](3.86,4.12){\green{$\boxed{11}$}}
+\rput[tl](2.38,3.38){\blue{$\boxed{5}$}}
+\rput[tl](3.28,4.5){\green{$\boxed{8}$}}
+\rput[tl](2.06,4.04){\blue{$\boxed{3}$}}
+\rput[tl](1.64,3.14){\blue{$\boxed{4}$}}
+\rput[tl](3.64,3.38){\green{$\boxed{13}$}}
+\rput[tl](4.52,4.48){\green{$\boxed{12}$}}
+\rput[tl](4.36,3.56){\green{$\boxed{14}$}}
+\rput[tl](3.,5.02){\green{$\boxed{7}$}}
+\rput[tl](4.08,2.88){\green{$\boxed{15}$}}
+\end{pspicture*}
+\end{center}
+
+
+\begin{enumerate}
+\item \begin{enumerate}
+\item La probabilité que la bille tirée soit bleue ou numérotée d'un nombre pair est $\frac{9}{15}.$
+
+(Billes concernées~: \blue{$\boxed{2}$} \blue{$\boxed{3}$} \blue{$\boxed{4}$} \blue{$\boxed{5}$} \green{$\boxed{6}$} \green{$\boxed{8}$} \green{$\boxed{10}$} \green{$\boxed{12}$} \green{$\boxed{14}$}\black .)
+
+\medskip
+
+\textbf{Remarque~:} Si on note A~: \og le numéro est pair \fg~{} et B~: \og la bille est bleue \fg, alors on a calculé la probabilité de l'événement $A\cup B.$ On aurait aussi pu utiliser la formule du cours de 2\up{de} (pas franchement judicieuse ici, mais dont il faut se rappeler)~:
+ \[P(A\cup B)=P(A)+P(B)-P(A\cap B).\]
+\item Sachant que la bille tirée est verte, la probabilité qu'elle soit numérotée 7 est $\frac{1}{10}.$
+
+(Parmi les 10 boules vertes, une seule porte le numéro 7.)
+\end{enumerate}
+\item \begin{itemize}
+\item[\textbullet] $G=5$ lorsque le joueur remporte 15 euros. Ce n'est possible que s'il tire la bille \blue{$\boxed{5}$}\black ~ (puisque $3\times 5=15$) ou la bille \green{$\boxed{15}$}\black.
+
+Conclusion~: $P(G=5)=\frac{2}{15}.$
+
+\item[\textbullet] Si le joueur choisit une bille rouge, il ne remporte rien, donc $G=-10.$ On a donc $P_R(G = 0)=0.$
+\item[\textbullet] Il y a deux façons possibles d'avoir $G=-4~:$
+\begin{itemize}
+\item soit le joueur tire la bille \blue{$\boxed{2}$}\black, et dans ce cas $G=3\times 2-10=6-10=-4~;$
+\item soit le joueur tire la bille \green{$\boxed{6}$}\black, et dans ce cas $G=6-10=-4.$
+\end{itemize}
+Donc sachant que $G=-4$ il y a une chance sur deux que la bille soit bleue, une chance sur deux qu'elle soit verte~: $P_{(G = - 4)}(V)=\frac{1}{2}.$
+\end{itemize}
+\end{enumerate}
+
+
+\end{exo}
+
+
+\begin{exo} 
+
+\danger J'ai remplacé le mot \og pair \fg~{} par le mot \og impair \fg~{} dans l'énoncé.
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.8,1.9)(5.7,5.4)
+\psline[linewidth=2.pt](1,5.2)(1,2.)
+\psline[linewidth=2.pt](1,2.)(5.5,2.)
+\psline[linewidth=2.pt](5.5,2.)(5.5,5.2)
+\psline[linewidth=2.pt](5.5,5.2)(1,5.2)
+\rput[tl](2.95,3.84){\blue{$\boxed{1}$}}
+\rput[tl](1.44,3.88){\red{$\boxed{1}$}}
+\rput[tl](3.86,4.12){\blue{$\boxed{2}$}}
+\rput[tl](2.38,3.38){\red{$\boxed{2}$}}
+\rput[tl](3.28,4.5){\blue{$\boxed{3}$}}
+\rput[tl](2.06,4.04){\red{$\boxed{3}$}}
+\rput[tl](1.64,3.14){\red{$\boxed{4}$}}
+\rput[tl](3.64,3.38){\blue{$\boxed{4}$}}
+\rput[tl](4.52,4.48){\blue{$\boxed{5}$}}
+\rput[tl](4.36,3.56){\blue{$\boxed{6}$}}
+\end{pspicture*}
+\end{center}
+
+On note
+
+\begin{itemize}
+\item[\textbullet] $B~:$ \og les deux boules sont bleues \fg ,
+\item[\textbullet] $I~:$ \og les deux boules portent un numéro impair \fg .
+\end{itemize}
+
+\medskip
+
+Il faut calculer $P_I(B)=\frac{P(B\cap I)}{P(I)}.$ Comme le tirage des boules est simultané, l'utilisation d'un arbre pondéré  n'est pas adaptée à la situation~; il faut utiliser des combinaisons pour comptabiliser les cas possibles et les cas favorables aux événements~:
+
+\begin{itemize}
+\item[\textbullet] Il y a $\binom{10}{2}=\frac{10\times 9}{2}=45$ tirages possibles.
+\item[\textbullet] L'événement $I$ est réalisé quand on tire 2 des 5 boules portent un numéro impair \textcolor{red}{$\boxed{1}$} \textcolor{red}{$\boxed{3}$} \textcolor{blue}{$\boxed{1}$} \textcolor{blue}{$\boxed{3}$} \textcolor{blue}{$\boxed{5}$}, donc il y a $\binom{5}{2}=\frac{5\times 4}{2}=10$ cas favorables à $I.$
+\item[\textbullet] L'événement $B\cap I$ est réalisé quand on tire deux boules parmi \textcolor{blue}{$\boxed{1}$} \textcolor{blue}{$\boxed{3}$} \textcolor{blue}{$\boxed{5}$}, donc il y a $\binom{3}{2}=\frac{3\times 2}{2}=3$ cas favorables à $B\cap I.$
+\end{itemize}
+
+\medskip
+
+On en déduit $P(I)=\frac{10}{45}$ et $P(B\cap I)=\frac{3}{45},$ puis
+\[P_I(B)=\frac{P(B\cap I)}{P(I)}=\frac{\frac{3}{45}}{\frac{10}{45}}=\frac{3}{45}\times \frac{45}{10}
+=\frac{3}{10}
+.\]
+
+%\medskip
+
+%\textbf{Remarque~:} Pour traiter l'exercice plus rapidement, on pouvait dire que le \og sachant $I$ \fg~{} revenait à considérer que l'on tirait deux boules parmi \textcolor{red}{$\boxed{1}$} \textcolor{red}{$\boxed{3}$} \textcolor{blue}{$\boxed{1}$} \textcolor{blue}{$\boxed{3}$} \textcolor{blue}{$\boxed{5}$}~; il y avait donc $\binom{5}{2}=10$ cas possibles. Et parmi ces cas possibles, $\binom{3}{2}$ cas favorables à l'événement $B,$ puisque 3 des 5 boules impaires sont bleues.
+
+
+
+\end{exo}
+
 \end{document}
