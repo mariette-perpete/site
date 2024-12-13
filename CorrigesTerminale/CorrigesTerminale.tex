@@ -7574,4 +7574,155 @@ On en déduit $P(I)=\frac{10}{45}$ et $P(B\cap I)=\frac{3}{45},$ puis
 
 \end{exo}
 
+\begin{exo}
+
+
+\begin{enumerate}
+\item On répète $10$ épreuves indépendantes de Bernoulli de paramètre $0,04,$ donc $X$ suit la loi binomiale de paramètres $n=10,$ $p=0,04.$ On a donc $E(X)=n\times p=10\times 0,04=0,4.$
+
+\medskip
+
+\danger $p=0,04$ et non $0,96$ ($X$ désigne le nombre d'adresses \textbf{illisibles}).
+\item 
+ $P(X=2)=\binom{10}{2}\times 0,04^{2}\times (1-0,04)^{10-2}=45\times 0,04^2\times 0,96^8\approx 0,052.$
+ 
+ \medskip
+ 
+ Schéma pour retenir~:
+ 
+ \begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,0.82)(5.7,5.1)
+\psline[linewidth=2.pt](-4.25,0.9)(-4.25,4.9)
+\psline[linewidth=2.pt](-4.25,4.9)(5.6,4.9)
+\psline[linewidth=2.pt](5.6,0.9)(5.6,4.9)
+\psline[linewidth=2.pt](-4.25,0.9)(5.6,0.9)
+\rput[tl](-3.2,3.2){\Large $P(X=\textcolor{violet}{2})=\binom{\textcolor{green}{10}}{\textcolor{violet}{2}}\times\textcolor{blue}{0,04}^{\textcolor{violet}{2}}\times \textcolor{red}{0,96}^{\textcolor{orange}{8}}$}
+\psline[linewidth=2.pt,linecolor={violet}]{->}(-1.22,1.54)(-0.6,2.4)
+\rput[tl](-2.46,1.34){\textcolor{violet}{nb adresses illisibles}}
+\psline[linewidth=2.pt,linecolor=blue]{->}(-0.02,4.02)(0.55,3.2)
+\rput[tl](-1.2,4.46){\blue{proba adresse illisible}}
+\psline[linewidth=2.pt,linecolor=green]{->}(-2.06,4.08)(-0.6,3.45)
+\rput[tl](-3.94,4.5){\green{nb adresses lues}}
+\psline[linewidth=2.pt,linecolor=red]{->}(2.14,1.8)(2.4,2.55)
+\rput[tl](1.34,1.56){\red{proba adresse lisible}}
+\psline[linewidth=2.pt,linecolor=orange]{->}(3.1,3.92)(2.9,3.25)
+\rput[tl](2.68,4.44){\textcolor{orange}{nb adresses lisibles}}
+\end{pspicture*}
+\end{center}
+ \item La probabilité qu'au moins une adresse soit illisible est \[P(X\geq 1)=1-P(X=0)=1-\underbrace{\binom{10}{0}}_{=1}\times \underbrace{0,04^{0}}_{=1}\times (1-0,04)^{10-0}=1-0,96^{10}\approx 0,335.\]
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item Pour chaque question, l'élève a une chance sur 4 de donner la bonne réponse, 3 chances sur 4 de donner une mauvaise réponse.
+
+On répète $10$ épreuves indépendantes de Bernoulli de paramètre $\frac{1}{4}=0,25,$ donc $X$ suit la loi binomiale de paramètres $n=10, $ $p=0,25.$
+
+\item \begin{itemize}
+\item[\textbullet] $A$ est réalisé quand $X=3,$ donc \[P(A)=P(X=3)=\binom{10}{3}\times 0,25^3\times (1-0,25)^{10-3}=120\times 0,25^3\times 0,75^7\approx 0,250.\]
+\item[\textbullet] On utilise l'événement contraire~:
+\[P(B)=P(X\geq 1)=1-P(X=0)=1-\underbrace{\binom{10}{0}}_{=1}\times \underbrace{0,25^{0}}_{=1}\times 0,75^{10-0}=1- 0,75^{10}\approx \np{0,944}.\]
+\end{itemize}
+
+\item L'élève a au moins une bonne réponse. La probabilité qu'il en ait exactement trois est
+\[P_{(X\geq 1)}(X=3)=\frac{P((X\geq 1)\cap (X=3))}{P(X\geq 1)}.\]
+
+
+Ici, il y a une petite subtilité~: l'événement $(X\geq 1)\cap (X=3)$ est égal à $(X=3).$ En effet, dire que $X$ est à la fois plus grand que 1 et égal à 3 revient simplement à dire qu'il est égal à 3. On a donc finalement
+\[P_{(X\geq 1)}(X=3)=\frac{P(X=3)}{P(X\geq 1)}\approx \frac{0,250}{0,944}\approx 0,265.\]
+
+\end{enumerate}
+
+
+\end{exo}
+
+
+
+
+
+\begin{exo}
+
+
+ 
+\begin{enumerate}
+\item On répète $100$ épreuves indépendantes de Bernoulli de paramètre $\frac{1}{10},$ donc $X$ suit la loi binomiale de paramètres $n=100, $ $p=\frac{1}{10}=0,1.$
+
+\medskip
+
+D'après le  cours~:
+\[E(X)=n\times p=100\times 0,1=10.\]%\qquad, \qquad V(X)=n\times p\times (1-p)=100\times 0,1\times (1-0,1)=9.\]
+\item À l'aide de la calculatrice, on obtient $P(5\leq X\leq 15)\approx 0,936.$
+\item On cherche par tâtonnement, à l'aide de la calculatrice, le plus petit entier naturel $k$ tel que \[P(X> k)\leq 0,01.\] C'est très rapide avec une NUMWORKS, un peu moins avec les CASIO et les TI. Une méthode qui fonctionne quel que soit le modèle consiste à utiliser l'événement contraire~:
+\[ P(X> k)\leq 0,01\iff P(X\leq k)\geq 0,99.\]
+
+Par tâtonnement, on trouve 
+\[P(X\leq 17)=0,989\cdots\qquad\text{et}\qquad P(X\leq 18)=0,995\cdots,\] donc le plus petit entier $k$ qui convienne est $18.$
+
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+Soit $X$ une variable aléatoire suivant la loi binomiale de paramètres $n=50,$ $p=0,8.$
+
+\`A l'aide de la calculatrice, on obtient~:
+\begin{align*}
+P(X\geq 35)&\approx 0,969\\
+P(X\geq 40)&\approx 0,584.
+\end{align*}
+On raisonne comme dans l'exercice 121~: l'événement  $(X\geq 35)\cap (X\geq 40)$ est égal à $(X\geq 40),$ donc
+
+\[P_{(X\geq 35)}(X\geq 40)=\frac{P((X\geq 35)\cap (X\geq 40))}{P(X\geq 35)}
+=\frac{P(X\geq 40)}{P(X\geq 35)}\approx \frac{0,584}{0,969}\approx 0,603.\]
+
+\end{exo}
+
+
+
+
+\begin{exo}
+
+
+On note $X$ le nombre de 6. On répète $n$ épreuves indépendantes de Bernoulli de paramètre $\frac{1}{6},$ donc $X$ suit la loi binomiale de paramètres $n, $ $p=\frac{1}{6}.$
+
+\medskip
+
+La probabilité de faire au moins un 6 est 
+\[P(X\geq 1)=1-P(X=0)=1-\underbrace{\binom{n}{0}}_{=1}\times \underbrace{\left(\frac{1}{6}\right)^0}_{=1}\times\left(1-\frac{1}{6}\right)^{n-0}=1-\left(\frac{5}{6}\right)^{n}.\]
+\end{exo}
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item 	\begin{enumerate}
+		\item On répète $5$ épreuves indépendantes de Bernoulli de paramètre $0,103,$ donc $X$ suit la loi binomiale de paramètres $n=5, $ $p=0,103.$
+		\item L'espérance de $X$ est \[E(X)=n\times p=5\times 0,103=0,615.\] 
+		
+		\item La probabilité qu'au moins un des 5 athlètes contrôlés présente un test positif est 
+		\[P(X\geq 1)=1-P(X=0)=1-\underbrace{\binom{5}{0}}_{=1}\times \underbrace{0,103^{0}}_{=1}\times (1-0,103)^{5-0}=1- 0,897^{5}\approx \np{0,419}.\]
+	\end{enumerate}
+\item Si on interroge $n$ athlètes, la probabilité qu'au moins l'un  d'entre eux présente un test positif est \[1-0,897^n\] (c'est le même calcul que dans la question précédente).
+
+\medskip
+
+On cherche donc par tâtonnement la plus petite valeur de $n$ telle que $1-0,897^n\geq 0,75~:$ on trouve $1-0,897^{12}\approx 0,729$ et $1-0,897^{12}\approx 0,757.$
+
+\medskip
+
+Conclusion~: il faut contrôler au moins 13 athlètes pour que la probabilité de l'événement \og au moins un athlète contrôlé présente un test positif \fg{} soit supérieure ou égale à $0,75.$
+\end{enumerate}
+
+\end{exo}
+
 \end{document}

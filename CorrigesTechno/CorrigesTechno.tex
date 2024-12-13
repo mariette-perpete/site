@@ -2116,4 +2116,161 @@ Conclusion~: il faut superposer au moins 15 plaques pour que l'intensité lumine
 
 \end{exo}
 
+
+
+\section{Dérivation et variations des fonctions du 2\up{nd} degré}
+
+
+
+
+
+\begin{exo}
+
+La fonction $f$ est définie sur l'intervalle $\left[-1;4\right]$ par
+
+\[ f(x) = 0,5x^2-2x+1.\]
+
+\begin{enumerate}
+\item $f'(x)=0,5\times 2x-2\times 1+0=x-2.$
+\item La dérivée est du premier degré, donc il faut résoudre une équation, puis regarder le signe de $a~:$
+\begin{align*}x-2&=0\\
+ x-\cancel{2}+\cancel{2}&=0+2\\
+ x&=2.
+ \end{align*}
+
+$a=1$ (puisque $x-2$ signifie $\textcolor{red}{1}x-2$), $a$ est $\bigoplus$ donc le signe est de la forme \fbox{$-~\upphi~+$}
+
+\medskip
+
+
+On en déduit le tableau de signe de $f'$ et le tableau de variations de $f~:$
+
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$-1$,$2$,$4$}
+\tkzTabLine{,-,z,+,}
+\tkzTabVar{+/$3.5$,-/$-1$,+/$1$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Pour les trois valeurs aux extrémités des flèches, on utilise le tableau de valeurs de la question suivante.
+\item 
+
+Rappelons la méthode pour obtenir le tableau de valeurs avec une calculatrice~:
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{3}
+
+\begin{center}
+\textbf{Calculatrices collège}
+\end{center}
+
+\begin{itemize}
+\item[\textbullet] \fbox{MODE} ou \fbox{MENU}
+\item[\textbullet] 4 : TABLE ou 4 : Tableau
+\item[\textbullet] f(X)=$0,5\text{X}^2-2\text{X}+1$ \fbox{EXE}
+
+(si on demande g(X)=, ne rien rentrer)
+\item[\textbullet] Début? $-1$ \fbox{EXE}
+\item[\textbullet] Fin? $4$ \fbox{EXE}
+\item[\textbullet] Pas? $1$ \fbox{EXE}
+\end{itemize}
+
+
+
+
+
+\columnbreak
+
+\begin{center}
+\textbf{TI graphiques}
+\end{center}
+
+X s'obtient avec la touche \fbox{$x,t,\theta,n$}
+\begin{itemize}
+\item[\textbullet] \fbox{$f(x)$}
+\item[\textbullet] $\text{Y}_1=0.5\text{X}^2-2\text{X}+1$ \fbox{EXE}
+\item[\textbullet] \fbox{2nde} \fbox{déf table}
+\item[\textbullet] DébTable=$(-)1$ \fbox{EXE}
+\item[\textbullet] PasTable=$1$ \fbox{EXE}
+
+ou
+
+\tiny{$\Delta$}\normalsize Tbl=$1$ \fbox{EXE}
+\item[\textbullet] \fbox{2nde} \fbox{table}
+\end{itemize}
+
+
+\columnbreak
+
+\begin{center}
+\textbf{CASIO graphiques}
+\end{center}
+
+X s'obtient avec la touche \fbox{$\text{X},\theta,\text{T}$}
+\begin{itemize}
+\item[\textbullet] \fbox{MENU} puis choisir TABLE \fbox{EXE}
+\item[\textbullet] $\text{Y}_1:0.5\text{X}^2-2\text{X}+1$ \fbox{EXE}
+\item[\textbullet] \fbox{F5} (on choisit donc SET)
+\item[\textbullet] Start:$(-)1$ \fbox{EXE}
+\item[\textbullet] End:$4$ \fbox{EXE}
+\item[\textbullet] Step:$1$ \fbox{EXE}
+\item[\textbullet]\fbox{EXIT}
+\item[\textbullet] \fbox{F6} (on choisit donc TABLE)
+\end{itemize}
+
+
+\end{multicols}
+
+\medskip
+
+\textbf{Remarque~:} Les calculatrices \textbf{NUMWORKS} permettent également de faire ces calculs et sont d'un usage beaucoup plus intuitif.
+
+\medskip
+
+On obtient finalement le tableau~:
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+$x$& $-1$ &$0$ &$1$ &$2$ &$3$ &$4$ \\ \hline 
+$f(x)$&$3,5$ &$1$ &$-0,5$   & $-1$ &$-0,5$  &$1$  \\ \hline
+\end{tabular}
+
+\end{center}
+
+
+\item ~{}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.04,-1.68)(5.6,4.64)
+\multips(0,-1)(0,1.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.04,0)(5.6,0)}
+\multips(-2,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.68)(0,4.64)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.04,-1.68)(5.6,4.64)
+\rput{0.}(2.,-1.){\psplot[linewidth=2.pt,linecolor=ududff]{-3.}{2.}{x^2/2/1.}}
+\psdots[dotstyle=*,linecolor=ududff](-1.,3.5)
+\psdots[dotstyle=*,linecolor=ududff](0.,1.)
+\psdots[dotstyle=*,linecolor=ududff](1.,-0.5)
+\psdots[dotstyle=*,linecolor=ududff](2.,-1.)
+\psdots[dotstyle=*,linecolor=ududff](3.,-0.5)
+\psdots[dotstyle=*,linecolor=ududff](4.,1.)
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} La courbe représentative est une parabole, puisque la fonction $f$ est du 2\up{nd} degré (de la forme $f(x)=ax^2+bx+c$). Ce sera le cas dans tous les exercices du chapitre.
+
+\end{enumerate}
+
+\end{exo}
+
 \end{document}

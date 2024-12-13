@@ -4268,15 +4268,15 @@ On en déduit
 \newpage
 
 \begin{exo}
-~{}
 
 
+
+\begin{enumerate}
+\item ~{}
 \setlength{\columnseprule}{1pt}
 
 \begin{multicols}{2}
 
-\begin{enumerate}
-\item~{}
 
 \begin{center}
 \psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
@@ -4285,14 +4285,20 @@ On en déduit
 \multips(-1,0)(1.0,0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.34)(0,5.58)}
 \psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.68,-2.34)(7.,5.58)
 \psplot[linewidth=2.pt,linecolor=blue]{-1.68}{7.}{(-2.--4.*x)/2.}
+\psplot[linewidth=2.pt,linecolor=red]{-1.68}{7.}{(--16.-4.*x)/4.}
 \psdots[dotstyle=*,linecolor=blue](1.,1.)
 \rput[bl](0.72,1.18){\blue{$A$}}
 \psdots[dotstyle=*,linecolor=blue](3.,5.)
 \rput[bl](2.76,5.18){\blue{$B$}}
+\psdots[dotstyle=*,linecolor=red](5.,-1.)
+\rput[bl](5.08,-0.8){\red{$C$}}
+\psdots[dotstyle=*,linecolor=red](1.,3.)
+\rput[bl](1.08,3.2){\red{$D$}}
 \end{pspicture*}
 \end{center}
-\columnbreak
- $A(1;1),$ $B(3;5).$
+
+\begin{enumerate}
+\item $A(1;1),$ $B(3;5).$
 
 La droite $(AB)$ a une équation de la forme $y=ax+b.$ D'après le cours~:
 
@@ -4311,10 +4317,136 @@ La droite $(AB)$ passe par $A(\underset{x}{1};\underset{y}{1}),$ donc
 
 
 Conclusion~: $(AB):y=2x-1.$
+\item $C(5;-1),$ $D(1;3).$
+
+La droite $(CD)$ a une équation de la forme $y=ax+b.$ D'après le cours~:
+
+\[a=\frac{y_D-y_C}{x_D-x_C}=\frac{3-(-1)}{1-5}=\frac{4}{-4}=-1.\]
+
+A ce stade, on sait que $(CD):y=-1x+b.$
+
+\medskip
+
+La droite $(CD)$ passe par $C(\underset{x}{5};\underset{y}{-1}),$ donc
+\begin{align*}-1&=-1\times 5+b\\
+-1&=-5+b\\
+-1+5&=\cancel{-5}+b+\cancel{5}\\
+4&=b
+\end{align*}
+
+
+Conclusion~: $(CD):y=-1x+4$ -- ou encore $(CD):y=-x+4.$
 \end{enumerate}
 \end{multicols}
 
+\item ~{}
 
+\setlength{\columnseprule}{1pt}
+ \begin{multicols}{2}
+
+
+\begin{center}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.62,-4.42)(6.94,3.5)
+\multips(0,-4)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.62,0)(6.94,0)}
+\multips(-2,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-4.42)(0,3.5)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.62,-4.42)(6.94,3.5)
+\psplot[linewidth=2.pt,linecolor=blue]{-2.62}{6.94}{(-16.--4.*x)/8.}
+\psplot[linewidth=2.pt,linecolor=red]{-2.62}{6.94}{(--4.-1.*x)/3.}
+\psdots[dotstyle=*,linecolor=blue](-2.,-3.)
+\rput[bl](-2.28,-2.82){\blue{$A$}}
+\psdots[dotstyle=*,linecolor=blue](6.,1.)
+\rput[bl](5.76,1.18){\blue{$B$}}
+\psdots[dotstyle=*,linecolor=red](1.,1.)
+\rput[bl](1.08,1.2){\red{$C$}}
+\psdots[dotstyle=*,linecolor=red](-2.,2.)
+\rput[bl](-1.92,2.2){\red{$D$}}
+\end{pspicture*}
+\end{center}
+
+
+
+\begin{enumerate}
+\item $A(-2;-3),$ $B(6;1).$
+
+La droite $(AB)$ a une équation de la forme $y=ax+b.$ D'après le cours~:
+
+\[a=\frac{y_B-y_A}{x_B-x_A}=\frac{1-(-3)}{6-(-2)}=\frac{4}{8}=0,5.\]
+
+A ce stade, on sait que $(AB):y=0,5x+b.$
+
+\medskip
+
+La droite $(AB)$ passe par $A(\underset{x}{-2};\underset{y}{-3}),$ donc
+\begin{align*}-3&=0,5\times (-2)+b\\
+-3&=-1+b\\
+-3+1&=\cancel{-1}+b+\cancel{1}\\
+-2&=b
+\end{align*}
+
+
+Conclusion~: $(AB):y=0,5x-2.$
+\item $C(1;1),$ $D(-2;2).$
+
+La droite $(CD)$ a une équation de la forme $y=ax+b.$ D'après le cours~:
+
+\[a=\frac{y_D-y_C}{x_D-x_C}=\frac{2-1}{-2-1}=\frac{1}{-3}=-\frac{1}{3}.\]
+
+A ce stade, on sait que $(CD):y=-\frac{1}{3}x+b.$
+
+\medskip
+
+La droite $(CD)$ passe par $C(\underset{x}{1};\underset{y}{1}),$ donc
+\begin{align*}1&=-\frac{1}{3}\times 1+b\\
+1&=-\frac{1}{3}+b\\
+1+\frac{1}{3}&=\cancel{-\frac{1}{3}}+b+\cancel{\frac{1}{3}}\\
+\frac{3}{3}+\frac{1}{3}&=b\\
+\frac{4}{3}&=b
+\end{align*}
+
+
+Conclusion~: $(CD):y=-\frac{1}{3}x+\frac{4}{3}.$
+\end{enumerate}
+
+\end{multicols}
+\item ~{}
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+
+\begin{center}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.68,-3.58)(6.22,4.34)
+\multips(0,-3)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.68,0)(6.22,0)}
+\multips(-1,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-3.58)(0,4.34)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.68,-3.58)(6.22,4.34)
+\psplot[linewidth=2.pt,linecolor=blue]{-1.68}{6.22}{(--6.-0.*x)/-3.}
+\psline[linewidth=2.pt,linecolor=red](4.,-3.58)(4.,4.34)
+\psdots[dotstyle=*,linecolor=blue](2.,-2.)
+\rput[bl](1.72,-1.82){\blue{$A$}}
+\psdots[dotstyle=*,linecolor=blue](-1.,-2.)
+\rput[bl](-1.24,-1.82){\blue{$B$}}
+\psdots[dotstyle=*,linecolor=red](4.,-3.)
+\rput[bl](4.08,-2.8){\red{$C$}}
+\psdots[dotstyle=*,linecolor=red](4.,4.)
+\rput[bl](4.18,3.58){\red{$D$}}
+\end{pspicture*}
+\end{center}
+
+$A(2;-2),$ $B(-1;-2),$ $C(4;-3),$ $D(4;4).$
+
+La droite $(AB)$ est horizontale, c'est l'ensemble des points d'ordonnée $y=-2,$ donc son équation est $y=-2.$
+\[(AB):y=-2.\]
+
+La droite $(CD)$ est verticale, c'est l'ensemble des points d'abscisse $x=4,$ donc son équation est $x=4.$
+\[(CD):x=4.\]
+
+\medskip
+
+\textbf{Remarques~:} Dans le cas de droites horizontales ou verticales, on n'attend aucune justification de votre part, vous pouvez directement donner l'équation.
+\end{multicols}
+\end{enumerate}
 \end{exo}
 
 \end{document}
