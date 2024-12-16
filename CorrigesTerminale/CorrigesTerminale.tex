@@ -7725,4 +7725,304 @@ Conclusion~: il faut contrôler au moins 13 athlètes pour que la probabilité d
 
 \end{exo}
 
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item Au départ, la trottinette est en bon état, donc la probabilité qu'elle le soit encore après 1 semaine est $p_1=0,9.$ 
+\medskip
+
+Pour calculer $p_2,$ on utilise un arbre pondéré~:
+
+\begin{center}
+\pstree[treemode=R,nodesepA=0pt,nodesepB=2.5pt,treesep = 0.5cm,levelsep=2.5cm]{\TR{}}
+{\pstree{\TR{$B_1$~}\taput{$0,9$}}
+{\TR{$B_{2}$}\taput{$0,9$}
+\TR{$\overline{B_{2}}$}\tbput{$0,1$}
+}
+\pstree{\TR{$\overline{B_1}$~}\tbput{$0,1$}}
+{\TR{$B_{2}$}\taput{$0,4$}
+\TR{$\overline{B_{2}}$}\tbput{$0,6$}
+}}
+\end{center}
+
+\medskip
+
+D'après la formule des probabilités totales~:
+\[p_2=P\left(B_2\right)=P\left(B_1\cap B_2\right)+P\left(\overline{B_1}\cap B_2\right)=0,9\times 0,9+0,1\times 0,4=0,85.\]
+
+
+\item La méthode de la question 1 se généralise~: la probabilité de l'événement $B_n$ est $p_n,$ celle de l'événement contraire $\overline{B_{n}}$ est $1-p_n.$ On a donc l'arbre~:
+
+\begin{center}
+\pstree[treemode=R,nodesepA=0pt,nodesepB=2.5pt,treesep = 0.5cm,levelsep=2.5cm]{\TR{}}
+{\pstree{\TR{$B_n$~}\taput{$p_n$}}
+{\TR{$B_{n+1}$}\taput{$0,9$}
+\TR{$\overline{B_{n+1}}$}\tbput{$0,1$}
+}
+\pstree{\TR{$\overline{B_n}$~}\tbput{$1-p_n$}}
+{\TR{$B_{n+1}$}\taput{$0,4$}
+\TR{$\overline{B_{n+1}}$}\tbput{$0,6$}
+}}
+
+\end{center}
+
+\item D'après la formule des probabilités totales~:
+
+\begin{align*}p_{n+1}&=P\left(B_{n+1}\right)\\
+&=P\left(B_n\cap B_{n+1}\right)+P\left(\overline{B_n}\cap B_{n+1}\right)\\
+&=p_n\times 0,9+\left(1-p_n\right)\times 0,4\\
+&=0,9p_n+0,4-0,4p_n\\
+&=0,5p_n + 0,4.
+\end{align*}
+\item On admet que la suite $\left(p_{n}\right)_{n\in\mathbb{N}}$ converge, on note $\ell$ sa limite. On \og passe à la limite \fg~{} dans la formule de récurrence~:
+
+\[p_{n+1}=0,5u_n+0,4\qquad\text{pour tout }n\in\mathbb{N},\] donc
+\[\ell=0,5\ell+0,4.\]
+
+On résout cette équation~:
+\[\ell=0,5\ell+0,4\iff \ell-0,5\ell=0,4\iff 0,5\ell=0,4\iff\ell=\frac{0,4}{0,5}\iff \ell=0,8.\]
+
+Conclusion~: $\lim\limits_{n\to +\infty}p_n=0,8.$
+
+\medskip
+
+\textbf{Interprétation~:} \`A long terme, la probabilité qu'une trottinette prise au hasard soit en bon état est égale à 80~\%. Autre façon de dire~: sur le long terme, 80~\% des trottinettes seront en bon état de fonctionnement.
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+
+
+\begin{enumerate}
+\item \begin{enumerate}
+\item En 2024, 85~\% des \np{1700} sportifs qui sont dans le club A en 2023 restent dans ce club, et 10~\% des \np{1300} sportifs qui sont dans le club B en 2023 quittent ce club pour adhérer au club A. Il y a donc
+\[a_1=0,85\times\np{1700}+0,10\times \np{1300}=\np{1575}\] membres dans le club A en 2024.
+
+\medskip
+
+De plus, le nombre total de membres dans le groupe n'évolue pas au cours des années, car les membres se contentent de changer de club (il n'y a aucune arrivée, ni aucun départ)~; il y a donc toujours $\np{1700}+\np{1300}=\np{3000}$ membres au total. Par conséquent, il y a
+\[b_1=\np{3000}-\np{1575}=\np{1425}\] membres dans le club B en 2024.
+\item On reprend l'argument que l'on a utilisé juste au-dessus~: le nombre total de membres n'évolue pas au cours du temps, donc pour tout entier naturel $n,$ 
+\[a_n+b_n=\np{3000}.\]
+\item D'une année à la suivante~:
+\begin{itemize}
+\item[\textbullet] 85~\% des membres du club A y restent~;
+\item[\textbullet] 10~\% des membres du club B  adhèrent au club A.
+\end{itemize}
+
+On a donc
+\[a_{n+1}=0,85a_n+0,10b_n.\] Or on a vu que $a_n+b_n=\np{3000},$ donc $b_n=\np{3000}-a_n$ et
+\begin{align*}
+a_{n+1}&=0,85a_n+0,10b_n
+\\&0,85a_n+0,10\left(\np{3000}-a_n\right)
+\\&=0,85a_n+0,10\times\np{3000}-0,10 a_n
+\\&=0,75a_n+300.
+\end{align*}
+
+\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété \[\np{1200} \leq a_{n+1} \leq a_{n} \leq \np{1700}.\]
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+
+\[
+\left.
+    \begin{array}{ll}
+        a_0&=\np{1700} \\
+        a_1&=\np{1575}\\
+        \np{1200}&\leq \np{1575}\leq \np{1700}
+    \end{array}
+\right \}\implies  \np{1200} \leq a_{1}\leq a_{0}\leq \np{1700}\implies\mathcal{P}_0~\text{est vraie}.
+\]
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[\np{1200} \leq a_{k+1} \leq a_{k} \leq \np{1700}.\]
+
+\newtcolorbox{mybox}[1]{colback=green!10!white,colframe=green!80!white,fonttitle=\bfseries,title=#1}
+\begin{mybox}{Objectif}{Prouver que $\mathcal{P}_{k+1}$ est vraie, c'est-à-dire que \[\np{1200} \leq a_{k+2} \leq a_{k+1} \leq \np{1700}.\]
+}\end{mybox}
+
+
+
+%\medskip
+
+On part de 
+\[\np{1200} \leq a_{k+1} \leq a_{k} \leq \np{1700}.\]
+
+
+On multiplie par $\textcolor{red}{0,75}~:$
+
+\begin{align*} \np{1200}\textcolor{red}{\times 0,75}&\leq a_{k+1}\textcolor{red}{\times 0,75}\leq a_{k}\textcolor{red}{\times 0,75}\leq \np{1700}\textcolor{red}{\times 0,75}\\
+ 900&\leq 0,75 a_{k+1}\leq 0,75 a_{k}\leq \np{1275}.
+\end{align*}
+
+Puis on ajoute  $\textcolor{blue}{300}~:$
+
+\begin{align*}
+900\textcolor{blue}{+300}&\leq 0,75 a_{k+1}\textcolor{blue}{+300}\leq 0,75 a_{k}\textcolor{blue}{+300}\leq \np{1275}\textcolor{blue}{+300}\\
+\np{1200} &\leq a_{k+2} \leq a_{k+1} \leq \np{1575}.
+\end{align*}
+
+La propriété $\mathcal{P}_{k+1}$ est donc vraie.
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+		\item D'après la question précédente~:
+
+\begin{itemize}
+\item[{\textbullet}] $a_{n+1}\leq a_{n}$ pour tout $n\in\mathbb{N},$ donc $(a_n)_{n\in\mathbb{N}}$ est décroissante.
+\item[{\textbullet}] $a_n\geq \np{1200}$ pour tout $n\in\mathbb{N},$ donc $(a_n)_{n\in\mathbb{N}}$ est minorée par \np{1200}.
+\end{itemize}
+
+Or toute suite décroissante minorée converge, donc $(a_n)_{n\in\mathbb{N}}$ converge.
+		\item On note $\ell$ la limite de $\left(a_n\right)_{n\in\mathbb{N}}$ et \og on passe à la limite \fg~{} dans la formule de récurrence~:
+
+\[a_{n+1}=0,75a_n+300\qquad\text{pour tout }n\in\mathbb{N},\] donc
+\[\ell=0,75\ell+300.\]
+
+On résout cette équation~:
+\[\ell=0,75\ell+300\iff \ell-0,75\ell=300\iff 0,25\ell=300\iff\ell=\frac{300}{0,25}\iff \ell=\np{1200}.\]
+
+Conclusion~: $\lim\limits_{n\to +\infty}a_n=\np{1200}.$
+	\end{enumerate}
+\item \begin{enumerate}
+		\item On complète la fonction \textbf{seuil} afin qu'elle renvoie la plus petite valeur de n à partir de laquelle le nombre de membres du club A est strictement inférieur à \np{1280}.
+		
+		
+\begin{lstlisting}
+def seuil():
+	A=1700
+	n=0
+	while A>=1280:
+		A=0.75*A+300
+		n=n+1
+	return n
+\end{lstlisting}
+
+
+
+
+		\item Il y a essentiellement deux méthodes pour déterminer la valeur renvoyée par la fonction~: soit on rentre le programme en machine, soit on calcule les termes successifs de la suite.
+		
+		\medskip
+		
+		Avec la deuxième méthode, on obtient $a_6\approx \np{1289}$ et $a_7\approx \np{1267}.$ C'est donc après 7 ans qu'il y aura moins de \np{1280} inscrits dans le club A -- et donc la valeur renvoyée par la fonction est \og 7 \fg.
+	\end{enumerate}
+\end{enumerate}	
+
+\end{exo}
+
+\section{Limites de fonctions}
+
+
+
+\begin{exo}
+
+\begin{multicols}{2}
+On trace un exemple de courbe correspondant aux conditions de l'énoncé. On indique par une couleur quelle condition correspond à quel élément du graphique.
+
+\begin{enumerate}
+\item \textcolor{blue!60!white}{La fonction $h$ est définie sur $\left]1;+\infty\right[.$}
+
+\begin{enumerate}
+\item \textcolor{green}{La droite d'équation $y=-2$ est asymptote à $\mathcal{C}$ en $+\infty.$}
+\item \textcolor{blue}{La droite d'équation $x=1$ est asymptote à $\mathcal{C}.$}
+\item \textcolor{red}{$h$ est strictement croissante sur $\left]1;3\right]$} et \textcolor{violet!50!blue}{strictement décroissante sur $\left[3;+\infty\right[.$}
+\item \textcolor{orange}{$h(3)=4.$}
+\item \textcolor{pink!20!magenta}{Les solutions de l'équation $h(x)=0$ sont $1,5$ et $6.$}
+\item \textcolor{black}{Le point de coordonnées $(5;2)$ est un point d'inflexion de $\mathcal{C}.$}
+\end{enumerate}
+
+
+\item $\lim\limits_{x\to +\infty} f(x)=-2\qquad ,\qquad\lim\limits_{x\to 1} f(x)=-\infty.$
+\end{enumerate}
+
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\newrgbcolor{ccqqww}{0.8 0. 0.4}
+\newrgbcolor{ccqqww}{0.8 0. 0.4}
+\newrgbcolor{ccqqqq}{0.8 0. 0.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.06,-2.66)(10.22,4.46)
+\pspolygon[linewidth=0.pt,linecolor=white,fillcolor=blue!30!white,fillstyle=solid,opacity=0.25](-1.26,4.66)(-1.26,-2.86)(1.,-2.86)(1.,4.66)
+%\multips(0,-2)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.06,0)(10.22,0)}
+%\multips(1.03,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.66)(0,4.46)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.06,-2.66)(10.22,4.46)
+%\psplot[linewidth=2.pt,linecolor=green]{-1.06}{10.22}{(-2.-0.*x)/1.}
+%\input{courbe_ex8.1}
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green]{-1.06}{10.22}{(-2.-0.*x)/1.}
+\psplot[linewidth=2.pt,linecolor=ccqqqq,plotpoints=200]{1.1}{3}{4.0-4.0/1.5^(3.0)*(abs(x-3.0))^(3.0)}
+\psplot[linewidth=2.pt,linecolor=xfqqff,plotpoints=200]{3}{5}{4.0-0.25*(x-3.0)^(3.0)}
+\psplot[linewidth=2.pt,linecolor=xfqqff,plotpoints=200]{5}{10.220000000000011}{2.0*(2.0^(6.0-x)-1.0)}
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=blue](1.,-2.66)(1.,4.46)
+\begin{large}
+\psdots[dotstyle=*,linecolor=ffxfqq](3.,4.)
+\psdots[dotstyle=*](5.,2.)
+\psdots[dotstyle=*,linecolor=ccqqww!50!white](1.5,0.)
+\psdots[dotstyle=*,linecolor=ccqqww!50!white](6.,0.)
+\end{large}
+\end{pspicture*}
+\end{center}
+
+\end{multicols}
+
+\end{exo}
+
+\begin{exo}
+
+\begin{multicols}{2}
+
+~{}
+
+\begin{tikzpicture}[scale=0.6]
+\tkzTabInit{$x$/1,$i(x)$/2}{$-\infty$,$1$,$3$,$+\infty$}
+\tkzTabVar{+/$2$,-D+/$-\infty$/$+\infty$,-/$-1$,+/$1$}
+\end{tikzpicture}
+
+
+
+\begin{itemize}
+\item[\textbullet] la droite d'équation $y=1$ (en rose) est asymptote à $\mathcal{C}$ en $+\infty.$
+\item[\textbullet] la droite d'équation $y=2$ (en vert) est asymptote à $\mathcal{C}$ en $-\infty.$
+\item[\textbullet] la droite d'équation $x=1$ (en orange) est asymptote à $\mathcal{C}.$ 
+\end{itemize}
+\columnbreak
+\begin{center}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.52,-2.48)(7.88,3.84)
+%\multips(0,-2)(0,1.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.52,0)(7.88,0)}
+%\multips(-3,0)(1.0,0){12}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.48)(0,3.84)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.52,-2.48)(7.88,3.84)
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{-4}{0.96}{2.0/(x-1.0)+2.0}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{1.2}{3}{(x-3.0)^(4.0)-1.0}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{3}{7.880000000000006}{1.13*(EXP(x-6.0)-1.0)/(EXP(x-6.0)+1.0)}
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=magenta]{-3.52}{7.88}{(--1.-0.*x)/1.}
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green]{-3.52}{7.88}{(--2.-0.*x)/1.}
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=ffxfqq](1.,-2.48)(1.,3.84)
+\rput[tl](-2.92,2.5){\green{$y=2$}}
+\rput[tl](6.08,1.5){\magenta{$y=1$}}
+\rput[tl](1.08,-1.68){\ffxfqq{$x=1$}}
+\rput[tl](4.88,-0.65){\blue{$\mathcal{C}$}}
+\psdots[dotstyle=*,linecolor=red](0.,0.)
+\psdots[dotstyle=*,linecolor=red](2.,0.)
+\psdots[dotstyle=*,linecolor=red](3.,-1.)
+\psdots[dotstyle=*,linecolor=red](6.,0.)
+\end{pspicture*}
+\end{center}
+\end{multicols}
+
+\end{exo}
+
 \end{document}

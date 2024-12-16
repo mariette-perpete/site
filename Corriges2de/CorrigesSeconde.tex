@@ -4449,4 +4449,79 @@ La droite $(CD)$ est verticale, c'est l'ensemble des points d'abscisse $x=4,$ do
 \end{enumerate}
 \end{exo}
 
+
+\begin{exo}
+
+\begin{enumerate}
+\item On trace les droites  $D_1:y=x-4$   et $D_2:y=-2x+3$ à partir de deux tableaux de valeurs~:
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\underline{Tracé de $D_1.$}
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$x$&$0$&$2$\\ \hline
+$y$&$-4$&$-2$\\ \hline
+\end{tabular}
+\end{center}
+
+\begin{align*}
+&0-4=-4\\
+&2-4=-2\end{align*}
+
+\columnbreak
+
+\underline{Tracé de $D_2.$}
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$x$&$0$&$2$\\ \hline
+$y$&$3$&$-1$\\ \hline
+\end{tabular}
+\end{center}
+
+\begin{align*}
+&-2\times 0+3=3\\
+&-2\times 2+3=-1\end{align*}
+
+\end{multicols}
+
+
+\begin{center}
+\psset{xunit=0.75cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.82,-4.82)(6.22,3.7)
+\multips(0,-4)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.82,0)(6.22,0)}
+\multips(-1,0)(1.0,0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-4.82)(0,3.7)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.82,-4.82)(6.22,3.7)
+\psplot[linewidth=2.pt,linecolor=red]{-1.82}{6.22}{(-4.--1.*x)/1.}
+\psplot[linewidth=2.pt,linecolor=blue]{-1.82}{6.22}{(--3.-2.*x)/1.}
+\rput[tl](4.04,1.22){\red{$D_1$}}
+\rput[tl](1.12,1.42){\blue{$D_2$}}
+\rput[bl](-0.44,-4.72){\red{$f$}}
+\psdots[dotstyle=*,linecolor=blue](0.,3.)
+\psdots[dotstyle=*,linecolor=blue](2.,-1.)
+\psdots[dotstyle=*,linecolor=red](0.,-4.)
+\psdots[dotstyle=*,linecolor=red](2.,-2.)
+\psdots[dotstyle=*,linecolor=green](2.3333333333333335,-1.6666666666666667)
+\rput[bl](2.52,-1.8){\green{$M$}}
+\end{pspicture*}
+\end{center}
+
+
+\item On note $M$ le point d'intersection de $D_1:y=x-4$ et $D_2:y=-2x+3.$ Pour déterminer ses coordonnées, on résout l'équation~:
+
+\begin{align*}
+x-4&=-2x+3\\
+x-\cancel{4}+\cancel{4}&=-2x+3+4\\
+x+2x&=\cancel{-2x}+7+\cancel{2x}\\
+\frac{\cancel{3}x}{\cancel{3}}&=\frac{7}{3}\\
+x&=\frac{7}{3}.
+\end{align*}
+
+On en déduit $y=x-4=\frac{7}{3}-\frac{4}{1}=\frac{7}{3}-\frac{12}{3}=-\frac{5}{3}.$
+
+Conclusion~: $M\left(\frac{7}{3};-\frac{5}{3}\right).$
+\end{enumerate}
+
+\end{exo}
+
 \end{document}
