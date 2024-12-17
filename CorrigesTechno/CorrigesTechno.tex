@@ -2273,4 +2273,167 @@ $f(x)$&$3,5$ &$1$ &$-0,5$   & $-1$ &$-0,5$  &$1$  \\ \hline
 
 \end{exo}
 
+
+\begin{exo}
+
+La fonction $g$ est définie sur l'intervalle $\left[0;5\right]$ par
+
+\[ g(x) = -x^2+5x-2.\]
+
+\begin{enumerate}
+\item $g'(x)=-2x+5\times 1-0=-2x+5.$
+\item On résout l'équation~:
+\begin{align*}-2x+5&=0\\
+ -2x+\cancel{5}-\cancel{5}&=0-5\\
+ \frac{\cancel{-2}x}{\cancel{-2}}&=\frac{-5}{-2}\\
+ x&=2,5.
+ \end{align*}
+
+$a=-2,$ $a$ est \Large $\ominus$\normalsize donc le signe est de la forme \fbox{$+~\upphi~-$}
+
+\medskip
+
+
+On en déduit le tableau de signe de $g'$ et le tableau de variations de $g~:$
+
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$g'(x)$/1,$g(x)$/2}{$0$,$2.5$,$5$}
+\tkzTabLine{,+,z,-,}
+\tkzTabVar{-/$-2$,+/$4.25$,-/$-2$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Pour compléter les valeurs aux extrémités des flèches, on fait un tableau de valeurs sur $\left[0;5\right]$ avec un pas de $0,5.$ Ce tableau a deux utilités~:
+
+\begin{itemize}
+\item[\textbullet] en prenant les valeurs $x=0,$ $x=2,5$ et $x=5,$ on peut compléter notre tableau de variations~;
+\item[\textbullet] en prenant les valeurs $x=0,$ $x=1,$ $x=2,$ $x=3,$ $x=4$ et $x=5,$ on obtient le tableau de valeurs de la question suivante.
+\end{itemize}
+
+Les autres valeurs ($x=0,5,$ $x=1,5,$ $x=3,5$ et $x=4,5$) ne nous servent à rien.
+\item ~{}
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+$x$ &$0$ &$1$ &$2$ &$3$ &$4$&$5$\\ \hline 
+$g(x)$&$-2$ &$2$ &$4$   & $4$ &$2$  &$-2$  \\ \hline
+\end{tabular}
+
+\end{center}
+\item Pour construire la courbe, on place les points du tableau de valeurs, mais aussi le point obtenu pour $x=2,5$ (maximum du tableau de variations).
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.1,-2.76)(6.7,4.68)
+\multips(0,-2)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.1,0)(6.7,0)}
+\multips(-1,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.76)(0,4.68)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.1,-2.76)(6.7,4.68)
+\rput{-180.}(2.5,4.25){\psplot[linewidth=2.pt,linecolor=ududff]{-2.5}{2.5}{x^2/2/0.5}}
+\psdots[dotstyle=*,linecolor=ududff](0.,-2.)
+\psdots[dotstyle=*,linecolor=ududff](2.,4.)
+\psdots[dotstyle=*,linecolor=ududff](3.,4.)
+\psdots[dotstyle=*,linecolor=ududff](1.,2.)
+\psdots[dotstyle=*,linecolor=ududff](2.5,4.25)
+\psdots[dotstyle=*,linecolor=ududff](4.,2.)
+\psdots[dotstyle=*,linecolor=ududff](5.,-2.)
+\end{pspicture*}
+\end{center}
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+On modélise le taux d’anticorps (en g/l) présents dans le sang d’un nourrisson en fonction de l’âge $t$ (en mois), depuis la naissance jusqu’à l’âge de 12 mois, par la formule suivante~:
+\[f(t)=0,1 t^2-1,6 t+12.\]
+
+\begin{enumerate}
+\item $f'(t)=0,1\times 2t-1,6\times 1+0=0,2t-1,6.$
+
+\medskip
+
+\textbf{Remarque~:} On traite les \og $t$ \fg~{} comme s'il s'agissait de \og $x$ \fg.
+\item On résout l'équation~:
+\begin{align*}0,2t-1,6&=0\\
+ 0,2t-\cancel{1,6}+\cancel{1,6}&=0+1,6\\
+ \frac{\cancel{0,2}t}{\cancel{0,2}}&=\frac{1,6}{0,2}\\
+ t&=8.
+ \end{align*}
+
+$a=0,2,$ $a$ est $\bigoplus$ donc le signe est de la forme \fbox{$-~\upphi~+$}
+
+\medskip
+
+
+On en déduit le tableau de signe de $f'$ et le tableau de variations de $f~:$
+
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$t$/1,$f'(t)$/1,$f(t)$/2}{$0$,$8$,$12$}
+\tkzTabLine{,-,z,+,}
+\tkzTabVar{+/$12$,-/$5.6$,+/$7.2$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Pour compléter les valeurs aux extrémités des flèches, on fait un tableau de valeurs sur $\left[0;12\right]$ avec un pas de $1,$ en prenant uniquement les valeurs qui nous intéressent.
+\item D'après le tableau de variations, le taux d'anticorps est minimal à l'âge de 8 mois.
+\end{enumerate}
+\end{exo}
+
+
+\begin{exo}
+
+On suppose que le pourcentage de femmes fumant du tabac quotidiennement en fonction de l’âge $x$ (en années), depuis 15 ans jusqu’à 40 ans, est le nombre $f(x)$ donné par la formule suivante~:
+
+\[f(x)=-0,05 x^2+3 x-10.\]
+
+\begin{enumerate}
+\item $f'(x)=-0,05\times 2x+3\times 1-0=-0,1x+3.$
+\item On résout l'équation~:
+\begin{align*}-0,1x+3&=0\\
+ -0,1x+\cancel{3}-\cancel{3}&=0-3\\
+ \frac{\cancel{-0,1}x}{\cancel{-0,1}}&=\frac{-3}{-0,1}\\
+ x&=30.
+ \end{align*}
+
+$a=-0,1,$ $a$ est \Large $\ominus$\normalsize donc le signe est de la forme \fbox{$+~\upphi~-$}
+
+\medskip
+
+
+On en déduit le tableau de signe de $f'$ et le tableau de variations de $f~:$
+
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$15$,$30$,$40$}
+\tkzTabLine{,+,z,-,}
+\tkzTabVar{-/$23.75$,+/$35$,-/$30$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Pour compléter les valeurs aux extrémités des flèches, on fait un tableau de valeurs sur $\left[15;40\right]$ avec un pas de $5,$ en prenant uniquement les valeurs qui nous intéressent.
+\item D'après le tableau de variations, c'est chez les femmes de 30 ans que le pourcentage de fumeuses est le plus important.
+\end{enumerate}
+\end{exo}
+
 \end{document}

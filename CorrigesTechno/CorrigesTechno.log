@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  12 DEC 2024 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  17 DEC 2024 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1843,12 +1843,18 @@ Package fourier-orns Warning: Command \danger is deprecated.
 .
 
 <xymatrix 2x2 66> <xymatrix 2x2 66> [19] <xymatrix 4x2 178> <xymatrix 3x2 122>
-<xymatrix 3x2 122> [20] <xymatrix 6x2 290> [21] [22] [23]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2276.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2276.
- (./CorrigesTechno.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2276.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2276.
+<xymatrix 3x2 122> [20] <xymatrix 6x2 290> [21] [22]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 2292.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 2292.
+ [23] [24] [25]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2439.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2439.
+
+(./CorrigesTechno.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2439.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2439.
 
 Package rerunfilecheck Info: File `CorrigesTechno.out' has not changed.
 (rerunfilecheck)             Checksum: 968466A13354324DC32029453F00BF61;437.
@@ -1856,15 +1862,15 @@ Package rerunfilecheck Info: File `CorrigesTechno.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2276.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2439.
  ) 
 Here is how much of TeX's memory you used:
- 36363 strings out of 483041
- 661700 string characters out of 5962452
+ 36380 strings out of 483041
+ 661998 string characters out of 5962452
  1221111 words of memory out of 5000000
- 50597 multiletter control sequences out of 15000+600000
- 642067 words of font info for 145 fonts, out of 8000000 for 9000
+ 50614 multiletter control sequences out of 15000+600000
+ 646639 words of font info for 157 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  60i,20n,72p,916b,1188s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesTechno.dvi (23 pages, 823824 bytes).
+Output written on CorrigesTechno.dvi (25 pages, 877892 bytes).
