@@ -7707,7 +7707,7 @@ La probabilité de faire au moins un 6 est
 \begin{enumerate}
 \item 	\begin{enumerate}
 		\item On répète $5$ épreuves indépendantes de Bernoulli de paramètre $0,103,$ donc $X$ suit la loi binomiale de paramètres $n=5, $ $p=0,103.$
-		\item L'espérance de $X$ est \[E(X)=n\times p=5\times 0,103=0,615.\] 
+		\item L'espérance de $X$ est \[E(X)=n\times p=5\times 0,103=0,515.\] 
 		
 		\item La probabilité qu'au moins un des 5 athlètes contrôlés présente un test positif est 
 		\[P(X\geq 1)=1-P(X=0)=1-\underbrace{\binom{5}{0}}_{=1}\times \underbrace{0,103^{0}}_{=1}\times (1-0,103)^{5-0}=1- 0,897^{5}\approx \np{0,419}.\]
@@ -8022,6 +8022,55 @@ On trace un exemple de courbe correspondant aux conditions de l'énoncé. On ind
 \end{pspicture*}
 \end{center}
 \end{multicols}
+
+\end{exo}
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item $\lim\limits_{x\to +\infty}\frac{1}{x}=0,$ donc 
+\[\lim\limits_{x\to +\infty}\left(2+\frac{3}{x}\right)=\lim\limits_{x\to +\infty}\left(2+3\times \frac{1}{x}\right)=2+3\times 0=2.\]
+\item $\lim\limits_{x\to +\infty}\frac{1}{x}=0,$ donc
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}\left(1-\frac{1}{x}\right)&= 1-0=1 \\
+        \lim\limits_{x\to +\infty}\left(1+\frac{1}{x}\right)&= 1+0=1
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}\left(1-\frac{1}{x}\right)\left(1+\frac{1}{x}\right)=  1\times 1=1.
+\]
+\item $\lim\limits_{x\to 0,~x>0}\frac{1}{x}=+\infty,$ donc
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to 0,~x>0}\left(1-\frac{1}{x}\right)= & \text{\og}~1-(+\infty)~\text{ \fg}=-\infty\\
+        \lim\limits_{x\to 0,~x>0}\left(1+\frac{1}{x}\right)= & \text{\og}~1+(+\infty)~\text{ \fg}=+\infty
+    \end{array}
+\right \}\implies \lim\limits_{x\to 0,~x>0}\left(1-\frac{1}{x}\right)\left(1+\frac{1}{x}\right)= \text{\og}~(-\infty)\times(+\infty)~\text{ \fg}=-\infty.
+\]
+\item \[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to -\infty}\text{e}^{x}&= 0 \\
+        \lim\limits_{x\to -\infty}3x&= \text{\og}~3\times(-\infty)~\text{ \fg}=-\infty\\
+        \lim\limits_{x\to -\infty}1&= 1
+    \end{array}
+\right \}\implies \lim\limits_{x\to -\infty}\left(\text{e}^{x}+3x-1\right)= \text{\og}~0+(-\infty)-1~\text{ \fg}=-\infty.
+\]
+\item $\lim\limits_{x\to -\infty}\left(1+x\right)=\text{\og}~1+(-\infty)~\text{ \fg}=-\infty,$ donc
+\[\lim\limits_{x\to -\infty}\frac{2}{1+x}=\text{\og}~\frac{2}{-\infty}~\text{ \fg}=0.\]
+\item $\lim\limits_{x\to 0,~x<0}\frac{1}{x^2}=+\infty,$ donc
+\[\lim\limits_{x\to 0,~x<0}\left(5+\frac{1}{x^2}\right)=\text{\og}~5+(+\infty)~\text{ \fg}=+\infty.\]
+\item
+\[\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}\text{e}^{-x}&= 0 \\
+        \lim\limits_{x\to +\infty}x&=+\infty
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}\frac{\exp(-x)}{x}= \text{\og}~\frac{0}{+\infty}~\text{ \fg}=0.
+\]
+\end{enumerate}
 
 \end{exo}
 

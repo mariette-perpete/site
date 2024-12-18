@@ -2436,4 +2436,172 @@ On en déduit le tableau de signe de $f'$ et le tableau de variations de $f~:$
 \end{enumerate}
 \end{exo}
 
+
+\begin{exo}
+
+On dispose d’une clôture de 100 mètres de long pour délimiter un terrain rectangulaire le long d’une rivière (la clôture est en pointillés –- on ne met pas de clôture le long de la rivière). On note $x$ et $x’$ les longueurs des côtés du terrain. 
+
+\begin{center}
+\newrgbcolor{wqwqwq}{0.3764705882352941 0.3764705882352941 0.3764705882352941}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.,0.)(7,5)
+\pspolygon[linecolor=blue,fillcolor=blue!30!white,fillstyle=solid,opacity=0.2](1.,4.)(6.,4.)(6.,3.)(1.,3.)
+\pspolygon[linewidth=0.pt,linecolor=green,fillcolor=green!30!white,fillstyle=solid,opacity=0.1](2,3)(2,1)(5,1)(5,3)
+\psline[linewidth=3pt,linestyle=dashed,dash=5pt 5pt](2.,3.)(2.,1.)
+\psline[linewidth=3pt,linestyle=dashed,dash=5pt 5pt](2.,1.)(5.,1.)
+\psline[linewidth=3pt,linestyle=dashed,dash=5pt 5pt](5.,1.)(5.,3.)
+\rput[tl](1.54,2.0){$x$}
+\rput[tl](5.14,2.0){$x$}
+\rput[tl](3.36,0.8){$x'$}
+%\psline[linecolor=gray](2.,3.)(2.,1.)
+%\psline[linecolor=gray](2.,1.)(5.,1.)
+%\psline[linecolor=gray](5.,1.)(5.,3.)
+%\psline[linecolor=gray](5.,3.)(2.,3.)
+%\rput[tl](3.0,2.0){terrain}
+\end{pspicture*}
+\end{center}
+
+
+On voudrait délimiter le terrain le plus grand possible.
+
+\begin{enumerate}
+\item\begin{enumerate}[(a)]
+\item $x$ est une longueur, donc $x\geq 0.$ Par ailleurs, la longueur $x$ apparaît deux fois sur la figure, donc $x$ ne peut pas dépasser 50 (car $2\times 50=100$).
+
+Conclusion~: on a l'encadrement \[0\leq x\leq 50.\]
+\item Le périmètre, 100~m, s'obtient en faisant le calcul
+\[x+x+x',\]
+donc \[2x+x'=100~;\]
+et donc
+\[x'=100-2x.\]
+\item L’aire du terrain est \begin{align*}x\times x'&=x\times \left(100-2x\right)&& \text{(car } x'=100-2x)\\
+&=x\times 100+x\times (-2x)&&\text{(on développe)}\\
+&=100x-2x^2.&&\end{align*}
+\end{enumerate}
+\item On définit à présent la fonction $f$  sur $\left[0;50\right]$ par 
+\[f(x)=100x-2x^2.\]
+Autrement dit, $f(x)$ donne l'aire du terrain pour une valeur donnée de $x.$
+\begin{enumerate}[(a)] \item $f'(x)=100\times 1-2\times 2x=100-4x.$
+\item On résout l'équation~:
+\begin{align*}100-4x&=0\\
+ \cancel{100}-4x-\cancel{100}&=0-100\\
+ \frac{\cancel{-4}x}{\cancel{-4}}&=\frac{-100}{-4}\\
+ x&=25.
+ \end{align*}
+
+$a=-4$ (\danger on prend le coefficient devant $x$), $a$ est \Large $\ominus$\normalsize donc le signe est de la forme \fbox{$+~\upphi~-$}
+
+\medskip
+
+
+On en déduit le tableau de signe de $f'$ et le tableau de variations de $f~:$
+
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$0$,$25$,$50$}
+\tkzTabLine{,+,z,-,}
+\tkzTabVar{-/$0$,+/$\np{1250}$,-/$0$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Pour compléter les valeurs aux extrémités des flèches, on fait un tableau de valeurs sur $\left[0;50\right]$ avec un pas de $25.$
+\item D'après le tableau de variations, l'aire du terrain est maximale lorsque $x=25.$ 
+
+\medskip
+
+\textbf{Remarque~:} Notons que, dans ce cas, $x'=100-2\times 25=50.$ Le terrain d'aire maximale a donc un côté adjacent à la rivière de 25~m de long et un côté parallèle à la rivière de 50~m de long.
+\end{enumerate}
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+Pour vérifier le fonctionnement de la régulation de la glycémie chez un individu, on lui injecte une quantité importante de glucose~: on mesure ensuite la concentration d’insuline plasmatique pendant 70 minutes.
+
+La concentration d’insuline plasmatique (unité non précisée) en fonction du temps $x$ (exprimé en minutes), est donnée par la fonction $f$ définie pour $x\in \left[0;70\right]$ par \[f(x)=-0,1x^2+10x+35.\]
+
+\begin{enumerate}
+\item ~{}
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}\hline
+$x$ &$0$ &$10$ &$20$ &$30$ &$40$&$50$&$60$&$70$\\ \hline 
+$f(x)$&$35$ &$125$ &$195$   & $245$ &$275$  &$285$ &$275$&$245$ \\ \hline
+\end{tabular}
+
+\end{center}
+\item ~{}
+
+
+\begin{center}
+\psset{xunit=0.1cm,yunit=0.01cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-7.003370746849452,-63.16883844530834)(94,348.23518900913695)
+\multips(0,0)(0,100.0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(94,0)}
+\multips(0,0)(10.0,0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,348.23518900913695)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=100.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(94,348.23518900913695)
+\rput{-180.}(50.,285.){\psplot[linewidth=2.pt,linecolor=blue]{-20.}{50.}{x^2/2/5.}}
+\psline[linewidth=2.pt,linestyle=dashed,dash=5pt 5pt,linecolor=red](0.,250.)(68.7082869338697,250.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=5pt 5pt,linecolor=red](31.291713066130296,250.)(31.291713066130296,0.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=5pt 5pt,linecolor=red](68.7082869338697,250.)(68.7082869338697,0.)
+\rput[tl](2,340){Concentration}
+\rput[lt](81.53046519648794,85){\parbox{11.126868368109374 cm}{temps \\(en min)}}
+\end{pspicture*}
+\end{center}
+
+\item ~{}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$f(x)$/2}{$0$,$50$,$70$}
+\tkzTabVar{-/$35$,+/$285$,-/$245$}
+\end{tikzpicture}
+\end{center}
+\item La concentration d'insuline est maximale au bout de 50~min.
+\item La concentration d'insuline est supérieure à $250$ de 32 à 68~min environ (voir pointillés rouges), donc pendant 36~min.
+\item On reprend les questions 3 et 4 à l'aide de la dérivation~:
+
+\[f'(x)=-0,1\times 2x+10\times 1+0=-0,2x+10.\]
+
+On résout l'équation~:
+
+\begin{align*}-0,2x+10&=0\\
+ -0,2x+\cancel{10}-\cancel{10}&=0-10\\
+ \frac{\cancel{-0,2}x}{\cancel{-0,2}}&=\frac{-10}{-0,2}\\
+ x&=50.
+ \end{align*}
+
+$a=-0,2,$ $a$ est \Large $\ominus$\normalsize donc le signe est de la forme \fbox{$+~\upphi~-$}
+
+\medskip
+
+
+On en déduit le tableau de signe de $f'$ et le tableau de variations de $f~:$
+
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$0$,$50$,$70$}
+\tkzTabLine{,+,z,-,}
+\tkzTabVar{-/$35$,+/$285$,-/$245$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+La concentration est bien maximale après 50~min.
+
+\end{enumerate}
+
+\end{exo}
+
 \end{document}
