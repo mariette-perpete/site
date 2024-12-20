@@ -8074,4 +8074,195 @@ On trace un exemple de courbe correspondant aux conditions de l'énoncé. On ind
 
 \end{exo}
 
+\begin{exo}
+
+La fonction $f$ est définie sur $\mathbb{R}^*$ par $f(x)=x+\frac{4}{x}.$ On note $\mathcal{C}$ sa courbe représentative.
+
+\medskip
+
+\textbf{Remarque~:} $\mathbb{R}^*=\mathbb{R}-\left\{0\right\}$ est l'ensemble de tous les nombres sauf 0 -- ici 0 est \og valeur interdite \fg.
+
+\begin{enumerate}
+\item On peut écrire $f(x)=1+4\times\frac{1}{x},$ donc pour tout $x\in \mathbb{R}^*~:$
+\[f'(x)=1+4\times\left(-\frac{1}{x^2}\right)=1-\frac{4}{x^2}=\frac{x^2}{x^2}-\frac{4}{x^2}=\frac{x^2-4}{x^2}.\]
+
+\medskip
+
+\textbf{Remarque~:} On aurait pu s'arrêter à $1-\frac{4}{x^2},$ mais c'eût été malcommode pour étudier le signe.
+
+\item Les racines de $x^2-4$ sont évidentes~: ce sont $x=2$ et $x=-2.$ On a donc le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=0.75]
+\tkzTabInit{$x$/1,$x^2-4$/1,$x^2$/1,$f'(x)$/1,$f(x)$/2}{$-\infty$,$-2$,$0$,$2$,$+\infty$}
+\tkzTabLine{,+,z,-,,-,z,+,}
+\tkzTabLine{,+,,+,z,+,,+,}
+\tkzTabLine{,+,z,-,d,-,z,+,}
+
+\tkzTabVar{-/$-\infty$,+/$-4$,-D+/$-\infty$/$+\infty$,-/$4$,+/$+\infty$}
+\end{tikzpicture}
+\end{center}
+\item Les bornes de l'ensemble de définition sont $-\infty,$ $0$ et $+\infty.$ Cela fait quatre limites à calculer (car il faut distinguer les limites à gauche et à droite en $0$). Pour les calculer, on écrit $f(x)=x+4\times\frac{1}{x}.$
+
+\medskip
+
+\begin{itemize}
+\item[\textbullet] \[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to -\infty}x&=-\infty \\
+        \lim\limits_{x\to -\infty}\frac{1}{x}&=0
+    \end{array}
+\right \}\implies \lim\limits_{x\to -\infty}\left(x+4\times \frac{1}{x}\right)=\text{\og}~-\infty+4\times 0~\text{ \fg}=-\infty.
+\] Cette limite ne permet de mettre aucune asymptote en évidence.
+\item[\textbullet] \[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}x&=+\infty \\
+        \lim\limits_{x\to +\infty}\frac{1}{x}&=0
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}\left(x+4\times \frac{1}{x}\right)=\text{\og}~+\infty+4\times 0~\text{ \fg}=+\infty.
+\] Cette limite ne permet de mettre aucune asymptote en évidence.
+\item[\textbullet] \[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to 0,~x<0}
+x&=0 \\
+        \lim\limits_{x\to 0,~x<0}
+\frac{1}{x}&=-\infty
+    \end{array}
+\right \}\implies \lim\limits_{x\to 0,~x<0}
+\left(x+4\times \frac{1}{x}\right)=\text{\og}~0+4\times (-\infty)~\text{ \fg}=-\infty.
+\] 
+
+On en déduit que la droite d'équation $x=0$ est asymptote (verticale) à $\mathcal{C}.$
+\item[\textbullet] \[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to 0,~x>0}
+x&=0 \\
+        \lim\limits_{x\to 0,~x>0}
+\frac{1}{x}&=+\infty
+    \end{array}
+\right \}\implies \lim\limits_{x\to 0,~x>0}
+\left(x+4\times \frac{1}{x}\right)=\text{\og}~0+4\times (+\infty)~\text{ \fg}=+\infty.
+\] 
+
+On en déduit (pour la 2\up{e} fois) que la droite d'équation $x=0$ est asymptote (verticale) à $\mathcal{C}.$
+\end{itemize}
+\item Avant de tracer la courbe, on construit la droite d'équation $x=0$ (axe des ordonnées, en pointillés rouge)~; puis on fait un petit tableau de valeurs. Il semble judicieux de choisir 1 carreau ou 1 cm pour 1 en abscisse, et 1 cm ou 1 carreau pour 2 en ordonnée.
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=0.5cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-5.2294168176799944,-9.843110727720001)(5.41057854832,9.994829350280005)
+\multips(0,-10)(0,2.0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-5.2294168176799944,0)(5.41057854832,0)}
+\multips(-5,0)(1.0,0){11}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-9.843110727720001)(0,9.994829350280005)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=2.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-5.2294168176799944,-9.843110727720001)(5.41057854832,9.994829350280005)
+\psline[linewidth=2pt,linestyle=dashed,dash=5pt 5pt,linecolor=red](0.,-9.843110727720001)(0.,9.994829350280005)
+\rput[tl](0.226991062320003,-2.7108061417199987){\red{$x=0$}}
+\psplot[linewidth=2pt,linestyle=dashed,dash=5pt 5pt,linecolor=green]{-5.2294168176799944}{5.41057854832}{(-0.--1.*x)/1.}
+\rput[tl](3.5203229613200016,3.213293842280003){\green{$y=x$}}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{-5.2294168176799944}{-0.01}{x+4.0/x}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{0.01}{5.41}{x+4.0/x}
+\rput[tl](2.117246649320002,6.5){\blue{$y=x+\frac{4}{x}$}}
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} La droite d'équation $y=x$ (tracée en pointillés verts) est asymptote en $+\infty$ et en $-\infty.$ Mais c'est une asymptote \og oblique \fg , et l'étude de ces asymptotes n'est pas au programme.\end{enumerate}
+
+
+\end{exo}
+
+
+
+\begin{exo}
+
+La fonction $g$ est définie sur $\mathbb{R}$ par $g(x)=\frac{\text{e}^{x}-1}{\text{e}^{x}+1}.$ On note $\mathcal{C}$ sa courbe représentative.
+
+\begin{enumerate}
+\item On utilise la formule pour la dérivée d'un quotient avec
+
+\begin{align*}
+&u(x)=\text{e}^{x}-1&&,&& v(x)=\text{e}^{x}+1, \\
+& u'(x)=\text{e}^{x}&&, &&v'(x)=\text{e}^{x}.\\
+\end{align*}
+
+On obtient, pour tout $x\in \mathbb{R}~:$
+\[g'(x)=\frac{\text{e}^{x}\times\left(\text{e}^{x}+1\right)-(\text{e}^{x}-1)\times \text{e}^{x}}{\left(\text{e}^{x}+1\right)^2}=\frac{\text{e}^{x}\times \text{e}^{x}+\text{e}^{x}\times 1-\text{e}^{x}\times \text{e}^{x}+1\times \text{e}^{x}}{\left(\text{e}^{x}+1\right)^2}=\frac{\cancel{\text{e}^{2x}}+\text{e}^{x}-\cancel{\text{e}^{2x}}+\text{e}^{x}}{\left(\text{e}^{x}+1\right)^2}=\frac{2\text{e}^{x}}{\left(\text{e}^{x}+1\right)^2}.\]
+
+\item Une exponentielle est strictement positive, donc on obtient le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$g'(x)$/1,$g(x)$/2}{$-\infty$,$+\infty$}
+\tkzTabLine{,+,}
+\tkzTabVar{-/$-1$,+/$1$}
+\end{tikzpicture}
+\end{center}
+\item $\lim\limits_{x\to -\infty}\text{e}^{x}= 0,$ donc 
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to -\infty}\left(\text{e}^{x}-1\right)&= 0-1=-1 \\
+        \lim\limits_{x\to -\infty}\left(\text{e}^{x}+1\right)&= 0+1=1
+    \end{array}
+\right \}\implies \lim\limits_{x\to -\infty}\frac{\text{e}^{x}-1}{\text{e}^{x}+1}=\frac{0-1}{0+1}=-1.
+\]
+On en déduit que la droite d'équation $y=-1$ est asymptote à $\mathcal{C}$ en $-\infty.$
+\item On multiplie le numérateur et le dénominateur par $\text{e}^{-x}.$ Pour tout réel $x~:$
+\[
+\frac{\text{e}^{x}-1}{\text{e}^x+1}
+=\frac{\left(\text{e}^{x}-1\right)\times\text{e}^{-x}}{\left(\text{e}^{x}+1\right)\times\text{e}^{-x}}
+=\frac{\text{e}^{x-x}-\text{e}^{-x}}{\text{e}^{x-x}+\text{e}^{-x}}
+=\frac{\text{e}^{0}-\text{e}^{-x}}{\text{e}^{0}+\text{e}^{-x}}
+=\frac{1-\text{e}^{-x}}{1+\text{e}^{-x}}.
+\]
+On peut alors calculer la limite~: $\lim\limits_{x\to +\infty}\text{e}^{-x}= 0,$ donc 
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}\left(1-\text{e}^{-x}\right)&= 1-0=1 \\
+        \lim\limits_{x\to +\infty}\left(1+\text{e}^{-x}\right)&= 1+0=1
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}g(x)=\lim\limits_{x\to +\infty}\frac{1-\text{e}^{-x}}{1+\text{e}^{-x}}=\frac{1-0}{1+0}=1.
+\]
+On en déduit que la droite d'équation $y=1$ est asymptote à $\mathcal{C}$ en $+\infty.$
+
+\item L'équation de $T$ est \[y=g'(0)(x-0)+g(0).\]
+
+Or $g(0)=\frac{\text{e}^{0}-1}{\text{e}^{0}+1}=\frac{1-1}{1+1}=\frac{0}{2}=0$ et $g'(0)=\frac{2\text{e}^{0}}{\left(\text{e}^{0}+1\right)^2}=\frac{2\times 1}{\left(1+1\right)^2}=\frac{2}{4}=0,5,$ donc 
+\begin{align*}
+T:y&=g'(0)(x-0)+g(0)\\
+T:y&=0,5(x-0)+0\\
+T:y&=0,5x.\end{align*}
+\item Avant de construire $\mathcal{C},$ on trace les deux asymptotes et la tangente $T.$
+
+
+\begin{center}
+\psset{xunit=1.5cm,yunit=1.5cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.750325797418209,-1.805256471552488)(4.866503654121987,1.5961505361655612)
+\multips(0,-1)(0,1.0){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-4.750325797418209,0)(4.866503654121987,0)}
+\multips(-4,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.805256471552488)(0,1.5961505361655612)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-4.750325797418209,-1.805256471552488)(4.866503654121987,1.5961505361655612)
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green]{-4.750325797418209}{4.866503654121987}{(--1.-0.*x)/1.}
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green]{-4.750325797418209}{4.866503654121987}{(-1.-0.*x)/1.}
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red]{-4.750325797418209}{4.866503654121987}{(-0.--0.5*x)/1.}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{-4.750325797418209}{4.866503654121987}{(EXP(x)-1.0)/(EXP(x)+1.0)}
+\rput[tl](1.5,1.3502656922341358){\red{$y=0,5x$}}
+\rput[tl](3.8829642783962846,1.3502656922341358){\green{$y=1$}}
+\rput[tl](-4.203915033126152,-1.1632238235093222){\green{$y=-1$}}
+\rput[tl](3,0.8){\blue{$y=f(x)$}}
+\end{pspicture*}
+\end{center}
+\end{enumerate}
+
+\end{exo}
+
+
+
 \end{document}

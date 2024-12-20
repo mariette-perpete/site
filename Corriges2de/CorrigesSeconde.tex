@@ -4614,4 +4614,288 @@ Conclusion~: $ N(-0,5~;~0).$
 
 \end{exo}
 
+
+\begin{exo}
+
+\begin{enumerate}
+\item  La figure est à la fin.
+\item La droite $(AB)$ a une équation de la forme $y=ax+b.$ D'après le cours~:
+
+\[a=\frac{y_B-y_A}{x_B-x_A}=\frac{3-1}{1-(-2)}=\frac{2}{3}.\]
+
+A ce stade, on sait que $(AB):y=\frac{2}{3}x+b.$
+
+\medskip
+
+La droite $(AB)$ passe par $A(-2;1),$ donc
+\begin{align*}1&=\frac{2}{3}\times (-2)+b\\
+1&=-\frac{4}{3}+b\\
+\frac{3}{3}+\frac{4}{3}&=\cancel{-\frac{4}{3}}+b+\cancel{\frac{4}{3}}\\
+\frac{7}{3}&=b
+\end{align*}
+
+
+Conclusion~: $(AB):y=\frac{2}{3}x+\frac{7}{3}.$
+
+
+\item On trace la droite $\Delta:y=-2x+3$ à partir d'un tableau de valeurs avec deux valeurs. Par exemple~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$x$&$0$&$2$\\ \hline
+$y$&$3$&$-1$\\ \hline
+\end{tabular}
+\end{center}
+\columnbreak
+\begin{align*}
+&-2\times 0+3=3\\
+&-2\times 2+3=-1\end{align*}
+\end{multicols}
+\item $(AB):y=\frac{2}{3}x+\frac{7}{3}$ coupe l'axe des abscisses en $M,$ donc l'ordonnée de $M$ est $0.$
+
+Pour déterminer l'abscisse de $M,$ on remplace donc $y$ par $0$ dans l'équation de $(AB)$ et on résout l'équation~:
+
+\begin{align*}
+0&=\frac{2}{3}x+\frac{7}{3}\\
+0-\frac{7}{3}&=\frac{2}{3}x+\cancel{\frac{7}{3}}-\cancel{\frac{7}{3}}\\
+\frac{-\frac{7}{3}}{\frac{2}{3}}&=\frac{\cancel{\frac{2}{3}}x}{\cancel{\frac{2}{3}}}\\
+-\frac{7}{\cancel{3}}\times \frac{\cancel{3}}{2}&=x\\
+-3,5&=x.\end{align*}
+
+Conclusion~: $ M(-3,5~;~0).$
+\item On a $(AB):y=\frac{2}{3}x+\frac{7}{3}$ et $\Delta:y=-2x+3.$ Pour déterminer les coordonnées de $N,$ on résout l'équation~:
+
+\begin{align*}
+\frac{2}{3}x+\frac{7}{3}&=-2x+3\\
+\frac{2}{3}x+\cancel{\frac{7}{3}}-\cancel{\frac{7}{3}}&=-2x+\frac{9}{3}-\frac{7}{3}\\
+\frac{2}{3}x+2x&=\cancel{-2x}+\frac{2}{3}+\cancel{2x}\\
+\frac{2}{3}x+\frac{6}{3}x&=\frac{2}{3}\\
+\dfrac{\cancel{\frac{8}{3}}x}{\cancel{\frac{8}{3}}}&=\dfrac{\frac{2}{3}}{\frac{8}{3}}\\
+x&=\frac{2}{\cancel{3}}\times \frac{\cancel{3}}{8}\\
+x&=0,25
+\end{align*}
+
+On en déduit $y=-2x+3=-2\times 0,25+3=2,5.$
+
+Conclusion~: $ N(0,25~;~2,5).$
+
+
+\end{enumerate}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,-2.9)(5.08,6.56)
+\multips(0,-2)(0,1.0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-4.3,0)(5.08,0)}
+\multips(-4,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.9)(0,6.56)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-4.3,-2.9)(5.08,6.56)
+\psplot[linewidth=2.pt,linecolor=ududff]{-4.3}{5.08}{(--6.-4.*x)/2.}
+\psplot[linewidth=2.pt,linecolor=red]{-4.3}{5.08}{(-7.-2.*x)/-3.}
+\rput[tl](-1.54,5.08){\ududff{$\Delta$}}
+\psdots[dotstyle=*,linecolor=ududff](0.,3.)
+\psdots[dotstyle=*,linecolor=ududff](2.,-1.)
+\psdots[dotstyle=*,linecolor=red](-2.,1.)
+\rput[bl](-1.88,0.68){\red{$A$}}
+\psdots[dotstyle=*,linecolor=red](1.,3.)
+\rput[bl](1.26,2.62){\red{$B$}}
+\psdots[dotstyle=*,linecolor=green](0.25,2.5)
+\rput[bl](0.08,1.92){\green{$N$}}
+\psdots[dotstyle=*,linecolor=green](-3.5,0.)
+\rput[bl](-3.78,0.24){\green{$M$}}
+\end{pspicture*}
+\end{center}
+
+
+
+\end{exo}
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item Pour tracer les droites $\Delta$ et $\mathrm{D},$ on fait un tableau de valeurs avec deux valeurs (je ne donne pas de détail).
+\item On a $\Delta:y=x-3$ et $\mathrm{D}:y=-2x+1.$ Pour déterminer les coordonnées de $M,$ on résout l'équation~:
+
+\begin{align*}
+x-3&=-2x+1\\
+x-\cancel{3}+\cancel{3}&=-2x+1+3\\
+x+2x&=\cancel{-2x}+4+\cancel{2x}\\
+\frac{\cancel{3}x}{\cancel{3}}&=\frac{4}{3}\\
+x&=\frac{4}{3}.
+\end{align*}
+
+On en déduit $y=x-3=\frac{4}{3}-\frac{9}{3}=-\frac{5}{3}.$
+
+Conclusion~: $M\left(\frac{4}{3};-\frac{5}{3}\right).$
+\item La droite $(AB)$ a une équation de la forme $y=ax+b.$ D'après le cours~:
+
+\[a=\frac{y_B-y_A}{x_B-x_A}=\frac{5-1}{3-(-2)}=\frac{4}{5}=0,8.\]
+
+A ce stade, on sait que $(AB):y=0,8x+b.$
+
+\medskip
+
+La droite $(AB)$ passe par $A(-2;1),$ donc
+\begin{align*}1&=0,8\times (-2)+b\\
+1&=-1,6+b\\
+1+1,6&=\cancel{-1,6}+b+\cancel{1,6}\\
+2,6&=b
+\end{align*}
+
+
+Conclusion~: $(AB):y=0,8x+2,6.$
+
+\item $(AB):y=0,8x+2,6$ coupe l'axe des abscisses en $N,$ donc l'ordonnée de $N$ est $0.$
+
+Pour déterminer l'abscisse de $N,$ on remplace donc $y$ par $0$ dans l'équation de $(AB)$ et on résout l'équation~:
+
+\begin{align*}
+0&=0,8x+2,6\\
+0-2,6&=0,8x+\cancel{2,6}-\cancel{2,6}\\
+\frac{-2,6}{0,8}&=\frac{\cancel{0,8}x}{\cancel{0,8}}\\
+-3,25&=x.\end{align*}
+
+Conclusion~: $ N(-3,25~;~0).$
+
+
+
+\end{enumerate}
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1 0.5 0}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.88,-3.76)(4.9,5.54)
+\multips(0,-3)(0,1.0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-4.88,0)(4.9,0)}
+\multips(-4,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-3.76)(0,5.54)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-4.88,-3.76)(4.9,5.54)
+\psplot[linecolor=green]{-4.06}{4.86}{(-3--1*x)/1}
+\psplot[linecolor=red]{-4.06}{4.86}{(--1-2*x)/1}
+\psplot[linecolor=ffxfqq]{-4.06}{4.86}{(--13--4*x)/5}
+\rput[tl](3.34,1.1){$\green{\Delta}$}
+\rput[tl](-1.65,3.45){$\red{D}$}
+\psdots[dotstyle=*,linecolor=blue](1.33,-1.67)
+\rput[bl](1.6,-1.82){\blue{$M$}}
+\psdots[dotstyle=*,linecolor=blue](-2,1)
+\rput[bl](-2.26,1.18){\blue{$A$}}
+\psdots[dotstyle=*,linecolor=blue](3,5)
+\rput[bl](2.74,5.15){\blue{$B$}}
+\psdots[dotstyle=*,linecolor=blue](-3.25,0)
+\rput[bl](-3.5,0.2){\blue{$N$}}
+\end{pspicture*}
+\end{center}
+
+\end{exo}
+
+\begin{exo}
+
+\begin{enumerate}
+\item \begin{enumerate}
+\item
+On trace la droite $d:y=1,5x-2,4$ à partir d'un tableau de valeurs avec deux valeurs. Par exemple~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$x$&$0$&$2$\\ \hline
+$y$&$-2,4$&$0,6$\\ \hline
+\end{tabular}
+\end{center}
+\columnbreak
+\begin{align*}
+&1,5\times 0-2,4=-2,4\\
+&1,5\times 2-2,4=0,6\end{align*}
+\end{multicols}
+
+\item La droite $\Delta$ est parallèle à $d,$ donc elles ont le même coefficient directeur. Or le coefficient directeur de $d$ est $1,5$ donc le coefficient directeur de $\Delta$ est $1,5$ également. On a donc
+\[\Delta:y=1,5x+b.\]
+\medskip
+
+La droite $\Delta$ passe par $A(1,4~;~2,2),$ donc
+\begin{align*}2,2&=1,5\times 1,4+b\\
+2,2&=2,1\\
+2,2-2,1&=\cancel{2,1}+b-\cancel{2,1}\\
+0,1&=b
+\end{align*}
+
+Conclusion~: $\Delta:y=1,5x+0,1.$
+
+\end{enumerate}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.38,-3.58)(5.48,3.38)
+\multips(0,-3)(0,1.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.38,0)(5.48,0)}
+\multips(-2,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-3.58)(0,3.38)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.38,-3.58)(5.48,3.38)
+\psplot[linewidth=2.pt,linecolor=ududff]{-2.38}{5.48}{(-4.8--3.*x)/2.}
+\rput[tl](3.46,2.74){\ududff{$d$}}
+\psplot[linewidth=2.pt,linecolor=red]{-2.38}{5.48}{(--0.2--3.*x)/2.}
+\rput[tl](-1.54,-1.5){\red{$\Delta$}}
+\psdots[dotstyle=*,linecolor=ududff](0.,-2.4)
+\psdots[dotstyle=*,linecolor=ududff](2.,0.6)
+\psdots[dotstyle=*,linecolor=red](1.4,2.2)
+\rput[bl](1.06,2.36){\red{$A$}}
+\end{pspicture*}
+\end{center}
+\item\begin{enumerate}
+\item On trace la droite $D:y=-1,5x-1$ à partir d'un tableau de valeurs avec deux valeurs. Par exemple~:
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$x$&$0$&$-2$\\ \hline
+$y$&$-1$&$2$\\ \hline
+\end{tabular}
+\end{center}
+\columnbreak
+\begin{align*}
+&-1,5\times 0-1=-1\\
+&-1,5\times (-2)-1=2\end{align*}
+\end{multicols}
+
+\item Le coefficient directeur de $D$ est $-1,5.$
+
+Le coefficient directeur de $(AB)$ est
+\[a=\frac{y_B-y_A}{x_B-x_A}=\frac{5,2-2}{-1-1}=\frac{3,2}{-2}=-1,6.\]
+
+Les droites  $D$ et $(AB)$ n'ont pas le même coefficient directeur, donc elles ne sont pas parallèles.
+\end{enumerate}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,-1.86)(4.8,6.3)
+\multips(0,-1)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-4.3,0)(4.8,0)}
+\multips(-4,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.86)(0,6.3)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-4.3,-1.86)(4.8,6.3)
+\psplot[linewidth=2.pt,linecolor=ududff]{-4.3}{4.8}{(--7.2-3.2*x)/2.}
+\psplot[linewidth=2.pt,linecolor=red]{-4.3}{4.8}{(-1.-1.5*x)/1.}
+\rput[tl](-3.4,2.96){\red{$D$}}
+\psdots[dotstyle=*,linecolor=ududff](1.,2.)
+\rput[bl](1.08,2.2){\ududff{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](-1.,5.2)
+\rput[bl](-0.92,5.4){\ududff{$B$}}
+\psdots[dotstyle=*,linecolor=red](0.,-1.)
+\psdots[dotstyle=*,linecolor=red](-2.,2.)
+\end{pspicture*}
+\end{center}
+\end{enumerate}
+
+
+
+
+\end{exo}
+
+
+
 \end{document}
