@@ -4898,4 +4898,385 @@ Les droites  $D$ et $(AB)$ n'ont pas le même coefficient directeur, donc elles 
 
 
 
+\begin{exo}
+
+
+\begin{enumerate}
+\item La droite $(AB)$ a une équation de la forme $y=ax+b.$ D'après le cours~:
+
+\[a=\frac{y_B-y_A}{x_B-x_A}=\frac{0-(-2)}{5-1}=\frac{2}{4}=0,5.\]
+
+A ce stade, on sait que $(AB):y=0,5x+b.$
+
+\medskip
+
+La droite $(AB)$ passe par $A(1;-2),$ donc
+\begin{align*}-2&=0,5\times 1+b\\
+-2&=0,5+b\\
+-2-0,5&=\cancel{0,5}+b-\cancel{0,5}\\
+-2,5&=b
+\end{align*}
+
+
+Conclusion~: $(AB):y=0,5x-2,5.$
+\item On trace la droite $\Delta:y=-2x+5$ à partir d'un tableau de valeurs avec deux valeurs. Par exemple~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$x$&$0$&$2$\\ \hline
+$y$&$5$&$1$\\ \hline
+\end{tabular}
+\end{center}
+\columnbreak
+\begin{align*}
+&-2\times 0+5=5\\
+&-2\times 2+5=1\end{align*}
+\end{multicols}
+\item On a $(AB):y=0,5x-2,5$ et $\Delta:y=-2x+5.$ Pour déterminer les coordonnées de $M,$ on résout l'équation~:
+
+\begin{align*}
+0,5x-2,5&=-2x+5\\
+0,5x-\cancel{2,5}+\cancel{2,5}&=-2x+5+2,5\\
+0,5x+2x&=\cancel{-2x}+7,5+\cancel{2x}\\
+\frac{\cancel{2,5}x}{\cancel{2,5}}&=\frac{7,5}{2,5}\\
+x&=3.
+\end{align*}
+
+On en déduit $y=0,5x-2,5=0,5\times 3-2,5=1,5-2,5=-1.$
+
+Conclusion~: $M(3;-1).$
+\item $d$ est parallèle à $\Delta,$ donc elles ont le même coefficient directeur ($-2$)~; on a donc $d:y=-2x+b.$ 
+
+\medskip
+
+Pour trouver $b,$ on utilise le fait que $d$ passe par $C(\underset{x}{-2};\underset{y}{3})~:$
+
+\begin{align*}3&=-2\times (-2)+b\\
+3&=4+b\\
+3-4&=\cancel{4}+b-\cancel{4}\\
+-1&=b
+\end{align*}
+
+
+Conclusion~: $d:y=-2x-1.$
+
+
+\item $d:y=-2x-1$ coupe l'axe des abscisses en $N,$ donc l'ordonnée de $N$ est $0.$
+
+Pour déterminer l'abscisse de $N,$ on remplace donc $y$ par $0$ dans l'équation de $d$ et on résout l'équation~:
+
+\begin{align*}
+0&=-2x-1\\
+0+1&=-2x-\cancel{1}+\cancel{1}\\
+\frac{1}{-2}&=\frac{\cancel{-2}x}{\cancel{-2}}\\
+-0,5&=x.\end{align*}
+
+Conclusion~: $ N(-0,5~;~0).$
+
+
+
+\end{enumerate}
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.76,-2.76)(5.94,5.1)
+\multips(0,-2)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.76,0)(5.94,0)}
+\multips(-2,0)(1.0,0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.76)(0,5.1)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.76,-2.76)(5.94,5.1)
+\psplot[linewidth=2.pt,linecolor=ffxfqq]{-2.76}{5.94}{(-10.--2.*x)/4.}
+\psplot[linewidth=2.pt,linecolor=blue]{-2.76}{5.94}{(--10.-4.*x)/2.}
+\rput[tl](0.4,4.4){\blue{$\Delta$}}
+\psplot[linewidth=2.pt,linecolor=magenta]{-2.76}{5.94}{(-2.-4.*x)/2.}
+\psdots[dotstyle=*,linecolor=ffxfqq](1.,-2.)
+\rput[bl](1.08,-1.8){\ffxfqq{$A$}}
+\psdots[dotstyle=*,linecolor=ffxfqq](5.,0.)
+\rput[bl](5.08,0.2){\ffxfqq{$B$}}
+\psdots[dotstyle=*,linecolor=blue](0.,5.)
+\psdots[dotstyle=*,linecolor=blue](2.,1.)
+\psdots[dotstyle=*,linecolor=green](3.,-1.)
+\rput[bl](3.08,-0.8){\green{$M$}}
+\psdots[dotstyle=*,linecolor=magenta](-2.,3.)
+\rput[bl](-1.92,3.2){\magenta{$C$}}
+\psdots[dotstyle=*,linecolor=green](-0.5,0.)
+\rput[bl](-0.42,0.2){\green{$N$}}
+\end{pspicture*}
+\end{center}
+
+\end{exo}
+
+
+
+
+
+\begin{exo}
+
+Les deux questions sont indépendantes.
+
+\begin{enumerate}
+\item Soient $A(0;-4),$ $B(3;0,5),$ $C(-2;2)$ et $D(1;0).$
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.08,-4.76)(5.52,2.84)
+\multips(0,-4)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.08,0)(5.52,0)}
+\multips(-3,0)(1.0,0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-4.76)(0,2.84)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.08,-4.76)(5.52,2.84)
+\psplot[linewidth=2.pt,linecolor=blue]{-3.08}{5.52}{(-12.--4.5*x)/3.}
+\psplot[linewidth=2.pt,linecolor=red]{-3.08}{5.52}{(--2.-2.*x)/3.}
+\psdots[dotstyle=*,linecolor=blue](0.,-4.)
+\rput[bl](0.3,-3.96){\blue{$A$}}
+\psdots[dotstyle=*,linecolor=blue](3.,0.5)
+\rput[bl](3.2,0.48){\blue{$B$}}
+\psdots[dotstyle=*,linecolor=red](-2.,2.)
+\rput[bl](-1.92,2.2){\red{$C$}}
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\rput[bl](1.08,0.2){\red{$D$}}
+\end{pspicture*}
+\end{center}
+
+Le coefficient directeur de $(AB)$ est \[a=\frac{y_B-y_A}{x_B-x_A}=\frac{0,5-(-4)}{3-0}=\frac{4,5}{3}=1,5.\]
+
+Le coefficient directeur de $(CD)$ est \[a'=\frac{y_D-y_C}{x_D-x_C}=\frac{0-2}{1-(-2)}=\frac{-2}{3}.\]
+
+
+On calcule le produit~:
+\[a\times a'=1,5\times \frac{-2}{3}=-\frac{1,5\times 2}{3}=-\frac{3}{3}=-1.\]
+
+D'après la propriété donnée avant l'énoncé, les droites $(AB)$ et $(CD)$ sont perpendiculaires.
+
+\item Soient $A(-1;0),$ $B(2;4),$ $C(5;-2)~;$ et $\Delta$ la perpendiculaire à $(BC)$ passant par $A.$
+
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.2,-2.5)(6.5,4.76)
+\multips(0,-2)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.2,0)(6.5,0)}
+\multips(-2,0)(1.0,0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.5)(0,4.76)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.2,-2.5)(6.5,4.76)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](2.6205266807797942,1.8102633403898971)(2.810263340389897,1.4307900211696913)(3.189736659610103,1.6205266807797944)(3.,2.)
+\psplot[linewidth=2.pt,linecolor=blue]{-2.2}{6.5}{(--24.-6.*x)/3.}
+\psplot[linewidth=2.pt,linecolor=red]{-2.2}{6.5}{(--3.--3.*x)/6.}
+\rput[tl](4.1,2.36){\red{$\Delta$}}
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\rput[bl](-0.92,0.2){\red{$A$}}
+\psdots[dotstyle=*,linecolor=blue](2.,4.)
+\rput[bl](2.08,4.2){\blue{$B$}}
+\psdots[dotstyle=*,linecolor=blue](5.,-2.)
+\rput[bl](5.08,-1.8){\blue{$C$}}
+\end{pspicture*}
+\end{center}
+
+Le coefficient directeur de $(BC)$ est
+\[a=\frac{y_C-y_B}{x_C-x_B}=\frac{-2-4}{5-2}=\frac{-6}{3}=-2.\]
+
+On note $a'$ le coefficient directeur de $\Delta.$ Comme $(BC)\perp\Delta,$ d'après la propriété donnée avant l'énoncé, $a\times a'=-1,$ soit $(-2)\times a'=-1.$ On a donc
+\[\frac{\cancel{-2}a'}{\cancel{-2}}=\frac{-1}{-2}\qquad\text{et ainsi}\qquad a'=0,5.\]
+
+A ce stade, on sait que $\Delta:y=0,5x+b.$
+
+\medskip
+
+La droite $\Delta$ passe par $A(-1;0),$ donc
+\begin{align*}0&=0,5\times (-1)+b\\
+0&=-0,5+b\\
+0+0,5&=\cancel{-0,5}+b+\cancel{0,5}\\
+0,5&=b
+\end{align*}
+
+Conclusion~: $\Delta:y=0,5x+0,5.$
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+
+
+
+
+\begin{exo}
+
+Le tableau suivant donne la part (en pourcentage) des voitures diesel dans les ventes
+de voitures neuves, en France, entre 2012 et 2017.
+
+\begin{center}
+\begin{tabular}{|m{3cm}|*{6}{c|}}\hline
+Rang de l'année 	&0 		&1 		&2 		&3 		&4 		&5\\ \hline
+\% des voitures 
+diesel	&73 	&67 	&64 	&58 	&52 	&48\\ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{enumerate}
+\item On place les points (en bleu) dans un repère comme s'il s'agissait de tracer la courbe représentative d'une fonction. On ne les relie pas.
+\item Les points placés à la question précédente sont \og presque alignés \fg. La calculatrice permet d'obtenir l'équation de la droite \og la plus proche \fg~{} de ces points, qu'on appelle droite d'ajustement (ou droite de régression).
+
+\medskip
+
+Avec une Calculatrice collège, la procédure est la suivante~:
+
+\begin{itemize}
+\item[\textbullet] touche \fbox{MENU} -- on choisit \fbox{2:Statistiques} puis  \fbox{2:y=ax+b}
+\item[\textbullet] on entre les valeurs du tableau en colonne
+\item[\textbullet] touche \fbox{OPTN} -- on choisit \fbox{4:Calc régression} -- on lit les valeurs de a et b
+\end{itemize}
+
+On obtient $\text{a}\approx -5,0$ et $\text{b}\approx 72,9.$ La droite d'ajustement $D$ a donc pour équation $y=-5x+72,9.$
+
+
+\item On trace la droite $D:y=-5x+72,9$ (en rouge) à partir d'un tableau de valeurs avec deux valeurs. Par exemple~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$x$&$0$&$5$\\ \hline
+$y$&$72,9$&$47,9$\\ \hline
+\end{tabular}
+\end{center}
+\columnbreak
+\begin{align*}
+&-5\times 0+72,9=72,9\\
+&-5\times 5+72,9=47,9\end{align*}
+\end{multicols}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=0.8cm,yunit=0.08cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.5106331745881683,-10.869875051076752)(10.505288442894784,76.57272285832903)
+\multips(0,0)(0,10.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(10.505288442894784,0)}
+\multips(0,0)(1.0,0){13}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,76.57272285832903)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=10.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(10.505288442894784,76.57272285832903)
+\psplot[linewidth=2.pt,linecolor=red]{0.}{10.505288442894784}{(--364.5-25.*x)/5.}
+\rput[tl](5.528396815851515,49.20973303633811){\red{$D$}}
+\psline[linewidth=2.pt,linestyle=dashed,dash=4pt 4pt,linecolor=red](0.,27.9)(9.,27.9)
+\psline[linewidth=2.pt,linestyle=dashed,dash=4pt 4pt,linecolor=red](9.,27.9)(9.,0.)
+\rput[tl](7.927615488649267,-7){\red{année 2021}}
+\rput[tl](-0.9356138232564758,27){\red{27,9}}
+\psline[linewidth=2.pt]{->}(6.956031067433648,11.734333932307058)(9.,20.9)
+\rput[tl](4.3,13.915441816668652){ventes réelles}
+\psdots[dotstyle=*,linecolor=ududff](0.,73.)
+\psdots[dotstyle=*,linecolor=ududff](1.,67.)
+\psdots[dotstyle=*,linecolor=ududff](2.,64.)
+\psdots[dotstyle=*,linecolor=ududff](3.,58.)
+\psdots[dotstyle=*,linecolor=ududff](4.,52.)
+\psdots[dotstyle=x,linecolor=red](0.,72.9)
+\psdots[dotstyle=x,linecolor=red](5.,47.9)
+\psdots[dotstyle=*,linecolor=green](9.,20.9)
+\end{pspicture*}
+\end{center}
+
+La droite est toute proche des points bleus. Elle \og modélise \fg~{} l'évolution de la part des voitures diesel à partir de 2012.
+
+\medskip
+
+Si cet ajustement était fiable, en 2021 (année n°9), le pourcentage de diesels dans les ventes de voitures neuves devrait être approximativement égal à
+\[-5\times 9+72,9=27,9\]
+(voir pointillés rouges).
+
+\medskip
+
+En réalité, les diesels ne représentaient plus que 20,9~\% des ventes en 2021, ce qui montre que l'ajustement proposé dans l'énoncé n'est plus valable -- c'est à partir de 2018 que les ventes commencent à \og décrocher \fg .
+\end{enumerate}
+
+
+\end{exo}
+
+
+\begin{exo}
+
+Au 18° siècle, l'étude des distances entre les planètes et le soleil a conduit les astronomes Titius et Bode à imaginer l'existence d'une planète encore inconnue, Cérès, entre Mars et Jupiter.
+
+ Le graphique ci-dessous donne les distances des planètes au soleil, en unités astronomiques ($1\text{~UA}=\text{distance terre-soleil}$).
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+Nom &Vénus&Terre&Mars&Cérès&Jup.&Satur.\\
+\hline
+  Rang	&1	&2&	3&	4&5&6	\\
+	\hline
+   Distance	&0,7	&1&	1,5&	?& 5,2&9,5\\
+		
+		\hline
+\end{tabular}
+\end{center}
+
+
+\begin{enumerate}
+\item On construit le nuage de points associé à cette série comme dans l'exercice précédent. On laisse vide l'emplacement pour la planète n°4.
+ \item Pour tracer la courbe de la fonction, on fait un tableau de valeurs sur $\left[0;6\right]$ avec un pas de 1.
+ 
+ \smallskip
+
+\begin{center}
+\begin{tabularx}{0.6\linewidth}{|c|*{8}{>{\centering \arraybackslash}X|}}\hline
+$x$& $0$ &$1$ &$2$ &$3$ &$4$ &$5$&$6$ \\ \hline 
+$f(x)$&$0,7$ &$1$ &$1,6$   & $2,8$ &$5,2$  &$6$&$10$ \\ \hline
+\end{tabularx}
+\end{center}
+
+\smallskip
+
+
+Détail de deux calculs~:
+\begin{itemize}
+\item[\textbullet] $f(0)=0,4 +0,15\times 2^0=0,4+0,15\times 1=0,4+0,15=0,55\qquad (\text{\danger} 2^0=1).$
+\item[\textbullet] $f(3)=0,4 +0,15\times 2^3=0,4+0,15\times 8=0,4+1,2=1,6.$
+\end{itemize}
+
+\medskip
+
+On trace la courbe en rouge dans le repère ci-dessous.
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1cm,yunit=0.75cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.8838,-1.0834)(7.8524,10.8472)
+\multips(0,0)(0,1.0){12}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(7.8524,0)}
+\multips(0,0)(1.0,0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,10.8472)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(7.8524,10.8472)
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{0}{6}{0.4+0.15*2.0^(x)}
+\psline[linewidth=2.pt,linestyle=dashed,dash=3pt 3pt,linecolor=red](0.,2.8)(4.,2.8)
+\psline[linewidth=2.pt,linestyle=dashed,dash=3pt 3pt,linecolor=red](4.,2.8)(4.,0.)
+\rput[tl](3.5206,-0.5994){\red{Cérès}}
+\rput[tl](-0.7628,2.7886){\red{2,8}}
+\psdots[dotstyle=*,linecolor=blue](1.,0.7)
+\psdots[dotstyle=*,linecolor=blue](2.,1.)
+\psdots[dotstyle=*,linecolor=blue](3.,1.5)
+\psdots[dotstyle=*,linecolor=blue](5.,5.2)
+\psdots[dotstyle=*,linecolor=blue](6.,9.5)
+\psdots[dotstyle=*,linecolor=red](4.,2.8)
+\end{pspicture*}
+\end{center}
+
+ 
+
+\item Suivant l'ajustement par la fonction $f,$ la planète n°4 Cérès devrait se trouver à 2,8 U.A. du soleil.
+
+\medskip
+
+\textbf{Remarque~:} Il existe bel et bien une planète naine Cérès, dans la ceinture d'astéroïde, entre Mars et Jupiter. Le modèle de l'énoncé a également participé à la découverte d'Uranus. Pourtant, on considère aujourd'hui que ce modèle n'est pas fiable et que son efficacité à détecter des planètes relève d'un \og coup de chance \fg~{} formidable (le terme savant est \og sérendipité \fg). On renvoie le lecteur à l'article Wikipédia sur la loi de Titius-Bode pour plus de détails.
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+
 \end{document}

@@ -87,6 +87,9 @@
   aboveskip    = 1ex
 }
 
+\newcommand\setItemnumber[1]{\setcounter{enumi}{\numexpr#1-1\relax}}
+
+
 \title{Mathématiques -- Terminale spécialité}
 
 \date{Corrigés des exercices}
@@ -8264,5 +8267,185 @@ T:y&=0,5x.\end{align*}
 \end{exo}
 
 
+
+\begin{exo}
+
+\begin{enumerate}
+\item On met le terme de plus haut degré, $x^2,$ en facteur~:
+\[x^2-5x+3=x^2\left(1-\frac{5x}{x^2}+\frac{3}{x^2}\right)=x^2\left(1-\frac{5}{x}+\frac{3}{x^2}\right).\]
+On a donc
+
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}x^2&=  +\infty\\
+        \lim\limits_{x\to +\infty}\left(1-\frac{5}{x}+\frac{3}{x^2}\right) &= 1-5\times 0+3\times 0=1
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}\left(x^2-5x+3\right)=\lim\limits_{x\to +\infty}x^2\left(1-\frac{5}{x}+\frac{3}{x^2}\right)= \text{\og}~(+\infty)\times 1~\text{ \fg}=+\infty.
+\]
+
+\item On met le terme de plus haut degré, $x^3,$ en facteur~:
+\[x^3-2x=x^3\left(1-\frac{2x}{x^3}\right)=x^3\left(1-\frac{2}{x^2}\right).\]
+On a donc
+
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to -\infty}x^3&=  -\infty\\
+        \lim\limits_{x\to -\infty}\left(1-\frac{2}{x^2}\right) &= 1-2\times 0=1
+    \end{array}
+\right \}\implies \lim\limits_{x\to -\infty}\left(x^3-2x\right)=\lim\limits_{x\to -\infty}x^3\left(1-\frac{2}{x^2}\right)= \text{\og}~-\infty\times 1~\text{ \fg}=-\infty.
+\]
+\item On met $x$ en facteur au numérateur et au dénominateur~:
+\[\frac{6x-1}{2x+1}=\frac{\cancel{x}\left(6-\frac{1}{x}\right)}{\cancel{x}\left(2+\frac{1}{x}\right)}=\frac{6-\frac{1}{x}}{2+\frac{1}{x}}.\]
+
+On a donc
+
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}\left(6-\frac{1}{x}\right)&= 6-0=6\\
+        \lim\limits_{x\to +\infty}\left(2+\frac{1}{x}\right) &= 2+0=2
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}\frac{6x-1}{2x+1}=\lim\limits_{x\to +\infty}\frac{6-\frac{1}{x}}{2+\frac{1}{x}}= \frac{6}{2}=3.
+\]
+
+\end{enumerate}
+
+
+\end{exo}
+
+
+
+\begin{exo}
+
+~{}
+
+
+\begin{enumerate}
+\setItemnumber{1}
+\item \item ~{}
+
+\begin{center}
+\newcommand*{\z}{\colorbox{green}{$0$}}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$x-1$/1}{$-\infty$,$\textcolor{orange}{\blacktriangleright}~ 1~\textcolor{blue!50!black}{\blacktriangleleft}$,$+\infty$}
+\draw[fill=red!50,opacity=0.4](N21) rectangle (N32);
+\draw[fill=yellow!50,opacity=0.4](N11) rectangle (N22);
+\tkzTabLine{,-,\z, +,}
+\end{tikzpicture}
+\end{center}
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+
+Quand $x$ se rapproche de $1$ en étant supérieur à $1$, donc par la droite (flèche \textcolor{blue!50!black}{$\blacktriangleleft$}), $x-1$ se rapproche de $\colorbox{green}{0}$ en étant \colorbox{red!50}{positif}, donc
+
+\[\lim\limits_{x\to 1,x>1}\frac{1}{x-1}=\text{\og}~\frac{1}{\colorbox{green}{0}^{\colorbox{red!50}{+}}}~\text{ \fg}=+\infty.\]
+
+
+%\begin{center}
+%\newcommand*{\z}{\colorbox{green}{$0$}}
+%\begin{tikzpicture}[scale=0.8]
+%\tkzTabInit{$x$/1,$x-1$/1}{$-\infty$,$\textcolor{orange}{\blacktriangleright}~ 1~\textcolor{white}{\blacktriangleleft}$,$+\infty$}
+%\draw[fill=red!50,opacity=0.4](N11) rectangle (N22);
+%\tkzTabLine{,-,\z, +,}
+%\end{tikzpicture}
+%\end{center}
+
+
+%\medskip
+
+\columnbreak
+
+
+Quand $x$ se rapproche de $1$ en étant inférieur à $1$, donc par la gauche (flèche \textcolor{orange}{$\blacktriangleright$}), $x-1$ se rapproche de $\colorbox{green}{0}$ en étant \colorbox{yellow!50}{négatif}, donc
+
+\[\lim\limits_{x\to 1,x<1}\frac{1}{x-1}=\text{\og}~\frac{1}{\colorbox{green}{0}^{\colorbox{yellow!50}{-}}}~\text{ \fg}=-\infty.\]
+\end{multicols}
+\end{enumerate}
+
+\begin{enumerate}
+\setItemnumber{3}
+\item \item ~{}
+
+\begin{center}
+\newcommand*{\z}{\colorbox{green}{$0$}}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$-x+4$/1}{$-\infty$,$\textcolor{orange}{\blacktriangleright}~ 1~\textcolor{blue!50!black}{\blacktriangleleft}$,$+\infty$}
+\draw[fill=yellow!50,opacity=0.4](N21) rectangle (N32);
+\draw[fill=red!50,opacity=0.4](N11) rectangle (N22);
+\tkzTabLine{,+,\z, -,}
+\end{tikzpicture}
+\end{center}
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+
+Quand $x$ se rapproche de $4$ en étant supérieur à $4$, donc par la droite (flèche \textcolor{blue!50!black}{$\blacktriangleleft$}), $-x+4$ se rapproche de $\colorbox{green}{0}$ en étant \colorbox{yellow!50}{négatif}, donc
+
+\[\lim\limits_{x\to 4,x>4}\frac{x+2}{-x+4}=\text{\og}~\frac{4+2}{\colorbox{green}{0}^{\colorbox{yellow!50}{-}}}~\text{ \fg}=\text{\og}~\frac{6}{0^-}~\text{ \fg}=-\infty.\]
+
+
+%\begin{center}
+%\newcommand*{\z}{\colorbox{green}{$0$}}
+%\begin{tikzpicture}[scale=0.8]
+%\tkzTabInit{$x$/1,$x-1$/1}{$-\infty$,$\textcolor{orange}{\blacktriangleright}~ 1~\textcolor{white}{\blacktriangleleft}$,$+\infty$}
+%\draw[fill=red!50,opacity=0.4](N11) rectangle (N22);
+%\tkzTabLine{,-,\z, +,}
+%\end{tikzpicture}
+%\end{center}
+
+
+%\medskip
+\columnbreak
+Quand $x$ se rapproche de $4$ en étant inférieur à $4$, donc par la gauche (flèche \textcolor{orange}{$\blacktriangleright$}), $-x+4$ se rapproche de $\colorbox{green}{0}$ en étant \colorbox{red!50}{positif}, donc
+
+
+\[\lim\limits_{x\to 4,x<4}\frac{x+2}{-x+4}=\text{\og}~\frac{4+2}{\colorbox{green}{0}^{\colorbox{red!50}{+}}}~\text{ \fg}=\text{\og}~\frac{6}{0^+}~\text{ \fg}=+\infty.\]
+
+\end{multicols}
+\end{enumerate}
+
+\begin{enumerate}
+
+
+\setItemnumber{5}
+\item \item ~{}
+
+\begin{itemize}
+\item[\textbullet] On résout l'équation $\text{e}^{x}-\text{e}^{-x}=0$ pour construire le tableau de signe de $\text{e}^{x}-\text{e}^{-x}~:$
+\[\text{e}^{x}-\text{e}^{-x}=0\iff \text{e}^{x}=\text{e}^{-x}\iff x=-x\iff x+x=0\iff 2x=0\iff x=0.\]
+
+\item[\textbullet] Pour obtenir le signe, on remplace par des valeurs de $x~:$
+\begin{itemize}
+\item Par exemple, pour la case de droite, $\text{e}^{1}-\text{e}^{-1}\approx 3,09~;$ donc il faut mettre un $\oplus.$
+\item Par exemple, pour la case de gauche, $\text{e}^{-1}-\text{e}^{-(-1)}\approx -3,09~;$ donc il faut mettre un $\ominus.$
+\end{itemize}
+\end{itemize}
+
+\begin{center}
+\newcommand*{\z}{\colorbox{green}{$0$}}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$\text{e}^{x}-\text{e}^{-x}$/1}{$-\infty$,$\textcolor{orange}{\blacktriangleright}~ 0~\textcolor{blue!50!black}{\blacktriangleleft}$,$+\infty$}
+\draw[fill=red!50,opacity=0.4](N21) rectangle (N32);
+\draw[fill=yellow!50,opacity=0.4](N11) rectangle (N22);
+\tkzTabLine{,-,\z, +,}
+\end{tikzpicture}
+\end{center}
+
+\begin{align*}
+\lim\limits_{x\to 0,x>0}\frac{\text{e}^{x}+\text{e}^{-x}}{\text{e}^{x}-\text{e}^{-x}}&=\text{\og}~\frac{\text{e}^{0}+\text{e}^{-0}}{\colorbox{green}{0}^{\colorbox{red!50}{+}}}~\text{ \fg}=\text{\og}~\frac{2}{0^+}~\text{ \fg}=+\infty,
+\\
+\lim\limits_{x\to 0,x<0}\frac{\text{e}^{x}+\text{e}^{-x}}{\text{e}^{x}-\text{e}^{-x}}&=\text{\og}~\frac{\text{e}^{0}+\text{e}^{-0}}{\colorbox{green}{0}^{\colorbox{yellow!50}{-}}}~\text{ \fg}=\text{\og}~\frac{2}{0^-}~\text{ \fg}=-\infty.
+\end{align*}
+
+
+\end{enumerate}
+
+
+\end{exo}
 
 \end{document}
