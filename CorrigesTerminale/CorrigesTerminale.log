@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  2 JAN 2025 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  8 JAN 2025 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2105,12 +2105,12 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 7603.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 7603.
-[73] [74] [75] [76] [77] [78] [79] [80] [81] [82]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8451.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 8451.
+[73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8624.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 8624.
  (./CorrigesTerminale.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 8451.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8451.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 8624.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8624.
 
 Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 (rerunfilecheck)             Checksum: 6B85140962FC682F1CD40BC545795101;505.
@@ -2119,15 +2119,15 @@ Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8451.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8624.
  ) 
 Here is how much of TeX's memory you used:
- 41188 strings out of 483041
- 749829 string characters out of 5962452
+ 41190 strings out of 483041
+ 749871 string characters out of 5962452
  1458770 words of memory out of 5000000
- 55365 multiletter control sequences out of 15000+600000
+ 55367 multiletter control sequences out of 15000+600000
  703426 words of font info for 218 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  60i,20n,75p,919b,2445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesTerminale.dvi (82 pages, 1970832 bytes).
+Output written on CorrigesTerminale.dvi (83 pages, 2015752 bytes).
