@@ -8620,5 +8620,520 @@ On en déduit~:
 \end{exo}
 
 
+\begin{exo}
+
+La fonction $k$ est définie sur $\left[0;+\infty\right[$ par \[k(x)=x^2\text{e}^{-x}.\]
+
+
+
+\begin{enumerate}
+\item On utilise la formule pour la dérivée d'un produit, avec
+
+\begin{align*}
+&u(x)=x^2&&,&& v(x)=\text{e}^{-x}, \\
+& u'(x)=2x&&, &&v'(x)=-\text{e}^{-x}.\\
+\end{align*}
+
+
+On obtient, pour tout $x\in \left[0;+\infty\right[~:$
+\[k'(x)=2x\times \text{e}^{-x}+x^2\times \left(-\text{e}^{-x}\right)=\left(2x-x^2\right)\text{e}^{-x}.\]
+\item $2x-x^2=x(2-x),$ donc les racines de $2x-x^2$ sont 0 et 2 et on a le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$2x-x^2$/1,$\text{e}^{-x}$/1,$k'(x)$/1,$k(x)$/2}{$0$,$2$,$+\infty$}
+\tkzTabLine{z,+,z,-,}
+\tkzTabLine{,+,,+,}
+\tkzTabLine{z,+,z,-,}
+\tkzTabVar{-/$0$,+/$4\text{e}^{-2}$,-/}
+\end{tikzpicture}
+\end{center}
+\medskip
+
+\[k(0)=0^2\text{e}^{-0}=0\qquad \qquad k(2)=2^2\text{e}^{-2}=4\text{e}^{-2}.\]
+
+\item La fonction $k$ est positive (car un carré et une exponentielle le sont) et son maximum est $4\text{e}^{-2},$ donc pour tout $x\in\left]0;+\infty\right[~:$
+\[0\leq x^2\text{e}^{-x}\leq 4\text{e}^{-2}.\] On divise par $x$ (qui est strictement positif, donc le sens des inégalités ne change pas)~:
+\begin{alignat*}{3}
+\frac{0}{x}&\leq \frac{x^2\text{e}^{-x}}{x}&\leq \frac{4\text{e}^{-2}}{x}\\
+0&\leq x \text{e}^{-x}&\leq  \frac{4\text{e}^{-2}}{x}.
+\end{alignat*}
+\item On sait que $0\leq x\text{e}^{-x}\leq \frac{4\text{e}^{-2}}{x}$ pour tout $x>0.$ Or $\lim\limits_{x\to +\infty}0=0$ et $\lim\limits_{x\to +\infty}\frac{4\text{e}^{-2}}{x}=0,$ donc d'après le théorème des gendarmes~:
+
+\[\lim\limits_{x\to +\infty}x\text{e}^{-x}=0.\]
+\item \textbf{Application~:} On met $\text{e}^{-x}$ en facteur~: pour tout $x\in\left[0;+\infty\right[,$
+\[\text{e}^x-x-2=\text{e}^x\left(1-\frac{x}{\text{e}^x}-\frac{2}{\text{e}^x}\right)=
+\text{e}^x\left(1-x\text{e}^{-x}-2\text{e}^{-x}\right).\]
+ 
+ Or $\lim\limits_{x\to +\infty}x\text{e}^{-x}=0$ (d'après la question précédente) et  $\lim\limits_{x\to +\infty}\text{e}^{-x}=0,$ donc~:
+ 
+ \[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}\text{e}^x&=  +\infty\\
+        \lim\limits_{x\to +\infty}\left(1-x\text{e}^{-x}-2\text{e}^{-x}\right) &= 1-0-2\times 0=1
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}\left(\text{e}^x-x-2\right)=\text{\og}~{+\infty}\times 1~\text{\fg}=+\infty.
+\]
+ 
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+%Polynésie, septembre 2010
+~{}
+
+\textbf{Partie 1}
+
+\medskip 
+Soit $g$ la fonction définie sur $\left[0;+\infty\right[$ par \[g(x) = \text{e}^x - x\text{e}^x + 1.\]
+
+
+\begin{enumerate}
+\item On met $\text{e}^x$ en facteur~:
+\[\text{e}^x - x\text{e}^x + 1=\text{e}^x(1-x) + 1.\]
+
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}\text{e}^x&=  +\infty\\
+        \lim\limits_{x\to +\infty}\left(1-x\right) &= -\infty
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}\text{e}^x(1-x) + 1=\text{\og}~{+\infty}\times (-\infty)+1~\text{\fg}=-\infty.
+\]
+
+Conclusion~: $\lim\limits_{x\to +\infty}g(x)=-\infty.$
+
+\item 
+
+
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On dérive $x\mapsto x\text{e}^{x}$ grâce à la formule pour la dérivée d'un produit~:
+
+\begin{align*}
+&u(x)=x&&,&& v(x)=\text{e}^{x}, \\
+& u'(x)=1&&, &&v'(x)=\text{e}^{x}.\\
+\end{align*}
+
+On a donc, pour tout $x\in \left[0;+\infty\right[~:$
+
+\begin{align*}
+g'(x)&=\text{e}^{x}-\left(1\times \text{e}^{x}+x\times \text{e}^{-x}\right)
+\\&=\text{e}^{x}-\text{e}^{x}-x\text{e}^{x}
+\\&=-x\text{e}^{x}.
+\end{align*}
+\columnbreak
+
+On obtient le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$-x$/1,$\text{e}^{x}$/1,$g'(x)$/1,$g(x)$/2}{$0$,$+\infty$}
+\tkzTabLine{z,-,}
+\tkzTabLine{,+,}
+\tkzTabLine{z,-,}
+\tkzTabVar{+/$2$,-/$-\infty$}
+\end{tikzpicture}
+\end{center}
+\medskip
+
+\[g(0)=\text{e}^0 - 0\times \text{e}^0 + 1=2.\]
+
+\end{multicols}
+\item 
+	\begin{enumerate}
+		\item \begin{itemize}
+\item[\textbullet] La fonction $g$ est continue et strictement décroissante sur $\left[0;+\infty\right[~;$
+\item[\textbullet] $g(0)=2,$ $\lim\limits_{x\to +\infty}g(x)=-\infty~;$
+\item[\textbullet] $0\in\left]-\infty;2\right].$
+\end{itemize}
+
+D'après le théorème de la bijection, l'équation $g(x)=0$ a exactement une solution  $\alpha$ dans $\left[0;+\infty\right[.$
+		
+		
+		\item On obtient grâce à la calculatrice~:
+		\[1,27\leq \alpha\leq 1,28.\] 
+		%\item On sait que $g(\alpha)=0,$ soit $ \text{e}^{\alpha} - \alpha\text{e}^{\alpha} + 1=0.$
+		
+		%On isole $\text{e}^{\alpha}$ dans cette égalité~:
+		%\[\text{e}^{\alpha} - \alpha\text{e}^{\alpha} + 1=0\implies \text{e}^{\alpha}(1-\alpha) =-1
+		%\implies \text{e}^{\alpha} = \frac{-1\textcolor{red}{\times (-1)}}{(1-\alpha)\textcolor{red}{\times (-1)}}\implies \text{e}^{\alpha} = \frac{1}{\alpha-1}.\]
+	\end{enumerate} 
+\item \setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2} 
+
+On complète le tableau de variations de $g$ en faisant apparaître $\alpha~:$
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$g(x)$/2}{$0$,$+\infty$}
+\tkzTabVar{+/$2$,-/$-\infty$}
+\tkzTabVal[draw]{1}{2}{0.4}{$\alpha$}{$0$}
+\end{tikzpicture}
+\end{center}
+\medskip
+
+On en déduit le tableau de signe~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$g(x)$/1}{$0$,$\alpha$,$+\infty$}
+\tkzTabLine{,+,z,-,}
+\end{tikzpicture}
+\end{center}
+
+\end{multicols}
+\end{enumerate}
+
+\medskip
+ 
+\textbf{Partie 2}
+
+\medskip
+ 
+Soit $A$ la fonction définie sur $\left[0;+\infty\right[$ par \[A(x) = \frac{4x}{\text{e}^x + 1}.\]
+
+\medskip
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On utilise la formule pour la dérivée d'un quotient~:
+
+\begin{align*}
+&u(x)=4x&&,&& v(x)=\text{e}^x + 1, \\
+& u'(x)=4&&, &&v'(x)=\text{e}^{x}.\\
+\end{align*}
+
+On a donc, pour tout $x\in \left[0;+\infty\right[~:$
+
+\begin{align*}
+A'(x)&=\frac{4\times \left(\text{e}^x + 1\right)-4x\times \text{e}^x }{\left(\text{e}^x + 1\right)^2}
+\\&=\frac{4\text{e}^x+4-4x\text{e}^x}{\left(\text{e}^x + 1\right)^2}
+\\&=\frac{4\left(\text{e}^x+1-x\text{e}^x\right)}{\left(\text{e}^x + 1\right)^2}
+\\&=g(x)\times\frac{4}{\left(\text{e}^x + 1\right)^2}.
+\end{align*}
+
+Or $\frac{4 }{\left(\text{e}^x + 1\right)^2}$ est strictement positif sur $\left[0;+\infty\right[,$ donc $A'(x)$ a le même signe que $g(x).$ On a donc, grâce à la question 4 de la partie 1~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$A'(x)$/1,$A(x)$/2}{$0$,$\alpha$,$+\infty$}
+\tkzTabLine{,+,z,-,}
+\tkzTabVar{-/,+/,-/}
+\end{tikzpicture}
+\end{center}
+\end{multicols}
+%\medskip
+
+\newpage
+ 
+\textbf{Partie 3}
+
+\medskip
+ 
+On considère la fonction $f$ définie sur $\left[0;+\infty\right[$ par \[f(x) = \frac{4}{\text{e}^x + 1}.\]
+
+
+\medskip
+ 
+\begin{enumerate}
+\item 
+
+\begin{multicols}{2}
+
+L'aire du rectangle $OPMQ$ est 
+\begin{align*}OP\times OQ&=x\times f(x)
+\\&=x\times \frac{4}{\text{e}^x + 1}
+\\&= \frac{4x}{\text{e}^x + 1}
+\\&=A(x).
+\end{align*}
+
+Or $A$ atteint son maximum pour $x=\alpha$ (cf partie 2), donc l'aire  de $OPMQ$ est maximale lorsque $M$ a pour abscisse $\alpha$. 
+
+\columnbreak
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.814109783146838,-0.35450297114661766)(3.3768323351326335,2.2)
+\pscustom[linewidth=0.8pt,linecolor=blue,fillcolor=blue!30!white,fillstyle=solid,opacity=0.1]{\psplot{0.}{1.3}{0.8566600678297656}\lineto(1.3,0)\lineto(0.,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.814109783146838,-0.35450297114661766)(3.3768323351326335,2.2)
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-0.814109783146838}{3.3768323351326335}{4.0/(EXP(x)+1.0)}
+\rput[tl](2.2126817467216693,0.7902451074574979){$\red{(\mathcal{C})}$}
+\rput[tl](1.3261411975381024,-0.09256908875415056){\blue{$x$}}
+\rput[tl](-0.47456586152697344,0.9357639310088685){\blue{$f(x)$}}
+%\begin{scriptsize}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.,0.)
+\rput[bl](0.04,0.05){\blue{$O$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](1.3,0.)
+\rput[bl](1.33,0.05){\blue{$P$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](1.3,0.8566600678297656)
+\rput[bl](1.33,0.9){\blue{$M$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.,0.8566600678297656)
+\rput[bl](0.04,0.9){\blue{$Q$}}
+%\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+\end{multicols}
+\item 
+
+\begin{multicols}{2}
+
+On suppose dans cette question que le point $M$ a pour abscisse $\alpha$.
+
+\medskip
+
+On rappelle que deux droites (non verticales) sont parallèles si, et seulement si, elles ont le même coefficient directeur. On rappelle également que la tangente à la courbe d'une fonction $f$ au point d'abscisse $a$ a pour coefficient directeur $f'(a).$ Ceci étant dit~:
+
+
+\begin{itemize}
+\item[\textbullet] La tangente $(T)$ en $M$ à la courbe $(\mathcal{C})$ a pour coefficient
+$f'(\alpha).$ Or on obtient facilement (par exemple avec la dérivée d'un quotient)
+\[f'(x)=-\frac{4\text{e}^x}{\left(\text{e}^x+1\right)^2},\]
+donc
+\[f'(\alpha)=-\frac{4\text{e}^\alpha}{\left(\text{e}^{\alpha}+1\right)^2}.\]
+%On a vu dans la question 3.(c) de la partie 1 que $\text{e}^{\alpha}=\frac{1}{\alpha -1}~;$ il s'ensuit que
+%\begin{align*}
+%f'(\alpha)&=-\frac{4\times \frac{1}{\alpha -1}}{\left(\frac{1}{\alpha -1}+1\right)^2}
+%=-\frac{\frac{4}{\alpha -1}}{\left(\frac{1}{\alpha -1}+\frac{\alpha -1}{\alpha -1}\right)^2}
+%=-\frac{\frac{4}{\alpha -1}}{\left(\frac{\alpha}{\alpha -1}\right)^2}
+%\\&=-\frac{\frac{4}{\alpha -1}}{\frac{\alpha^2}{(\alpha -1)^2}}
+%=-\frac{4}{\alpha -1}\times \frac{(\alpha -1)^2}{\alpha^2}
+%=-\frac{4(\alpha-1)}{\alpha^2}.
+%\end{align*}
+\item[\textbullet] La droite $(PQ)$ a pour coefficient directeur
+\[
+c_{(PQ)}=\frac{y_P-y_Q}{x_P-x_Q}=\frac{0-f(\alpha)}{\alpha-0}=\frac{-\frac{4}{\text{e}^{\alpha}+1}}{\alpha}=-\frac{4}{\alpha\left(\text{e}^{\alpha}+1\right)}.
+\]
+%donc en utilisant à nouveau $\text{e}^{\alpha}=\frac{1}{\alpha -1}~:$
+%\[
+%c_{(PQ)}=\frac{-\frac{4}{\frac{1}{\alpha -1}+1}}{\alpha}=\frac{-\frac{4}{\frac{\alpha}{\alpha -1}}}{\alpha}=\frac{\frac{-4(\alpha-1)}{\alpha}}{\alpha}=-\frac{4(\alpha-1)}{\alpha^2}.\]
+\end{itemize}
+
+\columnbreak
+
+Pour prouver l'égalité $f'(\alpha)=c_{(PQ)},$ on réduit au même dénominateur et on met $-4$ en facteur~:
+\begin{align*}
+f'(\alpha)&=-\frac{4\text{e}^\alpha}{\left(\text{e}^{\alpha}+1\right)^2}=-4\times \frac{\alpha\text{e}^\alpha}{\alpha\left(\text{e}^{\alpha}+1\right)^2}
+\\ c_{(PQ)}&=-\frac{4}{\alpha\left(\text{e}^{\alpha}+1\right)}=-\frac{4\textcolor{red}{\times\left(\text{e}^{\alpha}+1\right)}}{\alpha\left(\text{e}^{\alpha}+1\right)\textcolor{red}{\times\left(\text{e}^{\alpha}+1\right)}}=-4\times \frac{\text{e}^\alpha+1}{\alpha\left(\text{e}^{\alpha}+1\right)^2}
+\end{align*}
+
+On sait que $g(\alpha)=0,$ donc $\text{e}^{\alpha}-\alpha\text{e}^{\alpha}+1=0~;$ et donc
+\[\alpha\text{e}^{\alpha}=\text{e}^{\alpha}+1.\] Il s'ensuit que $f'(\alpha)=c_{(PQ)},$ et donc que la tangente $(T)$ et la droite $(PQ)$ ont le même coefficient directeur. Elles sont donc bien parallèles.
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.814109783146838,-0.25749042211237005)(3.5805586881045524,1.8767856566410657)
+\pscustom[linewidth=0.8pt,linecolor=blue,fillcolor=blue!30!white,fillstyle=solid,opacity=0.1]{\psplot{0.}{1.3}{0.8566600678297656}\lineto(1.3,0)\lineto(0.,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.814109783146838,-0.25749042211237005)(3.5805586881045524,1.8767856566410657)
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-0.814109783146838}{3.5805586881045524}{4.0/(EXP(x)+1.0)}
+\rput[tl](2.2126817467216693,0.7902451074574984){$\red{(\mathcal{C})}$}
+\rput[tl](1.174647472055226,-0.08205349950749474){\blue{$\alpha$}}
+\rput[tl](-0.43576084191327463,0.92){\blue{$f(\alpha)$}}
+\rput[tl](1.8,0.35){\magenta{$(T)$}}
+\psplot[linewidth=2.pt,linecolor=magenta]{-0.814109783146838}{3.5805586881045524}{(--1.1136580881786953-0.8566600678297656*x)/1.3}
+\psplot[linewidth=2.pt,linecolor=magenta]{-0.814109783146838}{3.5805586881045524}{(--2.2273161763573905-0.8566600678297656*x)/1.3}
+%\begin{scriptsize}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.,0.)
+\rput[bl](0.04,0.05){\blue{$O$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](1.3,0.)
+\rput[bl](1.33,0.05){\blue{$P$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](1.3,0.8566600678297656)
+\rput[bl](1.33,0.9){\blue{$M$}}
+\psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](0.,0.8566600678297656)
+\rput[bl](0.04,0.9){\blue{$Q$}}
+%\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+%\textbf{Remarque~:} Pour établir l'égalité $f'(\alpha)=c_{(PQ)},$ il était plus rapide (mais moins naturel) de %montrer que $f'(\alpha)-c_{(PQ)}=0.$
+ \end{multicols}
+\end{enumerate}
+
+\end{exo}
+
+\newpage
+
+\begin{exo}
+
+
+
+La fonction $g$ est définie sur $\left]0;+\infty\right[$ par
+\[g(x)=\frac{1}{2}x+\frac{1}{x}.\]
+
+
+\begin{enumerate}
+\item Pour tout $x\in \left]0;+\infty\right[~:$
+\[g'(x)=\frac{1}{2}+\left(-\frac{1}{x^2}\right)=\frac{1\textcolor{red}{\times x^2}}{2\textcolor{red}{\times x^2}}-\frac{1\textcolor{red}{\times 2}}{x^2\textcolor{red}{\times 2}}=\frac{x^2}{2x^2}-\frac{2}{2x^2}=\frac{x^2-2}{2x^2}.\]
+\item On étudie le signe de $\frac{x^2-2}{2x^2}~:$
+
+\begin{itemize}
+\item[\textbullet] Les racines de $x^2-2$ sont $\sqrt{2}$ et $-\sqrt{2}~;$ seule la première est dans $\left[0;+\infty\right[.$
+\item[\textbullet] Sur $\mathbb{R}$ tout entier, le signe serait de la forme \fbox{$+~\upphi~-~\upphi~+$}, avec un $\upphi$ au niveau des racines~; mais comme on travaille dans $\left[0;+\infty\right[$ seulement,  le signe est de la forme \fbox{$-~\upphi~+$}.
+%\item[\textbullet] $x^2$ est toujours $\ominus,$ et il s'annule pour $x=0.$
+\end{itemize}
+
+\medskip
+
+On obtient finalement~:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$x^2-2$/1,$x^2$/1,$g'(x)$/1,$g(x)$/2}{$0$,$\sqrt{2}$,$+\infty$}
+\tkzTabLine{,-,z,+,}
+\tkzTabLine{z,+,,+,}
+\tkzTabLine{d,-,z,+,}
+\tkzTabVar{D+/$+\infty$,-/$\sqrt{2}$,+/$+\infty$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\[f\left(\sqrt{2}\right)=\frac{1\textcolor{red}{\times\sqrt{2}}}{\sqrt{2}\textcolor{red}{\times\sqrt{2}}}+\frac{\sqrt{2}}{2}=\frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}=\frac{\cancel{2}\sqrt{2}}{\cancel{2}}=\sqrt{2}.\]
+
+\item
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}\frac{1}{2}x&=  +\infty\\
+        \lim\limits_{x\to +\infty}\frac{1}{x} &= 0
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}g(x)=+\infty.
+\hspace*{2cm}
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to 0,~x>0}\frac{1}{2}x&=  0\\
+        \lim\limits_{x\to 0,~x>0}\frac{1}{x} &= +\infty
+    \end{array}
+\right \}\implies \lim\limits_{x\to 0,~x>0}g(x)=+\infty.
+\]
+
+%Conclusion~: $\lim\limits_{x\to 0,~x>0}g(x)=+\infty.$
+
+
+%\medskip
+%On définit une suite $\left(a_n\right)_{n\in\mathbb{N}}$ par $a_0=2$ et la relation de récurrence
+
+%\[a_{n+1}=g\left(a_n\right)\] pour tout $n\in\mathbb{N}.$
+
+\item Pour tout $n\in\mathbb{N},$ on note $\mathcal{P}_n$ la propriété \[\sqrt{2}\leq a_n\leq 2.\]
+
+\begin{itemize}
+\item[{\textbullet}] \textbf{Initialisation.} On prouve que $\mathcal{P}_0$ est vraie.
+
+\[a_0=2\implies \sqrt{2}\leq a_0\leq 2 \implies\mathcal{P}_0~\text{est vraie}.\]
+
+
+
+
+\item[{\textbullet}] \textbf{Hérédité.}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc
+\[\sqrt{2}\leq a_k\leq 2.\]%\medskip
+
+
+
+
+
+
+
+La fonction $g$ est strictement croissante sur $\left[\sqrt{2};+\infty\right[,$ donc
+\begin{align*}g\left(\sqrt{2}\right)&\leq g\left(a_k\right)\leq g(2)
+\\ \sqrt{2}&\leq a_{k+1}\leq \frac{3}{2}.
+\end{align*}
+
+(cf illustration avec le tableau de variations ci-contre).
+
+\medskip
+
+Or $\frac{3}{2}\leq 2,$ donc
+
+\[\sqrt{2}\leq a_{k+1}\leq 2,\]
+
+c'est-à-dire que la propriété $\mathcal{P}_{k+1}$ est  vraie.
+
+\columnbreak
+
+\vspace*{1cm}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$g(x)$/2}{$0$,$\sqrt{2}$,$+\infty$}
+\tkzTabVar{D+/$+\infty$,-/$\sqrt{2}$,+/$+\infty$}
+\tkzTabVal[draw]{2}{3}{0.33}{$a_k$}{$a_{k+1}$}
+\tkzTabVal[draw]{2}{3}{0.66}{$2$}{$\frac{3}{2}$}
+\end{tikzpicture}
+\end{center}
+
+
+\medskip
+
+\textbf{Remarque~:} $g\left(a_k\right)=a_{k+1}.$
+
+\end{multicols}
+
+
+
+
+\item[{\textbullet}] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in\mathbb{N}.$
+\end{itemize}
+\item Pour tout $n\in\mathbb{N},$
+\[a_{n+1}-a_n=\left(\frac{1}{2}a_n+\frac{1}{a_n}\right)-a_n=\frac{1}{a_n}-\frac{a_n}{2}=
+\frac{1\textcolor{red}{\times 2}}{a_n\textcolor{red}{\times 2}}-\frac{a_n\textcolor{red}{\times a_n}}{2\textcolor{red}{\times a_n}}=\frac{2-a_n^2}{2a_n}.\]
+
+Or $\sqrt{2}\leq a_n$ d'après la question précédente, donc $\sqrt{2}^2\leq a_n^2$ (deux nombres positifs sont rangés dans le même ordre que leurs carrés). On a donc $2\leq a_n^2~;$ et ainsi
+\[\frac{\overbrace{2-a_n^2}^{\ominus}}{\underbrace{2a_n}_{\oplus}}\leq 0.\]
+
+Conclusion~: $a_{n+1}-a_n\leq 0,$ donc $\left(a_n\right)_{n\in\mathbb{N}}$ est décroissante.
+\item La suite $\left(a_n\right)_{n\in\mathbb{N}}$ est~:
+
+\begin{itemize}
+\item[{\textbullet}] décroissante d'après la question précédente~;
+\item[{\textbullet}] minorée par $\sqrt{2}$ d'après la question 4.
+\end{itemize}
+
+Or toute suite décroissante minorée converge (théorème de limite monotone du chapitre 4), donc $\left(a_n\right)_{n\in\mathbb{N}}$ converge. De plus, sa limite $\ell$ est supérieure ou égale au minorant $\sqrt{2}.$
+
+\medskip
+
+Pour déterminer $\ell,$ on reprend un raisonnement du chapitre 6~:
+
+\medskip
+
+La fonction $g:x\mapsto \frac{1}{2}x+\frac{1}{x}$ est continue sur $\left[\sqrt{2};+\infty\right[,$ donc on peut \og passer à la limite \fg~{} dans la formule de récurrence~:
+
+\[a_{n+1}=\frac{1}{2}a_n+\frac{1}{a_n}\qquad\text{pour tout }n\in\mathbb{N},\] donc
+\begin{equation}\ell=\frac{1}{2}\ell+\frac{1}{\ell}.
+\end{equation}
+
+
+
+On résout cette équation dans $\left[\sqrt{2};+\infty\right[~:$
+\[\ell=\frac{1}{2}\ell+\frac{1}{\ell} \iff \ell-\frac{1}{2}\ell=\frac{1}{\ell}
+\iff \frac{\ell}{2}=\frac{1}{\ell}\iff \ell\times\ell=2\times 1\iff \ell^2=2\iff \ell=\sqrt{2}~\text{ou}~\underbrace{\ell=-\sqrt{2}}_{\text{impossible}}.\]
+
+Conclusion~: $\lim\limits_{n\to +\infty}a_n=\sqrt{2}.$
+\end{enumerate}
+\end{exo}
+
 
 \end{document}

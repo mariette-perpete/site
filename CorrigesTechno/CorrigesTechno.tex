@@ -2604,4 +2604,113 @@ La concentration est bien maximale après 50~min.
 
 \end{exo}
 
+
+\section{Arbres de probabilités}
+
+
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item On part de 100 coyotes. Comme 60~\% des coyotes sont malades, on en a 60 malades et 40 en bonne santé. Ensuite on calcule~:
+
+\begin{itemize}
+\item[\textbullet] 95~\% de 60 valent $\frac{60\times 95}{100}=57~;$
+\item[\textbullet] 90~\% de 40 valent $\frac{40\times 90}{100}=36.$
+\end{itemize}
+
+On peut alors compléter le tableau~:
+
+
+
+\begin{center}
+ \begin{tabular}{|m{2cm}|m{2cm}|m{2cm}|m{2cm}|}\hline
+& Test $\bigoplus$ &Test \Large$\ominus$\normalsize & Total \\ \hline 
+Malades& 57& 3&60 \\ \hline
+Sains& 4& 36& 40\\ \hline
+Total& 61& 39& 100\\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+\item $P(M\cap T)=\frac{57}{100}=0,57$ et $P(T)=\frac{61}{100}=0,61.$
+\item On représente la situation par un arbre pondéré~:
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$M$}\taput{$0,60$}}
+	{
+	\Tr{$T$}\taput{$0,95$} 
+	\Tr{$\overline{T}$}\tbput{$0,05$}
+		}	
+\pstree{\Tr{$\overline{M}$}\tbput{$0,40$}}
+	{
+	\Tr{$T$}\taput{$0,10$} 
+	\Tr{$\overline{T}$}\tbput{$0,90$}
+		}
+}
+\end{center}
+
+On en déduit~:
+
+\begin{itemize}
+\item[\textbullet] $P(M\cap T)=0,60\times 0,95=0,57~;$
+\item[\textbullet] D'après la formule des probabilités totales, la probabilité que le test soit positif est~:
+\begin{align*}P(T)&=P\left(M\cap T\right)+P\left(\overline{M}\cap T\right)\\
+&=0,60\times 0,95+0,40\times 0,10=0,61.\end{align*}
+\end{itemize}
+
+\medskip
+
+On retrouve bien les résultats de la question 2.
+
+\end{enumerate}
+
+
+\end{exo}
+
+\begin{exo}
+
+
+
+
+\begin{enumerate} 
+\item On représente la situation par un arbre pondéré~:
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$A$}\taput{$0,70$}}
+	{
+	\Tr{$D$}\taput{$0,02$} 
+	\Tr{$\overline{D}$}\tbput{$0,98$}
+		}	
+\pstree{\Tr{$\overline{A}$}\tbput{$0,30$}}
+	{
+	\Tr{$D$}\taput{$0,03$} 
+	\Tr{$\overline{D}$}\tbput{$0,97$}
+		}
+}
+\end{center}
+
+
+
+
+\item
+
+\begin{itemize}
+\item[\textbullet] $P\left(A\cap \overline{D}\right)=0,70\times 0,98=0,686~;$
+\item[\textbullet] d'après la formule des probabilités totales, la probabilité que la pièce ait un défaut est~:
+\begin{align*}P(D)&=P\left(A\cap D\right)+P\left(\overline{A}\cap D\right)\\
+&=0,70\times 0,02+0,30\times 0,03=0,023.\end{align*}
+\end{itemize}
+\end{enumerate}
+
+\end{exo}
+
+
 \end{document}
