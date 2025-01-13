@@ -7,3 +7,4 @@
 \contentsline {section}{\numberline {6}Continuité et limites de suites}{59}{section.6}%
 \contentsline {section}{\numberline {7}Variables aléatoires, loi binomiale}{69}{section.7}%
 \contentsline {section}{\numberline {8}Limites de fonctions}{77}{section.8}%
+\contentsline {section}{\numberline {9}Équations de plans, représentations de droites}{88}{section.9}%

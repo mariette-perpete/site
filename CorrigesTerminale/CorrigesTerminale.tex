@@ -9136,4 +9136,259 @@ Conclusion~: $\lim\limits_{n\to +\infty}a_n=\sqrt{2}.$
 \end{exo}
 
 
+\section{Équations de plans, représentations de droites}
+
+
+
+
+
+Dans tout ce chapitre, on n'a plus intérêt à placer les points précisément dans un repère. On fait tout de même des figures pour illustrer les situations et guider les raisonnements.
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item Soient $A(2;1;-1),$ $B(0;2;3),$ $C(1;-1;0)$ et le vecteur $\overrightarrow{n}\begin{pmatrix}9\\-2\\5\end{pmatrix}.$
+\begin{enumerate}
+\item On calcule les coordonnées des vecteurs~:
+\[\overrightarrow{AB}\begin{pmatrix} x_B-x_A\\y_B-y_A\\z_B-z_A\end{pmatrix}\qquad\overrightarrow{AB}\begin{pmatrix} 0-2\\2-1\\3-(-1)\end{pmatrix}\qquad\overrightarrow{AB}\begin{pmatrix} -2\\1\\4\end{pmatrix}\qquad;\qquad\overrightarrow{AC}\begin{pmatrix} x_C-x_A\\y_C-y_A\\z_C-z_A\end{pmatrix}\qquad\overrightarrow{AC}\begin{pmatrix} 1-2\\-1-1\\0-(-1)\end{pmatrix}\qquad\overrightarrow{AC}\begin{pmatrix} -1\\-2\\1\end{pmatrix}.\] Les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ ne sont pas colinéaires, donc les points $A,$ $B,$ $C$ ne sont pas alignés et déterminent un plan.
+
+\medskip
+
+Le vecteur $\overrightarrow{n}$ est orthogonal aux vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ puisque
+\begin{align*}
+\overrightarrow{n}\cdot\overrightarrow{AB}&=9\times (-2)+(-2)\times 1+5\times 4=0,\\
+\overrightarrow{n}\cdot\overrightarrow{AC}&=9\times (-1)+(-2)\times (-2)+5\times 1=0.
+\end{align*}
+
+Conclusion~: le vecteur $\overrightarrow{n}$ est orthogonal aux vecteurs  directeurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ du plan $(ABC),$ donc il est  orthogonal au plan $(ABC).$
+
+
+\begin{center}
+\psset{xunit=1.8cm,yunit=1.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(2.356763410104027,-0.3400624724627181)(8.578677948246996,2.5595659457871553)
+\pspolygon[linewidth=2.pt,linecolor=blue,fillcolor=blue!10!white,fillstyle=solid,opacity=0.25](2.5,0.)(7.,0.)(8.,1.5)(4.,1.5)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.25](5.200035732456475,0.9000119108188249)(5.5,1.)(5.5,1.2241019560476185)(5.2,1.12)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.25](5.5,1.)(5.5,1.2241019560476185)(5.75358,1.02)(5.754874936005471,0.7961000511956229)
+\psline[linewidth=2.pt,linecolor=blue](2.5,0.)(7.,0.)
+\psline[linewidth=2.pt,linecolor=blue](7.,0.)(8.,1.5)
+\psline[linewidth=2.pt,linecolor=blue](8.,1.5)(4.,1.5)
+\psline[linewidth=2.pt,linecolor=blue](4.,1.5)(2.5,0.)
+\psline[linewidth=2.pt]{->}(5.5,1.)(5.5,2.5)
+\psline[linewidth=2.pt](5.5,1.)(4.,0.5)
+\psline[linewidth=2.pt](5.5,1.)(6.,0.6)
+\psline[linewidth=2.pt](5.200035732456475,0.9000119108188249)(5.2,1.12)
+\psline[linewidth=2.pt](5.2,1.12)(5.5,1.2241019560476185)
+\psline[linewidth=2.pt](5.754874936005471,0.7961000511956229)(5.75358,1.02)
+\psline[linewidth=2.pt](5.5,1.2241019560476185)(5.75358,1.02)
+\psline[linewidth=2.pt,linecolor=red](5.200035732456475,0.9000119108188249)(5.5,1.)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.)(5.5,1.2241019560476185)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.2241019560476185)(5.2,1.12)
+\psline[linewidth=2.pt,linecolor=red](5.2,1.12)(5.200035732456475,0.9000119108188249)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.)(5.5,1.2241019560476185)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.2241019560476185)(5.75358,1.02)
+\psline[linewidth=2.pt,linecolor=red](5.75358,1.02)(5.754874936005471,0.7961000511956229)
+\psline[linewidth=2.pt,linecolor=red](5.754874936005471,0.7961000511956229)(5.5,1.)
+\rput[tl](5.561098543492033,1.9698110132617574){$\overrightarrow{n}$}
+\psdots[dotstyle=*,linecolor=blue](5.5,1.)
+\rput[bl](5.384172063734414,0.7){\blue{$A$}}
+\psdots[dotstyle=*,linecolor=blue](4.,0.5)
+\rput[bl](3.850809239168374,0.5838869218270721){\blue{$B$}}
+\psdots[dotstyle=*,linecolor=blue](6.,0.6)
+\rput[bl](6.0427317383877766,0.7018379083321518){\blue{$C$}}
+\end{pspicture*}
+\end{center}
+
+\item Le vecteur $\overrightarrow{n}\begin{pmatrix}9\\-2\\5\end{pmatrix}~\textcolor{red}{\begin{matrix}a\\b\\c\end{matrix}}$ est orthogonal au plan $(ABC),$ donc $(ABC)$ a une équation de la forme
+\begin{align*}ax+by+cz+d&=0\\9x-2y+5z+d&=0.\end{align*}
+Et comme $(ABC)$ passe par $A(2;1;-1)~:$
+\begin{align*}
+9\times 2-2\times 1+5\times (-1)+d&=0\\
+11+d&=0\\
+d&=-11.\end{align*}
+
+Conclusion~:
+\[(ABC):9x-2y+5z-11=0.\]
+
+\end{enumerate}
+\item Soient $A(2;-1;3)$ et $B(2;5;0).$ On note $P$ le plan médiateur de $\left[AB\right].$ Ce plan passe par le milieu $I$ de $\left[AB\right]$ et il est orthogonal à $\overrightarrow{AB}.$
+
+
+\begin{center}
+\psset{xunit=1.8cm,yunit=1.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(2.356763410104027,-0.7922079207321905)(8.205166490980906,2.7168339277939277)
+\pspolygon[linewidth=2.pt,linecolor=blue,fillcolor=blue!10!white,fillstyle=solid,opacity=0.25](2.5,0.)(7.,0.)(8.,1.5)(4.,1.5)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.25](5.200035732456475,0.9000119108188249)(5.5,1.)(5.5,1.2241019560476185)(5.2,1.12)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.25](5.5,1.)(5.5,1.2241019560476185)(5.75358,1.02)(5.754874936005471,0.7961000511956229)
+\psline[linewidth=2.pt,linecolor=blue](2.5,0.)(7.,0.)
+\psline[linewidth=2.pt,linecolor=blue](7.,0.)(8.,1.5)
+\psline[linewidth=2.pt,linecolor=blue](8.,1.5)(4.,1.5)
+\psline[linewidth=2.pt,linecolor=blue](4.,1.5)(2.5,0.)
+\psline[linewidth=2.pt](5.5,1.)(4.,0.5)
+\psline[linewidth=2.pt](5.5,1.)(6.,0.6)
+\psline[linewidth=2.pt](5.200035732456475,0.9000119108188249)(5.2,1.12)
+\psline[linewidth=2.pt](5.2,1.12)(5.5,1.2241019560476185)
+\psline[linewidth=2.pt](5.754874936005471,0.7961000511956229)(5.75358,1.02)
+\psline[linewidth=2.pt](5.5,1.2241019560476185)(5.75358,1.02)
+\psline[linewidth=2.pt,linecolor=red](5.200035732456475,0.9000119108188249)(5.5,1.)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.)(5.5,1.2241019560476185)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.2241019560476185)(5.2,1.12)
+\psline[linewidth=2.pt,linecolor=red](5.2,1.12)(5.200035732456475,0.9000119108188249)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.)(5.5,1.2241019560476185)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.2241019560476185)(5.75358,1.02)
+\psline[linewidth=2.pt,linecolor=red](5.75358,1.02)(5.754874936005471,0.7961000511956229)
+\psline[linewidth=2.pt,linecolor=red](5.754874936005471,0.7961000511956229)(5.5,1.)
+\psline[linewidth=2.pt,linecolor=red](5.5,2.5)(5.5,1.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red](5.5,1.)(5.5,0.)
+\psline[linewidth=2.pt,linecolor=red](5.5,0.)(5.5,-0.5)
+\rput[tl](6.8585593950479105,0.8492766414635007){\blue{$P$}}
+\psdots[dotstyle=*,linecolor=blue](5.5,1.)
+\rput[bl](5.3,0.7){\blue{$I$}}
+\psdots[dotstyle=*,linecolor=red](5.5,2.5)
+\rput[bl](5.541440045741185,2.559565945787155){\red{$A$}}
+\psdots[dotstyle=*,linecolor=red](5.5,-0.5)
+\rput[bl](5.541440045741185,-0.39903796571525846){\red{$B$}}
+\end{pspicture*}
+\end{center}
+
+On calcule donc, avec les formules habituelles~:
+\begin{align*}
+&I\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2};\frac{z_A+z_B}{2}\right)\qquad
+I\left(\frac{2+2}{2};\frac{-1+5}{2};\frac{3+0}{2}\right)\qquad
+I(2;2;1,5),\\
+&\overrightarrow{AB}\begin{pmatrix} x_B-x_A\\y_B-y_A\\z_B-z_A\end{pmatrix}\qquad
+\overrightarrow{AB}\begin{pmatrix} 2-2\\5-(-1)\\0-3\end{pmatrix}\qquad\overrightarrow{AB}\begin{pmatrix} 0\\6\\-3\end{pmatrix}~\textcolor{red}{\begin{matrix}a\\b\\c\end{matrix}}~.\end{align*}
+
+Le plan $P$ a donc une équation de la forme \[0x+6y-3z+d=0.\] Et comme il passe par $I~:$
+\begin{align*}
+0\times 2+6\times 2-3\times 1,5+d&=0\\
+7,5+d&=0\\
+d&=-7,5.\end{align*}
+
+Conclusion~:
+\[P:6y-3z-7,5=0.\]
+
+\medskip
+
+\textbf{Remarque~:} En multipliant par $\frac{2}{3},$ on a une écriture plus agréable~: $P:4y-2z-5=0.$
+
+\item Soient $(P)$ le plan d'équation $4x+y-z-3=0,$ et soient $M(1;2;3)$ et $N(9;4;1).$
+
+\begin{enumerate}
+\item Le point $M$ appartient au plan $(P),$ car (on remplace $x,$ $y,$ $z$ par les coordonnées de $M$)~:
+\[4\times 1+2-3-3=0.\]
+
+\medskip
+
+Le point $N$ n'appartient pas au plan $(P),$ car~:
+\[4\times 9+4-1-3=36\not=0.\]
+
+
+\item Le plan $(P)$ a pour équation $\textcolor{red}{4}x+\textcolor{red}{1}y+\textcolor{red}{(-1)}z-3=0,$ donc le vecteur $\overrightarrow{n}\begin{pmatrix}\textcolor{red}{4}\\ \textcolor{red}{1}\\ \textcolor{red}{-1}\end{pmatrix}$ est normal au plan $(P).$
+
+\medskip
+
+Par ailleurs 
+\[\overrightarrow{MN}\begin{pmatrix}x_N-x_M\\y_N-y_M\\z_N-z_M\end{pmatrix}\qquad 
+\overrightarrow{MN}\begin{pmatrix}9-1\\4-2\\1-3\end{pmatrix}\qquad \overrightarrow{MN}\begin{pmatrix}8\\2\\-2\end{pmatrix}.\]
+\medskip
+
+On remarque que $ \overrightarrow{MN}=2\overrightarrow{n},$ donc $\overrightarrow{MN}$ et $\overrightarrow{n}$ sont colinéaires. Or le vecteur $\overrightarrow{n}$ est orthogonal au plan $(P),$ donc la droite $(MN)$ est orthogonale à $(P).$
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.52,0.46)(9.88,6.58)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.52,0.46)(9.88,6.58)
+\pspolygon[linewidth=2.pt,linecolor=blue,fillcolor=blue!10!white,fillstyle=solid,opacity=0.1](1.,1.)(7.,1.)(9.,4.)(3.,4.)
+\psline[linewidth=2.pt,linecolor=blue](1.,1.)(7.,1.)
+\psline[linewidth=2.pt,linecolor=blue](7.,1.)(9.,4.)
+\psline[linewidth=2.pt,linecolor=blue](9.,4.)(3.,4.)
+\psline[linewidth=2.pt,linecolor=blue](3.,4.)(1.,1.)
+\psline[linewidth=2.pt]{->}(5.,3.)(5.,5.)
+\psline[linewidth=2.pt]{->}(6.,2.)(6.,6.)
+\rput[tl](4.38,3.84){$\overrightarrow{n}$}
+\rput[tl](1.86,1.58){\ududff{$(P)$}}
+\psdots[dotstyle=*,linecolor=ududff](6.,2.)
+\rput[bl](6.22,2.18){\ududff{$M$}}
+\psdots[dotstyle=*,linecolor=red](6.,6.)
+\rput[bl](6.24,5.62){\red{$N$}}
+\end{pspicture*}
+\end{center}
+\end{enumerate}
+\end{enumerate}
+\end{exo}
+
+
+
+
+\begin{exo}
+
+$OABC$ est un tétraèdre trirectangle en $O,$ c'est-à-dire que $OAB,$ $OAC$ et $OBC$ sont rectangles en $O.$ On suppose de plus que $OA=OB=OC=1.$ On note $H$ le projeté orthogonal de $O$ sur le plan $(ABC),$ c'est-à-dire que $H\in(ABC)$ et $(OH)\perp (ABC).$
+
+
+\begin{center}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.26,0.84)(6.64,6.22)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](2.,6.)(2.,2.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](2.,2.)(6.,2.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](2.,2.)(0.8,1.28)
+\psline[linewidth=2.pt](0.8,1.28)(2.,6.)
+\psline[linewidth=2.pt](0.8,1.28)(6.,2.)
+\psline[linewidth=2.pt](2.,6.)(6.,2.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](2.,2.)(3.,3.)
+\rput[bl](1.56,5.8){$C$}
+\rput[bl](1.55,2.14){$O$}
+\rput[bl](5.92,1.6){$B$}
+\rput[bl](0.42,1.4){$A$}
+\psdots[dotsize=1pt 0,dotstyle=*](3.,3.)
+\rput[bl](3.08,3.04){$H$}
+\end{pspicture*}
+\end{center}
+
+On travaille dans le repère $\left(O,\overrightarrow{OA},\overrightarrow{OB},\overrightarrow{OC}\right).$
+
+
+
+\begin{enumerate}
+\item Pour prouver que $(ABC)$ a pour équation $x+y+z=1,$ il suffit de prouver que les coordonnées des points $A,$ $B,$ $C$ vérifient cette égalité. On le fait pour $A$ (le travail est le même pour $B$ et $C$)~:
+\[A(1;0;0)\qquad\text{et}\qquad 1+0+0=1\qquad\text{donc}~A~\text{appartient au plan}.\]
+\item Notons $(x_H;y_H;z_H)$ les coordonnées du point $H.$ Puisque ce point est sur le plan $(ABC):x+y+z=1,$ on a $x_H+y_H+z_H=1,$ et donc en transposant~: \[z_H=1-x_H-y_H.\]
+
+Il existe donc bien deux réels $x_H,$ $y_H$ tels que $H$ ait pour coordonnées $(x_H;y_H;1-x_H-y_H).$
+\item On a $O(0;0;0),$ $A(1;0;0),$ $B(0;1;0),$ $C(0;0;1)$ et $H\left(x_H;y_H;1-x_H-y_H\right).$ Donc
+
+\[\overrightarrow{OH}\begin{pmatrix} x_H\\y_H\\1-x_H-y_H\end{pmatrix}\qquad\overrightarrow{AB}\begin{pmatrix}-1\\1\\0\end{pmatrix} \qquad\overrightarrow{AC}\begin{pmatrix}-1\\0\\1\end{pmatrix},\]
+
+puis
+\begin{align*}
+\overrightarrow{OH}\cdot\overrightarrow{AB}&=x_H\times (-1)+y_H\times 1+\left(1-x_H-y_H\right)\times 0=-x_H+y_H,\\
+\overrightarrow{OH}\cdot\overrightarrow{AC}&=x_H\times (-1)+y_H\times 0+\left(1-x_H-y_H\right)\times 1=-x_H+1-x_H-y_H=1-2x_H-y_H.
+\end{align*}
+
+\item La droite $(OH)$ est orthogonale au plan $(ABC),$ donc elle est orthogonale à $(AB)$ et à $(AC).$ On a donc $\overrightarrow{OH}\cdot \overrightarrow{AB}=0$ et $\overrightarrow{OH}\cdot \overrightarrow{AC}=0.$ Soit, d'après la question précédente~:
+
+\[\begin{cases}
+-x_H+y_H&=0
+\\ 1-2x_H-y_H&=0
+\end{cases}
+\]
+
+La première ligne donne $y_H=x_H,$ puis en remplaçant dans la deuxième~:
+\[-2x_H-x_H+1=0\qquad -3x_H+1=0\qquad 1=3x_H\qquad x_H=\frac{1}{3}.\]
+Finalement $x_H=y_H=\frac{1}{3},$ puis \[z_H=1-x_H-y_H=1-\frac{1}{3}-\frac{1}{3}=1-\frac{2}{3}=\frac{1}{3}.\]
+
+Conclusion~: le point $H$ a pour coordonnées $\left(\frac{1}{3};\frac{1}{3};\frac{1}{3}\right).$
+
+\end{enumerate}
+
+
+\end{exo}
+
+
+
+
+
 \end{document}
