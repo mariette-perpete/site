@@ -2712,5 +2712,144 @@ On retrouve bien les résultats de la question 2.
 
 \end{exo}
 
+\begin{exo}
+
+
+
+
+\begin{enumerate}
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\item On rappelle les zones de tir à 2 et 3 points~:
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.5006126521330643,-3.458863355936357)(4.527406792181142,3.3532920202312764)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!30!white,fillstyle=solid,opacity=0.1](0.,3.)(4.,3.)(4.,-3.)(0.,-3.)
+\pscustom[linewidth=0.8pt,linecolor=blue,fillcolor=blue!30!white,fillstyle=solid,opacity=0.1]{\psplot{0.}{2.}{-sqrt(4.0-x^(2.0))}\lineto(2.,0.)\psplot{2.}{0.}{sqrt(4.0-x^(2.0))}\lineto(0.,-2.)\closepath}
+\parametricplot[linewidth=2.pt,linecolor=blue]{-1.5707963267948966}{1.5707963267948966}{1.*2.*cos(t)+0.*2.*sin(t)+0.|0.*2.*cos(t)+1.*2.*sin(t)+0.}
+\psline[linewidth=2.pt](0.,3.)(4.,3.)
+\psline[linewidth=2.pt](4.,3.)(4.,-3.)
+\psline[linewidth=2.pt](0.,-3.)(4.,-3.)
+\psline[linewidth=2.pt,linecolor=red](0.,3.)(4.,3.)
+\psline[linewidth=2.pt,linecolor=red](4.,3.)(4.,-3.)
+\psline[linewidth=2.pt,linecolor=red](4.,-3.)(0.,-3.)
+\psline[linewidth=2.pt,linecolor=red](0.,-3.)(0.,3.)
+\psline[linewidth=2.pt](0.,0.)(0.31047517904295696,0.)
+\pscircle[linewidth=2.pt](0.31047517904295696,0.){0.1515996751199221}
+\rput[tl](0.2382719257052241,-0.8817781210369613){\blue{tir à 2 pts}}
+\rput[tl](1.9322999822125193,-2.1252668008135926){\red{tir à 3 pts}}
+\end{pspicture*}
+\end{center}
+\columnbreak
+
+On représente la situation par un arbre pondéré~:
+
+\medskip
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$D$}\taput{$0,53$}}
+	{
+	\Tr{$M$}\taput{$0,52$} 
+	\Tr{$\overline{M}$}\tbput{$0,48$}
+		}	
+\pstree{\Tr{$\overline{D}$}\tbput{$0,47$}}
+	{
+	\Tr{$M$}\taput{$0,44$} 
+	\Tr{$\overline{M}$}\tbput{$0,56$}
+		}
+}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} $\overline{D}$ signifie \og Stephen Curry tire à 3 points \fg.
+\end{multicols}
+\item La probabilité que Stephen Curry tire à 2 points et marque est
+\[P(D\cap M)=0,53\times 0,52=0,2756.\]
+\item D'après la formule des probabilités totales, la probabilité que Stephen Curry marque est~:
+
+\begin{align*}P(M)&=P\left(D\cap M\right)+P\left(\overline{D}\cap M\right)\\
+&=0,53\times 0,52+0,47\times 0,44=0,4824.\end{align*}
+\item On sait que Stephen Curry a 52~\% de réussite lorsqu'il tire à 2 points, donc \[P_D(M)=0,52.\]
+Ce nombre est celui qui apparaît sur la branche en haut à droite de l'arbre. Par conséquent, le calcul \[P(D\cap M)=0,53\times 0,52\] peut se réécrire
+\[P(D\cap M)=P(D)\times P_D(M).\] \medskip
+
+D'une manière générale, un arbre pondéré est toujours de la forme
+
+\medskip
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$~A~$}\taput{$\textcolor{red}{P(A)}$}}
+	{
+	\Tr{$~B~$}~[tnpos=r]{~~~~~~\textcolor{red}{$P(A\cap B)=P(A)\times P_A(B)$}}\taput{$\textcolor{red}{P_A(B)}$} 
+	\Tr{$~\overline{B}~$}~[tnpos=r]{~~~~~~\textcolor{red}{$~$}}\tbput{$~$}
+		}	
+\pstree{\Tr{$~\overline{A}~$}\tbput{$~$}}
+	{
+	\Tr{$~B~$}~[tnpos=r]{~~~~~~\textcolor{red}{$~$}}\taput{$~$} 
+	\Tr{$~\overline{B}~$}~[tnpos=r]{~~~~~~\textcolor{red}{$~$}} \tbput{$~$}
+		}
+}
+\end{center}
+
+et l'on a donc toujours $P(A\cap B)=P(A)\times P_A(B).$ On en déduit la relation fondamentale (hors-programme)~:
+\[\boxed{P_A(B)=\frac{P(A\cap B)}{P(A)}.}\]
+
+ 
+\item Pour calculer $P_M(D),$ on utilise la formule encadrée ci-dessus, avec $A=M$ et $B=D~:$\footnote{On a déjà calculé $P(M\cap D)$ et $P(M)$ dans les questions précédentes.}
+\[P_M(D)=\frac{P(M\cap D)}{P(M)}=\frac{0,2756}{0,4824}\approx 0,57.\]
+
+Conclusion~: sachant qu'il a marqué, il y a environ 57~\% de chances que Stephen Curry ait tiré à 2 points.
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item On représente la situation par un arbre pondéré~:
+
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$D$}\taput{$0,08$}}
+	{
+	\Tr{$T$}\taput{$0,98$} 
+	\Tr{$\overline{T}$}\tbput{$0,02$}
+		}	
+\pstree{\Tr{$\overline{D}$}\tbput{$0,92$}}
+	{
+	\Tr{$T$}\taput{$0,005$} 
+	\Tr{$\overline{T}$}\tbput{$0,995$}
+		}
+}
+\end{center}
+
+\item $P(D\cap T)=0,08\times 0,98=0,0784.$
+\item D'après la formule des probabilités totales, la probabilité que le test soit positif est~:
+
+\begin{align*}P(T)&=P\left(D\cap T\right)+P\left(\overline{D}\cap T\right)\\
+&=0,08\times 0,98+0,92\times 0,005=0,083.\end{align*}
+\item On utilise à nouveau la formule encadrée de l'exercice précédent~: sachant qu'un athlète présente un test positif, la probabilité qu'il soit dopé est
+\[P_T(D)=\frac{P(T\cap D)}{P(T)}=\frac{0,0784}{0,083}\approx 0,94.\]
+\end{enumerate}
+
+
+\end{exo}
 
 \end{document}
