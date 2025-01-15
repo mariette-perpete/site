@@ -9391,4 +9391,67 @@ Conclusion~: le point $H$ a pour coordonnées $\left(\frac{1}{3};\frac{1}{3};\fr
 
 
 
+\begin{exo}
+
+Faire une figure n'est pas évident ici, parce que l'énoncé part de la droite $d$ et du point $A,$ puis définit $B$ et enfin le plan $P.$ On préférerait que ce soit l'inverse~; et c'est justement en faisant tout à l'envers que l'on construit la figure \footnote{La figure, que nous faisons en premier, n'est là que pour illustrer l'exercice et guider l'intuition. Lorsque nous ferons les calculs, en revanche, nous irons \og dans l'ordre \fg.}~: on trace un plan $P,$ on y place un point $B,$ puis on trace une droite $d$ orthogonale à $P$ et ne passant pas par $B,$ sur laquelle on place un point $A.$
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.8cm,yunit=1.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(2.4157389033565653,-0.910158907237268)(8.382092970738524,3.2843469772753022)
+\pspolygon[linewidth=2.pt,linecolor=blue,fillcolor=blue!10!white,fillstyle=solid,opacity=0.25](2.5,0.)(7.,0.)(8.,1.5)(4.,1.5)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.25](5.200035732456475,0.9000119108188249)(5.5,1.)(5.5,1.2988026080634913)(5.2,1.17)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.25](5.5,1.)(5.5,1.2988026080634913)(5.75358,1.09)(5.754874936005471,0.7961000511956229)
+\psline[linewidth=2.pt,linecolor=blue](2.5,0.)(7.,0.)
+\psline[linewidth=2.pt,linecolor=blue](7.,0.)(8.,1.5)
+\psline[linewidth=2.pt,linecolor=blue](8.,1.5)(4.,1.5)
+\psline[linewidth=2.pt,linecolor=blue](4.,1.5)(2.5,0.)
+\psline[linewidth=2.pt](5.5,1.)(4.,0.5)
+\psline[linewidth=2.pt](5.5,1.)(6.,0.6)
+\psline[linewidth=2.pt](5.200035732456475,0.9000119108188249)(5.2,1.17)
+\psline[linewidth=2.pt](5.2,1.17)(5.5,1.2988026080634913)
+\psline[linewidth=2.pt](5.754874936005471,0.7961000511956229)(5.75358,1.09)
+\psline[linewidth=2.pt](5.5,1.2988026080634913)(5.75358,1.09)
+\psline[linewidth=2.pt,linecolor=red](5.200035732456475,0.9000119108188249)(5.5,1.)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.)(5.5,1.2988026080634913)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.2988026080634913)(5.2,1.17)
+\psline[linewidth=2.pt,linecolor=red](5.2,1.17)(5.200035732456475,0.9000119108188249)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.)(5.5,1.2988026080634913)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.2988026080634913)(5.75358,1.09)
+\psline[linewidth=2.pt,linecolor=red](5.75358,1.09)(5.754874936005471,0.7961000511956229)
+\psline[linewidth=2.pt,linecolor=red](5.754874936005471,0.7961000511956229)(5.5,1.)
+\rput[tl](6.711120661916558,0.2){\blue{$P$}}
+\psline[linewidth=2.pt,linecolor=green](5.5,1.)(5.5,3.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green](5.5,1.)(5.5,0.)
+\psline[linewidth=2.pt,linecolor=green](5.5,0.)(5.502123050239489,-0.733232427479649)
+\rput[tl](5.64956178337084,-0.41869646346610334){\green{$d$}}
+\psdots[dotstyle=*,linecolor=ududff](6.553852679909785,1.1048371122245073)
+\rput[bl](6.593169675411478,1.20312960097874){\ududff{$B$}}
+\psdots[dotstyle=*,linecolor=green](5.5,2.5)
+\rput[bl](5.541440045741183,2.5975912486422597){\green{$A$}}
+\psline[linewidth=2.pt,linecolor=black]{->}(5.5,1.)(5.5,2)
+\rput[tl](5.6,1.8){$\overrightarrow{u}$}
+\end{pspicture*}
+\end{center}
+
+Les vecteurs $\overrightarrow{AB}\begin{pmatrix} 1\\-4\\3\end{pmatrix}$ et $\overrightarrow{u}\begin{pmatrix}-1\\5\\3\end{pmatrix}$ ne sont pas colinéaires, donc $B$ n'appartient pas à la droite $d$ passant par $A$ et dirigée par $\overrightarrow{u}.$
+
+\medskip
+
+Le plan $P$ est orthogonal à $d,$ donc il est orthogonal à $\overrightarrow{u}\begin{pmatrix} -1\\5\\3\end{pmatrix}~\textcolor{red}{\begin{matrix}a\\b\\c\end{matrix}}.$ Il a donc une équation de la forme
+\[-x+5y+3z+d=0.\]
+Et comme $P$ passe par $B(2;-4;1),$ on a 
+\begin{align*}
+-2+5\times (-4)+3\times 1+d&=0\\
+-19+d&=0\\
+d&=19.
+\end{align*}
+Finalement
+\[P:-x+5y+3z+19=0.\]
+
+\end{exo}
+
+
+
 \end{document}

@@ -2852,4 +2852,157 @@ Conclusion~: sachant qu'il a marqué, il y a environ 57~\% de chances que Stephe
 
 \end{exo}
 
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item On commence par faire un arbre pondéré. Comme un appareil en parfait état de fonctionnement est toujours accepté à l’issue du test, il y a un 1 et un 0 sur les branches en haut à droite. Notons par ailleurs que nous sommes obligés de conserver les fractions, parce que les résultats \og ne tombent pas juste \fg.
+
+\medskip
+
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$F$}\taput{$\frac{9}{10}$}}
+	{
+	\Tr{$T$}\taput{$1$} 
+	\Tr{$\overline{T}$}\tbput{$0$}
+		}	
+\pstree{\Tr{$\overline{F}$}\tbput{$\frac{1}{10}$}}
+	{
+	\Tr{$T$}\taput{$\frac{1}{11}$} 
+	\Tr{$\overline{T}$}\tbput{$\frac{10}{11}$}
+		}
+}
+\end{center}
+
+
+\medskip
+
+On en vient au calcul des probabilités demandé par l'énoncé~:
+
+\begin{itemize}
+\item[\textbullet] $P\left(\overline{F}\cap T\right)=\frac{1}{10}\times \frac{1}{11}=\frac{1}{110}~;$
+\item[\textbullet] d'après la formule des probabilités totales~:
+\[P(T)=P\left(F\cap T\right)+P\left(\overline{F}\cap T\right)=\frac{9}{10}\times 1+\frac{1}{10}\times \frac{1}{11}=\frac{9}{10}+\frac{1}{110}=\frac{99}{110}+\frac{1}{110}=\frac{100}{110}=\frac{10}{11}.
+\]
+\end{itemize}
+
+\item Sachant qu’un appareil a été accepté à l’issue du test, la probabilité qu’il ne fonctionne pas parfaitement est
+\[P_T\left(\overline{F}\right)=\frac{P\left(T\cap\overline{F}\right)}{P(T)}=\frac{\frac{1}{110}}{\frac{10}{11}}=\frac{1}{110}\times \frac{11}{10}=\frac{11}{1100}=\frac{1}{100}.\]
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item On représente la situation par un arbre pondéré. Les probabilités sont les mêmes sur toutes les branches (0,7/0,3), car chaque jour Justin a 70~\% de chances d'avoir des spams  -- et ce indépendamment de ce qu'il s'est passé l'autre jour.
+
+\medskip
+
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$L$}\taput{$0,7$}}
+	{
+	\Tr{$M$}\taput{$0,7$} 
+	\Tr{$\overline{M}$}\tbput{$0,3$}
+		}	
+\pstree{\Tr{$\overline{L}$}\tbput{$0,3$}}
+	{
+	\Tr{$M$}\taput{$0,7$} 
+	\Tr{$\overline{M}$}\tbput{$0,3$}
+		}
+}
+\end{center}
+
+\item 
+
+\begin{itemize}
+\item[\textbullet] La probabilité que Justin ait des spams lundi et mardi est
+\[P(A)=P(L\cap M)=0,7\times 0,7=0,49.\]
+\item[\textbullet] La probabilité que Justin n'ait des spams qu'une seule fois\footnote{Donc il en a le lundi, mais pas le mardi~; ou bien le mardi, mais pas le lundi.} est
+\[P(B)=P\left(L\cap\overline{M}\right)+P\left(\overline{L}\cap M\right)=0,7\times 0,3+0,3\times 0,7=0,42.\]
+
+\end{itemize}
+
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item On représente la situation par un arbre pondéré, avec de gauche à droite le résultat du 1\up{er} tir, du 2\up{e} et du 3\up{e}. On note $R$ pour \og réussi \fg, $M$ pour \og manqué \fg. Comme dans l'exercice précédent, les tirs sont indépendants et Rémy a toujours 80~\% de chances de toucher le centre de la cible, donc les probabilités sont les mêmes sur toutes les branches (0,8/0,2).
+
+\medskip
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$R$}\taput{$0,8$}}
+	{
+	\pstree{\Tr{$R$}\taput{$0,8$}}
+	{
+	\Tr{$R$}~[tnpos=r]{~~\textcolor{red}{3 tirs réussis}}\taput{$0,8$}
+	\Tr{$M$}~[tnpos=r]{~~\textcolor{blue}{2 tirs réussis}}\tbput{$0,2$}
+		}
+	\pstree{\Tr{$M$}\tbput{$0,2$}}
+	{
+	\Tr{$R$}~[tnpos=r]{~~\textcolor{blue}{2 tirs réussis}}\taput{$0,8$}
+	\Tr{$M$}~[tnpos=r]{~~\textcolor{green}{1 tir réussi}}\tbput{$0,2$}
+		}
+		}	
+\pstree{\Tr{$M$}\tbput{$0,2$}}
+	{
+	\pstree{\Tr{$R$}\taput{$0,8$}}
+	{
+	\Tr{$R$}~[tnpos=r]{~~\textcolor{blue}{2 tirs réussis}}\taput{$0,8$}
+	\Tr{$M$}~[tnpos=r]{~~\textcolor{green}{1 tir réussi}}\tbput{$0,2$}
+		}
+	\pstree{\Tr{$M$}\tbput{$0,2$}}
+	{
+	\Tr{$R$}~[tnpos=r]{~~\textcolor{green}{1 tir réussi}}\taput{$0,8$}
+	\Tr{$M$}~[tnpos=r]{~~\textcolor{gray}{0 tir réussi}}\tbput{$0,2$}
+		}
+		}
+}
+\end{center}
+
+\medskip
+
+On a indiqué le nombre de tirs réussis à l'extrémité droite de l'arbre, avec une couleur différente en fonction du résultat. Par exemple, lorsqu'on suit le chemin tout en haut, Rémy réussit le 1\up{er}, le 2\up{e} et le 3\up{e} tirs, donc on a indiqué \textcolor{red}{3 tirs réussis}.
+
+\item Pour gagner un panda en peluche, Rémy doit toucher 2 fois le centre de la cible. Cela correspond aux trois chemins qui se terminent par \textcolor{blue}{2 tirs réussis}. On a donc
+\[P(A)=0,8\times 0,8\times 0,2+0,8\times 0,2\times 0,8+0,2\times 0,8\times 0,8=0,384.\]
+
+
+\end{enumerate}
+
+
+\end{exo}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \end{document}

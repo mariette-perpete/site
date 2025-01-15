@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  10 JAN 2025 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  13 JAN 2025 12:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2124,12 +2124,12 @@ Overfull \hbox (16.60632pt too wide) in paragraph at lines 9084--9085
  [] 
  []
 
-[87] [88] [89] [90] [91]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9394.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 9394.
+[87] [88] [89] [90] [91] [92]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9457.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 9457.
  (./CorrigesTerminale.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 9394.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 9394.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 9457.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 9457.
 
 Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 (rerunfilecheck)             Checksum: C9EEA54C5335640949382548E6F600B1;592.
@@ -2138,7 +2138,7 @@ Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 9394.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 9457.
  ) 
 Here is how much of TeX's memory you used:
  41206 strings out of 483041
@@ -2149,4 +2149,4 @@ Here is how much of TeX's memory you used:
  81 hyphenation exceptions out of 8191
  60i,20n,75p,919b,2445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesTerminale.dvi (91 pages, 2257348 bytes).
+Output written on CorrigesTerminale.dvi (92 pages, 2295660 bytes).
