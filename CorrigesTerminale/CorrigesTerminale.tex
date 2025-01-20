@@ -9454,4 +9454,120 @@ Finalement
 
 
 
+\begin{exo}
+
+
+\begin{enumerate}
+\item On considère les points $A(2;-1;4)$ et $B(1;3;4).$
+\begin{enumerate}
+\item Comme $\overrightarrow{AB}\begin{pmatrix}-1\\ 4\\ 0\end{pmatrix},$ une représentation paramétrique de $(AB)$ est
+\[\begin{cases}x&=x_A+t\times (-1)\\y&=y_A+t\times 4\\z&=z_A+t\times 0\end{cases}\hspace{1cm}\text{soit}\hspace{1cm}\begin{cases}x&=2-t\\y&=-1+4t\\z&=4\end{cases}.\]
+
+\item Savoir si $K$ appartient à $(AB)$ revient à savoir s'il existe un réel $t$ tel que \[\begin{cases}0&=2-t\\7&=-1+4t\\4&=4\end{cases}.\]
+
+Il est clair que $t=2$ est solution, donc $K\in (AB).$
+\end{enumerate}
+\item La droite $(D)$ passe par $C\left(2;-1;0\right)$ et elle est  dirigée par $\overrightarrow{u}\begin{pmatrix}2\\-8\\0\end{pmatrix},$ donc sa représentation paramétrique est
+
+\[\begin{cases}x&=x_C+t\times 2\\y&=y_C+t\times (-8)\\z&=z_C+t\times 0\end{cases}\hspace{1cm}\text{soit}\hspace{1cm}\begin{cases}x&=2+2t\\y&=-1-8t\\z&=0\end{cases}.\]
+
+\item On remarque que $\overrightarrow{u}=-2\overrightarrow{AB},$ donc $\overrightarrow{u}$ et $\overrightarrow{AB}$ sont colinéaires~; et donc $(D)$ est parallèle à $(AB).$
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+Soient $D$ et $D'$ les droites de représentations paramétriques respectives
+\[\begin{cases}x&=\textcolor{red}{1}t+1\\y&=\textcolor{red}{2}t-1\\z&=\textcolor{red}{3}t+2\end{cases}\qquad,\qquad \begin{cases}x&=\textcolor{blue}{1}t+1\\y&=\textcolor{blue}{1}t+3\\z&=\textcolor{blue}{-1}t+4\end{cases}.\]
+
+\begin{enumerate}
+\item D'après leur représentation paramétrique~:
+\begin{itemize}
+\item[\textbullet] un vecteur directeur de $D$ est $\overrightarrow{u}\begin{pmatrix}\textcolor{red}{1}\\\textcolor{red}{2}\\\textcolor{red}{3}\end{pmatrix}~;$
+\item[\textbullet] un vecteur directeur de $D'$ est $\overrightarrow{v}\begin{pmatrix}\textcolor{blue}{1}\\\textcolor{blue}{1}\\\textcolor{blue}{-1}\end{pmatrix}.$
+\end{itemize}
+
+Les vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ ne sont pas colinéaires, donc $D$ et $D'$ ne sont pas parallèles.
+
+\medskip
+
+En revanche, $\overrightarrow{u}$ et $\overrightarrow{v}$ sont orthogonaux, puisque
+\[\overrightarrow{u}\cdot \overrightarrow{v}=1\times 1+2\times 1+3\times (-1)=0.\]
+
+Les droites $D$ et $D'$ sont donc orthogonales.
+\item Pour prouver que le plan $P:x+y-z+2=0$ contient la droite $D,$ il suffit de prouver que tous les points de la droite $D$ sont dans le plan $P.$ Or la représentation paramétrique de $D$ dit que ces points ont des coordonnées de la forme $\begin{cases}x&=t+1\\y&=2t-1\\z&=3t+2\end{cases}.$ Il suffit donc de prouver qu'ils vérifient l'équation de $P$ (on \og injecte \fg~{} la représentation paramétrique de $D$ dans l'équation de $P$)~:
+\[x+y-z+2=(t+1)+(2t-1)-(3t+2)+2=t+1+2t-1-3t-2+2=0.\] La droite $D$ est donc bien incluse dans le plan $P.$
+\medskip
+
+Pour prouver que le plan $P$ est orthogonal à la droite $D',$ on utilise un vecteur normal~: $P$ a pour équation $\underset{\textcolor{red}{a}}{1}x+\underset{\textcolor{red}{b}}{1}y+\underset{\textcolor{red}{c}}{-1}z+2=0,$ donc un vecteur normal à $P$ est
+$\overrightarrow{n}\begin{pmatrix}1\\1\\-1\end{pmatrix}~\textcolor{red}{\begin{matrix}a\\b\\c\end{matrix}}.$
+
+Ce vecteur est égal\footnote{La colinéarité suffirait.} au vecteur directeur $\overrightarrow{v}\begin{pmatrix}1\\1\\-1\end{pmatrix}$ de la droite $D',$ donc $D'$ est orthogonale au plan $P.$
+\end{enumerate}
+
+
+\end{exo}
+
+\begin{exo}
+
+Soient $P:-3x+y+2z-10=0$ et $A(2;0;1).$ On cherche les coordonnées du projeté orthogonal $H$ de $A$ sur le plan $P.$
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.8cm,yunit=1.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(2.4157389033565653,-0.910158907237268)(8.382092970738524,3.2843469772753022)
+\pspolygon[linewidth=2.pt,linecolor=blue,fillcolor=blue!10!white,fillstyle=solid,opacity=0.25](2.5,0.)(7.,0.)(8.,1.5)(4.,1.5)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.25](5.200035732456475,0.9000119108188249)(5.5,1.)(5.5,1.2988026080634913)(5.2,1.17)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.25](5.5,1.)(5.5,1.2988026080634913)(5.75358,1.09)(5.754874936005471,0.7961000511956229)
+\psline[linewidth=2.pt,linecolor=blue](2.5,0.)(7.,0.)
+\psline[linewidth=2.pt,linecolor=blue](7.,0.)(8.,1.5)
+\psline[linewidth=2.pt,linecolor=blue](8.,1.5)(4.,1.5)
+\psline[linewidth=2.pt,linecolor=blue](4.,1.5)(2.5,0.)
+\psline[linewidth=2.pt](5.5,1.)(4.,0.5)
+\psline[linewidth=2.pt](5.5,1.)(6.,0.6)
+\psline[linewidth=2.pt](5.200035732456475,0.9000119108188249)(5.2,1.17)
+\psline[linewidth=2.pt](5.2,1.17)(5.5,1.2988026080634913)
+\psline[linewidth=2.pt](5.754874936005471,0.7961000511956229)(5.75358,1.09)
+\psline[linewidth=2.pt](5.5,1.2988026080634913)(5.75358,1.09)
+\psline[linewidth=2.pt,linecolor=red](5.200035732456475,0.9000119108188249)(5.5,1.)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.)(5.5,1.2988026080634913)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.2988026080634913)(5.2,1.17)
+\psline[linewidth=2.pt,linecolor=red](5.2,1.17)(5.200035732456475,0.9000119108188249)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.)(5.5,1.2988026080634913)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.2988026080634913)(5.75358,1.09)
+\psline[linewidth=2.pt,linecolor=red](5.75358,1.09)(5.754874936005471,0.7961000511956229)
+\psline[linewidth=2.pt,linecolor=red](5.754874936005471,0.7961000511956229)(5.5,1.)
+\rput[tl](6.711120661916558,0.25){\blue{$P$}}
+\psline[linewidth=2.pt,linecolor=green](5.5,1.)(5.5,2.5)
+\rput[tl](5.4,0.85){\green{$H$}}
+\psdots[dotstyle=*,linecolor=green](5.5,1)
+\psdots[dotstyle=*,linecolor=green](5.5,2.5)
+\rput[bl](5.541440045741183,2.5975912486422597){\green{$A$}}
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item La droite $(AH)$ est orthogonale au plan $P,$ donc elle est dirigée par un vecteur normal au plan $P.$
+
+L'équation de $P$ est $-3x+y+2z-10=0,$ donc un vecteur normal à ce plan est $\overrightarrow{n}\begin{pmatrix}-3\\1\\2\end{pmatrix}.$ La droite $(AH)$ a donc pour représentation paramétrique \[\begin{cases}x&=x_A+t\times (-3)\\y&=y_A+t\times 1\\z&=z_A+t\times 2\end{cases}\hspace{1cm}\text{soit}\hspace{1cm}\begin{cases}x&=2-3t\\y&=t\\z&=1+2t\end{cases}.\]
+
+
+\item Le point $H$ est le point d'intersection de la droite $(AH)$ avec le plan $P,$ donc pour obtenir ses coordonnées, on \og injecte \fg~{} la représentation paramétrique de $(AH)$  dans l'équation de $P,$ puis on résout~:
+\begin{align*}
+-3x+y+2z-10&=0\\
+-3(2-3t)+(t)+2(1+2t)-10&=0\\
+-6+9t+t+2+4t-10&=0\\
+14t-14&=0\\
+t=\frac{14}{14}&=1.
+\end{align*}
+
+Enfin on remplace $t$ par $1$ dans la représentation paramétrique~:
+\[\begin{cases}x&=2-3t=2-3\times 1=-1\\y&=t=1\\z&=1+2t=1+2\times 1=3\end{cases}.\]
+
+Conclusion~: $H(-1;1;3).$
+\end{enumerate}
+
+\end{exo}
+
 \end{document}

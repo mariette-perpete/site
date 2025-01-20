@@ -5831,4 +5831,137 @@ On rappelle que chacun des vecteurs peut être représenté \textbf{où l'on veu
 
 
 
+
+\begin{exo}
+
+L'énoncé nous donne $\overrightarrow{u}\begin{pmatrix} -2\\2\end{pmatrix}.$
+
+\begin{itemize}
+\item[\textbullet] $\overrightarrow{v}=3\overrightarrow{u},$ donc \[\overrightarrow{v}\begin{pmatrix} 3\times (-2)\\3\times 2\end{pmatrix}\qquad \overrightarrow{v}\begin{pmatrix} -6\\6\end{pmatrix}.\]
+\item[\textbullet] $\overrightarrow{w}=-2\overrightarrow{u},$ donc \[\overrightarrow{w}\begin{pmatrix} -2\times (-2)\\-2\times 2\end{pmatrix}\qquad \overrightarrow{w}\begin{pmatrix} 4\\-4\end{pmatrix}.\]
+\item[\textbullet] $\overrightarrow{y}=1,5\overrightarrow{u},$ donc \[\overrightarrow{y}\begin{pmatrix} 1,5\times (-2)\\1,5\times 2\end{pmatrix}\qquad \overrightarrow{y}\begin{pmatrix} -3\\3\end{pmatrix}.\]
+\item[\textbullet] $\overrightarrow{z}=-\overrightarrow{u}=-1\overrightarrow{u},$ donc \[\overrightarrow{z}\begin{pmatrix} -1\times (-2)\\-1\times 2\end{pmatrix}\qquad \overrightarrow{z}\begin{pmatrix} 2\\-2\end{pmatrix}.\]
+\end{itemize}
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1 0.5 0}
+\begin{pspicture*}(-1.32,-4)(9.5,5.5)
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\multips(0,-6)(0,1.0){12}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.32,0)(21.68,0)}
+\multips(-1,0)(1.0,0){24}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-4)(0,10.26)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.32,-4)(21.68,10.26)
+\psline[linewidth=2.pt]{->}(9,-3)(7,-1)
+\rput[tl](8.2,-1.5){$\overrightarrow{u}$}
+\psline[linewidth=2.pt,linecolor=red]{->}(5,-3)(-1,3)
+\rput[tl](1.1,-0.55){$\red{\overrightarrow{v}=3\overrightarrow{u}}$}
+\psline[linewidth=2.pt,linecolor=blue]{->}(7,1)(4,4)
+\rput[tl](5.2,3.5){$\blue{\overrightarrow{y}=1,5\overrightarrow{u}}$}
+\psline[linewidth=2.pt,linecolor=green]{->}(2,2)(6,-2)
+\rput[tl](4.2,0.5){$\green{\overrightarrow{w}=-2\overrightarrow{u}}$}
+\psline[linewidth=2.pt,linecolor=ffxfqq]{->}(3,3)(5,1)
+\rput[tl](4.2,2.5){$\ffxfqq{\overrightarrow{z}=-\overrightarrow{u}}$}
+\end{pspicture*}
+\end{center}
+
+
+
+
+
+\end{exo}
+
+
+\begin{exo}
+
+
+Soient $A\left(0;1\right)$ et $B\left(3;-1\right).$
+
+\begin{enumerate}
+\item On a \[\overrightarrow{AB}\begin{pmatrix} x_B-x_A\\y_B-y_A \end{pmatrix}\qquad \overrightarrow{AB}\begin{pmatrix} 3-0\\-1-1 \end{pmatrix}\qquad \overrightarrow{AB}\begin{pmatrix} 3\\-2 \end{pmatrix},\] donc \[-\overrightarrow{AB} \begin{pmatrix} -1\times 3\\-1\times (-2) \end{pmatrix}\qquad -\overrightarrow{AB} \begin{pmatrix} - 3\\2 \end{pmatrix}.\]
+\item D'un autre côté, \[\overrightarrow{BA}\begin{pmatrix} x_A-x_B\\y_A-y_B \end{pmatrix}\qquad \overrightarrow{BA}\begin{pmatrix} 0-3\\1-(-1) \end{pmatrix}\qquad \overrightarrow{BA}\begin{pmatrix} -3\\2 \end{pmatrix}.\]
+
+Les vecteurs $-\overrightarrow{AB}$ et $\overrightarrow{BA}$ ont les mêmes coordonnées, donc ils sont égaux~: $-\overrightarrow{AB}=\overrightarrow{BA}.$
+\end{enumerate}
+
+\begin{center}
+
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.08,-1.48)(4.5,2.2)
+\multips(0,-1)(0,1.0){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.08,0)(4.5,0)}
+\multips(-1,0)(1.0,0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.48)(0,2.2)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.08,-1.48)(4.5,2.2)
+\psline[linewidth=1.6pt,linecolor=red](3.,-0.96)(1.5,0)
+\psline[linewidth=1.6pt,linecolor=blue]{->}(0.,0.95)(3.,-1.04)
+\psline[linewidth=1.6pt,linecolor=red]{->}(1.5,0)(0.,1.04)
+\psdots[dotsize=2pt 0,dotstyle=*](0.,1.)
+\rput[bl](0.08,1.08){$A$}
+\psdots[dotsize=2pt 0,dotstyle=*](3.,-1.)
+\rput[bl](3.08,-0.92){$B$}
+\end{pspicture*}
+\end{center}
+
+\textbf{Remarque~:} L'égalité de la question 2 est un fait général (elle est vraie quels que soient les points $A$ et $B$). Elle exprime le fait que, sur la figure ci-dessus, les vecteurs  $\overrightarrow{AB}$ et $\overrightarrow{BA}$ sont opposés.
+
+\end{exo}
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item On représente $\overrightarrow{u}\begin{pmatrix} -2\\2,5\end{pmatrix},$ $\overrightarrow{v}\begin{pmatrix} 2,5\\-3\end{pmatrix}$ et $\overrightarrow{w}\begin{pmatrix} -3\\3,75\end{pmatrix}.$
+
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.1,-1.281151821064872)(3.9426353746768017,3.4414156167406142)
+\multips(0,-1)(0,1.0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.1,0)(3.9426353746768017,0)}
+\multips(-3,0)(1.0,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.281151821064872)(0,3.4414156167406142)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.1,-1.281151821064872)(3.9426353746768017,3.4414156167406142)
+\psline[linewidth=2.pt,linecolor=blue]{->}(-1,0.)(-3,2.5)
+\rput[tl](-1.8031795422932552,1.516467089155396){\blue{$\overrightarrow{u}$}}
+\psline[linewidth=2.pt,linecolor=ffxfqq]{->}(-1.,2.)(1.5,-1)
+\rput[tl](0.45433852525334252,0.6039107843597368){\ffxfqq{$\overrightarrow{v}$}}
+\psline[linewidth=2.pt,linecolor=magenta]{->}(3.,-1.)(0.,2.75)
+\rput[tl](1.4398236095306671,1.4600229693332651){\magenta{$\overrightarrow{w}$}}
+\end{pspicture*}
+\end{center}
+
+\item
+
+\begin{itemize}
+\item[\textbullet] Pour savoir si $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires, on calcule leur déterminant~:
+\[\overrightarrow{u}\begin{pmatrix} -2\\2,5\end{pmatrix} \begin{matrix} \textcolor{red}{
+x}\\\textcolor{red}{
+y}\end{matrix}\qquad
+\overrightarrow{v}\begin{pmatrix} 2,5\\-3\end{pmatrix}\begin{matrix} \textcolor{red}{
+x'}\\\textcolor{red}{
+y'}\end{matrix}\]
+donc
+\[\det\left(\overrightarrow{u},\overrightarrow{v}\right)=\textcolor{red}{
+xy'-x'y}=-2\times (-3)-2,5\times 2,5=6-6,25=-0,25.\]
+
+Conclusion~: $\det\left(\overrightarrow{u},\overrightarrow{v}\right)\not=0,$ donc les vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ ne sont pas colinéaires.
+
+\medskip
+
+\item[\textbullet] Pour savoir si $\overrightarrow{u}$ et $\overrightarrow{w}$ sont colinéaires, on calcule leur déterminant~:
+\[\overrightarrow{u}\begin{pmatrix} -2\\2,5\end{pmatrix} \begin{matrix} \textcolor{red}{
+x}\\\textcolor{red}{
+y}\end{matrix}\qquad
+\overrightarrow{w}\begin{pmatrix} -3\\3,75\end{pmatrix}\begin{matrix} \textcolor{red}{
+x'}\\\textcolor{red}{
+y'}\end{matrix}\]
+donc
+\[\det\left(\overrightarrow{u},\overrightarrow{w}\right)=\textcolor{red}{
+xy'-x'y}=-2\times 3,75-(-3)\times 2,5=-7,5+7,5=0.
+\]
+
+Conclusion~: $\det\left(\overrightarrow{u},\overrightarrow{w}\right)=0,$ donc les vecteurs $\overrightarrow{u}$ et $\overrightarrow{w}$ sont colinéaires.
+\end{itemize}
+\end{enumerate}
+
+\end{exo}
+
+
 \end{document}

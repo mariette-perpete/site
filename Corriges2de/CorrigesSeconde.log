@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  16 JAN 2025 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  17 JAN 2025 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1900,12 +1900,12 @@ Package fourier-orns Warning: Command \danger is deprecated.
 <xymatrix 2x2 66> <xymatrix 2x2 66> <xymatrix 2x2 66> [57] <xymatrix 2x2 66>
 <xymatrix 3x2 122> <xymatrix 2x2 66> <xymatrix 3x2 122> <xymatrix 3x2 122>
 [58] <xymatrix 3x2 122> <xymatrix 3x2 122> <xymatrix 3x2 122> <xymatrix 4x2
-178> <xymatrix 3x2 122> [59] [60]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5834.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5834.
+178> <xymatrix 3x2 122> [59] [60] [61] [62]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5967.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5967.
  (./CorrigesSeconde.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5834.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5834.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5967.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5967.
 
 Package rerunfilecheck Info: File `CorrigesSeconde.out' has not changed.
 (rerunfilecheck)             Checksum: B79547A6A29254630F65B76C0A1EAA8B;571.
@@ -1913,7 +1913,7 @@ Package rerunfilecheck Info: File `CorrigesSeconde.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5834.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5967.
  ) 
 Here is how much of TeX's memory you used:
  35961 strings out of 483041
@@ -1924,4 +1924,4 @@ Here is how much of TeX's memory you used:
  81 hyphenation exceptions out of 8191
  60i,21n,72p,683b,1172s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesSeconde.dvi (60 pages, 2158196 bytes).
+Output written on CorrigesSeconde.dvi (62 pages, 2243224 bytes).
