@@ -3078,6 +3078,131 @@ On dit que la suite $z$ est constante.
 
 
 
+\begin{exo}
+
+
+\begin{enumerate}
+\item On ajoute 40~\euro{} tous les mois sur un compte en banque.
+
+\medskip
+
+Cela correspond à une suite \fbox{arithmétique de raison $r=40.$}
+
+\medskip
+
+Si l'on note $u_n$ la somme sur le compte après $n$ mois, la relation de récurrence est \[u_{n+1}=u_n+40.\]
+\item Une population de bactéries augmente de 20~\% toutes les minutes.
+
+\medskip
+
+Pour augmenter un nombre de 20~\%, il faut le multiplier par 1,20. Cela correspond donc à une suite \fbox{géométrique de raison $q=1,20.$}
+
+\medskip
+
+Si l'on note $v_n$ la population de bactéries après $n$ minutes, la relation de récurrence est \[v_{n+1}=v_n\times 1,20.\]
+\item La suite est représentée par le nuage de points~:
+\begin{center}
+\psset{xunit=1cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.94,-1.54)(4.7,5.52)
+\multips(0,-1)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=
+gray]{c-c}(-0.94,0)(4.7,0)}
+\multips(0,0)(1.0,0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=
+gray]{c-c}(0,-1.54)(0,5.52)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.94,-1.54)(4.7,5.52)
+\psline[linewidth=2.pt]{->}(0.,-1.)(1.,-1.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(1.,-1.)(1.,1.)
+\psline[linewidth=2.pt]{->}(1.,1.)(2.,1.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(2.,1.)(2.,3.)
+\psline[linewidth=2.pt]{->}(2.,3.)(3.,3.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(3.,3.)(3.,5.)
+\rput[tl](1.06,-0.34){\xfqqff{$+2$}}
+\rput[tl](2.06,2.04){\xfqqff{$+2$}}
+\rput[tl](3.06,4.06){\xfqqff{$+2$}}
+\psdots[dotstyle=*,linecolor=red](0.,-1.)
+\psdots[dotstyle=*,linecolor=red](1.,1.)
+\psdots[dotstyle=*,linecolor=red](2.,3.)
+\psdots[dotstyle=*,linecolor=red](3.,5.)
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+Quand on avance de 1 en abscisse, on monte de 2 en ordonnée, donc cela correspond à une suite \fbox{arithmétique de raison $r=2.$}
+
+\medskip
+
+Si l'on note $u$ la suite des termes, la relation de récurrence est \[u_{n+1}=u_n+2.\]
+\item Pour soigner son cancer de la thyroïde, un patient doit ingérer une petite quantité d'iode 131, dont la masse diminue ensuite de 8~\% par jour.
+
+\medskip
+
+Pour diminuer un nombre de 8~\%, il faut le multiplier par 0,92 (car $100~\%-8~\%=92~\%=0,92$). Cela correspond donc à une suite \fbox{géométrique de raison $q=0,92.$}
+
+\medskip
+
+Si l'on note $v_n$ la masse d'iode après $n$ minutes, la relation de récurrence est \[v_{n+1}=v_n\times 0,92.\]
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item Pour diminuer un nombre de 10~\%, il faut le multiplier par $0,90.$ Sachant cela, il est agréable de présenter la solution avec le schéma~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+~{}\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{270} \ar@/^0.5cm/[r]|{\red{\times 0,90}} & 
+    *+[F]+{243} \ar@/^0.5cm/[r]|{\red{\times 0,90}} & *+[F]+{219} \\
+    \txt{\blue{$p_0$}}&
+    \txt{\blue{$p_1$}}&\txt{\blue{$p_2$}}\\
+    \txt{\blue{pies en 2001}}&
+    \txt{\blue{pies en 2002}}&\txt{\blue{pies en 2003}}
+    }$
+    \end{center}
+    
+  \columnbreak
+  
+  Calculs utiles~:
+  \begin{align*}
+  270\times 0,90&=243\\
+  243\times 0,90&\approx 219
+  \end{align*}
+  
+  \end{multicols}
+    
+    
+\item La suite $p$ est géométrique de raison $q=0,90.$
+\item La relation de récurrence est \[p_{n+1}=p_n\times 0,90.\]
+\item La formule à entrer dans la cellule C2 est \[\text{=B2*0,90}\]
+\item L'année 2021 est l'année n°20. On étire donc vers la droite jusqu'à la colonne V~:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+	& A	&B		&C		&D 		&$\cdots$&U	&V	\\\hline
+1&$n$&0&1&2&$\cdots$&19&20\\\hline
+2	& $p_n$&$270$&243&219&$\cdots$&36&33\\\hline
+\end{tabular}
+\end{center}
+
+
+\medskip
+
+Conclusion~: suivant ce modèle, on prévoit 33 pies en 2021.
+
+\medskip
+
+\textbf{Remarque~:} On peut s'en sortir sans le tableur, avec le calcul
+\[270\underbrace{\times 0,90\times 0,90\times \cdots\times 0,90}_{\text{20 fois}}=270\times 0,90^{20}\approx 33.\]
+\end{enumerate}
+\end{exo}
+
+
 
 
 
