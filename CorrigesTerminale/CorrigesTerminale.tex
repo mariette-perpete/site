@@ -9570,4 +9570,308 @@ Conclusion~: $H(-1;1;3).$
 
 \end{exo}
 
+\begin{exo}
+
+Soient $A(1;2;3),$ $B(0;1;4),$ $C(-1;-3;2),$ $D(4;-2;5)$ et le vecteur $\overrightarrow{n}\begin{pmatrix}2\\-1\\1\end{pmatrix}.$
+
+\begin{enumerate}
+\item 
+\begin{enumerate}
+\item On calcule les coordonnées des vecteurs~:
+\[\overrightarrow{AB}\begin{pmatrix} -1\\-1\\1\end{pmatrix}\qquad;\qquad \overrightarrow{AC}\begin{pmatrix} -2\\-5\\-1\end{pmatrix}.\] Les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ ne sont pas colinéaires, donc les points $A,$ $B,$ $C$ ne sont pas alignés (et déterminent un plan).
+
+\item Le vecteur $\overrightarrow{n}$ est orthogonal au plan $(ABC),$ puisqu'il est orthogonal aux vecteurs  directeurs du plan $\overrightarrow{AB}$ et $\overrightarrow{AC}.$ En effet~:
+\begin{align*}
+\overrightarrow{n}\cdot\overrightarrow{AB}&=2\times (-1)+(-1)\times (-1)+1\times 1=0,\\
+\overrightarrow{n}\cdot\overrightarrow{AC}&=2\times (-2)+(-1)\times (-5)+1\times (-1)=0.
+\end{align*}
+
+Le vecteur $\overrightarrow{n}\begin{pmatrix}2\\-1\\1\end{pmatrix}~\textcolor{red}{\begin{matrix}a\\b\\c\end{matrix}}$ étant orthogonal au plan $(ABC),$ ce dernier a une équation de la forme
+\begin{align*}ax+by+cz+d&=0\\2x-y+z+d&=0.\end{align*}
+Et comme $(ABC)$ passe par $A(1;2;3)~:$
+\begin{align*}
+2\times 1-2+3+d&=0\\
+3+d&=0\\
+d&=-3.\end{align*}
+
+Conclusion~:
+\[(ABC):2x-y+z-3=0.\]
+
+
+
+\end{enumerate}
+\item Soit $\Delta$ la droite dont une représentation paramétrique est~:
+
+\[\begin{cases}x&=2-2t\\y&=-1+t\\z&=4-t\end{cases},~t\in\mathbb{R}.\]
+\begin{enumerate}
+\item Lorsqu'on prend $t=-1$ dans la représentation paramétrique de $\Delta,$ on obtient~:
+\[\begin{cases}x&=2-2t=2-2\times(-1)=4\\y&=-1+t=-1+(-1)=-2\\z&=4-t=4-(-1)=5\end{cases}.\] Ce sont les coordonnées de $D,$ donc $D$ appartient bien à $\Delta.$\footnote{J'ai \og deviné \fg~{} qu'il fallait prendre $t=-1,$ mais ce n'était vraiment pas difficile.}
+
+\medskip
+
+D'après sa représentation paramétrique, un vecteur directeur de $\Delta$ est $\overrightarrow{u}\begin{pmatrix}-2\\1\\-1\end{pmatrix}.$ On sait aussi que le vecteur $\overrightarrow{n}\begin{pmatrix}2\\-1\\1\end{pmatrix}$ est orthogonal au plan $(ABC).$ On remarque que $\overrightarrow{n}=-\overrightarrow{u},$ donc $\overrightarrow{u}$ est aussi orthogonal au plan $(ABC).$ Comme c'est un vecteur directeur de $\Delta,$ la droite $\Delta$ est orthogonale au plan $(ABC).$
+
+
+\item Le projeté orthogonal $E$ de $D$ sur le plan $(ABC)$ est le point d'intersection de $\Delta$ et de $(ABC),$ donc pour obtenir ses coordonnées, on \og injecte \fg~{} la représentation paramétrique de $\Delta$ dans l'équation de $(ABC),$ puis on résout~:
+\begin{align*}
+2x-y+z-3&=0\\
+2(2-2t)-(-1+t)+(4-t)-3&=0\\
+4-4t+1-t+4-t-3&=0\\
+-6t+6&=0\\
+t=\frac{-6}{-6}&=1.
+\end{align*}
+
+Enfin on remplace $t$ par $1$ dans la représentation paramétrique~:
+\[\begin{cases}x&=2-2t=2-2\times 1=0\\y&=-1+t=-1+1=0\\z&=4-t=4-1=3\end{cases}.\]
+
+Conclusion~: $E(0;0;3).$
+\item La distance du point $D$ au plan $(ABC)$ est la longueur $DE~:$
+\[d(D,(ABC))=DE=\sqrt{(0-4)^2+(0-(-2))^2+(3-5)^2}=\sqrt{24}.\]
+\end{enumerate}
+
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.8cm,yunit=1.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(2.4157389033565653,-0.910158907237268)(8.382092970738524,2.2843469772753022)
+\pspolygon[linewidth=2.pt,linecolor=blue,fillcolor=blue!10!white,fillstyle=solid,opacity=0.25](2.5,0.)(7.,0.)(8.,1.5)(4.,1.5)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.25](5.200035732456475,0.9000119108188249)(5.5,1.)(5.5,1.2988026080634913)(5.2,1.17)
+\pspolygon[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.25](5.5,1.)(5.5,1.2988026080634913)(5.75358,1.09)(5.754874936005471,0.7961000511956229)
+\psline[linewidth=2.pt,linecolor=blue](2.5,0.)(7.,0.)
+\psline[linewidth=2.pt,linecolor=blue](7.,0.)(8.,1.5)
+\psline[linewidth=2.pt,linecolor=blue](8.,1.5)(4.,1.5)
+\psline[linewidth=2.pt,linecolor=blue](4.,1.5)(2.5,0.)
+\psline[linewidth=2.pt](5.5,1.)(4.,0.5)
+\psline[linewidth=2.pt](5.5,1.)(6.,0.6)
+\psline[linewidth=2.pt](5.200035732456475,0.9000119108188249)(5.2,1.17)
+\psline[linewidth=2.pt](5.2,1.17)(5.5,1.2988026080634913)
+\psline[linewidth=2.pt](5.754874936005471,0.7961000511956229)(5.75358,1.09)
+\psline[linewidth=2.pt](5.5,1.2988026080634913)(5.75358,1.09)
+\psline[linewidth=2.pt,linecolor=red](5.200035732456475,0.9000119108188249)(5.5,1.)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.)(5.5,1.2988026080634913)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.2988026080634913)(5.2,1.17)
+\psline[linewidth=2.pt,linecolor=red](5.2,1.17)(5.200035732456475,0.9000119108188249)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.)(5.5,1.2988026080634913)
+\psline[linewidth=2.pt,linecolor=red](5.5,1.2988026080634913)(5.75358,1.09)
+\psline[linewidth=2.pt,linecolor=red](5.75358,1.09)(5.754874936005471,0.7961000511956229)
+\psline[linewidth=2.pt,linecolor=red](5.754874936005471,0.7961000511956229)(5.5,1.)
+\rput[tl](6.711120661916558,0.2){\blue{$P$}}
+\psline[linewidth=2.pt,linecolor=ffxfqq](5.5,1.)(5.5,2.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=ffxfqq](5.5,1.)(5.5,0.)
+\psline[linewidth=2.pt,linecolor=ffxfqq](5.5,0.)(5.502123050239489,-0.733232427479649)
+\rput[tl](5.5610985434920295,-0.3498917213381403){\ffxfqq{$\Delta$}}
+\psdots[dotstyle=*,linecolor=ffxfqq](5.5,1.)
+\rput[bl](5.32519657048187,0.7804718993355384){\ffxfqq{$E$}}
+\psdots[dotstyle=*,linecolor=ududff](6.365389440030975,0.9885936369651944)
+\rput[bl](6.504706435532668,0.9868861257194276){\ududff{$B$}}
+\psdots[dotstyle=*,linecolor=ffxfqq](5.5,2.)
+\rput[bl](5.541440045741183,2.0975912486422597){\ffxfqq{$D$}}
+\psdots[dotstyle=*,linecolor=ududff](4.705953891330201,1.2646663610999301)
+\rput[bl](4.445270886831894,1.2129588498541632){\ududff{$C$}}
+\psdots[dotstyle=*,linecolor=ududff](4.430734922818347,0.3774726954431831)
+\rput[bl](4.60051918320041,0.51576518419741637){\ududff{$A$}}
+\end{pspicture*}
+\end{center}
+\item 
+\begin{enumerate}
+\item Pour prouver que le point $H(-1;0;5)$ est le projeté orthogonal de $C$ sur $(AB),$ il suffit de prouver que~:
+
+\begin{itemize}
+\item[\textbullet] $H$ appartient à $(AB),$
+\item[\textbullet] $(CH)$ est orthogonale à $(AB).$
+\end{itemize}
+
+\medskip
+
+Pour le premier point, on utilise la colinéarité~: $\overrightarrow{AB}\begin{pmatrix}-1\\-1\\1\end{pmatrix}$ et $\overrightarrow{AH}\begin{pmatrix}-2\\-2\\2\end{pmatrix}.$ On remarque que $\overrightarrow{AH}=2\overrightarrow{AB},$ donc $\overrightarrow{AH}$ et $\overrightarrow{AB}$ sont colinéaires~; et donc $H$ appartient à $(AB).$
+
+\medskip
+
+Pour le deuxième point, on utilise le produit scalaire~: $\overrightarrow{AB}\begin{pmatrix}-1\\-1\\1\end{pmatrix}$ et $\overrightarrow{CH}\begin{pmatrix}0\\3\\3\end{pmatrix},$ donc
+\[\overrightarrow{AB}\cdot \overrightarrow{CH}=(-1)\times 0+(-1)\times 3+1\times 3=0.\]
+On en déduit que $(CH)$ est orthogonale à $(AB).$
+
+\medskip
+
+Finalement, comme $H$ appartient à $(AB)$ et que $(CH)$ est orthogonale à $(AB),$ $H$ est bien le projeté orthogonal de $C$ sur $(AB).$
+
+\item L'aire du triangle $ABC$ est 
+\[\mathcal{A}_{ABC}=\frac{1}{2}\times\text{base}\times h=\frac{1}{2}\times AB\times h.\]
+
+Or $AB=\sqrt{(-1)^2+(-1)^2+1^2}=\sqrt{3}$ et $CH=\sqrt{0^2+3^2+3^2}=\sqrt{18},$ donc
+\[\mathcal{A}_{ABC}=\frac{1}{2}\times \sqrt{3}\times \sqrt{18}=\frac{1}{2}\times \sqrt{54}.\]
+\item La formule pour le volume d'un tétraèdre (cas particulier de pyramide) est 
+\[\mathcal{V}=\frac{1}{3}\times\mathcal{B}\times h,\]
+où $\mathcal{B}$ désigne l'aire de la base et $h$ la hauteur.
+
+\medskip
+Le volume du tétraèdre $ABCD$ est donc~:
+\[\mathcal{V}=\frac{1}{3}\times \mathcal{A}_{ABC}\times DE=\frac{1}{3}\times \frac{1}{2}\times \sqrt{54}\times \sqrt{24}=\frac{1}{6}\times\sqrt{54\times 24}=\frac{1}{6}\times\sqrt{1296}=\frac{1}{6}\times 36=6.\]
+\end{enumerate}
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+Dans l'espace rapporté à un repère orthonormé de centre O, on considère les points:
+
+$A(2;0;0),$ $B(0;3;0)$ et $C(0;0;1).$
+
+
+
+
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item On calcule les coordonnées des vecteurs~:
+\[\overrightarrow{AB}\begin{pmatrix} -2\\3\\0\end{pmatrix}\qquad;\qquad \overrightarrow{AC}\begin{pmatrix} -2\\0\\1\end{pmatrix}.\] 
+
+Le vecteur $\overrightarrow{n}\begin{pmatrix}3\\2\\6\end{pmatrix}$ est orthogonal au plan $(ABC),$ puisqu'il est orthogonal aux vecteurs  directeurs du plan $\overrightarrow{AB}$ et $\overrightarrow{AC}.$ En effet~:
+\begin{align*}
+\overrightarrow{n}\cdot\overrightarrow{AB}&=3\times (-2)+2\times 3+6\times 0=0,\\
+\overrightarrow{n}\cdot\overrightarrow{AC}&=3\times (-2)+2\times 0+6\times 1=0.
+\end{align*}
+\item Le vecteur $\overrightarrow{n}\begin{pmatrix}3\\2\\6\end{pmatrix}~\textcolor{red}{\begin{matrix}a\\b\\c\end{matrix}}$ étant orthogonal au plan $(ABC),$ ce dernier a une équation de la forme
+\begin{align*}ax+by+cz+d&=0\\3x+2y+6z+d&=0.\end{align*}
+Et comme $(ABC)$ passe par $A(2;0;0)~:$
+\begin{align*}
+3\times 2+2\times 0+6\times 0+d&=0\\
+6+d&=0\\
+d&=-6.\end{align*}
+
+Conclusion~:
+\[(ABC):3x+2y+6z-6=0.\]
+		
+		
+	\end{enumerate}
+\item  
+	\begin{enumerate}
+		\item La droite $d$ est orthogonale au plan $(ABC),$ donc elle est dirigée par le vecteur $\overrightarrow{n}\begin{pmatrix}3\\2\\6\end{pmatrix}.$ Elle passe par $O(0;0;0),$ donc sa représentation paramétrique est
+
+\[\begin{cases}x&=x_O+t\times 3\\y&=y_O+t\times 2\\z&=z_O+t\times 6\end{cases}\hspace{1cm}\text{soit}\hspace{1cm}\begin{cases}x&=3t\\y&=2t\\z&=t\end{cases}.\]
+
+		\item On \og injecte \fg~{} la représentation paramétrique de $d$ dans l'équation de $(ABC),$ puis on résout~:
+\begin{align*}
+3x+2y+6z-6&=0\\
+3(3t)+2(2t)+6(6t)-6&=0\\
+9t+4t+36t-6&=0\\
+49t-6&=0\\
+t&=\frac{6}{49}.
+\end{align*}
+
+Enfin on remplace $t$ par $\frac{6}{49}$ dans la représentation paramétrique~:
+\[\begin{cases}x&=3t=3\times \frac{6}{49}=\frac{18}{49}\\y&=2t=2\times \frac{6}{49}=\frac{12}{49}\\z&=6t=6\times \frac{6}{49}=\frac{36}{49}\end{cases}.\]
+
+Conclusion~: $H\left(\frac{18}{49};\frac{12}{49};\frac{36}{49}\right)$.
+		\item \begin{align*}OH&=\sqrt{\left(x_H-x_O\right)^2+\left(x_H-x_O\right)^2+\left(x_H-x_O\right)^2}=
+		\sqrt{\left(\frac{18}{49}-0\right)^2+\left(\frac{12}{49}-0\right)^2+\left(\frac{36}{49}-0\right)^2}
+		\\&=\sqrt{\frac{324}{2401}+\frac{144}{2401}+\frac{1296}{2401}}=\sqrt{\frac{1764}{2401}}=\frac{\sqrt{1764}}{\sqrt{2401}}=\frac{42}{49}=\frac{6}{7}.
+		\end{align*}
+	\end{enumerate}
+\item  La formule pour le volume d'une pyramide est 
+\[\mathcal{V}=\frac{1}{3}\times\mathcal{B}\times h,\]
+où $\mathcal{B}$ désigne l'aire de la base et $h$ la hauteur.
+
+\medskip
+
+On fait le calcul avec deux choix de bases et de hauteurs différents~:
+
+\setlength{\columnseprule}{1pt}
+\begin{multicols}{2}
+
+On prend comme base le rectangle $OAEB$ et comme hauteur $OC.$ On obtient~:
+
+\begin{align*}\mathcal{V}&=\frac{1}{3}\times\mathcal{A}_{OAEB}\times OC
+\\&=\frac{1}{3}\times(3\times 2)\times 1=6.
+\end{align*}
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(1.660508382909681,0.45693888588426146)(10.836495402920503,4.530924824229315)
+\pspolygon[linewidth=2.pt,linecolor=blue,linestyle=dotted,fillcolor=blue!10!white,fillstyle=solid,opacity=0.1](2.,1.)(4.,2.)(10.,2.)(8.,1.)
+\psline[linewidth=2.pt,linecolor=red](4.,4.)(4.,2.)
+%\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](2.,1.)(4.,2.)
+%\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](4.,2.)(10.,2.)
+\psline[linewidth=2.pt,linecolor=blue](10.,2.)(8.,1.)
+\psline[linewidth=2.pt,linecolor=blue](8.,1.)(2.,1.)
+\rput[tl](5.620270416441322,1.6466630611141162){\blue{$\mathcal{B}$}}
+\rput[tl](3.65,2.931790156841537){\red{$h$}}
+\psline[linewidth=2.pt](2.,1.)(4.,4.)
+\psline[linewidth=2.pt](4.,4.)(8.,1.)
+\psline[linewidth=2.pt](4.,4.)(10.,2.)
+\psdots[dotstyle=*,linecolor=ududff](4.,4.)
+\rput[bl](3.583277447268795,4.074029204975664){\ududff{$C$}}
+\psdots[dotstyle=*,linecolor=ududff](4.,2.)
+\rput[bl](4.07824770146025,2.189334775554354){\ududff{$O$}}
+\psdots[dotstyle=*,linecolor=ududff](2.,1.)
+\rput[bl](1.8128069226608978,1.2184315846403462){\ududff{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](8.,1.)
+\rput[bl](7.976084369929696,1.1993942671714442){\ududff{$E$}}
+\psdots[dotstyle=*,linecolor=ududff](10.,2.)
+\rput[bl](10.075002704164419,2.2274094104921587){\ududff{$B$}}
+\end{pspicture*}
+\end{center}
+
+\columnbreak
+
+On prend comme base le triangle $ABC$ et comme hauteur $OH.$ On obtient~:
+
+\begin{align*}\mathcal{V}&=\frac{1}{3}\times\mathcal{A}_{ABC}\times OH
+\\&=\frac{1}{3}\times\mathcal{A}_{ABC}\times \frac{6}{7}=\frac{2}{7}\mathcal{A}_{ABC}.
+\end{align*}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(1.4701352082206574,0.3807896160086535)(10.55093564088696,4.664186046511631)
+\pspolygon[linewidth=2.pt,linecolor=ududff,fillcolor=ududff!10!white,fillstyle=solid,opacity=0.1](2.,1.)(4.,4.)(10.,2.)
+\rput[tl](5.620270416441322,2.8466630611141162){\blue{$\mathcal{B}$}}
+\rput[tl](4.35,2.4){\red{$h$}}
+\psline[linewidth=2.pt,linestyle=dotted](4.,4.)(4.,2.)
+\psline[linewidth=2.pt,linestyle=dotted](4.,2.)(2.,1.)
+\psline[linewidth=2.pt,linestyle=dotted](4.,2.)(10.,2.)
+\psline[linewidth=2.pt,linecolor=ududff](2.,1.)(4.,4.)
+\psline[linewidth=2.pt,linecolor=ududff](4.,4.)(10.,2.)
+\psline[linewidth=2.pt,linecolor=ududff](10.,2.)(2.,1.)
+\psline[linewidth=2.pt,linecolor=red](4.,2.)(4.5732179556517005,2.7985289345592226)
+\psdots[dotstyle=*,linecolor=ududff](4.,4.)
+\rput[bl](4.078247701460246,4.188253109789078){\ududff{$C$}}
+\psdots[dotstyle=*,linecolor=ududff](4.,2.)
+\rput[bl](3.6165386695511056,2.189334775554355){\ududff{$O$}}
+\psdots[dotstyle=*,linecolor=ududff](2.,1.)
+\rput[bl](1.6795457003785805,1.3136181719848574){\ududff{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](10.,2.)
+\rput[bl](10.075002704164406,2.189334775554355){\ududff{$B$}}
+\psdots[dotstyle=*,linecolor=ududff](4.5732179556517005,2.7985289345592226)
+\rput[bl](4.649367225527309,2.9889021092482437){\ududff{$H$}}
+\end{pspicture*}
+\end{center}
+
+
+\end{multicols} 
+
+On compare les deux calculs du volume. On obtient~:
+\begin{align*}
+\frac{2}{7}\mathcal{A}_{ABC}&=6
+\\ \mathcal{A}_{ABC}&=\frac{6}{\frac{2}{7}}
+\\ \mathcal{A}_{ABC}&=6\times\frac{7}{2}=21.
+\end{align*}
+
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+
+
 \end{document}

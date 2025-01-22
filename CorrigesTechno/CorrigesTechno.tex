@@ -3203,6 +3203,195 @@ Conclusion~: suivant ce modèle, on prévoit 33 pies en 2021.
 \end{exo}
 
 
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item Pour davantage de clarté, on laissera apparentes les unités de volume (mL).
+
+\begin{itemize}
+\item[\textbullet] $w_0$ est la quantité initiale de médicament~: \[w_0=10~\text{mL}.\] 
+\item[\textbullet] \`A la fin de la 1\up{re} minute, on a perdu 20~\% du médicament (multiplication par $0,80$), il en reste donc
+\[10\times 0,80=8~\text{mL}.\] On en injecte alors 1~mL, on obtient ainsi
+\[w_1=8+1=9~\text{mL}.\] 
+\item[\textbullet] \`A la fin de la 2\up{e} minute, on a de nouveau perdu 20~\% du médicament, donc il en reste
+\[9\times 0,80=7,2~\text{mL}.\] On en injecte alors 1~mL~; il vient donc 
+\[w_2=7,2+1=8,2~\text{mL}.\] 
+\item[\textbullet] Cela continue ainsi de suite. Pour calculer $w_3,$ on peut faire les deux opérations en une seule étape~:
+\[w_3=7,2\times 0,80+1=6,76~\text{mL}.\]
+\end{itemize}
+
+\medskip
+
+Comme d'habitude, il est agréable d'utiliser un schéma~:
+
+\medskip
+
+\scriptsize
+\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{10} \ar@/^0.5cm/[r]|{\red{\times 0,80}} & 
+    *+[F]+{8} \ar@/^0.5cm/[r]|{\red{+1}} & *+[F]+{9}\ar@/^0.5cm/[r]|{\red{\times 0,80}} & *+[F]+{7,2}\ar@/^0.5cm/[r]|{\red{+1}} & *+[F]+{8,2}\ar@/^0.5cm/[r]|{\red{\times 0,80}} & *+[F]+{5,76}\ar@/^0.5cm/[r]|{\red{+1}} & *+[F]+{6,76} \\
+    \txt{\blue{$w_0$}}&\txt{\blue{$~$}}&
+    \txt{\blue{$w_1$}}&\txt{\blue{$~$}}&\txt{\blue{$w_2$}}&\txt{\blue{$~$}}&\txt{\blue{$w_3$}}\\
+    \txt{\blue{au départ}}&
+    \txt{\blue{fin 1\up{re} min}}&\txt{\blue{après 1 min}}&
+    \txt{\blue{fin 2\up{e} min}}&\txt{\blue{après 2 min}}&
+    \txt{\blue{fin 3\up{e} min}}&\txt{\blue{après 3 min}}
+    }$
+    \end{center}
+\normalsize
+\item La relation de récurrence est
+\[w_{n+1}=w_n\times 0,80+1.\]
+
+\item On entre les formules \[\text{=B1+1}\] et \[\text{=B2*0,80+1}\] dans les cellules C1 et C2, puis on étire vers la droite~:
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{5}{>{\centering \arraybackslash}X|}}\hline
+	&A   	&B		&C			&$\cdots$   	\\ \hline   
+1 & Minutes &$0$  	&=B1+1				&$\cdots$ \\ \hline   
+2 & Volume (en mL) &$10$   		&=B2*0,80+1		&$\cdots$  \\ \hline    
+\end{tabularx}
+\end{center}
+
+\medskip
+
+On constate que le volume se stabilise à 5~mL sur le long terme (il est toujours légèrement supérieur à 5, mais semble s'en rapprocher). Voici ce que l'on obtient si l'on affiche trois chiffres après la virgule~:
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{8}{>{\centering \arraybackslash}X|}}\hline
+	&A&$\cdots$ &AF  &$\cdots$ &AP&$\cdots$ &AZ	\\ \hline   
+1&Minutes&$\cdots$ &$30$  &$\cdots$ &$40$&$\cdots$ &$50$\\ \hline   
+2&Volume (en mL)&$\cdots$ &$5,006$  &$\cdots$ &$5,001$&$\cdots$ &$5,000$  \\ \hline    
+\end{tabularx}
+\end{center}
+
+
+
+\end{enumerate}
+\end{exo}
+
+
+\begin{exo}
+
+Une suite $v$ est définie par $v_0=4$ et la relation de récurrence \[v_{n+1}=2v_n+2\] pour tout entier naturel $n.$
+
+\begin{enumerate}
+\item \begin{align*}
+v_0&=4\\
+v_1&=2\times 4+2=10\\
+v_2&=2\times 10+2=22.\end{align*}
+
+
+\item Avec un schéma~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+~{}\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{4} \ar@/^0.5cm/[r]|{\red{+6}} \ar@/_0.5cm/[r]|{\green{\times 2,5}} & 
+    *+[F]+{10} \ar@/^0.5cm/[r]|{\red{+12}} \ar@/_0.5cm/[r]|{\green{\times 2,2}} & *+[F]+{22} \\
+    \txt{\blue{$v_0$}}&
+    \txt{\blue{$v_1$}}&\txt{\blue{$v_2$}}    
+    }$
+    \end{center}
+    
+    
+    \medskip
+    
+    Les résultats en rouge (\textcolor{red}{6} et \textcolor{red}{12}) sont différents, donc $u$ \textbf{n'est pas arithmétique.}
+    
+    \medskip
+    
+    Les résultats en vert (\textcolor{green}{2,5} et \textcolor{green}{2,2}) sont différents, donc $u$ \textbf{n'est pas géométrique.}
+    
+  \columnbreak
+  
+  Calculs utiles~:
+  
+  \medskip
+  
+  \begin{align*}
+  10-4&=\textcolor{red}{6},\\
+  22-10&= \textcolor{red}{12}.
+  \end{align*}
+  
+  \medskip
+  
+  \begin{align*}
+  10\div 4&=\textcolor{green}{2,5},\\
+  22\div 10&= \textcolor{green}{2,2}.
+  \end{align*}
+  
+  \end{multicols}
+
+
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+Une suite $u$ est définie par $u_0=2$ et la relation de récurrence \[u_{n+1}=3u_n-1\] pour tout entier naturel $n.$
+
+\begin{enumerate}
+\item \begin{align*}
+u_0&=2\\
+u_1&=3\times 2-1=5\\
+u_2&=3\times 5-1=14.\end{align*}
+
+
+\item Avec un schéma~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+~{}\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{2} \ar@/^0.5cm/[r]|{\red{+3}} \ar@/_0.5cm/[r]|{\green{\times 2,5}} & 
+    *+[F]+{5} \ar@/^0.5cm/[r]|{\red{+9}} \ar@/_0.5cm/[r]|{\green{\times 2,8}} & *+[F]+{14} \\
+    \txt{\blue{$u_0$}}&
+    \txt{\blue{$u_1$}}&\txt{\blue{$u_2$}}    
+    }$
+    \end{center}
+    
+    
+    \medskip
+    
+    Les résultats en rouge (\textcolor{red}{3} et \textcolor{red}{9}) sont différents, donc $u$ \textbf{n'est pas arithmétique.}
+    
+    \medskip
+    
+    Les résultats en vert (\textcolor{green}{2,5} et \textcolor{green}{2,8}) sont différents, donc $u$ \textbf{n'est pas géométrique.}
+    
+  \columnbreak
+  
+  Calculs utiles~:
+  
+  \medskip
+  
+  \begin{align*}
+  5-2&=\textcolor{red}{3},\\
+  14-5&= \textcolor{red}{9}.
+  \end{align*}
+  
+  \medskip
+  
+  \begin{align*}
+  5\div 2&=\textcolor{green}{2,5},\\
+  14\div 5&= \textcolor{green}{2,8}.
+  \end{align*}
+  
+  \end{multicols}
+
+
+\end{enumerate}
+\end{exo}
 
 
 
