@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  20 JAN 2025 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  22 JAN 2025 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1900,12 +1900,13 @@ Package fourier-orns Warning: Command \danger is deprecated.
 <xymatrix 2x2 66> <xymatrix 2x2 66> <xymatrix 2x2 66> [57] <xymatrix 2x2 66>
 <xymatrix 3x2 122> <xymatrix 2x2 66> <xymatrix 3x2 122> <xymatrix 3x2 122>
 [58] <xymatrix 3x2 122> <xymatrix 3x2 122> <xymatrix 3x2 122> <xymatrix 4x2
-178> <xymatrix 3x2 122> [59] [60] [61] [62] [63]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6079.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6079.
- (./CorrigesSeconde.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6079.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6079.
+178> <xymatrix 3x2 122> [59] [60] [61] [62] [63] [64] [65]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6237.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6237.
+
+(./CorrigesSeconde.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6237.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6237.
 
 Package rerunfilecheck Info: File `CorrigesSeconde.out' has not changed.
 (rerunfilecheck)             Checksum: B79547A6A29254630F65B76C0A1EAA8B;571.
@@ -1913,15 +1914,15 @@ Package rerunfilecheck Info: File `CorrigesSeconde.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6079.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6237.
  ) 
 Here is how much of TeX's memory you used:
  35961 strings out of 483041
  656422 string characters out of 5962452
- 1449990 words of memory out of 5000000
+ 1462446 words of memory out of 5000000
  50207 multiletter control sequences out of 15000+600000
  670247 words of font info for 169 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  60i,21n,72p,683b,1172s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesSeconde.dvi (63 pages, 2298460 bytes).
+Output written on CorrigesSeconde.dvi (65 pages, 2421956 bytes).

@@ -3395,6 +3395,172 @@ u_2&=3\times 5-1=14.\end{align*}
 
 
 
+\begin{exo}
+
+
+Le 01/01/2019, on emprunte \np{10000}~\euro~{} à la banque au taux d’intérêt mensuel de 2~\%. A chaque fin de mois on rembourse 300~\euro. On voudrait savoir en combien de temps on remboursera le crédit et calculer la somme totale remboursée à la banque.
+\medskip
+
+Comment ça marche ?...
+
+Le 01/01/2019 on emprunte \np{10000}~\euro~au taux d’intérêt de 2~\%, donc à la fin du mois de janvier 2019 la somme à rembourser est passée à
+\[\np{10000}\times 1,02=\np{10200}~\text{\euro}.\]
+A ce moment on rembourse 300~\euro, donc le 01/02/2019 il reste à rembourser
+\[\np{10200}-300=\np{9900}~\text{\euro}.\]
+On note $u_n$  la somme restant à rembourser le 1\up{er} jour du  $n$\up{e} mois (en convenant que janvier 2019 est le mois 0, février 2019 le mois 1, etc.).
+On a donc $u_0=\np{10000}$ et $u_1=\np{9900}.$
+
+\begin{enumerate}
+\item On complète le schéma ci-dessous pour calculer les termes $u_1$ et $u_2.$ Les sommes écrites dans chaque case sont les sommes restant à rembourser aux dates indiquées.
+
+\medskip
+
+\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{\np{10000}} \ar@/^0.5cm/[r]|{\red{\times 1,02}} & 
+    *+[F]+{\np{10200}} \ar@/^0.5cm/[r]|{\red{-~300}} & *+[F]+{\np{9900}}\ar@/^0.5cm/[r]|{\red{\times 1,02}} & *+[F]+{\np{10098}}\ar@/^0.5cm/[r]|{\red{-~300}} & *+[F]+{\np{9798}} \\
+    \txt{\blue{$u_0$}}&\txt{\blue{$~$}}&
+    \txt{\blue{$u_1$}}&\txt{\blue{$~$}}&\txt{\blue{$u_2$}}\\
+    \txt{\blue{01/01/19}}&
+    \txt{\blue{31/01/19}}&\txt{\blue{01/02/19}}&
+    \txt{\blue{28/02/19}}&\txt{\blue{01/03/19}}
+    }$
+    \end{center}
+
+Pour passer d'un terme de la suite au terme suivant, on multiplie par $1,02$ (ajout des intérêts) puis on retranche 300 (remboursement mensuel). On peut donc continuer plus rapidement~:
+
+\begin{align*}
+u_3&=\np{9798}\times 1,02-300=\np{9693,96}&&\text{(somme à rembourser le 01/04/19)},\\
+u_4&=\np{9693,96}\times 1,02-300=\np{9587,84}&&\text{(somme à rembourser le 01/05/19)}
+.\end{align*}
+
+
+\item La formule de récurrence est \[u_{n+1}=u_n\times 1,02-300.\]
+\item On entre les formules \[\text{=B1+1}\] et \[\text{=B2*1,02-300}\] dans les cellules C1 et C2, puis on étire vers la droite~:
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{5}{>{\centering \arraybackslash}X|}}\hline
+	&A   	&B		&C			&$\cdots$   	\\ \hline   
+1 & Nombre de mois &$0$  	&=B1+1				&$\cdots$ \\ \hline   
+2 & Reste à rembourser &$10000$   		&=B2*1,02-300		&$\cdots$  \\ \hline    
+\end{tabularx}
+\end{center}
+
+\medskip
+
+On continue jusqu'à ce que la somme à rembourser soit nulle. En réalité, au bout d'un moment, elle est négative~:
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{5}{>{\centering \arraybackslash}X|}}\hline
+	&A&$\cdots$ &BD&BE &BF	\\ \hline   
+1& Nombre de mois&$\cdots$ &54&55&56\\ \hline   
+2& Reste à rembourser&$\cdots$ &$432,69$&$141,35$& $-155,83$ \\ \hline    
+\end{tabularx}
+\end{center}
+
+\medskip
+
+\`A la fin du 55\up{e} fois, il reste 141,35~\euro~{} à rembourser~; et si on rembourse 300~\euro~{} au début du 56\up{e} mois, la banque nous devra 155,83~\euro.
+
+
+Conclusion~:
+
+\begin{itemize}
+\item[\textbullet] le crédit dure 56 mois~;
+\item[\textbullet] on rembourse 56 fois 300~\euro, mais à la fin on a dépassé de 155,83~\euro~{} ce que l'on devait à la banque~;
+\item[\textbullet] la somme totale remboursée est donc
+\[56\times 300-155,83=\np{16664,17}~\text{\euro}~;\]
+\item[\textbullet] le \og coût du crédit \fg~{} est la différence entre ce que l'on a remboursé et ce que la banque nous a prêté~:
+\[\text{Coût du crédit}=\text{Somme remboursée}-\text{Somme empruntée}=
+\np{16664,17}-\np{10000}=\np{6664,17}~\text{\euro}.\]
+\end{itemize}
+
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item \begin{enumerate}
+\item Chaque année, le nombre de poissons diminue de 5~\% (multiplication par 0,95), donc
+
+\begin{align*}
+v_0&=\np{12840}\\
+v_1&=\np{12840}\times 0,95=\np{12198}\\
+v_2&=\np{12198}\times 0,95\approx\np{11588}.
+\end{align*} La suite $v$ est géométrique de raison $q=0,95.$
+\item En 2025 (donc au bout de 7 ans), l’aquarium contiendra
+\[\np{12840}\underbrace{\times 0,95\times 0,95\times \cdots\times 0,95}_{\text{7 fois}}=\np{12840}\times 0,95^{7}\approx 8967~\text{poissons}.\] Il ne sera donc plus attractif (moins de \np{9000} poissons).
+\end{enumerate}
+\item 
+\begin{enumerate}
+\item Chaque année, le nombre de poissons diminue de 5~\%, puis 400 nouveaux poissons sont ajoutés pour compenser. On utilise un schéma pour calculer le nombre de poissons début 2018 et début 2019.
+
+
+\medskip
+
+\scriptsize
+\begin{center}
+    $\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+{\np{12840}} \ar@/^0.5cm/[r]|{\red{\times 0,95}} & 
+    *+[F]+{\np{12198}} \ar@/^0.5cm/[r]|{\red{+400}} & *+[F]+{\np{12598}}\ar@/^0.5cm/[r]|{\red{\times 0,95}} & *+[F]+{\np{11968}}\ar@/^0.5cm/[r]|{\red{+400}} & *+[F]+{\np{12368}} \\
+    \txt{\blue{$u_0$}}&\txt{\blue{$~$}}&
+    \txt{\blue{$u_1$}}&\txt{\blue{$~$}}&\txt{\blue{$u_2$}}\\
+    \txt{\blue{début 2017}}&
+    \txt{\blue{fin 2017}}&\txt{\blue{début 2018}}&
+    \txt{\blue{fin 2018}}&\txt{\blue{début 2019}}
+    }$
+    \end{center}
+\normalsize
+
+\medskip
+
+Conclusion~: $u_1=\np{12598}$ et  $u_2=\np{12368}.$
+\item La formule de récurrence pour la suite $u$ est \[u_{n+1}=u_n\times 0,95+400.\]
+\item On entre les formules \[\text{=B1+1}\] et \[\text{=B2*0,95+400}\] dans les cellules C1 et C2, puis on étire vers la droite~:
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{5}{>{\centering \arraybackslash}X|}}\hline
+	&A   	&B		&C			&$\cdots$   	\\ \hline   
+1 & Années &$2018$  	&=B1+1				&$\cdots$ \\ \hline   
+2 & Nombre de poissons &$12840$   		&=B2*0,95+400		&$\cdots$  \\ \hline    
+\end{tabularx}
+\end{center}
+
+\medskip
+
+On obtient~:
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{6}{>{\centering \arraybackslash}X|}}\hline
+	&A   	&B		&C			&$\cdots$   	&I\\ \hline   
+1 & Années &$2018$  	&2019				&$\cdots$&2025 \\ \hline   
+2 & Nombre de poissons &$12840$   		&$12198$		&$\cdots$  &11380\\ \hline    
+\end{tabularx}
+\end{center}
+
+\medskip
+
+
+Conclusion~: il y aura \np{11380} poissons dans l'aquarium en 2025.
+\end{enumerate}
+\end{enumerate}
+
+\end{exo}
+
+
 
 
 

@@ -9872,6 +9872,222 @@ On compare les deux calculs du volume. On obtient~:
 
 
 
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item
+
+\begin{itemize}
+\item[\textbullet] Un vecteur normal à $P:x+2y-z+1=0$ est $\overrightarrow{n}\begin{pmatrix}1\\2\\-1\end{pmatrix}.$
+\item[\textbullet] Un vecteur normal à $P':-x+y+z=0$ est $\overrightarrow{n}\begin{pmatrix}-1\\1\\1\end{pmatrix}.$
+\end{itemize}
+
+Les vecteurs $\overrightarrow{n}$ et $\overrightarrow{n}'$ sont orthogonaux, puisque
+\[\overrightarrow{n}\cdot \overrightarrow{n}'=1\times (-1)+2\times 1+(-1)\times 1=0,\]
+donc $P$ est orthogonal à $P'.$
+\item Pour prouver que $P$ et $P'$ se coupent suivant la droite $d,$ il suffit de prouver que cette droite est incluse à la fois dans $P$ et dans $P'.$ On le fait en \og injectant \fg~{} la représentation paramétrique dans les équations de plans~:
+
+\medskip
+\begin{itemize}
+\item[\textbullet] Pour le plan $P~:$
+\[x+2y-z+1=\left(-\frac{1}{3}+t\right)+2\left(-\frac{1}{3}\right)-t+1=-\frac{1}{3}+t-\frac{2}{3}-t+1=0,\]
+donc $d\subset P.$
+\item[\textbullet] Pour le plan $P'~:$
+\[-x+y+z=-\left(-\frac{1}{3}+t\right)+\left(-\frac{1}{3}\right)+t=\frac{1}{3}-t-\frac{1}{3}+t=0,\]
+donc $d\subset P'.$
+\end{itemize}
+
+\medskip
+
+Conclusion~: $P$ et $P'$ se coupent bien suivant $d.$
+
+
+\item Pour déterminer les coordonnées du projeté orthogonal $H$ de $A$ sur le plan $P,$ on cherche d'abord la représentation paramétrique de $(AH).$
+
+\medskip
+
+Cette droite est orthogonale à $P,$ donc elle est dirigée par $\overrightarrow{n}\begin{pmatrix}1\\2\\-1\end{pmatrix}$ et elle a pour représentation
+
+
+\[\begin{cases}x&=x_A+t\times 1\\y&=y_A+t\times 2\\z&=z_A+t\times (-1)\end{cases}\hspace{1cm}\text{soit}\hspace{1cm}\begin{cases}x&=t\\y&=1+2t\\z&=1-t\end{cases}.\]
+
+\medskip
+
+On \og injecte \fg~{} ensuite cette représentation dans l'équation de $P$ et on résout~:
+
+\begin{align*}
+x+2y-z+1&=0\\
+t+2(1+2t)-(1-t)+1&=0\\
+t+2+4t-1+t+1&=0\\
+6t+2&=0\\
+t=-\frac{2}{6}&=-\frac{1}{3}.
+\end{align*}
+
+Enfin on remplace $t$ par $-\frac{1}{3}$ dans la représentation paramétrique~:
+\[\begin{cases}x&=-\frac{1}{3}\\y&=1+2t=1+2\times \left(-\frac{1}{3}\right)=1-\frac{2}{3}=\frac{1}{3}\\z&=1-t=1-\left( -\frac{1}{3}\right)=\frac{3}{3}+\frac{1}{3}=\frac{4}{3}\end{cases}.\]
+
+Conclusion~: $H\left(-\frac{1}{3};\frac{1}{3};\frac{4}{3}\right)$.
+
+\item On admet que $K\left(\frac{2}{3};\frac{1}{3};\frac{1}{3}\right)$ est le projeté orthogonal de $A$ sur le plan $P'.$ On note $L$ le projeté orthogonal de $A$ sur $d~;$ la distance du point $A$ à la droite $d$ est donc la longueur $AL.$
+
+\medskip
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(2.38,0.8)(11.28,7.24)
+\pspolygon[linewidth=2.pt,linecolor=green,fillcolor=green!20!white,fillstyle=solid,opacity=0.1](3.,5.)(5.,7.)(5.,3.)(3.,1.)
+\pspolygon[linewidth=2.pt,linecolor=green,fillcolor=green!20!white,fillstyle=solid,opacity=0.1](3.,1.)(9.,1.)(11.,3.)(5.,3.)
+\psline[linewidth=2.pt,linecolor=green](3.,5.)(5.,7.)
+\psline[linewidth=2.pt,linecolor=green](5.,7.)(5.,3.)
+\psline[linewidth=2.pt,linecolor=green](5.,3.)(3.,1.)
+\psline[linewidth=2.pt,linecolor=green](3.,1.)(3.,5.)
+\psline[linewidth=2.pt,linecolor=green](3.,1.)(9.,1.)
+\psline[linewidth=2.pt,linecolor=green](9.,1.)(11.,3.)
+\psline[linewidth=2.pt,linecolor=green](11.,3.)(5.,3.)
+\psline[linewidth=2.pt,linecolor=magenta](5.,3.)(3.,1.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](8.,2.)(4.,2.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](4.,2.)(4.,4.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](4.,4.)(8.,4.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](8.,4.)(8.,2.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=red](4.,2.)(8.,4.)
+\rput[tl](3.6,1.52){\magenta{$d$}}
+\rput[tl](9.74,2.8){\green{$P$}}
+\rput[tl](4.26,6.08){\green{$P'$}}
+\psdots[dotstyle=*,linecolor=ududff](8.,2.)
+\rput[bl](8.08,2.2){\ududff{$H$}}
+\psdots[dotstyle=*,linecolor=ududff](4.,2.)
+\rput[bl](3.7,2.2){\ududff{$L$}}
+\psdots[dotstyle=*,linecolor=ududff](4.,4.)
+\rput[bl](4.08,4.2){\ududff{$K$}}
+\psdots[dotstyle=*,linecolor=ududff](8.,4.)
+\rput[bl](8.08,4.2){\ududff{$A$}}
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+D'après le théorème de Pythagore~:
+\[AL=\sqrt{AH^2+HL^2}=\sqrt{AH^2+AK^2}.\]
+
+Or \begin{align*}
+AH&=\sqrt{\left(-\frac{1}{3}-0\right)^2+\left(\frac{1}{3}-1\right)^2+\left(\frac{4}{3}-1\right)^2}
+=\sqrt{\frac{1}{9}+ \frac{4}{9}+\frac{1}{9}}=\sqrt{\frac{6}{9}},
+\\AK&=\sqrt{\left(\frac{2}{3}-0\right)^2+\left(\frac{1}{3}-1\right)^2+\left(\frac{1}{3}-1\right)^2}
+=\sqrt{\frac{4}{9}+ \frac{4}{9}+\frac{4}{9}}=\sqrt{\frac{12}{9}},
+\end{align*}
+donc la distance du point $A$ à la droite $d$ est
+\[AL=\sqrt{\frac{6}{9}+\frac{12}{9}}=\sqrt{2}.\]
+
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+~{}
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(6,6.5)
+\pspolygon(0.5,1.5)(3.5,1)(5.6,2.1)(5.6,2.7)(2.6,5.2)(0.5,4.7)%BCDLKFB
+\psline(3.5,1)(3.5,2.1)(0.5,4.7)%CJF
+\psline(0.5,4.7)(3.5,2.1)(5.6,2.7)%FJL
+\psline[linestyle=dashed](0.5,1.5)(2.6,2.6)(5.6,2.1)%BAD
+\psline[linestyle=dashed](2.6,2.6)(2.6,5.2)%%AK
+\uput[ul](2.6,2.6){A} \uput[l](0.5,1.5){B} \uput[d](3.5,1){C} 
+\uput[r](5.6,2.1){D}  \uput[ul](0.5,4.7){F} \uput[ur](2.6,5.2){K}
+ \uput[ur](4.1,3.95){I} \psdots[dotstyle=+,dotangle=45,dotscale=1.5](4.1,3.95)
+\uput[dr](3.5,2.1){J} \uput[r](5.6,2.7){L} 
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Les coordonnées sont $F(1;0;1)$ et $I(0;0,5;0,5)$. 
+		\item On a $\overrightarrow{FI}\begin{pmatrix} -1\\0,5\\-0,5\end{pmatrix}$ et $\overrightarrow{FJ}\begin{pmatrix} 0\\1\\-0,6\end{pmatrix}.$
+		On calcule les produits scalaires~:
+			
+		\begin{align*}		
+		\overrightarrow{FI}\cdot \overrightarrow{n}&=-1\times (-1)+0,5\times 3+(-0,5)\times 5=0,\\
+		\overrightarrow{FJ}\cdot \overrightarrow{n}&=0\times (-1)+1\times 3+(-0,6)\times 5=0.
+		\end{align*}
+		
+		On en déduit que $\overrightarrow{n}$ est orthogonal aux vecteurs directeurs $\overrightarrow{FI}$ et $\overrightarrow{FJ}$ du plan $(FIJ),$ et donc aussi au plan $(FIJ).$
+		\item Le vecteur $\begin{pmatrix}-1\\3\\5\end{pmatrix}~\textcolor{red}{\begin{matrix}a\\b\\c\end{matrix}}$ est orthogonal au plan $(FIJ),$ donc ce plan a une équation de la forme \[-x +3y+ 5z +d = 0.\]
+		$F(1;0;1)\in(FIJ)$ donc $-1+3\times 0+5\times 1+d=0,$ ce qui donne $d=-4.$
+		
+		\medskip
+		
+		Finalement $(FIJ):-x +3y+ 5z -4=0.$
+\item Pour prouver que $d$ coupe le plan $(FIJ)$ en $M\left(\dfrac{6}{7}~;~\dfrac{3}{7}~;~\dfrac{5}{7}\right),$ il suffit de prouver que~:
+\begin{itemize}
+\item[i.] $M$ appartient au plan $(FIJ)~;$
+\item[ii.] $(MB)$ est orthogonale au plan $(FIJ).$ 
+\end{itemize}
+
+\medskip
+
+Pour le point i, il suffit de remplacer $x,$ $y,$ $z$ par les coordonnées de $M$ dans l'équation de $(FIJ)~:$
+\[-\frac{6}{7}+3\times \frac{3}{7}+5\times \frac{5}{7}-4=-\frac{6}{7}+\frac{9}{7}+\frac{25}{7}-\frac{28}{7}=0,\] donc $M\in (FIJ).$
+
+Pour le point ii, on utilise les vecteurs~: d'une part $\overrightarrow{MB}\begin{pmatrix} 1-\frac{6}{7}\\0-\frac{3}{7}\\0-\frac{5}{7}\end{pmatrix},$ soit $\overrightarrow{MB}\begin{pmatrix} \frac{1}{7}\\-\frac{3}{7}\\ -\frac{5}{7}\end{pmatrix},$ d'autre part un vecteur normal à $(FIJ)$ est  $\overrightarrow{n}\begin{pmatrix} -1\\3\\5\end{pmatrix}.$
+
+Conclusion~: $\overrightarrow{MB}=-\dfrac{1}{7}\overrightarrow{n},$ donc les vecteurs $\overrightarrow{MB}$ et $\overrightarrow{n}$ sont colinéaires. Et comme $\overrightarrow{n}$ est orthogonal à $(FIJ),$ le vecteur $\overrightarrow{MB}$ (et la droite $(MB)$) l'est aussi.
+
+\medskip
+
+\textbf{Remarque~:} Une autre méthode consistait à trouver la représentation paramétrique de $d,$ puis à injecter cette représentation dans l'équation du plan $(FIJ).$ C'est un peu plus long à faire.
+	\end{enumerate}
+\item  
+	\begin{enumerate}
+		\item Les faces $ABFE$ et $CDHG$ sont parallèles, donc le plan $(FIJ)$ les coupe suivant deux segments parallèles. Les segments $\left[FK\right]$ et $\left[JL\right]$ sont donc parallèles. On prouve de même que $\left[FJ\right]$ est parallèle à $\left[KL\right].$
+		
+		\medskip
+		
+		Conclusion~: les côtés opposés de $FKLJ$ sont parallèles deux à deux, donc c'est un parallélogramme.
+		\item Le point $L$ a pour abscisse 0 et pour ordonnée 1, donc il a des coordonnées de la forme $L(0;1;b).$ De plus les vecteurs  $\overrightarrow{FJ}\begin{pmatrix} 0\\1\\a-1\end{pmatrix}$ et $\overrightarrow{IL}\begin{pmatrix} 0\\0,5\\b-0,5\end{pmatrix}$ sont colinéaires puisque $(IL)$ est parallèle à $(FJ).$ Donc le tableau 
+
+\begin{tabular}{|c|c|}
+\hline $1$&$a-1$\\ \hline $0,5$&$b-0,5$\\ \hline
+\end{tabular}
+est un tableau de proportionnalité. On a donc $b-0,5=(a-1)\times 0,5,$ d'où \[b=0,5+0,5a-0,5=0,5a=\frac{a}{2}.\]
+		
+		Conclusion~: $L\left(0;1;\frac{a}{2}\right).$
+		\item Un parallélogramme est un losange lorsqu'il a deux côtés consécutifs égaux. On calcule donc~:
+		\begin{align*}
+		FJ&=\sqrt{(1-1)^2+(1-0)^2+\left(a-1\right)^2}=\sqrt{0+1+a^2-2a+1}=\sqrt{a^2-2a+2}\\
+		LJ&=\sqrt{(1-0)^2+(0-0)^2+\left(a-\frac{1}{2}a\right)^2}=\sqrt{1+0+\left(\frac{1}{2}a\right)^2}=\sqrt{1+\frac{1}{4}a^2}.
+		\end{align*}
+		
+		Il s'ensuit~:
+		\[FKJL~\text{parallélogramme}\iff FJ=LJ\iff a^2-2a+2=1+\frac{1}{4}a^2\iff a^2-2a+2-1-\frac{1}{4}a^2=0\iff \frac{3}{4}a^2-2a+1=0.\]
+		
+		On aboutit à une équation du second degré. Le discriminant est  $\Delta=(-2)^2-4\times\frac{3}{4}\times 1=1.$
+		
+		\medskip
+		
+		$\Delta>0,$ donc il y a deux solutions~:
+		\[a_1=\frac{2-\sqrt{1}}{2\times\frac{3}{4}}=\frac{1}{\frac{6}{4}}=\frac{4}{6}=\frac{2}{3}\qquad,\qquad a_2=\frac{2+\sqrt{1}}{2\times\frac{3}{4}}=\frac{3}{\frac{6}{4}}=3\times \frac{4}{6}=\frac{12}{6}=2.\]
+		
+		On sait que $a\in\left[0;1\right],$ donc seule la valeur $a_1=\frac{2}{3}$ convient.
+		
+		\medskip
+		
+		Conclusion~: $FKJL$ est un losange lorsque $a=\frac{2}{3}.$
+	\end{enumerate}
+\end{enumerate}
+\end{exo}
+
+
+
+
+
 
 
 \end{document}
