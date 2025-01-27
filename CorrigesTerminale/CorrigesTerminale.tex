@@ -10085,8 +10085,153 @@ est un tableau de proportionnalité. On a donc $b-0,5=(a-1)\times 0,5,$ d'où \[
 \end{exo}
 
 
+\newpage
+
+\section{Le logarithme népérien}
 
 
+
+
+\begin{exo}
+
+Pour tout $x\in \left]0;+\infty\right[~:$ \[f'(x)=1-2\times \frac{1}{x}=\frac{x}{x}-\frac{2}{x}=\frac{x-2}{x}.\] On a donc le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$x-2$/1,$x$/1,$f'(x)$/1,$f(x)$/2}{$0$,$2$,$+\infty$}
+\tkzTabLine{,-,z,+,}
+\tkzTabLine{z,+,,+,}
+\tkzTabLine{d,-,z,+,}
+
+\tkzTabVar{D+/,-/$2-2\ln 2$,+/}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\danger Ne pas oublier la double-barre en 0~: la fonction $\ln$ n'est pas définie en $0,$ qui est donc \og valeur interdite \fg.
+
+\end{exo}
+
+\begin{exo}
+
+Pour tout $x\in\mathbb{R}~:$
+
+\[g'(x)=2\text{e}^{2x}-8.\] Jusqu'à présent, nous n'aurions pas pu résoudre l'équation $g'(x)=0.$ Avec le logarithme népérien, désormais, nous pouvons le faire~:
+
+\begin{align*}
+2\text{e}^{2x}-8&=0\\
+\frac{\cancel{2}\text{e}^{2x}}{\cancel{2}}&=\frac{8}{2}\\
+\text{e}^{2x}&=4\\
+\ln\left(\text{e}^{2x}\right)&=\ln 4\qquad\text{(on prend le logarithme pour \og éliminer \fg~{} l'exponentielle)}\\
+2x&=\ln 4\qquad \text{(le logarithme et l'exponentielle s'éliminent)}\\
+\frac{\cancel{2}x}{\cancel{2}}&=\frac{\ln 4}{2}\\
+x&=\frac{1}{2}\ln 4.
+\end{align*}
+
+On a donc le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$g'(x)$/1,$g(x)$/2}{$-\infty$,$\frac{1}{2}\ln 4$,$+\infty$}
+\tkzTabLine{,-,z,+,}
+\tkzTabVar{+/,-/$4-4\ln 4$,+/}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\textbf{Remarques~:}
+
+\begin{itemize}
+\item[\textbullet] $\frac{1}{2}\ln 4 \approx 0,69.$
+\item[\textbullet] $g\left(\frac{1}{2}\ln 4\right)=\text{e}^{2\times \frac{1}{2}\ln 4}-8\times \frac{1}{2}\ln 4=\text{e}^{\ln 4}-4\ln 4=4-4\ln 4.$
+\item[\textbullet] Pour avoir le signe de la dérivée, on remplace par une valeur de $x$ dans chacune des deux cases. Par exemple, pour avoir le signe dans la case de droite (sur $\left]\frac{1}{2}\ln 4;+\infty\right[$), on calcule (la calculatrice s'avère nécessaire)~:
+\[g'(1)=2\text{e}^{2\times 1}-8=2\text{e}^2-8\approx 6,8\qquad \text{signe} ~\oplus\]
+\end{itemize}
+
+
+\end{exo}
+
+\begin{exo}
+
+
+On utilise la formule pour la dérivée d'un produit avec
+\begin{alignat*}{3}
+&u(x)=x,&& \hspace{1cm}&&v(x)=\ln x, \\
+& u'(x)=1,&& &&v'(x)=\frac{1}{x}.\\
+\end{alignat*}
+On obtient, pour tout $x\in \left]0;+\infty\right[~:$
+\[h'(x)=1\times \ln x+x\times \frac{1}{x}=\ln x+1.\]
+
+On résout l'équation~:
+
+\begin{align*}
+\ln x+1&=0\\
+\ln x&=-1\\
+\text{e}^{\ln x}&=\text{e}^{-1}\qquad\text{(on prend l'exponentielle pour \og éliminer \fg~{} le logarithme)}\\
+x&=\text{e}^{-1}\qquad \text{(le logarithme et l'exponentielle s'éliminent)}.
+\end{align*}
+
+
+On a donc le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$\ln x+1$/1,$h(x)$/2}{$0$,$\text{e}^{-1}$,$+\infty$}
+\tkzTabLine{d,-,z,+,}
+
+\tkzTabVar{D+/,-/$-\text{e}^{-1}$,+/}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\textbf{Remarques~:}
+
+\begin{itemize}
+\item[\textbullet] $h\left(\text{e}^{-1}\right)=\text{e}^{-1}\times \ln \left(\text{e}^{-1}\right)=\text{e}^{-1}\times(-1)=-\text{e}^{-1}.$
+\item[\textbullet] Pour avoir le signe de la dérivée, on remplace par une valeur de $x$ dans chacune des deux cases. Par exemple, pour avoir le signe dans la case de droite (sur $\left]\text{e}^{-1};+\infty\right[$), on calcule~:
+\[h'(1)=\ln 1+1=1\qquad \text{signe} ~\oplus\] 
+\end{itemize}
+
+\end{exo}
+
+\begin{exo}
+
+On pose $f(x)=\ln x$ pour $x\in\left]0;+\infty\right[$ et on calcule les dérivées 1\up{re} et 2\up{de}~:
+
+\medskip
+Pour tout $x\in\left]0;+\infty\right[~:$
+\begin{align*}
+f'(x)&=\frac{1}{x},
+\\ f''(x)&=-\frac{1}{x^2}.
+\end{align*}
+
+\medskip
+
+Clairement $f''$ est strictement négative sur $\left]0;+\infty\right[,$ donc $f$ est concave sur $\left]0;+\infty\right[.$
+
+\medskip
+
+\textbf{Illustration graphique~:}
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.72,-2.68)(9.74,2.64)
+\multips(0,-2)(0,1.0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-0.72,0)(9.74,0)}
+\multips(0,0)(1.0,0){11}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.68)(0,2.64)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.72,-2.68)(9.74,2.64)
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{8.359999868878054E-8}{9.739999999999998}{ln(x)}
+\rput[tl](5.94,1.64){\blue{$y=\ln (x)$}}
+\end{pspicture*}
+\end{center}
+
+\end{exo}
 
 
 

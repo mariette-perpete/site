@@ -6234,4 +6234,249 @@ C'est la relation de Chasles.
 
 
 
+\begin{exo}
+
+
+
+
+$ABCD$ est un parallélogramme de centre $O.$
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.56,0.36)(8.16,4.86)
+\psline[linewidth=2.pt,linecolor=blue](1.,1.)(5.,1.)
+\psline[linewidth=2.pt,linecolor=blue](5.,1.)(7.,4.)
+\psline[linewidth=2.pt,linecolor=blue](7.,4.)(3.,4.)
+\psline[linewidth=2.pt,linecolor=blue](3.,4.)(1.,1.)
+\psline[linewidth=2.pt,linecolor=blue](3.,4.)(5.,1.)
+\psline[linewidth=2.pt,linecolor=blue](1.,1.)(7.,4.)
+\rput[bl](0.76,1.12){\blue{$A$}}
+\rput[bl](5.26,1.){\blue{$B$}}
+\rput[bl](7.08,4.2){\blue{$C$}}
+\rput[bl](3.08,4.2){\blue{$D$}}
+\rput[bl](4.08,2.7){\blue{$O$}}
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item $\overrightarrow{AB}+\overrightarrow{BO}=\overrightarrow{AO}\qquad\text{(relation de Chasles)}$
+\item \begin{align*}\overrightarrow{AC}+\overrightarrow{CA}&=\overrightarrow{AA}&&\text{(relation de Chasles)}\\
+&=\overrightarrow{0}.
+\end{align*}
+\item \begin{align*}\overrightarrow{BD}+\overrightarrow{AB}&=\overrightarrow{AB}+\overrightarrow{BD}&&\text{(on peut intervertir l'ordre)}\\
+&=\overrightarrow{AD}&&\text{(relation de Chasles)}
+\end{align*}
+
+\item $ABCD$ est un parallélogramme, donc d'après un théorème du cours (1\up{re} leçon sur les vecteurs) $\overrightarrow{AB}=\overrightarrow{DC}.$ On a donc~:
+
+\begin{align*}\overrightarrow{AB}+\overrightarrow{CO}&=\overrightarrow{DC}+\overrightarrow{CO}&&\text{(théorème susmentionné)}\\
+&=\overrightarrow{DO}&&\text{(relation de Chasles)}
+\end{align*}
+\item $ABCD$ est un parallélogramme, donc d'après le théorème du cours déjà utilisé $\overrightarrow{CD}=\overrightarrow{BA}.$ On a donc~:
+
+\begin{align*}\overrightarrow{CB}+\overrightarrow{CD}&=\overrightarrow{CB}+\overrightarrow{BA}&&\text{(le théorème déjà utilisé)}\\
+&=\overrightarrow{CA}&&\text{(relation de Chasles)}
+\end{align*}
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+$ABC$ est un triangle, $I$ est le milieu du segment $\left[BC\right].$ On renvoie à l'exercice suivant pour la figure.
+
+\begin{enumerate}
+\item D'après la relation de Chasles~:
+
+\[\overrightarrow{AB}=\overrightarrow{AI}+\overrightarrow{IB},\qquad\qquad \overrightarrow{AC}=\overrightarrow{AI}+\overrightarrow{IC}. \]
+
+\item $I$ est le milieu de $\left[BC\right],$ donc $\textcolor{red}{\overrightarrow{IC}}=\textcolor{red}{\overrightarrow{BI}}.$ On a donc, grâce à la relation de Chasles~:
+ \[\overrightarrow{IB}+\textcolor{red}{\overrightarrow{IC}}=\overrightarrow{IB}+\textcolor{red}{\overrightarrow{BI}}=\overrightarrow{II}=\overrightarrow{0}.\]
+\item D'après les questions 1 et 2~:
+\begin{align*}
+\overrightarrow{AB}+\overrightarrow{AC}&=\left(\overrightarrow{AI}+\overrightarrow{IB}\right)+\left(\overrightarrow{AI}+\overrightarrow{IC}\right)\\
+&=2\overrightarrow{AI}+\underbrace{\overrightarrow{IB}+\overrightarrow{IC}}_{=\overrightarrow{0}}\\
+&=2\overrightarrow{AI}.
+\end{align*}
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+\begin{enumerate}
+\item On place le point $G$ aux deux tiers du segment $\left[AI\right]$ en partant de $A.$
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.9,1.58)(8.88,5.74)
+\psline[linewidth=1.2pt](3.,5.)(2.,2.)
+\psline[linewidth=1.2pt](3.,5.)(8.,2.)
+\psline[linewidth=1.2pt,linecolor=red](3.,5.)(3.6666666666666665,4.)
+\psline[linewidth=1.2pt,linecolor=red](3.405444358842613,4.608166538263919)(3.205752288201531,4.475038491169864)
+\psline[linewidth=1.2pt,linecolor=red](3.460914378465136,4.524961508830135)(3.261222307824054,4.39183346173608)
+\psline[linewidth=1.2pt,linecolor=red](3.6666666666666665,4.)(4.333333333333333,3.)
+\psline[linewidth=1.2pt,linecolor=red](4.0721110255092805,3.6081665382639194)(3.872418954868198,3.4750384911698644)
+\psline[linewidth=1.2pt,linecolor=red](4.1275810451318025,3.524961508830135)(3.9278889744907204,3.39183346173608)
+\psline[linewidth=1.2pt,linecolor=red](4.333333333333333,3.)(5.,2.)
+\psline[linewidth=1.2pt,linecolor=red](4.738777692175947,2.60816653826392)(4.5390856215348645,2.475038491169864)
+\psline[linewidth=1.2pt,linecolor=red](4.794247711798469,2.5249615088301356)(4.594555641157387,2.3918334617360797)
+\psline[linewidth=1.2pt,linecolor=blue](2.,2.)(5.,2.)
+\psline[linewidth=1.2pt,linecolor=blue](3.5,2.12)(3.5,1.88)
+\psline[linewidth=1.2pt,linecolor=blue](5.,2.)(8.,2.)
+\psline[linewidth=1.2pt,linecolor=blue](6.5,2.12)(6.5,1.88)
+\psdots[dotsize=1pt 0,dotstyle=*](3.,5.)
+\rput[bl](2.72,5.04){$A$}
+\psdots[dotsize=1pt 0,dotstyle=*](2.,2.)
+\rput[bl](1.64,1.96){$B$}
+\psdots[dotsize=1pt 0,dotstyle=*](8.,2.)
+\rput[bl](8,2.1){$C$}
+\psdots[dotsize=1pt 0,dotstyle=*](5.,2.)
+\rput[bl](5.08,2.15){$I$}
+\psdots[dotsize=2pt 0,dotstyle=*](4.333333333333333,3.)
+\rput[bl](4.42,3.04){$G$}
+\psdots[dotsize=2pt 0,dotstyle=*](3.6666666666666665,4.)
+\end{pspicture*}
+\end{center}
+
+\item On utilise l'exercice précédent et l'hypothèse $\overrightarrow{AG}=\frac{2}{3}\overrightarrow{AI}~:$
+
+\begin{alignat*}{3}
+&3\overrightarrow{AG}&& =3\cdot \frac{2}{3}\overrightarrow{AI} && \text{  (par hypothèse)}\\
+& && =2\overrightarrow{AI} && (\text{  car } 3\cdot \frac{2}{3}=2)\\
+& && =\overrightarrow{AB}+\overrightarrow{AC}&& \text{  (d'après l'exercice précédent).}\\
+\end{alignat*}
+
+\item On utilise la relation de Chasles et la question 2~:
+
+\begin{alignat*}{3}
+&\overrightarrow{GA}+\textcolor{red}{\overrightarrow{GB}}+\textcolor{green}{\overrightarrow{GC}}&& =\overrightarrow{GA}+\textcolor{red}{\overrightarrow{GA}+\overrightarrow{AB}}+\textcolor{green}{\overrightarrow{GA}+\overrightarrow{AC}} && \text{  (relation de Chasles)}\\
+& && =3\overrightarrow{GA}+\overrightarrow{AB}+\overrightarrow{AC} && \text{ (on regroupe les } \overrightarrow{GA})\\
+& && =3\overrightarrow{GA}+3\overrightarrow{AG}&& \text{  (car d'après la question 2 : } \overrightarrow{AB}+\overrightarrow{AC}=3\overrightarrow{AG})\\
+& && =3\left(\overrightarrow{GA}+\overrightarrow{AG}\right)&&\\
+& && =3\left(\overrightarrow{GG}\right)&& \text{  (relation de Chasles)}\\
+& && =3\left(\overrightarrow{0}\right)&&\\
+& && =\overrightarrow{0}.&&\\
+\end{alignat*}
+
+Conclusion~: on a bien \[\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\overrightarrow{0}.\]
+
+\medskip
+
+\textbf{Remarque~:} Le point $G$ est sur la médiane $(AI).$ Comme $A,$ $B,$ $C$ jouent des rôles symétriques dans l'égalité $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\overrightarrow{0},$ on pourrait intervertir leurs rôles (par exemple inverser $A$ et $C.$) Le point $G$ est donc aussi sur les deux autres médianes du triangle $ABC~;$ et c'est donc le centre de gravité du triangle. 
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+%On a $\overrightarrow{AB}\begin{pmatrix} x\\y\end{pmatrix}.$ 
+~{}
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(1.1,2.2)(6.64,5.56)
+\psline[linewidth=2.pt]{->}(2.,3.)(5.,5.)
+\psline[linewidth=2.pt]{->}(2.,3.)(5.,3.)
+\psline[linewidth=2.pt]{->}(5.,3.)(5.,5.)
+\parametricplot{0.0}{0.5880026035475675}{0.6*cos(t)+2.|0.6*sin(t)+3.}
+\rput[tl](2.78,3.4){$\theta$}
+\rput[bl](1.6,3.1){$A$}
+\rput[bl](5.08,5.04){$B$}
+\rput[bl](5.16,3.1){$C$}
+\rput[bl](3.34,2.4){$x$}
+\rput[bl](5.16,3.75){$y$}
+
+\end{pspicture*}
+\end{center}
+
+Dans le triangle rectangle $ABC~:$
+\[\cos\theta=\frac{\text{adj}}{\text{hyp}}=\frac{x}{AB}.\]
+
+Donc
+\begin{align*}
+\cos\theta\times AB&=\frac{x}{\cancel{AB}}\times \cancel{AB}\\
+\cos\theta\times AB&=x.
+\end{align*}
+
+On obtient de même~: \[y=\sin\theta\times AB.\]
+
+
+\end{exo}
+
+
+\begin{exo}
+
+On représente les forces du gros et du petit remorqueurs par des vecteurs $\overrightarrow{F_1}$ et $\overrightarrow{F_2}$ comme sur la figure ci-dessous.
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{xdxdff}{0.49019607843137253 0.49019607843137253 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.16,0.46)(7.7,4.02)
+\pscustom[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.1]{
+\parametricplot{-0.5235987755982987}{0.0}{0.6*cos(t)+1.|0.6*sin(t)+2.}
+\lineto(1.,2.)\closepath}
+\psline[linewidth=2.pt,linecolor=red]{->}(1.,2.)(2.995954988232819,0.8476348502534059)
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt]{0.16}{7.7}{(--8.-0.*x)/4.}
+\psline[linewidth=2.pt,linecolor=green]{->}(1.,2.)(3.5,3.18)
+\psline[linewidth=2.pt,linecolor=red]{->}(3.5,3.18)(5.5091789367798985,2.02)
+\pscustom[linewidth=2.pt,linecolor=green,fillcolor=green!10!white,fillstyle=solid,opacity=0.1]{
+\parametricplot{0.004435368196803145}{0.4409977613546513}{0.6*cos(t)+1.|0.6*sin(t)+2.}
+\lineto(1.,2.)\closepath}
+\psline[linewidth=2.pt,linecolor=green]{->}(3,0.8476348502534059)(5.5091789367798985,2.02)
+\psline[linewidth=2.pt](3.5,2.)(3.5,3.2)
+\psline[linewidth=2.pt](3,2.)(3,0.8476348502534059)
+\rput[tl](6.76,2.4){$\ell$}
+\rput[tl](1.74,3.35){\green{$\overrightarrow{F_1}$}}
+\rput[tl](1.4,1.55){\red{$\overrightarrow{F_2}$}}
+\psdots[dotstyle=*,linecolor=ududff](1.,2.)
+\rput[bl](0.7,2.12){\ududff{$A$}}
+\rput[bl](1.7,1.64){\red{$30\textrm{\degre}$}}
+\psdots[dotstyle=*,linecolor=ududff](3,0.8476348502534059)
+\rput[bl](3.08,1.04){\ududff{$C$}}
+\psdots[dotstyle=*,linecolor=ududff](3.5,3.2)
+\rput[bl](3.58,3.38){\ududff{$F$}}
+\psdots[dotstyle=*,linecolor=ududff](5.5091789367798985,2.02)
+\rput[bl](5.58,2.22){\ududff{$G$}}
+\rput[bl](1.78,2.1){\green{$\theta$}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=darkgray](3,2.)
+\rput[bl](2.64,2.2){\darkgray{$H$}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=darkgray](3.5,2.)
+\rput[bl](3.58,2.16){\darkgray{$I$}}
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item
+
+Le remorqueur le plus puissant (en haut) génère une force de \np{20000}~N sur son câble, le plus petit (en bas) une force de \np{16000}~N. Donc dans la figure ci-dessus on peut prendre~: \[AF=\np{20000}\qquad,\qquad AC=\np{16000}.\]
+
+Soient $I$ et $H$ les points de la droite $\ell$ tels que $(FI)$ et $(HC)$ soient perpendiculaires à $\ell.$ D'après l'exercice précédent~:
+\begin{align*}FI&=\sin \theta\times AF=\sin \theta\times\np{20000},\\
+HC&=\sin 30^{\circ}\times AC=\sin 30^{\circ}\times\np{16000}=0,5\times \np{16000}=\np{8000}.
+\end{align*}
+
+Comme le navire suit la ligne droite $\ell,$ quand on ajoute les deux forces $\overrightarrow{F_1}$ et $\overrightarrow{F_2},$ on reste sur la ligne $\ell.$ Il s'ensuit que les ordonnées de chacun des deux vecteurs se compensent, c'est-à-dire que $FI=HC.$ On a donc, d'après les deux égalités ci-dessus~:
+\[\sin \theta\times\np{20000}=\np{8000}.\]
+
+
+
+\item D'après la question précédente~:
+\begin{align*}
+\frac{\sin \theta\times\cancel{\np{20000}}}{\cancel{\np{20000}}}&=\frac{\np{8000}}{\np{20000}}\\
+\sin\theta &=0,4\\
+\theta&\approx 24^{\circ}~\text{(avec la calculatrice)}.
+\end{align*}
+\end{enumerate}
+
+\end{exo}
+
+
+
+
 \end{document}
