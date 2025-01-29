@@ -10235,4 +10235,136 @@ Clairement $f''$ est strictement négative sur $\left]0;+\infty\right[,$ donc $f
 
 
 
+\begin{exo}
+
+On résout les équations et inéquations~:
+
+
+
+\begin{enumerate}
+\item \begin{align*}\text{e}^x&=5\\
+\ln\left(\text{e}^x\right)&=\ln 5\\
+x&=\ln 5.
+\end{align*}
+
+Il y a une seule solution~: $x=\ln 5.$
+\item \begin{align*}\text{e}^x-4&=0\\
+\text{e}^x&=4\\
+\ln\left(\text{e}^x\right)&=\ln 4\\
+x&=\ln 4.
+\end{align*}
+
+Il y a une seule solution~: $x=\ln 4.$
+
+\item \begin{align*}\text{e}^{2x}&\leq 2\\
+\ln\left(\text{e}^{2x}\right)&\leq \ln 2\qquad \text{(car la fonction $\ln$ est strictement croissante sur }\left]0;+\infty\right[)\\
+\frac{\cancel{2}x}{\cancel{2}}&\leq \frac{\ln 2}{2}\\
+x&\leq \frac{\ln 2}{2}.
+\end{align*}
+
+Les solutions sont les nombres de l'intervalle $\left]-\infty;\frac{\ln 2}{2}\right].$
+
+
+\item $\text{e}^{-2x}=-5.$
+
+Il n'y a pas de solution car une exponentielle est strictement positive.
+
+\item On résout dans $\left]0;+\infty\right[$ (c'est-à-dire que les $x$ que l'on considère doivent être strictement positifs -- la raison en est le terme $\ln x$)~:
+\begin{align*}\ln x&=3\\
+\text{e}^{\ln x}&=\text{e}^{3}\\
+x&=\text{e}^{3}.
+\end{align*}
+
+Il y a une seule solution~: $x=\text{e}^{3}.$
+
+\item On résout dans $\left]0;+\infty\right[~:$
+\begin{align*}2\ln x-3&=0\\
+\frac{\cancel{2}\ln x}{\cancel{2}}&=\frac{3}{2}
+\\ \ln x&=\frac{3}{2}\\
+\text{e}^{\ln x}&=\text{e}^{\frac{3}{2}}\\
+x&=\text{e}^{\frac{3}{2}}.
+\end{align*}
+
+Il y a une seule solution~: $x=\text{e}^{\frac{3}{2}}.$
+
+
+
+\item $2x-3>0$ lorsque $x>\frac{3}{2},$ donc on résout dans $\left]\frac{3}{2};+\infty\right[~:$
+
+\begin{align*}
+\ln(2x-3)&= 0\\
+\text{e}^{\ln (2x-3)}&=\text{e}^{0}\\
+2x-3&= 1\\
+\frac{\cancel{2}x}{\cancel{2}}&=\frac{3+1}{2}\\
+x&= 2.
+\end{align*}
+
+Il y a une seule solution~: $x=2.$
+
+
+\item On résout dans $\left]0;+\infty\right[~:$
+\begin{align*}\ln x&\leq 2\\
+\text{e}^{\ln x}&\leq \text{e}^{2}\qquad \text{(car la fonction $\exp$ est strictement croissante sur }\mathbb{R})\\
+x&\leq \text{e}^{2}.
+\end{align*}
+
+\danger Les solutions ne sont pas les nombres de l'intervalle $\left]-\infty;\text{e}^{2}\right],$ car on résout dans $\left]0;+\infty\right[.$
+
+\medskip
+
+Les solutions sont les nombres de l'intervalle $\left]0;\text{e}^{2}\right].$
+
+
+\item On note $\left(E_1\right)$ l'équation à résoudre~: \[\text{e}^{2x}-3\text{e}^x-4=0\qquad \left(E_1\right).\] Cette équation se réécrit \[\left(\text{e}^{x}\right)^2-3\text{e}^x-4=0,\] donc en posant $X=\text{e}^x~:$
+\[X^2-3X-4=0\qquad \left(E_2\right).\]
+
+\medskip
+
+Nous allons résoudre $\left(E_2\right).$ Les solutions que nous trouverons seront les valeurs possibles de $X.$ Mais attention, c'est $\left(E_1\right)$ que l'on nous a demandé de résoudre, donc il faudra déduire de la résolution de $\left(E_2\right)$ celle de $\left(E_1\right).$
+
+\medskip
+
+Allons-y pour $\left(E_2\right)~:$ c'est une équation habituelle du second degré. Le discriminant est $\Delta=b^2-4ac=(-3)^2-4\times 1\times (-4)=25,$ donc $\left(E_2\right)$ a deux solutions~:
+\[X_1=\frac{-b+\sqrt{\Delta}}{2a}=\frac{-(-3)+\sqrt{25}}{2}=\frac{3+5}{2}=4~,~X_2=\frac{-b-\sqrt{\Delta}}{2a}=\frac{3-5}{2}=-1
+.\]
+
+Revenons à $\left(E_1\right).$ Puisque  $X=\text{e}^x$ et compte tenu des solutions que l'on vient de trouver pour $\left(E_2\right),$ il y a deux possibilités~:
+\[\text{e}^x=4~\text{ou}~\text{e}^x=-1.\]
+
+La première de ces deux équations a pour solution $x=\ln 4.$ La deuxième, elle, n'a pas de solution, car une exponentielle est strictement positive.
+
+\medskip
+
+Conclusion~: $\left(E_1\right)$ a une seule solution~: $x=\ln 4.$
+\end{enumerate}
+
+
+
+\end{exo}
+
+\begin{exo}
+
+On cherche l'ensemble de définition de la fonction définie par
+\[f(x)=\ln\left(-x^2+2x+3\right).\]
+
+Le seul problème concerne le logarithme~: on ne peut calculer $\ln X$ que quand $X>0.$ Donc $f(x)$ est bien défini si, et seulement si, $-x^2+2x+3>0.$
+
+\medskip
+
+Nous sommes ramenés à l'étude du signe de $-x^2+2x+3~:$ le discriminant est $\Delta=2^2-4\times (-1)\times 3=16,$ donc il y a deux racines~:
+\[x_1=\frac{-2-\sqrt{16}}{2\times (-1)}=\frac{-2-4}{-2}=\frac{-6}{-2}=3\qquad,\qquad x_2=\frac{-2+4}{-2}=\frac{2}{-2}=-1.\]
+On a donc le tableau de signe~:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\tkzTabInit{$x$/1,$-x^2+2x+3$/1}{$-\infty$,$-1$,$3$,$+\infty$}
+\tkzTabLine{,-,z,+,z,-,}
+\end{tikzpicture}
+\end{center}
+\medskip
+
+Conclusion~: $-x^2+2x+3$ est strictement positif lorsque $x\in\left]-1;3\right[,$ donc l'ensemble de définition de $f$ est $\left]-1;3\right[.$
+
+\end{exo}
+
 \end{document}
