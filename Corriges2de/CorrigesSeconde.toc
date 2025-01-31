@@ -8,3 +8,4 @@
 \contentsline {section}{\numberline {6}Équations de droites}{42}{section.6}%
 \contentsline {section}{\numberline {7}Pourcentages, taux d'évolution}{55}{section.7}%
 \contentsline {section}{\numberline {8}Opérations sur les vecteurs}{60}{section.8}%
+\contentsline {section}{\numberline {17}Calcul littéral}{67}{section.17}%
