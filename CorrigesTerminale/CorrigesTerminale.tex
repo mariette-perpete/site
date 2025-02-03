@@ -10571,6 +10571,136 @@ Voici comment on construit le produit de deux réels $x,$ $y,$ à partir de la c
 
 \end{exo}
 
+\begin{exo}
 
+La fonction $f$ est définie sur $\left]0;+\infty\right[$ par
+\[f(x)=x^2\ln x-x^2.\]
+
+\begin{enumerate}
+\item $f\left(\text{e}^{\frac{1}{2}}\right)=\left(\text{e}^{\frac{1}{2}}\right)^2\times \ln\left(\text{e}^{\frac{1}{2}}\right)-\left(\text{e}^{\frac{1}{2}}\right)^2=\text{e}^{1}\times \frac{1}{2}-\text{e}^{1}=-\frac{1}{2}\text{e}.$
+\item On utilise la formule pour la dérivée d'un produit avec
+
+
+
+\begin{alignat*}{3}
+&u(x)=x^2,&& \hspace{1cm}&&v(x)=\ln x, \\
+& u'(x)=2x,&& &&v'(x)=\frac{1}{x}.\\
+\end{alignat*}
+On obtient, pour tout $x\in \left]0;+\infty\right[~:$
+\begin{align*}f'(x)&=2x\times \ln x+x^2\times \frac{1}{x}-2x\\
+&=2x\ln x+x-2x\\
+&=2x\ln x-x\\
+&=x(2\ln x-1).
+\end{align*}
+\item 
+On résout l'équation~:
+
+\[2\ln x-1=0\iff 2\ln x=1\iff \ln x=\frac{1}{2}\iff
+\text{e}^{\ln x}=\text{e}^{\frac{1}{2}}\iff
+x=\text{e}^{\frac{1}{2}}.\]
+
+
+On a donc le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$x$/1,$2\ln x-1$/1,$f'(x)$/1,$f(x)$/2}{$0$,$\text{e}^{\frac{1}{2}}$,$+\infty$}
+\tkzTabLine{z,+,,+,}
+\tkzTabLine{d,-,z,+,}
+\tkzTabLine{d,-,z,+,}
+\tkzTabVar{D+/,-/$-\frac{1}{2}\text{e}$,+/}
+\end{tikzpicture}
+\end{center}
+\end{enumerate}
+
+
+
+\end{exo}
+
+\begin{exo}
+
+On résout l'inéquation d’inconnue $n\in\mathbb{N}~:$
+
+\[2^n\geq 10^{100}.\]
+
+\begin{align*}
+2^n\geq 10^{100}&\iff\ln\left(2^n\right)\geq \ln \left(10^{100}\right)\qquad\text{(par stricte croissance de la fonction $\ln$)}\\
+&\iff n\ln 2 \geq 100\ln 10\\
+&\iff n\geq \frac{100\ln 10}{\ln 2} \qquad\qquad~~\text{(\danger car $\ln 2>0,$ donc $\geq$ reste $\geq$)}.
+\end{align*}
+
+Avec la calculatrice on trouve $\frac{100\ln 10}{\ln 2}\approx 332,19,$ donc l'ensemble des solutions est $\llbracket 333;+\infty \llbracket.$
+
+
+\end{exo}
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item $100~\%-8~\%=92~\%=0,92,$ donc une diminution de $8~\%$ revient à faire une multiplication par $0,92.$ La suite $\left(v_n\right)_{n\in\mathbb{N}}$ est donc géométrique de raison $q=0,92$ et l'on a, pour tout $n\in\mathbb{N}~:$
+\[v_n=v_0\times q^n=10\times 0,92^n.\]
+\item On cherche la demi-vie de l'iode 131, c'est-à-dire le nombre de jours après lequel il restera la moitié de l'iode 131 ingérée au départ.
+
+\medskip
+
+$10\div 2=5,$ donc il s'agit de résoudre l'inéquation $v_n\leq 5.$
+
+\begin{align*}
+10\times 0,92^n\leq 5&\iff 0,92^n\leq \frac{5}{10}\\&\iff 0,92^n\leq 0,5\\
+&\iff \ln\left(0,92^n\right)\leq \ln \left(0,5\right)\qquad\text{(par stricte croissance de la fonction $\ln$)}\\
+&\iff n\ln 0,92 \leq \ln 0,5\\
+&\iff n\geq \frac{\ln 0,5}{\ln 0,92} \qquad\qquad~~\text{(\danger car $\ln 0,92<0,$ donc $\leq$ devient $\geq$)}.
+\end{align*}
+
+Avec la calculatrice on trouve $\frac{\ln 0,5}{\ln 0,92}\approx 8,31,$ donc la demi-vie de l'iode 131 est de 8 jours et quelques.
+
+\end{enumerate}
+
+
+
+\end{exo}
+
+\begin{exo}
+
+
+	\begin{enumerate}
+		\item On répète 10 épreuves indépendantes de Bernoulli de paramètre $7~\%=0,07,$ donc $X$ suit la loi binomiale de paramètres $n=10,$ $p=0,07.$
+		\item La probabilité pour qu'exactement deux personnes portent le gène ZXC est
+		\[P(X=2)=\binom{10}{2}\times 0,07^2\times (1-0,07)^{10-2}
+		=\binom{10}{2}\times 0,07^2\times 0,93^8
+		\approx 0,12.
+		\]
+
+\item On cherche le nombre minimum de personnes à tester dans ce pays pour que la probabilité qu'au moins une de ces personnes porte le gène ZXC, soit supérieure à 99\,\%.
+
+\medskip
+
+Le test auprès de $n$ personnes revient à répéter $n$ épreuves indépendantes de Bernoulli de paramètre $0,07.$ Donc si l'on note $X_n$ le nombre de porteurs du gène ZXC parmi elles, $X_n$ suit la loi binomiale de paramètres $n$ et $p=0,07.$
+
+\medskip
+
+La probabilité qu'au moins une de ces personnes porte le gène ZXC est 
+\[P\left(X_n\geq 1\right)=1-P\left(X_n=0\right)=1-\underbrace{\binom{10}{0}}_{=1}\times \underbrace{0,07^0}_{=1}\times 0,93^n=1-0,93^n.\]
+
+Nous sommes ainsi ramenés à résoudre dans $\mathbb{N}$ l'équation $1-0,93^n\geq 0,99.$
+
+
+\begin{align*}
+1-0,93^n\geq 0,99&\iff 1-0,99\geq 0,93^n
+\\ &\iff 0,01\geq 0,93^n
+\\&\iff 
+\ln 0,01\geq \ln \left(0,93^n\right)\qquad\text{(par stricte croissance de la fonction $\ln$)}\\
+&\iff \ln 0,01\geq n\ln 0,93\\
+&\iff\frac{\ln 0,01}{\ln 0,93}\leq n \qquad\qquad~~\text{(\danger car $\ln 0,93<0,$ donc $\geq$ devient $\leq$)}.
+\end{align*}
+
+Avec la calculatrice on trouve $\frac{\ln 0,01}{\ln 0,93}\approx 63,46,$ donc il faut interroger au moins 64 personnes.
+
+\end{enumerate}
+
+\end{exo}
 
 \end{document}
