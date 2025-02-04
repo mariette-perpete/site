@@ -3561,6 +3561,107 @@ Conclusion~: il y aura \np{11380} poissons dans l'aquarium en 2025.
 \end{exo}
 
 
+\section{Dérivation et variations des fonctions du 3\up{e} degré}
+
+
+
+
+
+\begin{exo}
+
+On considère la fonction $f$ définie sur $\left[-2;3\right]$ par \[f(x)=x^3-1,5x^2-6x+2.\]
+ 
+\begin{enumerate}
+\item \[f'(x)=3x^2-1,5\times 2x-6\times 1+0=3x^2-3x-6.\] Pour prouver que
+\[f'(x)=(3x+3)(x-2),\] on développe et on réduit le membre de droite~:
+
+\begin{align*}
+(3x+3)(x-2)&=3x\times x+3x\times (-2)+3\times x+3\times (-2)\\
+&=3x^2-6x+3x-6\\
+&=3x^2-3x-6.\end{align*} On retombe bien sur l'expression de $f'(x)$ obtenue dans la question 1.
+\item On étudie le signe de $f'(x)=(3x+3)(x-2).$
+
+\medskip
+
+{\setlength{\arrayrulewidth}{2pt}
+\begin{center}
+\begin{tabular}{l|l}
+$3x+3=0$&$x-2=0$\\
+$3x+\cancel{3}-\cancel{3}=0-3$&$x-\cancel{2}+\cancel{2}=0+2$\\
+$\frac{\cancel{3}x}{\cancel{3}}=\frac{-3}{3}$&$x=2$\\
+$x=-1$& \\
+$a=3$ donc \fbox{$-~\upphi~+$}&$a=1$ donc \fbox{$-~\upphi~+$}
+\end{tabular}
+\end{center}}
+
+\medskip
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$3x+3$/1,$x-2$/1,$f'(x)$/1,$f(x)$/2}{$-2$,$-1$,$2$,$3$}
+\tkzTabLine{,-,z,+,,+,}
+\tkzTabLine{,-,,-,z,+,}
+\tkzTabLine{,+,z,-,z,+,}
+\tkzTabVar{-/$0$,+/$5.5$,-/$-8$,+/$-2.5$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Pour compléter l'extrémité des flèches, on demande un tableau de valeurs pour $f$ sur $\left[-2;3\right]$ avec un pas de 1 et on ne prend en compte que les valeurs $x=-2,$ $x=-1,$ $x=2$ et $x=3.$
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+On considère la fonction $g$ définie sur $\left[0;5\right]$ par \[g(x)=-0,5x^3+3,75x^2-6x+1.\]
+
+\begin{enumerate}
+\item \[g'(x)=-0,5\times 3x^2+3,75\times 2x-6\times 1+0=-1,5x^2+7,5x-6.\] Pour prouver que
+\[g'(x)=(-3x+3)(0,5x-2),\] on développe et on réduit le membre de droite~:
+
+\begin{align*}
+(-3x+3)(0,5x-2)&=(-3x)\times 0,5x+(-3x)\times (-2)+3\times 0,5 x+3\times (-2)\\
+&=-1,5x^2+6x+1,5x-6\\
+&=-1,5x^2+7,5x-6.\end{align*} On retombe bien sur l'expression de $g'(x)$ obtenue dans la question 1.
+\item On étudie le signe de $g'(x)=(-3x+3)(0,5x-2).$
+
+\medskip
+
+{\setlength{\arrayrulewidth}{2pt}
+\begin{center}
+\begin{tabular}{l|l}
+$-3x+3=0$&$0,5x-2=0$\\
+$-3x+\cancel{3}-\cancel{3}=0-3$&$0,5x-\cancel{2}+\cancel{2}=0+2$\\
+$\frac{\cancel{-3}x}{\cancel{-3}}=\frac{-3}{-3}$&$\frac{\cancel{0,5}x}{\cancel{0,5}}=\frac{2}{0,5}$\\
+$x=1$&$x=4$ \\
+$a=-3$ donc \fbox{$+~\upphi~-$}&$a=0,5$ donc \fbox{$-~\upphi~+$}
+\end{tabular}
+\end{center}}
+
+\medskip
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$-3x+3$/1,$0.5x-2$/1,$g'(x)$/1,$g(x)$/2}{$0$,$1$,$4$,$5$}
+\tkzTabLine{,+,z,-,,-,}
+\tkzTabLine{,-,,-,z,+,}
+\tkzTabLine{,-,z,+,z,-,}
+\tkzTabVar{+/$1$,-/$-1.75$,+/$5$,-/$2.25$}
+\end{tikzpicture}
+\end{center}
+
+
+
+\end{enumerate}
+
+\end{exo}
 
 
 
