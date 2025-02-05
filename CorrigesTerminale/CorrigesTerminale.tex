@@ -10703,4 +10703,229 @@ Avec la calculatrice on trouve $\frac{\ln 0,01}{\ln 0,93}\approx 63,46,$ donc il
 
 \end{exo}
 
+\begin{exo}
+
+On abrégera \og croissance comparée \fg~{} en C.C.
+
+\begin{enumerate}
+\item $\lim\limits_{x\to +\infty}(-x+1)=-\infty$ donc \[\lim\limits_{x\to +\infty}\text{e}^{-x+1}=\text{\og}~\text{e}^{-\infty}~\text{ \fg}=0.\]
+\item$\lim\limits_{x\to -\infty}(-x+1)=+\infty$ donc \[\lim\limits_{x\to -\infty}\text{e}^{-x+1}=\text{\og}~\text{e}^{+\infty}~\text{ \fg}=+\infty.\]
+\item $\lim\limits_{x\to +\infty}\frac{x}{\text{e}^x}=0$ par croissance comparée.
+\item $\lim\limits_{x\to -\infty}\frac{x}{\text{e}^x}=\lim\limits_{x\to -\infty}\left(x\times \text{e}^{-x}\right)=\text{\og}~(-\infty)\times\left(+\infty\right)~\text{ \fg}=-\infty.$
+\item $\lim\limits_{x\to -\infty}\left(\text{e}^x-x+1\right)=\text{\og}~0-(-\infty)+ 1~\text{\fg}=+\infty.$
+\item  On met $\text{e}^{x}$ en facteur~: pour tout $x\in\mathbb{R},$
+\[\text{e}^x-x+1=\text{e}^x\left(1-\frac{x}{\text{e}^x}+\frac{1}{\text{e}^x}\right)=
+\text{e}^x\left(1-x\text{e}^{-x}+\text{e}^{-x}\right).\]
+
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}\text{e}^x&=  +\infty\\
+        \lim\limits_{x\to +\infty}\left(1-x\text{e}^{-x}+\text{e}^{-x}\right) &= 1-0+0=1~\text{(par C.C. pour le terme }x\text{e}^{-x})
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}\left(\text{e}^x-x+1\right)=\text{\og}~{+\infty}\times 1~\text{\fg}=+\infty.
+\]
+\item ~{} \[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to -\infty}\left(\text{e}^{x}+1\right)&= 0+1=1 \\
+        \lim\limits_{x\to -\infty}\left(\text{e}^{x}+2\right)&= 0+2=2
+    \end{array}
+\right \}\implies \lim\limits_{x\to -\infty}\frac{\text{e}^{x}+1}{\text{e}^{x}+2}=\frac{0+1}{0+2}=\frac{1}{2}.
+\]
+
+\item $\lim\limits_{x\to -\infty}\frac{\text{e}^{x}+1}{\text{e}^{x}+2}=\frac{1}{2}$ d'après la question précédente, donc \[\lim\limits_{x\to -\infty}\ln\left(\frac{\text{e}^x+1}{\text{e}^x+2}\right)=\ln\left(\frac{1}{2}\right)=-\ln 2\] par continuité de la fonction $\ln$ en $\frac{1}{2}.$ 
+\item $\lim\limits_{x\to +\infty}\frac{\ln x}{x}=0$ par croissance comparée.
+\item Si $x>1,$ alors $0<\frac{1}{x+1}<\frac{1}{x}$ (car deux nombres strictement positifs sont rangés en sens contraire de leurs inverses), donc en multipliant par $\ln x$ (qui est strictement positif, puisqu'on a supposé $x>1$)~:
+\[0<\frac{\ln x}{x+1}<\frac{\ln x}{x}.\]
+
+Or $\lim\limits_{x\to +\infty}\frac{\ln x}{x}=0$ et $\lim\limits_{x\to +\infty}0=0,$ donc d'après le théorème des gendarmes~:
+\[\lim\limits_{x\to +\infty}\frac{\ln x}{x+1}=0.\]
+
+\item $\lim\limits_{x\to 0,~x>0}\frac{\ln x}{x}=\lim\limits_{x\to 0,~x>0}\left(\ln x\times\frac{1}{x}\right)=\text{\og}~(-\infty)\times (+\infty)~\text{ \fg}=-\infty.$
+\item On développe~: pour tout $x>0,$
+\[x\left(\ln x+1\right)=x\ln x+x.\]
+
+\[
+\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to 0,~x>0}x\ln x&= 0~(\text{par C.C.}) \\
+        \lim\limits_{x\to 0,~x>0}x&= 0
+    \end{array}
+\right \}\implies \lim\limits_{x\to 0,~x>0}x(\ln x+1)=0+0=0.
+\]
+
+\item D'après le point 6, $\lim\limits_{x\to +\infty}\left(\text{e}^{x}-x+1\right)=+\infty,$ donc
+
+\[\lim\limits_{x\to +\infty}\ln\left(\text{e}^{x}-x+1\right)=\text{\og}~\ln(+\infty)~\text{ \fg}=+\infty.\]
+\item $\lim\limits_{x\to +\infty}x\text{e}^{-x}=0$ par C.C., donc $\lim\limits_{x\to +\infty}\ln\left(1+x\text{e}^{-x}\right)=\ln(1+0)=0,$ par continuité de la fonction $x\mapsto \ln(1+x)$ en $0.$
+\end{enumerate}
+
+
+\end{exo}
+
+\begin{exo}
+
+Soit $q>1$ et soit $n\in\mathbb{N}.$ On peut écrire
+\[q^n=\text{e}^{\ln\left(q^n\right)}=\text{e}^{n\ln q}.\]
+
+Or $q>1\implies \ln q>0,$ donc $\lim\limits_{n\to +\infty}\left(n\ln q\right)=+\infty,$ et donc
+\[\lim\limits_{n\to +\infty}q^n=\lim\limits_{n\to +\infty}\text{e}^{n\ln q}=\text{\og}~\text{e}^{+\infty}~\text{ \fg}=+\infty.\]
+
+
+
+
+\end{exo}
+
+\begin{exo}
+
+Les fonctions $f$ et $g$ sont définies sur $\left]0;+\infty\right[$ par
+\[f(x)=\ln x\hspace{2cm} g(x)=\left(\ln x\right)^2.\]
+
+On note $C$ et $C'$ leurs courbes représentatives respectives, tracées ci-dessous.
+
+
+\begin{center}
+\psset{xunit=1.5cm,yunit=1.5cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.3817498172327687,-1.2839722274510572)(3.7692989053959343,1.820690252077334)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.3817498172327687,-1.2839722274510572)(3.7692989053959343,1.820690252077334)
+\psplot[linewidth=2.pt,plotpoints=200]{1.3785437799784155E-6}{3.7692989053959343}{ln(x)}
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,plotpoints=200]{1.3785437799784155E-6}{3.7692989053959343}{ln(x)^(2.0)}
+\rput[tl](0.6186414261708245,-0.6975359813179167){$C$}
+\rput[tl](0.5726464264741076,0.7168102593561283){$C'$}
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item On utilise la formule $\left(u^n\right)'=n\times u'\times u^{n-1},$ avec
+\[u(x)=\ln x,\qquad u'(x)=\frac{1}{x},\qquad n=2.\]
+
+Pour tout $x\in\left]0;+\infty\right[~:$
+\[g'(x)=2\times\frac{1}{x}\times\ln x.\] 
+
+On a donc le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$2\times\frac{1}{x}$/1,$\ln x$/1,$g'(x)$/1,$g(x)$/2}{$0$,$1$,$+\infty$}
+\tkzTabLine{d,+,,+,}
+\tkzTabLine{d,-,z,+,}
+\tkzTabLine{d,-,z,+,}
+
+\tkzTabVar{D+/$+\infty$,-/$0$,+/$+\infty$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\[g(1)=(\ln 1)^2=0^2=0.\]
+
+On calcule les limites en $+\infty$ et à droite en $0~:$
+
+\begin{itemize}
+\item[\textbullet] $\lim\limits_{x\to +\infty}\ln x=+\infty,$ donc $\lim\limits_{x\to +\infty}\left(\ln x\right)^2=\text{\og}~\left(+\infty\right)^2~\text{ \fg}=+\infty.$
+\item[\textbullet] $\lim\limits_{x\to 0,~x>0}\ln x=-\infty,$ donc $\lim\limits_{x\to 0,~x>0}\left(\ln x\right)^2=\text{\og}~\left(-\infty\right)^2~\text{ \fg}=+\infty.$
+\end{itemize}
+
+
+\item Étudier les positions relatives de $C$ et $C'$ revient à étudier le signe de leur différence. Pour tout $x\in\left]0;+\infty\right[:~$
+\[\ln x-(\ln x)^2=1\times\ln x-\ln x\times\ln x=\ln x(1-\ln x).\] On résout les équations~:
+
+\begin{itemize}
+\item[\textbullet] $\ln x=0\iff \text{e}^{\ln x}=\text{e}^0\iff x=1,$
+\item[\textbullet] $1-\ln x=0\iff 1=\ln x\iff \text{e}^1=\text{e}^{\ln x}\iff \text{e}^{1}=x.$
+\end{itemize}
+
+\medskip
+
+On a donc le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+\tkzTabInit{$x$/1,$\ln x$/1,$1-\ln x$/1,$\ln x(1-\ln x)$/1}{$0$,$1$,$\text{e}^1$,$+\infty$}
+\tkzTabLine{d,-,z,+,,+,}
+\tkzTabLine{d,+,,+,z,-,}
+\tkzTabLine{d,-,z,+,z,-,}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+Conclusion~:
+
+\begin{itemize}
+\item[\textbullet] les courbes $C$ et $C'$ se coupent aux points d'abscisses $1$ et $\text{e}^1~;$
+\item[\textbullet] la courbe $C$ est au dessus de $C'$ sur l'intervalle $\left]1;\text{e}^1\right[~;$
+\item[\textbullet] la courbe $C$ est en dessous de $C'$ sur les intervalles $\left]0;
+1\right[$ et $\left]\text{e}^1;+\infty\right[.$
+\end{itemize}
+
+
+
+\item Pour tout réel $x \in\left[ 1;\text{e}\right],$ on note $M$ (respectivement $N$) le point de $C$ (resp. $C'$) d'abscisse $x.$
+
+
+\begin{center}
+\newrgbcolor{ccqqqq}{0.8 0. 0.}
+\psset{xunit=4.0cm,yunit=4.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.36104147549967824,-0.20709880681088047)(2.6335761997331653,0.9511967090810663)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,labels=none,Dx=10,Dy=10,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.36104147549967824,-0.20709880681088047)(2.6335761997331653,0.9511967090810663)
+\psplot[linewidth=2.pt,linecolor=ccqqqq,plotpoints=200]{1.6098970942798202E-6}{2.6335761997331653}{ln(x)}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{1.6098970942798202E-6}{2.6335761997331653}{ln(x)^(2.0)}
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](1.85667,0.6187845606016078)(0.,0.6187845606016078)
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](1.85667,0.38289433243892484)(0.,0.38289433243892484)
+\rput[tl](1.85,-0.06584325609235037){$x$}
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt](1.8566706707812488,0.)(1.85667,0.38289433243892484)
+\psline[linewidth=2.pt,linecolor=green]{->}(1.85667,0.49604077827179993)(1.85667,0.6187845606016078)
+\psline[linewidth=2.pt,linecolor=green]{->}(1.85667,0.49604077827179993)(1.85667,0.38289433243892484)
+\rput[tl](-0.20566036970929485,0.65){\ccqqqq{$\ln x$}}
+\rput[tl](-0.3045392552122661,0.45){\blue{$(\ln x)^2$}}
+\psline[linewidth=2.pt,linecolor=green]{->}(0.,0.5)(0.,0.6187845606016078)
+\psline[linewidth=2.pt,linecolor=green]{->}(0.,0.5)(0.,0.38289433243892484)
+\rput[tl](2.2,0.88998597043637){\ccqqqq{$C$}}
+\rput[tl](2.256894731150418,0.6310174607857315){\blue{$C'$}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=darkgray](1.8566706707812488,0.)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](1.85667,0.38289433243892484)
+\rput[bl](1.9178814094259449,0.3249637675622496){\blue{$N$}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=ccqqqq](1.85667,0.6187845606016078)
+\rput[bl](1.851962152423964,0.7){\ccqqqq{$M$}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=ccqqqq](0.,0.6187845606016078)
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=blue](0.,0.38289433243892484)
+\end{pspicture*}
+\end{center}
+
+La longueur $MN$ est la longueur verte. Comme $y_M=f(x)=\ln x$ et $y_N=g(x)=(\ln x)^2~:$
+\[MN=y_M-y_N=\ln x-(\ln x )^2.\]
+
+Étudier la valeur de $x$ pour laquelle la longueur $MN$ est maximale revient donc à déterminer la valeur de $x$ pour laquelle la fonction $h,$ définie sur $\left[1;\text{e}^1\right]$ par $h(x)=\ln x-(\ln x)^2,$ atteint son maximum. Pour résoudre le problème, on utilise la dérivation~: pour tout $x\in \left[1;\text{e}^1\right],$
+\begin{align*}h'(x)&=\frac{1}{x}-2\times\frac{1}{x}\times\ln x\\
+&=\frac{1-2\ln x}{x}.
+\end{align*}
+
+Or \[1-2\ln x=0\iff 1=2\ln x\iff \frac{1}{2}=\ln x\iff \text{e}^{\frac{1}{2}}=\text{e}^{\ln x}\iff \text{e}^{\frac{1}{2}}=x.\]
+
+On a donc le tableau (il est inutile ici de compléter l'extrémité des flèches)~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$1-2\ln x$/1,$x$/1,$h'(x)$/1,$h(x)$/2}{$1$,$\text{e}^{\frac{1}{2}}$,$\text{e}^{1}$}
+\tkzTabLine{,+,z,-,}
+\tkzTabLine{,+,,+,}
+\tkzTabLine{,+,z,-,}
+\tkzTabVar{-/,+/,-/}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+Conclusion~: $h$ atteint son maximum pour $x=\text{e}^{\frac{1}{2}},$ donc la longueur $MN$ est maximale lorsque $x=\text{e}^{\frac{1}{2}}.$
+
+
+\end{enumerate}
+\end{exo}
+
+
 \end{document}
