@@ -3716,6 +3716,163 @@ $a=1$ donc \fbox{$-~\upphi~+$}&$a=3$ donc \fbox{$-~\upphi~+$}
 
 
 
+\begin{exo}
+
+On considère la fonction $c$ définie sur $\left[0;6\right]$ par \[c(x)=x^3-12x^2+36x.\]
+ 
+\begin{enumerate}
+\item \[c'(x)= 3x^2-12\times 2x+36\times 1-0=3x^2-24x+36.\] Pour prouver que
+\[c'(x)=(3x-6)(x-6),\] on développe et on réduit le membre de droite~:
+
+\begin{align*}
+(3x-6)(x-6)&=3x\times x+3x\times (-6)+(-6)\times x +(-6)\times (-6)\\
+&=3x^2-18x-6x+36\\
+&=3x^2-24x+36.\end{align*} On retombe bien sur l'expression de $c'(x)$ obtenue ci-dessus.
+\item On étudie le signe de $c'(x)=(3x-6)(x-6).$
+
+\medskip
+
+{\setlength{\arrayrulewidth}{2pt}
+\begin{center}
+\begin{tabular}{l|l}
+$3x-6=0$&$x-6=0$\\
+$3x-\cancel{6}+\cancel{6}=0+6$&$x-\cancel{6}+\cancel{6}=0+6$\\
+$\frac{\cancel{3}x}{\cancel{3}}=\frac{6}{3}$&$x=6$\\
+$x=2$& \\
+$a=3$ donc \fbox{$-~\upphi~+$}&$a=1$ donc \fbox{$-~\upphi~+$}
+\end{tabular}
+\end{center}}
+
+\medskip
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$3x-6$/1,$x-6$/1,$c'(x)$/1,$c(x)$/2}{$0$,$2$,$6$}
+\tkzTabLine{,-,z,+,}
+\tkzTabLine{,-,,-,z}
+\tkzTabLine{,+,z,-,z}
+\tkzTabVar{-/$0$,+/$32$,-/$0$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Comme le tableau \og se termine à $x=6$ \fg , il n'y a pas de \og $+$ \fg~{} sur la ligne de $x-6.$
+
+\item D'après le tableau de variations, la concentration est maximale après 2~h~; elle vaut alors 32~mg/$\ell.$
+
+
+\end{enumerate}
+
+
+\end{exo}
+
+
+
+
+
+
+
+
+\begin{exo}
+
+
+
+\textbf{Partie A - Étude des charges}
+
+\medskip
+
+\begin{center}
+\psset{xunit=1cm,yunit=0.01cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.4,-90)(10.377938901926859,620.4055809716762)
+\multips(0,0)(0,100.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(10.377938901926859,0)}
+\multips(0,0)(1.0,0){12}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,620.4055809716762)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=100.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0.,0.)(10.377938901926859,620.4055809716762)
+\psplot[linewidth=2.pt,plotpoints=200]{0}{10}{2.0*x^(3.0)-23.0*x^(2.0)+90.0*x+10.0}
+\psline[linewidth=2pt,linestyle=dashed,dash=5pt 5pt,linecolor=blue](0.,415.)(9.,415.)
+\psline[linewidth=2pt,linestyle=dashed,dash=5pt 5pt,linecolor=blue](9.,415.)(9.,0.)
+\psline[linewidth=2pt,linestyle=dashed,dash=5pt 5pt,linecolor=red](0.,200.)(7.,200.)
+\psline[linewidth=2pt,linestyle=dashed,dash=5pt 5pt,linecolor=red](7.,200.)(7.,0.)
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item $C(9) = 2\times 9^3 - 23\times 9^2 + 90\times 9 + 10=415,$ donc lorsque l'entreprise produit 9 kilogrammes de safran, le montant des charges est de \np{415000}~\euro~{} (confirmation avec les pointillés bleus).
+\item Pour que le montant des charges soit égal à \np{200000}~euros, il faut produire 7~kg de safran environ (pointillés rouges).
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B - Étude du bénéfice}
+
+\medskip
+
+L'entreprise vend la totalité de sa production. Chaque kilogramme de safran est vendu
+au prix de 50 milliers d'euros.
+
+\medskip
+
+\begin{enumerate}
+\item Chaque kg est vendu 50 milliers d'euros, donc $x$ kg sont vendus $50\times x$ milliers d'euros. On a donc
+\[R(x)=50x.\]
+
+\item  Le bénéfice $B(x)$, en milliers d'euros, réalisé pour la vente de $x$
+kilogrammes de safran est~: 
+
+\begin{align*}
+B(x)&=\text{Recette}-\text{Coûts}\\
+&=50x-\left(2x^3 - 23x^2 + 90x + 10\right)\\
+&=50x-2x^3+23x^2-90x-10\\
+&=-2x^3+23x^2-40x-10.\end{align*}
+
+\item \[B'(x)=-2\times 3x^2+23\times 2x-40\times 1-0=-6x^2+46x-40.\]
+ Pour prouver que
+\[B'(x)=(2x-2)(-3x+20),\] on développe et on réduit le membre de droite~:
+
+\begin{align*}
+(2x-2)(-3x+20)&=2x\times (-3x)+2x\times 20+(-2)\times (-3x) +(-2)\times 20\\
+&=-6x^2+40x+6x-40\\
+&=-6x^2+46x-40.\end{align*} On retombe bien sur l'expression de $B'(x)$ obtenue ci-dessus.
+		\item On étudie le signe de $B'(x)=(2x-2)(-3x+20).$
+
+\medskip
+
+{\setlength{\arrayrulewidth}{2pt}
+\begin{center}
+\begin{tabular}{l|l}
+$2x-2=0$&$-3x+20=0$\\
+$2x-\cancel{2}+\cancel{2}=0+2$&$-3x+\cancel{20}-\cancel{20}=0-20$\\
+$\frac{\cancel{2}x}{\cancel{2}}=\frac{2}{2}$&$\frac{\cancel{-3}x}{\cancel{-3}}=\frac{-20}{-3}$\\
+$x=1$&$x=\frac{20}{3}$ \\
+$a=2$ donc \fbox{$-~\upphi~+$}&$a=-3$ donc \fbox{$+~\upphi~-$}
+\end{tabular}
+\end{center}}
+
+\medskip
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$2x-2$/1,$-3x+20$/1,$B'(x)$/1,$B(x)$/2}{$0$,$1$,$\frac{20}{3}$,$10$}
+\tkzTabLine{,-,z,+,,+,}
+\tkzTabLine{,+,,+,z,-,}
+\tkzTabLine{,-,z,+,z,-,}
+\tkzTabVar{+/,-/,+/,-/}
+\end{tikzpicture}
+\end{center}
+
+		\item On calcule l'image aux extrémités des deux flèches hautes~:
+		\begin{align*}B(0)&=-2\times 0^3+23\times 0^2-10\times 0-10=-10 &&\text{(on a une perte quand on ne produit rien)}\\
+		B\left(\frac{20}{3}\right)&=-2\times \left(\frac{20}{3}\right)^3+23\times \left(\frac{20}{3}\right)^2-10\times \left(\frac{20}{3}\right)-10\approx 153 &&
+		\end{align*}
+		
+		Conclusion~: pour maximiser le bénéfice, l'entreprise doit produire $\left(\frac{20}{3}\right)$~kg, soit environ 6,67~kg~; elle fait alors un bénéfice de 153 milliers d'euros environ.
+\end{enumerate}
+
+
+\end{exo}
+
 
 
 

@@ -10928,4 +10928,256 @@ Conclusion~: $h$ atteint son maximum pour $x=\text{e}^{\frac{1}{2}},$ donc la lo
 \end{exo}
 
 
+
+\begin{exo}
+
+\begin{enumerate}
+
+\item Soit $u$ la fonction définie sur $\left]0;+\infty\right[$ par
+\[u(x)=x^3-1+2\ln x.\]
+\begin{enumerate}
+\item Pour tout $x\in \left]0;+\infty\right[~:$
+\[u'(x)=3x^2+2\times\frac{1}{x}.\] Clairement $u'$ est strictement positive. On a donc le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$u'(x)$/1,$u(x)$/2}{$0$,$+\infty$}
+\tkzTabLine{d,}
+\tkzTabVar{D-/,+/}
+\tkzTabVal[draw]{1}{2}{0.6}{$1$}{$0$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\item $u(1)=1^3-1+2\ln 1=1-1+2\times 0=0.$ On a donc le tableau de signes~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$u(x)$/1}{$0$,$1$,$+\infty$}
+\tkzTabLine{d,-,0,+,}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\end{enumerate}
+\item La fonction $f$ est définie sur $\left]0;+\infty\right[$ par \[f(x)=x-\frac{\ln x}{x^2}.\]
+\begin{enumerate}
+\item On utilise la formule pour la dérivée d'un quotient $\left(\frac{u}{v}\right)'=\frac{u'v-uv'}{v^2},$ avec
+\begin{alignat*}{3}
+&u(x)=\ln x,&& \hspace{1cm}&&v(x)=x^2, \\
+& u'(x)=\frac{1}{x},&& &&v'(x)=2x.\\
+\end{alignat*}
+On obtient, pour tout $x\in \left]0;+\infty\right[~:$
+\begin{align*}
+f'(x)&=1-\frac{\frac{1}{x}\times x^2-\ln x\times 2x}{\left(x^2\right)^2}\\
+&=1-\frac{x-\ln x\times 2x}{x^4}\\
+&=1-\frac{\cancel{x}\left(1-2\ln x\right)}{\cancel{x}\times x^3}\\
+&=\frac{x^3}{x^3}-\frac{1-2\ln x}{x^3}\\
+&=\frac{x^3-1+2\ln x}{x^3}\\
+&=\frac{u(x)}{x^3}.\end{align*}
+
+
+\item On a étudié le signe de $u$ dans la question 1.(b). On a donc le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$u(x)$/1,$x^3$/1,$f'(x)=\frac{u(x)}{x^3}$/1,$f(x)$/2}{$0$,$1$,$+\infty$}
+\tkzTabLine{d,-,z,+,}
+\tkzTabLine{z,+,,+,}
+\tkzTabLine{d,-,z,+,}
+\tkzTabVar{D+/$+\infty$,-/$1$,+/$+\infty$}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\[f(1)=1-\frac{\ln 1}{1^2}=1-\frac{0}{1}=1.\]
+
+\item On commence par calculer $\lim\limits_{x\to 0,~x>0}f(x).$ Pour cela on écrit $f(x)=x-\ln x\times \frac{1}{x^2}.$
+
+\medskip
+
+On a
+
+\[\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to 0,~x>0}\ln x&= -\infty\\
+        \lim\limits_{x\to 0,~x>0}\frac{1}{x^2}&= +\infty
+    \end{array}
+\right \}\implies \lim\limits_{x\to 0,~x>0}\ln x\times \frac{1}{x^2}= -\infty,\]
+
+et donc
+
+\[\lim\limits_{x\to 0,~x>0}\left(x-\ln x\times \frac{1}{x^2}\right)=\og~ 0-(-\infty)~\fg=+\infty.\]
+
+\medskip
+
+Ensuite on calcule $\lim\limits_{x\to +\infty}f(x).$
+
+\medskip
+
+\[\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}x&= +\infty\\
+        \lim\limits_{x\to +\infty}\frac{\ln x}{x^2}&= 0\qquad \text{par croissance comparée}~
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}\left(x-\frac{\ln x}{x^2}\right)= +\infty.\]
+
+
+\end{enumerate}
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item On considère la fonction $g$ définie sur l'intervalle $\left]0;+\infty\right[$ par
+\[g(x) =2\ln x+x-2.\]
+\begin{enumerate}
+\item  ~{}
+\begin{itemize}
+\item[\textbullet] \[\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to 0,~x>0}2\ln x&= -\infty\\
+        \lim\limits_{x\to 0,~x>0}(x-2)&= 0-2=-2
+    \end{array}
+\right \}\implies \lim\limits_{x\to 0,~x>0}g(x)= -\infty.\]
+\item[\textbullet] \[\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}2\ln x&= +\infty\\
+        \lim\limits_{x\to +\infty}(x-2)&= +\infty
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}g(x)= +\infty.\]
+\end{itemize}
+
+\item  Pour tout $x\in\left]0;+\infty\right[~:$
+\[g'(x)=2\times\frac{1}{x}+1=\frac{2}{x}+1.\]
+
+Clairement $g'$ est strictement positive sur $\left]0;+\infty\right[,$ donc on a le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$g'(x)$/1,$g(x)$/2}{$0$,$+\infty$}
+\tkzTabLine{d,+,}
+\tkzTabVar{D-/$-\infty$,+/$+\infty$}
+\tkzTabVal[draw]{1}{2}{0.6}{$\alpha$}{$0$}
+\end{tikzpicture}
+\end{center}
+
+\item \begin{itemize}
+\item[\textbullet] La fonction $g$ est continue et strictement croissante sur $\left]0;+\infty\right[~;$
+\item[\textbullet] $\lim\limits_{x\to 0,~x>0}g(x)= -\infty\qquad,\qquad \lim\limits_{x\to +\infty}g(x)= +\infty~;$
+\item[\textbullet] $0\in\left]-\infty;+\infty\right[.$
+\end{itemize}
+
+D'après le théorème de la bijection, l'équation $g(x)=0$ a exactement une solution  $\alpha$ dans $\left]0;+\infty\right[.$
+
+\medskip
+
+\`A l'aide de la calculatrice, on obtient l'encadrement
+\[1,37<\alpha<1,38.\]
+
+\item On déduit des questions précédentes le tableau de signe de la fonction $g~:$ 
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$g(x)$/1}{$0$,$\alpha$,$+\infty$}
+\tkzTabLine{d,-,z,+,}
+\end{tikzpicture}
+\end{center}
+
+\end{enumerate}
+\item On considère la fonction $f$ définie sur l'intervalle $\left]0;+\infty\right[$ par:
+\[f(x) = \frac{x-2}{x}\ln x.\]
+On note $\mathcal{C}_f$ sa courbe représentative dans un repère orthonormé.
+\begin{enumerate}
+\item ~{} \[\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to 0,~x>0}\frac{x-2}{x}&=\og~ \frac{0-2}{0^+}~\fg=\og~ \frac{-2}{0^+}~\fg= -\infty\\
+        \lim\limits_{x\to 0,~x>0}\ln x&= -\infty
+    \end{array}
+\right \}\implies \lim\limits_{x\to 0,~x>0}f(x)= +\infty.\]
+
+On en déduit que la droite d'équation $x=0$ est asymptote (verticale) à $\mathcal{C}_f.$
+\item On écrit, pour $x>0~:$
+\[\frac{x-2}{x}=\frac{x}{x}-\frac{2}{x}=1-2\times\frac{1}{x}.\] On peut dès lors calculer la limite~:
+
+\[\left.
+    \begin{array}{ll}
+        \lim\limits_{x\to +\infty}\frac{x-2}{x}&= 1-2\times 0=1\\
+        \lim\limits_{x\to +\infty}\ln x&= +\infty
+    \end{array}
+\right \}\implies \lim\limits_{x\to +\infty}f(x)= +\infty.\]
+
+\item Pour tout $x\in\left]0;+\infty\right[,$ $f(x)=\left(1-2\times\frac{1}{x}\right)\ln x.$
+
+\medskip
+
+On utilise la formule pour la dérivée d'un produit, avec~:
+
+\begin{alignat*}{3}
+&u(x)=1-2\times\frac{1}{x},&& \hspace{1cm}&&v(x)=\ln x, \\
+& u'(x)=-2\times\left(-\frac{1}{x^2}\right)=\frac{2}{x^2},&& &&v'(x)=\frac{1}{x}.\\
+\end{alignat*}
+
+On obtient, pour tout $x\in \left]0;+\infty\right[~:$
+
+\begin{align*}
+f'(x)&=\frac{2}{x^2}\times \ln x+\left(1-\frac{2}{x}\right)\times\frac{1}{x}\\
+&=\frac{2\ln x}{x^2}+\frac{1\textcolor{red}{\times x}}{x\textcolor{red}{\times x}}-\frac{2}{x}\times \frac{1}{x}\\
+&=\frac{2\ln x}{x^2}+ \frac{x}{x^2}-\frac{2}{x^2}\\
+&=\frac{2\ln x+x-2}{x^2}\\
+&=\frac{g(x)}{x^2}.
+\end{align*}
+
+\item Comme $f'(x)=\frac{g(x)}{x^2}$ pour tout $x>0$ et que $x^2>0,$ $f'$ et $g$ sont du même signe.
+
+\medskip
+
+On a étudié le signe de $g$ dans la question 1.(d)~; on en déduit le signe de $f'$ et les variations de $f~:$
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$0$,$\alpha$,$+\infty$}
+\tkzTabLine{d,-,z,+,}
+\tkzTabVar{D+/$+\infty$,-/$f(\alpha)$,+/$+\infty$}
+\end{tikzpicture}
+\end{center}
+
+\end{enumerate}
+\item Pour étudier la position relative de la courbe $\mathcal{C}_f$ et de la courbe représentative $\Gamma$ de la fonction $\ln$ sur l'intervalle $\left]0;+\infty\right[,$ on étudie le signe de la différence~: pour tout $x>0,$
+\[f(x)-\ln x=\frac{x-2}{x}\ln x-\ln x=\ln x\left(\frac{x-2}{x}-1\right)=
+\ln x\left(\frac{x-2}{x}-\frac{x}{x}\right)=\ln x\times \frac{-2}{x}.\]
+
+Or 
+\[\ln x=0\iff\text{e}^{\ln x}=\text{e}^0\iff x=1,\] donc on obtient~:
+
+\begin{center}
+\hspace*{-1cm}
+\begin{tikzpicture}[scale=1.2]
+\tkzTabInit{$x$/1,$\ln x$/1,$\frac{-2}{x}$/1,$\ln x\times \frac{-2}{x}$/1,Positions relatives des courbes/3}{$-\infty$,$1$,$+\infty$}
+\tkzTabLine{d,-,z,+,}
+\tkzTabLine{d,-,,-,}
+\tkzTabLine{d,+,z,-,}
+\tkzTabLine{d,\mathcal{C}_f\text{ au-dessus de }\Gamma,\scriptsize{\Longstack{S\\e\\ \\c\\o\\u\\p\\e\\n\\t}},\mathcal{C}_f\text{ en-dessous de }\Gamma,}
+\end{tikzpicture}
+\end{center}
+\end{enumerate}
+
+\end{exo}
+
+
+
 \end{document}
