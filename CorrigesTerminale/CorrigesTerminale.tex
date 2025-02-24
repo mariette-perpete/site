@@ -11178,6 +11178,106 @@ Or
 
 \end{exo}
 
+\begin{exo}
+
+Soit $f$ la fonction définie sur $\left[0;+\infty\right[$ par \[f(x)=\ln (1+x).\] On note $(C)$ sa courbe représentative et $(T)$ sa tangente au point de coordonnées $(0;0).$
+
+\begin{enumerate}
+\item \begin{enumerate}
+\item Pour avoir l'équation de la tangente, il faut d'abord calculer la dérivée. Pour cela, on utilise la formule $(\ln u)'=\frac{u'}{u},$ avec \[u(x)=1+x,\qquad u'(x)=1.\] Pour tout $x\in \left[0;+\infty\right[~:$
+\[f'(x)=\frac{1}{1+x}.\]
+
+L'équation de $T$ est \[y=f'(0)(x-0)+f(0).\]
+
+On calcule donc~: $f(0)=\ln (1+0)=\ln 1=0$ et $f'(0)=\frac{1}{1+0}=1,$ et l'on obtient~:
+
+\begin{align*}
+T:y&=f'(0)(x-0)+f(0)\\
+T:y&=1(x-0)+0\\
+T:y&=x.
+\end{align*}
+
+Pour tracer la courbe $(C),$ il suffit de translater la courbe de la fonction $\ln$ de 1 carreau vers la gauche\footnote{En effet, en posant $f(x)=\ln(1+x)$ et $g(x)=\ln x,$ les fonctions $f $et $g$ prennent les mêmes valeurs, mais $g$ a \og un temps de retard \fg~{} sur $f.$ Par exemple, $f(2)= \ln(1+2)=\ln(3)=g(3),$ ou encore $f(5)=\ln(5+1)=\ln 6=g(6).$}. Quant à la droite d'équation $y=x,$ c'est la première bissectrice -- on l'a déjà tracée maintes fois.
+
+\medskip
+
+
+\begin{center}
+\newrgbcolor{ccqqqq}{0.8 0. 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.64,-0.7)(6.54,5.84)
+\multips(0,-2)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-0.64,0)(6.54,0)}
+\multips(0,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.88)(0,5.84)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.64,-2.88)(6.54,5.84)
+\psplot[linewidth=2.pt,linecolor=ccqqqq,plotpoints=200]{0}{6.540000000000001}{ln(1.0+x)}
+\psplot[linewidth=2.pt,linecolor=blue]{0}{6.54}{(-0.--1.*x)/1.}
+\rput[tl](2.04,2.85){\blue{$(T)$}}
+\rput[tl](3.5,2.0){\ccqqqq{$(C)$}}
+\end{pspicture*}
+\end{center}
+
+\item Pour étudier la convexité, on utilise la dérivée seconde. On sait déjà que $f'(x)=\frac{1}{1+x}$ pour tout $x\in\left[0;+\infty\right[.$ On utilise donc la formule $\left(\frac{1}{u}\right)'=-\frac{u'}{u^2},$ avec
+\[u(x)=1+x,\qquad u'(x)=1.\] Pour tout $x\in\left[0;+\infty\right[~:$
+\[f''(x)=-\frac{1}{(x+1)^2}.\]
+
+\medskip
+
+La dérivée seconde est clairement strictement négative sur $\left[0;+\infty\right[,$ donc $f$ est concave sur cet intervalle. D'après une propriété du cours de début d'année, la tangente $(T)$ est au dessus de $(C)$ sur $\left[0;+\infty\right[.$ Autrement dit, pour tout $x\in \left[0;+\infty\right[~:$
+\[\ln(1+x)\leq x.\]
+\end{enumerate}
+\item On définit une suite $(u_n)_{n\in\mathbb{N}}$ par $u_0=5$ et la relation de récurrence \[u_{n+1}=\ln\left(1+u_n\right).\]
+\begin{enumerate}
+\item Prouver que $(u_n)_{n\in\mathbb{N}}$ est à termes positifs revient à prouver que $u_n\geq 0$ pour tout $n\in\mathbb{N}.$ On fait une démonstration par récurrence~: pour tout $n\in\mathbb{N},$ on note 
+\[\mathcal{P}_n~:~u_n\geq 0.\]
+
+\begin{itemize}
+\item[\textbullet] \textbf{Initialisation.} $u_0=5\geq 0$ donc $\mathcal{P}_0$ est vraie.
+
+
+\item[\textbullet] \textbf{Hérédité.} Soit $k\in\mathbb{N}$ tel que $\mathcal{P}_k$ soit vraie. On a donc \[u_k\geq 0.\] Donc~:
+\begin{align*}
+1+u_k&\geq 1+0\\
+1+u_k&\geq 1\\
+\ln\left(1+u_k\right)&\geq \ln 1\qquad \text{(car la fonction $\ln$ est strictement croissante sur $\left]0;+\infty\right[$)}\\
+u_{k+1}&\geq 0.
+\end{align*}
+
+La propriété $\mathcal{P}_{k+1}$ est donc vraie.
+
+
+\item[\textbullet] \textbf{Conclusion.} $\mathcal{P}_0$ est vraie et $\mathcal{P}_n$ est héréditaire, donc elle est vraie pour tout $n\in \mathbb{N}.$ La suite $(u_n)_{n\in\mathbb{N}}$ est donc bien à termes positifs.
+
+\end{itemize}
+\item Pour tout $n\in\mathbb{N}~:$
+\[u_{n+1}-u_n=\ln\left(1+u_n\right)-u_n.\]
+
+\medskip
+
+
+
+On sait d'après la question 1.(b) que $\ln(1+x)\leq x$ pour tout $x\in\left[0;+\infty\right[.$ Donc \[\ln(1+x)-x\leq 0,\] et en appliquant ce résultat avec $x=u_n$ (ce qui est licite, puisqu'on a vu que tous les $u_n$ étaient positifs dans la question précédente)~:
+\[u_{n+1}-u_n=\ln\left(1+u_n\right)-u_n\leq 0.\] La suite $(u_n)_{n\in\mathbb{N}}$ est donc décroissante. 
+Comme de plus elle est minorée par $0$ (une nouvelle fois parce qu'on a prouvé qu'elle était à termes positifs), elle converge\footnote{Toute suite décroissante minorée converge, c'est le théorème de limite monotone.}. De plus, sa limite $\ell$ est un nombre réel positif.
+\item On fait le raisonnement désormais classique~:
+
+\begin{itemize}
+\item[\textbullet] D'une part, $\lim\limits_{n\to +\infty}u_{n+1}=\lim\limits_{n\to +\infty}u_n=\ell.$
+\item[\textbullet] D'autre part, $\lim\limits_{n\to +\infty}u_{n+1}=\lim\limits_{n\to +\infty}f\left(u_n\right)=f(\ell)=\ln(1+\ell)$ car $f$ est continue sur $\left[0;+\infty\right[.$
+\end{itemize}
+
+On en déduit $\ell=\ln(1+\ell),$ et donc $\ell=0.$
+
+\medskip
+
+\textbf{Remarque~:} Je suis allé un peu vite en besogne dans la conclusion ci-dessus. Pourquoi a-t-on $\ell =0~?$ Parce que $\ell$ est solution de l'équation $x=\ln(1+x),$ et donc les courbes $(T)$ et $(C)$ se coupent au point d'abscisse $\ell.$ Il semble clair sur le graphique et compte tenu de la concavité de $f$ que cela ne se produit que lorsque $\ell=0.$ Mais raisonner à partir du graphique est interdit et il faudrait une preuve plus rigoureuse. Je m'arrête là cependant et je vous laisse chercher cette preuve plus rigoureuse (indication~: poser $h(x)=x-\ln(1+x)$ pour $x\in \left[0;+\infty\right[$).
+
+\end{enumerate}
+\end{enumerate}
+
+\end{exo}
+
+
+
 
 
 \end{document}
