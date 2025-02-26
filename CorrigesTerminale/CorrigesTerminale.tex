@@ -11278,6 +11278,115 @@ On en déduit $\ell=\ln(1+\ell),$ et donc $\ell=0.$
 
 
 
+\section{Équations différentielles}
 
+
+
+
+
+\begin{exo}
+
+À chaque fois, $C$ désigne une constante réelle. Les primitives de $f$ sont notées $F,$ celles $g$ sont notée $G,$ etc.
+
+\begin{enumerate}
+\item $f(x)=2x-3,~x\in\mathbb{R}.$
+\medskip \[F(x)=x^2-3x+C.\]
+\item $g(x)=x^2,~x\in\mathbb{R}.$
+
+\medskip \[G(x)=\frac{1}{3}x^3+C.\]
+\item $h(x)=6x^3-3x^2+4x-1,~x\in\mathbb{R}.$
+
+\medskip \[H(x)=6\times\frac{1}{4}x^4-3\times\frac{1}{3}x^3+4\times\frac{1}{2}x^2-x+C=\frac{3}{2}x^4-x^3+2x^2-x+C.\]
+
+\item $i(x)=\text{e}^{x}+x,~x\in\mathbb{R}.$
+
+\medskip \[I(x)=\text{e}^{x}+\frac{1}{2}x^2+C.\]
+
+\item $j(x)=\text{e}^{-2x},~x\in\mathbb{R}.$
+
+\medskip \[J(x)=\frac{1}{-2}\text{e}^{-2x}+C=-\frac{1}{2}\text{e}^{-2x}+C.\]
+
+\item $k(x)=3\text{e}^{0,1x},~x\in\mathbb{R}.$
+
+\medskip \[K(x)=3\times \frac{1}{0,1}\text{e}^{0,1x}+C=30\text{e}^{0,1x}+C.\]
+
+\item $\ell(x)=\frac{2x}{x^2+1},~x\in\mathbb{R}.$
+\medskip
+
+On reconnaît la formule $\frac{u'}{u},$ avec $u(x)=x^2+1,$ donc les primitives sont de la forme \[L(x)=\ln\left(x^2+1\right)+C.\]
+
+\item $m(x)=\frac{\text{e}^{x}+1}{\text{e}^{x}+x},~x\in\mathbb{R}.$
+
+On reconnaît encore la formule $\frac{u'}{u}~;$ les primitives sont donc de la forme \[M(x)=\ln\left(\text{e}^{x}+x\right)+C.\]
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+\medskip
+
+On utilise la formule pour la dérivée d'un produit avec
+
+\begin{alignat*}{3}
+&u(x)=x,&& \hspace{1cm}&&v(x)=\ln x, \\
+& u'(x)=1,&& &&v'(x)=\frac{1}{x}.\\
+\end{alignat*}
+
+On obtient, pour tout $x\in \left]0;+\infty\right[~:$
+
+\begin{align*}
+F'(x)&=1\times \ln x+x\times \frac{1}{x}-1\\
+&=\ln x+1-1\\
+&=\ln x.
+\end{align*}
+
+La fonction $F$ est donc bien une primitive de la fonction $\ln.$ 
+
+
+\end{exo}
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item Les solutions de l'équation différentielle $y'(t)=t-1$ sont les fonctions de la forme
+\[y(t)=\frac{1}{2}t^2-t+C,\]
+où $C$ est une constante.
+
+\medskip
+
+De plus, on a les équivalences
+\[y(0)=-5\iff \frac{1}{2}\times 0^2-0+C=-5\iff C=-5.\]
+
+Conclusion~: l'unique solution de l'équation différentielle $y'(t)=t-1$ vérifiant de plus la condition initiale $y(0)=-5$ est
+\[y(t)=\frac{1}{2}t^2-t-5.\]
+
+
+\item Les solutions de l'équation différentielle $z'(x)=x^2$ sont les fonctions de la forme
+\[z(x)=\frac{1}{3}x^3+C,\]
+où $C$ est une constante.
+
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item D'après le théorème 3 du cours, l'équation différentielle \[(E)\qquad y'=3y\] a pour solutions les fonctions de la forme $y(x)=C\text{e}^{3x},$ où $C$ est une constante.
+\item On a les équivalences~:
+\[y(0)=4\iff C\text{e}^{3\times 0}=4\iff C\times 1=4\iff C=4.\]
+
+\medskip
+
+Conclusion~: la seule solution de $(E)$ vérifiant la condition initiale $y(0)=4$ est la fonction définie par
+\[y(x)=4\text{e}^{3x}.\]
+\end{enumerate}
+
+\end{exo}
 
 \end{document}

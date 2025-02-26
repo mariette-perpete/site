@@ -7202,4 +7202,265 @@ $a=-2$ $\Rightarrow$ $+$ à gauche~:
 \end{enumerate}
 \end{exo}
 
+\begin{exo}
+
+\begin{enumerate}
+\item %Dans chaque cas, construire le tableau de signe de l'expression.
+\begin{enumerate}
+\item \setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On résout~:
+
+\begin{align*}
+x+4&=0\\
+x+\cancel{4}-\cancel{4}&=0-4\\
+x&=-4
+\end{align*}
+
+$a=1,$ puisque $x+4=\textcolor{red}{1}x+4$ $\Rightarrow$ $+$ à droite
+
+\columnbreak
+
+\begin{align*}
+-2x+6&=0\\
+-2x+\cancel{6}-\cancel{6}&=0-6\\
+ \frac{\cancel{-2}x}{\cancel{-2}}&=\frac{-6}{-2}\\
+ x&=3
+ \end{align*}
+ 
+ $a=-2$ $\Rightarrow$ $+$ à gauche
+
+\end{multicols}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$x+4$/1,$-2x+6$/1,$(x+4)(-2x+6)$/1}{$-\infty$,$-4$,$3$,$+\infty$}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,+,,+,z,-}
+\tkzTabLine{,-,z,+,z,-}
+\end{tikzpicture}
+\end{center}
+
+
+\item \setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On résout~:
+
+\begin{align*}
+4x-3&=0\\
+4x-\cancel{3}+\cancel{3}&=0+3\\
+\frac{\cancel{4}x}{\cancel{4}}&=\frac{3}{4}\\
+x&=\frac{3}{4}
+\end{align*}
+
+$a=4$ $\Rightarrow$ $+$ à droite
+
+\columnbreak
+
+\begin{align*}
+-3x+2&=0\\
+-3x+\cancel{2}-\cancel{2}&=0-2\\
+ \frac{\cancel{-3}x}{\cancel{-3}}&=\frac{-2}{-3}\\
+ x&=\frac{2}{3}
+ \end{align*}
+ 
+ $a=-3$ $\Rightarrow$ $+$ à gauche
+
+\end{multicols}
+
+\medskip
+
+\danger Attention à l'ordre des valeurs en haut~: $\frac{3}{4}=0,75$ et $\frac{2}{3}\approx 0,67,$ donc $\frac{2}{3}$ est \textbf{avant} $\frac{3}{4}.$
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$4x-3$/1,$-3x+2$/1,$(4x-3)(-3x+2)$/1}{$-\infty$,$\frac{2}{3}$,$\frac{3}{4}$,$+\infty$}
+\tkzTabLine{,-,,-,z,+}
+\tkzTabLine{,+,z,-,,-}
+\tkzTabLine{,-,z,+,z,-}
+\end{tikzpicture}
+\end{center}
+
+\item D'abord on factorise~: $x^2-3x=x(x-3).$
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+
+On résout~:
+
+\begin{align*}
+x&=0\\
+&\text{rien à résoudre~!}
+\end{align*}
+
+$a=1,$ puisque $x=\textcolor{red}{1}x+0$ $\Rightarrow$ $+$ à droite
+
+\columnbreak
+
+
+
+\begin{align*}
+x-3&=0\\
+x-\cancel{3}+\cancel{3}&=0+3\\
+ x&=3
+ \end{align*}
+ 
+ $a=1,$ puisque $x-3=\textcolor{red}{1}x-3$ $\Rightarrow$ $+$ à droite
+
+\end{multicols}
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$x$/1,$x-3$/1,$x^2-3x=x(x-3)$/1}{$-\infty$,$0$,$3$,$+\infty$}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,-,,-,z,+}
+\tkzTabLine{,+,z,-,z,+}
+\end{tikzpicture}
+\end{center}
+
+\item D'abord on factorise~: $x^2-4=x^2-2^2=(x+2)(x-2)$ -- grâce à l'IR n°3~: $a^2-b^2=(a+b)(a-b).$
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On résout~:
+
+\begin{align*}
+x+2&=0\\
+x+\cancel{2}-\cancel{2}&=0-2\\
+ x&=-2
+\end{align*}
+
+ $a=1,$ puisque $x+2=\textcolor{red}{1}x+2$ $\Rightarrow$ $+$ à droite
+
+\columnbreak
+
+
+\begin{align*}
+x-2&=0\\
+x-\cancel{2}+\cancel{2}&=0+2\\
+ x&=2
+ \end{align*}
+ 
+ $a=1,$ puisque $x-2=\textcolor{red}{1}x-2$ $\Rightarrow$ $+$ à droite
+
+\end{multicols}
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1.25]
+\tkzTabInit{$x$/1,$x+2$/1,$x-2$/1,$x^2-4=(x+2)(x-2)$/1}{$-\infty$,$-2$,$2$,$+\infty$}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,-,,-,z,+}
+\tkzTabLine{,+,z,-,z,+}
+\end{tikzpicture}
+\end{center}
+\item On manipule les \og $t$ \fg~{} comme s'il s'agissait de  \og $x$ \fg~{} (c'est juste un changement de nom de la variable)~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On résout~:
+
+\begin{align*}
+2t&=0\\
+\frac{\cancel{2}t}{\cancel{2}}&=\frac{0}{2}\\
+t&=0
+\end{align*}
+
+$a=2$ $\Rightarrow$ $+$ à droite
+
+\columnbreak
+
+\begin{align*}
+t+1&=0\\
+t+\cancel{1}-\cancel{1}&=0-1\\
+ t&=-1
+ \end{align*}
+ 
+ $a=1$ $\Rightarrow$ $+$ à droite
+
+\end{multicols}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$t$/1,$2t$/1,$t+1$/1,$2t(t+1)$/1}{$-\infty$,$-1$,$0$,$+\infty$}
+\tkzTabLine{,-,,-,z,+}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,+,z,-,z,-}
+\end{tikzpicture}
+\end{center}
+
+ 
+\item $x^2+1$ n'est pas du 1\up{er} degré et ne se factorise pas comme dans la question (d) (\danger  ce n'est pas $x^2-1$). Aucune méthode du cours ne s'applique donc pour étudier le signe dans ce cas. Pourtant ce n'est pas un problème, car l'étude du signe est en réalité assez évidente~:
+
+\begin{itemize}
+\item[\textbullet] vous savez bien qu'un carré est positif, donc $x^2$ est positif quelle que soit la valeur de $x.$
+\item[\textbullet] $x^2+1$ est donc plus grand que 1~; et donc du signe \og $+$ \fg~{} tout le temps.
+\end{itemize}
+
+Autrement dit, on a le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$x^2+1$/1}{$-\infty$,$+\infty$}
+\tkzTabLine{,+,}
+\end{tikzpicture}
+\end{center}
+
+\end{enumerate}
+\item Pour étudier le signe de $x^2-4$ sur l'intervalle $\left[0;5\right],$ on reprend le tableau de la question (d), que l'on \og restreint \fg~{} à l'intervalle  $\left[0;5\right].$ On a donc deux étapes~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\textbf{1\up{re} étape}
+
+On reprend le tableau de la question (d), où on rajoute les valeurs $0$ et $5$ -- aux bonnes places~!
+
+\begin{center}
+\begin{tikzpicture}[scale=0.47]
+\tkzTabInit{$x$/1,$x^2-4$/1}{$-\infty$,$-2$,$0$,$2$,$5$,$+\infty$}
+\tkzTabLine{,+,z,-,,-,z,+,,+}
+\end{tikzpicture}
+\end{center}
+
+
+\columnbreak
+
+\textbf{2\up{e} étape}
+
+On se restreint à l'intervalle $\left[0;5\right].$
+
+\begin{center}
+\begin{tikzpicture}[scale=0.47]
+\tkzTabInit{$x$/1,$x^2-4$/1}{$0$,$2$,$5$}
+\tkzTabLine{,-,z,+,}
+\end{tikzpicture}
+\end{center}
+
+\end{multicols}
+
+\medskip
+
+\textbf{Remarque~:} Bien sûr, la première chose à faire est le travail de la question (d)~!
+
+
+\end{enumerate}
+
+\end{exo}
+
+
+
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  7 FEB 2025 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  26 FEB 2025 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1912,12 +1912,29 @@ Package fourier-orns Warning: Command \danger is deprecated.
 (fourier-orns)                Use \warning instead; reported on input line 7181
 .
 
-[74] [75]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7205.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7205.
+[74]
+
+Package fourier-orns Warning: Command \danger is deprecated.
+(fourier-orns)                Use \warning instead; reported on input line 7277
+.
+
+[75] [76]
+
+Package fourier-orns Warning: Command \danger is deprecated.
+(fourier-orns)                Use \warning instead; reported on input line 7404
+.
+
+
+Overfull \hbox (7.38362pt too wide) in paragraph at lines 7436--7437
+ [] 
+ []
+
+[77]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7466.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7466.
  (./CorrigesSeconde.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7205.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7205.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7466.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7466.
 
 Package rerunfilecheck Info: File `CorrigesSeconde.out' has not changed.
 (rerunfilecheck)             Checksum: 4BEE92507171DBA801AF062E750E9510;680.
@@ -1925,15 +1942,15 @@ Package rerunfilecheck Info: File `CorrigesSeconde.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7205.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7466.
  ) 
 Here is how much of TeX's memory you used:
- 35969 strings out of 483041
- 656534 string characters out of 5962452
+ 36349 strings out of 483041
+ 661810 string characters out of 5962452
  1462447 words of memory out of 5000000
- 50215 multiletter control sequences out of 15000+600000
- 674469 words of font info for 170 fonts, out of 8000000 for 9000
+ 50595 multiletter control sequences out of 15000+600000
+ 678569 words of font info for 171 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  60i,27n,72p,683b,1172s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesSeconde.dvi (75 pages, 2619768 bytes).
+Output written on CorrigesSeconde.dvi (77 pages, 2683636 bytes).

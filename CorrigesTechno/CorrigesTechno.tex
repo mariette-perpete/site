@@ -3875,5 +3875,117 @@ $a=2$ donc \fbox{$-~\upphi~+$}&$a=-3$ donc \fbox{$+~\upphi~-$}
 
 
 
+\section{Variables aléatoires}
+
+
+
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item Il y a 8 pièces en tout dans le porte-monnaie~: 2 de 0,50~\euro, 3 de 1~\euro~{} et 3 de 2~\euro. La loi de $X$ est donc donnée par le tableau~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|}
+\hline
+    valeurs de $X$     & $0,5$        & $1$       &$2$   \\
+\hline
+probabilités & $\frac{2}{8}$ &$\frac{3}{8}$ &$\frac{3}{8}$      \\
+\hline
+\end{tabular}
+\end{center}
+
+\item L'espérance de $X$ est
+\[E(X)=\frac{2}{8}\times 0,5+\frac{3}{8}\times 1+\frac{3}{8}\times 2=1,25.\]
+\item Je suis gagnant, car l'espérance de gain est strictement plus grande que la mise~: \[1,25>1.\] J'ai donc intérêt à jouer.
+\end{enumerate}
+\end{exo}
+
+
+
+
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item Lorsqu'on tire deux jetons représentant des visages, on gagne $5+5=10$~\euro. Lorsqu'on en tire un seul, on gagne 5~\euro~{}; et quand on n'en tire aucun, on ne gagne rien. On obtient donc le tableau avec les gains~:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+~&\sun&\LEFTcircle&\eighthnote&\smiley{}&\frownie{} \\ \hline
+\sun&\textcolor{orange}{0}&\textcolor{orange}{0}&\textcolor{orange}{0}&\textcolor{blue}{5}&\textcolor{blue}{5}	\\ \hline
+\LEFTcircle&\textcolor{orange}{0}&\textcolor{orange}{0}&\textcolor{orange}{0}&\textcolor{blue}{5}&\textcolor{blue}{5}\\ \hline
+\eighthnote&\textcolor{orange}{0}&\textcolor{orange}{0}&\textcolor{orange}{0}&\textcolor{blue}{5}&\textcolor{blue}{5}\\ \hline
+\smiley{}&\textcolor{blue}{5}&\textcolor{blue}{5}&\textcolor{blue}{5}&\textcolor{red}{10}&\textcolor{red}{10}\\ \hline
+\frownie{}&\textcolor{blue}{5}&\textcolor{blue}{5}&\textcolor{blue}{5}&\textcolor{red}{10}&\textcolor{red}{10}\\ \hline
+\end{tabular}
+\end{center}
+\item Il y a 25 cases en tout dans le tableau~: 9 oranges, 12 bleues et 4 rouges. La loi de $Y$ est donc donnée par~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|}
+\hline
+    valeurs de $Y$     & $0$        & $5$       &$10$   \\
+\hline
+probabilités & $\textcolor{orange}{\frac{9}{25}}$ &$\textcolor{blue}{\frac{12}{25}}$ &$\textcolor{red}{\frac{4}{25}}$      \\
+\hline
+\end{tabular}
+\end{center}
+\item L'espérance de $Y$ est
+\[E(Y)=\frac{9}{25}\times 0+\frac{12}{25}\times 5+\frac{4}{25}\times 10=4.\]
+L'espérance de gain est égale à la mise (4~\euro), donc le jeu est équitable~: ni le joueur, ni l'organisateur du jeu n'est avantagé.
+\end{enumerate}
+
+
+\end{exo}
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item $S$ est la somme des deux numéros tirés. Il suffit donc de compléter la table d'addition~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.8}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\begin{tabularx}{3cm}{|C|C|C|C|C|}
+\cline{1-5}
+\multicolumn{2}{|c|}{\multirow{2}*{\scalebox{0.7}{\bfseries \Huge{+}}}} & \multicolumn{3}{c|}{\scalebox{0.8}{\bfseries SAC ROUGE}} \\ \cline{3-5}
+\multicolumn{2}{|c|}{} & $1$ &   $2$ &  $3$  \\ \cline{2-5}
+\cline{1-5}
+\multirow{4}*{\rotatebox{90}{\scalebox{0.9}{\bfseries ~~SAC BLEU}}}
+&$1$ &\textcolor{orange}{2} &\textcolor{blue}{3} &\textcolor{red}{4} \\ \cline{2-5}
+&$3$ &\textcolor{red}{4} &\textcolor{green}{5} &\textcolor{pink}{6} \\ \cline{2-5}
+&$5$ &\textcolor{pink}{6} & \textcolor{gray}{7}&\textcolor{yellow}{8} \\ \cline{2-5}
+\cline{1-5}
+\end{tabularx}
+
+
+\end{center}
+\item Il y a 9 cases dans le tableau~: les 2, 3, 5, 7, 8 apparaissent 1 fois~; le 4 et le 6 apparaissent 2 fois. La loi de $S$ est donc donnée par~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+    valeurs de $S$     & $2$        & $3$       &$4$ & $5$        & $6$       &$7$ &$8$  \\
+\hline
+probabilités & $\textcolor{orange}{\frac{1}{9}}$ &$\textcolor{blue}{\frac{1}{9}}$ &$\textcolor{red}{\frac{2}{9}}$ &$\textcolor{green}{\frac{1}{9}}$&$\textcolor{pink}{\frac{2}{9}}$&$\textcolor{gray}{\frac{1}{9}}$&$\textcolor{yellow}{\frac{1}{9}}$     \\
+\hline
+\end{tabular}
+\end{center}
+\item L'espérance de $S$ est
+\[E(S)=\frac{1}{9}\times 2+\frac{1}{9}\times 3+\frac{2}{9}\times 4+\frac{1}{9}\times 5+\frac{2}{9}\times 6+\frac{1}{9}\times 7+\frac{1}{9}\times 8=\frac{2}{9}+\frac{3}{9}+\frac{8}{9}+\frac{5}{9}+\frac{12}{9}+\frac{7}{9}+\frac{8}{9}=\frac{45}{9}=5.\]
+\end{enumerate}
+
+\end{exo}
+
 
 \end{document}
