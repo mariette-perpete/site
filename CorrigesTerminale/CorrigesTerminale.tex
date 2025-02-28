@@ -11388,5 +11388,208 @@ Conclusion~: la seule solution de $(E)$ vérifiant la condition initiale $y(0)=4
 \end{enumerate}
 
 \end{exo}
+\begin{exo}
+
+\begin{enumerate}
+\item L'équation différentielle \[(E)\qquad y'+2y=0\] se réécrit $y'=-2y,$ donc d'après le théorème 3 du cours, ses solutions sont les fonctions de la forme $y(x)=C\text{e}^{-2x},$ où $C$ est une constante.
+\item On a les équivalences~:
+
+\[y(1)=10\iff C\text{e}^{-2\times 1}=10\iff C\underbrace{\text{e}^{-2}\times\text{e}^{2}}_{=1}=10\times\text{e}^{2}\iff C=10\text{e}^{2}.\]
+
+Conclusion~: la seule solution de $(E)$ vérifiant la condition initiale $y(1)=10$ est la fonction définie par
+\[y(x)=10\text{e}^{2}\text{e}^{-2x}=10\text{e}^{-2x+2}.\]
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+\begin{exo}
+
+
+
+
+
+
+\begin{enumerate}
+\item La fonction $f$ est solution de l'équation différentielle $y'=-0,12y$ donc $f$ est définie  par
+\[f(x)=C\text{e}^{-0,12x},\] où $C$ est une constante.
+
+On sait de plus que $f(0)=\np{1013,25},$ donc $C\text{e}^{-0,12\times 0}=\np{1013,25},$ et ainsi $C=\np{1013,25}.$
+
+Conclusion~: \[f(x)=\np{1013,25}\text{e}^{-0,12x}.\]
+\item La pression atmosphérique à 150~m d'altitude est\[f(0,150)=\np{1013,25}\text{e}^{-0,12\times 0,150}\approx 995,17~\text{hPa}.\]
+\item On résout l'équation $f(x)=700~:$
+\begin{align*}\np{1013,25}\text{e}^{-0,12x}=700 &\iff \text{e}^{-0,12x}=\frac{700}{\np{1013,25}}\iff
+\ln\left( \text{e}^{-0,12x}\right)=\ln\left(\frac{700}{\np{1013,25}}\right)\\ &\iff
+-0,12x=\ln\left(\frac{700}{\np{1013,25}}\right)\iff x=-\frac{\ln\left(\frac{700}{\np{1013,25}}\right)}{-0,12}\iff x\approx 3,082.
+\end{align*}
+
+Conclusion~: c'est à \np{3082}~m d'altitude que la pression atmosphérique est égale à 700 hPa.
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+\begin{enumerate}
+\item D'après le théorème 4 du cours avec $a=2$ et $b=6,$ les solutions de l'équation différentielle \[(E)\qquad y'=2y+6\] sont les fonctions de la forme
+\[y(x)=C\text{e}^{2x}-\frac{6}{2}=C\text{e}^{2x}-3,\] où $C$ est une constante.
+\item On a les équivalences~:
+\[y(0)=2\iff C\text{e}^{2\times 0}-3=2\iff C-3=2\iff C=5.\]
+
+Conclusion~: la seule solution de $(E)$ vérifiant la condition initiale $y(0)=2$ est la fonction définie par
+\[y(x)=5\text{e}^{2x}-3.\]
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+\begin{enumerate}
+\item L'équation différentielle \[(E)\qquad y'+y=1\] se réécrit \[y'=-y+1.\] D'après le théorème 4 du cours, ses solutions sont de la forme
+\[y(x)=C\text{e}^{-x}-\frac{1}{-1}=C\text{e}^{-x}+1,\] où $C$ est une constante.
+\item On a les équivalences~:
+\[y(2)=10\iff C\text{e}^{-2}+1=10\iff C\text{e}^{-2}=9\iff C=\frac{9}{\text{e}^{-2}}=9\text{e}^{2}.\]
+
+Conclusion~: la seule solution de $(E)$ vérifiant la condition initiale $y(0)=2$ est la fonction définie par
+\[y(x)=9\text{e}^{2}\times \text{e}^{-x}+1=9\text{e}^{-x+2}+1.\]
+
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+Un corps de masse $m$ est lâché en chute libre sans vitesse initiale. Pour $t\geq 0,$ sa vitesse $v$ est solution de l'équation différentielle \[(E)~:~y'(t)+\frac{k}{m}y(t)=g,\] où $k$ est le coefficient de frottement et $g$ l'accélération de la pesanteur.
+
+\begin{enumerate}
+\item L'équation différentielle $ y'(t)+\frac{k}{m}y(t)=g$ se réécrit $ y'(t)=-\frac{k}{m}y(t)+g,$ donc  d'après le théorème 4 du cours, la vitesse est une fonction de la forme
+\[v(t)=C\text{e}^{-\frac{k}{m}t}-\frac{g}{-\frac{k}{m}}=C\text{e}^{-\frac{k}{m}t}+\frac{mg}{k}.\]
+
+De plus, le corps est lâché sans vitesse initiale, donc $v(0)=0.$ On a ainsi les équivalences~:
+\[C\text{e}^{-\frac{k}{m}\times 0}+\frac{mg}{k}=0\iff C+\frac{mg}{k}=0\iff C=-\frac{mg}{k}.\]
+
+Conclusion~: la vitesse du corps au temps $t$ est
+\[v(t)=-\frac{mg}{k}\text{e}^{-\frac{k}{m}t}+\frac{mg}{k}.\]
+
+\item Pour tout $t\geq 0~:$
+
+\[v'(t)=-\frac{mg}{k}\times\left(-\frac{k}{m}\right)\text{e}^{-\frac{k}{m}t}=g\text{e}^{-\frac{k}{m}t}. \]
+
+Clairement $v'$ est strictement positive, donc $v$ est strictement croissante\footnote{C'est bien normal pour une masse en chute libre~!}~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$t$/1,$v'(t)$/1,$v(t)$/2}{$0$,$+\infty$}
+\tkzTabLine{,+,}
+\tkzTabVar{-/$0$,+/$\frac{mg}{k}$}
+\end{tikzpicture}
+\end{center}
+\medskip
+
+$-\frac{k}{m}<0,$ donc $\lim\limits_{t\to +\infty}\text{e}^{-\frac{k}{m}t}=0.$ On en déduit
+\[\lim\limits_{t\to +\infty}v(t)=\frac{mg}{k}.\]
+\item Allure du graphe de $v~:$
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.26,-0.62)(10.74,6.02)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=20.,Dy=10.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.26,-0.62)(10.74,6.02)
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{0}{10.4}{-4.0*EXP(-0.25*x)+4.0}
+\psplot[linewidth=2.pt,linestyle=dotted,linecolor=blue]{0}{10.74}{(--4.-0.*x)/1.}
+\rput[tl](10.06,-0.14){{$t$}}
+\rput[tl](-1.02,5.42){\red{$v(t)$}}
+\rput[tl](-0.82,4.3){\blue{$\frac{mg}{k}$}}
+\end{pspicture*}
+\end{center}
+
+\end{enumerate}
+
+\medskip
+
+\textbf{Remarque pour les élèves qui font la spécialité sciences physiques~:}
+
+%On note $z(t)$ la hauteur de la masse au temps $t,$  on a donc $v(t)=-z'(t)$ (on ajoute un \og $-$ \fg , car la vitesse est positive, mais la hauteur diminue au cours du temps). On a alors également $v'(t)=-z''(t).$
+
+\medskip
+
+\begin{multicols}{2}
+
+D'après la deuxième loi de Newton~: 
+\begin{equation}\label{N}\sum \overrightarrow{F}=m\overrightarrow{a},
+\end{equation} où l'on somme sur toutes les forces qui s'appliquent sur la masse. Ces dernières sont au nombre de deux~:
+
+\begin{itemize}
+\item[\textbullet] le poids, dirigé vers le bas, d'intensité $mg~;$
+\item[\textbullet] les forces de frottement, dirigées vers le haut (car elles freinent la chute), et que l'on suppose proportionnelles à la vitesse de la masse, avec un coefficient de proportionnalité égal à $k.$
+\end{itemize}
+
+
+
+
+\medskip
+
+Quant à l'accélération, on sait que c'est la dérivée de la vitesse~: $a=v'.$ Donc en prenant comme sens positif le sens de haut en bas et en appliquant (\ref{N}), on obtient~:
+
+\[mg-kv=mv'.\]
+
+En transposant et en divisant par $m,$ on aboutit finalement à l'équation $(E)~:$
+\[v'+\frac{k}{m}v=g.\] %c'est-à-dire l'équation $(E).$
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(1.56,-2.2)(6.06,6.44)
+\psline[linewidth=2.pt,linecolor=red]{->}(3.,3.)(3.,0.)
+\rput[tl](3.38,3.02){masse}
+\psline[linewidth=2.pt,linecolor=blue]{->}(3.,3.)(3.,5.)
+\rput[tl](3.22,1.66){\red{$\overrightarrow{F}$}}
+\rput[tl](3.12,4.04){\blue{$\overrightarrow{F}_{\text{frottement}}$}}
+\psdots[dotsize=7pt 0,dotstyle=*](3.,3.)
+\end{pspicture*}
+\end{center}
+\end{multicols}
+
+
+\end{exo}
+
+\begin{exo}
+
+L'octane est un hydrocarbure qui entre dans la composition de l'essence. Lorsqu'on chauffe un mélange d'octane et de solvant dans une cuve, une réaction chimique transforme progressivement l'octane en un carburant plus performant, appelé iso-octane.
+
+La concentration d'octane, en moles par litre, dans la cuve est modélisée par une fonction $C$ du temps $t,$ exprimé en minutes.
+
+On admet que la fonction $C$ est solution de l'équation différentielle \[y'+0,12y=0,003\] sur l'intervalle $\left[0;+\infty\right[.$
+
+À l'instant $t=0,$ la concentration d'octane dans la cuve est de 0,5 moles par litre.
+
+\begin{enumerate}
+\item L'équation différentielle $y'+0,12y=0,003$ se réécrit
+\[y'=-0,12y+0,003,\] donc d'après le théorème 4 du cours, ses solutions sont de la forme
+\[C(t)=C\text{e}^{-0,12t}-\frac{0,003}{-0,12}=C\text{e}^{-0,12t}+0,025,\] où $C$ est une constante.
+
+\medskip
+
+On sait que la concentration au temps $t=0$ est de 0,5 mol/$\ell$, donc $y(0)=0,5.$ On résout donc une équation pour trouver $C~:$
+\[C\text{e}^{-0,12\times 0}+0,025=0,5\iff C+0,025=0,5\iff C=0,5-0,025=0,475.\] Finalement la concentration au temps $t$ est
+\[C(t)=0,475\text{e}^{-0,12t}+0,025~\text{mol}/\ell.\]
+\item $\lim\limits_{t\to +\infty}\text{e}^{-0,12t}=0$ donc
+\[\lim\limits_{t\to +\infty}C(t)=0,475\times 0+0,025=0,025.\]
+\item Au bout d'une heure (60 minutes), la concentration d'octane est
+\[C(60)=0,475\text{e}^{-0,12\times 60}+0,025\approx 0,0256~\text{mol}/\ell,\] ce qui est tout proche de la concentration limite (0,025~mol/$\ell$). Plus précisément~:
+
+\begin{itemize}
+\item[\textbullet] entre le temps $t=0$ et le temps $t=+\infty,$ la concentration baisse de $0,5-0,025=0,475$~mol/$\ell~;$
+\item[\textbullet] entre le temps $t=0$ et le temps $t=60,$ la concentration baisse de $0,5-0,0256=0,4744$~mol/$\ell$ environ~;
+\item[\textbullet] $\frac{0,4744\times 100}{0,475}\approx 99,9.$
+\end{itemize}
+
+Conclusion~: 99,9~\% du produit pouvant être transformé s'est déjà transformé au bout d'une heure. Inutile donc de prolonger la transformation au-delà de cette durée.
+\end{enumerate}
+
+\end{exo}
 
 \end{document}

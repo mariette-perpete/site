@@ -7462,5 +7462,253 @@ On se restreint à l'intervalle $\left[0;5\right].$
 \end{exo}
 
 
+\begin{exo}
+
+\begin{enumerate}
+\item Le tableau de signe de $x$ peut-être fait avec la méthode pour $ax+b,$ puisque $x=1x+0$ (c'est d'ailleurs ce que l'on a fait dans la question 2.(c) de l'exercice précédent). Il est cependant plus facile (et plus naturel) de remarquer que~:
+
+\begin{itemize}
+\item[\textbullet] $x=0$ lorsque $x=0$ (en voilà une belle tautologie~!)~;
+\item[\textbullet] $x$ est strictement positif lorsque $x\in\left]0;+\infty\right[~;$
+\item[\textbullet] $x$ est strictement négatif lorsque $x\in\left]-\infty;0\right[.$
+\end{itemize}
+
+Autrement dit, on a le tableau~:
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$x$/1}{$-\infty$,$0$,$+\infty$}
+\tkzTabLine{,-,z,+,}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+Pour $x^2,$ il y a deux méthodes~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\textbf{Méthode n°1}
+
+On écrit $x^2=x\times x$ et on utilise la méthode pour le tableau de signe d'un produit.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+\tkzTabInit{$x$/1,$x$/1,$x$/1,$x^2$/1}{$-\infty$,$0$,$+\infty$}
+\tkzTabLine{,-,z,+,}
+\tkzTabLine{,-,z,+,}
+\tkzTabLine{,+,z,+,}
+\end{tikzpicture}
+\end{center}
+
+\columnbreak
+
+\textbf{Méthode n°2}
+
+Un carré est positif, donc $x^2$ est positif quelle que soit la valeur de $x.$ De plus $x^2$ ne peut valoir $0$ que lorsque $x=0.$ On a donc directement le tableau~:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+\tkzTabInit{$x$/1,$x^2$/1}{$-\infty$,$0$,$+\infty$}
+\tkzTabLine{,+,z,+,}
+\end{tikzpicture}
+\end{center}
+
+\end{multicols}
+
+\medskip
+
+On termine avec le tableau de $x^3.$ \`A nouveau, il y a deux méthodes~: soit on écrit $x^3=x\times x\times x,$ soit on se pose la question de savoir le signe de $x^3$ lorsque $x>0$ et lorsque $x<0.$ Par exemple, si $x<0,$ alors $x^3<0,$ puisque \og $\text{\textcircled{$-$}} \times\text{\textcircled{$-$}} \times\text{\textcircled{$-$}} =\text{\textcircled{$-$}}$ \fg.
+
+Quelle que soit la méthode, on obtient le tableau~:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+\tkzTabInit{$x$/1,$x^3$/1}{$-\infty$,$0$,$+\infty$}
+\tkzTabLine{,-,z,+,}
+\end{tikzpicture}
+\end{center}
+
+
+
+\item Le signe de $x^n=\underbrace{x\times x\times\cdots \times x}_{n~\text{termes}}$ dépend de la parité de $n~:$
+
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\textbf{Si n est pair~:}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+\tkzTabInit{$x$/1,$x^n$/1}{$-\infty$,$0$,$+\infty$}
+\tkzTabLine{,+,z,+,}
+\end{tikzpicture}
+\end{center}
+
+\columnbreak
+
+\textbf{Si n est impair~:}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+\tkzTabInit{$x$/1,$x^n$/1}{$-\infty$,$0$,$+\infty$}
+\tkzTabLine{,-,z,+,}
+\end{tikzpicture}
+\end{center}
+
+\end{multicols}
+ 
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+\begin{enumerate}
+\item \setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On résout~:
+
+\begin{align*}
+-2x+1&=0\\
+-2x+\cancel{1}-\cancel{1}&=0-1\\
+\frac{\cancel{-2}x}{\cancel{-2}}&=\frac{-1}{-2}\\
+x&=0,5
+\end{align*}
+
+$a=-2$ $\Rightarrow$ $+$ à gauche
+
+\columnbreak
+
+\begin{align*}
+x+5&=0\\
+x+\cancel{5}-\cancel{5}&=0-5\\
+ x&=-5
+ \end{align*}
+ 
+ $a=1,$ puisque $x+5=\textcolor{red}{1}x+5$ $\Rightarrow$ $+$ à droite
+\end{multicols}
+
+\medskip
+
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$-2x+1$/1,$x+5$/1,$\dfrac{-2x+1}{x+5}$/1}{$-\infty$,$-5$,$0.5$,$+\infty$}
+\tkzTabLine{,+,,+,z,-}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,-,d,+,z,-}
+\end{tikzpicture}
+\end{center}
+
+\item \setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On résout~:
+
+\begin{align*}
+3t-6&=0\\
+3t-\cancel{6}+\cancel{6}&=0+6\\
+\frac{\cancel{3}t}{\cancel{3}}&=\frac{6}{3}\\
+t&=2
+\end{align*}
+
+$a=3$ $\Rightarrow$ $+$ à droite
+
+\columnbreak
+
+\begin{align*}
+4t&=0\\
+\frac{\cancel{4}t}{\cancel{4}}&=\frac{0}{4}\\
+t&=0
+ \end{align*}
+ 
+ $a=4$ $\Rightarrow$ $+$ à droite
+\end{multicols}
+
+\medskip
+
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$t$/1,$3t-6$/1,$4t$/1,$\dfrac{3t-6}{4t}$/1}{$-\infty$,$0$,$2$,$+\infty$}
+\tkzTabLine{,-,,-,z,+}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,+,d,-,z,+}
+\end{tikzpicture}
+\end{center}
+
+\item
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On résout~:
+
+\begin{align*}
+-x+4&=0\\
+-x+\cancel{4}-\cancel{4}&=0-4\\
+x&=4
+\end{align*}
+
+$a=1,$ car $-x+4=\textcolor{red}{-1}x+4$ $\Rightarrow$ $+$ à gauche
+
+\columnbreak
+
+On a déjà étudié le signe de $x^2$ dans l'exercice précédent.
+
+\end{multicols}
+
+\medskip
+
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$-x+4$/1,$x^2$/1,$\dfrac{-x+4}{x^2}$/1}{$-\infty$,$0$,$4$,$+\infty$}
+\tkzTabLine{,+,,+,z,-}
+\tkzTabLine{,+,z,+,,+}
+\tkzTabLine{,+,d,+,z,-}
+\end{tikzpicture}
+\end{center}
+
+\item \setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On a déjà fait le tableau de signe de $x$ dans l'exercice précédent.
+
+\columnbreak
+
+$|x|$ est positif pour toute valeur de $x,$ donc $|x|+3$ est supérieur à $3$ (et donc également positif)
+
+\end{multicols}
+
+\medskip
+
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$x$/1,$|x|+3$/1,$\dfrac{x}{|x|+3}$/1}{$-\infty$,$0$,$+\infty$}
+\tkzTabLine{,-,z,+}
+\tkzTabLine{,+,,+}
+\tkzTabLine{,-,z,+}
+\end{tikzpicture}
+\end{center}
+
+\end{enumerate}
+\end{exo}
 
 \end{document}
