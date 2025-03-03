@@ -7711,4 +7711,237 @@ $|x|$ est positif pour toute valeur de $x,$ donc $|x|+3$ est supérieur à $3$ (
 \end{enumerate}
 \end{exo}
 
+\begin{exo}
+
+Je n'écris pas tous les détails de la correction de cet exercice, qui ressemble beaucoup à ce que l'on a déjà fait auparavant.
+
+\begin{enumerate}
+\item ~{}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$-3x+4$/1,$4x-5$/1,$(-3x+4)(4x-5)$/1}{$-\infty$,$\frac{5}{4}$,$\frac{4}{3}$,$+\infty$}
+\tkzTabLine{,+,,+,z,-}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,-,z,+,z,-}
+\end{tikzpicture}
+\end{center}
+
+\danger Attention à l'ordre des valeurs en haut~: $\frac{4}{3}\approx 1,33$ et $\frac{5}{4}=1,25$
+
+\item On commence par factoriser~:
+
+\[3x^2+6x=x(3x+6).\]
+
+\medskip
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$x$/1,$3x+6$/1,$3x^2+6x$/1}{$-\infty$,$-2$,$0$,$+\infty$}
+\tkzTabLine{,-,,-,z,+}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,+,z,-,z,+,}
+\end{tikzpicture}
+\end{center}
+
+\item On commence par factoriser~:
+\[x^2-16=x^2-4^2=(x+4)(x-4)\]
+
+\medskip
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$x+4$/1,$x-4$/1,$x^2-16$/1}{$-\infty$,$-4$,$4$,$+\infty$}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,-,,-,z,+}
+\tkzTabLine{,+,z,-,z,+,}
+\end{tikzpicture}
+\end{center}
+
+\item ~{}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$2x$/1,$-x+1$/1,$\dfrac{2x}{-x+1}$/1}{$-\infty$,$0$,$1$,$+\infty$}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,+,,+,z,-}
+\tkzTabLine{,-,z,+,d,-,}
+\end{tikzpicture}
+\end{center}
+
+\item ~{}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$-2x+5$/1,$3x-3$/1,$\dfrac{-2x+5}{3x-3}$/1}{$-\infty$,$1$,$2.5$,$+\infty$}
+\tkzTabLine{,+,,+,z,-}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,-,d,+,z,-,}
+\end{tikzpicture}
+\end{center}
+
+\item ~{}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$|x|+3$/1}{$-\infty$,$+\infty$}
+
+\tkzTabLine{,+,}
+\end{tikzpicture}
+\end{center}
+
+\item ~{}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$x$/1,$x^2+2$/1,$\dfrac{x}{x^2+2}$/1}{$-\infty$,$0$,$+\infty$}
+\tkzTabLine{,-,z,+,}
+\tkzTabLine{,+,,+,}
+\tkzTabLine{,-,z,+,}
+\end{tikzpicture}
+\end{center}
+
+\end{enumerate}
+
+
+\end{exo}
+
+\begin{exo}
+\begin{enumerate}
+
+\item $(x-1)^2$ est un carré, donc toujours positif. Il peut cependant valoir $0,$ lorsque $x=1~:$
+\[(1-1)^2=0^2=0\]
+(il n'y a que pour $x=1$ que $(x-1)^2$ vaut 0). On a donc le tableau~:
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$(x-1)^2$/1}{$-\infty$,$1$,$+\infty$}
+
+\tkzTabLine{,+,z,+,}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} On aurait aussi pu écrire $(x-1)^2=(x-1)\times (x-1)$ et utiliser la technique habituelle -- ça aurait simplement été un peu plus long.
+
+
+\item On fait le tableau de signe de $|x|-3.$
+
+\medskip
+
+On cherche d'abord où il faut placer les \og $0$ \fg. On résout donc l'équation
+\begin{align*}|x|-3&=0\\
+|x|-\cancel{3}+\cancel{3}&=0+3\\
+|x|&=3\\
+x=3\qquad&\text{ou}\qquad x=-3
+\end{align*}
+
+On placera donc les \og $0$ \fg~{} en dessous de $3$ et de $-3.$
+
+\medskip
+
+On cherche ensuite où placer les \og $-$ \fg. Autrement dit, on cherche pour quelles valeurs de $x$ on a $|x|-3<0.$ On résout donc~:
+
+\begin{align*}|x|-3&<0\\
+|x|-\cancel{3}+\cancel{3}&<0+3\\
+|x|&<3
+\end{align*}
+
+Les nombres dont la valeur absolue est strictement inférieure à 3 sont les nombres de l'intervalle $\left]-3;3\right[.$
+
+Conclusion~: $|x|-3$ est du signe \og $-$ \fg~{} lorsque $x\in \left]-3;3\right[.$
+
+\medskip
+
+Pour terminer, on remarque que partout ailleurs (donc là où ce n'est ni égal à $0,$ ni strictement négatif), $|x|-3$ est strictement positif. On a donc le tableau~:
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$|x|-3$/1}{$-\infty$,$-3$,$3$,$+\infty$}
+
+\tkzTabLine{,+,z,-,z,+,}
+\end{tikzpicture}
+\end{center}
+
+
+
+
+\item On fait le tableau de signe de $x-\dfrac{1}{x}.$ Pour cela, on réduit au même dénominateur et on factorise le numérateur grâce à l'IR n°3~:
+\[x-\frac{1}{x}=\frac{x}{1}-\frac{1}{x}=\frac{x\times x}{1\times x}-\frac{1}{x}=\frac{x^2}{x}-\frac{1}{x}=\frac{x^2-1}{x}=\frac{x^2-1^2}{x}=\frac{(x+1)(x-1)}{x}.\]
+
+On obtient le tableau~:
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$x+1$/1,$x-1$/1,$x$/1,$\dfrac{(x+1)(x-1)}{x}$/1}{$-\infty$,$-1$,$0$,$1$,$+\infty$}
+\tkzTabLine{,-,z,+,,+,,+,}
+\tkzTabLine{,-,,-,,-,z,+,}
+\tkzTabLine{,-,,-,z,+,,+,}
+\tkzTabLine{,-,z,+,d,-,,+,}
+\end{tikzpicture}
+\end{center}
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+On cherche une fonction $f$ ayant le tableau de signe suivant~:
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f(x)$/1}{$-\infty$,$-1$,$0$,$1$,$3$,$+\infty$}
+\tkzTabLine{,+,d,+,z,-,d,-,z,+,}
+\end{tikzpicture}
+\end{center}
+
+On constate qu'il suffit de pouvoir écrire $f(x)=\frac{A(x)}{B(x)},$ où les signes de $A(x)$ et de $B(x)$ sont donnés par le tableau~:
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$A(x)$/1,$B(x)$/1,$f(x)=\frac{A(x)}{B(x)}$/1}{$-\infty$,$-1$,$0$,$1$,$3$,$+\infty$}
+\tkzTabLine{,+,,+,z,-,,-,z,+,}
+\tkzTabLine{,+,z,+,,+,z,+,,+,}
+\tkzTabLine{,+,d,+,z,-,d,-,z,+,}
+\end{tikzpicture}
+\end{center}
+
+
+\medskip
+
+Les choix $A(x)=x(x+3)$ et $B(x)=|(x+1)(x-1)|$ conviennent (les valeurs absolues pour $B(x)$ permettent d'avoir une expression toujours positive, mais qui s'annule pour $x=-1$ et pour $x=1$).
+
+Conclusion~: $f(x)=\dfrac{x(x+3)}{|(x+1)(x-1)|}$ est une solution du problème -- mais ce n'est pas la seule, il y en a une infinité.
+
+
+\end{exo}
+
+
+\section{Statistiques}
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item La dépense moyenne par personne est
+\[\frac{6\times 16+5\times 19+4\times 22}{15}=\frac{279}{15}=18,6~\text{\euro}.\]
+\item Si les 15 amis commandent en plus 3 bouteilles de vin à 17~\euro~{} l'unité, la dépense totale est $279+3\times 17=330$~\euro. Donc la dépense moyenne par personne est
+\[\frac{330}{15}=22~\text{\euro}.\]
+
+\medskip
+
+Autre méthode~: $18,6+\frac{3\times 17}{15}=22.$
+
+\end{enumerate}
+
+\end{exo}
+
 \end{document}

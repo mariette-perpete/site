@@ -11592,4 +11592,156 @@ Conclusion~: 99,9~\% du produit pouvant être transformé s'est déjà transform
 
 \end{exo}
 
+\begin{exo}
+
+On considère l'équation différentielle
+\[(E)\qquad y'(x)=y(x)-x^2+x.\]
+
+\begin{enumerate}
+\item On remplace $y$ par $y_P$ dans chacun des deux membres~:
+\begin{itemize}
+\item[\textbullet] $y_P'(x)=2x+1~;$
+\item[\textbullet] $ y_P(x)-x^2+x=x^2+x+1-x^2+x=2x+1.$
+\end{itemize}
+
+On a bien $y_P'(x)=y_P(x)-x^2+x,$ c'est-à-dire que $y_P$ est une solution particulière de $(E).$
+\item D'après le théorème 3 du cours, les solutions de $\left(E_0\right): y'(x)=y(x)$ sont les fonctions de la forme $y(x)=C\text{e}^{x},$ où $C$ est une constante.
+
+\item D'après le théorème 5 du cours, les solutions de $(E)$ sont les fonctions de la forme 
+\[y(x)=C\text{e}^{x}+y_P(x)=C\text{e}^{x}+x^2+x+1,\] où $C$ est une constante.
+
+\medskip
+
+De plus,
+\[y(0)=-1\iff C\text{e}^0+0^2+0+1=-1\iff C+1=-1\iff C=-2,\]
+donc l'unique solution de $(E)$ vérifiant la condition initiale $y(0)=-1$ est la fonction définie par
+\[y(x)=-2\text{e}^{x}+x^2+x+1.\]
+
+\end{enumerate}
+\end{exo}
+
+
+
+\begin{exo}
+
+On considère l'équation différentielle
+\[(E)\qquad y'+y=\text{e}^{-x}\]
+
+
+
+\begin{enumerate}
+\item On calcule d'abord la dérivée de $f~:$ pour cela, on utilise la formule pour la dérivée d'un produit avec
+
+\begin{alignat*}{3}
+&u(x)=x,&& \hspace{1cm}&&v(x)=\text{e}^{-x}, \\
+& u'(x)=1,&& &&v'(x)=-\text{e}^{-x}.\\
+\end{alignat*}
+
+On obtient, pour tout $x\in \mathbb{R}~:$
+
+\begin{align*}
+f'(x)&=1\times \text{e}^{-x}+x\times \left(-\text{e}^{-x}\right)\\
+&=\text{e}^{-x}-x\text{e}^{-x}.
+\end{align*}
+
+\medskip
+
+Ensuite on remplace $y$ par $f$ dans le membre de gauche de l'équation~:
+\[f'(x)+f(x)=\text{e}^{-x}-x\text{e}^{-x}+x\text{e}^{-x}=\text{e}^{-x}.\]
+
+Conclusion~: $f$ est bien solution de $(E).$
+
+\item L'équation $\left(E_0\right)$ se réécrit $y'(x)=-y(x),$ donc d'après le théorème 3 du cours, ses solutions sont les fonctions de la forme $y(x)=C\text{e}^{-x},$ où $C$ est une constante.
+
+\item L'équation $\left(E\right)$ se réécrit $y'(x)=-y(x)+\text{e}^{-x},$ donc d'après le théorème 5 du cours, ses solutions sont les fonctions de la forme 
+\[y(x)=C\text{e}^{-x}+f(x)=C\text{e}^{-x}+x\text{e}^{-x},\] où $C$ est une constante.
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+\textbf{Remarque~:} Donnons-nous une équation différentielle $(E)$ de la forme $y'=ay+g,$ où $g$ est une fonction continue, ainsi qu'un point du plan de coordonnées $\left(x_0;y_0\right).$ Dans ce cas, il existe une unique solution $y$ de $(E)$ vérifiant la condition initiale $y\left(x_0\right)=y_0$ (théorème de Cauchy-Lipschitz).
+
+\medskip
+
+Par exemple, avec l'équation $(E)~:~ y'+y=\text{e}^{-x}$ de l'exercice précédent, le lecteur vérifiera facilement que~:
+
+\begin{itemize}
+\item[\textbullet] l'unique solution de $(E)$ vérifiant la condition initiale $y(0)=4$ est donnée par
+\[y(x)=4\text{e}^{-x}+x\text{e}^{-x}.\]
+\item[\textbullet] l'unique solution de $(E)$ vérifiant la condition initiale $y(2)=3$ est donnée par
+\[y(x)=3\text{e}^{-x+2}+x\text{e}^{-x}-2\text{e}^{-x}.\]
+\end{itemize}
+
+\medskip
+
+Une conséquence du théorème de Cauchy-Lipschitz est que les courbes des différentes solutions ne se coupent pas. On l'illustre ci-dessous en traçant différentes solutions de $(E),$ correspondant à des conditions initiales différentes.
+
+
+\begin{center}
+\newrgbcolor{qqwuqq}{0. 0.39215686274509803 0.}
+\newrgbcolor{ccqqqq}{0.8 0. 0.}
+\newrgbcolor{ffvvqq}{1. 0.3333333333333333 0.}
+\newrgbcolor{zzttff}{0.6 0.2 1.}
+\newrgbcolor{wwwwww}{0.4 0.4 0.4}
+\newrgbcolor{zzttqq}{0.6 0.2 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.3,-2.34)(6.12,6.3)
+\multips(0,-2)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-4.3,0)(6.12,0)}
+\multips(-4,0)(1.0,0){11}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.34)(0,6.3)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-4.3,-2.34)(6.12,6.3)
+\psplot[linewidth=2.pt,linecolor=qqwuqq,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(1.0+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=ccqqqq,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(2.0+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(1.5+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=ffvvqq,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(2.5+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=zzttff,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(0.5+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=wwwwww,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(0.0+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=zzttqq,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(-0.5+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=qqwuqq,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(-1.0+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=ccqqqq,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(-2.5+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(-2.0+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=ffvvqq,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(-1.5+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=zzttff,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(-3.0+x)*EXP(-x)}
+\psplot[linewidth=2.pt,linecolor=zzttqq,plotpoints=200]{-4.300000000000001}{6.120000000000001}{(2.75+x)*EXP(-x)}
+\end{pspicture*}
+\end{center}
+
+
+
+\begin{exo}
+
+On considère l'équation différentielle
+\[(E)\qquad y'-2y=-x.\]
+
+\begin{enumerate}
+\item On cherche une solution particulière de $(E)$ de la forme $y_P(x)=ax+b.$ Pour cela, on remplace dans le membre de gauche de $(E)~:$
+\[y_P'(x)-2y_P(x)=a-2(ax+b)=a-2ax-2b=\textcolor{red}{-2a}x+\textcolor{blue}{a-2b}.\]
+
+Donc pour que $y_P$ soit solution de $(E)~;$ autrement dit pour que \[y_P'(x)-2y_P(x)=\textcolor{red}{-1}x+\textcolor{blue}{0},\]
+il suffit que
+\[\begin{cases}
+-2a&=-1\\a-2b&=0\end{cases}\] (on dit qu'on a \og identifié \fg~{} les coefficients écrits en rouge et en bleu).
+
+On obtient $a=\frac{-1}{-2}=\frac{1}{2},$ puis $a=2b,$ donc $b=\frac{a}{2}=\frac{\frac{1}{2}}{2}=\frac{1}{4}.$
+
+\medskip
+
+Conclusion~: la fonction définie $y_P(x)=\frac{1}{2}x+\frac{1}{4}$ est une solution particulière de $(E).$ 
+\item L'équation $\left(E\right): y'-2y=-x$ se réécrit $y'=2y-x,$ donc d'après le théorème 5 du cours, ses solutions sont les fonctions de la forme 
+\[y(x)=C\text{e}^{2x}+y_P(x)=C\text{e}^{2x}+\frac{1}{2}x+\frac{1}{4},\] où $C$ est une constante.
+\item On raisonne par équivalences~:
+
+\[y(0)=1\iff C\text{e}^{2\times 0}+\frac{1}{2}\times 0+\frac{1}{4}=1\iff C+\frac{1}{4}=1\iff C=1-\frac{1}{4}=\frac{3}{4},\]
+
+
+Conclusion~: l'unique solution de $(E)$ vérifiant la condition initiale $y(0)=1$ est la fonction définie par
+\[y(x)=\frac{3}{4}\text{e}^{2x}+\frac{1}{2}x+\frac{1}{4}.\]
+\end{enumerate}
+\end{exo}
+
+
+
+
 \end{document}
