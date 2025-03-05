@@ -11741,7 +11741,819 @@ Conclusion~: l'unique solution de $(E)$ vérifiant la condition initiale $y(0)=1
 \end{enumerate}
 \end{exo}
 
+\newpage
 
+\section{Fonctions trigonométriques}
+
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item \begin{multicols}{2}
+ Les points associés à $0,$ $\pi$ et $\frac{\pi} {2}$ sont dans le cours. Les deux autres sont un peu moins évidents~:
+
+\begin{itemize}
+\item[\textbullet] Pour $-5\pi,$ on tourne de $5$ demi-tours dans le sens indirect. On arrive tout à gauche du cercle trigonométrique (au même endroit que $\pi$).
+\item[\textbullet] Pour $\frac{31\pi}{2},$ on écrit\[\frac{31\pi}{2}=\frac{32\pi}{2}-\frac{\pi}{2}=16\pi-\frac{\pi}{2},\] donc on fait 8 tours dans le sens direct (car $8\times 2\pi=16\pi$), puis un quart de tour dans le sens indirect. On arrive tout en bas du cercle trigonométrique).
+\end{itemize}
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.3569731607902471,-1.4111436620666586)(1.6054236579541996,1.3526111163746357)
+\multips(0,-1.5)(0,0.5){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.6569731607902471,0)(1.9050212995255014,0)}
+\multips(-1.5,0)(0.5,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.5911436620666586)(0,1.6226111163746357)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.6569731607902471,-1.5911436620666586)(1.6050212995255014,1.3526111163746357)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](1.2072917160553207,-0.07626916090404){\blue{COS}}
+\rput[tl](1.079195768223247,-0.15){\red{$0$}}
+\rput[tl](-1.209236426951675,-0.12){\red{$\pi$}}
+\rput[tl](-1.3982808256835166,0.25){\red{$-5\pi$}}
+\rput[tl](0.04442642779632568,1.25){\red{$\frac{\pi}{2}$}}
+\rput[tl](0.03447672259991298,-1.12){\red{$\frac{31\pi}{2}$}}
+\psdots[dotstyle=*,linecolor=red](0.,1.)
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=red](0.,-1.)
+\end{pspicture*}
+\end{center}
+
+\end{multicols}
+
+Par lecture du cercle trigonométrique~:
+
+
+
+\begin{multicols}{4}
+$\cos 0=1$
+
+$\sin 0=0$
+
+
+\columnbreak
+$\cos \pi=-1$
+
+$\sin \pi=0$
+
+\columnbreak
+
+$\cos 5\pi=-1$
+
+$\sin 5\pi=0$
+
+\columnbreak
+
+$\cos \frac{\pi}{2}=0$
+
+$\sin \frac{\pi}{2}=1$
+
+\end{multicols}
+
+ 
+
+\item \begin{multicols}{2} Le point associé à $\frac{\pi} {3}$ est dans le cours. Voici la méthode pour les deux autres~:
+
+\begin{itemize}
+\item[\textbullet] Pour $\frac{\pi} {3},$ on tourne de $60^{\circ}$ dans le sens direct, donc pour $\frac{2\pi}{3},$ on tourne de $2\times 60^{\circ}=120^{\circ}.$ Le point est en haut à gauche du cercle trigonométrique, il a pour abscisse $-\frac{1}{2}.$
+\item[\textbullet] Pour $-\frac{\pi} {3},$ on tourne de $60^{\circ}$ dans le sens indirect. Le point est en bas à droite du cercle trigonométrique, c'est le symétrique du point associé à $\frac{\pi}{3}$ par rapport à l'axe des abscisses.
+\end{itemize}
+
+\vspace*{1cm}
+\columnbreak
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.2569731607902471,-1.2911436620666586)(1.605236579541996,1.3526111163746357)
+\multips(0,-1.5)(0,0.5){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.6569731607902471,0)(1.845323068347025,0)}
+\multips(-1.5,0)(0.5,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.5911436620666586)(0,1.6226111163746357)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.6569731607902471,-1.5911436620666586)(1.605323068347025,1.3526111163746357)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](1.2072917160553207,-0.07626916090404){\blue{COS}}
+\rput[tl](0.5419116876169606,1.1350755617504147){\red{$\frac{\pi}{3}$}}
+\rput[tl](0.5844767225999127,-0.8145637087105966){\red{$-\frac{\pi}{3}$}}
+\rput[tl](-0.7691861321480881,1.1151761513575893){\red{$\frac{2\pi}{3}$}}
+\rput[tl](0.05,0.94){\blue{$\frac{\sqrt{3}}{2}$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.5,0.8449830884183538)(0.3,0.845)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.5,0.8449830884183538)(0,0.845)
+\rput[tl](-0.32,-0.68){\blue{$\frac{-\sqrt{3}}{2}$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.5,-0.8449830884183538)(0,-0.845)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.5,0.8449830884183538)(0.5,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.5,0.8449830884183538)(-0.5,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.5,-0.8449830884183538)(0.5,-0.3)
+\rput[tl](0.5,-0.05){\blue{$\frac{1}{2}$}}
+\rput[tl](-0.6,-0.05){\blue{$-\frac{1}{2}$}}
+\psdots[dotstyle=*,linecolor=red](0.5,0.8660254037844386)
+\psdots[dotstyle=*,linecolor=red](-0.5,0.8660254037844386)
+\psdots[dotstyle=*,linecolor=red](0.5,-0.8660254037844386)
+\end{pspicture*}
+\end{center}
+
+\end{multicols}
+
+Par lecture du cercle trigonométrique~:
+
+\begin{multicols}{3}
+
+$\cos \frac{\pi}{3}=\frac{1}{2}$
+
+$\sin \frac{\pi}{3}=\frac{\sqrt{3}}{2}$
+
+\columnbreak
+
+$\cos \frac{2\pi}{3}=-\frac{1}{2}$
+
+$\sin \frac{2\pi}{3}=\frac{\sqrt{3}}{2}$
+
+\columnbreak
+
+
+$\cos \left(-\frac{\pi}{3}\right)=\frac{1}{2}$
+
+$\sin \left(-\frac{\pi}{3}\right)=-\frac{\sqrt{3}}{2}$
+
+\end{multicols}
+
+
+\item \begin{multicols}{2} Le point associé à $\frac{\pi} {6}$ est dans le cours. Voici la méthode pour les deux autres~:
+
+\begin{itemize}
+\item[\textbullet] Pour $\frac{\pi} {6},$ on tourne de $30^{\circ}$ dans le sens direct, donc pour $\frac{5\pi}{6},$ on tourne de $5\times 30^{\circ}=150^{\circ}.$ Le point est en haut à gauche du cercle trigonométrique, il a pour ordonnée $\frac{1}{2}.$
+\item[\textbullet] Pour $\frac{11\pi} {6},$ on tourne de $11\times 30^{\circ}=330^{\circ}$ dans le sens direct. Comme $330^{\circ}=360^{\circ}-30^{\circ},$ cela revient à faire un tour complet dans le sens direct, puis à tourner de $30^{\circ}$ dans le sens indirect. Le point est en bas à droite du cercle trigonométrique, c'est le symétrique du point associé à $\frac{\pi}{6}$ par rapport à l'axe des abscisses.
+\end{itemize}
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.2569731607902471,-1.2911436620666586)(1.654236579541996,1.3526111163746357)
+\multips(0,-1.5)(0,0.5){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.6569731607902471,0)(1.845323068347025,0)}
+\multips(-1.5,0)(0.5,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.5911436620666586)(0,1.6226111163746357)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.6569731607902471,-1.5911436620666586)(1.65323068347025,1.35226111163746357)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](1.2072917160553207,-0.07626916090404){\blue{COS}}
+\rput[tl](0.8906543175272783,0.7768861746795583){\red{$\frac{\pi}{6}$}}
+\rput[tl](0.7508554967416274,-0.685720489193105){\red{$\frac{11\pi}{6}$}}
+\rput[tl](-1.2092364269516755,0.8067352902687963){\red{$\frac{5\pi}{6}$}}
+\rput[tl](0.1,0.6){\blue{$\frac{1}{2}$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.8449830884183538,0.5)(0.3,0.5)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.8449830884183538,0.5)(0,0.5)
+\rput[tl](-0.32,-0.4){\blue{$-\frac{1}{2}$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.8449830884183538,-0.5)(0,-0.5)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.8449830884183538,0.5)(0.8449830884183538,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.8449830884183538,0.5)(-0.8449830884183538,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.8449830884183538,-0.5)(0.8449830884183538,-0.35)
+\rput[tl](0.73,-0.05){\blue{$\frac{\sqrt{3}}{2}$}}
+\rput[tl](-0.91,-0.05){\blue{$\frac{-\sqrt{3}}{2}$}}
+\psdots[dotstyle=*,linecolor=red](0.8660254037844386,0.5)
+\psdots[dotstyle=*,linecolor=red](-0.8660254037844386,0.5)
+\psdots[dotstyle=*,linecolor=red](0.8660254037844386,-0.5)
+\end{pspicture*}
+\end{center}
+\end{multicols}
+
+Par lecture du cercle trigonométrique~:
+
+\begin{multicols}{3}
+
+$\cos \frac{\pi}{6}=\frac{\sqrt{3}}{2}$
+
+$\sin \frac{\pi}{6}=\frac{1}{2}$
+
+\columnbreak
+
+$\cos \frac{5\pi}{6}=-\frac{\sqrt{3}}{2}$
+
+$\sin \frac{5\pi}{6}=\frac{1}{2}$
+
+\columnbreak
+
+$\cos \frac{11\pi}{6}=\frac{\sqrt{3}}{2}$
+
+$\sin \frac{11\pi}{6}=-\frac{1}{2}$
+
+\end{multicols}
+
+
+
+\item \begin{multicols}{2} Le point associé à $\frac{\pi} {4}$ est dans le cours. Voici la méthode pour les trois autres~:
+
+\begin{itemize}
+\item[\textbullet] Pour $-\frac{\pi} {4},$ on tourne de $45^{\circ}$ dans le sens indirect. Le point est en bas à droite du cercle trigonométrique, c'est le symétrique du point associé à $\frac{\pi}{4}$ par rapport à l'axe des abscisses.
+\item[\textbullet] Pour $\frac{3\pi} {4},$ on tourne de $3\times 45^{\circ}=135^{\circ}$ dans le sens direct. Le point est en haut à gauche du cercle trigonométrique, c'est le symétrique du point associé à $\frac{\pi}{4}$ par rapport à l'axe des ordonnées.
+\item[\textbullet] Pour $\frac{2025\pi}{4},$ on écrit
+\[\frac{2025\pi}{4}=\frac{2024\pi}{4}+\frac{\pi}{4}=506\pi+\frac{\pi}{4}.\]
+On fait donc 253 tours du cercle trigonométrique dans le sens direct (car $253\times 2\pi=506\pi$), et on tourne encore de $\frac{\pi}{4}.$ Le point associé à $\frac{2025\pi}{4}$ est donc le même que celui associé à $\frac{\pi}{4}.$
+\end{itemize}
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.2569731607902471,-1.2911436620666586)(1.654236579541996,1.3526111163746357)
+\multips(0,-1)(0,0.5){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.656973160790247,0)(1.7657254267757236,0)}
+\multips(-1,0)(0.5,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.5911436620666586)(0,1.6226111163746357)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.656973160790247,-1.5911436620666586)(1.657254267757236,1.3526111163746357)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](1.2072917160553207,-0.07626916090404){\blue{COS}}
+\psline[linewidth=2.pt,linestyle=dashed,dash=1pt 1pt,linecolor=green](-0.7071067811865476,0.7071067811865476)(0.7071067811865476,-0.7071067811865476)
+\psline[linewidth=2.pt,linestyle=dashed,dash=1pt 1pt,linecolor=green](-0.7071067811865476,-0.7071067811865476)(0.7071067811865476,0.7071067811865476)
+\rput[tl](0.6613081499739131,0.9957796890006372){\red{$\frac{\pi}{4}$}}
+\rput[tl](0.7508554967416274,-0.685720489193105){\red{$-\frac{\pi}{4}$}}
+\rput[tl](-1.1097393749875484,0.9261317526257484){\red{$\frac{3\pi}{4}$}}
+\rput[tl](0.9001010746878181,0.7571879435010823){\red{$\frac{2025\pi}{4}$}}
+\rput[tl](0.05,0.81){\blue{$\frac{\sqrt{2}}{2}$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,0.707)(0.3,0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.707,0.707)(0,0.707)
+\rput[tl](0.05,-0.61){\blue{$\frac{-\sqrt{2}}{2}$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,-0.707)(0.4,-0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.707,-0.707)(0,-0.707)
+\rput[tl](0.60,-0.03){\blue{$\frac{\sqrt{2}}{2}$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,0.707)(0.707,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,-0.32)(0.707,-0.707)
+\rput[tl](-0.85,-0.03){\blue{$\frac{-\sqrt{2}}{2}$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.707,0.707)(-0.707,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.707,-0.32)(-0.707,-0.707)
+\psdots[dotstyle=*,linecolor=red](0.7071067811865476,0.7071067811865476)
+\psdots[dotstyle=*,linecolor=red](-0.7071067811865476,0.7071067811865476)
+\psdots[dotstyle=*,linecolor=red](0.7071067811865476,-0.7071067811865476)
+\end{pspicture*}
+\end{center}
+\end{multicols}
+
+Par lecture du cercle trigonométrique~:
+
+\begin{multicols}{4}
+
+$\cos \frac{\pi}{4}=\frac{\sqrt{2}}{2}$
+
+$\sin \frac{\pi}{4}=\frac{\sqrt{2}}{2}$
+
+\columnbreak
+
+$\cos \frac{3\pi}{4}=-\frac{\sqrt{2}}{2}$
+
+$\sin \frac{3\pi}{4}=\frac{\sqrt{2}}{2}$
+
+\columnbreak
+
+
+$\cos \left(-\frac{\pi}{4}\right)=\frac{\sqrt{2}}{2}$
+
+$\sin \left(-\frac{\pi}{4}\right)=-\frac{\sqrt{2}}{2}$
+
+
+\columnbreak
+
+$\cos \frac{2025\pi}{4}=\frac{\sqrt{2}}{2}$
+
+$\sin \frac{2025\pi}{4}=\frac{\sqrt{2}}{2}$
+
+\end{multicols}
+
+
+\end{enumerate}
+
+\textbf{On a construit ci-dessous trois figures~:}
+
+\begin{itemize}
+\item[\textbullet] Sur celle de gauche, les points associés à $\frac{0\pi}{3},$ $\frac{1\pi}{3},$ $\frac{2\pi}{3},$ $\frac{3\pi}{3},$ $\cdots$ forment un hexagone régulier.
+\item[\textbullet] Sur celle du centre, les points associés à $\frac{0\pi}{6},$ $\frac{1\pi}{6},$ $\frac{2\pi}{6},$ $\frac{3\pi}{6},$ $\cdots$  forment un dodécagone régulier.
+\item[\textbullet] Sur celle de droite, les points associés à $\frac{0\pi}{4},$ $\frac{1\pi}{4},$ $\frac{2\pi}{4},$ $\frac{3\pi}{4},$ $\cdots$ forment un octogone régulier.
+\end{itemize}
+
+
+\begin{multicols}{3}
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.2569731607902471,-1.2911436620666586)(1.254236579541996,1.3526111163746357)
+\pspolygon[linewidth=2.pt,linecolor=blue,fillcolor=blue!10!white,fillstyle=solid,opacity=0.1](1.,0.)(0.5,0.8660254037844386)(-0.5,0.8660254037844386)(-1.,0.)(-0.5,-0.8660254037844386)(0.5,-0.8660254037844386)
+\multips(0,-1.5)(0,0.5){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.656973160790247,0)(1.8055242475613744,0)}
+\multips(-1.5,0)(0.5,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.5911436620666586)(0,1.6226111163746357)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.656973160790247,-1.5911436620666586)(1.8055242475613744,1.6226111163746357)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\rput[tl](0.6013081499739131,1.0957796890006372){\red{$\frac{1\pi}{3}$}}
+\rput[tl](1.039396947437596,0.2595015044660992){\red{$\frac{0\pi}{3}$}}
+\rput[tl](-0.7204435022377705,1.124673203321716){\red{$\frac{2\pi}{3}$}}
+\rput[tl](-1.228129941272755,0.35899855643022593){\red{$\frac{3\pi}{3}$}}
+\rput[tl](-0.8311476294879927,-0.9042619398890726){\red{$\frac{4\pi}{3}$}}
+\rput[tl](0.5518613928133733,-0.9742619398890726){\red{$\frac{5\pi}{3}$}}
+\psline[linewidth=2.pt,linecolor=blue](1.,0.)(0.5,0.8660254037844386)
+\psline[linewidth=2.pt,linecolor=blue](0.5,0.8660254037844386)(-0.5,0.8660254037844386)
+\psline[linewidth=2.pt,linecolor=blue](-0.5,0.8660254037844386)(-1.,0.)
+\psline[linewidth=2.pt,linecolor=blue](-1.,0.)(-0.5,-0.8660254037844386)
+\psline[linewidth=2.pt,linecolor=blue](-0.5,-0.8660254037844386)(0.5,-0.8660254037844386)
+\psline[linewidth=2.pt,linecolor=blue](0.5,-0.8660254037844386)(1.,0.)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\psdots[dotstyle=*,linecolor=red](0.5,0.8660254037844386)
+\psdots[dotstyle=*,linecolor=red](-0.5,0.8660254037844386)
+\psdots[dotstyle=*,linecolor=red](-0.5,-0.8660254037844386)
+\psdots[dotstyle=*,linecolor=red](0.5,-0.8660254037844386)
+\end{pspicture*}
+\end{center}
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.2569731607902471,-1.2911436620666586)(1.254236579541996,1.3526111163746357)
+\pspolygon[linewidth=2.pt,linecolor=blue,fillcolor=blue!10!white,fillstyle=solid,opacity=0.1](1.,0.)(0.8660254037844386,0.5)(0.5,0.8660254037844386)(0.,1.)(-0.5,0.8660254037844386)(-0.8660254037844386,0.5)(-1.,0.)(-0.8660254037844386,-0.5)(-0.5,-0.8660254037844386)(0.,-1.)(0.5,-0.8660254037844386)(0.8660254037844386,-0.5)
+\multips(0,-1.5)(0,0.5){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.6569731607902471,0)(1.6861277852044219,0)}
+\multips(-1.5,0)(0.5,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.5911436620666586)(0,1.6226111163746357)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.6569731607902471,-1.5911436620666586)(1.6861277852044219,1.6226111163746357)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\rput[tl](0.5618110980097863,1.0753773305719385){\red{$\frac{2\pi}{6}$}}
+\rput[tl](1.0393969474375961,0.2595015044660992){\red{$\frac{0\pi}{6}$}}
+\rput[tl](0.08422524858197651,1.242708448930176){\red{$\frac{3\pi}{6}$}}
+\rput[tl](-1.2679287620584056,0.35899855643022593){\red{$\frac{6\pi}{6}$}}
+\rput[tl](-0.6604937970413575,-0.9842116450854853){\red{$\frac{8\pi}{6}$}}
+\rput[tl](0.6511069707595642,-0.8351672463536444){\red{$\frac{10\pi}{6}$}}
+\rput[tl](0.9299501902770565,0.6972885331082569){\red{$\frac{1\pi}{6}$}}
+\rput[tl](-0.7704435022377702,1.0345726137145414){\red{$\frac{4\pi}{6}$}}
+\rput[tl](-1.0888340685229769,0.8067352902687963){\red{$\frac{5\pi}{6}$}}
+\rput[tl](-1.1082305308799292,-0.5066257956576768){\red{$\frac{7\pi}{6}$}}
+\rput[tl](0.104627607010674866,-1.0533566334245007){\red{$\frac{9\pi}{6}$}}
+\rput[tl](0.9697490110627073,-0.37727962810431204){\red{$\frac{11\pi}{6}$}}
+\psline[linewidth=2.pt,linecolor=blue](1.,0.)(0.8660254037844386,0.5)
+\psline[linewidth=2.pt,linecolor=blue](0.8660254037844386,0.5)(0.5,0.8660254037844386)
+\psline[linewidth=2.pt,linecolor=blue](0.5,0.8660254037844386)(0.,1.)
+\psline[linewidth=2.pt,linecolor=blue](0.,1.)(-0.5,0.8660254037844386)
+\psline[linewidth=2.pt,linecolor=blue](-0.5,0.8660254037844386)(-0.8660254037844386,0.5)
+\psline[linewidth=2.pt,linecolor=blue](-0.8660254037844386,0.5)(-1.,0.)
+\psline[linewidth=2.pt,linecolor=blue](-1.,0.)(-0.8660254037844386,-0.5)
+\psline[linewidth=2.pt,linecolor=blue](-0.8660254037844386,-0.5)(-0.5,-0.8660254037844386)
+\psline[linewidth=2.pt,linecolor=blue](-0.5,-0.8660254037844386)(0.,-1.)
+\psline[linewidth=2.pt,linecolor=blue](0.,-1.)(0.5,-0.8660254037844386)
+\psline[linewidth=2.pt,linecolor=blue](0.5,-0.8660254037844386)(0.8660254037844386,-0.5)
+\psline[linewidth=2.pt,linecolor=blue](0.8660254037844386,-0.5)(1.,0.)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\psdots[dotstyle=*,linecolor=red](0.5,0.8660254037844386)
+\psdots[dotstyle=*,linecolor=red](-0.5,0.8660254037844386)
+\psdots[dotstyle=*,linecolor=red](-0.5,-0.8660254037844386)
+\psdots[dotstyle=*,linecolor=red](0.5,-0.8660254037844386)
+\psdots[dotstyle=*,linecolor=red](0.8660254037844386,0.5)
+\psdots[dotstyle=*,linecolor=red](-0.8660254037844386,0.5)
+\psdots[dotstyle=*,linecolor=red](0.,1.)
+\psdots[dotstyle=*,linecolor=red](0.,-1.)
+\psdots[dotstyle=*,linecolor=red](-0.8660254037844386,-0.5)
+\psdots[dotstyle=*,linecolor=red](0.8660254037844386,-0.5)
+\end{pspicture*}
+\end{center}
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.2569731607902471,-1.2911436620666586)(1.254236579541996,1.3526111163746357)
+\pspolygon[linewidth=2.pt,linecolor=green,fillcolor=green!10!white,fillstyle=solid,opacity=0.1](1.,0.)(0.7071067811865476,0.7071067811865476)(0.,1.)(-0.7071067811865476,0.7071067811865476)(-1.,0.)(-0.7071067811865476,-0.7071067811865476)(0.,-1.)(0.7071067811865476,-0.7071067811865476)
+\multips(0,-1.5)(0,0.5){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.6569731607902471,0)(1.8254236579541996,0)}
+\multips(-1.5,0)(0.5,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.5911436620666586)(0,1.6226111163746357)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.6569731607902471,-1.5911436620666586)(1.8254236579541996,1.6226111163746357)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\rput[tl](0.6613081499739134,0.9957796890006372){\red{$\frac{1\pi}{4}$}}
+\rput[tl](0.7508554967416278,-0.685720489193105){\red{$\frac{7\pi}{4}$}}
+\rput[tl](-0.8097393749875482,1.0261317526257484){\red{$\frac{3\pi}{4}$}}
+\rput[tl](0.024527017403500277,1.2644217293037794){\red{$\frac{2\pi}{4}$}}
+\rput[tl](-1.218180236076342,0.26945120966251185){\red{$\frac{4\pi}{4}$}}
+\rput[tl](-0.9394376061660243,-0.7248151827285332){\red{$\frac{5\pi}{4}$}}
+\rput[tl](0.03447672259991298,-1.0737589918531993){\red{$\frac{6\pi}{4}$}}
+\rput[tl](1.1,0.25){\red{$\frac{0\pi}{4}$}}
+\psline[linewidth=2.pt,linecolor=green](1.,0.)(0.7071067811865476,0.7071067811865476)
+\psline[linewidth=2.pt,linecolor=green](0.7071067811865476,0.7071067811865476)(0.,1.)
+\psline[linewidth=2.pt,linecolor=green](0.,1.)(-0.7071067811865476,0.7071067811865476)
+\psline[linewidth=2.pt,linecolor=green](-0.7071067811865476,0.7071067811865476)(-1.,0.)
+\psline[linewidth=2.pt,linecolor=green](-1.,0.)(-0.7071067811865476,-0.7071067811865476)
+\psline[linewidth=2.pt,linecolor=green](-0.7071067811865476,-0.7071067811865476)(0.,-1.)
+\psline[linewidth=2.pt,linecolor=green](0.,-1.)(0.7071067811865476,-0.7071067811865476)
+\psline[linewidth=2.pt,linecolor=green](0.7071067811865476,-0.7071067811865476)(1.,0.)
+\psline[linewidth=2.pt,linestyle=dashed,dash=1pt 1pt,linecolor=magenta](-0.7071067811865476,0.7071067811865476)(0.7071067811865476,-0.7071067811865476)
+\psline[linewidth=2.pt,linestyle=dashed,dash=1pt 1pt,linecolor=magenta](-0.7071067811865476,-0.7071067811865476)(0.7071067811865476,0.7071067811865476)
+\psdots[dotstyle=*,linecolor=red](0.7071067811865476,0.7071067811865476)
+\psdots[dotstyle=*,linecolor=red](-0.7071067811865476,0.7071067811865476)
+\psdots[dotstyle=*,linecolor=red](0.7071067811865476,-0.7071067811865476)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=red](0.,1.)
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\psdots[dotstyle=*,linecolor=red](0.,-1.)
+\psdots[dotstyle=*,linecolor=red](-0.7071067811865476,-0.7071067811865476)
+\end{pspicture*}
+\end{center}
+
+\end{multicols}
+
+\end{exo}
+
+\newpage
+\begin{exo}
+
+
+Dans chaque question, on notera $\mathcal{S}$ l'ensemble des solutions.
+
+\begin{enumerate}
+\item \begin{multicols}{2} On résout $\cos x=\frac{1}{2},$ dans $\left[0;\frac{\pi}{2}\right].$
+
+\medskip
+
+\textbf{Méthode~:}
+
+\begin{itemize}
+\item[\textbullet] \textbf{Étape 1.} On commence par repasser en rouge la partie du cercle trigonométrique correspondant à l'intervalle $\left[0;\frac{\pi}{2}\right].$ On indique les graduations $0$ et $\frac{\pi}{2}.$
+\item[\textbullet]  \textbf{Étape 2.} On résout l'équation $\cos x=\frac{1}{2},$ donc on se place à l'abscisse $\frac{1}{2}$ et on rejoint le cercle trigonométrique.
+\item[\textbullet] \textbf{Étape 3.} On lit la(les) solution(s) sur le cercle trigonométrique. Ici, il y a une seule solution, car $\cos x=\frac{1}{2}$ uniquement lorsque $x=\frac{\pi}{3}.$
+\end{itemize}
+
+\[\boxed{\mathcal{S}=\left\{\frac{\pi}{3}\right\}.}\]
+
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.3475212227871955,-1.0924958689194642)(2.9453243101377757,1.528799191008172)
+\multips(0,-1)(0,0.5){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.3475212227871955,0)(1.4,0)}
+\multips(-1,0)(0.5,0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.0924958689194642)(0,1.4)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.3475212227871955,-1.0924958689194642)(1.6,1.528799191008172)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{0}{1}{sqrt(1.0-x^(2.0))}
+\rput[tl](1.2072917160553207,-0.07626916090404){\blue{COS}}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](0.1,1.2193017451388688){\red{$\frac{\pi}{2}$}}
+\rput[tl](0.5,-0.05){\blue{$\frac{1}{2}$}}
+\rput[tl](0.55,1.15){\green{$\frac{\pi}{3}$}}
+\rput[tl](1.0648300280157752,0.15){\red{$0$}}
+\psline[linewidth=2.pt,linecolor=red](1.5,1.)(2.,1.)
+\rput[tl](2.1,1.07){\red{étape 1}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](1.5,0.7)(2.,0.7)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.5,0.)(0.5,0.8449830884183538)
+\rput[tl](2.1,0.77){\blue{étape 2}}
+\rput[tl](2.1,0.47){\green{étape 3}}
+\psline[linewidth=2.pt](1.4,1.2)(1.4,0.25)
+\psline[linewidth=2.pt](1.4,0.25)(2.8,0.25)
+\psline[linewidth=2.pt](2.8,0.25)(2.8,1.2)
+\psline[linewidth=2.pt](2.8,1.2)(1.4,1.2)
+\psdots[dotstyle=*,linecolor=red](0.,1.)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=green](0.5,0.8449830884183538)
+\psdots[dotstyle=*,linecolor=green](2.,0.4)
+\end{pspicture*}
+\end{center}
+\end{multicols}
+\item \begin{multicols}{2} On résout $2\sin x-1=0,$ dans $\left[0;\pi\right].$
+
+\medskip
+
+\[2\sin x-1=0\iff 2\sin x=1\iff \sin x=\frac{1}{2}.\]
+
+\[\boxed{\mathcal{S}=\left\{\frac{\pi}{6};\frac{5\pi}{6}\right\}.}\]
+
+
+\medskip
+
+\textbf{Remarque~:} On peut écrire les solutions dans l'ordre que l'on veut -- donc $\mathcal{S}=\left\{\frac{5\pi}{6};\frac{\pi}{6}\right\}$ est correct.
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\multips(0,-1)(0,0.5){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.3475212227871955,0)(1.4,0)}
+\multips(-1,0)(0.5,0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.0924958689194642)(0,1.4)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-1}{1}{sqrt(1.0-x^(2.0))}
+\rput[tl](1.2072917160553207,-0.07626916090404){\blue{COS}}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](0.1,1.2193017451388688){\red{$\frac{\pi}{2}$}}
+\rput[tl](0.1,0.6){\blue{$\frac{1}{2}$}}
+\rput[tl](0.9,0.75){\green{$\frac{\pi}{6}$}}
+\rput[tl](-1.15,0.75){\green{$\frac{5\pi}{6}$}}
+\rput[tl](1.0648300280157752,0.15){\red{$0$}}
+\rput[tl](-1.1648300280157752,0.15){\red{$\pi$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.8449830884183538,0.5)(0.3,0.5)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.8449830884183538,0.5)(0,0.5)
+\psdots[dotstyle=*,linecolor=red](0.,1.)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\psdots[dotstyle=*,linecolor=green](0.8449830884183538,0.5)
+\psdots[dotstyle=*,linecolor=green](-0.8449830884183538,0.5)
+\end{pspicture*}
+\end{center}
+\end{multicols}
+
+\item \begin{multicols}{2} On résout $\left(2\cos x-\sqrt{3}\right)\cos x=0,$ dans $\left[-\pi;\pi\right].$
+
+\medskip
+
+On utilise la technique habituelle de résolution des équations produits~:
+\begin{align*}
+\left(2\cos x-\sqrt{3}\right)\cos x=0&\iff \left(2\cos x-\sqrt{3}=0~\text{ou}~\cos x=0\right)
+\\&\iff \cos x=\frac{\sqrt{3}}{2}~\text{ou}~\cos x=0.
+\end{align*}
+
+\begin{itemize}
+\item[\textbullet] L'équation $\cos x=\frac{\sqrt{3}}{2}$ a pour solutions $\frac{\pi}{6}$ et $-\frac{\pi}{6}~;$ \item[\textbullet] l'équation $\cos x=0$ a pour solutions $\frac{\pi}{2}$ et $-\frac{\pi}{2}.$
+\end{itemize}
+
+ \[\boxed{\mathcal{S}=\left\{-\frac{\pi}{2};-\frac{\pi}{6};\frac{\pi}{6};\frac{\pi}{2}\right\}.}\]
+ 
+ \textbf{Remarque~:}  L'intervalle de résolution correspond à un tour complet de cercle~: on part de $-\pi,$ tout à gauche, et on fait un tour complet de cercle pour arriver à $\pi,$ au même endroit.
+ 
+ \begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\multips(0,-1)(0,0.5){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.3475212227871955,0)(1.4,0)}
+\multips(-1,0)(0.5,0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.0924958689194642)(0,1.4)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-1}{1}{sqrt(1.0-x^(2.0))}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-1}{1}{-sqrt(1.0-x^(2.0))}
+\rput[tl](1.2072917160553207,-0.07626916090404){\blue{COS}}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](0.1,1.22){\green{$\frac{\pi}{2}$}}
+\rput[tl](0.05,-0.75){\green{$-\frac{\pi}{2}$}}
+\rput[tl](-0.15,0.6){\blue{$\frac{1}{2}$}}
+\rput[tl](-0.25,-0.42){\blue{$-\frac{1}{2}$}}
+\rput[tl](0.73,-0.05){\blue{$\frac{\sqrt{3}}{2}$}}
+\rput[tl](0.9,0.75){\green{$\frac{\pi}{6}$}}
+\rput[tl](0.79,-0.6){\green{$-\frac{\pi}{6}$}}
+\rput[tl](1.06,0.15){\red{$0$}}
+\rput[tl](-1.16,0.15){\red{$\pi$}}
+\rput[tl](-1.28,-0.15){\red{$-\pi$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.8449830884183538,0.5)(0,0.5)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.8449830884183538,0.5)(0.8449830884183538,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.8449830884183538,-0.5)(0,-0.5)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.8449830884183538,-0.5)(0.8449830884183538,-0.35)
+\psline[linewidth=3.pt,linestyle=dotted,linecolor=blue](0,-1)(0,1)
+\psdots[dotstyle=*,linecolor=red](0.,1.)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\psdots[dotstyle=*,linecolor=red](0.,-1.)
+\psdots[dotstyle=*,linecolor=green](0.8449830884183538,0.5)
+\psdots[dotstyle=*,linecolor=green](0.8449830884183538,-0.5)
+\psdots[dotstyle=*,linecolor=green](0,1)
+\psdots[dotstyle=*,linecolor=green](0,-1)
+\end{pspicture*}
+\end{center}
+
+
+\end{multicols}
+\item \begin{multicols}{2} On résout $2\sin x\cos x=-\sin x,$ dans $\left[0;\pi\right].$
+
+\medskip
+
+\begin{align*}2\sin x\cos x=-\sin x&\iff 2\sin x\cos x+1\cdot\sin x=0
+\\&\iff \sin x(2\cos x+1)=0
+\\&\iff \sin x=0~\text{ou}~2\cos x+1=0
+\\&\iff \sin x=0~\text{ou}~\cos x=-\frac{1}{2}.
+\end{align*}
+
+\begin{itemize}
+\item[\textbullet] L'équation $\sin x=0$ a pour solutions $0$ et $\pi~;$ \item[\textbullet] l'équation $\cos x=-\frac{1}{2}$ a pour solution $\frac{2\pi}{3}.$
+\end{itemize}
+
+ \[\boxed{\mathcal{S}=\left\{0;\pi;\frac{2\pi}{3}\right\}.}\]
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\multips(0,-1)(0,0.5){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.3475212227871955,0)(1.4,0)}
+\multips(-1,0)(0.5,0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.0924958689194642)(0,1.4)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-1}{1}{sqrt(1.0-x^(2.0))}
+\rput[tl](1.2072917160553207,-0.07626916090404){\blue{COS}}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](0.1,1.22){\red{$\frac{\pi}{2}$}}
+\rput[tl](-0.55,-0.05){\blue{$-\frac{1}{2}$}}
+\rput[tl](-0.75,1.05){\green{$\frac{2\pi}{3}$}}
+\rput[tl](1.06,0.15){\green{$0$}}
+\rput[tl](-1.16,0.15){\green{$\pi$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.5,0.8449830884183538,0.5)(-0.5,0)
+\psline[linewidth=3.pt,linestyle=dotted,linecolor=blue](-1,0)(1,0)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=red](0.,1.)
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\psdots[dotstyle=*,linecolor=green](-0.5,0.8449830884183538)
+\psdots[dotstyle=*,linecolor=green](1,0)
+\psdots[dotstyle=*,linecolor=green](-1,0)
+\end{pspicture*}
+\end{center}
+\end{multicols}
+
+
+\item \begin{multicols}{2} On résout $2\sin x-1\geq 0,$ dans $\left[0;\pi\right].$
+
+\medskip
+
+Il s'agit d'une inéquation. On 	a les équivalences~:
+\[2\sin x-1\geq 0\iff 2\sin x\geq 1\iff \sin x\geq\frac{1}{2}.\]
+
+ Contrairement à la question 2, on ne s'intéresse pas aux points du cercle trigonométrique d'ordonnée $\frac{1}{2},$ mais à ceux dont l'ordonnée est \textbf{supérieure ou égale} à $\frac{1}{2}$  (partie verte). Les solutions sont tous les nombres de l'intervalle $\left[\frac{\pi}{6};\frac{5\pi}{6}\right].$
+ 
+ \[\boxed{\mathcal{S}=\left[\frac{\pi}{6};\frac{5\pi}{6}\right].}\]
+ 
+ \medskip
+ 
+ \textbf{Remarque~:} On tourne dans le sens trigonométrique, donc on lit l'intervalle solution depuis en haut à droite ($\frac{\pi}{6}$) jusqu'à en haut à gauche ($\frac{5\pi}{6}$). L'ordre dans lequel on écrit les bornes de l'ensemble solution n'est pas arbitraire~!
+ 
+ \begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\pspolygon[linewidth=0.pt,linecolor=white,fillcolor=green!20!white,fillstyle=solid,opacity=0.25](-4.5,6.5)(-4.5,0.5)(11.68,0.5)(11.68,6.5)
+\multips(0,-1)(0,0.5){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.3475212227871955,0)(1.4,0)}
+\multips(-1,0)(0.5,0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.0924958689194642)(0,1.4)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-1}{1}{sqrt(1.0-x^(2.0))}
+\psplot[linewidth=2.pt,linecolor=green,plotpoints=200]{-0.8449830884183538}{0.8449830884183538}{sqrt(1.0-x^(2.0))}
+\rput[tl](1.2072917160553207,-0.07626916090404){\blue{COS}}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](0.1,1.2193017451388688){\red{$\frac{\pi}{2}$}}
+\rput[tl](0.1,0.6){\blue{$\frac{1}{2}$}}
+\rput[tl](0.9,0.75){\green{$\frac{\pi}{6}$}}
+\rput[tl](-1.15,0.75){\green{$\frac{5\pi}{6}$}}
+\rput[tl](1.0648300280157752,0.15){\red{$0$}}
+\rput[tl](-1.1648300280157752,0.15){\red{$\pi$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.8449830884183538,0.5)(0.3,0.5)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.8449830884183538,0.5)(0,0.5)
+\psdots[dotstyle=*,linecolor=red](0.,1.)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\psdots[dotstyle=*,linecolor=green](0.8449830884183538,0.5)
+\psdots[dotstyle=*,linecolor=green](-0.8449830884183538,0.5)
+\end{pspicture*}
+\end{center}
+ 
+ 
+ 
+ \end{multicols}
+ 
+ 
+ \item $\cos x\leq \frac{\sqrt{2}}{2},$ dans $\left[-\pi;\pi\right].$
+
+\medskip
+
+ 
+ \[\boxed{\mathcal{S}=\left[-\pi;-\frac{\pi}{4}\right]\cup\left[\frac{\pi}{4};\pi\right].}\]
+ 
+ 
+ \begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\pspolygon[linewidth=0.pt,linestyle=dashed,dash=2pt 2pt,linecolor=white,fillcolor=green!20!white,fillstyle=solid,opacity=0.25](-4.5,6.5)(-4.5,-2.6)(0.7,-2.6)(0.7,6.5)
+\multips(0,-1)(0,0.5){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.3475212227871955,0)(1.4,0)}
+\multips(-1,0)(0.5,0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.0924958689194642)(0,1.4)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-1}{1}{sqrt(1.0-x^(2.0))}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-1}{1}{-sqrt(1.0-x^(2.0))}
+\psplot[linewidth=2.pt,linecolor=green,plotpoints=200]{-1}{0.707}{sqrt(1.0-x^(2.0))}
+\psplot[linewidth=2.pt,linecolor=green,plotpoints=200]{-1}{0.707}{-sqrt(1.0-x^(2.0))}
+\rput[tl](1.2572917160553207,-0.07626916090404){\blue{COS}}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](0.1,1.22){\red{$\frac{\pi}{2}$}}
+\rput[tl](0.05,-0.75){\red{$-\frac{\pi}{2}$}}
+\rput[tl](1.06,0.15){\red{$0$}}
+\rput[tl](-1.16,0.15){\red{$\pi$}}
+\rput[tl](0.05,-0.75){\red{$-\frac{\pi}{2}$}}
+\rput[tl](-1.28,-0.15){\red{$-\pi$}}
+\rput[tl](0.8,0.85){\green{$\frac{\pi}{4}$}}
+\rput[tl](0.76,-0.72){\green{$-\frac{\pi}{4}$}}
+\rput[tl](0.60,-0.03){\blue{$\frac{\sqrt{2}}{2}$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=magenta](0.707,0.707)(0,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=magenta](0,0)(0.707,-0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,0.707)(0.707,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,-0.32)(0.707,-0.707)
+\psdots[dotstyle=*,linecolor=red](0.,1.)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\psdots[dotstyle=*,linecolor=red](0.,-1.)
+\psdots[dotstyle=*,linecolor=green](0.707,0.707)
+\psdots[dotstyle=*,linecolor=green](0.707,-0.707)
+\end{pspicture*}
+\end{center}
+
+\textbf{Remarque~:} Les solutions dans la partie basse du cercle correspondent à l'intervalle $\left[-\pi;-\frac{\pi}{4}\right],$ les  solutions dans la partie haute correspondent à l'intervalle $\left[\frac{\pi}{4};\pi\right].$
+ 
+
+
+\item \begin{multicols}{2} On résout $2\sin x\cos x\leq -\sin x,$ dans $\left[0;\pi\right].$
+
+\medskip
+
+\begin{align*}2\sin x\cos x\leq-\sin x&\iff 2\sin x\cos x+1\cdot\sin x\leq 0
+\\&\iff \sin x(2\cos x+1)\leq 0.
+\end{align*}
+
+On conclut à l'aide d'un tableau de signe~:
+
+\begin{itemize}
+\item[\textbullet] Les solutions des équations $\sin x=0$ et $\cos x=-\frac{1}{2}$ ont été obtenues dans la question 4~;
+\item[\textbullet] pour déterminer le signe dans chaque case, on remplace par des valeurs de $x.$ Par exemple, pour avoir le signe de $2\cos x+1$ dans la cas $\left[0;\frac{2\pi}{3}\right],$ on prend $x=0~:$ on a $2\cos 0+1=2\times 1+1=3,$ donc on met un $\oplus$ dans la case.
+\end{itemize}
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+\tkzTabInit{$x$/1,$\sin x$/1,$2\cos x+1$/1,\scriptsize{$\sin x(2\cos x+1)$}\normalsize/1}{$0$,$\frac{2\pi}{3}$,$\pi$}
+\tkzTabLine{z,+,,+,z}
+\tkzTabLine{,+,z,-,}
+\tkzTabLine{z,+,z,-,z}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+ 
+Conclusion~: $\sin x(2\cos x+1)$ est du signe $\ominus$ lorsque  $x\in\left[\frac{2\pi}{3};\pi\right],$ donc
+
+ \[\boxed{\mathcal{S}=\left[\frac{2\pi}{3};\pi\right].}\]
+
+
+\end{multicols}
+
+\item \begin{multicols}{2} On résout $\left|\sin x\right|=\frac{\sqrt{2}}{2},$ dans $\left[0;2\pi\right].$
+
+\medskip
+
+\[
+\left|\sin x\right|=\frac{\sqrt{2}}{2}\iff \sin x =\frac{\sqrt{2}}{2}~\text{ou}~\sin x =-\frac{\sqrt{2}}{2}.\]
+
+\begin{itemize}
+\item[\textbullet] Les solutions de l'équation $\sin x=\frac{\sqrt{2}}{2}$ sont $\frac{\pi}{4}$ et  $\frac{3\pi}{4}~;$
+\item[\textbullet] les solutions de l'équation $\sin x=-\frac{\sqrt{2}}{2}$ sont $\frac{5\pi}{4}$ et  $\frac{7\pi}{4}.$
+\end{itemize}
+
+
+\medskip
+
+ \[\boxed{\mathcal{S}=\left\{\frac{\pi}{4};\frac{3\pi}{4};\frac{5\pi}{4};\frac{7\pi}{4}\right\}.}\]
+
+\medskip
+
+\textbf{Remarque~:} On résout dans l'intervalle  $\left[0;2\pi\right],$ ce qui correspond à un tour complet de cercle, comme quand on a résolu dans  $\left[-\pi;\pi\right].$ Mais il y a une grosse différence~:
+
+\begin{itemize}
+\item[\textbullet] quand on résout dans $\left[0;2\pi\right],$ le point situé tout en bas du cercle trigonométrique, par exemple, correspond à la graduation $\frac{3\pi}{2}~;$
+\item[\textbullet] quand on résout dans $\left[-\pi;\pi\right],$ en revanche, ce point situé tout en bas du cercle trigonométrique correspond à la graduation $-\frac{\pi}{2}.$
+\end{itemize}
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\multips(0,-1)(0,0.5){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.3475212227871955,0)(1.4,0)}
+\multips(-1,0)(0.5,0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.0924958689194642)(0,1.4)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-1}{1}{sqrt(1.0-x^(2.0))}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-1}{1}{-sqrt(1.0-x^(2.0))}
+\rput[tl](1.2572917160553207,-0.07626916090404){\blue{COS}}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](0.1,1.22){\red{$\frac{\pi}{2}$}}
+\rput[tl](0.05,-0.75){\red{$\frac{3\pi}{2}$}}
+\rput[tl](1.06,0.15){\red{$0$}}
+\rput[tl](1.03,-0.05){\red{$2\pi$}}
+\rput[tl](-1.16,0.15){\red{$\pi$}}
+\rput[tl](0.8,0.85){\green{$\frac{\pi}{4}$}}
+\rput[tl](0.8,-0.76){\green{$\frac{7\pi}{4}$}}
+\rput[tl](-0.94,0.85){\green{$\frac{3\pi}{4}$}}
+\rput[tl](-0.875,-0.775){\green{$\frac{5\pi}{4}$}}
+\rput[tl](-0.35,-0.61){\blue{$-\frac{\sqrt{2}}{2}$}}
+\rput[tl](-0.27,0.82){\blue{$\frac{\sqrt{2}}{2}$}}
+\rput[tl](0.60,-0.03){\blue{$\frac{\sqrt{2}}{2}$}}
+\rput[tl](-0.9,-0.03){\blue{$-\frac{\sqrt{2}}{2}$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=magenta](0.707,0.707)(-0.707,-0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=magenta](-0.707,0.707)(0.707,-0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,0.707)(0.707,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,-0.32)(0.707,-0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,-0.707)(0,-0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.707,-0.32)(-0.707,-0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.707,-0.707)(-0.3,-0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.707,0)(-0.707,0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-0.707,0.707)(-0.3,0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,0.707)(0,0.707)
+\psdots[dotstyle=*,linecolor=red](0.,1.)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\psdots[dotstyle=*,linecolor=red](0.,-1.)
+\psdots[dotstyle=*,linecolor=green](0.707,0.707)
+\psdots[dotstyle=*,linecolor=green](0.707,-0.707)
+\psdots[dotstyle=*,linecolor=green](-0.707,0.707)
+\psdots[dotstyle=*,linecolor=green](-0.707,-0.707)
+\end{pspicture*}
+\end{center}
+
+
+
+
+
+\end{multicols}
+\end{enumerate}
+\end{exo}
 
 
 \end{document}

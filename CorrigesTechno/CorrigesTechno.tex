@@ -4084,5 +4084,234 @@ Cette espérance est le coût moyen payé par client (en~\euro ).
 
 
 
+\begin{exo}
+
+
+
+
+\begin{enumerate}
+\item On représente la situation par un arbre pondéré~:
+
+\medskip
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$D$}\taput{$0,53$}}
+	{
+	\Tr{$M$}~[tnpos=r]{~~\textcolor{blue}{S.C. marque 2 pts}}\taput{$0,52$} 
+	\Tr{$\overline{M}$}~[tnpos=r]{~~\textcolor{green}{S.C. marque 0 pt}}\tbput{$0,48$}
+		}	
+\pstree{\Tr{$\overline{D}$}\tbput{$0,47$}}
+	{
+	\Tr{$M$}~[tnpos=r]{~~\textcolor{red}{S.C. marque 3 pts}}\taput{$0,44$} 
+	\Tr{$\overline{M}$}~[tnpos=r]{~~\textcolor{green}{S.C. marque 0 pt}}\tbput{$0,56$}
+		}
+}
+\end{center}
+
+\medskip
+
+\textbf{Remarques~:}
+
+\begin{itemize}
+\item[\textbullet] $\overline{D}$ signifie \og Stephen Curry tire à 3 points \fg.
+\item[\textbullet] On a indiqué à l'extrémité droite des branches le nombre de points marqués suivant la situation.
+\end{itemize}
+
+\item La probabilité que Stephen Curry tire à 2 points et marque est
+\[P(D\cap M)=0,53\times 0,52=0,2756.\]
+\item D'après la formule des probabilités totales, la probabilité que Stephen Curry marque est~:
+
+\begin{align*}P(M)&=P\left(D\cap M\right)+P\left(\overline{D}\cap M\right)\\
+&=0,53\times 0,52+0,47\times 0,44=0,4824.\end{align*}
+\item Les valeurs possibles de $X$ sont 0, 2 et 3. Calculons les probabilités correspondantes~:
+
+\begin{itemize}
+\item[\textbullet] la probabilité que Stéphane Curry marque 3 pts est
+\[0,47\times 0,44=\np{0,2068}~;\]
+\item[\textbullet] la probabilité que Stéphane Curry marque 2 pts est
+\[0,53\times 0,52=\np{0,2756}\] (on l'a déjà calculée dans la question 2)~;
+\item[\textbullet] la probabilité que Stéphane Curry marque 0 pt est
+\[0,53\times 0,48+0,47\times 0,56=\np{0,5176}.\]
+\end{itemize}
+
+\medskip
+
+\textbf{Remarque~:} Pour le 3\up{e} calcul, on aurait pu utiliser le résultat de la question 3 et faire le calcul \[1-\np{0,4824}=\np{0,5176}.\]
+
+On aurait aussi pu calculer \[1-\np{0,2068}-\np{0,2756}=\np{0,5176}.\]
+
+
+\medskip
+
+La loi de $X$ est donc donnée par le tableau~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|}
+\hline
+    valeurs de $X$     & 3      & 2       & 0   \\
+\hline
+probabilités & $\np{0,2068}$ &$\np{0,2756}$ &$\np{0,5176}$      \\
+\hline
+\end{tabular}
+\end{center}
+
+\item L'espérance de $X$ est \[E(X)=\np{0,2068}\times 3+\np{0,2756}\times 2+\np{0,5176}\times 0= \np{1,1716}.\]
+
+En moyenne, Stephen Curry marque \np{1,1716}~point par tir.
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+~{}
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.22,0.68)(3.1,3.18)
+\psline[linewidth=2.pt](-2.,1.)(1.,1.)
+\psline[linewidth=2.pt](1.,1.)(1.,3.)
+\psline[linewidth=2.pt](1.,3.)(-2.,3.)
+\psline[linewidth=2.pt](-2.,3.)(-2.,1.)
+%\begin{scriptsize}
+\psdots[dotsize=9pt 0,dotstyle=*,linecolor=ududff](-1.24,1.88)
+\psdots[dotsize=9pt 0,dotstyle=*,linecolor=red](-0.88,2.52)
+\psdots[dotsize=9pt 0,dotstyle=*,linecolor=ududff](0.58,1.88)
+\psdots[dotsize=9pt 0,dotstyle=*,linecolor=red](-1.54,2.44)
+\psdots[dotsize=9pt 0,dotstyle=*,linecolor=red](0.24,1.4)
+\psdots[dotsize=9pt 0,dotstyle=*,linecolor=ududff](0.6,2.56)
+\psdots[dotsize=9pt 0,dotstyle=*,linecolor=red](-0.44,1.82)
+\psdots[dotsize=9pt 0,dotstyle=*,linecolor=red](-0.24,2.72)
+\psdots[dotsize=9pt 0,dotstyle=*,linecolor=red](-1.,1.4)
+\psdots[dotsize=9pt 0,dotstyle=*,linecolor=red](0.14,2.12)
+%\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+
+
+
+\begin{enumerate}
+\item On construit un arbre pondéré en indiquant à droite le nombre de boules bleues tirées. On remarque que $\frac{3}{10}=0,3$ et que $\frac{7}{10}=0,7.$
+
+
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{\text{B}}\taput{$0,3$}}
+	{
+	\Tr{\text{B}}~[tnpos=r]{~~\textcolor{blue!50!black}{2 boules bleues tirées}}\taput{$0,3$}
+	\Tr{\text{R}}~[tnpos=r]{~~\textcolor{blue}{1 boule bleue tirée}}\tbput{$0,7$}
+		}	
+\pstree{\Tr{\text{R}}\tbput{$0,7$}}
+	{
+	\Tr{\text{B}}~[tnpos=r]{~~\textcolor{blue}{1 boule bleue tirée}}\taput{$0,3$} 
+	\Tr{\text{R}}~[tnpos=r]{~~\textcolor{blue!50!white}{0 boule bleue tirée}}\tbput{$0,7$}
+		}
+}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} Les probabilités sont les mêmes sur toutes les branches (0,3/0,7), car on remet la 1\up{re} boule dans l'urne avant de tirer la 2\up{e}.
+
+\item Les valeurs possibles de $X$ sont 0, 1 et 2. Calculons les probabilités correspondantes~:
+
+\begin{itemize}
+\item[\textbullet] la probabilité de tirer 2 boules bleues est
+\[0,3\times 0,3=0,09~;\]
+\item[\textbullet] la probabilité de tirer 0 boule bleue est 
+\[0,7\times 0,7=0,49~;\]
+\item[\textbullet] la probabilité de tirer 1 boule bleue est 
+\[0,3\times 0,7+0,7\times 0,3=0,42.\]
+\end{itemize}
+
+
+
+\medskip
+
+La loi de $X$ est donc donnée par le tableau~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|}
+\hline
+    valeurs de $X$     & 0      & 1       & 2   \\
+\hline
+probabilités & $0,49$ &$0,42$ &$0,09$      \\
+\hline
+\end{tabular}
+\end{center}
+
+\item L'espérance de $X$ est \[E(X)=0,49\times 0+0,42\times 1+0,09\times 2=0,6.\]
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+
+
+
+\begin{enumerate}
+\item On construit un arbre pondéré en indiquant à droite la masse de la dragée.
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$A$}\taput{$0,30$}}
+	{
+	\Tr{$B$}~[tnpos=r]{~~\textcolor{blue}{masse~: 5~g}}\taput{$0,40$} 
+	\Tr{$\overline{B}$}~[tnpos=r]{~~\textcolor{pink!80!black}{masse~: 4~g}}\tbput{$0,60$}
+		}	
+\pstree{\Tr{$\overline{A}$}\tbput{$0,70$}}
+	{
+	\Tr{$B$}~[tnpos=r]{~~\textcolor{blue}{masse~: 5~g}}\taput{$0,75$} 
+	\Tr{$\overline{B}$}~[tnpos=r]{~~\textcolor{pink!80!black}{masse~: 4~g}}\tbput{$0,25$}
+		}
+}
+\end{center}
+\item Les valeurs possibles de $X$ sont 4 et 5. Calculons les probabilités correspondantes~:
+
+\begin{itemize}
+\item[\textbullet] la probabilité de choisir une dragée bleue (donc de masse 5~g) est~:
+\[0,30\times 0,40+0,70\times 0,75=0,645~;\]
+\item[\textbullet] la probabilité de choisir une dragée rose (donc de masse 4~g) est~:
+\[0,30\times 0,60+0,70\times 0,25=0,355.\]
+\end{itemize}
+
+\medskip
+
+La loi de $X$ est donc donnée par le tableau~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|}
+\hline
+    valeurs de $X$     & 5      & 4  \\
+\hline
+probabilités & $0,645$ &$0,355$      \\
+\hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+Enfin, l'espérance de $X$ est \[E(X)=0,645\times 5+0,355\times 4=4,645.\]
+
+\medskip
+
+\textbf{Remarque~:} La masse moyenne d'une dragée est de 4,645~g.
+\end{enumerate}
+
+\end{exo}
+
 
 \end{document}
