@@ -8042,4 +8042,100 @@ La moyenne de ces 5 nouveaux nombres est
 \end{exo}
 
 
+\begin{exo}
+
+On range les données par ordre croissant~:
+
+\[ 3 - 5 - 7 - \fbox{10} - 12 - 18 - 25\]
+
+Il y a un nombre impair de données, donc la médiane est la valeur centrale~: $m_e=10.$
+
+
+
+\end{exo}
+
+
+\begin{exo}
+
+On range les âges par ordre croissant~:
+
+\[24 -25 - 26 - 28 - \fbox{28 - 29} - 30 - 32 - 33 - 34\]
+
+Il y a un nombre pair de données, donc la médiane est la moyenne des deux valeurs centrales~:
+\[m_e=\frac{28+29}{2}=28,5~\text{ans}.\]
+
+
+\end{exo}
+
+
+
+
+
+\begin{exo}
+
+Il est agréable d'ajouter une ligne avec les effectifs cumulés croissantes (notés e.c.c. ci-dessous). On les obtient en ajoutant les effectifs de proche en proche~:
+\[4+5=9,~9+5=14,~14+5=19,~19+5=24,~24+2=26,~26+3=29,~29+1=30,~30+1=31.\]
+
+On obtient le tableau~:
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+\hline
+Temps (en jours)&17&18&19&20&21&22&24&25&30\\
+\hline
+    Nombre de concurrents&4&5&5&5&5&2&3&1&1 \\ \hline
+    e.c.c.&4&9&14&19&24&26&29&30&31\\
+	\hline
+   
+\end{tabular}
+\end{center}
+
+
+\medskip
+
+Les e.c.c. s'interprètent de la façon suivante~: le \og 26 \fg~{} en dessous du \og 22 \fg~{} signifie que 26 concurrents ont mis moins de 22 jours à finir la course.
+
+\medskip
+
+Venons-en à la médiane. $n=31$ concurrents ont fini la course, donc la médiane est le nombre de jours mis par le $\frac{n+1}{2}=\frac{31+1}{2}=\frac{32}{2}=16$\up{e} concurrent. D'après la ligne avec les e.c.c., cette médiane est de 20 jours. En effet, 14 concurrents ont mis moins de 19 jours, et 19 en ont mis moins de 20, donc le 16\up{e} a mis 20 jours pour terminer la course.
+
+\medskip
+
+Conclusion~: $m_e=20~\text{jours}.$
+
+\medskip
+
+\textbf{Remarque~:} une méthode moins élégante consiste à énumérer par ordre croissants les résultats de tous les concurrents (en écrivant autant de fois chaque durée qu'il y a de concurrents l'ayant réalisée)~:
+
+\[17-17-17-17-18-18-18-18-18-19-19-19-19-19-20-\fbox{20}-20-20-20-21-21-21-21-21-22-22-24-24-24-25-30\]
+
+Bon courage avec cette méthode si la série est de longueur \np{10000}...
+
+
+\end{exo}
+
+\begin{exo}
+
+On complète une ligne avec les effectifs cumulés croissants (e.c.c.).
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+
+   Nombre de TV &$0$ &$1$ &$2$ &$3$&$4$&$5$\\
+	\hline
+   Effectif &$4$&$19$&$15$&$9$&$3$&$2$ \\
+	\hline
+	e.c.c. &$4$&$23$&$38$&$47$&$50$&$52$ \\
+	\hline
+
+\end{tabular}
+\end{center}
+
+$\frac{n+1}{2}=\frac{52+1}{2}=\frac{53}{2}=26,5,$ donc pour avoir la médiane, on calcule la moyenne du nombre de TV de la 26\up{e} et de la 27\up{e} personnes~: toutes les deux ont 2 TV, donc 
+\[m_e=\frac{2+2}{2}=2.\]
+
+\end{exo}
+
+
 \end{document}
