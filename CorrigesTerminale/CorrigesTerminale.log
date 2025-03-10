@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  7 MAR 2025 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  10 MAR 2025 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2245,11 +2245,11 @@ Overfull \hbox (1.11482pt too wide) detected at line 12837
  []
 
 [131] [132] [133]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 13130.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 13130.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 13206.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 13206.
  (./CorrigesTerminale.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 13130.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 13130
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 13206.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 13206
 .
 Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 (rerunfilecheck)             Checksum: B3B7E3FF5C923EAB1D8DCEFF332DDBC1;791.
@@ -2258,7 +2258,7 @@ Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 13130.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 13206.
  ) 
 Here is how much of TeX's memory you used:
  41238 strings out of 483041
@@ -2269,4 +2269,4 @@ Here is how much of TeX's memory you used:
  81 hyphenation exceptions out of 8191
  60i,20n,75p,919b,2445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesTerminale.dvi (133 pages, 3762296 bytes).
+Output written on CorrigesTerminale.dvi (133 pages, 3824324 bytes).
