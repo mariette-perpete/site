@@ -13203,4 +13203,265 @@ On note $f$ la fonction. On construit la courbe en deux étapes~:
 \textbf{Remarque~:} Bilan des deux exercices précédents~: si $f$ est paire (ou impaire) et $T$-périodique, on obtient sa courbe sur $\mathbb{R}$ tout entier à partir de la courbe sur l'intervalle $\left[0;\frac{T}{2}\right].$
 
 
+\newpage
+\begin{exo}
+
+
+\begin{enumerate}
+\item \begin{multicols}{2}
+
+Pour tout réel $x~:$
+
+\begin{itemize}
+\item[\textbullet] \[f(-x)=\sin (2\times (-x))=\sin(-2x)=-\sin(2x)=-f(x),\] donc $f$ est impaire.
+\item[\textbullet] \[f(x+\pi)=\sin (2(x+\pi))=\sin(2x+2\pi)=\sin(2x)=f(x),\] donc $f$ est $\pi$-périodique.
+\end{itemize}
+
+
+\medskip
+
+\textbf{Remarque~:} On construit la courbe sur $\left[0;\frac{\pi}{2}\right],$ puis on complète par parité et par périodicité.
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.7,-2.14)(3.86,1.72)
+\multips(0,-2)(0,1.0){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.7,0)(3.86,0)}
+\multips(-3,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.14)(0,1.72)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.7,-2.14)(3.86,1.72)
+\psplot[linewidth=2.pt,plotpoints=200]{0}{1.5708}{SIN(2.0*x)}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=green]{1.5708}{3.8600000000000088}{SIN(2.0*x)}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=green]{-3.8600000000000088}{-1.5708}{SIN(2.0*x)}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=blue]{-1.5708}{0}{SIN(2.0*x)}
+\rput[tl](1.42,-0.17){$\frac{\pi}{2}$}
+\psdots[dotsize=6pt,dotstyle=*](1.5707963267948966,0.)
+\psdots[dotsize=6pt 0,dotstyle=*,linecolor=red](0.,0.)
+\psdots[dotstyle=*,linecolor=blue](-1.5707963267948966,0.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(0.,-1.4)(-1.5708,-1.4)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(0.,-1.4)(1.5708,-1.4)
+\rput[tl](0.15,-1.56){\xfqqff{$\pi$}}
+\end{pspicture*}
+\end{center}
+
+\end{multicols}
+
+
+
+\item \begin{multicols}{2}
+
+Pour tout réel $x~:$
+
+\begin{itemize}
+\item[\textbullet] \[g(-x)=\left(\sin (-x)\right)^2=(-\sin x)^2=\sin^2(x)=g(x),\] donc $g$ est paire.
+\item[\textbullet] \[g(x+\pi)=\left(\sin (x+\pi)\right)^2=\left(-\sin x\right)^2=\sin^2 x=g(x),\] donc $g$ est $\pi$-périodique.
+\end{itemize}
+
+
+\medskip
+
+\textbf{Remarque~:} On construit la courbe sur $\left[0;\frac{\pi}{2}\right],$ puis on complète par parité et par périodicité.
+
+\columnbreak
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.7,-1.14)(3.86,1.72)
+\multips(0,-2)(0,1.0){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.7,0)(3.86,0)}
+\multips(-3,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.14)(0,1.72)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.7,-2.14)(3.86,1.72)
+\psplot[linewidth=2.pt,plotpoints=200]{0}{1.5708}{(SIN(x))^2}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=green]{1.5708}{3.8600000000000088}{(SIN(x))^2}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=green]{-3.8600000000000088}{-1.5708}{(SIN(x))^2}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=blue]{-1.5708}{0}{(SIN(x))^2}
+\rput[tl](1.5,-0.17){$\frac{\pi}{2}$}
+\psdots[dotsize=6pt,dotstyle=*](1.5707963267948966,0.)
+\psline[linewidth=3.pt,linecolor=red](0.,-2.14)(0.,1.72)
+\psdots[dotstyle=*,linecolor=blue](-1.5707963267948966,0.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(0.,-0.4)(-1.5708,-0.4)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(0.,-0.4)(1.5708,-0.4)
+\psline[linewidth=2.pt,linestyle=dotted](1.5707963267948966,0.)(1.5707963267948966,1.)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](-1.5707963267948966,0.)(-1.5707963267948966,1.)
+\rput[tl](0.15,-0.56){\xfqqff{$\pi$}}
+\end{pspicture*}
+\end{center}
+
+\end{multicols}
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+On note $H$ le point d'intersection de $(MN)$ avec l'axe des ordonnées.
+
+
+
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=2.5cm,yunit=2.5cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.427577717200004,-0.47954985021969676)(1.2598904926804069,1.3056275888344413)
+\multips(0,0)(0,0.5){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.427577717200004,0)(1.2598904926804069,0)}
+\multips(-1,0)(0.5,0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.47954985021969676)(0,1.3056275888344413)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.427577717200004,-0.47954985021969676)(1.2598904926804069,1.3056275888344413)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!10!white,fillstyle=solid,opacity=0.1](-0.6195551066785596,0.7849531638725818)(0.,0.)(0.6195551069327276,0.7849531638725818)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!30!white,fillstyle=solid,opacity=0.1](0.,0.5791415759199057)(0.2058115879526762,0.5791415759199057)(0.20581158795267618,0.7849531638725818)(0.,0.7849531638725818)
+\psplot[linewidth=2.pt,plotpoints=200]{-0.9999988375398147}{0.9999986999264231}{sqrt(1.0-x^(2.0))}
+\psline[linewidth=2.pt,linecolor=xfqqff](-0.6195551066785596,0.7849531638725818)(0.,0.)
+\psline[linewidth=2.pt,linecolor=xfqqff](0.,0.)(0.6195551069327276,0.7849531638725818)
+\psline[linewidth=2.pt,linecolor=xfqqff](0.6195551069327276,0.7849531638725818)(-0.6195551066785596,0.7849531638725818)
+\pscustom[linewidth=2.pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.1]{
+\parametricplot{-0.0}{0.9026205270305176}{0.2910615389762178*cos(t)+0.|0.2910615389762178*sin(t)+0.}
+\lineto(0.,0.)\closepath}
+\rput[tl](0.3090894653580954,0.20333681800816495){\red{$\theta$}}
+\psline[linewidth=2.pt](0.,-0.47954985021969676)(0.,1.3056275888344413)
+\psline[linewidth=2.pt](0.,0.)(-0.6195551066785596,0.7849531638725818)
+\psline[linewidth=2.pt](-0.6195551066785596,0.7849531638725818)(0.6195551069327276,0.7849531638725818)
+\psline[linewidth=2.pt](0.6195551069327276,0.7849531638725818)(0.,0.)
+\psdots[dotsize=1pt 0,dotstyle=*](0.6195551069327276,0.7849531638725818)
+\rput[bl](0.6583633121295568,0.8011209212756631){$M$}
+\psdots[dotsize=1pt 0,dotstyle=*](0.,0.)
+\rput[bl](0.05683613157870667,-0.20789241384189314){$O$}
+\psdots[dotsize=1pt 0,dotstyle=*](1.,0.)
+\rput[bl](1.0367433127986398,0.05){$I$}
+\psdots[dotsize=1pt 0,dotstyle=*](-0.6195551066785596,0.7849531638725818)
+\rput[bl](-0.719327972357874,0.8399291264724922){$N$}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=darkgray](0.,0.7849531638725818)
+\rput[bl](0.05683613157870667,0.83){\darkgray{$H$}}
+\end{pspicture*}
+\end{center}
+
+L'aire du triangle $OMN$ est 
+\[\mathcal{A}_{OMN}=\frac{B\times h}{2}=\frac{MN\times OH}{2}.\]
+
+Or $OH=\sin\theta$ et $MN=2\cos\theta,$ donc
+\[\mathcal{A}_{OMN}=\frac{2\cos\theta\times \sin\theta}{2}=\sin\theta \cos\theta.\]
+
+Nous sommes ainsi ramenés à déterminer la valeur de $\theta$ pour laquelle la fonction définie sur $\left[0;\frac{\pi}{2}\right]$ par $f(\theta)= \sin\theta\times \cos\theta$ atteint son maximum, ce que nous faisons via l'étude des variations.
+
+\medskip
+
+On utilise la formule pour la dérivée d'un produit avec
+
+\begin{alignat*}{3}
+&u(\theta)=\sin\theta,&& \hspace{1cm}&&v(\theta)=\cos \theta, \\
+& u'(\theta)=\cos\theta,&& &&v'(\theta)=-\sin\theta.\\
+\end{alignat*}
+
+On obtient, pour tout $\theta\in \left[0;\frac{\pi}{2}\right]~:$
+
+\begin{align*}
+f'(\theta)&=\cos\theta\times\cos \theta+\sin\theta\times(-\sin\theta)\\
+&=\cos^2\theta-\sin^2\theta.
+\end{align*}
+
+
+
+\begin{multicols}{2}
+
+
+On résout l'équation dans $\left[0;\frac{\pi}{2}\right]~:$
+
+\[\cos^2\theta-\sin^2\theta=0\iff \cos^2\theta=\sin^2\theta\iff \left(\cos \theta=\sin\theta~\text{ou}~\cos \theta=-\sin\theta\right).\]%\theta\iff\left(\cos\theta=\sin\theta~\text{ou}~
+%\cos\theta=-\sin\theta.\]
+
+On cherche donc les points en haut à droite du cercle trigonométrique qui vérifient l'une des deux conditions suivantes~:
+
+
+\begin{itemize}
+\item[\textcircled{\scriptsize{1}}] L'abscisse et l'ordonnée sont égales (équation $\cos \theta=\sin\theta$). Cela se produit uniquement quand $x=\frac{\pi}{4}$ (cf pointillés verts).
+\item[\textcircled{\scriptsize{2}}] L'abscisse et l'ordonnée sont opposées (équation $\cos \theta=-\sin\theta$). Cela ne se produit jamais dans cette partie du cercle trigonométrique (cf pointillés magenta).
+\end{itemize}
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\multips(0,-1)(0,0.5){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.3475212227871955,0)(1.4,0)}
+\multips(-1,0)(0.5,0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.0924958689194642)(0,1.4)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.3475212227871955,-1.0924958689194642)(1.6,1.6)
+\pscircle[linewidth=2.pt](0.,0.){2.}
+\psplot[linewidth=2.pt,plotpoints=200]{-1}{1}{sqrt(1.0-x^(2.0))}
+\psplot[linewidth=2.pt,plotpoints=200]{-1}{1}{-sqrt(1.0-x^(2.0))}
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{0}{1}{sqrt(1.0-x^(2.0))}
+\rput[tl](1.2572917160553207,-0.07626916090404){\blue{COS}}
+\rput[tl](-0.38,1.244){\blue{SIN}}
+\rput[tl](0.1,1.22){\red{$\frac{\pi}{2}$}}
+\rput[tl](1.06,0.15){\red{$0$}}
+\rput[tl](0.8,0.85){\green{$\frac{\pi}{4}$}}
+\rput[tl](-0.27,0.82){\blue{$\frac{\sqrt{2}}{2}$}}
+\rput[tl](0.60,-0.03){\blue{$\frac{\sqrt{2}}{2}$}}
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=green](0.707,0.707)(-0.707,-0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=magenta](-0.707,0.707)(0.707,-0.707)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,0.707)(0.707,0)
+\psline[linewidth=2.pt,linestyle=dotted,linecolor=blue](0.707,0.707)(0,0.707)
+\psdots[dotstyle=*,linecolor=red](0.,1.)
+\psdots[dotstyle=*,linecolor=red](1.,0.)
+\psdots[dotstyle=*,linecolor=green](0.707,0.707)
+\end{pspicture*}
+\end{center}
+
+\end{multicols}
+
+\medskip
+
+Conclusion~: l'équation $\cos^2\theta-\sin^2\theta=0$ a pour unique solution $\theta=\frac{\pi}{4}$ dans $\left[0;\frac{\pi}{2}\right]~;$ on obtient ainsi~:
+
+\medskip
+
+\begin{multicols}{2}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$\theta$/1,$f'(\theta)$/1,$f(\theta)$/2}{$0$,$\frac{\pi}{4}$,$\frac{\pi}{2}$}
+\tkzTabLine{,+,z,-,}
+\tkzTabVar{-/,+/,-/}
+\end{tikzpicture}
+\end{center}
+
+On obtient le signe de la dérivée en remplaçant par des valeurs de $\theta.$ Par exemple, pour la case $\left[0;\frac{\pi}{4}\right],$ on prend $\theta=0$ et on calcule~:
+\[f'(0)=\cos^2 0-\sin^2 0=1^2-0^2=1\qquad\text{du signe}~\oplus.\]
+
+\end{multicols}
+
+\medskip
+
+
+La fonction $f$ atteint son maximum pour $\theta=\frac{\pi}{4},$ donc l'aire du triangle $OMN$ est maximale pour cette même valeur de $\theta.$
+
+
+
+%Or on sait (cf ex \ref{AB}) que $\cos^2\theta+\sin^2\theta=1,$ donc $\sin^2\theta=1-\cos^2\theta$ et on peut prolonger la résolution de l'équation comme suit~:
+%\[\cos^2\theta=\sin^2\theta\iff \cos^2\theta=1-\cos^2\theta\iff \cos^2\theta+\cos^2\theta=1\iff
+%\cos^2\theta=\frac{1}{2}\iff \left(\cos\theta=\sqrt{\frac{1}{2}}=\right)\]
+\end{exo}
+\begin{exo}
+
+ On pose $f(x)= \cos^2 x+\sin^2 x$ pour $x\in\mathbb{R}.$
+
+\medskip
+
+On calcule la dérivée grâce à la formule\footnote{C'est un cas particulier de la formule $\left(u^n\right)'=n\times u'\times u^{n-1}.$} $\left(u^2\right)'=2\times u'\times u,$  que l'on utilise deux fois.
+
+Pour tout $x\in\mathbb{R}~:$
+
+
+\begin{align*}
+f'(x)&=2\times (-\sin x)\times \cos x +2\times \cos x\times \sin x
+\\&=-2\sin x\cos x+2\sin x\cos x
+\\&=0.
+\end{align*}
+
+\medskip
+
+La dérivée étant nulle, la fonction $f$ est constante sur $\mathbb{R}.$ Et comme 
+$f(0)=\cos^2 0+\sin^2 0=1^2+0^2=1,$ elle est constante égale à $1.$ Autrement dit, pour tout réel $x~:$
+\[\cos^2 x+\sin^2 x=1.\]
+
+
+
+\end{exo}
+
 \end{document}

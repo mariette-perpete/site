@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  10 MAR 2025 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  12 MAR 2025 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2244,12 +2244,32 @@ Overfull \hbox (1.11482pt too wide) detected at line 12837
 []
  []
 
-[131] [132] [133]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 13206.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 13206.
+[131] [132] [133] [134]
+Overfull \hbox (46.1954pt too wide) detected at line 13368
+[][] \FML/futmi/m/it/10 ^^R \FMS/futm/m/n/10 ^^@ [][] \FML/futmi/m/it/10 ^^R \F
+MS/futm/m/n/10 Å \T1/futs/m/n/10 0  \FMS/futm/m/n/10 ([])  [][] \FML/futmi/m/it
+/10 ^^R \FMS/futm/m/n/10 Å [][] \FML/futmi/m/it/10 ^^R  \FMS/futm/m/n/10 ([])  
+[] \FML/futmi/m/it/10 :
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+futs on input line 
+13375.
+LaTeX Font Info:    No file OMSfuts.fd. on input line 13375.
+
+LaTeX Font Warning: Font shape `OMS/futs/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead on input line 13375.
+
+
+Underfull \hbox (badness 8113) in paragraph at lines 13376--13377
+[]\T1/futs/m/n/10 L'abscisse et l'or-don-nÈe sont op-po-sÈes (Èqua-tion
+ []
+
+[135]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 13467.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 13467.
  (./CorrigesTerminale.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 13206.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 13206
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 13467.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 13467
 .
 Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 (rerunfilecheck)             Checksum: B3B7E3FF5C923EAB1D8DCEFF332DDBC1;791.
@@ -2258,15 +2278,18 @@ Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 13206.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 13467.
  ) 
 Here is how much of TeX's memory you used:
- 41238 strings out of 483041
- 750698 string characters out of 5962452
+ 41248 strings out of 483041
+ 750825 string characters out of 5962452
  1458770 words of memory out of 5000000
- 55415 multiletter control sequences out of 15000+600000
+ 55423 multiletter control sequences out of 15000+600000
  703426 words of font info for 218 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  60i,20n,75p,919b,2445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesTerminale.dvi (133 pages, 3824324 bytes).
+Output written on CorrigesTerminale.dvi (135 pages, 3958664 bytes).

@@ -4314,4 +4314,313 @@ Enfin, l'espérance de $X$ est \[E(X)=0,645\times 5+0,355\times 4=4,645.\]
 \end{exo}
 
 
+\begin{exo}
+
+
+\begin{enumerate}
+\item On construit un arbre pondéré en indiquant à droite le prix du repas.
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$K$}\taput{$0,30$}}
+	{
+	\Tr{$S$}~[tnpos=r]{~~\textcolor{blue}{prix~: 3~\euro}}\taput{$0,50$} 
+	\Tr{$\overline{S}$}~[tnpos=r]{~~\textcolor{red}{prix~: 5~\euro}}\tbput{$0,50$}
+		}	
+\pstree{\Tr{$\overline{K}$}\tbput{$0,70$}}
+	{
+	\Tr{$S$}~[tnpos=r]{~~\textcolor{blue}{prix~: 3~\euro}}\taput{$0,60$} 
+	\Tr{$\overline{S}$}~[tnpos=r]{~~\textcolor{red}{prix~: 5~\euro}}\tbput{$0,40$}
+		}
+}
+\end{center}
+\item Les valeurs possibles de $X$ sont 3 et 5. Calculons les probabilités correspondantes~:
+
+\begin{itemize}
+\item[\textbullet] la probabilité de prendre le menu simple (et donc de payer 3~\euro) est~:
+\[0,30\times 0,50+0,70\times 0,60=0,57~;\]
+\item[\textbullet] la probabilité de prendre le menu complet (et donc de payer 5~\euro) est~:
+\[0,30\times 0,50+0,70\times 0,40=0,43.\]
+\end{itemize}
+
+\medskip
+
+La loi de $X$ est donc donnée par le tableau~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|}
+\hline
+    valeurs de $X$     & 3      & 5  \\
+\hline
+probabilités & $0,57$ &$0,43$      \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\item L'espérance de $X$ est \[E(X)=0,57\times 3+0,43\times 5=3,86.\] C'est le prix moyen payé par repas.
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+
+
+
+\begin{enumerate}
+\item On représente la situation par un arbre pondéré, avec de gauche à droite le résultat du 1\up{er} lancer, du 2\up{e} et du 3\up{e}. On note $4$ pour \og le dé tombe sur 4 \fg, et $\cancel{4}$ pour l'événement contraire. \`A chaque lancer, la probabilité d'obtenir 4 est $\frac{1}{4},$ donc les probabilités sont les mêmes sur toutes les branches ($\frac{1}{4}$~/~$\frac{3}{4}$). Enfin, on travaille avec des fractions pour éviter d'avoir des résultats avec 6 chiffres après la virgule.
+
+\medskip
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$4$}\taput{$\frac{1}{4}$}}
+	{
+	\pstree{\Tr{$4$}\taput{$\frac{1}{4}$}}
+	{
+	\Tr{$4$}~[tnpos=r]{~~\textcolor{red}{on a 3 fois le 4}}\taput{$\frac{1}{4}$}
+	\Tr{$\cancel{4}$}~[tnpos=r]{~~\textcolor{blue}{on a 2 fois le 4}}\tbput{$\frac{3}{4}$}
+		}
+	\pstree{\Tr{$\cancel{4}$}\tbput{$\frac{3}{4}$}}
+	{
+	\Tr{$4$}~[tnpos=r]{~~\textcolor{blue}{on a 2 fois le 4}}\taput{$\frac{1}{4}$}
+	\Tr{$\cancel{4}$}~[tnpos=r]{~~\textcolor{green}{on a 1 fois le 4}}\tbput{$\frac{3}{4}$}
+		}
+		}	
+\pstree{\Tr{$\cancel{4}$}\tbput{$\frac{3}{4}$}}
+	{
+	\pstree{\Tr{$4$}\taput{$\frac{1}{4}$}}
+	{
+	\Tr{$4$}~[tnpos=r]{~~\textcolor{blue}{on a 2 fois le 4}}\taput{$\frac{1}{4}$}
+	\Tr{$\cancel{4}$}~[tnpos=r]{~~\textcolor{green}{on a 1 fois le 4}}\tbput{$\frac{3}{4}$}
+		}
+	\pstree{\Tr{$\cancel{4}$}\tbput{$\frac{3}{4}$}}
+	{
+	\Tr{$4$}~[tnpos=r]{~~\textcolor{green}{on a 1 fois le 4}}\taput{$\frac{1}{4}$}
+	\Tr{$\cancel{4}$}~[tnpos=r]{~~\textcolor{gray}{on a 0 fois le 4}}\tbput{$\frac{3}{4}$}
+		}
+		}
+}
+\end{center}
+
+\medskip
+
+On a indiqué le nombre de 4 obtenus à l'extrémité droite de l'arbre, avec une couleur différente en fonction de la réponse. Par exemple, lorsqu'on suit le chemin tout en haut, on obtient 4 au 1\up{er}, au 2\up{e} et au 3\up{e} lancers, d'où l'indication \textcolor{red}{on a 3 fois le 4} en haut à droite.
+\item Les valeurs possibles de $X$ sont 0, 1, 2 et 3. Calculons les probabilités correspondantes~:
+
+\begin{itemize}
+\item[\textbullet] la probabilité d'obtenir 3 fois le 4 est~:
+\[\frac{1}{4}\times \frac{1}{4}\times \frac{1}{4}=\frac{1}{64}~;\]
+\item[\textbullet] la probabilité d'obtenir 2 fois le 4 est~:
+\[\frac{1}{4}\times \frac{1}{4}\times \frac{3}{4}+\frac{1}{4}\times \frac{3}{4}\times \frac{1}{4}+\frac{3}{4}\times \frac{1}{4}\times \frac{1}{4}=\frac{3}{64}+\frac{3}{64}+\frac{3}{64}=\frac{9}{64}~;\]
+\item[\textbullet] la probabilité d'obtenir 1 fois le 4 est~:
+\[\frac{1}{4}\times \frac{3}{4}\times \frac{3}{4}+\frac{3}{4}\times \frac{1}{4}\times \frac{3}{4}+\frac{3}{4}\times \frac{3}{4}\times \frac{1}{4}=\frac{9}{64}+\frac{9}{64}+\frac{9}{64}=\frac{27}{64}~;\]
+\item[\textbullet] la probabilité d'obtenir 0 fois le 4 est~:
+\[\frac{3}{4}\times \frac{3}{4}\times \frac{3}{4}=\frac{27}{64}.\]
+\end{itemize}
+
+\medskip
+
+La loi de $X$ est donc donnée par le tableau~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+    valeurs de $X$     & 3&2&1&0  \\
+\hline
+probabilités & $\frac{1}{64}$ & $\frac{9}{64}$& $\frac{27}{64}$& $\frac{27}{64}$      \\
+\hline
+\end{tabular}
+\end{center}
+\item L'espérance de $X$ est \[\frac{1}{64}\times 3+\frac{9}{64}\times 2+\frac{27}{64}\times 1+\frac{27}{64}\times 0=\frac{3}{64}+\frac{18}{64}+\frac{27}{64}=\frac{48}{64}=0,75.\]
+\end{enumerate}
+
+\end{exo}
+
+
+
+\section{Évolutions successives}
+
+
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item $100~\%-10~\%=90~\%=0,90$ et $100~\%+20~\%=120~\%=1,20,$ d'où le schéma~:
+
+\medskip
+
+\begin{center}
+$\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+\txt{85} \ar@/^0.5cm/[r]|{\red{\times 0,90}} & 
+    *+[F]+\txt{\green{76,5}} \ar@/^0.5cm/[r]|{\red{\times 1,20}} & *+[F]+\txt{\green{91,8}} \\
+    \txt{\blue{prix 2016}}&
+    \txt{\blue{prix 2017}}&\txt{\blue{prix 2018}}
+    }$
+    
+    \end{center}
+    
+    \medskip
+    
+    \textbf{N.B.} On obtient les prix 2017 et 2018 en faisant les calculs~:
+    \begin{align*}
+    85\times 0,90&=76,5,\\ 76,5\times 1,20&=91,8.\end{align*}
+    
+\item Pour calculer le taux d'évolution global entre 2016 et 2018, on complète le schéma~:
+
+\begin{center}
+$\xymatrix@R=0.5pc@C=4pc{
+    *+[F]+\txt{85} \ar@/^0.5cm/[r]|{\red{\times ~{?~?~?}}} & 
+    *+[F]+\txt{91,8}  \\
+    \txt{\blue{prix 2016}}&
+    \txt{\blue{prix 2018}}}$
+    
+    \end{center}
+    
+    \medskip
+    
+    $91,8\div 85=1,08=108~\%,$ donc le taux d'évolution des prix entre 2016 et 2018 est $+8~\%$
+    
+    \medskip
+    
+    \textbf{N.B.} On peut obtenir la réponse plus rapidement en faisant le calcul $0,90\times 1,20=1,08.$
+
+
+\end{enumerate}
+
+
+
+\end{exo}
+
+
+\begin{exo}
+
+
+
+Le tableau ci-dessous donne le prix moyen de l'eau en France entre 2008 et 2010 (\textit{Source~: ONSEA}).
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|c|c|c|c|}
+\hline
+   Année &2008&2009&2010 \\
+	\hline
+	Prix (en \euro/$\text{m}^3$) &1,82&& \\
+	\hline
+	Taux d'évolution&\cellcolor{gray}&$+5,50~\%$&$+7,81~\%$ \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item Rappelons que  10~cm=1~dm~; et que la définition du litre est~:
+\[1~\ell=1~\text{dm}^3.\] Autrement dit, un litre est le volume d'un cube qui mesure 1~dm sur 1~dm sur 1~dm, ou encore 10~cm sur 10~cm sur 10~cm (la figure ci-dessous n'est bien sûr pas à l'échelle).
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.42,-1.12)(4.42,3.5)
+\psline[linewidth=2.pt](0.,0.)(2.,0.)
+\psline[linewidth=2.pt](2.,0.)(2.,2.)
+\psline[linewidth=2.pt](2.,2.)(0.,2.)
+\psline[linewidth=2.pt](0.,2.)(0.,0.)
+\psline[linewidth=2.pt](0.,2.)(1.,3.)
+\psline[linewidth=2.pt](1.,3.)(3.,3.)
+\psline[linewidth=2.pt](2.,2.)(3.,3.)
+\psline[linewidth=2.pt](2.,0.)(3.,1.)
+\psline[linewidth=2.pt](3.,3.)(3.,1.)
+\rput[tl](0.58,-0.16){1~dm}
+\rput[tl](-1.,1.14){1~dm}
+\rput[tl](2.7,0.52){1~dm}
+\rput[tl](0.92,1.24){$1~\ell$}
+\end{pspicture*}
+\end{center}
+
+Dans 1~m\up{3}, on met 10 petits cubes comme celui ci-dessus en largeur, 10 en profondeur et 10 en hauteur, donc
+\[1~\text{m}^3=10\times 10\times 10=\np{1000}~\ell.\] On peut aussi se souvenir du tableau de conversion présenté au collège~:
+
+\medskip
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|c|c|c|c|}
+\hline
+   m\up{3} &&&dm\up{3}$=\ell$ \\
+	\hline
+	1 &0&0&0  \\ \hline
+\end{tabular}
+\end{center}
+
+
+\item $100~\%+5,50~\%=105,50~\%=1,055$ et $100~\%+7,81~\%=107,81~\%=\np{1,0781}$ donc pour obtenir le prix du m\up{3} en 2009 et en 2010, on complète le schéma~:
+
+\begin{center}
+$\xymatrix@R=0.5pc@C=3pc{
+    *+[F]+\txt{1,82} \ar@/^0.5cm/[r]|{\red{\times 1,055}} & 
+    *+[F]+\txt{\green{1,92}} \ar@/^0.5cm/[r]|{\red{\times \np{1,0781}}} & *+[F]+\txt{\green{2,07}} \\
+    \txt{\blue{prix 2008}}&
+    \txt{\blue{prix 2009}}&\txt{\blue{prix 2010}}
+    }$
+    
+    \end{center}
+    
+    \medskip
+    
+    \textbf{N.B.} On obtient les prix 2009 et 2010 en faisant les calculs~:
+    \begin{align*}
+    1,82\times 1,055&\approx 1,92,\\ 1,92\times \np{1,0781}&\approx 2,07.\end{align*}
+    
+    \medskip
+    
+    On obtient finalement le tableau~:
+    
+    \begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|c|c|c|c|}
+\hline
+   Année &2008&2009&2010 \\
+	\hline
+	Prix (en \euro/$\text{m}^3$) &1,82&1,92&2,07 \\
+	\hline
+	Taux d'évolution&\cellcolor{gray}&$+5,50~\%$&$+7,81~\%$ \\ \hline
+\end{tabular}
+\end{center}
+
+\item Pour déterminer le taux d'évolution global entre 2008 et 2010, on complète le schéma~:
+
+
+\begin{center}
+$\xymatrix@R=0.5pc@C=4pc{
+    *+[F]+\txt{1,82} \ar@/^0.5cm/[r]|{\red{\times ~{?~?~?}}} & 
+    *+[F]+\txt{2,07}  \\
+    \txt{\blue{prix 2008}}&
+    \txt{\blue{prix 2010}}}$
+    
+    \end{center}
+    
+    \medskip
+    
+    $2,07\div 1,82\approx\np{1,1374}=113,74~\%,$ donc le taux d'évolution du prix entre 2008 et 2010 est $+13,74~\%$
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
