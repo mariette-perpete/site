@@ -8301,7 +8301,129 @@ Conclusion~: seule la multiplication par $0,8$ a une incidence sur l'écart-type
 \end{exo}
 
 
+\setcounter{section}{15}
 
+\section{Trigonométrie}
+
+\setcounter{exo}{179}
+
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item ~{}
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.08,-0.44)(6.04,4.66)
+\psline[linewidth=2.pt](1.,1.)(4.,1.)
+\psline[linewidth=2.pt](2.5,1.12)(2.5,0.88)
+\psline[linewidth=2.pt](4.,1.)(4.,4.)
+\psline[linewidth=2.pt](3.88,2.5)(4.12,2.5)
+\psline[linewidth=2.pt](4.,4.)(1.,4.)
+\psline[linewidth=2.pt](2.5,3.88)(2.5,4.12)
+\psline[linewidth=2.pt](1.,4.)(1.,1.)
+\psline[linewidth=2.pt](1.12,2.5)(0.88,2.5)
+\psline[linewidth=2.pt](1.,1.)(4.,4.)
+\psline[linewidth=2.pt](1.,1.)(5.098076211353316,-0.09807621135331601)
+\psline[linewidth=2.pt](3.031800099774507,0.5798139457331556)(2.9696835289499015,0.3479917474237798)
+\psline[linewidth=2.pt](3.128392682403414,0.5539320412229037)(3.0662761115788086,0.322109842913528)
+\psline[linewidth=2.pt](5.098076211353316,-0.09807621135331601)(4.,4.)
+\psline[linewidth=2.pt](4.446067958777096,1.871607317596586)(4.677890157086472,1.9337238884211911)
+\psline[linewidth=2.pt](4.4201860542668445,1.968199900225493)(4.652008252576221,2.0303164710500985)
+\psline[linewidth=2.pt](4.,1.)(5.098076211353316,-0.09807621135331601)
+\psline[linewidth=2.pt](4.,1.)(1.,4.)
+\rput[bl](0.68,1.08){$K$}
+\rput[bl](3.78,0.68){$L$}
+\rput[bl](4.08,4.04){$M$}
+\rput[bl](0.6,4.){$N$}
+\rput[bl](5.18,-0.06){$O$}
+\end{pspicture*}
+\end{center}
+\item On note $\Delta$ la médiatrice du segment $\left[MK\right].$ On rappelle que c'est~:
+\begin{itemize}
+\item[\textbullet] \textit{Définition.} La perpendiculaire à $\left[MK\right]$ passant par son milieu~;
+\item[\textbullet] \textit{Caractérisation.} L'ensemble des points qui se trouvent à égale distance de $M$ et de $K.$
+\end{itemize}
+
+\medskip
+
+$KLMN$ est un carré, donc $NK=NM~;$ et donc $N\in\Delta$ d'après la caractérisation ci-dessus. De même, $LK=LM,$ donc $L\in\Delta.$ Enfin $KOM$ est équilatéral, donc $OK=OM$ et par conséquent $O\in\Delta.$
+
+Conclusion~: les points $O,L,N$ sont sur $\Delta,$ donc ils sont alignés.
+\item $O,L,N$ étant alignés, $\widehat{OLN}=180^{\circ}.$ D'autre part, il est clair que $MLN$ est rectangle isocèle en $M,$ donc ses angles à la base sont égaux et l'on a $\widehat{MLN}=\frac{180^{\circ}-90^{\circ}}{2}=45^{\circ}.$
+
+On en déduit $\widehat{MLO}=\widehat{OLN}-\widehat{MLN}=180^{\circ}-45^{\circ}=135^{\circ}.$
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item ~{}
+
+
+\begin{center}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(1.44,-1.38)(8.78,5.46)
+\pscircle[linewidth=2.pt](5.,2.){3.}
+\psline[linewidth=2.pt](2.,2.)(3.2903031230049153,4.465144334271982)
+\psline[linewidth=2.pt](3.2903031230049153,4.465144334271982)(5.,2.)
+\psline[linewidth=2.pt](4.215262386923419,3.3420457811203272)(4.01805084018166,3.2052700309607207)
+\psline[linewidth=2.pt](4.2722522828232545,3.259874303311262)(4.075040736081497,3.1230985531516553)
+\psline[linewidth=2.pt](3.2903031230049153,4.465144334271982)(8.,2.)
+\pscustom[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq!20!white,fillstyle=solid,opacity=0.1]{
+\parametricplot{0.0}{1.0885896065854297}{0.6*cos(t)+2.|0.6*sin(t)+2.}
+\lineto(2.,2.)\closepath}
+\pscustom[linewidth=2.pt,linecolor=ffxfqq,fillcolor=ffxfqq!20!white,fillstyle=solid,opacity=0.1]{
+\parametricplot{-2.0530030470043634}{-0.9644134404189337}{0.6*cos(t)+3.2903031230049153|0.6*sin(t)+4.465144334271982}
+\lineto(3.2903031230049153,4.465144334271982)\closepath}
+\pscustom[linewidth=2.pt,linecolor=magenta,fillcolor=magenta!20!white,fillstyle=solid,opacity=0.1]{
+\parametricplot{-0.9644134404189338}{-0.4822067202094669}{0.6*cos(t)+3.2903031230049153|0.6*sin(t)+4.465144334271982}
+\lineto(3.2903031230049153,4.465144334271982)\closepath}
+\pscustom[linewidth=2.pt,linecolor=magenta,fillcolor=magenta!20!white,fillstyle=solid,opacity=0.1]{
+\parametricplot{2.6593859333803263}{3.141592653589793}{0.6*cos(t)+8.|0.6*sin(t)+2.}
+\lineto(8.,2.)\closepath}
+\rput[tl](7.46,4.52){$\mathcal{C}$}
+\psline[linewidth=2.pt](2.,2.)(5.,2.)
+\psline[linewidth=2.pt](3.45,2.12)(3.45,1.88)
+\psline[linewidth=2.pt](3.55,2.12)(3.55,1.88)
+\psline[linewidth=2.pt](5.,2.)(8.,2.)
+\psline[linewidth=2.pt](6.45,2.12)(6.45,1.88)
+\psline[linewidth=2.pt](6.55,2.12)(6.55,1.88)
+\rput[bl](1.66,2.16){{$A$}}
+\rput[bl](8.08,2.16){{$B$}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=darkgray](5.,2.)
+\rput[bl](5.08,2.16){{$I$}}
+\rput[bl](3.08,4.64){{$M$}}
+\end{pspicture*}
+\end{center}
+
+\item $\left[IA\right]$ et $\left[IM\right]$ sont deux rayons de $\mathcal{C},$ donc $IAM$ est isocèle en $I$ et ses angles à la base $\widehat{IAM}$ et $\widehat{AMI}$ sont égaux~:
+\[\widehat{IAM}=\widehat{AMI}.\]
+
+La démonstration est la même pour les deux autres angles grâce au triangle $IBM~:$
+
+ \[\widehat{IMB}=\widehat{MBI}.\]
+\item $\widehat{IAM}+\widehat{AMI}+\widehat{IMB}+\widehat{MBI}$ est la somme des angles du triangle $AMB,$ donc \[\widehat{IAM}+\widehat{AMI}+\widehat{IMB}+\widehat{MBI}=180^{\circ}.\]
+\item D'après les questions 2 et 3~:
+\[\underbrace{\widehat{IAM}+\widehat{AMI}}_{2\widehat{AMI}}+\underbrace{\widehat{IMB}+\widehat{MBI}}_{2\widehat{IMB}}=180^{\circ}.\]
+
+En divisant par 2 l'égalité $2\widehat{AMI}+2\widehat{IMB}=180^{\circ},$ on obtient
+\[\widehat{AMI}+\widehat{IMB}=90^{\circ}~;\] soit finalement 
+\[\widehat{AMB}=90^{\circ}.\]
+\end{enumerate}
+
+\end{exo}
 
 
 \end{document}

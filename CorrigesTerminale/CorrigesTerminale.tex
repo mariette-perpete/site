@@ -13464,4 +13464,89 @@ $f(0)=\cos^2 0+\sin^2 0=1^2+0^2=1,$ elle est constante égale à $1.$ Autrement 
 
 \end{exo}
 
+
+\begin{exo}
+
+On pose $f(x)=x-\sin x$ pour $x\in\left[0;\frac{\pi}{2}\right].$
+
+\medskip
+
+Étudier la convexité revient à étudier le signe de la dérivée seconde de $f.$ Pour tout  $x\in\left[0;\frac{\pi}{2}\right]~:$
+
+\begin{align*}
+f'(x)&=1-\cos x\\
+f''(x)&=\sin x.
+\end{align*}
+
+On conclut grâce à un tableau de signe~:
+
+
+\medskip
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f''(x)$/1}{$0$,$\frac{\pi}{2}$}
+\tkzTabLine{z,+,}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+Conclusion~: $f''$ est positive sur $\left[0;\frac{\pi}{2}\right],$ donc $f$ est convexe sur $\left[0;\frac{\pi}{2}\right].$
+
+\end{exo}
+
+\begin{exo}
+
+On a déjà vu la formule $(v\circ u)'=v'\circ u \times u'.$ Elle permet de compléter le tableau suivant (cf chapitre n°1), dans lequel $u$ désigne une fonction~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|c|} \hline
+\textbf{Fonction}& \textbf{Dérivée}&\cellcolor{black}&\textbf{Fonction}& \textbf{Dérivée}\\ \hline
+$x^n$&$nx^{n-1}$&\cellcolor{black}&$u^n$&$n u^{n-1}\times u'$\\ \hline
+$\text{e}^x$&$\text{e}^x$&\cellcolor{black}&$\text{e}^u$&$\text{e}^u\times u'$\\ \hline
+$\ln x$&$\frac{1}{x}$&\cellcolor{black}&$\ln u$&$\frac{1}{u}\times u'$\\ \hline
+$\sqrt{x}$&$\frac{1}{2\sqrt{x}}$&\cellcolor{black}&$\sqrt{u}$&$\frac{1}{2\sqrt{u}}\times u'$ \\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|c|} \hline
+\textbf{Fonction}& \textbf{Dérivée}&\cellcolor{black}&\textbf{Fonction}& \textbf{Dérivée}\\ \hline
+$\sin x$&$\cos x$&\cellcolor{black}&$\sin u$&$\cos u\times u'$\\ \hline
+$\cos x$&$-\sin x$&\cellcolor{black}&$\cos u$&$-\sin u\times u'$\\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+On a les deux cas particuliers, en prenant la fonction affine $u(x)=ax~:$
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|} \hline
+\textbf{Fonction}& \textbf{Dérivée}\\ \hline
+$\sin (ax)$&$a\cos (ax)$\\ \hline
+$\cos (ax)$&$-a\sin (ax)$ \\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+On peut dès lors facilement calculer les dérivées~:
+
+
+\begin{enumerate}
+\item $f(x)=\sin(2x)\hfill f'(x)=2\cos(2x).$
+\item $g(x)=\cos\left(x^2\right)\hfill g'(x)=-\sin\left(x^2\right)\times 2x=-2x\sin\left(x^2\right).$
+\item $h(x)=\sin(-3x+4)\hfill h'(x)=-3\cos(-3x+4).$
+\end{enumerate}
+
+
+\end{exo}
+
+
 \end{document}
