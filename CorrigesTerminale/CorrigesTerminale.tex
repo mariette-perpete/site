@@ -13549,4 +13549,331 @@ On peut dès lors facilement calculer les dérivées~:
 \end{exo}
 
 
+\begin{exo}
+
+
+On pose \[f(x)=\left(\cos x-1\right)\cos x\] pour tout réel $x.$
+
+\begin{enumerate}
+\item \begin{itemize}
+\item[\textbullet] Pour tout réel $x~:$
+\[f(-x)=\left(\cos (-x)-1\right)\cos (-x)=\left(\cos x-1\right)\cos x=f(x),\] donc $f$ est paire.
+\item[\textbullet]  Pour tout réel $x~:$
+\[f(x+2\pi)=\left(\cos (x+2\pi)-1\right)\cos (x+2\pi)=\left(\cos x-1\right)\cos x=f(x),\]
+donc $f$ est $2\pi$-périodique.
+\end{itemize}
+
+\medskip
+
+Nous allons étudier $f$ sur l'intervalle $I=\left[0;\pi\right].$ Une fois la courbe tracée sur cet intervalle, comme $f$ est paire, on pourra compléter par symétrie pour avoir la courbe sur l'intervalle $\left[-\pi;\pi\right].$ Et comme ce nouvel intervalle est de longueur $2\pi$ et que $f$ est $2\pi$-périodique, on aura la courbe sur $\mathbb{R}$ tout entier en reproduisant le petit bout de courbe déjà tracé sur $\left[-\pi;\pi\right].$
+
+\item On a donc posé $I=\left[0;\pi\right].$ La fonction $f$ s'écrit comme un produit~: $f=u\times v,$ avec $u(x)=\cos x-1$ et $v(x)=\cos x.$
+
+Les fonctions $u$ et $v$ sont dérivables sur $\left[0;\pi\right]$ et pour tout $x\in\left[0;\pi\right]~:$
+
+
+\begin{alignat*}{2}
+&u(x)=\cos x-1\qquad && , \qquad v(x)=\cos x,\\
+&u'(x)=-\sin x \qquad && , \qquad v'(x)=-\sin x.\\
+\end{alignat*}
+
+
+
+
+
+Donc en appliquant la formule pour la dérivée d'un produit, pour tout $x\in\left[0;\pi\right]~:$
+
+
+\begin{align*}f'(x)&=u'(x)\times v(x)+u(x)\times v'(x)\\
+&=-\sin x\times \cos x+(\cos x-1)\times (-\sin x)\\
+&=-\cos x\sin x-\cos x\sin x+\sin x\\
+&=-2\cos x\sin x+1\cdot\sin x\\
+&=\sin x(-2\cos x+1).
+\end{align*}
+
+
+\item On doit étudier le signe $\sin x(-2\cos x+1).$ Pour cela on résout~:
+
+\[\sin x(-2\cos x+1)=0\iff (\sin x=0~\text{ou}~-2\cos x+1=0)\iff \left(\sin x=0~\text{ou}~\cos x=\frac{1}{2}\right).\]
+
+
+On résout comme d'habitude et on obtient trois solutions~: $x=0,$ $x=\pi$ et $x=\frac{\pi}{3}.$
+\item On construit le tableau de variations grâce à la question précédente~:
+
+\medskip
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$0$,$\frac{\pi}{3}$,$\pi$}
+\tkzTabLine{z,-,z,+,z}
+\tkzTabVar{+/$0$,-/$-\frac{1}{4}$,+/$2$}
+
+\end{tikzpicture}
+\end{center}
+
+
+\textbf{Calculs pour avoir le signe de la dérivée~:}
+
+\begin{itemize}
+\item[\textbullet] $f'\left(\frac{\pi}{6}\right)=\sin\frac{\pi}{6}\left(-2\cos\frac{\pi}{6}+1\right)=\frac{1}{2}\left(-2\times\frac{ \sqrt{3}}{2}+1\right)=\frac{1}{2}\left(-\sqrt{3}+1\right)\qquad\ominus.$
+\item[\textbullet] $f'\left(\frac{\pi}{2}\right)=\sin\frac{\pi}{2}\left(-2\cos\frac{\pi}{2}+1\right)=1\times \left(-2\times 0+1\right)=1\qquad\oplus.$
+
+\end{itemize}
+
+\medskip
+
+\textbf{Calculs pour la fonction~:}
+
+\begin{itemize}
+\item[\textbullet] $f(0)=(\cos 0-1)\cos 0=(1-1)\times 1=0.$
+\item[\textbullet] $f\left(\frac{\pi}{3}\right)=\left(\cos \frac{\pi}{3}-1\right)\cos \frac{\pi}{3}=\left(\frac{1}{2}-1\right)\times \frac{1}{2}=-\frac{1}{4}.$
+\item[\textbullet] $f(\pi)=(\cos \pi-1)\cos \pi=(-1-1)\times (-1)=2.$
+\end{itemize}
+\end{multicols}
+
+\item On note $T$ la tangente à $\mathcal{C}$ au point d'abscisse $\frac{\pi}{2}.$ Elle a pour équation 
+\[y=f'\left(\frac{\pi}{2}\right)\left(x-\frac{\pi}{2}\right)+f\left(\frac{\pi}{2}\right).\]
+
+Or \[f\left(\frac{\pi}{2}\right)=\left(\cos \frac{\pi}{2}-1\right)\cos \frac{\pi}{2}=\left(0-1\right)\times 0=0\] et $f'\left(\frac{\pi}{2}\right)= 1$ (déjà calculé), donc
+
+\begin{align*}
+(T):y&=1\left(x-\frac{\pi}{2}\right)+0\\
+(T):y&=x-\frac{\pi}{2}.
+\end{align*}
+
+\item On construit d'abord la courbe sur $\left[0;\pi\right]$ (en noir). Pour cela, on s'appuie sur le tableau de variations\footnote{On notera les petites tangentes horizontales rouges, aux points d'abscisses $0,$  $\frac{\pi}{3}$ et $\pi,$ correspondant aux zéros de la dérivée.} et sur la tangente $T.$\footnote{Tracée en magenta, à partir de sa pente -- qui vaut 1.} Ensuite on complète par parité (en bleu) et par périodicité (en vert).
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-6.76,-2.48)(6.64,2.22)
+\multips(0,-2)(0,1.0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-6.76,0)(6.64,0)}
+\multips(-6,0)(1.0,0){14}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.48)(0,2.22)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=10.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-6.76,-2.48)(6.64,2.22)
+\psplot[linewidth=2.pt,linecolor=magenta]{-6.76}{6.64}{(-1.5708--1.*x)/1.}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=green]{-6.76}{-3.1416}{COS(x)*(COS(x)-1.0)}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=green]{3.1416}{6.64}{COS(x)*(COS(x)-1.0)}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=blue]{-3.1416}{0}{COS(x)*(COS(x)-1.0)}
+\psplot[linewidth=2.pt,plotpoints=200]{0}{3.1416}{COS(x)*(COS(x)-1.0)}
+%\rput[tl](-3.18,1.24){$\mathcal{C}$}
+\psline[linewidth=2.8pt,linestyle=dotted,linecolor=red](0.,-0.25)(1.047,-0.25)
+\psline[linewidth=2.8pt,linestyle=dotted,linecolor=red](1.047,-0.25)(1.047,0.)
+\psline[linewidth=2.8pt,linestyle=dotted,linecolor=red](0.,2)(3.14159,2)
+\psline[linewidth=2.8pt,linestyle=dotted,linecolor=red](3.14159,0)(3.14159,2)
+\rput[tl](3.12,-0.15){\red{$\pi$}}
+\rput[tl](0.99,0.53){\red{$\frac{\pi}{3}$}}
+\rput[tl](-0.55,-0.1){\red{$-\frac{1}{4}$}}
+\rput[tl](1.55,-0.15){\magenta{$\frac{\pi}{2}$}}
+\psline[linewidth=2.8pt,linecolor=red](-0.3,0.)(0.3,0.)
+\psline[linewidth=2.8pt,linecolor=red](2.84159,2.)(3.44159,2.)
+\psline[linewidth=2.8pt,linecolor=red](0.75,-0.25)(1.35,-0.25)
+\rput[tl](0.58,-1.2){\magenta{$T$}}
+\psdots[dotstyle=*,linecolor=magenta](1.57080,0.)
+\end{pspicture*}
+
+\textit{(Chaque carreau représente une unité.)}
+\end{center}
+
+
+\end{enumerate}
+
+
+
+\end{exo}
+
+\begin{exo}
+
+On pose \[f(x)=\left(\cos x-1\right)\sin x\] pour tout réel $x.$
+
+\begin{enumerate}
+\item \begin{itemize}
+\item[\textbullet] Pour tout réel $x~:$
+\[f(-x)=\left(\cos (-x)-1\right)\sin (-x)=\left(\cos x-1\right)(-\sin x)=-(\cos x-1)\sin x=-f(x),\] donc $f$ est impaire.
+\item[\textbullet]  Pour tout réel $x~:$
+\[f(x+2\pi)=\left(\cos (x+2\pi)-1\right)\sin (x+2\pi)=\left(\cos x-1\right)\sin x=f(x),\]
+donc $f$ est $2\pi$-périodique.
+\end{itemize}
+
+\medskip
+
+Nous allons étudier $f$ sur l'intervalle $I=\left[0;\pi\right].$ Une fois la courbe tracée sur cet intervalle, comme $f$ est impaire, on pourra compléter par symétrie pour avoir la courbe sur l'intervalle $\left[-\pi;\pi\right].$ Et comme ce nouvel intervalle est de longueur $2\pi$ et que $f$ est $2\pi$-périodique, on aura la courbe sur $\mathbb{R}$ tout entier en reproduisant le petit bout de courbe déjà tracé sur $\left[-\pi;\pi\right].$
+
+\item On a donc posé $I=\left[0;\pi\right].$ La fonction $f$ s'écrit comme un produit~: $f=u\times v,$ avec $u(x)=\cos x-1$ et $v(x)=\sin x.$
+
+Les fonctions $u$ et $v$ sont dérivables sur $\left[0;\pi\right]$ et pour tout $x\in\left[0;\pi\right]~:$
+
+
+\begin{alignat*}{2}
+&u(x)=\cos x-1\qquad && , \qquad v(x)=\sin x,\\
+&u'(x)=-\sin x \qquad && , \qquad v'(x)=\cos x.\\
+\end{alignat*}
+
+
+
+
+
+Donc en appliquant la formule pour la dérivée d'un produit, pour tout $x\in\left[0;\pi\right]~:$
+
+
+\begin{align*}f'(x)&=u'(x)\times v(x)+u(x)\times v'(x)\\
+&=-\sin x\times \sin x+(\cos x-1)\times \cos x\\
+&=-\sin^2 x+\cos^2 x-\cos x.
+\end{align*}
+Or $\cos^2x+\sin^2x=1$ (cf ex \ref{AB}), donc $-\sin^2 x=\cos^2 x-1$ et ainsi~:
+\[f'(x)=\left(\cos^2 x-1\right)+\cos^2 x-\cos x=2\cos^2 x-\cos x-1.\] 
+\item On résout l'équation
+\begin{equation}\label{A} 2\cos^2 x-\cos x-1=0.
+\end{equation} dans $\left[0;\pi\right].$ On pose $X=\cos x,$ l'équation se réécrit
+\[2X^2-X-1.\]
+Le discriminant est $\Delta=(-1)^2-4\times 2\times (-1)=9,$ donc il y a deux racines~:
+\[X_1=\frac{-b-\sqrt{\Delta}}{2a}=\frac{1-\sqrt{9}}{2\times 2}=\frac{1-3}{4}=-\frac{1}{2}\qquad ,\qquad X_2=\frac{1+3}{4}=1.\]
+
+Revenons à l'équation $(\ref{A})~:$ d'après ce qui précède, il y a deux possibilités~:
+\[\cos x=-\frac{1}{2}~\text{ou}~\cos x=1.\]
+On résout comme d'habitude et on obtient deux solutions~: $x=\frac{2\pi}{3}$ et $x=0.$
+
+\newpage
+\item On construit le tableau de variations grâce à la question précédente~:
+
+\medskip
+
+\begin{multicols}{2}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$0$,$\frac{2\pi}{3}$,$\pi$}
+\tkzTabLine{z,-,z,+,}
+\tkzTabVar{+/$0$,-/$-\frac{3\sqrt{3}}{4}$,+/$0$}
+
+\end{tikzpicture}
+\end{center}
+
+\textbf{Calculs pour avoir le signe de la dérivée~:}
+
+\begin{itemize}
+\item[\textbullet] $f'\left(\frac{\pi}{2}\right)=2\cos^2 \frac{\pi}{2}-\cos \frac{\pi}{2}-1=2\times 0^2-0-1=-1\qquad\ominus.$
+\item[\textbullet] $f'\left(\frac{5\pi}{6}\right)=2\cos^2 \frac{5\pi}{6}-\cos \frac{5\pi}{6}-1=2\times \left(-\frac{\sqrt{3}}{2}\right)^2-\left(-\frac{\sqrt{3}}{2}\right)-1=2\times \frac{3}{4}+\frac{\sqrt{3}}{2}-1=\frac{1}{2}+\frac{\sqrt{3}}{2}=\frac{1+\sqrt{3}}{2}\qquad\oplus.$
+
+\end{itemize}
+
+\medskip
+
+\textbf{Calculs pour la fonction~:}
+
+\begin{itemize}
+\item[\textbullet] $f(0)=(\cos 0-1)\sin 0=(1-1)\times 0=0.$
+\item[\textbullet] $f\left(\frac{2\pi}{3}\right)=\left(\cos \frac{2\pi}{3}-1\right)\sin \frac{2\pi}{3}=\left(- \frac{1}{2}-1\right)\frac{\sqrt{3}}{2}=-\frac{3\sqrt{3}}{4}.$
+\item[\textbullet] $f(\pi)=(\cos \pi-1)\sin \pi=(-1-1)\times 0=0.$
+\end{itemize}
+\end{multicols}
+\item On note $T$ la tangente à $\mathcal{C}$ au point d'abscisse $\pi.$ Elle a pour équation 
+\[y=f'(\pi)(x-\pi)+f(\pi).\]
+
+Or $f(\pi)=0$ et $f'(\pi)= 2\cos^2 \pi-\cos \pi-1=2\times (-1)^2-(-1)-1=2,$ donc
+
+\begin{align*}
+(T):y&=2(x-\pi)+0\\
+(T):y&=2x-2\pi.
+\end{align*}
+
+\item On construit d'abord la courbe sur $\left[0;\pi\right]$ (en noir). Pour cela, on s'appuie sur le tableau de variations\footnote{On notera les petites tangentes horizontales rouges, aux points d'abscisses $0$ et $\frac{2\pi}{3},$ correspondant aux zéros de la dérivée.} et sur la tangente $T.$\footnote{Tracée en magenta, à partir de sa pente -- qui vaut 2.} Ensuite on complète par parité (en bleu) et par périodicité (en vert).
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-6.76,-2.48)(6.64,2.22)
+\multips(0,-2)(0,1.0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-6.76,0)(6.64,0)}
+\multips(-6,0)(1.0,0){14}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.48)(0,2.22)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=10.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-6.76,-2.48)(6.64,2.22)
+\psplot[linewidth=2.pt,linecolor=magenta]{-6.76}{6.64}{(-6.28--2.*x)/1.}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=green]{-6.76}{-3.1416}{SIN(x)*(COS(x)-1.0)}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=green]{3.1416}{6.64}{SIN(x)*(COS(x)-1.0)}
+\psplot[linewidth=2.pt,plotpoints=200,linecolor=blue]{-3.1416}{0}{SIN(x)*(COS(x)-1.0)}
+\psplot[linewidth=2.pt,plotpoints=200]{0}{3.1416}{SIN(x)*(COS(x)-1.0)}
+%\rput[tl](-3.18,1.24){$\mathcal{C}$}
+\psline[linewidth=2.8pt,linestyle=dotted,linecolor=red](0.,-1.299038105676658)(2.0943951023931953,-1.299038105676658)
+\psline[linewidth=2.8pt,linestyle=dotted,linecolor=red](2.0943951023931953,-1.299038105676658)(2.0943951023931953,0.)
+\rput[tl](3.12,-0.15){\magenta{$\pi$}}
+\rput[tl](1.94,0.58){\red{$\frac{2\pi}{3}$}}
+\rput[tl](-1.02,-0.98){\red{$-\frac{3\sqrt{3}}{4}$}}
+\psline[linewidth=2.8pt,linecolor=red](-0.3,0.)(0.3,0.)
+\psline[linewidth=2.8pt,linecolor=red](1.7943951023931952,-1.299038105676658)(2.394395102393195,-1.299038105676658)
+\rput[tl](2.38,-1.72){\magenta{$T$}}
+\psdots[dotstyle=*,linecolor=magenta](3.141592653589793,0.)
+\end{pspicture*}
+
+\textit{(Chaque carreau représente une unité.)}
+\end{center}
+
+
+\end{enumerate}
+
+\end{exo}
+
+\newpage
+
+\section{Intégration}
+
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item $\int_{-1}^3 2\mathrm{d}x$ est l'aire du rectangle hachuré ci-dessous.
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.74,-0.52)(4.52,2.56)
+\multips(0,0)(0,1.0){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.74,0)(4.52,0)}
+\multips(-1,0)(1.0,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.52)(0,2.56)}
+\pscustom[linewidth=0.8pt,linecolor=blue,hatchcolor=blue,fillstyle=hlines,hatchangle=45.0,hatchsep=0.2]{\psplot{-1.}{3.}{2.0}\lineto(3.,0)\lineto(-1.,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.74,-0.52)(4.52,2.56)
+\rput[tl](1,2.5){\red{$y=2$}}
+\psplot[linewidth=2.pt,linecolor=red]{-1}{3}{2}
+\end{pspicture*}
+\end{center}
+
+\[\int_{-1}^3 2\mathrm{d}x=\ell\times L=4\times 2=8.\]
+\item La fonction définie par $f(x)=-x+5$ est une fonction affine, donc sa courbe est une droite. Pour construire cette droite, on fait un tableau de valeurs avec deux valeurs~:
+
+\medskip
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+$x$&$0$&$4$\\ \hline
+$f(x)=-x+5$&$5$&$1$\\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+$\int_{0}^4 (-x+5)\mathrm{d}x$ est l'aire du trapèze hachuré ci-dessous.
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.18,-0.8)(5.08,5.42)
+\multips(0,0)(0,1.0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.18,0)(5.08,0)}
+\multips(-1,0)(1.0,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.8)(0,5.42)}\pscustom[linewidth=0.8pt,linecolor=blue,hatchcolor=blue,fillstyle=hlines,hatchangle=45.0,hatchsep=0.2]{\psplot{0.}{4.}{-x+5.0}\lineto(4.,0)\lineto(0.,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.18,-0.8)(5.08,5.42)
+\rput[tl](2.1,3.54){\red{$y=-x+5$}}
+\psplot[linewidth=2.pt,linecolor=red]{0}{4}{-x+5}
+\psdots[dotstyle=*,linecolor=red](0.,5.)
+\psdots[dotstyle=*,linecolor=red](4.,1.)
+\end{pspicture*}
+\end{center}
+
+
+Deux façons de calculer l'aire du trapèze~: soit en soustrayant l'aire de deux triangles~; soit avec la formule pour l'aire d'un trapèze. On utilise la deuxième méthode~:
+
+\[\int_{0}^4 (-x+5)\mathrm{d}x=\frac{\left(\text{petite base}+\text{grande base}\right)\times\text{hauteur}}{2}=\frac{(1+5)\times 4}{2}=12.\]
+\end{enumerate}
+
+\end{exo}
+
+
+
+
+
+
 \end{document}
