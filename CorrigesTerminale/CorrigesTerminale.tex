@@ -13873,6 +13873,159 @@ Deux façons de calculer l'aire du trapèze~: soit en soustrayant l'aire de deux
 
 
 
+\begin{exo}
+
+Une primitive de $x\mapsto x$ est $x\mapsto \frac{1}{2}x^2,$ donc
+
+\[\int_{0}^3 x\mathrm{d}x=\left[\frac{1}{2}x^2\right]_0^3=\left(\frac{1}{2}\times 3^2\right)-\left(\frac{1}{2}\times 0^2\right)=4,5.\]
+
+C'est l'aire du triangle hachuré ci-dessous~:
+\[\mathcal{A}=\frac{B\times h}{2}=\frac{3\times 3}{2}=4,5.\]
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.6,-0.76)(4.36,3.68)
+\multips(0,0)(0,1.0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-0.6,0)(4.36,0)}
+\multips(0,0)(1.0,0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.76)(0,3.68)}
+\pscustom[linewidth=0.8pt,linecolor=blue,hatchcolor=blue,fillstyle=hlines,hatchangle=135.0,hatchsep=0.2]{\psplot{0.}{3.}{x}\lineto(3.,0)\lineto(0.,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.6,-0.76)(4.36,3.68)
+\rput[tl](0.84,2.04){\red{$y=x$}}
+\psplot[linewidth=1.6pt,plotpoints=200,linecolor=red]{0.0}{3.0}{x}
+\end{pspicture*}
+\end{center}
+
+
+\end{exo}
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item \[I=\int_{-1}^1 \left(3x^2+1\right)\mathrm{d}x=\left[x^3+x\right]_{-1}^1=\left(1^3+1\right)-\left((-1)^3+(-1)\right)=2-(-2)=4.\]
+\item \[J=\int_{0}^{\ln 2} \text{e}^{2x}\mathrm{d}x=\left[\frac{1}{2}\text{e}^{2x}\right]_0^{\ln 2}=\left(\frac{1}{2}\text{e}^{2\times \ln 2}\right)-\left(\frac{1}{2}\text{e}^{2\times 0}\right)=\frac{1}{2}\text{e}^{\ln \left(2^2\right)}-\frac{1}{2}\text{e}^{0}=\frac{1}{2}\text{e}^{\ln 4}-\frac{1}{2}\times 1=\frac{1}{2}\times 4-\frac{1}{2}=1,5.\] 
+\item \[K=\int_{1}^{\text{e}} \frac{3}{t}\mathrm{d}t=\left[3\ln t\right]_{1}^{\text{e}}=\left(3\ln \text{e}\right)-\left(3\ln 1\right)=3\times 1-3\times 0=3.\]
+\item \[L=\int_{0}^{\frac{\pi}{2}} \cos t\mathrm{d}t=\left[\sin t\right]_0^{\frac{\pi}{2}}=\left(\sin\frac{\pi}{2}\right)-(\sin 0)=1-0=1.\]
+\end{enumerate}
+
+ \end{exo}
+ 
+
+ 
+
+\begin{exo}
+ 
+ \begin{enumerate}
+\item Le nombre $S=\int_0^{5} f(t)\mathrm{d}t$ (aire de la zone hachurée ci-dessous) représente la quantité totale de médicament reçue par le patient entre les temps $t=0$ et $t=5.$ 
+
+\begin{center}
+\psset{xunit=0.5cm,yunit=0.5cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1,-1.2)(15,6.66)
+\pscustom[linewidth=0.8pt,linecolor=blue,hatchcolor=blue,fillstyle=hlines,hatchangle=45.0,hatchsep=0.2]{\psplot{0.}{5.}{6.0*EXP(-0.4*x)}\lineto(5.,0)\lineto(0.,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(0,0)(12.5,6.66)
+\psplot[linewidth=2pt,plotpoints=200,linecolor=red]{0.0}{12.0}{6*EXP(-0.4*x)}
+\rput[tl](10,0.8){temps (en h)}
+\rput[tl](0.55,6.4){diffusion}
+\rput[tl](0.55,5.8){(en mL/h)}
+\end{pspicture*}
+\end{center}
+
+\item Une primitive de $t\mapsto 6\text{e}^{-0,4 t}$ est $t\mapsto 6\times \frac{1}{-0,4}\text{e}^{-0,4 t}=-15\text{e}^{-0,4 t},$ donc \[S=\int_0^{5} f(t)\mathrm{d}t=\left[-15\text{e}^{-0,4 t}\right]_{0}^5=\left(-15\text{e}^{-0,4 \times 5}\right)-\left(-15\text{e}^{-0,4 \times 0}\right)=-15\text{e}^{-2}+15\text{e}^{0}=-15\text{e}^{-2}+15\approx 13~\text{mL}.\]
+\end{enumerate}
+
+\end{exo}
+
+ \begin{exo}
+
+Pour calculer l'aire de la zone considérée dans l'énoncé, on soustrait l'aire de la zone hachurée à l'aire de la zone coloriée~:
+
+\[\text{aire à calculer}=\int_{0}^{1} x\mathrm{d}x-\int_{0}^{1} x^2\mathrm{d}x.\]
+
+
+\begin{center}
+\psset{xunit=4.0cm,yunit=4.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.15436722449877396,-0.1705683716216119)(1.2020457504470266,1.1202117174397135)
+\multips(0,0)(0,0.2){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-0.15436722449877396,0)(1.2020457504470266,0)}
+\multips(0,0)(0.2,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.1705683716216119)(0,1.1202117174397135)}
+\pscustom[linewidth=0.8pt,linecolor=green,fillcolor=green!10!white,fillstyle=solid,opacity=0.1]{\psplot{0.}{1.}{x}\lineto(1.,0)\lineto(0.,0)\closepath}
+\pscustom[linewidth=0.8pt,linecolor=blue,hatchcolor=blue,fillstyle=hlines,hatchangle=45.0,hatchsep=0.15]{\psplot{0.}{1.}{x^(2.0)}\lineto(1.,0)\lineto(0.,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.2,Dy=0.2,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.15436722449877396,-0.1705683716216119)(1.2020457504470266,1.1202117174397135)
+\end{pspicture*}
+\end{center}
+
+On calcule chaque intégrale séparément à l'aide d'une primitive~:
+
+\begin{align*}
+&\int_{0}^{1} x\mathrm{d}x=\left[\frac{1}{2}x^2\right]_0^1=\left(\frac{1}{2}\times 1^2\right)-\left(\frac{1}{2}\times 0^2\right)=\frac{1}{2},\\
+&\int_{0}^{1} x^2\mathrm{d}x=\left[\frac{1}{3}x^3\right]_0^1=\left(\frac{1}{3}\times 1^3\right)-\left(\frac{1}{3}\times 0^3\right)=\frac{1}{3}.
+\end{align*}
+
+Finalement, l'aire qui nous intéresse est égale à 
+\[\text{aire à calculer}=\frac{1}{2}-\frac{1}{3}=\frac{1}{6}.\]
+
+
+\end{exo}
+
+
+
+\begin{exo}
+
+
+
+On définit deux fonctions sur $\left[1;5\right]~:$
+\[f(x)=-x+5\qquad ,\qquad ~g(x)=\ln x.\]
+\begin{enumerate}
+\item La valeur moyenne de $f$ sur $\left[1;5\right]$ est
+\[\frac{1}{5-1}\int_1^{5} f(x)\mathrm{d}x=\frac{1}{4}\int_1^{5} (-x+5)\mathrm{d}x.\] On calcule d'abord l'intégrale~:
+\[\int_1^{5} (-x+5)\mathrm{d}x=\left[-\frac{1}{2}x^2+5x\right]_1^5=\left(-\frac{1}{2}\times 5^2+5\times 5\right)-\left(-\frac{1}{2}\times 1^2+5\times 1\right)=8.\] La valeur moyenne de $f$ sur $\left[1;5\right]$ est donc
+\[\frac{1}{4}\times 8=2.\] Comme $f$ est affine, c'est aussi la \og valeur centrale en hauteur \fg~{} (pointillés verts).
+
+
+\begin{center}
+\psset{xunit=0.8cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.72,-0.58)(7.12,5.22)
+\multips(0,0)(0,1.0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-0.72,0)(7.12,0)}
+\multips(0,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-0.58)(0,5.22)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.72,-0.58)(7.12,5.22)
+\psplot[linewidth=2.pt,linecolor=red]{1}{5}{(--5.-1.*x)/1.}
+\psplot[linewidth=1.2pt,linestyle=dashed,dash=3pt 3pt,linecolor=green!60!black]{0}{7.12}{(--2.-0.*x)/1.}
+\rput[tl](3.68,2.48){\textcolor{green!60!black}{valeur centrale}}
+\psdots[dotstyle=*,linecolor=red](1.,4.)
+\psdots[dotstyle=*,linecolor=red](5.,0.)
+\psdots[dotstyle=*,linecolor=green!60!black](3.,2.)
+\end{pspicture*}
+\end{center}
+
+\item 
+\begin{enumerate}
+\item Pour dériver $G,$ on utilise donc la formule pour la dérivée d'un produit avec
+
+\begin{alignat*}{3}
+&u(x)=x,&& \hspace{1cm}&&v(x)=\ln x, \\
+& u'(x)=1,&& &&v'(x)=\frac{1}{x}.\\
+\end{alignat*}
+On obtient, pour tout $x\in \left[1;5\right]~:$
+
+\begin{align*}
+G'(x)&=1\times \ln x+x\times \frac{1}{x}-1\\
+&=\ln x+1-1\\
+&=\ln x.
+\end{align*}
+
+La fonction $G$ est donc bien une primitive de la fonction $g.$ 
+
+\item La valeur moyenne de $g$ sur $\left[1;5\right]$ est
+\[ \frac{1}{5-1}\int_1^{5} g(x)\mathrm{d}x=\frac{1}{4}\int_1^{5} \ln x\mathrm{d}x.\]
+
+D'après la question précédente, l'intégrale vaut
+\[\int_1^{5} \ln x\mathrm{d}x=\left[x\ln x-x\right]_1^5=\left(5\ln 5-5\right)-\left(1\ln 1-1\right)=5\ln 5-5+1=5\ln 5-4.\] La valeur moyenne de $g$ sur $\left[1;5\right]$ est donc
+\[\frac{1}{4}\left(5\ln 5-4\right)=\frac{5}{4}\ln 5-1.\]
+\end{enumerate}
+\end{enumerate}
+
+
+\end{exo}
+
 
 
 
