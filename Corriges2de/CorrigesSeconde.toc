@@ -12,3 +12,4 @@
 \contentsline {section}{\numberline {9}Tableaux de signes}{73}{section.9}%
 \contentsline {section}{\numberline {10}Statistiques}{82}{section.10}%
 \contentsline {section}{\numberline {16}Trigonométrie}{86}{section.16}%
+\contentsline {section}{\numberline {17}Systèmes et équations de droites}{91}{section.17}%

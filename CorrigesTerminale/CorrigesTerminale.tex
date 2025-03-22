@@ -14026,7 +14026,152 @@ D'après la question précédente, l'intégrale vaut
 
 \end{exo}
 
+\begin{exo}
 
+
+\begin{enumerate}
+\item \[I=\int_{0}^4 \left(2x-3\right)\mathrm{d}x=\left[x^2-3x\right]_0^4=\left(4^2-3\times 4\right)-\left(0^2-3\times 0\right)=4.\]
+
+\medskip
+
+\textbf{Illustration graphique~:} l'aire de la zone bleue dépasse l'aire de la zone verte de 4 unités d'aire.
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=0.8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.22,-3.5)(5.1,5.26)
+\multips(0,-3)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.22,0)(5.1,0)}
+\multips(-1,0)(1.0,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-3.5)(0,5.26)}
+\pscustom[linewidth=0.8pt,linecolor=green,hatchcolor=green,fillstyle=hlines,hatchangle=45.0,hatchsep=0.2]{\psplot{0.}{1.5}{2.0*x-3.0}\lineto(1.5,0)\lineto(0.,0)\closepath}
+\pscustom[linewidth=0.8pt,linecolor=blue,hatchcolor=blue,fillstyle=hlines,hatchangle=45.0,hatchsep=0.2]{\psplot{1.5}{4.}{2.0*x-3.0}\lineto(4.,0)\lineto(1.5,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.22,-3.5)(5.1,5.26)
+\psplot[linewidth=2.pt,linecolor=red]{0}{4}{(-3.--2.*x)/1.}
+\rput[tl](1.3,3.4){\red{$y=2x-3$}}
+\end{pspicture*}
+\end{center}
+\item On reconnaît dans l'intégrande la formule $\frac{u'}{u}=(\ln u)'.$ On a donc \[J=\int_{-1}^{1} \frac{2t}{t^2+1}\mathrm{d}t=\left[\ln\left(t^2+1\right)\right]_{-1}^1=\left(\ln\left(1^2+1\right)\right)-\left(\ln\left((-1)^2+1\right)\right)=\ln 2-\ln 2=0.\]
+
+
+\medskip
+
+\textbf{Illustration graphique~:} les aires bleue et verte se compensent.
+
+
+\begin{center}
+\psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.3195242187560539,-1.276201088984737)(1.3490422698481013,1.7063143982787277)
+\multips(0,-1)(0,0.5){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.3195242187560539,0)(1.3490422698481013,0)}
+\multips(-1,0)(0.5,0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.276201088984737)(0,1.7063143982787277)}
+\pscustom[linewidth=0.8pt,linecolor=green,hatchcolor=green,fillstyle=hlines,hatchangle=45.0,hatchsep=0.15]{\psplot{-1.}{0.}{2.0*x/(x^(2.0)+1.0)}\lineto(0.,0)\lineto(-1.,0)\closepath}
+\pscustom[linewidth=0.8pt,linecolor=blue,hatchcolor=blue,fillstyle=hlines,hatchangle=45.0,hatchsep=0.15]{\psplot{0.}{1.}{2.0*x/(x^(2.0)+1.0)}\lineto(1.,0)\lineto(0.,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.3195242187560539,-1.276201088984737)(1.3490422698481013,1.7063143982787277)
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-1}{1}{2.0*x/(x^(2.0)+1.0)}
+\rput[tl](0.20405180414943266,1.3){\red{$y=\frac{2x}{x^2+1}$}}
+\end{pspicture*}
+\end{center}
+\item Il y a une primitive évidente~:
+\[K=\int_{0}^{\ln 3} \text{e}^{-x}\mathrm{d}x=\left[-\text{e}^{-x}\right]_0^{\ln 3}=\left(-\text{e}^{-\ln 3}\right)-
+\left(-\text{e}^{-0}\right)=-\frac{1}{\text{e}^{\ln 3}}-(-1)=-\frac{1}{3}+1=\frac{2}{3}.\]
+\item On reconnaît dans l'intégrande, au signe près, la formule $u'\text{e}^u=\left(\text{e}^u\right)'.$ On a donc\[K=\int_{0}^{2} 2x\text{e}^{-x^2}\mathrm{d}x=\left[-\text{e}^{-x^2}\right]_0^2=\left(-\text{e}^{-2^2}\right)-\left(-\text{e}^{0^2}\right)=-\text{e}^{-4}+\text{e}^{0}=-\text{e}^{-4}+1.\] 
+
+\item On écrit l'intégrande sous la forme
+%\[\frac{1}{t}\times(\ln t)^3=\frac{1}{4}\times \underbrace{4}_{n}\times \underbrace{\frac{1}{t}}_{u'}\times\underbrace{(\ln t)^3}_{u^{n-1}}.\]
+\[\frac{1}{t}\times(\ln t)^3=\frac{1}{4}\times 4\times\frac{1}{t}\times(\ln t)^{4-1}\] pour reconnaître la formule $\left(u^n\right)'=n\times u'\times u^{n-1},$ avec
+\[n=4,\qquad u(t)=\ln t,\qquad u'(t)=\frac{1}{t}.\]
+
+
+On a donc~:
+
+\[M=\int_{1}^{\text{e}} \frac{(\ln t)^3}{t}\mathrm{d}t=\left[\frac{1}{4}(\ln t)^4\right]_1^{\text{e}}
+=\left(\frac{1}{4}\left(\ln \text{e}\right)^4\right)-\left(\frac{1}{4}(\ln 1)^4\right)=\frac{1}{4}\times 1^4-\frac{1}{4}\times 0^4=\frac{1}{4}.\]
+\item On déduit des formules de dérivées du chapitre 12 de nouvelles formules de primitives~:
+
+\begin{multicols}{2}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|} \hline
+\textbf{Fonction}& \textbf{Dérivée}\\ \hline
+$\sin (ax)$&$a\cos (ax)$\\ \hline
+$\cos (ax)$&$-a\sin (ax)$ \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|} \hline
+\textbf{Fonction}& \textbf{Primitives}\\ \hline
+$\cos (ax)$&$\frac{1}{a}\sin (ax)+C$\\ \hline
+$\sin (ax)$&$-\frac{1}{a}\cos (ax)+C$ \\ \hline
+\end{tabular}
+\end{center}
+\end{multicols}
+
+\medskip
+
+
+On a donc~:
+
+\[N=\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\cos (2t)\mathrm{d}t=\left[\frac{1}{2}\sin(2t)\right]_{-\frac{\pi}{2}}^{\frac{\pi}{2}}=\left(\frac{1}{2}\sin\left(2\times\frac{\pi}{2}\right)\right)-\left(\frac{1}{2}\sin\left(2\times \left(-\frac{\pi}{2}\right)\right)\right)=\frac{1}{2}\sin\pi-\frac{1}{2}\sin (-\pi)=\frac{1}{2}\times 0-\frac{1}{2}\times 0=0.\]
+
+\medskip
+
+\textbf{Illustration graphique~:} les aires bleue et verte se compensent.
+
+
+\begin{center}
+
+
+\psset{xunit=2.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.890849795867177,-1.2600435763385722)(1.9178497812916444,1.1107895898467395)
+\multips(0,-1)(0,1.0){3}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.890849795867177,0)(1.9178497812916444,0)}
+\multips(-1,0)(1.0,0){4}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.2600435763385722)(0,1.1107895898467395)}
+\pscustom[linewidth=0.8pt,linecolor=blue,hatchcolor=blue,fillstyle=hlines,hatchangle=45.0,hatchsep=0.10976079473080147]{\psplot{-0.7853981633974483}{0.7853981633974483}{COS(2.0*x)}\lineto(0.7853981633974483,0)\lineto(-0.7853981633974483,0)\closepath}
+\pscustom[linewidth=0.8pt,linecolor=green,hatchcolor=green,fillstyle=hlines,hatchangle=45.0,hatchsep=0.10976079473080147]{\psplot{0.7853981633974483}{1.5707963267948966}{COS(2.0*x)}\lineto(1.5707963267948966,0)\lineto(0.7853981633974483,0)\closepath}
+\pscustom[linewidth=0.8pt,linecolor=green,hatchcolor=green,fillstyle=hlines,hatchangle=45.0,hatchsep=0.10976079473080147]{\psplot{-1.5707963267948966}{-0.7853981633974483}{COS(2.0*x)}\lineto(-0.7853981633974483,0)\lineto(-1.5707963267948966,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.890849795867177,-1.2600435763385722)(1.9178497812916444,1.1107895898467395)
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{-1.890849795867177}{1.9178497812916444}{COS(2.0*x)}
+\end{pspicture*}
+\end{center}
+
+\item On réutilise de tableau de primitives de la question précédente~:
+
+\[O=\int_{0}^{\frac{\pi}{9}}\sin (3t)\mathrm{d}t=\left[-\frac{1}{3}\cos(3t)\right]_{0}^{\frac{\pi}{9}}=\left(-\frac{1}{3}\cos\left(3\times\frac{\pi}{9}\right))\right)-\left(-\frac{1}{3}\cos(3\times 0)\right)=-\frac{1}{3}\cos\frac{\pi}{3}+\frac{1}{3}\cos 0=-\frac{1}{3}\times \frac{1}{2}+\frac{1}{3}\times 1=-\frac{1}{6}+\frac{2}{6}=\frac{1}{6}.\]
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+\begin{enumerate}
+\item Pour prouver l'égalité, on réduit au même dénominateur dans le membre de droite~: pour tout $x\in\mathbb{R}-\left\{-2;0\right\},$
+\[
+\frac{2}{x}-\frac{1}{x+2}=\frac{2\textcolor{red}{\times(x+2)}}{x\textcolor{red}{\times(x+2)}}-\frac{1\textcolor{blue}{\times x}}{(x+2)\textcolor{blue}{\times x}}
+=\frac{2x+4}{x(x+2)}-\frac{x}{x(x+2)}=\frac{2x+4-x}{x(x+2)}=\frac{x+4}{x(x+2)}.
+\]
+
+Conclusion~: on a bien \[\frac{x+4}{x(x+2)}=\frac{2}{x}-\frac{1}{x+2}.\]
+
+\item D'après la question 1~:
+\[I=\int_1^{4}\frac{x+4}{x(x+2)}\mathrm{d}x=\int_1^{4}\left(\frac{2}{x}-\frac{1}{x+2}\right)\mathrm{d}x.\] Donc par linéarité de l'intégrale~:
+\[I=\underbrace{\int_1^{4}2\times\frac{1}{x}\mathrm{d}x}_{=A}-\underbrace{\int_1^{4}\frac{1}{x+2}\mathrm{d}x}_{B}.\]
+
+On calcule chaque intégrale $A$ et $B$ séparément~:
+
+\begin{align*}
+A&=\left[2\ln x\right]_1^4=2\ln 4-2\ln 1=2\ln 4=\ln\left(4^2\right)=\ln 16,\\
+B&=\left[\ln (x+2)\right]_1^4=\ln(4+2)-\ln(1+2)=\ln 6-\ln 3=\ln\left(\frac{6}{3}\right)=\ln 2.
+\end{align*}
+
+On en déduit
+\[I=A-B=\ln 16-\ln 2=\ln\left(\frac{16}{2}\right)=\ln 8.\]
+
+\end{enumerate}
+
+\end{exo}
 
 
 \end{document}
