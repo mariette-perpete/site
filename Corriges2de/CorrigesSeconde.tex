@@ -8780,7 +8780,15 @@ On a donc $\frac{3}{4}=\frac{BH}{4,8},$ puis $BH=\frac{3}{4}\times 4,8=3\times\f
 
 \end{exo}
 
+\setcounter{section}{10}
+
+
+
 \section{Systèmes et équations de droites}
+
+
+\setcounter{exo}{135}
+
 
 \begin{exo}
 
@@ -8817,8 +8825,246 @@ On vérifie la solution trouvée~:
 
 
 Conclusion~: la solution du système est $(x,y)=(-2,7).$
+\item On multiplie la première ligne par 2 et la deuxième par $-3~:$
+
+\[
+\systeme*{9x+2y=17\qquad\textcolor{red}{~(\times 2)},6x+5y=-7\qquad\textcolor{red}{~(\times (-3))}}
+\]
+
+\[
+\systeme*{18x+4y=34,-18x-15y=21}
+\]
+
+On ajoute membre à membre et on résout l'équation en $y~:$
+
+\begin{align*}\cancel{18x}+4y-\cancel{18x}-15y&=34+21\\
+\frac{\cancel{-11}y}{\cancel{-11}}&=\frac{55}{-11}\\
+y&=-5.\end{align*}
+
+On remplace dans la première ligne pour trouver $x~:$
+
+\begin{align*}
+9x+2\times (-5)&=17\\
+9x-10&=17\\
+9x-\cancel{10}+\cancel{10}&=17+10\\
+\frac{\cancel{9}x}{\cancel{9}}&=\frac{27}{9}\\
+x&=3.\end{align*}
+
+On vérifie la solution trouvée~:
+\begin{align*}9\times 3+2\times (-5)&=17\\6\times 3+5\times (-5)&=-7.\end{align*}
+
+
+Conclusion~: la solution du système est $(x,y)=(3,-5).$
 \end{enumerate}
+
 \end{exo}
 
+\begin{exo}
+
+
+On note~:
+
+\begin{itemize}
+\item[\textbullet] $x$ le nombre d'objets A fabriqués~;
+\item[\textbullet] $y$ le nombre d'objets B fabriqués.
+\end{itemize}
+
+\medskip
+
+On a fabriqué 45 objets, donc $x+y=45.$ On a utilisé 163~kg de bois, donc $3x+5y=163.$ L'énoncé se traduit donc par le système~:
+
+\[
+\systeme*{x+y=45,3x+5y=163}
+\]
+
+On multiplie la première ligne par $-3$ et on laisse la deuxième identique~:
+
+\[
+\systeme*{x+y=45\qquad \textcolor{red}{\qquad (\times (-3))},3x+5y=163 \qquad \textcolor{red}{\qquad (\times 1)}}
+\]
+\[
+\systeme*{-3x-3y=-135,3x+5y=163}
+\]
+Puis on ajoute membre à membre les deux lignes et on en déduit la valeur de $y~:$
+\begin{align*}
+\cancel{-3x}-3y+\cancel{3x}+5y&=-135+163\\
+\frac{\cancel{2}y}{\cancel{2}}&=\frac{28}{2}\\
+y&=14.\end{align*} 
+Puis en reprenant la première ligne du système de départ~:
+\begin{align*}
+x+y&=45\\
+14+y&=45\\
+\cancel{14}+y-\cancel{14}&=45-14\\
+y&=31.\end{align*}
+
+\medskip
+
+Ici, il est inutile de vérifier la solution, car on est sûr dès le départ qu'il en existe une (les objets ont été fabriqués~!).
+
+Conclusion~: la solution est $x=14,$ $y=31.$ Autrement dit, on a fabriqué 14 objets de type A et 31 objets de type B.
+
+\end{exo}
+
+\begin{exo}
+
+
+On note~:
+
+\begin{itemize}
+\item[\textbullet] $d_1$ la distance (exprimée en mètres) à la mairie la plus proche de l'auto-stoppeur~;
+\item[\textbullet] $d_2$ la distance (exprimée en mètres) à la mairie la plus éloignée.
+\end{itemize}
+
+\medskip
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\newrgbcolor{ffxfqq}{1. 0.4980392156862745 0.}
+\psset{xunit=1.0cm,yunit=0.5cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.4044015326652195,0.2)(11.303675040729676,4.087281269203539)
+\psline[linewidth=2.pt](-3.,3.)(9.,3.)
+\psline[linewidth=2.pt,linecolor=green]{->}(-2.,2.)(-3.,2.)
+\psline[linewidth=2.pt,linecolor=green]{->}(1.,2.)(2.,2.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(5.,2.)(2.,2.)
+\psline[linewidth=2.pt,linecolor=xfqqff]{->}(6.,2.)(9.,2.)
+\rput[tl](-3.508503629239655,4){\ududff{Mairie 1}}
+\rput[tl](8.396984065171177,4){\ududff{Mairie 2}}
+\rput[tl](0.911259360993129,4){\ffxfqq{Auto-stoppeur}}
+\psline[linewidth=2.pt,linecolor=green](-2.,2.)(-1.,2.)
+\psline[linewidth=2.pt,linecolor=green](1.,2.)(0.,2.)
+\rput[tl](-0.7,2.3){\green{$d_1$}}
+\rput[tl](5.3,2.3){\xfqqff{$d_2$}}
+\psline[linewidth=2.pt,linecolor=green]{->}(6.,1.)(4.,1.)
+\psline[linewidth=2.pt,linecolor=green]{->}(7.,1.)(9.,1.)
+\rput[tl](6.3,1.3){\green{$d_1$}}
+\psline[linewidth=2.pt,linecolor=red]{->}(3.,1.)(2.,1.)
+\psline[linewidth=2.pt,linecolor=red]{->}(3.,1.)(4.,1.)
+\rput[tl](2.7030551678442576,0.75){\red{340}}
+\begin{scriptsize}
+\psdots[dotstyle=*,linecolor=ududff](-3.,3.)
+\psdots[dotstyle=*,linecolor=ududff](9.,3.)
+\psdots[dotstyle=*,linecolor=ffxfqq](2.,3.)
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+
+\begin{itemize}
+\item[\textbullet] La distance totale (en mètres) entre les deux mairies est \[d_1+d_2=\np{3000}.\]
+\item[\textbullet] Le son émis par le carillon de la Mairie 1 met une seconde de moins pour arriver jusqu'à l'auto-stoppeur que le son émis par le carillon de la Mairie 2. Autrement dit, quand le son émis par le carillon de la Mairie 1 arrive à l'auto-stoppeur, il reste 340 mètres à parcourir au son qui vient du carillon de la Mairie 2.\footnote{On utilise le fait que le son parcourt 340 mètres en 1 seconde.} Finalement~:
+\[d_2=d_1+340.\]
+\end{itemize}
+
+\medskip
+
+Le problème se traduit donc par le système
+
+\[
+\systeme*{d_1+d_2=\np{3000},d_2=d_1+340}
+\]
+
+On présente sous la forme habituelle~:
+
+\[
+\systeme*{d_1+d_2=\np{3000},-d_1+d_2=340}
+\]
+
+On ajoute membre à membre (il est inutile de multiplier les lignes par des nombres, les $d_1$ vont s'éliminer)~:
+
+\begin{align*}\cancel{d_1}+d_2-\cancel{d_1}+d_2&=\np{3000}+340\\
+\frac{\cancel{2}d_2}{\cancel{2}}&=\frac{\np{3340}}{2}\\
+d_2&=\np{1670}
+\end{align*}
+
+Conclusion~: l'auto-stoppeur est à \np{1670} mètres de la Mairie 2, et à $\np{3000}-\np{1670}=\np{1330}$ mètres de la Mairie 1.
+
+\end{exo}
+
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item A l'aller, il y a 2 locomotives et 10 wagons-citernes, pour une longueur totale de 152~m. On a donc
+\[2x+10y=152.\] Au retour, il y a 1 locomotive et 12 wagons-citernes, pour une longueur de 160~m. On a donc \[1x+12y=160.\] L'énoncé se traduit donc par le système
+
+\[
+\systeme*{2x+10y=152,x+12y=160}
+\]
+\item On multiplie la deuxième ligne par $-2~:$
+\[
+\systeme*{2x+10y=152,x+12y=160\textcolor{red}{\qquad\times (-2)}}
+\]
+\[
+\systeme*{2x+10y=152,-2x-24y=-320}
+\]
+Puis on ajoute membre à membre les deux lignes~:
+\[
+2x+10y-2x-24y=152-320.\] Les $x$ se simplifient~:
+\[-14y=-168.\] On en déduit
+\[\frac{\cancel{-14}y}{\cancel{-14}}=\frac{-168}{-14}\hspace{2cm}y=12.\]
+Puis en reprenant la deuxième ligne du système de départ~:
+\begin{align*}
+x+12y&=160\\
+x+12\times 12&=160\\
+x+144&=160\\
+x+\cancel{144}-\cancel{144}&=160-144\\
+x&=16.\end{align*}
+
+\medskip
+
+Ici, il est inutile de vérifier la solution, car on est sûr dès le départ qu'il en existe une (les locomotives et les wagons-citernes ont une longueur~!).
+
+\medskip
+
+Conclusion~: les locomotives mesurent 16~m de long, et les wagons-citernes 12~m.
+
+\end{enumerate}
+
+\end{exo}
+
+
+
+\begin{exo}
+
+On exprimera les distances en m et le temps en s.% et les vitesses en m/s.
+
+\medskip
+
+Je note $v_1$ ma vitesse propre en m/s (c'est-à-dire la vitesse que j'aurais sans tapis roulant), et $v_2$ la vitesse du tapis roulant (en m/s également).
+
+\medskip
+
+À l'aller, dans le sens du tapis, je parcours 15~m en 5~s, donc j'avance à $15\div 3=5$~m/s.
+Cette vitesse est la somme de $v_1$ et $v_2,$ soit
+\[v_1+v_2=3.\]
+Au retour, en sens contraire, je parcours 5~m en 5~s, donc j'avance à $1$~m/s.
+Cette vitesse est la différence de $v_1$ et $v_2,$ soit
+\[v_1-v_2=1.\]
+
+On a donc le système
+\[
+\systeme*{v_1+v_2=3,v_1-v_2=1}
+\]
+
+Il n'est pas nécessaire de résoudre le système dans son intégralité, puisqu'on nous demande seulement la vitesse $v_2$ du tapis roulant. Pour aller au plus vite, on multiplie la deuxième ligne par $(-1)$ et on ajoute membre à membre~:
+
+\[
+\systeme*{v_1+v_2=3,v_1-v_2=1\textcolor{red}{\qquad\times (-1)}}
+\]
+\[
+\systeme*{v_1+v_2=3,-v_1+v_2=-1}
+\]
+On obtient \begin{align*}
+\cancel{v_1}+v_2-\cancel{v_1}+v_2&=3-1\\
+\frac{\cancel{2}v_2}{\cancel{2}}&=\frac{2}{2}\\
+v_2&=1.\end{align*}
+Conclusion~: le tapis roulant avance à la vitesse de 1~m/s.
+
+
+\end{exo}
 
 \end{document}

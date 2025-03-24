@@ -14174,4 +14174,160 @@ On en déduit
 \end{exo}
 
 
+\begin{exo}
+\begin{enumerate}
+\item Pour prouver l'égalité, on réduit au même dénominateur dans le membre de droite~: pour tout $x\in\mathbb{R}-\left\{-1;0\right\},$
+\[
+\frac{1}{x}-\frac{1}{x(x+1)}=\frac{1\textcolor{red}{\times(x+1)}}{x\textcolor{red}{\times(x+1)}}-\frac{1}{x(x+1)}=\frac{x+1}{x(x+1)}-\frac{1}{x(x+1)}=\frac{x+1-1}{x(x+1)}=\frac{x}{x(x+1)}.
+\]
+
+Conclusion~: on a bien 
+\[\frac{1}{x}-\frac{1}{x(x+1)}=\frac{1}{x+1}.\]
+\item L'aire de la zone comprise entre les courbes d'équations $y=\frac{1}{x}$ (en rouge) et $y=\frac{1}{x(x+1)}$ (en bleu) est la différence des intégrales~:
+\[\mathcal{A}=\int_1^{2}\frac{1}{x}\mathrm{d}x-\int_1^{2}\frac{1}{x(x+1)}\mathrm{d}x.\]
+
+Donc par linéarité de l'intégrale, et d'après la question 1~:
+
+\[\mathcal{A}=\int_1^{2}\left(\frac{1}{x}-\frac{1}{x(x+1)}\right)\mathrm{d}x=\int_1^{2}\frac{1}{x+1}\mathrm{d}x.\]
+
+On calcule à l'aide d'une primitive~:
+
+\[\mathcal{A}=\left[\ln(x+1)\right]_1^2=\ln(2+1)-\ln(1+1)=\ln 3-\ln 2=\ln\left(\frac{3}{2}\right).\]
+
+
+\begin{center}
+\newrgbcolor{wwwwww}{0.4 0.4 0.4}
+\newrgbcolor{zzttqq}{0.6 0.2 0.}
+\psset{xunit=2.5cm,yunit=2.cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.25127191910828267,-0.279264437107888)(2.4419306053592775,1.722529126310543)
+\multips(0,0)(0,0.5){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(2.4419306053592775,0)}
+\multips(0,0)(0.5,0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=gray]{c-c}(0,0)(0,1.722529126310543)}
+\pscustom[linewidth=0.8pt,linecolor=red,fillcolor=red!10!white,fillstyle=solid,opacity=0.1]{\psplot{1.}{2.}{1.0/x}\lineto(2.,0)\lineto(1.,0)\closepath}
+\pscustom[linewidth=0.8pt,linecolor=blue,hatchcolor=blue,fillstyle=hlines,hatchangle=45.0,hatchsep=0.3]{\psplot{1.}{2.}{1.0/(x*(x+1.0))}\lineto(2.,0)\lineto(1.,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.5,Dy=0.5,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.25127191910828267,-0.279264437107888)(2.4419306053592775,1.722529126310543)
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{1}{2}{1.0/x}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{1}{2}{1.0/(x*(x+1.0))}
+\end{pspicture*}
+\end{center}
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+On pose $I=\int_{0}^{\ln 4}\frac{\text{e}^x}{\text{e}^x+2}\mathrm{d}x$ et $K=\int_{0}^{\ln 4}\frac{1}{\text{e}^x+2}\mathrm{d}x.$
+
+\medskip
+
+
+
+\begin{enumerate}
+\item On reconnaît dans l'intégrande de $I$ la formule $\frac{u'}{u}=(\ln u)'.$ On a donc \[I=\int_{0}^{\ln 4} \frac{\text{e}^x}{\text{e}^x+2}\mathrm{d}x=\left[\ln\left(\text{e}^x+2\right)\right]_{0}^{\ln 4}=\left(\ln\left(\text{e}^{\ln 4}+2\right)\right)-\left(\ln\left(\text{e}^0+2\right)\right)=\ln (4+2)-\ln (1+2)=\ln\left(\frac{6}{3}\right)=\ln 2.\]
+ \item Par linéarité de l'intégrale~:
+ \[I+2K=\int_{0}^{\ln 4}\frac{\text{e}^x}{\text{e}^x+2}\mathrm{d}x+2\int_{0}^{\ln 4}\frac{1}{\text{e}^x+2}\mathrm{d}x=\int_{0}^{\ln 4}\left(\frac{\text{e}^x}{\text{e}^x+2}+\frac{2}{\text{e}^x+2}\right)\mathrm{d}x
+ =\int_{0}^{\ln 4}\frac{\text{e}^x+2}{\text{e}^x+2}\mathrm{d}x
+ =\int_{0}^{\ln 4}1\mathrm{d}x.\]
+ On utilise la formule pour l'intégrale d'une fonction constante\footnote{$\int_a^b c\mathrm{d}x=(b-a)\times c.$}~: $I+2K=(\ln 4-0)\times 1=\ln 4.$
+ 
+ \medskip
+ 
+ On en déduit
+ 
+ \[I+2K-I=\ln 4-\ln 2=\ln\left(\frac{4}{2}\right),\] soit $2K=\ln 2~;$ et donc $K=\frac{1}{2}\ln 2.$
+\end{enumerate}
+\end{exo}
+
+
+
+
+
+
+
+\begin{exo}
+
+On admet que la fonction $f:x\mapsto \frac{\text{e}^{-x}}{3-x}$ est décroissante sur $\left[0;1\right].$ On pose $I=\int_0^{1}f(x)\mathrm{d}x.$
+
+\begin{enumerate}
+\item La fonction $f$ est décroissante sur $\left[0;1\right],$ donc pour tout $x\in\left[0;1\right]~:$
+\[f(1)\leq f(x)\leq f(0).\] Or $f(1)=\frac{\text{e}^{-1}}{3-1}=\frac{\text{e}^{-1}}{2}=\frac{1}{2\text{e}}$ et $f(0)=\frac{\text{e}^{-0}}{3-0}=\frac{1}{3}.$ Finalement, pour tout $x\in\left[0;1\right]~:$
+\[\frac{1}{2\text{e}}\leq f(x)\leq\frac{1}{3}.\]
+
+
+\begin{center}
+\psset{xunit=8cm,yunit=8cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.1683833933284112,-0.07)(1.2135450451723406,0.393994633614128)
+\pscustom[linewidth=0.8pt,linecolor=blue,fillcolor=blue!30!white,fillstyle=solid,opacity=0.1]{\psplot{0.}{1.}{2.718281828459045^(-x)/(-x+3.0)}\lineto(1.,0)\lineto(0.,0)\closepath}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=0.1,Dy=1,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.1683833933284112,-0.042691145170674356)(1.2135450451723406,0.393994633614128)
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{0}{1}{2.718281828459045^(-x)/(-x+3.0)}
+\psplot[linewidth=2.pt,linestyle=dashed,dash=3pt 3pt]{0}{1}{(--0.3333333333333333-0.*x)/1.}
+\psplot[linewidth=2.pt,linestyle=dashed,dash=3pt 3pt]{0}{1}{(--0.18393972058572117-0.*x)/1.}
+\rput[tl](-0.05,0.35){$\frac{1}{3}$}
+\rput[tl](-0.05,0.2){$\frac{1}{2\text{e}}$}
+\end{pspicture*}
+\end{center}
+
+
+\item D'après le théorème 6 du cours, on peut \og intégrer \fg~{} les inégalités de la question précédente sur l'intervalle $\left[0;1\right]~:$
+\[\int_0^{1}\frac{1}{2\text{e}}\mathrm{d}x\leq \int_0^{1}f(x)\mathrm{d}x\leq \int_0^{1}\frac{1}{3}\mathrm{d}x.\]
+
+Les intégrales dans les membres de droite et de gauche sont des intégrales de fonctions constantes~:
+
+\begin{align*}
+&\int_0^{1}\frac{1}{2\text{e}}\mathrm{d}x=\left(1-0\right)\times \frac{1}{2\text{e}}=\frac{1}{2\text{e}},\\
+&\int_0^{1}\frac{1}{3}\mathrm{d}x=\left(1-0\right)\times \frac{1}{3}=\frac{1}{3}.
+\end{align*}
+
+On a donc finalement
+\[\frac{1}{2\text{e}}\leq I\leq \frac{1}{3}.\]
+
+Et comme $\frac{1}{2\text{e}}\approx 0,18$ et $\frac{1}{3}\approx 0,33,$ une valeur approchée de $I$ au dixième\footnote{Donc avec une erreur inférieure à 0,1.} est (par exemple) $0,25.$
+
+\medskip
+
+\textbf{Remarque~:} Ce qu'on a fait dans cet exercice, c'est dire que l'aire de la zone bleue est comprise entre les aires de deux rectangles~:
+
+\begin{itemize}
+\item[\textbullet] un rectangle de \og largeur \fg~{} 1 et de \og hauteur \fg~{} $\frac{1}{2\text{e}}~;$
+\item[\textbullet] un rectangle de \og largeur \fg~{} 1 et de \og hauteur \fg~{} $\frac{1}{3}.$
+\end{itemize}
+
+
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item Soit $0\leq x\leq 1.$ On a alors $1\leq 1+x\leq 2,$ donc
+\[\frac{1}{2}\leq \frac{1}{1+x} \leq \frac{1}{1}\] (deux nombres strictement positifs sont rangés en sens contraire de leurs inverses, puisque la fonction inverse est strictement décroissante sur $\left]0;+\infty\right[$). Par conséquent,
+\[0\leq \frac{1}{1+x}\leq 1.\] Il ne reste plus qu'à multiplier les trois membres par le nombre positif $x^n~:$
+\begin{alignat*}{7}
+0\times x^n&\leq &&\frac{1}{1+x}\times x^n&&\leq & 1\times x^n\\
+0&\leq && \frac{x^n}{1+x}&&\leq & x^n.
+\end{alignat*}
+
+
+\item On intègre les inégalités de la question précédente sur l'intervalle $\left[0;1\right]~:$
+\[\int_0^{1}0\mathrm{d}x\leq \int_0^{1}\frac{x^n}{1+x}\mathrm{d}x\leq \int_0^{1}x^n\mathrm{d}x.\]
+
+Or
+\begin{align*}
+&\int_0^{1}0\mathrm{d}x=0\qquad \text{(intégrale d'une fonction nulle)},\\
+&\int_0^{1}\frac{x^n}{1+x}\mathrm{d}x=I_n,\\
+&\int_0^{1}x^n\mathrm{d}x=\left[\frac{1}{n+1}x^{n+1}\right]_0^1=\frac{1}{n+1}\times 1^{n+1}-\frac{1}{n+1}\times 0^{n+1}=\frac{1}{n+1}.
+\end{align*}
+
+Conclusion~: \[0\leq I_n\leq \frac{1}{n+1}.\]
+\item $\lim\limits_{n\to +\infty}0=0$ et $\lim\limits_{n\to +\infty}\frac{1}{n+1}=0,$ donc d'après le théorème des gendarmes~:
+\[\lim\limits_{n\to +\infty}I_n=0.\]
+\end{enumerate}
+
+
+
+\end{exo}
+
 \end{document}
