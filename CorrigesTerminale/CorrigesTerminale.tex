@@ -14330,4 +14330,129 @@ Conclusion~: \[0\leq I_n\leq \frac{1}{n+1}.\]
 
 \end{exo}
 
+\begin{exo}
+
+On pose \[I_n=\int_0^{1}\ln\left(1+t^n\right)\mathrm{d}t\] pour tout entier naturel $n.$
+
+\begin{enumerate}
+\item On calcule d'abord $I_0$. On rappelle que $t^0=1$ pour tout réel $t,$ donc
+
+\[I_0=\int_0^{1}\ln\left(1+t^0\right)\mathrm{d}t=\int_0^{1}\ln\left(1+1\right)\mathrm{d}t
+=\int_0^{1}\ln 2\mathrm{d}t=\ln 2(1-0)=\ln2.\]
+
+\medskip
+
+Venons-en à l'encadrement de \[I_1=\int_0^{1}\ln\left(1+t^1\right)\mathrm{d}t=\int_0^{1}\ln\left(1+t\right)\mathrm{d}t.\]
+
+Si $0\leq t\leq 1,$ alors $1\leq 1+t\leq 2,$ donc par croissance de la fonction logarithme népérien~:
+\[
+\underbrace{\ln 1}_{=0}\leq \ln(1+t)\leq \ln 2.\]
+
+On intègre ces inégalités sur l'intervalle $\left[0;1\right]~:$
+\[\int_0^{1} 0\mathrm{d}t\leq \int_0^{1}\ln\left(1+t\right)\mathrm{d}t\leq \int_0^{1}\ln 2\mathrm{d}t.\]
+
+Or $\int_0^{1} 0\mathrm{d}t=0$ et $\int_0^{1}\ln 2\mathrm{d}t=\ln 2\times (1-0)=\ln 2,$ donc finalement
+\[0\leq I_1\leq  \ln 2.\]
+\item 
+
+
+
+Étudier la convexité revient à étudier le signe de la dérivée seconde de $f.$ Pour tout  $x\in\left[0;+\infty\right[~:$
+
+\begin{align*}
+f'(x)&=\frac{1}{1+x}\\
+f''(x)&=-\frac{1}{(1+x)^2}
+\end{align*}
+(on a utilisé $\left(\frac{1}{u}\right)'=-\frac{u'}{u^2}$).
+
+
+\medskip
+
+Conclusion~: $f''$ est négative sur $\left[0;+\infty\right[,$ donc $f$ est concave sur $\left[0;\frac{\pi}{2}\right].$
+
+\newpage
+\item \begin{multicols}{2}
+
+On note $\Gamma$ la courbe de la fonction $f,$ et $T$ sa tangente au point d'abscisse $0.$ On sait que
+\[T:y=f'(0)(x-0)+f(0).\]
+Or $f(0)=\ln(1+0)=0$ et $f'(0)=\frac{1}{1+0}=1,$ donc
+\[T:y=1(x-0)+0\qquad\text{soit}\qquad T:y=x.\]
+
+
+\medskip
+
+La fonction $f$ étant concave, la courbe $\Gamma$ est en dessous de la tangente $T$ sur $\left[0;+\infty\right[$ (théorème 8 du chapitre 1). On en déduit que pour tout $x\geq 0~:$
+\[\ln (1+x)\leq x.\]
+
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.64,-0.78)(5.8,3.6)
+\multips(0,0)(0,1.0){5}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(5.8,0)}
+\multips(0,0)(1.0,0){7}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,0)(0,3.6)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(0,0)(5.8,3.6)
+\psplot[linewidth=2.pt,linecolor=red,plotpoints=200]{0}{5.8000000000000025}{ln(1.0+x)}
+\psplot[linewidth=2.pt,linecolor=blue]{0}{5.8}{(-0.--1.*x)/1.}
+\rput[tl](2.1,2.7){\blue{$T$}}
+\rput[tl](3.32,1.82){\red{$\Gamma$}}
+\end{pspicture*}
+\end{center}
+
+\end{multicols}
+\item Soit $n$ un entier naturel.
+
+\medskip
+
+Si $t\geq 0,$ alors $t^n\geq 0,$ donc~:
+
+\begin{itemize}
+\item[\textbullet] d'une part, $1+t^n\geq 1,$ et donc $\ln\left(1+t^n\right)\geq 0$ par croissance de la fonction $\ln~;$
+\item[\textbullet] d'autre part, d'après la question précédente (en prenant $x=t^n$)~:
+\[\ln\left(1+t^n\right)\leq t^n.\]
+\end{itemize}
+
+\medskip
+
+Finalement
+\[0\leq \ln\left(1+t^n\right)\leq t^n.\]
+
+On intègre ces inégalités sur l'intervalle $\left[0;1\right]~:$
+\[\int_0^{1}0\mathrm{d}t\leq \int_0^{1}\ln\left(1+t^n\right)\mathrm{d}t\leq \int_0^{1}t^n\mathrm{d}t.\]
+
+Or $\int_0^{1}0\mathrm{d}t=0$ et $\int_0^{1}t^n\mathrm{d}t=\left[\frac{1}{n+1}t^{n+1}\right]_0^1=\frac{1}{n+1}\times 1^{n+1}-\frac{1}{n+1}\times 0^{n+1}=\frac{1}{n+1},$ donc
+
+
+\[0\leq I_n\leq \frac{1}{n+1}.\]
+\item $\lim\limits_{n\to +\infty}0=0$ et $\lim\limits_{n\to +\infty}\frac{1}{n+1}=0,$ donc d'après le théorème des gendarmes~:
+\[\lim\limits_{n\to +\infty}I_n=0.\]
+
+\end{enumerate}
+
+
+\end{exo}
+
+
+
+\begin{exo}
+
+On doit calculer
+\[I=\int_0^{1}x\text{e}^{-x}\mathrm{d}x.\]
+
+On pose
+\begin{align*}
+u'(x)=\text{e}^{-x}\qquad ;\qquad v(x)= x\\
+u(x)=-\text{e}^{-x}\qquad ; \qquad v'(x)=1
+\end{align*}
+
+et on intègre par parties~:
+
+\begin{align*}
+I&=\int_0^1\underset{\red{u'(x)}}{\text{e}^{-x}}\times \underset{\red{v(x)}}{x}\mathrm{d}x=\left[\underset{\red{u(x)}}{-\text{e}^{-x}}\times\underset{\red{v(x)}}{x}\right]_0^{1}-\int_0^1\underset{\red{u(x)}}{\left(-\text{e}^{-x}\right)}\times \underset{\red{v'(x)}}{1}\mathrm{d}x
+=\left[-x\text{e}^{-x}\right]_0^1+\int_0^{1}\text{e}^{-x}\mathrm{d}x\\
+&=\left(-1\text{e}^{-1}\right)-\left(-0\text{e}^{-0}\right)+\left[-\text{e}^{-x}\right]_0^1
+=-\text{e}^{-1}+\left(-\text{e}^{-1}\right)-\left(-\text{e}^{-0}\right)=-2\text{e}^{-1}+1.
+\end{align*}
+
+\end{exo}
+
 \end{document}
