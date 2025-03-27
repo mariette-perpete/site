@@ -9087,4 +9087,235 @@ Conclusion~: le tapis roulant avance à la vitesse de 1~m/s.
 \end{exo}
 
 
+\begin{exo}
+
+\begin{enumerate}
+\item On écrit les équations de droites sous forme réduite pour pouvoir les tracer~:
+
+\begin{alignat*}{2}
+&D_1:3x+2y-5=0\qquad\qquad &&D_2:-x+y+3=0\\
+&D_1:2y=-3x+5\qquad\qquad &&D_2:y=x-3\\
+&D_1:y=\frac{-3x+5}{2} && \\
+\end{alignat*}
+
+\setlength{\columnseprule}{0.5pt}
+\begin{multicols}{2}
+
+\underline{Tracé de $D_1.$}
+
+\medskip
+
+\begin{center}
+ \begin{tabular}{|c|c|c|}\hline
+$x$& $0$ &$2$ \\ \hline 
+$y$&$2,5$ &$-0,5$  \\ \hline
+\end{tabular}
+\end{center}
+
+
+\begin{align*}&\frac{-3\times 0+5}{2}=\frac{5}{2}=2,5\\
+&\frac{-3\times 2+5}{2}=\frac{-1}{2}=-0,5
+\end{align*}
+
+\columnbreak
+
+\underline{Tracé de $D_2.$}
+
+\medskip
+\begin{center}
+ \begin{tabular}{|c|c|c|}\hline
+$x$& $0$ &$2$ \\ \hline 
+$y$&$-3$ &$-1$  \\ \hline
+\end{tabular}
+\end{center}
+
+
+\begin{align*}&0-3=-3\\
+&2-3=-1
+\end{align*}
+
+\end{multicols}
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.26,-4.38)(5.64,4.26)
+\multips(0,-4)(0,1.0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.26,0)(5.64,0)}
+\multips(-2,0)(1.0,0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-4.38)(0,4.26)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.26,-4.38)(5.64,4.26)
+\psplot[linewidth=2.pt,linecolor=ududff]{-2.26}{5.64}{(--5.-3.*x)/2.}
+\rput[tl](-1.44,3.46){\ududff{$D_1$}}
+\psplot[linewidth=2.pt,linecolor=red]{-2.26}{5.64}{(-6.--2.*x)/2.}
+\rput[tl](2.96,0.8){\red{$D_2$}}
+\begin{scriptsize}
+\psdots[dotstyle=*,linecolor=ududff](0.,2.5)
+\psdots[dotstyle=*,linecolor=ududff](2.,-0.5)
+\psdots[dotstyle=*,linecolor=red](0.,-3.)
+\psdots[dotstyle=*,linecolor=red](2.,-1.)
+\end{scriptsize}
+\end{pspicture*}
+\end{center}
+
+\item Pour déterminer les coordonnées du point d'intersection des droites $D_1$ et $D_2,$ on résout le système~:
+
+\[
+\systeme*{3x+2y-5=0,-x+y+3= 0}\qquad\qquad \systeme*{3x+2y=5,-x+y=-3}\begin{matrix}\textcolor{red}{(\times 1)}\\ \textcolor{red}{(\times 3)}\end{matrix}\qquad\qquad \systeme*{3x+2y=5,-3x+3y=-9}
+\]
+
+\medskip
+
+
+On ajoute membre à membre les deux lignes. Les $x$ s'éliminent. On obtient une équation du premier degré en $y,$ que l'on résout~:
+
+
+
+\begin{align*}
+\cancel{3x}+2y-\cancel{3x}+3y&=5-9\\
+\frac{\cancel{5}y}{\cancel{5}}&=\frac{-4}{5}\\
+y&=-0,8.\end{align*}
+
+\medskip
+
+
+On reprend la première ligne du système pour trouver $x~:$
+
+
+
+\begin{align*}
+3x+2y-5&=0\\
+3x+2\times (-0,8)-5&=0\\
+3x-1,6-5&=0\\
+3x-6,6&=0\\
+3x-\cancel{6,6}+\cancel{6,6}&=0+6,6\\
+\frac{\cancel{3}x}{\cancel{3}}&=\frac{6,6}{3}\\
+x&=2,2.\end{align*}
+\end{enumerate}
+
+
+\medskip
+
+Enfin on vérifie que le couple $(x,y)=(2,2;-0,8)$ est bien solution du système~:
+
+
+\[
+\left \{
+\begin{array}{c @{=} c}
+    3\times 2,2+2\times(-0,8) -5& 0 \\
+    -2,2+(-0,8)+3 & 0 \\
+\end{array}
+\right.
+\]
+
+\medskip
+
+Conclusion~: les droites $D_1$ et $D_2$ se coupent au point de coordonnées $(2,2;-0,8).$
+
+\medskip
+
+\textbf{Remarques~:}
+
+\begin{itemize}
+\item[\textbullet] On aurait aussi pu utiliser la méthode de la leçon sur les équations de droites et résoudre l'équation
+\[\frac{-3x+5}{2}=x-3\] (on rappelle que cela permet de trouver $x~;$ et qu'il faut ensuite remplacer dans l'une des deux équations de droites pour trouver $y$).
+\item[\textbullet] Si la plupart des systèmes d'équations ont une unique solution, c'est que leur résolution revient à chercher les points d'intersection de deux droites~; et que lorsque les droites ne sont pas parallèles, il n'y a qu'un seul point d'intersection\footnote{Lorsque les droites sont parallèles, soit elles sont confondues et le système a une infinité de solutions (correspondant à tous les points de la droite)~; soit les droites sont parallèles et distinctes, et alors le système n'a aucune solution. Un exemple est $\systeme*{2x+y=4,2x+y=5},$ qui n'a clairement aucune solution, puisque quel que soit le couple $(x,y),$ $2x+y$ ne peut pas être égal à la fois à 4 et à 5. En transposant, on obtient les droites d'équations $y=-2x+4$ et $y=-2x+5,$ qui sont parallèles puisqu'elles ont le même coefficient directeur ($-2$), mais qui sont distinctes puisque leurs ordonnées à l'origine différent (4 pour l'une, 5 pour l'autre).}.
+\end{itemize}
+
+\end{exo}
+
+
+
+
+
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item On note $\Delta$ la perpendiculaire à $(BC)$ passant par $A.$ Le vecteur 
+
+\[\overrightarrow{BC}\begin{pmatrix} x_C-x_B\\y_C-y_B \end{pmatrix}\qquad \overrightarrow{BC}\begin{pmatrix} 5-2\\-2-4 \end{pmatrix}\qquad \overrightarrow{BC}\begin{pmatrix} 3\\-6 \end{pmatrix}\]
+est perpendiculaire à $\Delta,$ donc d'après le théorème admis dans le cadre avant l'énoncé, $\Delta$ a une équation cartésienne de la forme
+\[3x+(-6)y+c=0.\]
+De plus $\Delta$ passe par $A(-1;0),$ donc $3\times (-1)+(-6)\times 0+c=0,$ soit $-3+c=0~;$ et donc $c=3.$ On a donc finalement
+\[\Delta:3x-6y+3=0.\]
+
+\medskip
+
+\textbf{Remarque~:} On peut diviser par $3,$ pour avoir quelque chose de plus \og léger \fg~:
+\[\Delta:x-2y+1=0.\]
+
+
+\begin{center}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-2.66,-2.8)(7.08,5.14)
+\multips(0,-2)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-2.66,0)(7.08,0)}
+\multips(-2,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.8)(0,5.14)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2.66,-2.8)(7.08,5.14)
+\psplot[linewidth=2.pt,linecolor=blue]{-2.66}{7.08}{(--24.-6.*x)/3.}
+\psplot[linewidth=2.pt,linecolor=red]{-2.66}{7.08}{(--3.--3.*x)/6.}
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](2.6205266807797947,1.8102633403898973)(2.8102633403898976,1.430790021169692)(3.1897366596101024,1.6205266807797947)(3.,2.)
+\rput[tl](5.02,3.6){\red{$\Delta$}}
+\psdots[dotstyle=*,linecolor=red](-1.,0.)
+\rput[bl](-0.92,0.2){\red{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](2.,4.)
+\rput[bl](2.08,4.2){\ududff{$B$}}
+\psdots[dotstyle=*,linecolor=ududff](5.,-2.)
+\rput[bl](5.08,-1.8){\ududff{$C$}}
+\end{pspicture*}
+\end{center}
+
+
+\item La médiatrice $\Delta$ de $\left[AB\right]$ est la perpendiculaire à $\left[AB\right]$  passant par son milieu. On note $I$ ce milieu et on calcule ses coordonnées~:
+
+\[I\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2}\right)\qquad I\left(\frac{0+4}{2};\frac{-2+4}{2}\right)\qquad I\left(\frac{4}{2};\frac{2}{2}\right)\qquad I\left(2;1\right).\]
+
+Le vecteur 
+
+\[\overrightarrow{AB}\begin{pmatrix} x_B-x_A\\y_B-y_A \end{pmatrix}\qquad \overrightarrow{AB}\begin{pmatrix} 4-0\\4-(-2) \end{pmatrix}\qquad \overrightarrow{AB}\begin{pmatrix} 4\\6 \end{pmatrix}\]
+est perpendiculaire à $\Delta,$ donc d'après le théorème admis dans le cadre avant l'énoncé, $\Delta$ a une équation cartésienne de la forme
+\[4x+6y+c=0.\]
+De plus $\Delta$ passe par $I(2;1),$ donc $4\times 2+6\times 1+c=0,$ soit $14+c=0~;$ et donc $c=-14.$ On a donc finalement
+\[\Delta:4x+6y-14=0.\]
+
+\medskip
+
+\textbf{Remarque~:} Là aussi, on peut diviser (par $2$) pour avoir quelque chose de plus simple~:
+\[\Delta:2x+3y-7=0.\]
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\newrgbcolor{xfqqff}{0.4980392156862745 0. 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-3.02,-2.76)(5.84,4.54)
+\multips(0,-2)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-3.02,0)(5.84,0)}
+\multips(-3,0)(1.0,0){9}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.76)(0,4.54)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-3.02,-2.76)(5.84,4.54)
+\pspolygon[linewidth=2.pt,linecolor=xfqqff,fillcolor=xfqqff!20!white,fillstyle=solid,opacity=0.1](2.235339362165821,1.3530090432487314)(1.8823303189170895,1.5883484054145522)(1.6469909567512686,1.2353393621658209)(2.,1.)
+\psplot[linewidth=2.pt,linecolor=red]{-3.02}{5.84}{(-14.--4.*x)/-6.}
+\rput[tl](-1.24,2.8){\red{$\Delta$}}
+\psline[linewidth=2.pt,linecolor=blue](0.,-2.)(2.,1.)
+\psline[linewidth=2.pt,linecolor=blue](0.8724189548681974,-0.47503849116986446)(1.0721110255092796,-0.6081665382639201)
+\psline[linewidth=2.pt,linecolor=blue](0.9278889744907198,-0.3918334617360803)(1.1275810451318022,-0.5249615088301359)
+\psline[linewidth=2.pt,linecolor=blue](2.,1.)(4.,4.)
+\psline[linewidth=2.pt,linecolor=blue](2.8724189548681958,2.5249615088301356)(3.072111025509279,2.3918334617360806)
+\psline[linewidth=2.pt,linecolor=blue](2.9278889744907195,2.60816653826392)(3.127581045131803,2.475038491169865)
+\psdots[dotstyle=*,linecolor=ududff](0.,-2.)
+\rput[bl](-0.4,-1.76){\ududff{$A$}}
+\psdots[dotstyle=*,linecolor=ududff](4.,4.)
+\rput[bl](4.08,4.2){\ududff{$B$}}
+\psdots[dotsize=4pt 0,dotstyle=*,linecolor=darkgray](2.,1.)
+\rput[bl](1.62,0.78){\darkgray{$I$}}
+\end{pspicture*}
+\end{center}
+
+\end{enumerate}
+
+\end{exo}
+
+
+
 \end{document}
