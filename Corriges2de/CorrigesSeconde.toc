@@ -13,3 +13,4 @@
 \contentsline {section}{\numberline {10}Statistiques}{82}{section.10}%
 \contentsline {section}{\numberline {16}Trigonométrie}{86}{section.16}%
 \contentsline {section}{\numberline {11}Systèmes et équations de droites}{91}{section.11}%
+\contentsline {section}{\numberline {14}Fonctions de référence}{97}{section.14}%
