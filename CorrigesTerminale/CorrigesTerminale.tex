@@ -14797,6 +14797,184 @@ Cette série est appelée série harmonique et on la retrouve constamment en mat
 
 \end{exo}
 
+\newpage
+
+\section{Sommes de variables aléatoires}
+
+
+
+
+\begin{exo}
+
+
+
+La loi de $X$ est donnée par le tableau~:
+
+\medskip
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|}
+\hline
+    $x$    & $1$        & $2$     &  $3$   \\
+\hline
+$P(X=x)$ &  $\frac{1}{5}=0,2$        & $\frac{2}{5}=0,4$       & $\frac{2}{5}=0,4$      \\
+\hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+\begin{itemize}
+\item[\textbullet] L'espérance de $X$ est  \[E(X)=0,2 \times 1+0,4 \times 2+0,4 \times 3=2,2.\]
+\item[\textbullet] La variance de $X$ est \[V(X)=0,2\times \left(1-2,2\right)^2+0,4\times \left(2-2,2\right)^2+0,4\times \left(3-2,2\right)^2=0,56.\]
+\item[\textbullet] L'écart-type de $X$ est
+\[\sigma(X)=\sqrt{V(X)}=\sqrt{0,56}\approx 0,75.\]
+\end{itemize}
+
+ \end{exo}
+ 
+ \begin{exo}
+
+
+
+
+
+\begin{enumerate}
+\item On représente la situation par un arbre pondéré. On indique à l'extrémité droite des branches le nombre de points marqués suivant la situation.
+
+\medskip
+
+\begin{center}
+\pstree[treemode=R,treesep=1,levelsep=3]{\TR{}}%
+{
+\pstree{\Tr{$D$}\taput{$0,53$}}
+	{
+	\Tr{$M$}~[tnpos=r]{~~\textcolor{blue}{S.C. marque 2 pts}}\taput{$0,52$} 
+	\Tr{$\overline{M}$}~[tnpos=r]{~~\textcolor{green}{S.C. marque 0 pt}}\tbput{$0,48$}
+		}	
+\pstree{\Tr{$\overline{D}$}\tbput{$0,47$}}
+	{
+	\Tr{$M$}~[tnpos=r]{~~\textcolor{red}{S.C. marque 3 pts}}\taput{$0,44$} 
+	\Tr{$\overline{M}$}~[tnpos=r]{~~\textcolor{green}{S.C. marque 0 pt}}\tbput{$0,56$}
+		}
+}
+\end{center}
+
+\item D'après la formule des probabilités totales, la probabilité que Stephen Curry marque est~:
+
+\[P(M)=P\left(D\cap M\right)+P\left(\overline{D}\cap M\right)=0,53\times 0,52+0,47\times 0,44=0,\np{4824}.
+\]
+
+\item Stephen Curry a marqué. La probabilité qu'il ait tiré à deux points est
+\[P_M(D)=\frac{P(M\cap D)}{P(M)}=\frac{0,53\times 0,52}{\np{0,4824}}\approx 0,57.\]
+\item 
+
+
+
+\begin{itemize}
+\item[\textbullet] La probabilité que Stéphane Curry marque 3 pts est
+\[0,47\times 0,44=\np{0,2068}~;\]
+\item[\textbullet] la probabilité que Stéphane Curry marque 2 pts est
+\[0,53\times 0,52=\np{0,2756}~;\]
+\item[\textbullet] d'après la formule des probabilités totales, la probabilité que Stéphane Curry marque 0 pt est
+\[0,53\times 0,48+0,47\times 0,56=\np{0,5176}.\]
+\end{itemize}
+
+\medskip
+
+
+La loi de $X$ est donc donnée par le tableau~:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|}
+\hline
+   $x$     & 3      & 2       & 0   \\
+\hline
+$P(X=x)$ & $\np{0,2068}$ &$\np{0,2756}$ &$\np{0,5176}$      \\
+\hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+Enfin, l'espérance de $X$ est \[E(X)=\np{0,2068}\times 3+\np{0,2756}\times 2+\np{0,5176}\times 0= \np{1,1716}\]
+et sa variance est
+\[V(X)=\np{0,2068}\times (3-\np{1,1716})^2+\np{0,2756}\times (2-\np{1,1716})^2+\np{0,5176}\times (0-\np{1,1716})^2\approx \np{1,5910}.\]
+
+%En moyenne, Stephen Curry marque \np{1,1716}~point par tir.
+\end{enumerate}
+
+
+\end{exo}
+ 
+
+\begin{exo}
+
+On lance un dé équilibré à 8 faces cent fois de suite. On note $X$ le nombre de $8.$
+
+\medskip
+ 
+\begin{enumerate}
+\item On répète $100$ épreuves indépendantes de Bernoulli de paramètre $\frac{1}{8}=0,125,$ donc $X$ suit la loi binomiale de paramètres $n=100,$ $p=0,125.$
+
+\medskip
+
+\begin{itemize}
+\item[\textbullet] $P(X=12)=\binom{100}{12}\times 0,125^{12}\times (1-0,125)^{100-12}\approx 0,121.$
+\item[\textbullet] Avec la calculatrice, on obtient~:
+\[P(8\leq X\leq 16)\approx 0,827.\]
+\end{itemize}
+
+\item L'espérance  de $X$ est
+\[E(X)=n\times p=100\times 0,125=125.\]
+
+La variance  de $X$ est
+\[V(X)=n\times p\times (1-p)=100\times 0,125\times (1-0,125)=109,375.\]
+
+\item On cherche par tâtonnement, à l'aide de la calculatrice, le plus petit entier naturel $k$ tel que \[P(X\geq k)\leq 0,01.\] C'est très rapide avec une NUMWORKS, un peu moins avec les CASIO et les TI. Une méthode qui fonctionne quel que soit le modèle consiste à utiliser l'événement contraire~:
+\[ P(X\geq k)\leq 0,01\iff P(X< k)\geq 0,99\iff P(X\leq k-1)\geq 0,99\]
+(pour la 2\up{e} équivalence, comme $X$ est un entier, dire que $X<k$ revient à dire que $X\leq k-1$).
+
+\medskip
+
+Par tâtonnement, on trouve 
+\[P(X\leq 20)=0,988\cdots\qquad\text{et}\qquad P(X\leq 21)=0,994\cdots,\] donc $k-1=21~;$ et donc $k=22.$
+
+\medskip
+
+Conclusion~: le plus petit entier qui convienne est $k=22.$
+
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+
+Numérotons les dés 1, 2, 3 et notons $X_1,$ $X_2,$ $X_3$ leurs résultats. Les trois variables aléatoires $X_1,$ $X_2,$ $X_3$ ont la même loi (et donc la même espérance), donnée par~:
+
+\medskip
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+    $x$    & $1$        & $2$     &  $3$&$4$&$5$&$6$   \\
+\hline
+$P(X=x)$ &  $\frac{1}{6}$        &  $\frac{1}{6}$&  $\frac{1}{6}$&  $\frac{1}{6}$&  $\frac{1}{6}$&  $\frac{1}{6}$     \\
+\hline
+\end{tabular}
+\end{center}
+
+\medskip
+L'espérance de $X_1$ (et donc aussi celle de $X_2$ et $X_3$) est  \[E\left(X_1\right)=\frac{1}{6} \times 1+\frac{1}{6} \times 2+\frac{1}{6} \times 3+\frac{1}{6} \times 4+\frac{1}{6} \times 5+\frac{1}{6} \times 6=\frac{1+2+3+4+5+6}{6} =\frac{21}{6}=3,5.\]
+
+
+Or $S=X_1+X_2+X_3,$ donc par linéarité de l'espérance~:
+\[E(S)=E\left(X_1+X_2+X_3\right)=E\left(X_1\right)+E\left(X_2\right)+E\left(X_3\right)
+=3,5+3,5+3,5=10,5.\]
+
+
+ 
+\end{exo}
 
 
 \end{document}

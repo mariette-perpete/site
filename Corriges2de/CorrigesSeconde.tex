@@ -9769,6 +9769,111 @@ $g(x)$&$-3,375$&$-1$&$-0,125$&$0$&$0,125$&$1$&$3,375$\\\hline
 
 \end{exo}
 
+\begin{exo}
 
+On pose $i(x)=\dfrac{1}{x}$ pour $x\in\mathbb{R}^*=\mathbb{R}-\left\{0\right\}.$\footnote{$\mathbb{R}-\left\{0\right\}$ désigne l'ensemble de tous les nombres réels, sauf 0.}
+
+\begin{enumerate}
+\item Le pas n'est pas régulier, donc on est un peu obligé de faire les calculs un par un , sans utiliser la fonction \textsc{Table} de la calculatrice.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+	$x$&$-4$ &$-2$ &$-1$ &$-0,5$ &$-0,25$& $0,25$ &$0,5$ &$1$ &$2$ &$4$	\\\hline
+
+$g(x)$&$-0,25$&$-0,5$&$-1$&$-2$&$-4$&$4$&$2$&$1$&$0,5$&$0,25$\\\hline
+\end{tabular}
+\end{center}
+
+
+
+\medskip
+
+On ne peut pas diviser par 0, donc 0 est \og valeur interdite \fg. Graphiquement, cela va se traduire par le fait que la courbe est \og coupée en deux \fg~{} au niveau de l'axe des ordonnées (voir question suivante).
+
+
+
+
+\item La courbe, qu'on appelle une hyperbole, est symétrique par rapport au centre du repère.
+
+
+
+\medskip
+
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-4.52,-4.48)(4.78,4.52)
+\multips(0,-4)(0,1.0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-4.52,0)(4.78,0)}
+\multips(-4,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-4.48)(0,4.52)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-4.52,-4.48)(4.78,4.52)
+\psplot[linewidth=2.pt,linecolor=ududff,plotpoints=200]{-4.5}{-0.1}{1.0/x}
+\psplot[linewidth=2.pt,linecolor=ududff,plotpoints=200]{0.1}{4.5}{1.0/x}
+\psdots[dotstyle=*,linecolor=ududff](-4.,-0.25)
+\psdots[dotstyle=*,linecolor=ududff](-2.,-0.5)
+\psdots[dotstyle=*,linecolor=ududff](-1.,-1.)
+\psdots[dotstyle=*,linecolor=ududff](-0.5,-2.)
+\psdots[dotstyle=*,linecolor=ududff](-0.25,-4.)
+\psdots[dotstyle=*,linecolor=ududff](0.25,4.)
+\psdots[dotstyle=*,linecolor=ududff](0.5,2.)
+\psdots[dotstyle=*,linecolor=ududff](1.,1.)
+\psdots[dotstyle=*,linecolor=ududff](2.,0.5)
+\psdots[dotstyle=*,linecolor=ududff](4.,0.25)
+\end{pspicture*}
+\end{center}
+
+
+
+\item Le fait que $0$ soit valeur interdite se traduit par une double barre dans le tableau de signe et dans le tableau de variations.
+
+\setlength{\columnseprule}{1pt}
+
+
+\begin{multicols}{2}
+
+\begin{center}
+
+\textbf{Tableau de variations}
+
+\end{center}
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$i\left(x\right)$/2}{$-\infty$,$0$,$+\infty$}
+\tkzTabVar{+/\textcolor{red}{$0$}, -D+ / \textcolor{red}{$-\infty$}/ \textcolor{red}{$+\infty$},-/\textcolor{red}{$0$}}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} On a de nouveau écrit les limites en rouge.
+ %La courbe ne fait que monter~!
+
+\columnbreak
+
+\begin{center}
+
+\textbf{Tableau de signe}
+
+\end{center}
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$i\left(x\right)$/2}{$-\infty$,$0$,$+\infty$}
+\tkzTabLine{,-,d,+,}
+\end{tikzpicture}
+\end{center}
+
+\end{multicols}
+
+\end{enumerate}
+
+\end{exo}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  28 MAR 2025 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  2 APR 2025 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1943,12 +1943,12 @@ Overfull \hbox (8.82402pt too wide) in paragraph at lines 7885--7885
 [81] [82] [83] [84]
 File: boites.eps Graphic file (type eps)
  <boites.eps> [85] [86] [87] [88] [89] [90] [91] [92]
-[93] [94] [95] [96] [97] [98] [99] [100] [101]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9774.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 9774.
+[93] [94] [95] [96] [97] [98] [99] [100] [101] [102]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9879.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 9879.
  (./CorrigesSeconde.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 9774.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 9774.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 9879.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 9879.
 
 Package rerunfilecheck Info: File `CorrigesSeconde.out' has not changed.
 (rerunfilecheck)             Checksum: 9FB5C9012D75E12D6CCD2ED2C7429869;922.
@@ -1960,15 +1960,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 9774.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 9879.
  ) 
 Here is how much of TeX's memory you used:
- 36797 strings out of 483041
- 668502 string characters out of 5962452
+ 36802 strings out of 483041
+ 668576 string characters out of 5962452
  1462531 words of memory out of 5000000
- 51035 multiletter control sequences out of 15000+600000
- 703415 words of font info for 195 fonts, out of 8000000 for 9000
+ 51039 multiletter control sequences out of 15000+600000
+ 709914 words of font info for 196 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  60i,27n,72p,1007b,1195s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesSeconde.dvi (101 pages, 3374348 bytes).
+Output written on CorrigesSeconde.dvi (102 pages, 3411760 bytes).
