@@ -14977,4 +14977,180 @@ Or $S=X_1+X_2+X_3,$ donc par linéarité de l'espérance~:
 \end{exo}
 
 
+\begin{exo}
+
+\begin{enumerate}
+\item On répète $10$ épreuves indépendantes de Bernoulli de paramètre $\frac{1}{4}=0,25,$  par conséquent $X$ suit la loi binomiale de paramètres $n=10, $ $p=0,25.$
+\medskip
+
+On en déduit~:
+\begin{align*}
+E(X)&=n\times p=10\times 0,25=2,5,\\
+V(X)&=n\times p\times (1-p)=10\times 0,25\times (1-0,25)=\np{1,875}.
+\end{align*}
+
+\item Si le candidat a 2 bonnes réponses, il en a 8 fausses, donc sa note finale est
+\[2\times 2-8\times 0,5=0.\]
+
+On en déduit que $Y\geq 0$ lorsque $X\geq 2~;$ et donc
+\[P(Y\geq 0)=P(X\geq 2)=1-P(X=0)-P(X=1)=1-\binom{10}{0}\times 0,25^0\times 0,75^{10}-\binom{10}{1}\times 0,25^1\times 0,75^{9}\approx 0,989.\]
+%(le calcul de $P(X\geq 2)$ est plus ou moins rapide en fonction du modèle de calculatrice).
+\item Le candidat a $X$ bonnes réponses, donc il en a $10-X$ fausses. Comme il marque 2 pts par bonne réponse et en perd 0,5 par réponse fausse,  sa note finale est
+\[Y=2\times X-0,5\times(10-X)=2X-5+0,5X=2,5X-5.\]
+
+D'après les propriétés de l'espérance et de la variance (cf cours)~:
+\begin{align*}
+E(Y)&=E(2,5X-5)=2,5\times E(X)-5=2,5\times 2,5-5=1,25,\\
+V(Y)&=V(2,5X-5)=2,5^2\times V(X)=2,5\times 1,875=\np{4,6875}.
+\end{align*}
+
+\end{enumerate}
+
+
+\end{exo}
+
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item On répète 250 épreuves indépendantes de Bernoulli de paramètre $0,02,$ donc $X$ suit la loi binomiale de paramètres $n=250,$ $p=0,02.$
+
+
+
+\item On calcule $P(A)$ avec la formule de la loi binomiale, et $P(B)$ grâce à la formule et à l'événement contraire~:
+
+\begin{itemize}
+\item[\textbullet] $P(A)=P(X=5)=\binom{250}{5}\times 0,02^5\times 0,98^{245}
+\approx 0,177.$
+\item[\textbullet] $P(B)=P(X\geq 1)=1-P(X=0)=1-\binom{250}{0}\times 0,02^0\times 0,98^{250}=1-0,98^{250}\approx 0,994.$
+\end{itemize}
+
+
+\item  $X$ clients payent le menu végétarien, donc $250-X$ clients payent le menu avec viande. Le coût total des repas de l'ensemble des clients est donc
+\[Y=9\times X+12\times (250-X)=9X+\np{3000}-12X=-3X+\np{3000}.\]
+Or $X$ suit la loi binomiale de paramètres $n=250,$ $p=0,02,$ donc $E(X)=250\times 0,02=5~;$ et par linéarité de l'espérance~:
+\[E(Y)=E\left(-3X+\np{3000}\right)=-3E(X)+\np{3000}=-3\times 5+\np{3000}=\np{2985}.\]
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+
+\begin{itemize}
+\item[\textbullet] On sait que $E\left(X_1\right)=E\left(X_2\right)=E\left(X_3\right)=E\left(X_4\right)=220,$ donc par  linéarité de l'espérance~:
+\[E(M)=E\left(\frac{X_1+X_2+X_3+X_4}{4}\right)=\frac{1}{4}E\left(X_1\right)+\frac{1}{4}E\left(X_2\right)+\frac{1}{4}E\left(X_3\right)+\frac{1}{4}E\left(X_4\right)=\frac{1}{4}\times 4\times E\left(X_1\right)=220.\]
+
+\textbf{Remarque~:} $M$ est la moyenne des mesures effectuées, il est donc rassurant que son espérance soit égale à 220 volts.
+\item[\textbullet] On sait que $V\left(X_1\right)=V\left(X_2\right)=V\left(X_3\right)=V\left(X_4\right)=3.$ Les mesures sont indépendantes les unes des autres, donc d'après les propriétés de la variance~:
+
+\[V(M)=V\left(\frac{X_1+X_2+X_3+X_4}{4}\right)=\frac{1}{4^2}V\left(X_1\right)+\frac{1}{4^2}V\left(X_2\right)+\frac{1}{4^2}V\left(X_3\right)+\frac{1}{4^2}V\left(X_4\right)=\frac{1}{4^2}\times 4\times 3=\frac{3}{4}.\]
+
+\textbf{Remarque~:} $V(X)=3$ et $V(M)=\frac{3}{4},$ donc le fait de calculer la moyenne \og réduit l'incertitude \fg~{} : la variance est divisée par $4.$
+\item[\textbullet] $\sigma(M)=\sqrt{\frac{3}{4}}=\frac{\sqrt{3}}{2}.$
+\end{itemize}
+\end{exo}
+
+
+
+
+\begin{exo}
+
+
+On pioche une boule dans une urne contenant 5 boules numérotées 1, 2, 2, 3, 3. On définit les variables aléatoires
+
+\[X=\text{n° de la boule tirée}\]
+
+et
+
+\[
+Y=\begin{cases}1~&\text{si on pioche une boule numérotée 2,}\\
+0~&\text{sinon}.\end{cases}\]
+
+On pose enfin $S=X+Y.$
+
+\begin{enumerate}
+\item On rappelle (cf le 1\up{er} exercice de la leçon) que
+\[E(X)=2,2\qquad\text{et}\qquad V(X)=0,56.\]
+
+La variable $Y$ peut prendre les valeurs 1 (si on pioche une boule numérotée 2) et 0 (sinon), sa loi est donc donnée par
+\[P(Y=1)=\frac{2}{5}=0,4\qquad,\qquad P(Y=0)=\frac{3}{5}=0,6.\]
+
+On a ainsi
+\[E(Y)= 0,4\times 1+0,6\times 0=0,4\]
+et 
+\[V(Y)=0,4\times (1-0,4)^2+0,6\times (0-0,4)^2=0,24.\]
+
+
+
+\medskip
+
+\textbf{Remarques~:}
+
+\begin{itemize}
+\item[\textbullet] Lorsque les seules valeurs possibles d'une variable aléatoire $Z$ sont 0 et 1, et que $P(Z=1)=p,$ on dit qu'elle suit la loi de Bernoulli de paramètre $p.$ On a alors
+\[E(Z)=p\qquad\text{et}\qquad V(Z)=p(1-p).\]
+\item[\textbullet] L'expression \og On répète $n$ épreuves indépendantes de Bernoulli de paramètre $p$ \fg~{} signifie que l'on se donne $n$ variables aléatoires indépendantes $Z_1,Z_2,\dots,Z_n,$ qui toutes suivent une loi de Bernoulli de paramètre $p,$ en convenant que 
+
+\[Z_k=\begin{cases}1~&\text{si on réussit la }k\text{-ième épreuve,}
+\\0~&\text{sinon}.\end{cases}\]
+
+\medskip
+
+La variable aléatoire $Z=Z_1+Z_2+\cdots+Z_n,$ qui compte le nombre de succès, suit (par définition) la loi binomiale de paramètres $n,$ $p.$
+
+\medskip
+
+Enfin, par linéarité de l'espérance,
+\[E(Z)=E\left(Z_1\right)+E\left(Z_2\right)+\cdots+E\left(Z_n\right)=n\times p~;\] et comme $Z_1,Z_2,\dots,Z_n$ sont indépendantes~:
+\[V(Z)=V\left(Z_1\right)+V\left(Z_2\right)+\cdots+V\left(Z_n\right)=n\times p(1-p).\]
+C'est ainsi que l'on obtient les formules pour l'espérance et pour la variance d'une loi binomiale.
+\end{itemize}
+
+
+\item Si on pioche la boule numérotée 1, alors $S=1+0=1~;$ si on pioche une boule numérotée 2, alors $S=2+1=3.$ Enfin, si on pioche une boule numérotée 3, alors $S=3+0=3.$
+
+\medskip
+
+La variable aléatoire $S$ ne peut donc prendre que deux valeurs, 1 et 3, et sa loi est donnée par~:
+
+\[P(S=1)=\frac{1}{5}=0,2\qquad,\qquad P(S=3)=\frac{4}{5}=0,8.\]
+
+On a ainsi
+\[E(S)= 0,2\times 1+0,8\times 3=2,6\]
+et 
+\[V(S)=0,2\times (1-2,6)^2+0,8\times (3-2,6)^2=0,64.\]
+
+\textbf{Remarque~:} Pour calculer l'espérance de $S,$ on aurait pu utiliser la linéarité de l'espérance~:
+\[E(S)=E(X+Y)=E(X)+E(Y)=0,4+2,2=2,6.\]
+
+En revanche, on constate que $V(S)\not=V(X)+V(Y),$ ce qui vient du fait que $X$ et $Y$ \textbf{ne sont pas indépendantes}~: la valeur de l'une a une incidence sur la valeur de l'autre (par exemple, si je sais que $Y=1,$ alors nécessairement le numéro tiré est le 2, donc $X=2$).
+
+\end{enumerate}
+
+
+\end{exo}
+
+\begin{exo}
+
+
+\begin{enumerate}
+\item \begin{itemize}
+\item[\textbullet] On choisit 10 boules parmi les 20 de l'urne donc il y a $\binom{20}{10}$ tirages possibles.
+\item[\textbullet] L'événement $R=3$ est réalisé quand on tire 3 boules parmi les 10 rouges, et 7 boules parmi les 10 bleues~; il y a donc $\binom{10}{3}\times \binom{10}{7}$ cas favorables.
+\item[\textbullet] Conclusion~: $P(R=3)=\frac{\binom{10}{3}\times \binom{10}{7}}{\binom{20}{10}}.$
+\end{itemize}
+\item On tire 10 boules de l'urne, donc la somme du nombre de boules rouges et du nombre de boules bleues est égale à 10~:
+\[R+B=10.\]
+
+Par linéarité de l'espérance~:
+\[10=E(R+B)=E(R)+E(B).\] Mais les boules bleues et rouges jouent des rôles symétriques, donc $E(R)=E(B)~;$ et ainsi
+\[E(R)=E(B)=10\div 2=5.\]
+
+\end{enumerate}
+
+\end{exo}
+
 \end{document}

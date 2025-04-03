@@ -9876,4 +9876,157 @@ On ne peut pas diviser par 0, donc 0 est \og valeur interdite \fg. Graphiquement
 
 \end{exo}
 
+\begin{exo}
+La fonction $f$ est définie par \[f\left(x\right)=\frac{3x+2}{2x+1}.\]
+
+\begin{enumerate}
+\item On ne peut pas diviser par 0, donc $\frac{3x+2}{2x+1}$ a un sens pour tous les réels $x,$ sauf quand $2x+1=0.$ On résout cette équation~:
+
+\begin{align*}
+2x+1&=0\\
+2x+\cancel{1}-\cancel{1}&=0-1\\
+\frac{\cancel{2}x}{\cancel{2}}&=\frac{-1}{2}\\
+x&=-\frac{1}{2}
+\end{align*}
+
+Conclusion~: la seule valeur interdite est $x=-\frac{1}{2},$ donc l'ensemble de définition de $f$ est \[\mathbb{R}-\left\{-\frac{1}{2}\right\}=\left]-\infty;-\frac{1}{2}\right[\cup\left]-\frac{1}{2};+\infty\right[\] (ensemble de tous les réels, sauf $-\frac{1}{2}$).
+
+\item Comme dans l'exercice précédent, le pas n'est pas régulier, donc on fait les calculs un par un. Par exemple~:
+
+\[f(1,5)=\frac{3\times 1,5+2}{2\times 1,5+1}=\frac{6,5}{4}=1,625\approx 1,63.\]
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+	$x$&$-4,5$ &$-2,5$ &$-1,5$ &$-1$ &$-0,75$& $-0,25$ &$0$ &$0,5$ &$1,5$ &$3,5$	\\\hline
+
+$f(x)$&$1,44$&$1,38$&$1,25$&$1$&$0,5$&$2,5$&$2$&$1,75$&$1,63$&$1,56$\\\hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+\item On rappelle que~:
+\begin{itemize}
+\item[\textbullet] la droite $d_1$ d'équation $y=\frac{3}{2}$ est horizontale~;
+\item[\textbullet] la droite $d_2$ d'équation $x=-\frac{1}{2}$ est verticale.
+\end{itemize}
+
+\medskip
+
+
+\begin{center}
+\newrgbcolor{ududff}{0.30196078431372547 0.30196078431372547 1.}
+\psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-5.8,-2.3)(5.4,5.46)
+\multips(0,-2)(0,1.0){8}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-5.8,0)(5.4,0)}
+\multips(-5,0)(1.0,0){12}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-2.3)(0,5.46)}
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-5.8,-2.3)(5.4,5.46)
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{-5.800000000000004}{-0.51}{(3.0*x+2.0)/(2.0*x+1.0)}
+\psplot[linewidth=2.pt,linecolor=blue,plotpoints=200]{-0.49}{5.4}{(3.0*x+2.0)/(2.0*x+1.0)}
+\psplot[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=red]{-5.8}{5.4}{(--1.5-0.*x)/1.}
+\psline[linewidth=2.pt,linestyle=dashed,dash=2pt 2pt,linecolor=green](-0.5,-2.3)(-0.5,5.46)
+\rput[tl](-2.48,2.06){\red{$d_1$}}
+\rput[tl](-0.95,4.54){\green{$d_2$}}
+\psdots[dotstyle=*,linecolor=ududff](-4.5,1.4375)
+\psdots[dotstyle=*,linecolor=ududff](-2.5,1.375)
+\psdots[dotstyle=*,linecolor=ududff](-1.5,1.25)
+\psdots[dotstyle=*,linecolor=ududff](-1.,1.)
+\psdots[dotstyle=*,linecolor=ududff](-0.75,0.5)
+\psdots[dotstyle=*,linecolor=ududff](-0.25,2.5)
+\psdots[dotstyle=*,linecolor=ududff](0.5,1.75)
+\psdots[dotstyle=*,linecolor=ududff](1.5,1.625)
+\psdots[dotstyle=*,linecolor=ududff](3.5,1.5625)
+\psdots[dotstyle=*,linecolor=ududff](0.,2.)
+\end{pspicture*}
+\end{center}
+
+\medskip
+
+\textbf{Remarques~:}
+\begin{itemize}
+\item[\textbullet] La courbe est \og coupée en deux \fg~{} au niveau de la valeur interdite, donc par la droite $d_2.$ La courbe se rapproche de cette droite $d_2,$ sans jamais la toucher.
+\item[\textbullet] Prenons une \og grande valeur de $x$ \fg~{} et faisons le calcul~:
+\[f(\np{1000})=\frac{3\times \np{1000}+2}{2\times \np{1000}+1}=\frac{\np{3002}}{ \np{2001}}.\] Le résultat est très proche de $\frac{3}{2}$ (la calculatrice donne $\frac{\np{3002}}{ \np{2001}}\approx\np{1,50025}$) donc pour les grandes valeurs de $x,$ la courbe se rapproche de la droite $d_1$ (elle s'en rapproche, mais à nouveau sans jamais la toucher).
+
+Il en est de même pour de \og grandes valeurs négatives \fg~:
+
+\[f(\np{-1000})=\frac{3\times (-\np{1000})+2}{2\times (-\np{1000})+1}=\frac{\np{2998}}{ \np{1999}}\approx\np{1,49975}.\]
+\item[\textbullet] La courbe s'appelle une hyperbole. Pour effectuer le tracé, une personne expérimentée se contenterait de placer les points de coordonnées $(-1;1)$ et $(0;2),$ puis viendrait \og s'appuyer \fg~{} sur les droites en pointillés (qu'il aurait préalablement tracées).
+\item[\textbullet] Le point d'intersection des droites $d_1$ et $d_2$ est centre de symétrie pour la courbe.
+\end{itemize}
+\item \textbf{Tableau de variations}
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\tkzTabInit{$x$/1,$f\left(x\right)$/2}{$-\infty$,$-\frac{1}{2}$,$+\infty$}
+\tkzTabVar{+/\textcolor{red}{$\frac{3}{2}$}, -D+ / \textcolor{red}{$-\infty$}/ \textcolor{red}{$+\infty$},-/\textcolor{red}{$\frac{3}{2}$}}
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\newpage
+
+\textbf{Tableau de signe}
+
+\medskip
+
+On va le faire \og par le calcul \fg. Le graphique nous permettra ensuite de contrôler notre tableau.
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+On résout~:
+
+\begin{align*}
+3x+2&=0\\
+3x+\cancel{2}-\cancel{2}&=0-2\\
+\frac{\cancel{3}x}{\cancel{3}}&=\frac{-2}{3}\\
+x&=-\frac{2}{3}
+\end{align*}
+
+$a=3$ $\Rightarrow$ $+$ à droite
+
+\columnbreak
+
+\begin{align*}
+2x+1&=0\\
+2x+\cancel{1}-\cancel{1}&=0-1\\
+\frac{\cancel{2}x}{\cancel{2}}&=\frac{-1}{2}\\
+x&=-\frac{1}{2}
+ \end{align*}
+ 
+ $a=2$ $\Rightarrow$ $+$ à droite
+\end{multicols}
+
+\medskip
+
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\tkzTabInit{$x$/1,$3x+2$/1,$2x+1$/1,$\dfrac{3x+2}{2x+1}$/1}{$-\infty$,$-\frac{2}{3}$,$-\frac{1}{2}$,$+\infty$}
+\tkzTabLine{,-,z,+,,+}
+\tkzTabLine{,-,,-,z,+}
+\tkzTabLine{,+,z,-,d,+}
+\end{tikzpicture}
+\end{center}
+\end{enumerate}
+
+\medskip
+
+\textbf{Remarques~:}
+
+\begin{itemize}
+\item[\textbullet] La courbe coupe l'axe des abscisses en $x=-\frac{2}{3}\approx -0,67.$
+\item[\textbullet] On retrouve la valeur interdite $x=-\frac{1}{2}.$
+\end{itemize}
+\end{exo}
+
+
+
 \end{document}
