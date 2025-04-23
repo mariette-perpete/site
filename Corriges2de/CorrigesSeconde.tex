@@ -10027,6 +10027,106 @@ x&=-\frac{1}{2}
 \end{itemize}
 \end{exo}
 
+\setcounter{section}{11}
 
+
+
+
+\section{Arithmétique et racines carrées}
+
+\setcounter{exo}{143}
+
+
+\begin{exo}
+
+Rappelons que~:
+
+\begin{itemize}
+\item[\textbullet] les nombres divisibles par 2 sont ceux qui se terminent par 0, 2, 4, 6 ou 8~;
+\item[\textbullet] les nombres divisibles par 5 sont ceux qui se terminent par 0 ou 5~;
+\item[\textbullet] les nombres divisibles par 3 sont ceux dont la somme des chiffres est divisible par 3~;
+\item[\textbullet] les nombres divisibles par 9 sont ceux dont la somme des chiffres est divisible par 9.
+\end{itemize}
+
+\medskip
+
+Les calculs utiles à l'exercice sont~:
+
+\begin{itemize}
+\item[\textbullet] $8+4=12,$ qui est divisible par 3, mais pas par 9~;
+\item[\textbullet] $4+9+5=18,$ qui est divisible par 3 et par 9~;
+\item[\textbullet] $9+5+4+5=23,$ qui n'est divisible ni par 3, ni par 9~;
+\item[\textbullet] $8+0+5+2=15,$ qui est divisible par 3, mais pas par 9.
+\end{itemize}
+
+\medskip
+
+Ces calculs permettent de compléter le tableau (un pouce vert signifie la divisibilité, une croix rouge la non divisibilité)~:
+
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|}\hline
+\backslashbox{Nombre}{Divisible par}& $2$ &$3$&$5$&$9$ \\ \hline 
+$84$&\textcolor{green}{\faThumbsUp}
+&\textcolor{green}{\faThumbsUp}
+&\textcolor{red}{\faTimes}&\textcolor{red}{\faTimes}  \\ \hline
+$495$&\textcolor{red}{\faTimes}&\textcolor{green}{\faThumbsUp}
+&\textcolor{green}{\faThumbsUp}
+&\textcolor{green}{\faThumbsUp}
+  \\ \hline
+$\np{9545}$&\textcolor{red}{\faTimes}&\textcolor{red}{\faTimes}&\textcolor{green}{\faThumbsUp}
+&\textcolor{red}{\faTimes}  \\ \hline
+$\np{8052}$&\textcolor{green}{\faThumbsUp}
+&\textcolor{green}{\faThumbsUp}
+&\textcolor{red}{\faTimes}&\textcolor{red}{\faTimes} \\ \hline
+\end{tabular}
+\end{center}
+
+\medskip
+
+\textbf{Remarque~:} 2, 3, 5 et 9 font partie des rares nombres pour lesquels il existe un critère de divisibilité simple. C'est également le cas de 25, 100 ou encore 11 (vous pouvez chercher le critère de divisibilité par 11, il n'est pas évident à deviner). Mais la plupart du temps, la seule solution pour tester la divisibilité est de poser la division euclidienne et de voir si le reste est nul ou non. Par exemple, pour savoir si \np{9545} est divisible par 7, la méthode la plus simple n'a aucune subtilité~:
+
+\begin{center}
+\opdiv[maxdivstep=4]{9545}{7}
+\end{center}
+
+Le reste est non nul, donc \np{9545} n'est pas divisible par 7.
+
+\end{exo}
+
+\begin{exo}
+\begin{enumerate}
+\item On cherche tous les diviseurs de 48 et de 84. Pour cela, on écrit tous les produits d'entiers qui donnent 48 et 84~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+\begin{align*}
+48&=1\times 48\\
+&=2\times 24\\
+&=3\times 16\\
+&=4\times 12\\
+&=6\times 8.
+\end{align*}
+
+Les diviseurs de 48 sont 1, 2, 3, 4, 6, 8, 12, 16, 24 et 48.
+
+\columnbreak
+
+\begin{align*}
+84&=1\times 84\\
+&=2\times 42\\
+&=3\times 28\\
+&=4\times 21\\
+&=6\times 14\\
+&=7\times 12.
+\end{align*}
+
+Les diviseurs de 84 sont 1, 2, 3, 4, 6, 7, 12, 14, 21, 28, 42 et 84.
+\end{multicols}
+
+\item Le $\textsc{pgcd}$ est le plus grand nombre qui divise à la fois 48 et 84. L'examen des listes ci-dessus donne \[\textsc{pgcd}(48,84)=12.\]
+\end{enumerate}
+
+\end{exo}
 
 \end{document}
