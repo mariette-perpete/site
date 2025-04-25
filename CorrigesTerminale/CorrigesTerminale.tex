@@ -15153,4 +15153,187 @@ Par linéarité de l'espérance~:
 
 \end{exo}
 
+
+\begin{exo}
+
+Soit $X$ une variable aléatoire d'espérance $\mu=5,$ de variance $V=1.$ D'après l'inégalité de Bienaymé-Tchebychev~:
+
+\begin{align*}P(|X-\mu|\geq 2)&\leq \frac{V}{2^2},\\
+\text{soit}\qquad P(|X-5|\geq 2)&\leq \frac{1}{4}.
+\end{align*}
+
+Sur la figure ci-dessous, la probabilité d'être dans la zone rouge\footnote{C'est-à-dire à une distance de $\mu$ supérieure ou égale à 2.} est inférieure à $\frac{1}{4}.$
+
+\begin{center}
+
+
+\newrgbcolor{xdxdff}{0.49019607843137253 0.49019607843137253 1.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.3,-0.78)(10.56,0.54)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-0.3,-0.78)(10.56,0.54)
+\psline[linewidth=2.8pt,linecolor=green](3.,0.)(7.,0.)
+\psplot[linewidth=2.8pt,linecolor=red]{7.}{10.25}{(-0.-0.*x)/2.}
+\psplot[linewidth=2.8pt,linecolor=red]{-0.3}{3.}{(-0.-0.*x)/-2.}
+\psdots[dotstyle=*,linecolor=blue](3.,0.)
+\psdots[dotstyle=*,linecolor=blue](5.,0.)
+\psdots[dotstyle=*,linecolor=blue](7.,0.)
+\end{pspicture*}
+
+
+\end{center}
+\end{exo}
+
+\begin{exo}
+
+On lance \np{1000} fois de suite une pièce de monnaie équilibrée, on note $X$ le nombre de \textit{pile}.
+ 
+\begin{enumerate}
+\item On répète $\np{1000}$ épreuves indépendantes de Bernoulli de paramètre $\frac{1}{2},$ donc $X$ suit la loi binomiale de paramètres $n=\np{1000},$ $p=\frac{1}{2}.$
+
+
+\medskip
+
+D'après le cours~:
+\[\mu=E(X)=n\times p=\np{1000}\times \frac{1}{2}=500\qquad,\qquad V=V(X)=n\times p\times (1-p)=\np{1000}\times \frac{1}{2}\times\frac{1}{2}=250.\]
+
+\item D'après l'inégalité de Bienaymé-Tchebychev~:
+
+\begin{align*}P(|X-\mu|\geq 50)&\leq \frac{V}{50^2},\\
+\text{soit}\qquad P(|X-500|\geq 50)&\leq \frac{250}{2500},\\
+\text{soit enfin}\qquad P(|X-500|\geq 50)&\leq 0,1.
+\end{align*}
+
+Sur la figure ci-dessous, la probabilité d'être dans la zone rouge est inférieure à $0,1.$
+
+\begin{center}
+
+\psset{xunit=0.025cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(316.739444448829,-1)(700.737638886646,1)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=50.,Dy=50.,ticksize=-2pt 0,subticks=2]{->}(0,0)(316.739444448829,-23.46861038524133)(700.73,22.76029845969967)
+\psline[linewidth=2.8pt,linecolor=green](450.,0.)(550.,0.)
+\psplot[linewidth=2.8pt,linecolor=red]{550.}{684.737638886646}{(-0.-0.*x)/100.}
+\psplot[linewidth=2.8pt,linecolor=red]{316.739444448829}{450.}{(-0.-0.*x)/-100.}
+\psdots[dotstyle=*,linecolor=blue](450.,0.)
+\psdots[dotstyle=*,linecolor=blue](500.,0.)
+\psdots[dotstyle=*,linecolor=blue](550.,0.)
+\end{pspicture*}
+
+
+\end{center}
+
+
+
+\item Dire que  $400< X< 600$ revient à dire que $X$ est dans la zone verte ci-dessous (extrémités exclues)~:
+
+\begin{center}
+
+\psset{xunit=0.025cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(316.739444448829,-1)(700.737638886646,1)
+\psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=false,Dx=50.,Dy=50.,ticksize=-2pt 0,subticks=2]{->}(0,0)(316.739444448829,-23.46861038524133)(700.73,22.76029845969967)
+\psline[linewidth=2.8pt,linecolor=green](400.,0.)(600.,0.)
+\psplot[linewidth=2.8pt,linecolor=red]{600.}{684.73}{(-0.-0.*x)/100.}
+\psplot[linewidth=2.8pt,linecolor=red]{316.739444448829}{400.}{(-0.-0.*x)/-100.}
+\psdots[dotstyle=*,linecolor=blue](400.,0.)
+\psdots[dotstyle=*,linecolor=blue](500.,0.)
+\psdots[dotstyle=*,linecolor=blue](600.,0.)
+\end{pspicture*}
+
+\end{center}
+
+
+On utilise l'événement contraire~: $X$ est dans la zone rouge lorsque $|X-500|\geq 100.$ D'après l'inégalité de Bienaymé-Tchebychev,
+
+\begin{align*}P(|X-\mu|\geq 100)&\leq \frac{V}{100^2},\\
+\text{soit}\qquad P(|X-500|\geq 100)&\leq \frac{250}{100^2},\\
+\text{soit enfin}\qquad P(|X-500|\geq 100)&\leq 0,025.
+\end{align*}
+
+
+Conclusion~: la probabilité d'être dans la zone rouge est inférieure à $0,025,$ donc la probabilité d'être dans la zone verte est supérieure à $1-0,025=0,975~:$
+\[P(400<X<600)\geq 0,975.\]
+
+
+
+\end{enumerate}
+
+\textbf{Remarques~:}
+
+\begin{itemize}
+\item[\textbullet] Le passage de $P(|X-500|\geq 100)\leq 0,025$ à $P(400<X<600)\geq 0,975$ peut être mené de façon plus formelle (donc sans utiliser le dessin)~:
+
+\begin{alignat*}{5}
+&P(|X-500|\geq 100)\leq 0,025 &\implies&  -P(|X-500|\geq 100)\geq -0,025& \text{  (on multiplie par } -1)\\
+&& \implies & 1-P(|X-500|\geq 100)\geq 1-0,025& \text{  (on ajoute 1)}\\
+&& \implies & P(|X-500|< 100)\geq 0,975& \text{  (le contraire de } |X-500|\geq 100\text{ est }|X-500|< 100)\\
+&& \implies & P(-100<X-500< 100)\geq 0,975& \text{  (car } |a|< 100\text{ équivaut à }-100<a< 100)\\
+&& \implies & P(-100+500<X-500+500< 100+500)\geq 0,975& \text{  (on ajoute 500)}\\
+&& \implies & P(400<X< 600)\geq 0,975& \text{  (on simplifie)}
+\end{alignat*}
+
+\item[\textbullet] D'après la question 2, la probabilité que $X$ appartienne à l'intervalle vert  $\left[451;549\right]$ est supérieure à $1-0,1=0,9.$ Donc  $\left[451;549\right]$ est un intervalle de fluctuation de niveau \textbf{au moins} 90~\% pour $X.$
+
+\medskip
+
+Avec la calculatrice, on obtient $P(451\leq X\leq 549)\approx 0,998,$ donc le niveau \og réel  \fg~{} de l'intervalle de fluctuation  $\left[451;549\right]$ est de 99,8~\%. On voit donc que l'inégalité de Bienaymé-Tchebychev, si elle est simple, est cependant loin d'être optimale dans certains cas.%\footnote{Pour avoir un intervalle de fluctuation optimal, il faut approcher la loi binomiale par une loi normale. Les élèves qui feront des statistiques dans leurs études supérieures apprendront certainement ces techniques.}.
+\end{itemize}
+
+
+
+\end{exo}
+
+
+
+\begin{exo}
+
+
+
+%Une variable aléatoire $X$ suit la loi binomiale de paramètres $n=400,$ $p=0,25.$ On note $\mu$ son espérance et $\sigma$ son écart-type.
+
+%\begin{enumerate}
+%\item D'après le cours~:
+
+%\[\mu=E(X)=n\times p=400\times 0,25=100\qquad,\qquad V=V(X)=n\times p\times (1-p)=400\times 0,25\times (1-0,25)=75~\text{donc}~\sigma=\sqrt{75}.\]
+
+ %\item
+ 
+ On utilise l'événement contraire~: on majore la probabilité que $X$ appartienne à la zone rouge grâce à l'inégalité de Bienaymé-Tchebychev~:
+ 
+
+ 
+ 
+ 
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.62,3.06)(11.46,4.64)
+\psline[linewidth=2.8pt,linecolor=green](4.,4.)(8.,4.)
+\psline[linewidth=2.8pt,linecolor=red](8.,4.)(11.,4.)
+\psline[linewidth=2.8pt,linecolor=red](4.,4.)(1.,4.)
+\rput[tl](3.64,3.7){\blue{$\mu-2\sigma$}}
+\rput[tl](5.9,3.7){\blue{$\mu$}}
+\rput[tl](7.64,3.7){\blue{$\mu+2\sigma$}}
+\psdots[dotstyle=*,linecolor=blue](6.,4.)
+\psdots[dotstyle=*,linecolor=blue](4.,4.)
+\psdots[dotstyle=*,linecolor=blue](8.,4.)
+\end{pspicture*}
+\end{center}
+
+Par définition de l'écart-type, $V=\sigma^2,$ donc
+
+ \begin{align*}P(|X-\mu|\geq 2\sigma)&\leq \frac{V}{(2\sigma)^2},\\
+\text{soit}\qquad P(|X-\mu|\geq 2\sigma)&\leq \frac{\sigma^2}{4\sigma^2},\\
+\text{soit enfin}\qquad P(|X-\mu|\geq 2\sigma)&\leq \frac{1}{4}.
+\end{align*}
+
+On en déduit, en prenant l'événement contraire~:
+\begin{align*}
+P\left(\mu-2\sigma<X<\mu+2\sigma\right)&\geq 1-\frac{1}{4}\\
+P\left(X\in\left]\mu-2\sigma;\mu+2\sigma\right[\right)&\geq \frac{3}{4}.
+\end{align*}
+ 
+
+\end{exo}
+
+
+
+
 \end{document}
