@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  25 APR 2025 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  28 APR 2025 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2294,12 +2294,19 @@ Overfull \hbox (38.23868pt too wide) detected at line 15271
 []
  []
 
-[158] [159]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15339.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 15339.
+[158] [159] [160]
+Overfull \hbox (16.9067pt too wide) in paragraph at lines 15467--15468
+[]\T1/futs/b/n/10 Remarque : \T1/futs/m/n/10 La même tech-nique qui a per-mis d
+e ma-jo-rer $\FML/futmi/m/it/10 P []$ \T1/futs/m/n/10 per-met éga-le-ment de ma
+-jo-rer $\FML/futmi/m/it/10 P [] ;$
+ []
+
+[161]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15478.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 15478.
  (./CorrigesTerminale.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 15339.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15339
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 15478.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15478
 .
 Package rerunfilecheck Info: File `CorrigesTerminale.out' has not changed.
 (rerunfilecheck)             Checksum: B2245EE7948A55AEBB10DAABE831C3BC;912.
@@ -2311,7 +2318,7 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15339.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 15478.
  ) 
 Here is how much of TeX's memory you used:
  41262 strings out of 483041
@@ -2322,4 +2329,4 @@ Here is how much of TeX's memory you used:
  81 hyphenation exceptions out of 8191
  60i,20n,75p,919b,2445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesTerminale.dvi (159 pages, 4556540 bytes).
+Output written on CorrigesTerminale.dvi (161 pages, 4584156 bytes).

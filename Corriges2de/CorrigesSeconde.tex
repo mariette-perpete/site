@@ -10280,4 +10280,274 @@ Conclusion~: il y aura 36 équipes~; et comme $144\div 36=4$ et $252\div 36=7,$ 
 
 \end{exo}
 
+\begin{exo}
+
+Le nombre de cageots doit diviser 60, 84 et 120~; et on veut que ce nombre soit le plus grand possible. On calcule donc le $\textsc{pgcd}$ de 60, 84 et 120~:
+
+
+On décompose chacun des trois nombres en produits de nombres premiers~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{3}
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.8457199315831654,2.3821455719282396)(2.5,5.568564390986381)
+\rput[tl](1.06,5.3){60}
+\rput[tl](1.06,4.7){30}
+\rput[tl](1.06,4.1){15}
+\rput[tl](1.06,3.5){5}
+\rput[tl](1.06,2.9){1}
+\rput[tl](1.90,5.3){2}
+\rput[tl](1.90,4.7){2}
+\rput[tl](1.90,4.1){3}
+\rput[tl](1.90,3.5){5}
+\psline[linewidth=2.pt](1.65,5.3)(1.65,2.5)
+\end{pspicture*}
+\end{center}
+\[60=\textcolor{blue}{2}\times \textcolor{orange}{2}\times \textcolor{red}{3}\times 5.\]
+
+\columnbreak
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.8457199315831654,2.3821455719282396)(2.5,5.568564390986381)
+\rput[tl](1.06,5.3){84}
+\rput[tl](1.06,4.7){42}
+\rput[tl](1.06,4.1){21}
+\rput[tl](1.06,3.5){7}
+\rput[tl](1.06,2.9){1}
+\rput[tl](1.90,5.3){2}
+\rput[tl](1.90,4.7){2}
+\rput[tl](1.90,4.1){3}
+\rput[tl](1.90,3.5){7}
+\psline[linewidth=2.pt](1.65,5.3)(1.65,2.5)
+\end{pspicture*}
+\end{center}
+\[84=\textcolor{blue}{2}\times \textcolor{orange}{2}\times \textcolor{red}{3}\times 7.\]
+
+\columnbreak
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.8457199315831654,1.7821455719282396)(2.5,5.568564390986381)
+\rput[tl](0.86,5.3){120}
+\rput[tl](1.06,4.7){60}
+\rput[tl](1.06,4.1){30}
+\rput[tl](1.06,3.5){15}
+\rput[tl](1.06,2.9){5}
+\rput[tl](1.06,2.3){1}
+\rput[tl](1.90,5.3){2}
+\rput[tl](1.90,4.7){2}
+\rput[tl](1.90,4.1){2}
+\rput[tl](1.90,3.5){3}
+\rput[tl](1.90,2.9){5}
+\psline[linewidth=2.pt](1.65,5.3)(1.65,1.9)
+\end{pspicture*}
+\end{center}
+\[120=\textcolor{blue}{2}\times \textcolor{orange}{2}\times 2\times \textcolor{red}{3}\times 5.\]
+
+
+\end{multicols}
+
+On en déduit $\textsc{pgcd}(84,60,120)=\textcolor{blue}{2}\times \textcolor{orange}{2}\times \textcolor{red}{3}=12.$
+
+\medskip
+
+Conclusion~: Manon peut faire 12 cageots au maximum. (Chacun d'eux contiendra $60\div 12=5$ pêches, $84\div 12=7$ abricots et $120\div 12=10$ cerises.)
+
+\end{exo}
+
+\begin{exo}
+
+\begin{enumerate}
+\item On décompose chacun des deux nombres en produits de nombres premiers~:
+
+\setlength{\columnseprule}{1pt}
+
+\begin{multicols}{2}
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.8457199315831654,1.7821455719282396)(2.5,5.568564390986381)
+\rput[tl](0.86,5.3){126}
+\rput[tl](1.06,4.7){63}
+\rput[tl](1.06,4.1){21}
+\rput[tl](1.06,3.5){7}
+\rput[tl](1.06,2.9){1}
+\rput[tl](1.90,5.3){2}
+\rput[tl](1.90,4.7){3}
+\rput[tl](1.90,4.1){3}
+\rput[tl](1.90,3.5){7}
+\psline[linewidth=2.pt](1.65,5.3)(1.65,2.5)
+\end{pspicture*}
+\end{center}
+\[126=\textcolor{blue}{2}\times \textcolor{green}{3}\times 3\times  \textcolor{purple}{7}.\]
+
+\columnbreak
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.8457199315831654,1.7821455719282396)(2.5,5.568564390986381)
+\rput[tl](0.86,5.3){420}
+\rput[tl](0.86,4.7){210}
+\rput[tl](0.86,4.1){105}
+\rput[tl](1.06,3.5){35}
+\rput[tl](1.06,2.9){7}
+\rput[tl](1.06,2.3){1}
+\rput[tl](1.90,5.3){2}
+\rput[tl](1.90,4.7){2}
+\rput[tl](1.90,4.1){3}
+\rput[tl](1.90,3.5){5}
+\rput[tl](1.90,2.9){7}
+\psline[linewidth=2.pt](1.65,5.3)(1.65,1.9)
+\end{pspicture*}
+\end{center}
+
+\[420=\textcolor{blue}{2}\times \textcolor{red}{2}\times \textcolor{green}{3}\times \textcolor{orange}{5}\times  \textcolor{purple}{7}.\]
+
+
+\end{multicols}
+
+
+\item Le $\textsc{ppcm}$ doit être un multiple de 126 et de 420, donc chacun des nombres apparaissant dans les décompositions de 126 et 420 doit apparaître dans celle du $\textsc{ppcm}$. De plus, le $\textsc{ppcm}$ doit être le plus petit possible~; on l'obtient donc en multipliant tous les nombres qui apparaissent au moins une fois dans les décompositions de 126 et 420~:
+
+ \[\textsc{ppcm}(126,420)=\textcolor{blue}{2}\times \textcolor{red}{2}\times \textcolor{green}{3}\times 3\times \textcolor{orange}{5}\times \textcolor{purple}{7}=\np{1260}.\]
+ 
+ \medskip
+ 
+ \textbf{Remarque~:} $\np{1260}=126\times 10=420\times 3.$
+
+\end{enumerate}
+
+\end{exo}
+
+\begin{exo}
+
+Je verrai à nouveau les objets en même temps dans un nombre de jours multiple à la fois de 168 et 90. Comme on cherche la plus petite solution, il faut déterminer le plus petit multiple commun à 168 et 90.
+
+\medskip
+
+On décompose comme d'habitude en produits de nombres premiers (je ne détaille pas)~; on obtient~:
+
+\begin{align*}
+168&=\textcolor{blue}{2}\times \textcolor{red}{2}\times \textcolor{green}{2}\times \textcolor{orange}{3}\times  \textcolor{purple}{7},\\
+90&=\textcolor{blue}{2}\times  \textcolor{orange}{3}\times \textcolor{pink}{3}\times   \textcolor{gray}{5},
+\end{align*}
+
+d'où l'on tire
+
+\[\textsc{ppcm}(168,90)=\textcolor{blue}{2}\times \textcolor{red}{2}\times \textcolor{green}{2}\times \textcolor{orange}{3}\times \textcolor{pink}{3}\times   \textcolor{gray}{5}\times  \textcolor{purple}{7}=\np{2520}.\]
+
+Les objets A et B apparaîtront de nouveau en même temps dans \np{2520} jours.
+
+\medskip
+
+\textbf{Remarque~:} Le même type de calcul que celui que nous venons de mener permet de comprendre que le Soleil, la Terre et la Lune se retrouvent dans des configurations sensiblement identiques tous les 18 ans et 11 jours. Cette période, appelée \og saros \fg , est utilisée pour prédire les éclipses. %Elle était déjà connue dans la Grèce antique.
+
+\end{exo}
+
+\begin{exo}
+
+\begin{enumerate}
+\item On décompose avec la méthode habituelle (je ne détaille pas)~:
+\[60=2\times 2\times 3\times 5=2^2\times 3^1\times 5^1.\]
+
+On en déduit
+\[\np{3600}=60^2=\textcolor{green}{60}\times \textcolor{purple}{60}=\textcolor{green}{2\times 2\times 3\times 5}\times \textcolor{purple}{2\times 2\times 3\times 5}=2^4\times 3^2\times 5^2.\]
+
+\medskip
+
+Chaque exposant (en rouge ci-dessous) de la décomposition de \np{3600} est le double (en bleu) de celui de la décomposition de 60~:
+
+\begin{align*}
+\np{3600}&=2^{\textcolor{red}{4}}\times 3^{\textcolor{red}{2}}\times 5^{\textcolor{red}{2}},\\
+60&=2^{\textcolor{blue}{2}}\times 3^{\textcolor{blue}{1}}\times 5^{\textcolor{blue}{1}}.
+\end{align*}
+
+\item \begin{itemize}
+\item[\textbullet] Le nombre $2^{\textcolor{red}{4}}\times 3^{\textcolor{red}{6}}\times 7^{\textcolor{red}{8}}$ est un carré parfait~: c'est le carré de $2^{\textcolor{blue}{2}}\times 3^{\textcolor{blue}{3}}\times 7^{\textcolor{blue}{4}}$ (il suffit de diviser chaque exposant par 2, comme dans la question précédente).
+
+\medskip
+
+\textbf{Remarque~:} Il n'est pas utile de faire le calcul~!
+
+\item[\textbullet] Lorsqu'on élève un nombre au carré, chaque exposant dans la décomposition est multiplié par 2. Les exposants sont donc des nombres pairs, comme dans les décompositions de $60^2=2^{\textcolor{red}{4}}\times 3^{\textcolor{red}{2}}\times 5^{\textcolor{red}{2}}$ et de $2^{\textcolor{red}{4}}\times 3^{\textcolor{red}{6}}\times 7^{\textcolor{red}{8}}$ rencontrées ci-dessus.
+
+\medskip
+
+Ce n'est en revanche pas le cas de $2^{\textcolor{red}{10}}\times 3^{\textcolor{green}{5}}\times 7^{\textcolor{red}{4}},$ à cause de l'exposant $\textcolor{green}{5},$ qui est impair. Ce nombre n'est donc pas un carré parfait.
+
+\medskip
+
+\textbf{Remarque~:} D'une façon générale, un entier naturel non nul est un carré parfait si, et seulement si, chaque exposant dans sa décomposition en produit de nombres premiers est un nombre pair.
+\end{itemize}
+\item On décompose avec la méthode habituelle (je ne détaille pas)~:
+\[792=2\times  2\times 2\times 3\times 3\times 11=2^3\times 3^2\times 11^1.\]
+
+
+On cherche un entier strictement positif $n$ qui soit multiple de 792. Dans la décomposition de $n$ doivent apparaître $2^a,$ $3^b$ et $11^c,$ avec $a\geq 3,$ $b\geq 2$ et $c\geq 1,$ puisque 792 divise $n.$
+
+De plus, $a,$ $b$ et $c$ doivent être pairs, compte tenu de la remarque qui conclut la question précédente.
+
+\medskip
+
+Conclusion~: le plus petit entier qui convienne est
+\[n=2^4\times 3^2\times 11^2\]
+(que l'on n'est pas obligé de calculer explicitement -- mais pour information, $n=\np{17424}$).
+%On doit  multiplier 528 par un entier strictement positif pour obtenir un carré parfait. Compte tenu de la remarque qui conclut la question précédente, il faut faire en sorte que chaque exposant du produit soit pair. Le \og plus petit produit possible \fg~{} est \[528\times  3\times 11,\] qui vaut \[2^4\times 3^1\times 11^1\times 3\times 11=2^{\textcolor{red}{4}}\times 3^{\textcolor{red}{2}}\times 11^{\textcolor{red}{2}},\] avec des exposants tous pairs.
+
+%\medskip
+
+%Conclusion~: le plus petit entier strictement positif par lequel il faut multiplier 528 pour obtenir un carré parfait est $3\times 11=33.$
+
+%\medskip
+
+%\textbf{Remarque~:} On obtient 
+%$528\times 33=\np{17424},$ qui est le carré de $132=2^2\times 3^1\times 11^1.$
+
+%\item L'énoncé nous dit que
+%\[\np{2268000}=2^5\times 3^4\times 5^3\times 7.\]
+
+
+%On doit  multiplier \np{2268000} par un entier strictement positif pour obtenir un carré parfait, donc il faut faire en sorte que chaque exposant du produit soit pair. Le \og plus petit produit possible \fg~{} est \[\np{2268000} \times  2\times 5\times 7,\] qui se réécrit \[2^5\times 3^4\times 5^3\times 7 \times 2\times 5\times 7=2^{\textcolor{red}{6}}\times 3^{\textcolor{red}{4}}\times 5^{\textcolor{red}{4}}\times 7^{\textcolor{red}{2}},\] avec des exposants tous pairs.
+
+%\medskip
+
+%Conclusion~: le plus petit entier strictement positif par lequel il faut multiplier \np{2268000} pour obtenir un carré parfait est $2\times 5\times 7=70.$
+%On cherche le plus grand carré parfait qui divise $540.$ Comme il divise 540, il doit être de la forme $2^{\dots}\times 3^{\dots}\times 5^{\dots},$ où chaque exposant est inférieur à celui qui apparaît dans la décomposition de 540. Et comme c'est un carré parfait, chaque exposant doit être pair.
+
+%\medskip
+
+%Conclusion~: le plus grand carré parfait qui divise $540
+%$ est
+%\[2^{\textcolor{red}{2}}\times 3^{\textcolor{red}{2}}\times 5^{\textcolor{red}{0}}=4\times 9\times 1=36.\]
+
+%C'est le carré de 6~; et il divise bien 540, puisque $36\times 15=540.$
+
+\end{enumerate}
+\end{exo}
+
+\begin{exo}%22
+\begin{enumerate}
+\item $\sqrt{6}$ est l'unique nombre positif dont le carré vaut 6.
+\item \begin{itemize}
+\item[\textbullet] le nombre $\sqrt{2}\times\sqrt{3}$ est positif (car $\sqrt{2}$ et $\sqrt{3}$ le sont).
+\item[\textbullet] le carré de $\sqrt{2}\times\sqrt{3}$ est
+\[\left(\sqrt{2}\times\sqrt{3}\right)^2=\sqrt{2}\times\sqrt{3}\times \sqrt{2}\times\sqrt{3}=\sqrt{2}\times\sqrt{2}\times \sqrt{3}\times\sqrt{3}=\sqrt{2}^2\times\sqrt{3}^2=2\times 3=6.\]
+\end{itemize}
+
+\medskip
+
+Conclusion~: $\sqrt{2}\times\sqrt{3}$ est un nombre positif dont le carré vaut 6, donc (par définition) il est égal à $\sqrt{6}.$
+
+\item Si $a$ et $b$ sont deux réels positifs, alors \[\sqrt{a}\times \sqrt{b}=\sqrt{a\times b}.\]
+
+En effet, en calculant comme dans la question précédente, on montre que le carré de $\sqrt{a}\times \sqrt{b}$ est égal à $a\times b.$ Comme $\sqrt{a}\times \sqrt{b}$ est un nombre positif, et que $\sqrt{a\times b}$ est l'unique nombre positif dont le carré vaut $a\times b,$ on obtient $\sqrt{a}\times \sqrt{b}=\sqrt{a\times b}.$
+\item On utilise le résultat de la question précédente~:
+\[\sqrt{20}=\sqrt{4\times 5}=\sqrt{4}\times \sqrt{5}=2\times \sqrt{5}=2 \sqrt{5}.\]
+\end{enumerate}
+\end{exo}
+
 \end{document}

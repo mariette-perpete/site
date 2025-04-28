@@ -15333,6 +15333,145 @@ P\left(X\in\left]\mu-2\sigma;\mu+2\sigma\right[\right)&\geq \frac{3}{4}.
 
 \end{exo}
 
+\begin{exo}
+
+
+
+\begin{enumerate}
+\item On veut récompenser 60~\% des étudiants~; on  détermine donc le plus grand entier naturel $k$ tel que
+\[P(X\geq k)\geq 0,6.\]
+
+On cherche par tâtonnement à la calculatrice, en prenant l'événement contraire\footnote{Comme d'habitude, on peut chercher $k$ \og directement \fg~{} si on a une NUMWORKS.}. On détermine le plus grand entier naturel $k$ tel que~:
+\begin{align*}P(X<k)&\leq 1-0,6,\\
+\text{soit}\qquad P(X\leq k-1)&\leq 0,4.
+\end{align*}
+
+On trouve
+\[P(X\leq 11)\approx 0,351\qquad\text{et}\qquad P(X\leq 12)\approx 0,529,\]
+donc $k-1=11~;$ et donc $k=12.$
+
+\medskip
+
+Conclusion~: tous les candidats au-dessus de 12/20 (donc qui ont une mention) doivent être récompensés.
+
+\item 	\begin{enumerate}
+		\item La variable aléatoire \[M=\frac{ N_1 + N_2 + \cdots + N_{10}}{10}\] donne la moyenne des dix étudiants choisis.
+		\item D'après le cours, chacune des variables aléatoires $N_1,\:N_2,\: \ldots ,\: N_{10}$ a pour espérance
+		\[n\times p=20\times 0,615=12,3,\]
+		donc par linéarité de l'espérance~:
+		
+\[E(M)=E\left(\frac{ N_1 + N_2 + \cdots + N_{10}}{10}\right)=\frac{1}{10}E\left(N_1\right)+\frac{1}{10}E\left(N_2\right)+\cdots+\frac{1}{10}E\left(N_{10}\right)=\frac{1}{10}\times 10\times 12,3=12,3.\]
+
+\textbf{Remarque~:} On retrouve le théorème 5 du cours. 
+\item[\textbullet] D'après le cours~: \[V\left(N_1\right)=V\left(N_2\right)=\cdots=V\left(N_{10}\right)=
+n\times p\times (1-p)=10\times 0,615\times (1-0,615)=\np{4,7355}.\] Les mesures sont indépendantes les unes des autres, donc d'après les propriétés de la variance~:
+
+\[V(M)=V\left(\frac{N_1+N_2+\cdots+N_{10}}{10}\right)=\frac{1}{10^2}V\left(N_1\right)+\frac{1}{10^2}V\left(N_2\right)+\cdots+\frac{1}{10^2}V\left(N_{10}\right)=\frac{1}{10^2}\times 10\times \np{4,7355}=\np{0,47355}.\]
+
+\textbf{Remarque~:} On retrouve à nouveau le théorème 5 du cours. 
+
+		\item La probabilité que la moyenne des notes de dix étudiants pris au hasard soit strictement
+comprise entre $10,3$ et $14,3$ est \[P(10,3<M<14,3).\] C'est la probabilité d'être dans la zone verte ci-dessous, dont on remarque qu'elle est centrée sur l'espérance, 12,3, et de rayon 2.
+
+\begin{center}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(0.62,3.06)(11.46,6)
+\psline[linewidth=2.8pt,linecolor=green](4.,4.)(8.,4.)
+\psline[linewidth=2.8pt,linecolor=red](8.,4.)(11.,4.)
+\psline[linewidth=2.8pt,linecolor=red](4.,4.)(1.,4.)
+\rput[tl](3.64,3.7){\blue{$10,3$}}
+\rput[tl](5.78,3.7){\blue{$12,3$}}
+\rput[tl](7.64,3.7){\blue{$14,3$}}
+\psdots[dotstyle=*,linecolor=blue](6.,4.)
+\psdots[dotstyle=*,linecolor=blue](4.,4.)
+\psdots[dotstyle=*,linecolor=blue](8.,4.)
+\psline[linewidth=2.8pt,linecolor=magenta]{->}(7.,4.6)(6.,4.6)
+\psline[linewidth=2.8pt,linecolor=magenta]{->}(7.,4.6)(8.,4.6)
+\psline[linewidth=2.8pt,linecolor=magenta]{->}(5.,4.6)(6.,4.6)
+\psline[linewidth=2.8pt,linecolor=magenta]{->}(5.,4.6)(4.,4.6)
+\rput[tl](4.88,5.12){\magenta{2}}
+\rput[tl](6.92,5.08){\magenta{2}}
+\end{pspicture*}
+\end{center}
+
+On utilise l'événement contraire~: on majore la probabilité d'être dans la zone rouge grâce à l'inégalité de Bienaymé-Tchebychev~:
+\begin{align*}P\left(|M-E(M)|\geq 2\right)&\leq\frac{V(M)}{2^2}\\
+\text{donc}\qquad P\left(|M-12,3|\geq 2\right)&\leq\frac{\np{0,47355}}{4}.
+\end{align*}
+
+Or $\frac{\np{0,47355}}{4}= 0,118\cdots,$ donc $M$ a moins de 12~\% de chances d'être dans la zone rouge.
+
+\medskip
+
+Conclusion~: $100-12=88,$ donc $M$ plus de 88~\% de chances d'être dans la zone verte. La probabilité que la moyenne des notes de dix étudiants pris au hasard soit strictement comprise entre $10,3$ et $14,3$ est bien supérieure à $80\,\%.$
+
+
+	\end{enumerate}
+\end{enumerate}
+
+\end{exo}
+
+
+\begin{exo}
+
+
+Un sac opaque contient cinq jetons numérotés de 1 à 5, indiscernables au toucher.
+
+On pioche successivement $n$ jetons du sac ($n$ entier supérieur à 1), en remettant entre chaque tirage le jeton tiré. On note $X_i$ le numéro du jeton pioché au $i$-ème tirage et on pose
+\[M_n=\frac{ X_1 + X_2 + \cdots + X_{n}}{n}.\]
+
+
+
+\begin{enumerate}
+\item On suppose dans cette question que $n=3,$ on pioche donc trois jetons du sac.
+\begin{enumerate}
+\item On utilise l'événement contraire~: on note
+\begin{center}
+D~:~\og les trois jetons tirés ont des numéros différents \fg.
+\end{center}
+
+\medskip
+
+Il y a $5^3=125$ tirages possibles (3-listes d'un ensemble à 5 éléments)~; et $5\times 4\times 3=60$ cas favorables à $D$ (3-listes sans répétition), donc $P(D)=\frac{60}{125}=\frac{12}{25}.$
+
+On en déduit que la probabilité que le tirage de trois jetons contienne au moins deux numéros identiques est
+\[1-\frac{12}{25}=\frac{13}{25}.\]
+\item La moyenne $M_3$ des trois tirages ne peut valoir $5$ que si on tire trois fois de suite le numéro 5. Il n'y a qu'un cas favorable, donc
+\[P\left(M_3=5\right)=\frac{1}{125}.\]
+\item L'espérance de $X_1$ est 
+\[E\left(X_1\right)=\frac{1}{5} \times 1+\frac{1}{5} \times 2+\frac{1}{5} \times 3+\frac{1}{5} \times 4+\frac{1}{5} \times 5=\frac{1+2+3+4+5}{5} =\frac{15}{5}=3.\]
+
+On admet que sa variance est égale à $2.$
+\item On va un peu plus vite que dans l'exercice précédent en utilisant le théorème 5 du cours~:
+\[E\left(M_3\right)=E\left(X_1\right)=3\qquad ,\qquad V\left(M_3\right)=\frac{V\left(X_1\right)}{3}=\frac{2}{3}.\]
+\end{enumerate}
+\item On revient au cas général~: $n$ est un entier supérieur à $1.$
+
+\begin{enumerate}
+\item On utilise à nouveau le théorème 5 du cours~:
+\[E\left(M_n\right)=E\left(X_1\right)=3\qquad ,\qquad V\left(M_n\right)=\frac{V\left(X_1\right)}{n}=\frac{2}{n}.\]
+\item D'après l'inégalité de Bienaymé-Tchebychev~:
+
+\begin{align*}
+&P\left(\left|M_n-E\left(M_n\right)\right|\geq 0,01\right)\leq\frac{V\left(M_n\right)}{0,01^2},\\
+\text{soit}\qquad &P\left(\left|M_n-3\right|\geq 0,01\right)\leq\frac{\frac{2}{n}}{\np{0,0001}}~;\\
+\text{soit enfin}\qquad &P\left(\left|M_n-3\right|\geq 0,01\right)\leq \frac{\np{20000}}{n}.
+\end{align*}
+\item Une probabilité est positive, donc d'après la question précédente~:
+\[0\leq p_n\leq \frac{\np{20000}}{n}.\]
+
+Or $\lim\limits_{n\to +\infty}0=\lim\limits_{n\to +\infty}\frac{\np{20000}}{n}=0,$ donc d'après le théorème des gendarmes~:
+\[\lim\limits_{n\to +\infty}p_n=0.\]
+
+
+\textbf{Remarque~:} La même technique qui a permis de  majorer $P\left(\left|M_n-3\right|\geq 0,01\right)$ permet également de majorer $P\left(\left|M_n-3\right|\geq \delta\right),$ et ce pour tout $\delta>0.$ On retrouve ainsi la loi des grands nombres (théorème 6 du cours) -- la démonstration est d'ailleurs la même.
+\end{enumerate}
+\end{enumerate}
+
+
+
+\end{exo}
+
 
 
 
