@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  5 MAY 2025 12:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  7 MAY 2025 12:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1960,12 +1960,12 @@ Package fourier-orns Warning: Command \danger is deprecated.
 (fourier-orns)                Use \warning instead; reported on input line 1062
 1.
 
-[109]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10640.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 10640.
+[109] [110]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10704.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 10704.
  (./CorrigesSeconde.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 10640.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10640
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 10704.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10704
 .
 Package rerunfilecheck Info: File `CorrigesSeconde.out' has not changed.
 (rerunfilecheck)             Checksum: EA90E793893FCE34B5833D127C554C99;1049.
@@ -1977,7 +1977,7 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10640.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10704.
  ) 
 Here is how much of TeX's memory you used:
  36834 strings out of 483041
@@ -1988,4 +1988,4 @@ Here is how much of TeX's memory you used:
  81 hyphenation exceptions out of 8191
  60i,27n,72p,1007b,1195s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesSeconde.dvi (109 pages, 3527212 bytes).
+Output written on CorrigesSeconde.dvi (110 pages, 3544972 bytes).
