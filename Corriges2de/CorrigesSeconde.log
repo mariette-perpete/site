@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  7 MAY 2025 12:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2024.4.20)  9 MAY 2025 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1960,12 +1960,12 @@ Package fourier-orns Warning: Command \danger is deprecated.
 (fourier-orns)                Use \warning instead; reported on input line 1062
 1.
 
-[109] [110]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10704.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 10704.
+[109] [110] [111] [112]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10935.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 10935.
  (./CorrigesSeconde.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 10704.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10704
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 10935.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10935
 .
 Package rerunfilecheck Info: File `CorrigesSeconde.out' has not changed.
 (rerunfilecheck)             Checksum: EA90E793893FCE34B5833D127C554C99;1049.
@@ -1977,15 +1977,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10704.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 10935.
  ) 
 Here is how much of TeX's memory you used:
- 36834 strings out of 483041
- 669104 string characters out of 5962452
+ 36851 strings out of 483041
+ 669439 string characters out of 5962452
  1462532 words of memory out of 5000000
- 51067 multiletter control sequences out of 15000+600000
+ 51084 multiletter control sequences out of 15000+600000
  723160 words of font info for 199 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  60i,27n,72p,1007b,1195s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CorrigesSeconde.dvi (110 pages, 3544972 bytes).
+Output written on CorrigesSeconde.dvi (112 pages, 3619012 bytes).
