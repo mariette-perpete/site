@@ -1,79 +1,114 @@
 <html>
 
-	<head>
-		<meta charset="UTF-8" />
-		<link href="style.css" rel="stylesheet">
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.10/dist/css/uikit.min.css" />
 
-	<title>
-		Accueil
-	</title>
-	
-	<body>
-	
-		<section id = "sect1">
-				<section id = "sect2">
-					<div id="cerisier">
-						<center>
-						<img src="img/Cerisier.jpg" width=60%>
-						</center>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.23.10/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.23.10/dist/js/uikit-icons.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<meta charset="UTF-8" />
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<title>
+	Accueil
+</title>
+
+<body>
+
+	<section id="sect1">
+		<section id="sect2">
+			<div id="cerisier">
+				<center>
+					<img src="img/Cerisier.jpg" width=60%>
+				</center>
+			</div>
+			<p>
+				<center>
+					<b>Site de Nicolas Perpète <br>Lycée Mariette, Boulogne-sur-Mer</b>
+				</center>
+			</p>
+
+			<section id="sect6">
+				<div class="dropdown">
+					<button class="dropbtn">2de</button>
+					<div class="dropdown-content">
+						<a href="Cours2de.html">Cours & exercices</a>
+						<a href="DS2de.html">Devoirs</a>
 					</div>
-					<p>
-						<center>
-						<b>Site de Nicolas Perpète <br>Lycée Mariette, Boulogne-sur-Mer</b>
-						</center>
-					</p>
-				
-				<section id = "sect6">
-					<div class="dropdown">
-  						<button class="dropbtn">2de</button>
-  						<div class="dropdown-content">
-    					<a href="Cours2de.html">Cours & exercices</a>
-    					<a href="DS2de.html">Devoirs</a>
-						</div>
-  					</div>
-					<div class="dropdown">
-  						<button class="dropbtn">1re STMG</button>
-  						<div class="dropdown-content">
-    					<a href="CoursTechno.html">Cours & exercices</a>
-    					<a href="DSTechno.html">Devoirs</a>
-						</div>
-  					</div>
-					<div class="dropdown">
-  						<button class="dropbtn">Tale spé</button>
-  						<div class="dropdown-content">
-    					<a href="CoursTerminale.html">Cours & exercices</a>
-    					<a href="DSTerminale.html">Devoirs</a>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">1re ST2S</button>
+					<div class="dropdown-content">
+						<a href="CoursTechno.html">Cours & exercices</a>
+						<a href="DSTechno.html">Devoirs</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">1re spé</button>
+					<div class="dropdown-content">
+						<a href="CoursPremiere.html">Cours & exercices</a>
+						<a href="DSPremiere.html">Devoirs</a>
 						<a href="CM.html">Cartes mentales</a>
-    					<a href="GrandOral.html">Grand Oral</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">Maths exp</button>
+					<div class="dropdown-content">
+						<a href="CoursExp.html">Cours & exercices</a>
+						<a href="DSExp.html">Devoirs</a>
+					</div>
+				</div>
+
+
+				<div class="dropdown">
+					<button class="dropbtn"> <a href="index.html" class=".dropbtn">Accueil</a></button>
+				</div>
+			</section>
+
+		</section>
+		<section id="sect3">
+			<section id="sect4">
+				<section id="sect5b">
+					<div uk-slider=" animation: fade; autoplay: true; autoplay-interval : 3000; pause-on-hover: false uk-slider=center">
+						<div class="uk-position-relative uk-visible-toggle uk-light uk-padding-remove" tabindex="-1" uk-slider>
+
+
+							<div class="uk-slider-items uk-child-width-1-1 uk-child-width-1-1@s uk-child-width-1-1@m">
+								<div>
+									<img src="img/VieilleVille.jpg" width="650" height="650" alt="">
+									<div class="uk-position-center uk-panel">
+										<h1></h1>
+									</div>
+								</div>
+								<div>
+									<img src="img/CoteOpale.jpg" width="650" height="650" alt="">
+									<div class="uk-position-center uk-panel">
+										<h1></h1>
+									</div>
+								</div>
+								<div>
+									<img src="img/Mariette.jpg" width="650" height="650" alt="">
+									<div class="uk-position-center uk-panel">
+										<h1></h1>
+									</div>
+								</div>
+								<div>
+									<img src="img/Nausicaa.jpg" width="650" height="650" alt="">
+									<div class="uk-position-center uk-panel">
+										<h1></h1>
+									</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
-  					
-  					
-						<div class="dropdown">
-							<button class="dropbtn"> <a href="index.html" class=".dropbtn">Accueil</a></button>
-						</div>
-					
-					</section>
-				
-		</section>	
-				<section id="sect3">
-					<section id="sect4">
-						<section id="sect5b">
-						<img src="img/CoteOpale.jpg" title="La Côte d'Opale" width=35%>
-						
-						<img src="img/Mariette.jpg" title="Le lycée Mariette" width=35%>
-						</section>
-						
-						<section id="sect5b">
-						<img src="img/VieilleVille.jpg" title="La vieille ville de Boulogne" width=35%>
-						
-						<img src="img/Nausicaa.jpg" title="Nausicaa" width=35%>
-							</section>
-					</section>
 				</section>
+			</section>
 		</section>
-	
-	</body>
+	</section>
+
+</body>
 
 </html>

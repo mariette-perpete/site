@@ -127,3 +127,12 @@ tfoot {
     color: #fff;
 }
 }
+.uk-slider-items > div {
+    width: 100% ;
+    margin: 0 ;
+    padding: 0 ;
+    overflow: hidden;
+}
+.uk-slider {
+    overflow: hidden;
+}
